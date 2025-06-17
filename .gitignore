@@ -1,1 +1,7 @@
 build
+*.aux
+*.fls
+*.log
+*.out
+*.fdb*
+*.syn*
