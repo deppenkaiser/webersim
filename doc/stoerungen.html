@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vollständige und konsistente Störungsrechnung in kartesischen Koordinaten</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            margin-top: 1.5em;
+        }
+        .definition-box {
+            background-color: #eef7ff;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #7f8c8d;
+            overflow-x: auto;
+            font-size: 1.1em;
+        }
+        .important-note {
+            background-color: #fff8e1;
+            padding: 15px;
+            margin: 25px 0;
+            border-left: 4px solid #ffc107;
+            border-radius: 0 5px 5px 0;
+        }
+        .variable-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .variable-table th {
+            background-color: #f2f2f2;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        .variable-table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+        .variable-table td:first-child {
+            font-family: monospace;
+            font-weight: bold;
+            width: 150px;
+            color: #0066cc;
+        }
+        .summary-box {
+            background-color: #e8f4f8;
+            padding: 20px;
+            margin: 30px 0;
+            border-left: 4px solid #2980b9;
+            border-radius: 0 5px 5px 0;
+        }
+        .example-box {
+            background-color: #f5f5f5;
+            padding: 18px;
+            margin: 25px 0;
+            border-left: 4px solid #27ae60;
+            border-radius: 0 5px 5px 0;
+        }
+        .system-illustration {
+            text-align: center;
+            margin: 25px 0;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vollständige Störungsrechnung in kartesischen Koordinaten</h1>
+    <h2>Mit konsistenter Notation und Doppelindizes</h2>
+
+    <div class="important-note">
+        <h3>Wichtigste Neuerungen in dieser Version:</h3>
+        <ul>
+            <li>Konsequente Verwendung von <strong>Doppelindizes (i,j)</strong> für alle Störterme</li>
+            <li>Erster Index (i) = Störkörper, zweiter Index (j) = betroffener Körper</li>
+            <li>Vollständige Definition aller verwendeten Größen</li>
+            <li>Explizite Summation über alle relevanten Störkörper</li>
+        </ul>
+    </div>
+
+    <section>
+        <h2>1. Systemdefinition und Variablen</h2>
+        
+        <div class="system-illustration">
+            <p><strong>Physikalisches System:</strong> Sonnensystem mit Störkörpern</p>
+            <p>Sonne (M⊙) + betrachteter Körper (j) + N Störkörper (i=1..N)</p>
+        </div>
+
+        <table class="variable-table">
+            <tr>
+                <th>Symbol</th>
+                <th>Bedeutung</th>
+                <th>Einheit</th>
+            </tr>
+            <tr>
+                <td>M⊙</td>
+                <td>Masse der Sonne</td>
+                <td>kg</td>
+            </tr>
+            <tr>
+                <td>M<sub>i</sub></td>
+                <td>Masse des i-ten Störkörpers (i=1..N)</td>
+                <td>kg</td>
+            </tr>
+            <tr>
+                <td>r<sub>j</sub></td>
+                <td>Position des betrachteten Körpers j (z.B. Merkur)</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>r<sub>i</sub></td>
+                <td>Position des i-ten Störkörpers</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>v<sub>j</sub></td>
+                <td>Geschwindigkeit des Körpers j</td>
+                <td>km/s</td>
+            </tr>
+            <tr>
+                <td>h<sub>j</sub></td>
+                <td>Spezifischer Drehimpuls des Körpers j (h<sub>j</sub> = |r<sub>j</sub> × v<sub>j</sub>|)</td>
+                <td>km²/s</td>
+            </tr>
+            <tr>
+                <td>a<sub>i</sub></td>
+                <td>Große Halbachse des i-ten Störkörpers</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>ẑ</td>
+                <td>Einheitsvektor in z-Richtung (0,0,1)</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>2. Grundlegende Störterme</h2>
+
+        <div class="definition-box">
+            <h3>Positionsstörung Δr<sub>ij</sub></h3>
+            <p>Änderung der Position von Körper j durch Körper i:</p>
+            <div class="equation">
+                \[
+                \Delta \mathbf{r}_{ij} = \frac{M_i}{M_\odot} \cdot \frac{a_i^2}{|\mathbf{r}_j - \mathbf{r}_i|^2} (\mathbf{r}_j - \mathbf{r}_i)
+                \]
+            </div>
+            <p>wobei |r<sub>j</sub> - r<sub>i</sub>| der Abstand zwischen Körper j und Störkörper i ist.</p>
+        </div>
+
+        <div class="definition-box">
+            <h3>Geschwindigkeitsstörung Δv<sub>ij</sub></h3>
+            <p>Änderung der Geschwindigkeit von Körper j durch Körper i:</p>
+            <div class="equation">
+                \[
+                \Delta \mathbf{v}_{ij} = \frac{G M_i}{h_j} \cdot \frac{(\mathbf{r}_j - \mathbf{r}_i) \times \hat{\mathbf{z}}}{| \mathbf{r}_j - \mathbf{r}_i |^3}
+                \]
+            </div>
+            <p>Das Kreuzprodukt (r<sub>j</sub> - r<sub>i</sub>) × ẑ ergibt einen tangentialen Vektor.</p>
+        </div>
+
+        <div class="definition-box">
+            <h3>Winkelgeschwindigkeitsstörung Δω<sub>ij</sub></h3>
+            <p>Änderung der Winkelgeschwindigkeit von Körper j durch Körper i:</p>
+            <div class="equation">
+                \[
+                \Delta \omega_{ij} = \frac{(\mathbf{r}_j \times \Delta \mathbf{v}_{ij})_z + (\Delta \mathbf{r}_{ij} \times \mathbf{v}_j)_z}{|\mathbf{r}_j|^2}
+                \]
+            </div>
+            <p>wobei (·)<sub>z</sub> die z-Komponente des Vektors ist.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Gesamtstörungen auf Körper j</h2>
+
+        <div class="definition-box">
+            <h3>Gesamtpositionsstörung</h3>
+            <p>Summe über alle Störkörper (i ≠ j):</p>
+            <div class="equation">
+                \[
+                \Delta \mathbf{r}_j = \sum_{\substack{i=1 \\ i \neq j}}^N \Delta \mathbf{r}_{ij}
+                \]
+            </div>
+        </div>
+
+        <div class="definition-box">
+            <h3>Gesamtgeschwindigkeitsstörung</h3>
+            <div class="equation">
+                \[
+                \Delta \mathbf{v}_j = \sum_{\substack{i=1 \\ i \neq j}}^N \Delta \mathbf{v}_{ij}
+                \]
+            </div>
+        </div>
+
+        <div class="definition-box">
+            <h3>Gesamtwinkelgeschwindigkeitsstörung</h3>
+            <div class="equation">
+                \[
+                \Delta \omega_j = \sum_{\substack{i=1 \\ i \neq j}}^N \Delta \omega_{ij}
+                \]
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Konkretes Beispiel: Merkur (j) gestört durch Jupiter (i=1)</h2>
+
+        <div class="example-box">
+            <h3>Beitrag von Jupiter zur Positionsstörung</h3>
+            <div class="equation">
+                \[
+                \Delta \mathbf{r}_{\text{Jupiter→Merkur}} = \frac{M_{\text{Jupiter}}}{M_\odot} \cdot \frac{a_{\text{Jupiter}}^2}{|\mathbf{r}_{\text{Merkur}} - \mathbf{r}_{\text{Jupiter}}|^2} (\mathbf{r}_{\text{Merkur}} - \mathbf{r}_{\text{Jupiter}})
+                \]
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Beitrag von Jupiter zur Geschwindigkeitsstörung</h3>
+            <div class="equation">
+                \[
+                \Delta \mathbf{v}_{\text{Jupiter→Merkur}} = \frac{G M_{\text{Jupiter}}}{h_{\text{Merkur}}} \cdot \frac{(\mathbf{r}_{\text{Merkur}} - \mathbf{r}_{\text{Jupiter}}) \times \hat{\mathbf{z}}}{| \mathbf{r}_{\text{Merkur}} - \mathbf{r}_{\text{Jupiter}} |^3}
+                \]
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Beitrag von Jupiter zur Winkelgeschwindigkeitsstörung</h3>
+            <div class="equation">
+                \[
+                \Delta \omega_{\text{Jupiter→Merkur}} = \frac{(\mathbf{r}_{\text{Merkur}} \times \Delta \mathbf{v}_{\text{Jupiter→Merkur}})_z + (\Delta \mathbf{r}_{\text{Jupiter→Merkur}} \times \mathbf{v}_{\text{Merkur}})_z}{|\mathbf{r}_{\text{Merkur}}|^2}
+                \]
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Vollständige Zusammenfassung</h2>
+
+        <div class="summary-box">
+            <h3>Zusammenfassung der Störungsgleichungen</h3>
+            <div class="equation">
+                \[
+                \begin{aligned}
+                \Delta \mathbf{r}_{ij} &= \frac{M_i}{M_\odot} \cdot \frac{a_i^2}{|\mathbf{r}_j - \mathbf{r}_i|^2} (\mathbf{r}_j - \mathbf{r}_i) \\
+                \Delta \mathbf{v}_{ij} &= \frac{G M_i}{h_j} \cdot \frac{(\mathbf{r}_j - \mathbf{r}_i) \times \hat{\mathbf{z}}}{| \mathbf{r}_j - \mathbf{r}_i |^3} \\
+                \Delta \omega_{ij} &= \frac{(\mathbf{r}_j \times \Delta \mathbf{v}_{ij})_z + (\Delta \mathbf{r}_{ij} \times \mathbf{v}_j)_z}{|\mathbf{r}_j|^2} \\
+                \Delta \mathbf{r}_j &= \sum_{\substack{i=1 \\ i \neq j}}^N \Delta \mathbf{r}_{ij} \\
+                \Delta \mathbf{v}_j &= \sum_{\substack{i=1 \\ i \neq j}}^N \Delta \mathbf{v}_{ij} \\
+                \Delta \omega_j &= \sum_{\substack{i=1 \\ i \neq j}}^N \Delta \omega_{ij}
+                \end{aligned}
+                \]
+            </div>
+        </div>
+    </section>
+
+    <div class="important-note">
+        <h3>Zusammenfassung der wichtigsten Punkte</h3>
+        <ol>
+            <li>Alle Störterme verwenden <strong>konsistente Doppelindizes</strong> (Störkörper→betroffener Körper)</li>
+            <li>Die <strong>Gesamtstörung</strong> ist jeweils die Summe über alle Störkörper</li>
+            <li>Für konkrete Berechnungen müssen alle relevanten Störkörper berücksichtigt werden</li>
+            <li>Die Notation ist jetzt <strong>eindeutig und vollständig</strong></li>
+        </ol>
+    </div>
+
+    <footer>
+        <p>© 2025 Weber-Kraft als Alternative zur Allgemeinen Relativitätstheorie - Komplette Dokumentation</p>
+    </footer>
+</body>
+</html>

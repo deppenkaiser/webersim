@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beschleunigung a(φ) im N-Körper-System (Weber-Kraft)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+        }
+        .result {
+            background-color: #e8f4f8;
+            border-left: 4px solid #2980b9;
+            padding: 15px;
+            margin: 25px 0;
+        }
+        .derivation {
+            background-color: #f5f5f5;
+            padding: 12px;
+            margin: 15px 0;
+            border-left: 4px solid #7f8c8d;
+        }
+        .important {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Navigation */
+        #sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        #sidebar h3 {
+            color: #3498db;
+            margin-top: 20px;
+        }
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        #sidebar li {
+            margin: 10px 0;
+        }
+        #sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0px;
+            border-radius: 4px;
+        }
+        #sidebar a:hover {
+            background: #3498db;
+        }
+        #content {
+            margin-left: 270px;
+        }
+        .section {
+            padding-top: 20px;
+            margin-top: -20px;
+        }
+        @media (max-width: 768px) {
+            #sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            #content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="r_v_a_total_vektor.html">Zurück</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h1>Beschleunigung a(φ) im N-Körper-System (Weber-Kraft)</h1>
+        
+        <div class="section">
+            <h2>1. Weber-Kraft zwischen zwei Körpern</h2>
+            <div class="equation">
+                \[
+                \vec{F}_{ij} = -\frac{GM_i M_j}{r_{ij}^2} \left(
+                1 - \frac{\dot{r}_{ij}^2}{c^2} + \frac{r_{ij} \ddot{r}_{ij}}{2c^2}
+                \right) \hat{r}_{ij}
+                \]
+                <p>wobei:</p>
+                <ul>
+                    <li>\( r_{ij} = |\vec{r}_i - \vec{r}_j| \) (Abstand zwischen Körpern \( i \) und \( j \)),</li>
+                    <li>\( \dot{r}_{ij} = \frac{dr_{ij}}{dt} \) (radiale Relativgeschwindigkeit),</li>
+                    <li>\( \ddot{r}_{ij} = \frac{d^2 r_{ij}}{dt^2} \) (radiale Relativbeschleunigung).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Gesamtkraft und Beschleunigung für Körper \( i \)</h2>
+            <div class="derivation">
+                <h3>2.1 Summe aller Weber-Kräfte</h3>
+                \[
+                \vec{F}_i = \sum_{j \neq i} \vec{F}_{ij}
+                \]
+                <p>Die Beschleunigung \( \vec{a}_i \) des Körpers \( i \) ist:</p>
+                \[
+                \vec{a}_i = \frac{1}{M_i} \vec{F}_i
+                \]
+            </div>
+
+            <div class="derivation">
+                <h3>2.2 Polarkoordinaten (r, φ)</h3>
+                <p>Für eine Bahn in der Ebene mit Polarkoordinaten \( (r_i, \phi_i) \):</p>
+                \[
+                \vec{a}_i = \left( \ddot{r}_i - r_i \dot{\phi}_i^2 \right) \hat{r} + \left( r_i \ddot{\phi}_i + 2 \dot{r}_i \dot{\phi}_i \right) \hat{\phi}
+                \]
+                <p>Einsetzen der Weber-Kraft liefert:</p>
+                \[
+                \ddot{r}_i - r_i \dot{\phi}_i^2 = -\sum_{j \neq i} \frac{GM_j}{r_{ij}^2} \left(
+                1 - \frac{\dot{r}_{ij}^2}{c^2} + \frac{r_{ij} \ddot{r}_{ij}}{2c^2}
+                \right) \cos(\gamma_{ij})
+                \]
+                \[
+                r_i \ddot{\phi}_i + 2 \dot{r}_i \dot{\phi}_i = \sum_{j \neq i} \frac{GM_j}{r_{ij}^2} \left(
+                1 - \frac{\dot{r}_{ij}^2}{c^2} + \frac{r_{ij} \ddot{r}_{ij}}{2c^2}
+                \right) \sin(\gamma_{ij})
+                \]
+                <p>Hier ist \( \gamma_{ij} \) der Winkel zwischen \( \vec{r}_i \) und \( \vec{r}_{ij} \).</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Allgemeine Lösung für \( a(\phi) \)</h2>
+            <div class="result">
+                <h3>3.1 Vektorielle Form</h3>
+                \[
+                \vec{a}_i = -\sum_{j \neq i} \frac{GM_j}{r_{ij}^3} \left(
+                1 - \frac{\dot{r}_{ij}^2}{c^2} + \frac{r_{ij} \ddot{r}_{ij}}{2c^2}
+                \right) \vec{r}_{ij}
+                \]
+                <div class="important">
+                    Hinweis: Die Lösung ist <strong>allgemein gültig</strong> für beliebige \( N \)-Körper-Systeme.
+                    Die Dominanz der Sonne ergibt sich automatisch aus \( M_j \ll M_\text{Sonne} \).
+                </div>
+            </div>
+
+            <div class="derivation">
+                <h3>3.2 Berechnung von \( \ddot{r}_{ij} \)</h3>
+                <p>Der Term \( \ddot{r}_{ij} \) wird durch Ableiten von \( \dot{r}_{ij} \) bestimmt:</p>
+                \[
+                \ddot{r}_{ij} = \frac{(\vec{v}_{ij} \cdot \vec{v}_{ij} + \vec{r}_{ij} \cdot \vec{a}_{ij}) r_{ij} - (\vec{r}_{ij} \cdot \vec{v}_{ij})^2 / r_{ij}}{r_{ij}^2}
+                \]
+                <p>mit \( \vec{v}_{ij} = \vec{v}_i - \vec{v}_j \) und \( \vec{a}_{ij} = \vec{a}_i - \vec{a}_j \).</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Physikalische Interpretation</h2>
+            <table>
+                <tr>
+                    <th>Term</th>
+                    <th>Bedeutung</th>
+                </tr>
+                <tr>
+                    <td>\( -\frac{GM_j}{r_{ij}^2} \)</td>
+                    <td>Newtonsche Gravitation (dominant für \( c \to \infty \))</td>
+                </tr>
+                <tr>
+                    <td>\( +\frac{GM_j \dot{r}_{ij}^2}{c^2 r_{ij}^2} \)</td>
+                    <td>Relativistische Korrektur durch radiale Bewegung</td>
+                </tr>
+                <tr>
+                    <td>\( -\frac{GM_j r_{ij} \ddot{r}_{ij}}{2c^2 r_{ij}^2} \)</td>
+                    <td>Korrektur durch Beschleunigung der Radialkoordinate</td>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <p>© 2025 Weber-Kraft als Alternative zur Allgemeinen Relativitätstheorie - Komplette Dokumentation</p>
+        </footer>
+    </div>
+</body>
+</html>

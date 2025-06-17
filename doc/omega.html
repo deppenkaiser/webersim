@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herleitung von ω(φ) für klassische Newtonsche Gravitation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 3px solid #e74c3c;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .step {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .result {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border: 1px solid #27ae60;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <h1>Herleitung von ω(φ) für klassische Newtonsche Gravitation</h1>
+    
+    <div class="step">
+        <h2>1. Keplersche Bahngleichung</h2>
+        <p>Für einen Körper in einer elliptischen Umlaufbahn unter Newtonscher Gravitation ist die radiale Position als Funktion der wahren Anomalie φ:</p>
+        <div class="equation">
+            \[ r(φ) = \frac{a(1 - e^2)}{1 + e \cos φ} \]
+        </div>
+        <p>wobei:</p>
+        <ul>
+            <li>\( a \) = große Halbachse</li>
+            <li>\( e \) = Exzentrizität</li>
+            <li>\( φ \) = wahre Anomalie (Winkel vom Perihel)</li>
+        </ul>
+    </div>
+    
+    <div class="step">
+        <h2>2. Drehimpulserhaltung</h2>
+        <p>Der spezifische Drehimpuls \( h \) ist konstant:</p>
+        <div class="equation">
+            \[ h = r^2 \frac{dφ}{dt} = r^2 ω(φ) \]
+        </div>
+        <p>wobei \( ω(φ) = \frac{dφ}{dt} \) die Winkelgeschwindigkeit ist.</p>
+    </div>
+    
+    <div class="step">
+        <h2>3. Gesamtenergiegleichung</h2>
+        <p>Für eine Keplersche Bahn ist die spezifische Orbitalenergie:</p>
+        <div class="equation">
+            \[ \frac{v^2}{2} - \frac{GM}{r} = -\frac{GM}{2a} \]
+        </div>
+        <p>Die Geschwindigkeit kann in radiale und tangentiale Komponenten zerlegt werden:</p>
+        <div class="equation">
+            \[ v^2 = \left(\frac{dr}{dt}\right)^2 + \left(r \frac{dφ}{dt}\right)^2 \]
+        </div>
+    </div>
+    
+    <div class="step">
+        <h2>4. Ausdruck in Bezug auf φ</h2>
+        <p>Mit der Kettenregel:</p>
+        <div class="equation">
+            \[ \frac{dr}{dt} = \frac{dr}{dφ} \frac{dφ}{dt} = \frac{dr}{dφ} ω(φ) \]
+        </div>
+        <p>Zuerst berechnen wir \( \frac{dr}{dφ} \) aus der Bahngleichung:</p>
+        <div class="equation">
+            \[ \frac{dr}{dφ} = \frac{a(1 - e^2) e \sin φ}{(1 + e \cos φ)^2} \]
+        </div>
+    </div>
+    
+    <div class="step">
+        <h2>5. Einsetzen in die Energiegleichung</h2>
+        <p>Setze \( v^2 \) und \( \frac{dr}{dt} \) in die Energiegleichung ein:</p>
+        <div class="equation">
+            \[ \left(\frac{dr}{dφ} ω(φ)\right)^2 + r^2 ω(φ)^2 = GM\left(\frac{2}{r} - \frac{1}{a}\right) \]
+        </div>
+        <p>Klammere \( ω(φ)^2 \) aus:</p>
+        <div class="equation">
+            \[ ω(φ)^2 \left[\left(\frac{dr}{dφ}\right)^2 + r^2\right] = GM\left(\frac{2}{r} - \frac{1}{a}\right) \]
+        </div>
+    </div>
+    
+    <div class="step">
+        <h2>6. Vereinfachung des Ausdrucks</h2>
+        <p>Berechne den Term in Klammern:</p>
+        <div class="equation">
+            \[ \left(\frac{dr}{dφ}\right)^2 + r^2 = \frac{a^2(1 - e^2)^2 e^2 \sin^2 φ}{(1 + e \cos φ)^4} + \frac{a^2(1 - e^2)^2}{(1 + e \cos φ)^2} \]
+            \[ = \frac{a^2(1 - e^2)^2}{(1 + e \cos φ)^4} \left(e^2 \sin^2 φ + (1 + e \cos φ)^2\right) \]
+            \[ = \frac{a^2(1 - e^2)^2}{(1 + e \cos φ)^4} (1 + 2e \cos φ + e^2) \]
+        </div>
+    </div>
+    
+    <div class="step">
+        <h2>7. Lösung für ω(φ)</h2>
+        <p>Setze zurück und löse nach ω(φ) auf:</p>
+        <div class="equation">
+            \[ ω(φ)^2 = \frac{GM\left(\frac{2}{r} - \frac{1}{a}\right)}{\frac{a^2(1 - e^2)^2 (1 + 2e \cos φ + e^2)}{(1 + e \cos φ)^4}} \]
+            \[ = \frac{GM(1 + e \cos φ)^4 \left(\frac{2(1 + e \cos φ)}{a(1 - e^2)} - \frac{1}{a}\right)}{a^2(1 - e^2)^2 (1 + 2e \cos φ + e^2)} \]
+            \[ = \frac{GM(1 + e \cos φ)^3 [2(1 + e \cos φ) - (1 - e^2)]}{a^3(1 - e^2)^3 (1 + 2e \cos φ + e^2)} \]
+        </div>
+    </div>
+    
+    <div class="result">
+        <h2>Endergebnis</h2>
+        <p>Nach Vereinfachung erhalten wir die Winkelgeschwindigkeit als Funktion der wahren Anomalie:</p>
+        <div class="equation">
+            \[ ω(φ) = \frac{\sqrt{GM}}{a^{3/2}} \frac{(1 + e \cos φ)^2}{(1 - e^2)^{3/2}} \]
+        </div>
+        <p>Dies zeigt:</p>
+        <ul>
+            <li>Im Perihel (φ = 0): Maximale Winkelgeschwindigkeit</li>
+            <li>Im Aphel (φ = π): Minimale Winkelgeschwindigkeit</li>
+            <li>Für kreisförmige Bahnen (e = 0): Konstante Winkelgeschwindigkeit</li>
+        </ul>
+    </div>
+    
+    <div class="step">
+        <h2>8. Verifikation über Drehimpuls</h2>
+        <p>Wir können dieses Ergebnis mit der Drehimpulserhaltung verifizieren:</p>
+        <div class="equation">
+            \[ h = r^2 ω(φ) = \frac{a^2(1 - e^2)^2}{(1 + e \cos φ)^2} \cdot \frac{\sqrt{GM}(1 + e \cos φ)^2}{a^{3/2}(1 - e^2)^{3/2}} \]
+            \[ = \sqrt{GMa(1 - e^2)} \]
+        </div>
+        <p>Dies stimmt mit dem bekannten Ausdruck für den spezifischen Drehimpuls in Keplerschen Bahnen überein und bestätigt unser Ergebnis.</p>
+    </div>
+    
+    <h2>Zusammenfassung der Schlüsselgleichungen</h2>
+    <table>
+        <tr>
+            <th>Größe</th>
+            <th>Ausdruck</th>
+        </tr>
+        <tr>
+            <td>Bahngleichung</td>
+            <td>\( r(φ) = \frac{a(1 - e^2)}{1 + e \cos φ} \)</td>
+        </tr>
+        <tr>
+            <td>Winkelgeschwindigkeit</td>
+            <td>\( ω(φ) = \frac{\sqrt{GM}(1 + e \cos φ)^2}{a^{3/2}(1 - e^2)^{3/2}} \)</td>
+        </tr>
+        <tr>
+            <td>Spezifischer Drehimpuls</td>
+            <td>\( h = \sqrt{GMa(1 - e^2)} \)</td>
+        </tr>
+        <tr>
+            <td>Umlaufzeit</td>
+            <td>\( T = 2π\sqrt{\frac{a^3}{GM}} \)</td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>© 2025 Weber-Kraft als Alternative zur Allgemeinen Relativitätstheorie - Komplette Dokumentation</p>
+    </footer>
+</body>
+</html>

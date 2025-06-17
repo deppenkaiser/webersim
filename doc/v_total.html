@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vollständige analytische Lösung für v⃗(φ) mit Weber-Kraft</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+        }
+        .result {
+            background-color: #e8f4f8;
+            border-left: 4px solid #2980b9;
+            padding: 15px;
+            margin: 25px 0;
+        }
+        .derivation {
+            background-color: #f5f5f5;
+            padding: 12px;
+            margin: 15px 0;
+            border-left: 4px solid #7f8c8d;
+        }
+        .important {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Navigation */
+        #sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        #sidebar h3 {
+            color: #3498db;
+            margin-top: 20px;
+        }
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        #sidebar li {
+            margin: 10px 0;
+        }
+        #sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0px;
+            border-radius: 4px;
+        }
+        #sidebar a:hover {
+            background: #3498db;
+        }
+        #content {
+            margin-left: 270px;
+        }
+        .section {
+            padding-top: 20px;
+            margin-top: -20px;
+        }
+        @media (max-width: 768px) {
+            #sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            #content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="r_v_a_total_vektor.html">Zurück</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h1>Vollständige analytische Lösung für <span style="font-weight: bold; color: #2c3e50;">v⃗</span>(φ) mit Weber-Kraft</h1>
+        
+        <div class="section">
+            <h2>1. Definition aller Variablen und Konstanten</h2>
+            
+            <div class="definition">
+                <h3>Physikalische Konstanten</h3>
+                <ul>
+                    <li><span class="variable">G</span> = 6.67430 × 10⁻¹¹ m³ kg⁻¹ s⁻² (Gravitationskonstante)</li>
+                    <li><span class="variable">c</span> = 299,792,458 m/s (Lichtgeschwindigkeit)</li>
+                </ul>
+                
+                <h3>Bahnelemente des Planeten</h3>
+                <ul>
+                    <li><span class="variable">M</span>: Masse des Zentralkörpers (z.B. Sonne) [kg]</li>
+                    <li><span class="variable">m</span>: Masse des Planeten [kg] (fällt in Gleichungen heraus)</li>
+                    <li><span class="variable">a</span>: Große Halbachse der Bahn [m]</li>
+                    <li><span class="variable">e</span>: Numerische Exzentrizität (0 ≤ e < 1)</li>
+                    <li><span class="variable">φ</span>: Wahre Anomalie (Winkelposition) [rad]</li>
+                </ul>
+                
+                <h3>Abgeleitete Größen</h3>
+                <ul>
+                    <li><span class="variable">h</span> = √(GM a(1-e²)) (Spezifischer Drehimpuls) [m²/s]</li>
+                    <li><span class="variable">κ</span> = √(1 - 6GM/(c²a(1-e²))) (Relativistischer Korrekturfaktor)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Exakte Bahngleichung und Geschwindigkeit</h2>
+            
+            <div class="equation">
+                <h3>2.1 Bahngleichung r(φ)</h3>
+                \[
+                r(φ) = \frac{a(1-e^2)}{1 + e \cos(\kappa φ)}
+                \]
+                <p>Diese beschreibt die <strong>exakte</strong> Bahnkurve unter Weber-Kraft-Einfluss.</p>
+            </div>
+            
+            <div class="derivation">
+                <h3>2.2 Herleitung der Geschwindigkeitskomponenten</h3>
+                <p><strong>Azimutalkomponente (v<sub>φ</sub>):</strong></p>
+                \[
+                v_φ(φ) = r(φ) \dot{φ} = \frac{h}{r(φ)} = \sqrt{\frac{GM}{a(1-e^2)}} \left(1 + e \cos(\kappa φ)\right)
+                \]
+                
+                <p><strong>Radialkomponente (v<sub>r</sub>):</strong></p>
+                \[
+                v_r(φ) = \frac{dr}{dt} = \frac{dr}{dφ} \dot{φ} = \frac{h e \kappa \sin(\kappa φ)}{a(1-e^2)}
+                \]
+            </div>
+            
+            <div class="result">
+                <h3>2.3 Vektorielle Geschwindigkeit</h3>
+                \[
+                \vec{v}(φ) = v_r(φ) \hat{r} + v_φ(φ) \hat{φ} = \sqrt{\frac{GM}{a(1-e^2)}} \left( \frac{e \kappa \sin(\kappa φ)}{1 + e \cos(\kappa φ)} \hat{r} + (1 + e \cos(\kappa φ)) \hat{φ} \right)
+                \]
+                <div class="important">
+                    <strong>Wichtig:</strong> Die Einheitsvektoren \(\hat{r}\) und \(\hat{φ}\) sind ortsabhängig und drehen sich mit dem Winkel φ.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Physikalische Interpretation</h2>
+            
+            <div class="important">
+                <h3>Energieerhaltung</h3>
+                <p>Die Gesamtenergie bleibt unter der Weber-Kraft erhalten:</p>
+                \[
+                E = \frac{1}{2}m\vec{v}^2 - \frac{GMm}{r}\left(1 - \frac{v_r^2}{2c^2}\right) = \text{konstant}
+                \]
+                <p>Oder in spezifischer Form (pro Masseneinheit):</p>
+                \[
+                E = \frac{1}{2}v^2 - \frac{GM}{r}\left(1 - \frac{v_r^2}{2c^2}\right) = \text{konstant}
+                \]
+                <div class="derivation">
+                    <h4>Wichtige Hinweise:</h4>
+                    <ul>
+                        <li><strong>v<sub>r</sub></strong> ist die radiale Geschwindigkeitskomponente \(v_r = \frac{dr}{dt} = \frac{h e \kappa \sin(\kappa φ)}{a(1-e^2)}\)</li>
+                        <li>Der Korrekturterm \(\frac{v_r^2}{2c^2}\) wirkt nur auf die radiale Bewegung</li>
+                        <li>Für \(c \to \infty\) ergibt sich die klassische Energieerhaltung \(\frac{1}{2}v^2 - \frac{GM}{r} = \text{konstant}\)</li>
+                        <li>Diese Form erklärt quantitativ die Periheldrehung des Merkurs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Term</th>
+                    <th>Physikalische Bedeutung</th>
+                    <th>Extremwerte</th>
+                </tr>
+                <tr>
+                    <td>\( r(φ) \)</td>
+                    <td>Momentaner Abstand zum Zentralkörper</td>
+                    <td>Perihel: \( r(0) = a(1-e) \)<br>Aphel: \( r(π/κ) ≈ a(1+e) \)</td>
+                </tr>
+                <tr>
+                    <td>\( v_φ(φ) \)</td>
+                    <td>Tangentialgeschwindigkeit</td>
+                    <td>Maximal im Perihel<br>Minimal im Aphel</td>
+                </tr>
+                <tr>
+                    <td>\( v_r(φ) \)</td>
+                    <td>Radialgeschwindigkeit</td>
+                    <td>Null in Perihel/Aphel<br>Maximal bei φ=π/(2κ)</td>
+                </tr>
+                <tr>
+                    <td>\( \kappa \)</td>
+                    <td>Relativistische Periheldrehung</td>
+                    <td>κ ≈ 1 - 3GM/(c²a(1-e²)) für schwache Felder</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>4. Beispiel: Merkur</h2>
+            
+            <div class="equation">
+                <h3>4.1 Parameter</h3>
+                <ul>
+                    <li>\( a = 5.79 \times 10^{10} \) m</li>
+                    <li>\( e = 0.206 \)</li>
+                    <li>\( M_\odot = 1.989 \times 10^{30} \) kg</li>
+                </ul>
+                
+                <h3>4.2 Berechnung von κ</h3>
+                \[
+                \kappa = \sqrt{1 - \frac{6 \cdot 6.674 \times 10^{-11} \cdot 1.989 \times 10^{30}}{(3 \times 10^8)^2 \cdot 5.79 \times 10^{10} \cdot (1-0.206^2)}} \approx 0.999983
+                \]
+                
+                <h3>4.3 Geschwindigkeit im Perihel (φ = 0)</h3>
+                \[
+                \vec{v}(0) = \sqrt{\frac{GM}{a(1-e^2)}} (1 + e) \hat{φ} \approx 59 \, \text{km/s} \cdot \hat{φ}
+                \]
+            </div>
+
+            <h1>Orientierung der Einheitsvektoren in Polarkoordinaten</h1>
+
+            <div class="definition">
+                <h2>Definition der Einheitsvektoren</h2>
+                <p>
+                    In Polarkoordinaten <span class="important">(r, φ)</span> für Planetenbahnen gilt:
+                </p>
+                <ul>
+                    <li><strong>\(\hat{r}\)</strong> zeigt <span class="important">radial nach außen</span> vom Zentralkörper weg</li>
+                    <li><strong>\(\hat{φ}\)</strong> zeigt <span class="important">tangential</span> in Bewegungsrichtung (rechtshändig)</li>
+                </ul>
+            </div>
+
+            <div class="definition">
+                <h2>Wichtige Hinweise</h2>
+                <ol>
+                    <li>Die <span class="important">Gravitationskraft</span> wirkt entgegen \(\hat{r}\): 
+                        \[ \vec{F}_{\text{grav}} = -\frac{GMm}{r^2}\hat{r} \]</li>
+                    <li>Die <span class="important">Bewegungsrichtung</span> ist eine Kombination aus:
+                        <ul>
+                            <li>Radialkomponente \(v_r = \dot{r}\) (in \(\hat{r}\)-Richtung)</li>
+                            <li>Azimutalkomponente \(v_φ = r\dot{φ}\) (in \(\hat{φ}\)-Richtung)</li>
+                        </ul>
+                    </li>
+                    <li>Bei einer <span class="important">elliptischen Bahn</span>:
+                        <ul>
+                            <li>\(\hat{r}\) dreht sich mit dem Winkel φ</li>
+                            <li>\(\hat{φ}\) steht immer senkrecht auf \(\hat{r}\)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Weber-Kraft als Alternative zur Allgemeinen Relativitätstheorie - Komplette Dokumentation</p>
+        </footer>
+    </div>
+</body>
+</html>

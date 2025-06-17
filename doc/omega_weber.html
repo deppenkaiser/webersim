@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relativistische Merkurbahn mit modifizierter Gravitation</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+        }
+        .result {
+            background-color: #e8f4f8;
+            border-left: 4px solid #2980b9;
+            padding: 15px;
+            margin: 25px 0;
+        }
+        .derivation {
+            background-color: #f5f5f5;
+            padding: 12px;
+            margin: 15px 0;
+            border-left: 4px solid #7f8c8d;
+        }
+        .important {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Navigation */
+        #sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        #sidebar h3 {
+            color: #3498db;
+            margin-top: 20px;
+        }
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        #sidebar li {
+            margin: 10px 0;
+        }
+        #sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0px;
+            border-radius: 4px;
+        }
+        #sidebar a:hover {
+            background: #3498db;
+        }
+        #content {
+            margin-left: 270px;
+        }
+        .section {
+            padding-top: 20px;
+            margin-top: -20px;
+        }
+        @media (max-width: 768px) {
+            #sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            #content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="r_v_a_total_vektor.html">Zurück</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h1>Berechnung der Winkelgeschwindigkeit nach Weber-Gravitation</h1>
+
+        <section>
+            <h2>1. Grundgleichungen der Weber-Gravitation</h2>
+            
+            <div class="equation">
+                <h3>Weber-Gravitationskraft</h3>
+                \[ F = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right) \]
+            </div>
+            
+            <div class="equation">
+                <h3>Bewegungsgleichung in Polarkoordinaten</h3>
+                \[ m(\ddot{r} - r\dot{\phi}^2) = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right) \]
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Herleitung der Winkelgeschwindigkeit</h2>
+            
+            <div class="derivation">
+                <h3>Drehimpulserhaltung</h3>
+                \[ h = r^2\dot{\phi} = \text{konstant} \]
+                \[ \Rightarrow \dot{\phi} = \frac{h}{r^2} \]
+                <p>Diese fundamentale Beziehung bleibt auch in der Weber-Gravitation gültig.</p>
+            </div>
+            
+            <div class="derivation">
+                <h3>Radialgleichung mit Weber-Korrektur</h3>
+                <p>Nach Substitution von \( u = 1/r \) und Linearisierung:</p>
+                \[ \frac{d^2u}{d\varphi^2} + u = \frac{GM}{h^2} + \frac{3GM}{c^2}u^2 - \frac{GM}{2c^2h^2}\left(\frac{du}{d\varphi}\right)^2 \]
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Lösung für die Winkelgeschwindigkeit</h2>
+            
+            <div class="result">
+                <h3>Exakte Winkelgeschwindigkeit</h3>
+                \[ \dot{\phi}(\varphi) = \frac{h}{r(\varphi)^2} \]
+                <p>wobei \( r(\varphi) \) aus der modifizierten Radialgleichung zu bestimmen ist.</p>
+            </div>
+            
+            <div class="derivation">
+                <h3>Näherungslösung für kleine Störungen</h3>
+                <p>Für \( r(\varphi) \) in erster Ordnung:</p>
+                \[ r(\varphi) \approx \frac{a(1-e^2)}{1 + e\cos\varphi} \left[1 + \frac{3GM}{c^2a(1-e^2)}\varphi e\sin\varphi\right] \]
+                <p>Daraus folgt die Winkelgeschwindigkeit:</p>
+                \[ \dot{\phi}(\varphi) \approx \frac{h(1 + e\cos\varphi)^2}{a^2(1-e^2)^2} \left[1 - \frac{6GM}{c^2a(1-e^2)}\varphi e\sin\varphi\right] \]
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Anwendung auf Merkur</h2>
+            
+            <table>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Wert</th>
+                </tr>
+                <tr>
+                    <td>Große Halbachse \( a \)</td>
+                    <td>5.79 × 10<sup>10</sup> m</td>
+                </tr>
+                <tr>
+                    <td>Exzentrizität \( e \)</td>
+                    <td>0.2056</td>
+                </tr>
+                <tr>
+                    <td>Spezifischer Drehimpuls \( h \)</td>
+                    <td>2.713 × 10<sup>15</sup> m²/s</td>
+                </tr>
+            </table>
+            
+            <div class="result">
+                <h3>Winkelgeschwindigkeit im Perihel (\(\varphi = 0\))</h3>
+                \[ \dot{\phi}(0) = \frac{2.713 \times 10^{15}}{(4.69 \times 10^{10})^2} \approx 1.23 \times 10^{-6} \, \text{rad/s} \]
+                <p>Mit Weber-Korrektur:</p>
+                \[ \dot{\phi}_\text{Weber}(0) \approx 1.23 \times 10^{-6} \left[1 - 2.1 \times 10^{-8}\right] \, \text{rad/s} \]
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Zusammenfassung</h2>
+            <div class="important">
+                <p>Die korrekte Winkelgeschwindigkeit unter Weber-Gravitation ist:</p>
+                \[ \boxed{\dot{\phi}(\varphi) = \frac{h}{r(\varphi)^2}} \]
+                <p>wobei \( r(\varphi) \) aus der modifizierten Weber-Gleichung zu bestimmen ist. Die Weber-Kraft führt zu einer kleinen Modulation der klassischen Kepler-Geschwindigkeit.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Weber-Kraft als Alternative zur Allgemeinen Relativitätstheorie - Komplette Dokumentation</p>
+        </footer>
+    </div>
+</body>
+</html>

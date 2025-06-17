@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zusammengefasste Hauptgleichungen der Weber-Kraft-Dynamik</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+        }
+        .vector {
+            font-weight: bold;
+            color: #8e44ad;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .important {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zusammengefasste Hauptgleichungen der Weber-Kraft-Dynamik</h1>
+
+    <div class="section">
+        <h2>1. Vektordefinitionen und Kinematik</h2>
+        
+        <div class="equation">
+            <h3>Polarkoordinatenbasis</h3>
+            \[
+            \begin{align*}
+            \hat{r} &= \cos\phi\,\hat{x} + \sin\phi\,\hat{y} \\
+            \hat{\phi} &= -\sin\phi\,\hat{x} + \cos\phi\,\hat{y}
+            \end{align*}
+            \]
+        </div>
+        
+        <div class="equation">
+            <h3>Ortsvektor und Ableitungen</h3>
+            \[
+            \vec{r}(\phi) = r(\phi)\hat{r}
+            \]
+            \[
+            \vec{v}(\phi) = \dot{r}\hat{r} + r\dot{\phi}\hat{\phi} = h\left(-\frac{du}{d\phi}\hat{r} + u\hat{\phi}\right)
+            \]
+            \[
+            \vec{a}(\phi) = (\ddot{r} - r\dot{\phi}^2)\hat{r} + (r\ddot{\phi} + 2\dot{r}\dot{\phi})\hat{\phi}
+            \]
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Weber-Kraft und Bewegungsgleichungen</h2>
+        
+        <div class="equation">
+            <h3>Weber-Gesamtkraft (vektoriell)</h3>
+            \[
+            \vec{F}_{\text{Weber}} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)\hat{r}
+            \]
+            <p>Für Mehrkörpersysteme:</p>
+            \[
+            \vec{F}_{\text{Gesamt}} = \sum_j -\frac{GM_j m}{r_j^2}\left(1 - \frac{\dot{r}_j^2}{c^2} + \frac{r_j\ddot{r}_j}{2c^2}\right)\hat{r}_j
+            \]
+        </div>
+        
+        <div class="equation">
+            <h3>Bewegungsgleichungen in Polarkoordinaten</h3>
+            <p>Radialkomponente:</p>
+            \[
+            \ddot{r} - r\dot{\phi}^2 = -\frac{GM}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)
+            \]
+            <p>Azimutalkomponente:</p>
+            \[
+            r\ddot{\phi} + 2\dot{r}\dot{\phi} = 0 \quad \Rightarrow \quad h = r^2\dot{\phi} = \text{konst.}
+            \]
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Lösungen der Bahngleichungen</h2>
+        
+        <div class="equation">
+            <h3>Transformierte Differentialgleichung</h3>
+            \[
+            \frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{3GM}{c^2}u^2 - \frac{GM}{2c^2 h^2}\left(\frac{du}{d\phi}\right)^2
+            \]
+            <p>mit \( u = \frac{1}{r} \), \( \dot{r} = -h\frac{du}{d\phi} \), \( \ddot{r} = -h^2 u^2 \frac{d^2u}{d\phi^2} \)</p>
+        </div>
+        
+        <div class="equation">
+            <h3>Exakte Lösung (bis zur 1. Ordnung in 1/c²)</h3>
+            \[
+            \vec{r}(\phi) = \frac{a(1-e^2)}{1 + e\cos(\kappa\phi)} \left[1 + \frac{3G^2M^2}{c^2h^4}\left(1 + \frac{e^2}{2} + e\phi\sin(\kappa\phi)\right)\right] \hat{r}
+            \]
+            <p>mit \(\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}\) und \(\hat{r} = \cos\phi\,\hat{x} + \sin\phi\,\hat{y}\)</p>
+        </div>
+        
+        <div class="equation">
+            <h3>Geschwindigkeitsfeld</h3>
+            \[
+            \vec{v}(\phi) = \sqrt{\frac{GM}{a(1-e^2)}} \left( \frac{e \kappa \sin(\kappa \phi)}{1 + e \cos(\kappa \phi)} \hat{r} + (1 + e \cos(\kappa \phi)) \hat{\phi} \right)
+            \]
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. N-Körper-Systeme</h2>
+        
+        <div class="equation">
+            <h3>Beschleunigung des i-ten Körpers</h3>
+            \[
+            \vec{a}_i = -\sum_{j \neq i} \frac{GM_j}{r_{ij}^3} \left(
+            1 - \frac{\dot{r}_{ij}^2}{c^2} + \frac{r_{ij} \ddot{r}_{ij}}{2c^2}
+            \right) \vec{r}_{ij}
+            \]
+            <p>mit \( r_{ij} = |\vec{r}_i - \vec{r}_j| \), \( \vec{r}_{ij} = \vec{r}_i - \vec{r}_j \)</p>
+        </div>
+        
+        <div class="equation">
+            <h3>Radialbeschleunigungsterm</h3>
+            \[
+            \ddot{r}_{ij} = \frac{(\vec{v}_{ij} \cdot \vec{v}_{ij} + \vec{r}_{ij} \cdot \vec{a}_{ij}) r_{ij} - (\vec{r}_{ij} \cdot \vec{v}_{ij})^2 / r_{ij}}{r_{ij}^2}
+            \]
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Physikalische Interpretation</h2>
+        
+        <table>
+            <tr>
+                <th>Term</th>
+                <th>Bedeutung</th>
+            </tr>
+            <tr>
+                <td>\(\kappa\phi\)</td>
+                <td>Relativistische Winkelkorrektur (Periheldrehung)</td>
+            </tr>
+            <tr>
+                <td>\(\frac{3GM}{c^2}u^2\)</td>
+                <td>Hauptrelativistische Korrektur der Bahn</td>
+            </tr>
+            <tr>
+                <td>\(\frac{GM}{2c^2 h^2}\left(\frac{du}{d\phi}\right)^2\)</td>
+                <td>Korrektur durch radiale Geschwindigkeitsänderung</td>
+            </tr>
+        </table>
+        
+        <div class="important">
+            <p>Wesentliche Eigenschaften der vektoriellen Darstellung:</p>
+            <ul>
+                <li>Die Weber-Kraft wirkt ausschließlich in radialer Richtung (\(\hat{r}\))</li>
+                <li>Die Drehimpulserhaltung erzwingt die Form der \(\hat{\phi}\)-Komponente</li>
+                <li>Alle relativistischen Korrekturen sind in den Skalarfaktoren enthalten</li>
+                <li>Die vektorielle Struktur bleibt in allen Gleichungen erhalten</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>© 2025 Weber-Kraft als Alternative zur Allgemeinen Relativitätstheorie - Komplette Dokumentation</p>
+        </footer>
+    </div>
+</body>
+</html>

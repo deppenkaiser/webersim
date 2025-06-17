@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>N-Körper-Integration: Theorie</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        .formula { 
+            background: #f5f5f5; 
+            padding: 10px; 
+            border-left: 3px solid #3498db;
+            margin: 15px 0;
+            font-family: "Courier New", monospace;
+        }
+        h2 { color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <h1>N-Körper-Integration mit Velocity-Verlet</h1>
+
+    <h2>1. Physikalische Grundgleichungen</h2>
+    <div class="formula">
+        <strong>Gravitationskraft zwischen Körper i und j:</strong><br>
+        F<sub>ij</sub> = -G m<sub>i</sub>m<sub>j</sub> (x<sub>i</sub> - x<sub>j</sub>) / |x<sub>i</sub> - x<sub>j</sub>|<sup>3</sup>
+    </div>
+
+    <h2>2. Velocity-Verlet Algorithmus</h2>
+    <h3>Initialisierung (t = 0)</h3>
+    <ol>
+        <li>Setze Startpositionen x<sub>i</sub>(0) und Geschwindigkeiten v<sub>i</sub>(0)</li>
+        <li>Berechne Anfangsbeschleunigungen:
+            <div class="formula">
+                a<sub>i</sub>(0) = (1/m<sub>i</sub>) ∑<sub>j≠i</sub> F<sub>ij</sub>(0)
+            </div>
+        </li>
+    </ol>
+
+    <h3>Zeitschritt t → t + Δt</h3>
+    <ol>
+        <li><strong>Halber Geschwindigkeitsschritt:</strong>
+            <div class="formula">
+                v<sub>i</sub>(t + Δt/2) = v<sub>i</sub>(t) + ½ a<sub>i</sub>(t) Δt
+            </div>
+        </li>
+        <li><strong>Positionsupdate:</strong>
+            <div class="formula">
+                x<sub>i</sub>(t + Δt) = x<sub>i</sub>(t) + v<sub>i</sub>(t + Δt/2) Δt
+            </div>
+        </li>
+        <li><strong>Neue Beschleunigungen:</strong>
+            <div class="formula">
+                a<sub>i</sub>(t + Δt) = (1/m<sub>i</sub>) ∑<sub>j≠i</sub> F<sub>ij</sub>(t + Δt)
+            </div>
+        </li>
+        <li><strong>Vollständiger Geschwindigkeitsschritt:</strong>
+            <div class="formula">
+                v<sub>i</sub>(t + Δt) = v<sub>i</sub>(t + Δt/2) + ½ a<sub>i</sub>(t + Δt) Δt
+            </div>
+        </li>
+    </ol>
+
+    <h2>3. Energieerhaltung</h2>
+    <div class="formula">
+        E<sub>ges</sub> = ∑<sub>i</sub> ½ m<sub>i</sub>|v<sub>i</sub>|<sup>2</sup> - G ∑<sub>i&lt;j</sub> (m<sub>i</sub>m<sub>j</sub> / |x<sub>i</sub> - x<sub>j</sub>|)
+    </div>
+
+    <h2>4. Zeitschrittkontrolle</h2>
+    <div class="formula">
+        Optimal: Δt ≈ T/10<sup>4</sup> (T = typische Umlaufzeit)
+    </div>
+
+    <footer>
+        <p>© 2025 Weber-Kraft als Alternative zur Allgemeinen Relativitätstheorie - Komplette Dokumentation</p>
+    </footer>
+</body>
+</html>
