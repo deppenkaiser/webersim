@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "sm.h": "c",
+        "typedefs.h": "c",
+        "physics.h": "c"
+    }
+}
