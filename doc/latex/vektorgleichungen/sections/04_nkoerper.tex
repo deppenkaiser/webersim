@@ -1,0 +1,15 @@
+\section{N-Körper-Systeme}
+
+\subsection*{Beschleunigung des i-ten Körpers}
+\begin{equation}
+\ddot{\vec{r}}_i = -\sum_{j\neq i} \frac{GM_j}{|\vec{r}_{ij}|^3} \left(
+1 - \frac{(\dot{\vec{r}}_{ij}\cdot\vec{r}_{ij})^2}{c^2|\vec{r}_{ij}|^2} + \frac{\vec{r}_{ij}\cdot\ddot{\vec{r}}_{ij}}{2c^2}
+\right) \vec{r}_{ij}
+\end{equation}
+mit \(\vec{r}_{ij} = \vec{r}_i - \vec{r}_j = \begin{pmatrix} x_i-x_j \\ y_i-y_j \\ z_i-z_j \end{pmatrix}\)
+
+\subsection*{Radialkomponenten}
+\begin{align}
+\dot{r}_{ij} &= \frac{\vec{r}_{ij}\cdot\dot{\vec{r}}_{ij}}{|\vec{r}_{ij}|} \\
+\ddot{r}_{ij} &= \frac{|\dot{\vec{r}}_{ij}|^2 + \vec{r}_{ij}\cdot\ddot{\vec{r}}_{ij} - \dot{r}_{ij}^2}{|\vec{r}_{ij}|}
+\end{align}

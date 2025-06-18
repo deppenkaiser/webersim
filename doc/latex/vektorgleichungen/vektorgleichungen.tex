@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{subfiles}
+
+\geometry{a4paper, margin=2cm}
+
+\title{Vektorielle Hauptgleichungen der Weber-Kraft-Dynamik}
+\author{}
+\date{}
+
+% Farbdefinitionen
+\definecolor{resultbg}{RGB}{232, 244, 248}
+\definecolor{derivbg}{RGB}{245, 245, 245}
+
+% Box-Definitionen
+\newcommand{\eqbox}[1]{
+  \fcolorbox{blue}{white}{
+    \parbox{\linewidth}{#1}
+  }
+}
+
+\newcommand{\resultbox}[1]{
+  \fcolorbox{blue}{resultbg}{
+    \parbox{\linewidth}{#1}
+  }
+}
+
+\newcommand{\derivbox}[1]{
+  \fcolorbox{gray}{derivbg}{
+    \parbox{\linewidth}{#1}
+  }
+}
+
+\begin{document}
+
+\maketitle
+
+\subfile{sections/01_vektordefinitionen}
+\subfile{sections/02_weber_kraft}
+\subfile{sections/03_loesungen}
+\subfile{sections/04_nkoerper}
+\subfile{sections/05_tensor}
+
+\end{document}
