@@ -1,0 +1,142 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{subfiles}
+\usepackage{textcomp}
+\usepackage{pifont}
+\usepackage{listings}
+
+\geometry{a4paper, margin=2cm}
+
+\title{Weber-Kraft als fundamentale Theorie der Quantengravitation}
+\author{}
+\date{}
+
+% Farbdefinitionen
+\definecolor{resultbg}{RGB}{232, 244, 248}
+\definecolor{derivbg}{RGB}{245, 245, 245}
+\definecolor{defboxcolor}{RGB}{220,220,220}
+\definecolor{examplecolor}{rgb}{0.95,0.95,0.85}
+\definecolor{summarycolor}{RGB}{240,240,200}
+\definecolor{warningbg}{RGB}{255,255,204}
+
+% Box-Definitionen
+\newcommand{\eqbox}[1]{
+  \fcolorbox{blue}{white}{
+    \parbox{\linewidth}{#1}
+  }
+}
+
+\newcommand{\resultbox}[1]{
+  \fcolorbox{blue}{resultbg}{
+    \parbox{\linewidth}{#1}
+  }
+}
+
+\newcommand{\derivbox}[1]{
+  \fcolorbox{gray}{derivbg}{
+    \parbox{\linewidth}{#1}
+  }
+}
+
+\newcommand{\importantbox}[1]{
+  \fcolorbox{red}{white}{
+    \parbox{\linewidth}{\textbf{\textcolor{red}{#1}}}
+  }
+}
+
+\newcommand{\defbox}[1]{%
+  \noindent
+  \fcolorbox{blue}{defboxcolor}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \raggedright
+      \setlength{\emergencystretch}{2em}%
+      #1
+    }%
+  }%
+}
+
+\newcommand{\examplebox}[1]{%
+  \noindent
+  \fcolorbox{green}{examplecolor}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \raggedright
+      \setlength{\emergencystretch}{2em}%
+      #1
+    }%
+  }%
+}
+
+\newcommand{\summarybox}[1]{%
+  \noindent
+  \fcolorbox{blue}{summarycolor}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \raggedright
+      \setlength{\emergencystretch}{2em}%
+      #1
+    }%
+  }%
+}
+
+\newcommand{\warningbox}[1]{
+  \fcolorbox{red}{warningbg}{
+    \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+    #1
+    \end{minipage}
+  }
+}
+
+\begin{document}
+\maketitle
+\chapter{Einleitung}
+\subfile{index/sections/00_zusammenfassung}
+\subfile{index/sections/01_einfuehrung}
+\subfile{index/sections/02_periheldrehung}
+\subfile{index/sections/03_interpretation}
+\subfile{index/sections/04_grenzen}
+\subfile{index/sections/05_beta_formel}
+\subfile{index/sections/06_universal_formel}
+\subfile{index/sections/07_rotverschiebung}
+\subfile{index/sections/08_gravitationswellen}
+\subfile{index/sections/09_quantized_space}
+\subfile{index/sections/10_knoten_theorie}
+\subfile{index/sections/11_qed}
+\subfile{index/sections/12_vorhersagekraft}
+\subfile{index/sections/13_history}
+\subfile{index/sections/14_roadmap}
+\subfile{index/sections/15_vergleich}
+\subfile{index/sections/16_literatur}
+\chapter{Bahndynamik}
+\subfile{vektorgleichungen/sections/01_vektordefinitionen}
+\subfile{vektorgleichungen/sections/02_weber_kraft}
+\subfile{vektorgleichungen/sections/03_loesungen}
+\subfile{vektorgleichungen/sections/04_nkoerper}
+\subfile{vektorgleichungen/sections/05_tensor}
+\subfile{merkur_bahn/sections/01_grundgleichungen}
+\subfile{merkur_bahn/sections/02_herleitung}
+\subfile{merkur_bahn/sections/03_loesung}
+\subfile{merkur_bahn/sections/04_anwendung}
+\subfile{merkur_bahn/sections/05_zusammenfassung}
+\chapter{Störungsrechnung}
+\subfile{stoerungsrechnung/sections/01_einfuehrung}
+\subfile{stoerungsrechnung/sections/02_systemdefinition}
+\subfile{stoerungsrechnung/sections/03_stoerterme}
+\subfile{stoerungsrechnung/sections/04_gesamtstoerungen}
+\subfile{stoerungsrechnung/sections/05_beispiel}
+\subfile{stoerungsrechnung/sections/06_zusammenfassung}
+\chapter{Baryzentrisches Koordinatensystem}
+\subfile{baryzentrisch/sections/01_transformation}
+\subfile{baryzentrisch/sections/02_validierung}
+\subfile{baryzentrisch/sections/03_beispiel}
+\subfile{baryzentrisch/sections/04_implementierung}
+\end{document}
