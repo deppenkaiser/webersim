@@ -149,18 +149,26 @@ Die Simulation der Dynamik sämtlicher Objekte (Planeten, Sonne, etc.) wird mit 
 realisiert. Jeder Zyklus entspricht einem Zeitschritt $T$. $T$ ist im Moment konstant, könnte aber auch variabel sein.
 
 Mit Hilfe der aus der Weber-Gravitationskraft hergeleiteten Gleichungen für $\vec{r}(\phi)$, $\vec{v}(\phi)$, $\vec{\omega}(\phi)$
-lassen sich die Anfangsbedingungen (Startwerte der Simulation) bestimmen. Anschließend werden die Störungen $\delta\vec{r}$, $\delta\vec{v}$,
-$\delta\vec{\omega}$ berechnet, welche sich aus den Positionen und Geschwindigkeiten ergeben, und den jeweiligen Startwerten hinzugefügt.
+lassen sich die Anfangsbedingungen (Startwerte der Simulation) bestimmen. Obwohl diese Gleichungen nur Näherungen sind,
+erreichen sie dennoch die selbe Genauigkeit wie die ART (Periheldrehung des Planeten Merkur). Im Anschluss werden die Störungen
+$\delta\vec{r}$, $\delta\vec{v}$, $\delta\vec{\omega}$ berechnet, welche sich aus den Positionen und Geschwindigkeiten ergeben;
+diese werden den jeweiligen Startwerten hinzugefügt.
 
-An dieser Stelle ensteht die erste Ungenauigkeit der Simulation. Die Störungen der Himmelskörper werden von ungestörten
-Positionen aus berechnet. Richtig wäre es, gestörte Ausgangswerte zur Berechnung der Störung eines bestimmten Himmelskörpers zu verwenden.
-Das Problem hierbei wäre eine Rekursion, die erst dann endet, wenn die Störungen gegen einen bestimmten Wert konvergieren.
+Die Weber-Gravitation besitzt einen beschleunigungsabhängigen Term, welcher wiederum von der Weber-Gravitationskraft abhängig ist.
+Eine exakte analytische Berechnung ist daher nicht möglich; theoretisch ließen sich aber die Startwerte auch numerisch berechnen.
+
+Eine weitere Ungenauigkeit der Simulation besteht durch die unvollständige Störungsberechnung. Die Störungen der Himmelskörper werden
+von ungestörten Positionen aus berechnet. Richtig wäre es, gestörte Ausgangswerte zur Berechnung der Störung eines bestimmten
+Himmelskörpers zu verwenden. Das Problem hierbei wäre eine Rekursion, die erst dann endet, wenn die Störungen gegen einen bestimmten
+Wert konvergieren.
 
 Aus praktischer Sicht wäre dieser Aufwand ungerechtfertigt, da die \enquote{Störung der Störung} im numerischen Rauschen untergeht.
+Auch die numerischen Ungenauigkeiten spielen eine Rolle, wobei sie durch das verwendete Simulationsprinzip (Integration des Winkels)
+stark reduziert werden.
 
 Bis zu diesem Zeitpunkt wurden alle Berechnungen im heliozentrischen Koordinatensystem ducrhgeführt, wobei die Sonne die
 Geschwindigkeit $\vec{v}_\text{Sonne} = \vec{0}$ hat und sich im Koordinatenursprung $\vec{r}_\text{Sonne} = \vec{0}$ befindet.
-Für die Berechnung der Planeten wurden deren Monde (falls vorhanden), als zusätzliche Massen der Planetenmasse hinzugefügt.
+Für die Berechnung der Planeten wurden deren Monde (falls vorhanden), als zusätzliche Massen der jeweiligen Planetenmasse hinzugefügt.
 Eine zukünftige Erweiterung der Simulation könnte auch die Monde simulieren.
 
 Im nächsten Berechnungszustand werden alle Planeten ins baryzentrische Koordinatensystem verschoben. Hierdurch kann auch die
@@ -172,7 +180,7 @@ Alle Himmelskörper inkl. der Sonne, müssen sich um einen virtuellen Nullpunkt 
 Raumfahrzeuge mitsimuliert werden (Dynamik eines Raumschiffs im Sonnensystem), wären diese hier auszuschließen.
 
 Als letzter Simulationszustand kann nun der zukünftige Winkel $\phi_\text{n+1} = \omega(\phi_n) * T$ für jeden Himmelskörper
-berechnet werden. Die Integration findet also nicht über die Ortsvektoren und den Kräften statt, sonern über den Winkel; hierdurch
+berechnet werden. Die Integration findet also nicht über die Ortsvektoren und den Kräften statt, sondern über den Winkel; hierdurch
 ensteht eine höhere numerische Stabilität. Je kleiner der Zeitschritt gewählt wird, desto präziser ist die Simulation.
 
 Im nächsten Simulationsschritt wiederholt sich der ganze Vorgang. Es gibt somit keine Fehler in der Berechnung der Positionen
@@ -180,10 +188,15 @@ oder Geschwindigkeiten, da diese immer von einem klar definierten Winkel abhäng
 Integration des Winkels entstehen, da sich die Winkelgeschwindigkeit kontinuierlich ändert, aber für die Zeitdauer eines Schritts
 eine konstante Winkelgeschwindigkeit angenommen wird.
 
+\section{Ausblick}
 Die weiterführende Entwicklung der Weber-Gravitationstheorie, hin zu einer Quantengravitation, erfordert ebenfalls eine schrittweise
 Berechnung (diskretes Raumgitter). Somit ist diese Simulation, bezüglich ihrer physikalischen Aussagekraft, erweiterbar und prinzipiell
 auf dem richtigen Weg.
 
 Eine besondere Eigenschaft der Weber-Kraft ist, dass sie drei Kräfte (Elektromagnetismus, Gravitation) einheitlich beschreiben - und
 somit auch zusammenfassen kann. Sie ist deshalb für eine \enquote{Theorie von allem} predestiniert.
+
+\chapter{Anhang}
+\section{Quellcode und Dokumentation}
+https://github.com/deppenkaiser/webersim
 \end{document}
