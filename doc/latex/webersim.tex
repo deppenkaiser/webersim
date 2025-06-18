@@ -18,10 +18,12 @@
 \usepackage{csquotes}
 
 \geometry{a4paper, margin=2cm}
+\setlength{\parindent}{0pt} % Keine Einrückung
+\setlength{\parskip}{5pt}   % 6pt Abstand zwischen Absätzen
 
 \title{Weber-Kraft als fundamentale Theorie der Quantengravitation}
-\author{}
-\date{}
+\author{Michael Czybor}
+\date{20. Juni 2025}
 
 % Farbdefinitionen
 \definecolor{resultbg}{RGB}{232, 244, 248}
@@ -141,4 +143,47 @@
 \subfile{baryzentrisch/sections/02_validierung}
 \subfile{baryzentrisch/sections/03_beispiel}
 \subfile{baryzentrisch/sections/04_implementierung}
+\chapter{Simulation}
+\section{Funktionsweise}
+Die Simulation der Dynamik sämtlicher Objekte (Planeten, Sonne, etc.) wird mit Hilfe eines Zustandsautomaten
+realisiert. Jeder Zyklus entspricht einem Zeitschritt $T$. $T$ ist im Moment konstant, könnte aber auch variabel sein.
+
+Mit Hilfe der aus der Weber-Gravitationskraft hergeleiteten Gleichungen für $\vec{r}(\phi)$, $\vec{v}(\phi)$, $\vec{\omega}(\phi)$
+lassen sich die Anfangsbedingungen (Startwerte der Simulation) bestimmen. Anschließend werden die Störungen $\delta\vec{r}$, $\delta\vec{v}$,
+$\delta\vec{\omega}$ berechnet, welche sich aus den Positionen und Geschwindigkeiten ergeben, und den jeweiligen Startwerten hinzugefügt.
+
+An dieser Stelle ensteht die erste Ungenauigkeit der Simulation. Die Störungen der Himmelskörper werden von ungestörten
+Positionen aus berechnet. Richtig wäre es, gestörte Ausgangswerte zur Berechnung der Störung eines bestimmten Himmelskörpers zu verwenden.
+Das Problem hierbei wäre eine Rekursion, die erst dann endet, wenn die Störungen gegen einen bestimmten Wert konvergieren.
+
+Aus praktischer Sicht wäre dieser Aufwand ungerechtfertigt, da die \enquote{Störung der Störung} im numerischen Rauschen untergeht.
+
+Bis zu diesem Zeitpunkt wurden alle Berechnungen im heliozentrischen Koordinatensystem ducrhgeführt, wobei die Sonne die
+Geschwindigkeit $\vec{v}_\text{Sonne} = \vec{0}$ hat und sich im Koordinatenursprung $\vec{r}_\text{Sonne} = \vec{0}$ befindet.
+Für die Berechnung der Planeten wurden deren Monde (falls vorhanden), als zusätzliche Massen der Planetenmasse hinzugefügt.
+Eine zukünftige Erweiterung der Simulation könnte auch die Monde simulieren.
+
+Im nächsten Berechnungszustand werden alle Planeten ins baryzentrische Koordinatensystem verschoben. Hierdurch kann auch die
+Position und Bewegung der Sonne bestimmt werden.
+
+Durch die Verwendung des barizentrischen Systems entsteht auch die Möglichkeit einer einfachen Überprüfung der Plausibilität der
+kinetischen Berechnungen. Die Summe über alle Impulse muss Null ergeben. Das gleiche gilt auch für die Summe des Systemschwerpunkts.
+Alle Himmelskörper inkl. der Sonne, müssen sich um einen virtuellen Nullpunkt bewegen; dem Baryzentrum des Sonnensystems. Sollten
+Raumfahrzeuge mitsimuliert werden (Dynamik eines Raumschiffs im Sonnensystem), wären diese hier auszuschließen.
+
+Als letzter Simulationszustand kann nun der zukünftige Winkel $\phi_\text{n+1} = \omega(\phi_n) * T$ für jeden Himmelskörper
+berechnet werden. Die Integration findet also nicht über die Ortsvektoren und den Kräften statt, sonern über den Winkel; hierdurch
+ensteht eine höhere numerische Stabilität. Je kleiner der Zeitschritt gewählt wird, desto präziser ist die Simulation.
+
+Im nächsten Simulationsschritt wiederholt sich der ganze Vorgang. Es gibt somit keine Fehler in der Berechnung der Positionen
+oder Geschwindigkeiten, da diese immer von einem klar definierten Winkel abhängig sind. Es kann lediglich ein Fehler in der
+Integration des Winkels entstehen, da sich die Winkelgeschwindigkeit kontinuierlich ändert, aber für die Zeitdauer eines Schritts
+eine konstante Winkelgeschwindigkeit angenommen wird.
+
+Die weiterführende Entwicklung der Weber-Gravitationstheorie, hin zu einer Quantengravitation, erfordert ebenfalls eine schrittweise
+Berechnung (diskretes Raumgitter). Somit ist diese Simulation, bezüglich ihrer physikalischen Aussagekraft, erweiterbar und prinzipiell
+auf dem richtigen Weg.
+
+Eine besondere Eigenschaft der Weber-Kraft ist, dass sie drei Kräfte (Elektromagnetismus, Gravitation) einheitlich beschreiben - und
+somit auch zusammenfassen kann. Sie ist deshalb für eine \enquote{Theorie von allem} predestiniert.
 \end{document}
