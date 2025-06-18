@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{subfiles}
+\usepackage{array}
+\usepackage{tabularx}
+
+\geometry{a4paper, margin=2cm}
+\setlength{\emergencystretch}{3em}
+\sloppy
+
+\title{Vollständige Störungsrechnung in kartesischen Koordinaten\\\large Mit konsistenter Notation und Doppelindizes}
+\author{}
+\date{}
+
+% Farbdefinitionen
+\definecolor{defboxcolor}{RGB}{238, 247, 255}
+\definecolor{importantcolor}{RGB}{255, 248, 225}
+\definecolor{examplecolor}{RGB}{245, 245, 245}
+\definecolor{summarycolor}{RGB}{232, 244, 248}
+
+\newcommand{\defbox}[1]{%
+  \noindent
+  \fcolorbox{blue}{defboxcolor}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \raggedright
+      \setlength{\emergencystretch}{2em}%
+      #1
+    }%
+  }%
+}
+
+\newcommand{\importantbox}[1]{%
+  \noindent
+  \fcolorbox{yellow}{importantcolor}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \raggedright
+      \setlength{\emergencystretch}{2em}%
+      #1
+    }%
+  }%
+}
+
+\newcommand{\examplebox}[1]{%
+  \noindent
+  \fcolorbox{green}{examplecolor}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \raggedright
+      \setlength{\emergencystretch}{2em}%
+      #1
+    }%
+  }%
+}
+
+\newcommand{\summarybox}[1]{%
+  \noindent
+  \fcolorbox{blue}{summarycolor}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \raggedright
+      \setlength{\emergencystretch}{2em}%
+      #1
+    }%
+  }%
+}
+\begin{document}
+
+\maketitle
+
+\subfile{sections/01_einfuehrung}
+\subfile{sections/02_systemdefinition}
+\subfile{sections/03_stoerterme}
+\subfile{sections/04_gesamtstoerungen}
+\subfile{sections/05_beispiel}
+\subfile{sections/06_zusammenfassung}
+
+\end{document}
