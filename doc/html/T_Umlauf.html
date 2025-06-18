@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berechnung der Umlaufzeit nach Weber-Gravitation</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+        }
+        .result {
+            background-color: #e8f4f8;
+            border-left: 4px solid #2980b9;
+            padding: 15px;
+            margin: 25px 0;
+        }
+        .derivation {
+            background-color: #f5f5f5;
+            padding: 12px;
+            margin: 15px 0;
+            border-left: 4px solid #7f8c8d;
+        }
+        .important {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        #sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        #sidebar h3 {
+            color: #3498db;
+            margin-top: 20px;
+        }
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        #sidebar li {
+            margin: 10px 0;
+        }
+        #sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        #sidebar a:hover {
+            background: #3498db;
+        }
+        #content {
+            margin-left: 270px;
+        }
+        .section {
+            padding-top: 20px;
+            margin-top: -20px;
+        }
+        @media (max-width: 768px) {
+            #sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            #content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="winkelgeschwindigkeit.html">Zurück zur Winkelgeschwindigkeit</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h1>Berechnung der Gesamtumlaufzeit nach Weber-Gravitation</h1>
+
+        <section>
+            <h2>1. Grundgleichung der Umlaufzeit</h2>
+            
+            <div class="equation">
+                <h3>Allgemeine Definition</h3>
+                \[ T = \int_{0}^{2\pi} \frac{d\varphi}{\dot{\phi}(\varphi)} \]
+                <p>Mit der Winkelgeschwindigkeit \(\dot{\phi}(\varphi) = \frac{h}{r(\varphi)^2}\) wird dies zu:</p>
+                \[ T = \frac{1}{h} \int_{0}^{2\pi} r(\varphi)^2 \, d\varphi \]
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Bahngleichung in Weber-Gravitation</h2>
+            
+            <div class="derivation">
+                <h3>Näherungslösung für r(φ)</h3>
+                \[ r(\varphi) \approx \frac{a(1-e^2)}{1 + e\cos\varphi} \left[1 + \frac{3GM}{c^2a(1-e^2)}\varphi e\sin\varphi \right] \]
+                
+                <h3>Quadratische Entwicklung</h3>
+                \[ r(\varphi)^2 \approx \frac{a^2(1-e^2)^2}{(1 + e\cos\varphi)^2} \left[1 + \frac{6GM}{c^2a(1-e^2)}\varphi e\sin\varphi \right] \]
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Berechnung des Integrals</h2>
+            
+            <div class="derivation">
+                <h3>Zerlegung des Integrals</h3>
+                \[ T \approx \underbrace{\frac{a^2(1-e^2)^2}{h} \int_{0}^{2\pi} \frac{d\varphi}{(1 + e\cos\varphi)^2}}_{T_{\text{Kepler}}} + \underbrace{\frac{6GMe}{c^2h} \int_{0}^{2\pi} \frac{\varphi \sin\varphi}{(1 + e\cos\varphi)^3} d\varphi}_{\Delta T} \]
+                
+                <h3>Lösung des Kepler-Integrals</h3>
+                \[ \int_{0}^{2\pi} \frac{d\varphi}{(1 + e\cos\varphi)^2} = \frac{2\pi}{(1-e^2)^{3/2}} \]
+                \[ \Rightarrow T_{\text{Kepler}} = \frac{2\pi a^2(1-e^2)^{1/2}}{h} \]
+                
+                <h3>Lösung des Weber-Korrekturterms</h3>
+                \[ \int_{0}^{2\pi} \frac{\varphi \sin\varphi}{(1 + e\cos\varphi)^3} d\varphi \approx \frac{3\pi e}{(1-e^2)^{5/2}} \]
+                \[ \Rightarrow \Delta T \approx \frac{18\pi GMe^2}{c^2h(1-e^2)^{5/2}} \]
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Gesamtlösung</h2>
+            
+            <div class="result">
+                <h3>Endgültiger Ausdruck</h3>
+                \[ T \approx T_{\text{Kepler}} \left[1 + \frac{9GMe^2}{c^2a(1-e^2)^2} \right] \]
+                <p>Mit \( h = \sqrt{GMa(1-e^2)} \):</p>
+                \[ \boxed{T \approx \frac{2\pi a^{3/2}}{\sqrt{GM}} \left(1 + \frac{9GMe^2}{c^2a(1-e^2)^2} \right)} \]
+            </div>
+            
+            <table>
+                <tr>
+                    <th>Term</th>
+                    <th>Bedeutung</th>
+                </tr>
+                <tr>
+                    <td>\(\frac{2\pi a^{3/2}}{\sqrt{GM}}\)</td>
+                    <td>Klassische Kepler-Umlaufzeit</td>
+                </tr>
+                <tr>
+                    <td>\(\frac{9GMe^2}{c^2a(1-e^2)^2}\)</td>
+                    <td>Weber'sche Relativitätskorrektur</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>5. Anwendung auf Merkur</h2>
+            
+            <table>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Wert</th>
+                </tr>
+                <tr>
+                    <td>Große Halbachse \( a \)</td>
+                    <td>5.79 × 10<sup>10</sup> m</td>
+                </tr>
+                <tr>
+                    <td>Exzentrizität \( e \)</td>
+                    <td>0.2056</td>
+                </tr>
+                <tr>
+                    <td>\( \frac{GM}{c^2a} \)</td>
+                    <td>1.1 × 10<sup>-8</sup></td>
+                </tr>
+            </table>
+            
+            <div class="result">
+                <h3>Numerische Auswertung</h3>
+                \[ T_{\text{Kepler}} \approx 87.97 \text{ Tage} \]
+                \[ \Delta T \approx 87.97 \times 9 \times 10^{-8} \approx 7.9 \text{ Millisekunden} \]
+                <p class="important">Die Weber-Korrektur ist für Merkur praktisch vernachlässigbar (≪ 1 Sekunde pro Umlauf).</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Gravitationstheorien im Vergleich - Weber vs. Einstein</p>
+        </footer>
+    </div>
+</body>
+</html>
