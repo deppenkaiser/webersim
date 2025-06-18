@@ -1,0 +1,26 @@
+\section{Implementierung}
+
+\begin{lstlisting}[language=C++,caption={Pseudocode für die Transformation}]
+// Berechne gewichtete Summen
+weighted_r = sum(m[i] * r[i])
+weighted_v = sum(m[i] * v[i])
+total_mass = M_sun + sum(m[i])
+
+// Baryzentrische Sonne
+R_sun = -weighted_r / total_mass
+V_sun = -weighted_v / total_mass
+
+// Baryzentrische Planeten
+for each planet i:
+    R[i] = R_sun + r[i]
+    V[i] = V_sun + v[i]
+\end{lstlisting}
+
+\warningbox{
+\subsection*{Numerische Genauigkeit}
+Verwende \texttt{double}-Präzision und überprüfe die Bedingungen:
+\begin{itemize}
+    \item $|\vec{R}_{\text{cm}}| < 10^{-10} \text{ AU}$
+    \item $|\vec{P}_{\text{total}}| < 10^{-10} \text{ kg m/s}$
+\end{itemize}
+}

@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{subfiles}
+
+\geometry{a4paper, margin=2cm}
+
+\title{Transformationsvorschrift: Heliozentrisch $\rightarrow$ Baryzentrisch}
+\author{}
+\date{}
+
+% Farbdefinitionen
+\definecolor{codebg}{RGB}{240, 240, 240}
+\definecolor{warningbg}{RGB}{255, 245, 245}
+
+% Box-Definitionen
+\newcommand{\codebox}[1]{
+  \fcolorbox{gray}{codebg}{
+    \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+      #1
+    \end{minipage}
+  }
+}
+
+\newcommand{\warningbox}[1]{
+  \fcolorbox{red}{warningbg}{
+    \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+    #1
+    \end{minipage}
+  }
+}
+
+% Code-Styling
+\lstset{
+    backgroundcolor=\color{codebg},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    captionpos=b
+}
+
+\begin{document}
+
+\maketitle
+
+\subfile{sections/01_transformation}
+\subfile{sections/02_validierung}
+\subfile{sections/03_beispiel}
+\subfile{sections/04_implementierung}
+
+\end{document}
