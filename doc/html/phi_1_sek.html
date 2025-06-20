@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berechnung der Winkeländerung Δφ für T = 1 Sekunde (Weber-Gravitation)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+        }
+        .result {
+            background-color: #e8f4f8;
+            border-left: 4px solid #2980b9;
+            padding: 15px;
+            margin: 25px 0;
+        }
+        .derivation {
+            background-color: #f5f5f5;
+            padding: 12px;
+            margin: 15px 0;
+            border-left: 4px solid #7f8c8d;
+        }
+        .important {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Berechnung der Winkeländerung Δφ für T = 1 Sekunde nach Weber-Gravitation</h1>
+
+    <section>
+        <h2>1. Grundgleichung der Winkelgeschwindigkeit</h2>
+        
+        <div class="equation">
+            <h3>Modifizierte Winkelgeschwindigkeit nach Weber</h3>
+            \[ \dot{\phi}(\varphi) = \frac{h}{r^2(\varphi)} \left(1 + \frac{3GM}{c^2 r(\varphi)}\right) \]
+            <p>wobei:</p>
+            <ul>
+                <li>\( h = \sqrt{GMa(1-e^2)} \) (spezifischer Drehimpuls)</li>
+                <li>\( r(\varphi) = \frac{a(1-e^2)}{1 + e \cos \varphi} \) (Bahnradius)</li>
+                <li>\( a \) = große Halbachse, \( e \) = Exzentrizität</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Winkeländerung für T = 1 Sekunde</h2>
+        
+        <div class="derivation">
+            <h3>Infinitesimale Änderung</h3>
+            <p>Für kleine Zeitintervalle \( T = 1\,\text{s} \):</p>
+            \[ \Delta \phi \approx \dot{\phi}(\varphi_0) \cdot T \]
+            <p>Explizit:</p>
+            \[ \Delta \phi = \left(\frac{h}{r^2(\varphi_0)} + \frac{3GMh}{c^2 r^3(\varphi_0)}\right) \cdot T \]
+        </div>
+        
+        <div class="result">
+            <h3>Ergebnis für Δφ (1 Sekunde)</h3>
+            \[ \boxed{ \Delta \phi = \frac{h}{r^2(\varphi_0)} \cdot 1\,\text{s} + \frac{3GMh}{c^2 r^3(\varphi_0)} \cdot 1\,\text{s} } \]
+            <p>Der zweite Term ist die <span class="important">Weber-Korrektur</span>, die langfristig zur Periheldrehung führt.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Beispiel: Merkur im Perihel (φ₀ = 0)</h2>
+        
+        <table>
+            <tr>
+                <th>Parameter</th>
+                <th>Wert</th>
+            </tr>
+            <tr>
+                <td>Große Halbachse \( a \)</td>
+                <td>5.79 × 10<sup>10</sup> m</td>
+            </tr>
+            <tr>
+                <td>Exzentrizität \( e \)</td>
+                <td>0.2056</td>
+            </tr>
+            <tr>
+                <td>Radius im Perihel \( r(0) \)</td>
+                <td>4.60 × 10<sup>10</sup> m</td>
+            </tr>
+        </table>
+        
+        <div class="derivation">
+            <h3>Berechnung</h3>
+            <p>Kepler-Term:</p>
+            \[ \frac{h}{r^2(0)} \approx 1.236 \times 10^{-6}\,\text{rad/s} \]
+            <p>Weber-Korrektur:</p>
+            \[ \frac{3GMh}{c^2 r^3(0)} \approx 1.02 \times 10^{-13}\,\text{rad/s} \]
+        </div>
+        
+        <div class="result">
+            <h3>Δφ nach 1 Sekunde</h3>
+            \[ \Delta \phi \approx 1.236 \times 10^{-6}\,\text{rad} + 1.02 \times 10^{-13}\,\text{rad} \]
+            <p>Die Weber-Korrektur ist winzig, aber kumuliert über 415 Umläufe (100 Jahre) ergibt sich die beobachtete Periheldrehung von \(43''\).</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Kumulative Periheldrehung</h2>
+        
+        <div class="important">
+            <p>Bei kontinuierlicher Anwendung über \(N = 415\) Umläufe (100 Jahre):</p>
+            \[ \Delta \phi_{\text{ges}} = N \cdot \frac{6\pi GM}{c^2 a(1-e^2)} \approx 43'' \]
+            <p>Dies bestätigt die Konsistenz der Weber-Gravitation mit der beobachteten Periheldrehung.</p>
+        </div>
+    </section>
+</body>
+</html>
