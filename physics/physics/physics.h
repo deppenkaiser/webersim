@@ -121,12 +121,17 @@
 typedef struct celestial_body
 {
     struct vector_3d r_m;
+    struct vector_3d r_bary_m;
     struct vector_3d v_m_s;
+    struct vector_3d v_bary_m_s;
     struct vector_3d w_rad_s;
     double mass_kg;
     double e;
+    double e_square;
     double a_m;
+    double T_s;
     const char* name;
+    uint32_t index;
 } *celestial_body_t;
 
 typedef const double cd;
@@ -147,9 +152,7 @@ double physics_kinetic_energy_body(const celestial_body_t body);
 
 double physics_weber_potential_energy(const celestial_body_t body, cd mass_center_kg, cd phi_rad);
 double physics_weber_specific_angular_momentum(const celestial_body_t body, cd mass_center_kg);
+double physics_weber_periodtime(const celestial_body_t body, cd mass_center_kg);
+double physics_weber_deltaphi(const celestial_body_t body, cd mass_center_kg, cd T_step_s);
 struct vector_3d physics_weber_position(const celestial_body_t body, cd mass_center_kg, cd phi_rad);
-struct vector_3d physics_weber_position_perturbed(const celestial_body_t body, const celestial_body_t body_i, cd mass_center_kg);
-struct vector_3d physics_weber_velocity(const celestial_body_t body, cd mass_center_kg, cd phi_rad);
-struct vector_3d physics_weber_velocity_perturbed(const celestial_body_t body, const celestial_body_t body_i, cd mass_center_kg);
 struct vector_3d physics_weber_angular_speed(const celestial_body_t body, cd mass_center_kg, cd phi_rad);
-struct vector_3d physics_weber_angular_speed_perturbed(const celestial_body_t body, const celestial_body_t body_i, cd mass_center_kg);

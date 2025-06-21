@@ -15,7 +15,9 @@ typedef struct simulation_object
 typedef struct application_data
 {
     simulation_object_t objects;
-    double T;
-    int32_t body_index;
+    double T_step_s;
+    int32_t body_of_interest;
     char* app_filepath;
+    double perihel_last_r_m[MAX_BODIES];
+    int32_t last_r_behavior[MAX_BODIES];
 } *application_data_t;
