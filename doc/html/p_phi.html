@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Vollständige Herleitung des Impulses \(\mathbf{p}(\phi)\)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .full-derivation {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .step {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-left: 5px solid #3498db;
+            border-radius: 4px;
+        }
+        .result {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-left: 5px solid #4caf50;
+            margin: 30px 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .note {
+            background-color: #fff8e1;
+            padding: 15px;
+            border-left: 5px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .equation {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vollständige Herleitung des Impulses \(\mathbf{p}(\phi)\) mit großer Halbachse \(a\)</h1>
+
+    <div class="full-derivation">
+        <h2>1. Grundgleichungen und Definitionen</h2>
+        
+        <div class="step">
+            <h3>1.1 Bahngleichung in Abhängigkeit von \(a\)</h3>
+            <div class="equation">
+                \[ r(\phi) = \frac{a(1 - e^2)}{1 + e \cos \phi} \]
+            </div>
+            <p>wobei:</p>
+            <ul>
+                <li>\(a\) = große Halbachse</li>
+                <li>\(e\) = numerische Exzentrizität</li>
+                <li>\(\phi\) = wahre Anomalie</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>1.2 Drehimpulserhaltung</h3>
+            <div class="equation">
+                \[ L = m r^2 \dot{\phi} = \text{konstant} \]
+                \[ \Rightarrow \dot{\phi} = \frac{L}{m r^2} \]
+            </div>
+            <p>Der Drehimpuls \(L\) kann aus den Bahnelementen ausgedrückt werden als:</p>
+            <div class="equation">
+                \[ L^2 = GM m^2 a (1 - e^2) \]
+            </div>
+        </div>
+    </div>
+
+    <div class="full-derivation">
+        <h2>2. Berechnung der Geschwindigkeiten</h2>
+
+        <div class="step">
+            <h3>2.1 Radialgeschwindigkeit \(\dot{r}\)</h3>
+            <div class="equation">
+                \[ \dot{r} = \frac{dr}{d\phi} \dot{\phi} = \frac{d}{d\phi}\left(\frac{a(1 - e^2)}{1 + e \cos \phi}\right) \cdot \frac{L}{m r^2} \]
+            </div>
+            <p>Berechnung der Ableitung:</p>
+            <div class="equation">
+                \[ \frac{dr}{d\phi} = \frac{a(1 - e^2) e \sin \phi}{(1 + e \cos \phi)^2} \]
+            </div>
+            <p>Einsetzen in \(\dot{r}\):</p>
+            <div class="equation">
+                \[ \dot{r} = \frac{a(1 - e^2) e \sin \phi}{(1 + e \cos \phi)^2} \cdot \frac{L}{m} \cdot \frac{(1 + e \cos \phi)^2}{a^2(1 - e^2)^2} \]
+                \[ = \frac{e L \sin \phi}{m a (1 - e^2)} \]
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>2.2 Azimutalgeschwindigkeit \(r \dot{\phi}\)</h3>
+            <div class="equation">
+                \[ r \dot{\phi} = r \cdot \frac{L}{m r^2} = \frac{L}{m r} \]
+                \[ = \frac{L (1 + e \cos \phi)}{m a (1 - e^2)} \]
+            </div>
+        </div>
+    </div>
+
+    <div class="full-derivation">
+        <h2>3. Berechnung des Impulses \(\mathbf{p}(\phi)\)</h2>
+
+        <div class="step">
+            <h3>3.1 Impulsdefinition</h3>
+            <div class="equation">
+                \[ \mathbf{p} = m \mathbf{v} = m (\dot{r} \hat{r} + r \dot{\phi} \hat{\phi}) \]
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>3.2 Radialkomponente \(p_r\)</h3>
+            <div class="equation">
+                \[ p_r = m \dot{r} = m \cdot \frac{e L \sin \phi}{m a (1 - e^2)} = \frac{e L \sin \phi}{a (1 - e^2)} \]
+            </div>
+            <p>Einsetzen des Drehimpulses \(L\):</p>
+            <div class="equation">
+                \[ p_r = \frac{e \sqrt{GM m^2 a (1 - e^2)} \sin \phi}{a (1 - e^2)} \]
+                \[ = \frac{e m \sqrt{GM} \sin \phi}{\sqrt{a (1 - e^2)}} \]
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>3.3 Azimutalkomponente \(p_\phi\)</h3>
+            <div class="equation">
+                \[ p_\phi = m r \dot{\phi} = \frac{L}{r} = \frac{\sqrt{GM m^2 a (1 - e^2)}}{r} \]
+                \[ = \frac{m \sqrt{GM a (1 - e^2)} (1 + e \cos \phi)}{a (1 - e^2)} \]
+                \[ = \frac{m \sqrt{GM} (1 + e \cos \phi)}{\sqrt{a (1 - e^2)}} \]
+            </div>
+        </div>
+    </div>
+
+    <div class="result">
+        <h2>Endergebnis: Impuls \(\mathbf{p}(\phi)\)</h2>
+        <div class="equation">
+            \[ \boxed{ \mathbf{p}(\phi) = \frac{e m \sqrt{GM} \sin \phi}{\sqrt{a (1 - e^2)}} \hat{r} + \frac{m \sqrt{GM} (1 + e \cos \phi)}{\sqrt{a (1 - e^2)}} \hat{\phi} } \]
+        </div>
+        <p>Alternativ ausgedrückt:</p>
+        <div class="equation">
+            \[ \mathbf{p}(\phi) = \frac{m \sqrt{GM}}{\sqrt{a (1 - e^2)}} \left( e \sin \phi \hat{r} + (1 + e \cos \phi) \hat{\phi} \right) \]
+        </div>
+    </div>
+
+    <div class="note">
+        <h3>Zusätzliche Bemerkungen</h3>
+        <p>1. Für \(e = 0\) (Kreisbahn) vereinfacht sich der Ausdruck zu:</p>
+        <div class="equation">
+            \[ \mathbf{p}(\phi) = \frac{m \sqrt{GM}}{\sqrt{a}} \hat{\phi} \]
+        </div>
+        <p>2. Der Betrag des Impulses ist:</p>
+        <div class="equation">
+            \[ |\mathbf{p}(\phi)| = \frac{m \sqrt{GM}}{\sqrt{a (1 - e^2)}} \sqrt{e^2 \sin^2 \phi + (1 + e \cos \phi)^2} \]
+        </div>
+    </div>
+</body>
+</html>

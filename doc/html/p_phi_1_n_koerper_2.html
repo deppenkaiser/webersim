@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Iterative Impulsverteilung in N-Körper-Systemen</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #8e44ad;
+            padding-bottom: 10px;
+        }
+        .method {
+            background-color: #f5e8ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 6px solid #9b59b6;
+        }
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+        }
+        .matrix {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #1976d2;
+            margin: 20px 0;
+        }
+        .algorithm {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2e7d32;
+            margin: 20px 0;
+            font-family: monospace;
+        }
+        .highlight {
+            background-color: #fffde7;
+            padding: 2px 5px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iterative Impulsverteilung in N-Körper-Systemen</h1>
+
+    <section id="core-concept">
+        <h2>1. Grundprinzip der iterativen Verteilung</h2>
+        <div class="method">
+            <p>Bei Änderung des Winkels φ für Körper k entsteht ein initiales Impulsdelta Δ𝐩<sub>k</sub><sup>(0)</sup>, das eine Kaskade von Sekundäränderungen auslöst:</p>
+            
+            <div class="equation">
+                <strong>Iterationsschema:</strong>
+                \[
+                \Delta\mathbf{p}_i^{(n+1)} = \sum_{j \neq i} \mathcal{K}_{ij} \Delta\mathbf{p}_j^{(n)}
+                \]
+                <p>mit der Kopplungsmatrix:</p>
+                \[
+                \mathcal{K}_{ij} = -\frac{m_i}{\sum_{k \neq j} m_k} \mathbf{K}_{ij}
+                \]
+            </div>
+        </div>
+    </section>
+
+    <section id="matrix-formulation">
+        <h2>2. Matrixformulierung</h2>
+        <div class="matrix">
+            <h3>Gesamtkopplungsmatrix</h3>
+            \[
+            \mathcal{K} = \begin{pmatrix}
+            0 & \mathcal{K}_{12} & \cdots & \mathcal{K}_{1N} \\
+            \mathcal{K}_{21} & 0 & \cdots & \mathcal{K}_{2N} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            \mathcal{K}_{N1} & \mathcal{K}_{N2} & \cdots & 0
+            \end{pmatrix}
+            \]
+            <p>Die exakte Lösung ergibt sich als Neumann-Reihe:</p>
+            \[
+            \Delta\vec{P} = (I - \mathcal{K})^{-1} \Delta\vec{P}^{(0)}
+            \]
+        </div>
+    </section>
+
+    <section id="implementation">
+        <h2>3. Implementierungsschritte</h2>
+        <div class="algorithm">
+            <h3>Iterativer Algorithmus (Pseudocode)</h3>
+            <ol>
+                <li>Initialisiere Δ𝐏 = [0, ..., Δ𝐩<sub>k</sub><sup>(0)</sup>, ..., 0]</li>
+                <li>Berechne für jeden Körper i ≠ j:
+                    <ul>
+                        <li>Relativvektor r<sub>ij</sub> = r<sub>j</sub> - r<sub>i</sub></li>
+                        <li>Kopplungsmatrix K<sub>ij</sub> = (r<sub>ij</sub> ⊗ r<sub>ij</sub>) / |r<sub>ij</sub>|<sup>2</sup></li>
+                        <li>Impulsbeitrag Δ𝐩<sub>i</sub> += -(m<sub>i</sub>/Σm<sub>k≠j</sub>) K<sub>ij</sub> Δ𝐩<sub>j</sub></li>
+                    </ul>
+                </li>
+                <li>Wiederhole bis max(|Δ𝐏<sup>(n+1)</sup> - Δ𝐏<sup>(n)</sup>|) < ε</li>
+            </ol>
+        </div>
+        
+        <div class="equation">
+            <h3>Konvergenzkriterium</h3>
+            \[
+            \sum_{n=0}^\infty \|\mathcal{K}^n\| \cdot \|\Delta\vec{P}^{(0)}\| < \epsilon
+            \]
+            <p>Typische Werte: ε = 10<sup>-6</sup>, max. Iterationen = 50</p>
+        </div>
+    </section>
+
+    <section id="conservation">
+        <h2>4. Erhaltungssicherung</h2>
+        <table>
+            <tr>
+                <th>Erhaltungsgröße</th>
+                <th>Korrekturmethode</th>
+            </tr>
+            <tr>
+                <td>Gesamtimpuls</td>
+                <td>Δ𝐩<sub>k</sub> ← Δ𝐩<sub>k</sub> - Σ<sub>i≠k</sub> Δ𝐩<sub>i</sub></td>
+            </tr>
+            <tr>
+                <td>Energie</td>
+                <td>Δ𝐩<sub>i</sub> ← Δ𝐩<sub>i</sub> - (ΔE/Σm<sub>i</sub>v<sub>i</sub><sup>2</sup>) m<sub>i</sub>v<sub>i</sub></td>
+            </tr>
+            <tr>
+                <td>Drehimpuls</td>
+                <td>Δ𝐩<sub>i</sub> ← Δ𝐩<sub>i</sub> - Δ𝐋 × r<sub>i</sub> / |r<sub>i</sub>|<sup>2</sup></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="example">
+        <h2>5. Anwendungsbeispiel</h2>
+        <div class="method">
+            <h3>Erde-Jupiter-Sonne-System</h3>
+            <ol>
+                <li>Initiale φ-Änderung der Erde → Δ𝐩<sub>Erde</sub><sup>(0)</sup></li>
+                <li><strong>1. Iteration:</strong>
+                    <ul>
+                        <li>Sonne: Δ𝐩<sub>Sonne</sub><sup>(1)</sup> = -m<sub>Sonne</sub>/m<sub>Jupiter</sub> K<sub>SE</sub> Δ𝐩<sub>Erde</sub><sup>(0)</sup></li>
+                        <li>Jupiter: Δ𝐩<sub>Jupiter</sub><sup>(1)</sup> = -m<sub>Jupiter</sub>/m<sub>Sonne</sub> K<sub>JE</sub> Δ𝐩<sub>Erde</sub><sup>(0)</sup></li>
+                    </ul>
+                </li>
+                <li><strong>2. Iteration:</strong>
+                    <ul>
+                        <li>Sonne-Jupiter-Wechselwirkung</li>
+                        <li>Rückwirkung auf Erde</li>
+                    </ul>
+                </li>
+                <li>Konvergiert nach ~5 Iterationen (ε=10<sup>-6</sup>)</li>
+            </ol>
+        </div>
+    </section>
+</body>
+</html>

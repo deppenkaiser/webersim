@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybridlösung: ART-genaue Näherungen + Numerische Korrektur</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .equation-container {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+        .important-box {
+            background-color: #fffde7;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        .step {
+            counter-increment: step-counter;
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 50px;
+        }
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+        }
+        .derivative {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .parameter {
+            color: #9b59b6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hybridlösung: ART-genaue Näherungen + Numerische Korrektur</h1>
+
+    <div class="important-box">
+        <h2>Zielsetzung</h2>
+        <p>
+            Kombination einer analytischen ART-Näherung für \( r(\phi) \) mit einer numerischen Feinkorrektur,
+            um höchste Präzision zu erreichen – insbesondere für den Merkur-Orbit.
+        </p>
+    </div>
+
+    <h2>1. Theoretische Grundlage</h2>
+    <div class="equation-container">
+        \[
+        r(\phi) = r_{\text{ART}}(\phi) + \delta r(\phi)
+        \]
+    </div>
+    <p>
+        Hier ist \( r_{\text{ART}}(\phi) \) deine analytische Näherung (ART-genau) und \( \delta r(\phi) \) die numerisch berechnete Korrektur.
+    </p>
+
+    <h2>2. Schrittweise Berechnung</h2>
+
+    <div class="step">
+        <div class="step-number">1</div>
+        <h3>Schrittweitensteuerung</h3>
+        <p>
+            Die Schrittweite \( \Delta \phi \) wird dynamisch aus den analytischen Ableitungen bestimmt:
+        </p>
+        <div class="equation-container">
+            \[
+            \Delta \phi = \min \left( \Delta \phi_{\text{max}}, \frac{\epsilon}{|w(\phi)| + |v(\phi)|} \right)
+            \]
+        </div>
+        <p>
+            mit \( v(\phi) = \frac{dr}{d\phi} \) und \( w(\phi) = \frac{d^2r}{d\phi^2} \) aus der ART-Näherung.
+        </p>
+    </div>
+
+    <div class="step">
+        <div class="step-number">2</div>
+        <h3>Numerische Korrektur</h3>
+        <p>
+            In jedem Schritt wird nur die <strong>Abweichung von der ART-Näherung</strong> numerisch integriert:
+        </p>
+        <div class="equation-container">
+            \[
+            \delta r(\phi + \Delta \phi) = \delta r(\phi) + \text{Numerische Integration von } \left( \text{DGL} - \text{ART-Ableitung} \right)
+            \]
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">3</div>
+        <h3>Gesamtlösung</h3>
+        <p>
+            Die finale Lösung kombiniert beide Anteile:
+        </p>
+        <div class="equation-container">
+            \[
+            r(\phi + \Delta \phi) = r_{\text{ART}}(\phi + \Delta \phi) + \delta r(\phi + \Delta \phi)
+            \]
+        </div>
+    </div>
+
+    <h2>3. Vorteile des Verfahrens</h2>
+    <ul>
+        <li><strong>Effizienz:</strong> Geringere Anzahl numerischer Schritte durch Nutzung der ART-Näherung</li>
+        <li><strong>Präzision:</strong> Numerische Korrektur gleicht Restfehler aus</li>
+        <li><strong>Stabilität:</strong> Analytischer Anteil wirkt stabilisierend</li>
+    </ul>
+
+    <div class="important-box">
+        <h2>4. Anwendung auf den Merkur-Orbit</h2>
+        <p>
+            Besonders effektiv in Bereichen mit:
+        </p>
+        <ul>
+            <li>Starken Relativitätseffekten (Perihel)</li>
+            <li>Hohen Bahnkrümmungen</li>
+            <li>Schnellen Änderungen der Bahnparameter</li>
+        </ul>
+    </div>
+
+    <h2>5. Ergebnis</h2>
+    <p>
+        Diese Methode liefert:
+    </p>
+    <ul>
+        <li>Eine <strong>kontinuierliche Bahnkurve</strong> \( r(\phi) \)</li>
+        <li><strong>Diskrete Stützstellen</strong> für beliebige Winkel</li>
+        <li><strong>Maximale Genauigkeit</strong> durch Kombination beider Ansätze</li>
+    </ul>
+</body>
+</html>

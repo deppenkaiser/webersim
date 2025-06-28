@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Herleitung der Bahngleichungen r(φ) und ω(φ) in kartesischen Koordinaten</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; max-width: 1000px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .section { margin-bottom: 40px; }
+        .equation { background: #f8f9fa; padding: 15px; margin: 15px 0; border-left: 4px solid #3498db; overflow-x: auto; }
+        .important { background: #fff3f3; padding: 15px; border-left: 4px solid #c0392b; }
+        .derivation-step { margin-left: 20px; margin-bottom: 20px; }
+        .variable { color: #e74c3c; font-weight: bold; }
+        .definition { background: #e8f4f8; padding: 15px; border-left: 4px solid #2980b9; }
+    </style>
+</head>
+<body>
+    <h1>Herleitung der Differentialgleichungen für r(φ) und ω(φ) in kartesischen Koordinaten</h1>
+
+    <div class="section">
+        <h2>1. Grundlegende Definitionen</h2>
+        
+        <div class="definition">
+            <h3>1.1 Kartesische Koordinaten</h3>
+            <p>Position in Abhängigkeit vom Winkel φ:</p>
+            <div class="equation">
+                \[ \vec{r}(φ) = \begin{pmatrix} x(φ) \\ y(φ) \end{pmatrix} \]
+            </div>
+            <p>Radialabstand:</p>
+            <div class="equation">
+                \[ r(φ) = \sqrt{x(φ)^2 + y(φ)^2} \]
+            </div>
+            <p>Winkelgeschwindigkeit:</p>
+            <div class="equation">
+                \[ ω(φ) = \frac{dφ}{dt} = \frac{h}{r(φ)^2} \quad \text{(Drehimpulserhaltung)} \]
+            </div>
+        </div>
+        
+        <div class="definition">
+            <h3>1.2 Weber-Kraft in kartesischer Form</h3>
+            <div class="equation">
+                \[ \vec{F} = -\frac{GMm}{r^3}\vec{r}\left(1 - \frac{|\dot{\vec{r}}|^2}{c^2} + \frac{\vec{r}\cdot\ddot{\vec{r}}}{2c^2}\right) \]
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Transformation der Ableitungen</h2>
+        
+        <div class="derivation-step">
+            <h3>2.1 Zeitliche Ableitungen</h3>
+            <p>Mit der Kettenregel (d/dt = ω d/dφ):</p>
+            <div class="equation">
+                \[ \dot{\vec{r}} = ω\frac{d\vec{r}}{dφ} = ω\vec{r}' \]
+                \[ \ddot{\vec{r}} = ω^2\vec{r}'' + ω\frac{dω}{dφ}\vec{r}' \]
+            </div>
+        </div>
+        
+        <div class="derivation-step">
+            <h3>2.2 Skalarprodukte</h3>
+            <div class="equation">
+                \[ |\dot{\vec{r}}|^2 = ω^2(x'^2 + y'^2) \]
+                \[ \vec{r}\cdot\ddot{\vec{r}} = ω^2(xx'' + yy'') + ω\frac{dω}{dφ}(xx' + yy') \]
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Bewegungsgleichungen</h2>
+        
+        <div class="important">
+            <h3>3.1 Differentialgleichung für x(φ) und y(φ)</h3>
+            <p>Aus mẍ = F_x:</p>
+            <div class="equation">
+                \[ x'' = \frac{1}{1 + \frac{GM}{2c^2r}} \left[ \frac{2(x'^2 + y'^2)}{r^2}x - \frac{GM}{ω^2r^3}x\left(1 - \frac{ω^2(x'^2 + y'^2)}{c^2}\right) \right] \]
+            </div>
+            <p>Analog für y(φ):</p>
+            <div class="equation">
+                \[ y'' = \frac{1}{1 + \frac{GM}{2c^2r}} \left[ \frac{2(x'^2 + y'^2)}{r^2}y - \frac{GM}{ω^2r^3}y\left(1 - \frac{ω^2(x'^2 + y'^2)}{c^2}\right) \right] \]
+            </div>
+        </div>
+        
+        <div class="important">
+            <h3>3.2 Differentialgleichung für ω(φ)</h3>
+            <div class="equation">
+                \[ \frac{dω}{dφ} = -\frac{2h}{r^3}(xx' + yy') \]
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Zusammenfassung des DGL-Systems</h2>
+        
+        <div class="definition">
+            <h3>4.1 Zustandsvektor</h3>
+            <div class="equation">
+                \[ \vec{Y} = \begin{pmatrix} x \\ y \\ x' \\ y' \\ ω \end{pmatrix} \]
+            </div>
+        </div>
+        
+        <div class="definition">
+            <h3>4.2 Ableitungsvektor</h3>
+            <div class="equation">
+                \[ \frac{d\vec{Y}}{dφ} = \begin{pmatrix} x' \\ y' \\ x'' \\ y'' \\ ω' \end{pmatrix} \]
+            </div>
+            <p>mit x'', y'' und ω' wie oben definiert.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Vollständige Impulsdynamik mit modifizierter Kraft</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #3498db;
+        }
+        .distribution {
+            background-color: #e8f5e9;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border-left: 4px solid #2e7d32;
+        }
+        .highlight {
+            background-color: #fffde7;
+            padding: 2px 5px;
+            font-weight: bold;
+        }
+        .term {
+            margin: 10px 0;
+            padding-left: 15px;
+            border-left: 2px solid #9e9e9e;
+        }
+        .matrix {
+            background-color: #e3f2fd;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border-left: 4px solid #1976d2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vollständige Impulsdynamik mit modifizierter Kraft</h1>
+
+    <!-- 1. Kraftgleichung -->
+    <section id="kraft">
+        <h2>1. Modifizierte Kraftgleichung</h2>
+        <div class="equation">
+            \[
+            \mathbf{F} = -\mathbf{F}_\text{Newton} \left(1 - \frac{(\dot{\mathbf{r}})^2}{c^2} + \frac{\mathbf{r} \cdot \ddot{\mathbf{r}}}{2c^2}\right)
+            \]
+            <div class="term">
+                <strong>Term 1:</strong> \(-\mathbf{F}_\text{Newton}\) (Klassische Gravitationskraft)
+            </div>
+            <div class="term">
+                <strong>Term 2:</strong> \(-\frac{(\dot{\mathbf{r}})^2}{c^2}\) (Relativistische Geschwindigkeitskorrektur)
+            </div>
+            <div class="term">
+                <strong>Term 3:</strong> \(+\frac{\mathbf{r} \cdot \ddot{\mathbf{r}}}{2c^2}\) (Beschleunigungskopplung)
+            </div>
+            <p class="highlight">Exakt nach Ihrer Vorgabe</p>
+        </div>
+    </section>
+
+    <!-- 2. Impulsgleichung -->
+    <section id="impuls">
+        <h2>2. Impulsgleichung für modifizierte Keplerbahn</h2>
+        <div class="equation">
+            \[
+            \mathbf{p}(\phi) = \frac{L}{a(1 - e^2)} \left[ e \sin \phi (1 + e \cos \phi) \hat{r} + (1 + e \cos \phi) \hat{\phi} \right]
+            \]
+            <p class="highlight">Originalgleichung aus Ihrer Eingabe</p>
+        </div>
+    </section>
+
+    <!-- 3. Impulsverteilung -->
+    <section id="verteilung">
+        <h2>3. Vollständige Impulsverteilung</h2>
+        
+        <div class="distribution">
+            <h3>3.1 Grundprinzip</h3>
+            <p>Eine Impulsänderung \(\Delta\mathbf{p}_k\) von Körper \(k\) wird auf alle anderen Körper \(i\) verteilt:</p>
+            \[
+            \Delta \mathbf{p}_i = -\frac{m_i}{\sum_{j \neq k} m_j} \mathbf{K}_{ik} \Delta \mathbf{p}_k
+            \]
+            <p>wobei:</p>
+            <ul>
+                <li>\(m_i\): Masse des Körpers \(i\)</li>
+                <li>\(\sum_{j \neq k} m_j\): Gesamtmasse aller anderen Körper</li>
+                <li>\(\mathbf{K}_{ik}\): Kopplungsmatrix (siehe unten)</li>
+            </ul>
+        </div>
+
+        <div class="matrix">
+            <h3>3.2 Kopplungsmatrix \(\mathbf{K}_{ik}\)</h3>
+            \[
+            \mathbf{K}_{ik} = \frac{(\mathbf{r}_k - \mathbf{r}_i) \otimes (\mathbf{r}_k - \mathbf{r}_i)}{|\mathbf{r}_k - \mathbf{r}_i|^2}
+            \]
+            <p><strong>Eigenschaften:</strong></p>
+            <ul>
+                <li><strong>Projektion:</strong> Der Impuls wird entlang der Verbindungslinie \(\mathbf{r}_k - \mathbf{r}_i\) übertragen</li>
+                <li><strong>Normalisierung:</strong> Der Nenner \(|\mathbf{r}_k - \mathbf{r}_i|^2\) stellt sicher, dass:
+                    \[
+                    \|\mathbf{K}_{ik}\| = 1 \quad \text{(Dimensionslos)}
+                    \]
+                </li>
+                <li><strong>Tensorcharakter:</strong> \(\otimes\) ist das dyadische Produkt:
+                    \[
+                    \mathbf{a} \otimes \mathbf{b} = \begin{pmatrix}
+                    a_x b_x & a_x b_y & a_x b_z \\
+                    a_y b_x & a_y b_y & a_y b_z \\
+                    a_z b_x & a_z b_y & a_z b_z
+                    \end{pmatrix}
+                    \]
+                </li>
+            </ul>
+        </div>
+
+        <div class="distribution">
+            <h3>3.3 Erhaltungssätze</h3>
+            <p>Das System garantiert automatisch:</p>
+            <ol>
+                <li><strong>Impulserhaltung:</strong>
+                    \[
+                    \sum_i \Delta\mathbf{p}_i + \Delta\mathbf{p}_k = 0
+                    \]
+                </li>
+                <li><strong>Schwerpunkterhaltung:</strong>
+                    \[
+                    \sum_i m_i \Delta\mathbf{r}_i = 0
+                    \]
+                </li>
+                <li><strong>Drehimpulserhaltung:</strong>
+                    \[
+                    \sum_i \mathbf{r}_i \times \Delta\mathbf{p}_i + \mathbf{r}_k \times \Delta\mathbf{p}_k = 0
+                    \]
+                </li>
+            </ol>
+        </div>
+
+        <div class="matrix">
+            <h3>3.4 Spezialfall: Zwei Körper</h3>
+            <p>Für \(N=2\) (Körper 1 und 2) vereinfacht sich die Verteilung zu:</p>
+            \[
+            \Delta\mathbf{p}_1 = -\frac{m_1}{m_2} \mathbf{K}_{12} \Delta\mathbf{p}_2
+            \]
+            <p>Mit der reduzierten Kopplungsmatrix:</p>
+            \[
+            \mathbf{K}_{12} = \frac{(\mathbf{r}_2 - \mathbf{r}_1) \otimes (\mathbf{r}_2 - \mathbf{r}_1)}{|\mathbf{r}_2 - \mathbf{r}_1|^2}
+            \]
+        </div>
+    </section>
+</body>
+</html>
