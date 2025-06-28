@@ -18,28 +18,19 @@
 \contentsline {section}{\numberline {1.16}Literatur}{4}{section.1.16}%
 \contentsline {chapter}{\numberline {2}Bahndynamik}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Vektordefinitionen (Kartesische Koordinaten)}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Weber-Kraft in Vektorform}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Lösungen in Vektorform}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}N-Körper-Systeme}{6}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Tensor-Notation (Indexschreibweise)}{6}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Grundgleichungen der Weber-Gravitation}{7}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Herleitung der Winkelgeschwindigkeit}{7}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Lösung für die Winkelgeschwindigkeit}{7}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Anwendung auf Merkur}{8}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Zusammenfassung der Winkelgeschwindigkeit}{8}{section.2.10}%
-\contentsline {chapter}{\numberline {3}Störungsrechnung}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Systemdefinition und Variablen}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Grundlegende Störterme}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Gesamtstörungen auf Körper j}{10}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Konkretes Beispiel: Merkur (j) gestört durch Jupiter (i=1)}{11}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Vollständige Zusammenfassung}{11}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Baryzentrisches Koordinatensystem}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Transformation: Heliozentrisch \textrightarrow \ Baryzentrisch}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Validierungstests}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Beispiel: Sonne-Jupiter-System}{14}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Implementierung}{14}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Simulation}{15}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Funktionsweise}{15}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Ausblick}{16}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Anhang}{17}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Quellcode und Dokumentation}{17}{section.6.1}%
+\contentsline {section}{\numberline {2.2}Lösungen in Vektorform}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Grundgleichungen der Weber-Gravitation}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Herleitung der Winkelgeschwindigkeit}{6}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Lösung für die Winkelgeschwindigkeit}{6}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Anwendung auf Merkur}{7}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Zusammenfassung der Winkelgeschwindigkeit}{7}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Baryzentrisches Koordinatensystem}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Transformation: Heliozentrisch \textrightarrow \ Baryzentrisch}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Validierungstests}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Beispiel: Sonne-Jupiter-System}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Implementierung}{10}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Simulation}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Funktionsweise}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Ausblick}{12}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Anhang}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Quellcode und Dokumentation}{13}{section.5.1}%
