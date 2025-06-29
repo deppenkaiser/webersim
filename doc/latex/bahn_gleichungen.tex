@@ -1,0 +1,44 @@
+\section{Kartesische Bahngleichungen}
+\subsection{Positionsvektor $\vec{r}(\phi)$}
+\[ 
+\vec{r}(\phi) = \begin{pmatrix}
+x(\phi) \\
+y(\phi)
+\end{pmatrix} =
+r(\phi) \begin{pmatrix}
+\cos\phi \\
+\sin\phi
+\end{pmatrix}
+\]
+mit der Bahngleichung:
+\[
+r(\phi) = \frac{a(1-e^2)}{1 + e\cos(\kappa \phi)} \left[1 + \frac{3G^2M^2}{c^2 h^4}\left(1 + \frac{e^2}{2} + e\phi \sin(\kappa \phi)\right)\right]
+\]
+
+\subsection{Geschwindigkeitsvektor $\vec{v}(\phi)$}
+\[
+\vec{v}(\phi) = \begin{pmatrix}
+v_x(\phi) \\
+v_y(\phi)
+\end{pmatrix} =
+\dot{r}(\phi) \begin{pmatrix}
+\cos\phi \\
+\sin\phi
+\end{pmatrix} +
+r(\phi)\dot{\phi} \begin{pmatrix}
+-\sin\phi \\
+\cos\phi
+\end{pmatrix}
+\]
+mit den Komponenten:
+\[
+\dot{r}(\phi) = \frac{h e \kappa \sin(\kappa \phi)}{a(1 - e^2)}
+\]
+\[
+\dot{\phi}(\phi) = \frac{h}{r(\phi)^2}
+\]
+
+\subsection{Winkelgeschwindigkeit $\omega(\phi)$}
+\[
+\omega(\phi) = \dot{\phi}(\phi) = \frac{h}{r(\phi)^2}
+\]

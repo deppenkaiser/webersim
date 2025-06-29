@@ -1,0 +1,18 @@
+\section{Implementierung}
+\subsection{Numerische Genauigkeit}
+\begin{itemize}
+\item Verwendung von \texttt{double}-Präzision
+\item Überprüfung der Bedingungen:
+\begin{itemize}
+\item $|\vec{R}_{\text{cm}}| < 10^{-10} \text{ AU}$
+\item $|\vec{P}_{\text{total}}| < 10^{-10} \text{ kg m/s}$
+\end{itemize}
+\end{itemize}
+
+\subsection{Algorithmus}
+\begin{enumerate}
+\item Berechne gewichtete Summen $\sum m_i\vec{r}_i$ und $\sum m_i\vec{v}_i$
+\item Bestimme baryzentrische Sonnenposition/-geschwindigkeit
+\item Transformiere alle Planetenpositionen/-geschwindigkeiten
+\item Validiere Schwerpunkts- und Impulserhaltung
+\end{enumerate}
