@@ -1,0 +1,16 @@
+\section{Grundprinzip}
+Die Bewegung von Planeten wird über den Winkel $\phi$ parametrisiert. Die Zeit wird sekundär berechnet.
+
+\subsection{DGL-System}
+\[
+\begin{cases}
+\dfrac{dr}{d\phi} = \dfrac{v_r}{\omega} \\
+\dfrac{dv_r}{d\phi} = \dfrac{F_r/m - r\omega^2}{\omega} \\
+\dfrac{d\omega}{d\phi} = -\dfrac{2v_r}{r} + \dfrac{F_\phi}{r\omega}
+\end{cases}
+\]
+
+\subsection{Zeitberechnung}
+\[
+\frac{dt}{d\phi} = \frac{1}{\omega}
+\]

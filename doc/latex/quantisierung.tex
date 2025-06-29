@@ -1,0 +1,25 @@
+\section{Nichtperturbative Quantisierung}
+
+\subsection{Diskretisierte Wirkung}
+\[
+S = \sum_{n} \left[ 
+\frac{m}{2} \left(\frac{\Delta x_n}{\Delta t_p}\right)^2 
+- V(x_n) 
++ \beta \frac{m \Delta x_n \Delta^2 x_n}{2c^2 \Delta t_p^2}
+\right] \Delta t_p
+\]
+
+\subsection{Wilson-Loops}
+\[
+W(C) = \text{Tr} \prod_{\text{Pfad}} e^{i \oint_C (A_\mu + \beta F_{\mu\nu} \ddot{x}^\nu) dx^\mu}
+\]
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Phänomen} & \textbf{Berechnung} & \textbf{Vorhersage} \\ \hline
+Periheldrehung & $\delta \theta \sim \langle W(C) \rangle$ & $10^{-5}$ Bogensekunden/Jh. \\ \hline
+GW-Dispersion & $\Delta v \sim \exp(-S/\hbar)$ & Anomalien >1 kHz \\ \hline
+\end{tabular}
+\end{table}

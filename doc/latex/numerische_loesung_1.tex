@@ -1,0 +1,23 @@
+\section{Numerische Lösung}
+\subsection{Schritt 1: Initialisierung}
+Startwerte für $r(\phi_0)$, $v_r(\phi_0)$, $\omega(\phi_0)$ festlegen.
+
+\subsection{Schritt 2: Kraftberechnung}
+Für jeden Winkel $\phi_n$:
+\begin{itemize}
+\item Gesamtkraft $F$ berechnen
+\item In radiale ($F_r$) und tangentiale ($F_\phi$) Komponenten zerlegen
+\end{itemize}
+
+\subsection{Schritt 3: Integration (Euler-Verfahren)}
+\[
+\begin{aligned}
+r_{n+1} &= r_n + \frac{v_{r,n}}{\omega_n} \Delta\phi \\
+v_{r,n+1} &= v_{r,n} + \frac{F_{r,n}/m - r_n\omega_n^2}{\omega_n} \Delta\phi \\
+\omega_{n+1} &= \omega_n + \left(-\frac{2v_{r,n}}{r_n} + \frac{F_{\phi,n}}{r_n\omega_n}\right) \Delta\phi \\
+t_{n+1} &= t_n + \frac{\Delta\phi}{\omega_n}
+\end{aligned}
+\]
+
+\subsection{Hinweis}
+Für höhere Genauigkeit kann das Runge-Kutta-Verfahren verwendet werden.

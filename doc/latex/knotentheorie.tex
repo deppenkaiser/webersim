@@ -1,0 +1,28 @@
+\section{Knotendynamik \& Energie}
+
+\subsection{Energie-Knoten-Relation}
+\[
+E = \underbrace{\left( \frac{1}{2\pi i} \oint_{|t|=1} \frac{V'(t)}{V(t)} dt \right)}_{\text{Topologische Invariante}} \cdot \kappa E_{\text{Planck}}
+\]
+
+\subsection{Beispiel Proton}
+\[
+V_{\text{Proton}}(t) = t + t^{-1} + t^{-2}
+\]
+\[
+\frac{V'(t)}{V(t)} = \frac{1 - t^{-2} - 2t^{-3}}{t + t^{-1} + t^{-2}}
+\]
+\[
+E = 3 \cdot \left( \frac{m_p c^2}{3 E_{\text{Planck}}} \right) \cdot E_{\text{Planck}} = 938 \, \text{MeV}
+\]
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Teilchen} & \textbf{V(t)} & \textbf{Integralwert} & \textbf{Energie} \\ \hline
+Proton & $t + t^{-1} + t^{-2}$ & 3 & 938 MeV \\ \hline
+Elektron & 1 & 0* & 511 keV \\ \hline
+Photon & 0 & -- & 0 \\ \hline
+\end{tabular}
+\end{table}
