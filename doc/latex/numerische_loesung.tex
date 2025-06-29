@@ -1,0 +1,9 @@
+\section{Predictor-Corrector-Verfahren}
+\begin{itemize}
+\item Berechne aktuelle Beschleunigung $a = F_{weber}(r, v) / m$
+\item Vorhersage neue Geschwindigkeit $v_{neu} = v + a \cdot dt$
+\item Vorhersage neue Position $r_{neu} = r + v \cdot dt + 0.5 \cdot a \cdot dt^2$
+\item Neuberechnung $a_{neu} = F_{weber}(r_{neu}, v_{neu}) / m$
+\item Korrektur $v = v + 0.5 \cdot (a + a_{neu}) \cdot dt$
+\item Update $r = r + v \cdot dt + 0.5 \cdot a_{neu} \cdot dt^2$
+\end{itemize}
