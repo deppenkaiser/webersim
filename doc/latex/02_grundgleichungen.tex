@@ -1,0 +1,36 @@
+\section{Grundgleichungen der Weber-Kraft}
+\subsection*{Weber-Kraft Gleichung}
+\begin{equation}\label{eq:weber_gravitationskraft}
+\mathbf{F} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)\mathbf{\hat{r}}
+\end{equation}
+
+\subsection*{Bewegungsgleichung in Polarkoordinaten}
+\begin{equation}\label{eq:weber_bewegungsgleichung}
+\mathbf{a} = \left(\ddot{r} - r\dot{\varphi}^2\right)\mathbf{\hat{r}} + \left(r\ddot{\varphi} + 2\dot{r}\dot{\varphi}\right)\mathbf{\hat{\varphi}} = -\frac{GM}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)\mathbf{\hat{r}}
+\end{equation}
+
+\subsection*{Variablenbeschreibung}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item $\mathbf{F}$: Gravitationskraftvektor (Weber-Kraft) [N]
+    \item $\mathbf{a}$: Beschleunigungsvektor [m/s²]
+    \item $G$: Gravitationskonstante [m³/kg/s²]
+    \item $M$, $m$: Massen der wechselwirkenden Körper [kg]
+    \item $r$: Abstand zwischen den Massenschwerpunkten [m]
+    \item $\dot{r} = \frac{dr}{dt}$: Radiale Relativgeschwindigkeit [m/s]
+    \item $\ddot{r} = \frac{d^2r}{dt^2}$: Radiale Relativbeschleunigung [m/s²]
+    \item $c$: Lichtgeschwindigkeit [m/s]
+    \item $\varphi$: Azimutwinkel [rad]
+    \item $\dot{\varphi} = \frac{d\varphi}{dt}$: Winkelgeschwindigkeit [rad/s]
+    \item $\ddot{\varphi} = \frac{d^2\varphi}{dt^2}$: Winkelbeschleunigung [rad/s²]
+    \item $\mathbf{\hat{r}}$: Radialer Einheitsvektor (zeigt von $M$ zu $m$)
+    \item $\mathbf{\hat{\varphi}}$: Azimutaler Einheitsvektor (senkrecht zu $\mathbf{\hat{r}}$)
+\end{itemize}
+
+\subsection*{Physikalische Interpretation}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Der Term $-\frac{GMm}{r^2}$ entspricht der klassischen Newton'schen Gravitation
+    \item $\frac{\dot{r}^2}{c^2}$: Relativistische Korrektur für radiale Bewegung
+    \item $\frac{r\ddot{r}}{2c^2}$: Korrektur für radiale Beschleunigung
+    \item $r\dot{\varphi}^2$: Zentripetalbeschleunigung
+    \item $2\dot{r}\dot{\varphi}$: Coriolis-Term
+\end{itemize}
