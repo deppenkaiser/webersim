@@ -9,290 +9,274 @@
 \contentsline {subsection}{\numberline {1.3.1}Konzeptionelle Vorteile}{13}{}%
 \contentsline {section}{\numberline {1.4}Weber-Kraft und Gravitation}{13}{}%
 \contentsline {section}{\numberline {1.5}Grundgleichungen der Weber-Kraft}{14}{}%
-\contentsline {section}{\numberline {1.6}Post-Newtonische Kraft\\in vektorieller Form}{15}{}%
-\contentsline {section}{\numberline {1.7}Weber-Kraft in kartesischer Form}{16}{}%
-\contentsline {section}{\numberline {1.8}Weber-Kraft in Vektorform}{17}{}%
-\contentsline {subsection}{\numberline {1.8.1}Weber-Kraft zwischen zwei Massen}{17}{}%
-\contentsline {subsection}{\numberline {1.8.2}Bewegungsgleichung für Masse m}{17}{}%
-\contentsline {section}{\numberline {1.9}Webers Gravitationskraft}{18}{}%
-\contentsline {section}{\numberline {1.10}Modifizierte Weber-Kraft (gravitativ)}{19}{}%
-\contentsline {section}{\numberline {1.11}Modifizierte Weber-Kraft (gravitativ)}{20}{}%
-\contentsline {section}{\numberline {1.12}Universelle Weber-Kraft für Massen}{21}{}%
-\contentsline {section}{\numberline {1.13}Universelle Weber-Kraft}{22}{}%
-\contentsline {section}{\numberline {1.14}Quantisierte Weber-Kraft (Gittermodell)}{23}{}%
-\contentsline {section}{\numberline {1.15}Quantisierte Weber-Kraft (QED)}{24}{}%
-\contentsline {section}{\numberline {1.16}Modifizierte Weber-Kraft}{25}{}%
-\contentsline {section}{\numberline {1.17}Modifizierte Kraftgleichung}{26}{}%
-\contentsline {section}{\numberline {1.18}Weber-Kraft im Dreikörpersystem}{27}{}%
-\contentsline {section}{\numberline {1.19}Einsetzen in die Kraftgleichung}{28}{}%
-\contentsline {section}{\numberline {1.20}Die Weber-Kraft als Fundament}{29}{}%
-\contentsline {subsection}{\numberline {1.20.1}Modifizierte Weber-Kraft (gravitativ)}{29}{}%
-\contentsline {subsection}{\numberline {1.20.2}Vorteile der Weber-Kraft}{29}{}%
-\contentsline {section}{\numberline {1.21}Klassische Lösung (0. Ordnung)}{30}{}%
-\contentsline {section}{\numberline {1.22}Relativistische Korrektur (1. Ordnung)}{31}{}%
-\contentsline {section}{\numberline {1.23}Beschleunigung bis zur 1. Ordnung}{32}{}%
-\contentsline {section}{\numberline {1.24}Explizite Form mit Bahnelementen}{33}{}%
-\contentsline {section}{\numberline {1.25}Theoretische Grundlage}{34}{}%
-\contentsline {section}{\numberline {1.26}Schrittweitensteuerung}{35}{}%
-\contentsline {section}{\numberline {1.27}Numerische Korrektur}{36}{}%
-\contentsline {section}{\numberline {1.28}Gesamtlösung}{37}{}%
-\contentsline {section}{\numberline {1.29}Kartesische Koordinaten}{38}{}%
-\contentsline {section}{\numberline {1.30}Zeitliche Ableitungen}{39}{}%
-\contentsline {section}{\numberline {1.31}Skalarprodukte}{40}{}%
-\contentsline {section}{\numberline {1.32}Differentialgleichung für \(x(\phi )\)}{41}{}%
-\contentsline {section}{\numberline {1.33}Differentialgleichung für \(y(\phi )\)}{42}{}%
-\contentsline {section}{\numberline {1.34}Differentialgleichung für \(\omega (\phi )\)}{43}{}%
-\contentsline {section}{\numberline {1.35}Zusammenfassung des DGL-Systems}{44}{}%
-\contentsline {section}{\numberline {1.36}Koordinatensystem und Basisvektoren}{45}{}%
-\contentsline {section}{\numberline {1.37}Geschwindigkeitsquadrat}{46}{}%
-\contentsline {section}{\numberline {1.38}Beschleunigungsskalarprodukt}{47}{}%
-\contentsline {section}{\numberline {1.39}Bewegungsgleichung in vektorieller Form}{48}{}%
-\contentsline {section}{\numberline {1.40}Differentialgleichungssystem}{49}{}%
-\contentsline {section}{\numberline {1.41}Explizite DGL für x-Komponente}{50}{}%
-\contentsline {section}{\numberline {1.42}Explizite DGL für y-Komponente}{51}{}%
-\contentsline {section}{\numberline {1.43}Transformiertes System 1. Ordnung}{52}{}%
-\contentsline {section}{\numberline {1.44}Elektrisches Feld als Deformationsgradient}{53}{}%
-\contentsline {section}{\numberline {1.45}Energie-Impuls-Beziehung für Photonen}{54}{}%
-\contentsline {section}{\numberline {1.46}Theorievergleich: ART vs. Weber}{55}{}%
-\contentsline {section}{\numberline {1.47}Vorteile der Weber-Theorie}{56}{}%
-\contentsline {section}{\numberline {1.48}Historische Dominanz der ART}{57}{}%
-\contentsline {section}{\numberline {1.49}Quantengravitation mit Weber}{58}{}%
-\contentsline {section}{\numberline {1.50}Periheldrehung des Merkur}{59}{}%
-\contentsline {section}{\numberline {1.51}Allgemeine $\beta $-Formel}{60}{}%
-\contentsline {section}{\numberline {1.52}Gravitationswellengleichung}{61}{}%
-\contentsline {section}{\numberline {1.53}Frequenzabhängige Lichtablenkung}{62}{}%
-\contentsline {section}{\numberline {1.54}Hamiltonian des Dodekaeder-Gitters}{63}{}%
-\contentsline {section}{\numberline {1.55}Periheldrehung des Merkur}{64}{}%
-\contentsline {section}{\numberline {1.56}Gravitative Rotverschiebung}{65}{}%
-\contentsline {section}{\numberline {1.57}Shapiro-Laufzeitverzögerung}{66}{}%
-\contentsline {section}{\numberline {1.58}Gravitationswellen-Quadrupolformel}{67}{}%
-\contentsline {section}{\numberline {1.59}Quantisierte Raumzeit-Parameter}{68}{}%
-\contentsline {section}{\numberline {1.60}Predictor-Corrector-Verfahren}{69}{}%
-\contentsline {section}{\numberline {1.61}Symplektische Integration}{70}{}%
-\contentsline {section}{\numberline {1.62}Gitter-QCD-Ansatz}{71}{}%
-\contentsline {section}{\numberline {1.63}N-Körper-Weber-Kraft}{72}{}%
-\contentsline {section}{\numberline {1.64}Weber-Gravitationskraft}{73}{}%
-\contentsline {section}{\numberline {1.65}Bewegungsgleichung in Polarkoordinaten}{74}{}%
-\contentsline {section}{\numberline {1.66}Drehimpulserhaltung}{75}{}%
-\contentsline {section}{\numberline {1.67}Modifizierte Radialgleichung}{76}{}%
-\contentsline {section}{\numberline {1.68}Winkelgeschwindigkeit}{77}{}%
-\contentsline {section}{\numberline {1.69}Näherungslösung für Merkurbahn}{78}{}%
-\contentsline {section}{\numberline {1.70}Die Kerninnovation}{79}{}%
-\contentsline {section}{\numberline {1.71}Vollständige Impulsdynamik}{80}{}%
-\contentsline {section}{\numberline {1.72}Impulsverteilungsmechanismus}{81}{}%
-\contentsline {section}{\numberline {1.73}Iterationsschema der Impulsverteilung}{82}{}%
-\contentsline {section}{\numberline {1.74}Gesamtkopplungsmatrix}{83}{}%
-\contentsline {section}{\numberline {1.75}Konvergenzkriterium}{84}{}%
-\contentsline {section}{\numberline {1.76}Erhaltungssicherung}{85}{}%
-\contentsline {section}{\numberline {1.77}Impulsgleichung für modifizierte Keplerbahn}{86}{}%
-\contentsline {section}{\numberline {1.78}Vollständige Impulsverteilung}{87}{}%
-\contentsline {subsection}{\numberline {1.78.1}Grundprinzip}{87}{}%
-\contentsline {subsection}{\numberline {1.78.2}Kopplungsmatrix}{87}{}%
-\contentsline {subsection}{\numberline {1.78.3}Erhaltungssätze}{87}{}%
-\contentsline {subsection}{\numberline {1.78.4}Spezialfall: Zwei Körper}{87}{}%
-\contentsline {section}{\numberline {1.79}Ausgangsgleichungen}{88}{}%
-\contentsline {subsection}{\numberline {1.79.1}Keplerbahn}{88}{}%
-\contentsline {subsection}{\numberline {1.79.2}Drehimpulserhaltung}{88}{}%
-\contentsline {section}{\numberline {1.80}Geschwindigkeitskomponenten}{89}{}%
-\contentsline {subsection}{\numberline {1.80.1}Radialgeschwindigkeit}{89}{}%
-\contentsline {subsection}{\numberline {1.80.2}Azimutalgeschwindigkeit}{89}{}%
-\contentsline {section}{\numberline {1.81}Impulsberechnung}{90}{}%
-\contentsline {subsection}{\numberline {1.81.1}Impuls in Polarkoordinaten}{90}{}%
-\contentsline {subsection}{\numberline {1.81.2}Endergebnis}{90}{}%
-\contentsline {subsection}{\numberline {1.81.3}Betrag des Impulses}{90}{}%
-\contentsline {section}{\numberline {1.82}Spezialfälle}{91}{}%
-\contentsline {subsection}{\numberline {1.82.1}Kreisbahn (e = 0)}{91}{}%
-\contentsline {subsection}{\numberline {1.82.2}Perihel ($\phi = 0$)}{91}{}%
-\contentsline {subsection}{\numberline {1.82.3}Aphel ($\phi = \pi $)}{91}{}%
-\contentsline {section}{\numberline {1.83}Physikalische Interpretation}{92}{}%
-\contentsline {section}{\numberline {1.84}Grundgleichungen und Definitionen}{93}{}%
-\contentsline {subsection}{\numberline {1.84.1}Bahngleichung}{93}{}%
-\contentsline {subsection}{\numberline {1.84.2}Drehimpulserhaltung}{93}{}%
-\contentsline {section}{\numberline {1.85}Berechnung der Geschwindigkeiten}{94}{}%
-\contentsline {subsection}{\numberline {1.85.1}Radialgeschwindigkeit}{94}{}%
-\contentsline {subsection}{\numberline {1.85.2}Azimutalgeschwindigkeit}{94}{}%
-\contentsline {section}{\numberline {1.86}Berechnung des Impulses}{95}{}%
-\contentsline {subsection}{\numberline {1.86.1}Impulsdefinition}{95}{}%
-\contentsline {subsection}{\numberline {1.86.2}Radialkomponente}{95}{}%
-\contentsline {subsection}{\numberline {1.86.3}Azimutalkomponente}{95}{}%
-\contentsline {section}{\numberline {1.87}Endergebnis}{96}{}%
-\contentsline {section}{\numberline {1.88}Zusätzliche Bemerkungen}{97}{}%
-\contentsline {section}{\numberline {1.89}Eingangsparameter}{98}{}%
-\contentsline {subsection}{\numberline {1.89.1}Kraftgleichung (radial)}{98}{}%
-\contentsline {subsection}{\numberline {1.89.2}Keplerbahn \( r(\phi ) \)}{98}{}%
-\contentsline {subsection}{\numberline {1.89.3}Drehimpulserhaltung}{98}{}%
-\contentsline {section}{\numberline {1.90}Berechnung der Zeitableitungen}{99}{}%
-\contentsline {subsection}{\numberline {1.90.1}Radialgeschwindigkeit \( \dot {r} \)}{99}{}%
-\contentsline {subsection}{\numberline {1.90.2}Radialbeschleunigung \( \ddot {r} \)}{99}{}%
-\contentsline {section}{\numberline {1.91}Berechnung des Impulses \( \mathbf {p}(t) \)}{100}{}%
-\contentsline {subsection}{\numberline {1.91.1}Endergebnis}{100}{}%
-\contentsline {section}{\numberline {1.92}Interpretation und Anmerkungen}{101}{}%
-\contentsline {section}{\numberline {1.93}Grundformel}{102}{}%
-\contentsline {section}{\numberline {1.94}Eingangswerte für Merkur}{103}{}%
-\contentsline {section}{\numberline {1.95}Berechnung von $\kappa $}{104}{}%
-\contentsline {subsection}{\numberline {1.95.1}Schritt 1: Nenner $c^2a(1-e^2)$}{104}{}%
-\contentsline {subsection}{\numberline {1.95.2}Schritt 2: Zähler $6GM$}{104}{}%
-\contentsline {subsection}{\numberline {1.95.3}Schritt 3: Berechnung von $\kappa $}{104}{}%
-\contentsline {section}{\numberline {1.96}Periheldrehung pro Umlauf}{105}{}%
-\contentsline {section}{\numberline {1.97}Periheldrehung pro Jahrhundert}{106}{}%
-\contentsline {section}{\numberline {1.98}Vergleich mit Beobachtung}{107}{}%
-\contentsline {section}{\numberline {1.99}Zusammenfassung}{108}{}%
-\contentsline {section}{\numberline {1.100}Grundgleichung der Winkelgeschwindigkeit}{109}{}%
-\contentsline {subsection}{\numberline {1.100.1}Modifizierte Winkelgeschwindigkeit nach Weber}{109}{}%
-\contentsline {section}{\numberline {1.101}Winkeländerung für T = 1 Sekunde}{110}{}%
-\contentsline {subsection}{\numberline {1.101.1}Infinitesimale Änderung}{110}{}%
-\contentsline {subsection}{\numberline {1.101.2}Ergebnis für $\Delta \phi $ (1 Sekunde)}{110}{}%
-\contentsline {section}{\numberline {1.102}Beispiel: Merkur im Perihel ($\varphi _0 = 0$)}{111}{}%
-\contentsline {subsection}{\numberline {1.102.1}Berechnung}{111}{}%
-\contentsline {subsection}{\numberline {1.102.2}$\Delta \phi $ nach 1 Sekunde}{111}{}%
-\contentsline {section}{\numberline {1.103}Kumulative Periheldrehung}{112}{}%
-\contentsline {section}{\numberline {1.104}Grundprinzip}{113}{}%
-\contentsline {subsection}{\numberline {1.104.1}DGL-System}{113}{}%
-\contentsline {subsection}{\numberline {1.104.2}Zeitberechnung}{113}{}%
-\contentsline {section}{\numberline {1.105}Physikalische Bedeutung der Gleichungen}{114}{}%
-\contentsline {subsection}{\numberline {1.105.1}Radialposition ($r$)}{114}{}%
-\contentsline {subsection}{\numberline {1.105.2}Radialgeschwindigkeit ($v_r$)}{114}{}%
-\contentsline {subsection}{\numberline {1.105.3}Winkelgeschwindigkeit ($\omega $)}{114}{}%
-\contentsline {section}{\numberline {1.106}Numerische Lösung}{115}{}%
-\contentsline {subsection}{\numberline {1.106.1}Schritt 1: Initialisierung}{115}{}%
-\contentsline {subsection}{\numberline {1.106.2}Schritt 2: Kraftberechnung}{115}{}%
-\contentsline {subsection}{\numberline {1.106.3}Schritt 3: Integration (Euler-Verfahren)}{115}{}%
-\contentsline {subsection}{\numberline {1.106.4}Hinweis}{115}{}%
-\contentsline {section}{\numberline {1.107}Beispiel: Merkur-Bahn}{116}{}%
-\contentsline {subsection}{\numberline {1.107.1}Parameter}{116}{}%
-\contentsline {subsection}{\numberline {1.107.2}Erster Schritt ($\Delta \phi = 0.01$ rad)}{116}{}%
-\contentsline {section}{\numberline {1.108}Zusammenfassung}{117}{}%
-\contentsline {section}{\numberline {1.109}Knotendynamik \& Energie}{118}{}%
-\contentsline {subsection}{\numberline {1.109.1}Energie-Knoten-Relation}{118}{}%
-\contentsline {subsection}{\numberline {1.109.2}Beispiel Proton}{118}{}%
-\contentsline {section}{\numberline {1.110}SU(3)×SL(2,C)-Vereinheitlichung}{119}{}%
-\contentsline {subsection}{\numberline {1.110.1}Symmetriegruppe}{119}{}%
-\contentsline {subsection}{\numberline {1.110.2}Kombinierte Wirkung}{119}{}%
-\contentsline {section}{\numberline {1.111}Renormierungsgruppenfluss}{120}{}%
-\contentsline {subsection}{\numberline {1.111.1}Beta-Funktion}{120}{}%
-\contentsline {subsection}{\numberline {1.111.2}Knotenspezifische Korrektur}{120}{}%
-\contentsline {section}{\numberline {1.112}Nichtperturbative Quantisierung}{121}{}%
-\contentsline {subsection}{\numberline {1.112.1}Diskretisierte Wirkung}{121}{}%
-\contentsline {subsection}{\numberline {1.112.2}Wilson-Loops}{121}{}%
-\contentsline {section}{\numberline {1.113}Topologische Feldtheorie}{122}{}%
-\contentsline {subsection}{\numberline {1.113.1}Chern-Simons-Wirkung}{122}{}%
-\contentsline {subsection}{\numberline {1.113.2}Verknüpfungszahl}{122}{}%
-\contentsline {section}{\numberline {1.114}Knotenmoden-Klassifikation}{123}{}%
-\contentsline {subsection}{\numberline {1.114.1}Alexander-Conway-Gleichung}{123}{}%
-\contentsline {subsection}{\numberline {1.114.2}Spektraler Index}{123}{}%
-\contentsline {section}{\numberline {1.115}Vektordefinitionen (Kartesische Koordinaten)}{124}{}%
-\contentsline {subsection}{\numberline {1.115.1}Ortsvektor}{124}{}%
-\contentsline {subsection}{\numberline {1.115.2}Geschwindigkeitsvektor}{124}{}%
-\contentsline {subsection}{\numberline {1.115.3}Beschleunigungsvektor}{124}{}%
-\contentsline {section}{\numberline {1.116}Lösungen in Vektorform}{125}{}%
-\contentsline {subsection}{\numberline {1.116.1}Bahngleichung (xy-Ebene)}{125}{}%
-\contentsline {subsection}{\numberline {1.116.2}Geschwindigkeitsfeld}{125}{}%
-\contentsline {section}{\numberline {1.117}N-Körper-Systeme}{126}{}%
-\contentsline {subsection}{\numberline {1.117.1}Beschleunigung des i-ten Körpers}{126}{}%
-\contentsline {subsection}{\numberline {1.117.2}Radialkomponenten}{126}{}%
-\contentsline {section}{\numberline {1.118}Grundgrößen und Konstanten}{127}{}%
-\contentsline {subsection}{\numberline {1.118.1}Abgeleitete Größen}{127}{}%
-\contentsline {section}{\numberline {1.119}Kartesische Bahngleichungen}{128}{}%
-\contentsline {subsection}{\numberline {1.119.1}Positionsvektor $\vec {r}(\phi )$}{128}{}%
-\contentsline {subsection}{\numberline {1.119.2}Geschwindigkeitsvektor $\vec {v}(\phi )$}{128}{}%
-\contentsline {subsection}{\numberline {1.119.3}Winkelgeschwindigkeit $\omega (\phi )$}{128}{}%
-\contentsline {section}{\numberline {1.120}Beispielberechnungen}{129}{}%
-\contentsline {subsection}{\numberline {1.120.1}Perihel ($\phi = 0$)}{129}{}%
-\contentsline {subsection}{\numberline {1.120.2}Physikalische Interpretation}{129}{}%
-\contentsline {section}{\numberline {1.121}Gültigkeitsbereich}{130}{}%
-\contentsline {subsection}{\numberline {1.121.1}Implementierungshinweise}{130}{}%
-\contentsline {section}{\numberline {1.122}Quantisiertes Dodekaeder-Gitter}{131}{}%
-\contentsline {subsection}{\numberline {1.122.1}Knotenenergie aus Jones-Polynomen}{131}{}%
-\contentsline {subsection}{\numberline {1.122.2}Gittereigenschaften}{131}{}%
-\contentsline {section}{\numberline {1.123}Experimentelle Vorhersagen}{132}{}%
-\contentsline {subsection}{\numberline {1.123.1}Unterscheidungsmerkmale}{132}{}%
-\contentsline {section}{\numberline {1.124}Kritik an der Allgemeinen Relativitätstheorie}{133}{}%
-\contentsline {subsection}{\numberline {1.124.1}Probleme der ART}{133}{}%
-\contentsline {subsection}{\numberline {1.124.2}Warum Weber überlegen ist}{133}{}%
-\contentsline {section}{\numberline {1.125}Zusammenfassung: Die Wahrheit gewinnt}{134}{}%
-\contentsline {subsection}{\numberline {1.125.1}Theorie-Eigenschaften}{134}{}%
-\contentsline {subsection}{\numberline {1.125.2}Ausblick}{134}{}%
-\contentsline {section}{\numberline {1.126}Heliozentrisch → Baryzentrisch Transformation}{135}{}%
-\contentsline {subsection}{\numberline {1.126.1}Baryzentrische Position der Sonne}{135}{}%
-\contentsline {subsection}{\numberline {1.126.2}Baryzentrische Positionen der Planeten}{135}{}%
-\contentsline {subsection}{\numberline {1.126.3}Baryzentrische Geschwindigkeiten}{135}{}%
-\contentsline {section}{\numberline {1.127}Validierungstests}{136}{}%
-\contentsline {subsection}{\numberline {1.127.1}Schwerpunkttest}{136}{}%
-\contentsline {subsection}{\numberline {1.127.2}Umkehrtransformation}{136}{}%
-\contentsline {section}{\numberline {1.128}Beispiel: Sonne-Jupiter-System}{137}{}%
-\contentsline {section}{\numberline {1.129}Implementierung}{138}{}%
-\contentsline {subsection}{\numberline {1.129.1}Numerische Genauigkeit}{138}{}%
-\contentsline {subsection}{\numberline {1.129.2}Algorithmus}{138}{}%
-\contentsline {section}{\numberline {1.130}Objektzuordnungen und Variablen}{139}{}%
-\contentsline {subsection}{\numberline {1.130.1}Aktiver Körper (wird gestört)}{139}{}%
-\contentsline {subsection}{\numberline {1.130.2}Störender Körper (verursacht Störung)}{139}{}%
-\contentsline {section}{\numberline {1.131}Weber-Störungsterme}{140}{}%
-\contentsline {subsection}{\numberline {1.131.1}Positionsstörung}{140}{}%
-\contentsline {subsection}{\numberline {1.131.2}Winkelgeschwindigkeitsstörung}{140}{}%
-\contentsline {section}{\numberline {1.132}Physikalische Interpretation}{141}{}%
-\contentsline {section}{\numberline {1.133}Zeitberechnung aus $\omega (\phi )$ mit Korrekturterm}{142}{}%
-\contentsline {subsection}{\numberline {1.133.1}Integralgleichung mit Korrektur}{142}{}%
-\contentsline {section}{\numberline {1.134}Analytische Lösung}{143}{}%
-\contentsline {section}{\numberline {1.135}Beispiel: 1° Merkur-Orbit}{144}{}%
-\contentsline {subsection}{\numberline {1.135.1}Parameter für Merkur}{144}{}%
-\contentsline {section}{\numberline {1.136}Klassische Kepler-Periode}{145}{}%
-\contentsline {section}{\numberline {1.137}Weber-Modifikation (1. Ordnung)}{146}{}%
-\contentsline {section}{\numberline {1.138}Berechnung für Merkur}{147}{}%
-\contentsline {section}{\numberline {1.139}Erweiterte Formel (höhere Ordnungen)}{148}{}%
-\contentsline {subsection}{\numberline {1.139.1}Praktische 1. Ordnungsformel}{148}{}%
-\contentsline {section}{\numberline {1.140}Physikalische Grundlagen}{149}{}%
-\contentsline {section}{\numberline {1.141}Mathematische Herleitung}{150}{}%
-\contentsline {subsection}{\numberline {1.141.1}Integralformulierung}{150}{}%
-\contentsline {subsection}{\numberline {1.141.2}Substitution der Bahnkurve}{150}{}%
-\contentsline {subsection}{\numberline {1.141.3}Lösung der Integrale}{150}{}%
-\contentsline {subsubsection}{Hauptterm (klassisch)}{150}{}%
-\contentsline {subsubsection}{Relativistischer Korrekturterm}{150}{}%
-\contentsline {section}{\numberline {1.142}Anwendungsbeispiel: Merkur-Orbit}{151}{}%
-\contentsline {subsection}{\numberline {1.142.1}Berechnung für 1° Bahnsegment ($\Delta \phi = \pi /180$)}{151}{}%
-\contentsline {subsection}{\numberline {1.142.2}Physikalische Interpretation}{151}{}%
-\contentsline {section}{\numberline {1.143}Vergleich mit der ART}{152}{}%
-\contentsline {subsection}{\numberline {1.143.1}Vorteile der Formulierung}{152}{}%
-\contentsline {section}{\numberline {1.144}Zusammenfassung}{153}{}%
-\contentsline {section}{\numberline {1.145}Universelle Knoten-Gitter-Dynamik}{154}{}%
-\contentsline {subsection}{\numberline {1.145.1}Grundform der Theorie}{154}{}%
-\contentsline {subsection}{\numberline {1.145.2}Symbolerklärungen}{154}{}%
-\contentsline {section}{\numberline {1.146}Vollständige analytische Lösung für $\vec {v}(\phi )$ mit Weber-Kraft}{155}{}%
-\contentsline {subsection}{\numberline {1.146.1}Definition der Variablen}{155}{}%
-\contentsline {subsection}{\numberline {1.146.2}Exakte Bahngleichung}{155}{}%
-\contentsline {subsection}{\numberline {1.146.3}Geschwindigkeitskomponenten}{155}{}%
-\contentsline {subsubsection}{Radialkomponente}{155}{}%
-\contentsline {subsubsection}{Azimutalkomponente}{155}{}%
-\contentsline {subsection}{\numberline {1.146.4}Vektorielle Geschwindigkeit}{155}{}%
-\contentsline {section}{\numberline {1.147}N-Körper-Integration mit Velocity-Verlet}{156}{}%
-\contentsline {subsection}{\numberline {1.147.1}Physikalische Grundgleichungen}{156}{}%
-\contentsline {subsection}{\numberline {1.147.2}Velocity-Verlet Algorithmus}{156}{}%
-\contentsline {subsubsection}{Initialisierung (t = 0)}{156}{}%
-\contentsline {subsubsection}{Zeitschritt $t \to t + \Delta t$}{156}{}%
-\contentsline {subsection}{\numberline {1.147.3}Energieerhaltung}{156}{}%
-\contentsline {subsection}{\numberline {1.147.4}Zeitschrittkontrolle}{156}{}%
-\contentsline {section}{\numberline {1.148}Universelles Zeitformat für Himmelskörper}{157}{}%
-\contentsline {subsection}{\numberline {1.148.1}Standardisiertes Format}{157}{}%
-\contentsline {subsection}{\numberline {1.148.2}Anwendungsbeispiele}{157}{}%
-\contentsline {subsection}{\numberline {1.148.3}Technische Umsetzung}{157}{}%
-\contentsline {subsection}{\numberline {1.148.4}Vorteile}{157}{}%
-\contentsline {subsection}{\numberline {1.148.5}Vergleich mit anderen Systemen}{157}{}%
-\contentsline {subsection}{\numberline {1.148.6}Mars Rover Beispiel}{157}{}%
-\contentsline {section}{\numberline {1.149}Vorteile des himmelsmechanischen Zeitsystems}{158}{}%
-\contentsline {subsection}{\numberline {1.149.1}Physikalisch konsistente Zeitmessung}{158}{}%
-\contentsline {subsection}{\numberline {1.149.2}Universelle Anwendbarkeit}{158}{}%
-\contentsline {subsection}{\numberline {1.149.3}Präzisionsgewinn}{158}{}%
-\contentsline {subsubsection}{Astronomische Beobachtungen}{158}{}%
-\contentsline {subsubsection}{Raumfahrtmissionen}{158}{}%
-\contentsline {subsection}{\numberline {1.149.4}Praktische Anwendungen}{158}{}%
-\contentsline {subsubsection}{Für Mondkolonien}{158}{}%
-\contentsline {subsection}{\numberline {1.149.5}Langfristige Stabilität}{158}{}%
-\contentsline {subsection}{\numberline {1.149.6}Implementierungsbeispiel}{158}{}%
-\contentsline {section}{\numberline {1.150}Natürliche Zeitdefinition für Himmelskörper}{160}{}%
-\contentsline {subsection}{\numberline {1.150.1}Grundprinzip der Winkelzeit}{160}{}%
-\contentsline {subsection}{\numberline {1.150.2}Erde-Mond-Zeitsystem}{160}{}%
-\contentsline {subsubsection}{Erdzeit (ET)}{160}{}%
-\contentsline {subsubsection}{Mondzeit (LT)}{160}{}%
-\contentsline {subsection}{\numberline {1.150.3}Zeitumrechnung}{160}{}%
-\contentsline {subsubsection}{Kepler-Gleichung für den Mond}{160}{}%
-\contentsline {subsection}{\numberline {1.150.4}Kalendersystem}{160}{}%
-\contentsline {subsection}{\numberline {1.150.5}Implementierung}{160}{}%
+\contentsline {subsection}{\numberline {1.5.1}Vorteile der Weber-Gravitation}{14}{}%
+\contentsline {section}{\numberline {1.6}Weber-Kraft im Dreikörpersystem}{15}{}%
+\contentsline {section}{\numberline {1.7}Quantisierte Weber-Kraft (Gittermodell)}{16}{}%
+\contentsline {section}{\numberline {1.8}Einsetzen in die Kraftgleichung}{17}{}%
+\contentsline {section}{\numberline {1.9}Klassische Lösung (0. Ordnung)}{18}{}%
+\contentsline {section}{\numberline {1.10}Relativistische Korrektur (1. Ordnung)}{19}{}%
+\contentsline {section}{\numberline {1.11}Beschleunigung bis zur 1. Ordnung}{20}{}%
+\contentsline {section}{\numberline {1.12}Explizite Form mit Bahnelementen}{21}{}%
+\contentsline {section}{\numberline {1.13}Theoretische Grundlage}{22}{}%
+\contentsline {section}{\numberline {1.14}Schrittweitensteuerung}{23}{}%
+\contentsline {section}{\numberline {1.15}Numerische Korrektur}{24}{}%
+\contentsline {section}{\numberline {1.16}Gesamtlösung}{25}{}%
+\contentsline {section}{\numberline {1.17}Kartesische Koordinaten}{26}{}%
+\contentsline {section}{\numberline {1.18}Zeitliche Ableitungen}{27}{}%
+\contentsline {section}{\numberline {1.19}Skalarprodukte}{28}{}%
+\contentsline {section}{\numberline {1.20}Differentialgleichung für \(x(\phi )\)}{29}{}%
+\contentsline {section}{\numberline {1.21}Differentialgleichung für \(y(\phi )\)}{30}{}%
+\contentsline {section}{\numberline {1.22}Differentialgleichung für \(\omega (\phi )\)}{31}{}%
+\contentsline {section}{\numberline {1.23}Zusammenfassung des DGL-Systems}{32}{}%
+\contentsline {section}{\numberline {1.24}Koordinatensystem und Basisvektoren}{33}{}%
+\contentsline {section}{\numberline {1.25}Geschwindigkeitsquadrat}{34}{}%
+\contentsline {section}{\numberline {1.26}Beschleunigungsskalarprodukt}{35}{}%
+\contentsline {section}{\numberline {1.27}Bewegungsgleichung in vektorieller Form}{36}{}%
+\contentsline {section}{\numberline {1.28}Differentialgleichungssystem}{37}{}%
+\contentsline {section}{\numberline {1.29}Explizite DGL für x-Komponente}{38}{}%
+\contentsline {section}{\numberline {1.30}Explizite DGL für y-Komponente}{39}{}%
+\contentsline {section}{\numberline {1.31}Transformiertes System 1. Ordnung}{40}{}%
+\contentsline {section}{\numberline {1.32}Elektrisches Feld als Deformationsgradient}{41}{}%
+\contentsline {section}{\numberline {1.33}Energie-Impuls-Beziehung für Photonen}{42}{}%
+\contentsline {section}{\numberline {1.34}Theorievergleich: ART vs. Weber}{43}{}%
+\contentsline {section}{\numberline {1.35}Vorteile der Weber-Theorie}{44}{}%
+\contentsline {section}{\numberline {1.36}Historische Dominanz der ART}{45}{}%
+\contentsline {section}{\numberline {1.37}Quantengravitation mit Weber}{46}{}%
+\contentsline {section}{\numberline {1.38}Periheldrehung des Merkur}{47}{}%
+\contentsline {section}{\numberline {1.39}Allgemeine $\beta $-Formel}{48}{}%
+\contentsline {section}{\numberline {1.40}Gravitationswellengleichung}{49}{}%
+\contentsline {section}{\numberline {1.41}Frequenzabhängige Lichtablenkung}{50}{}%
+\contentsline {section}{\numberline {1.42}Hamiltonian des Dodekaeder-Gitters}{51}{}%
+\contentsline {section}{\numberline {1.43}Periheldrehung des Merkur}{52}{}%
+\contentsline {section}{\numberline {1.44}Gravitative Rotverschiebung}{53}{}%
+\contentsline {section}{\numberline {1.45}Shapiro-Laufzeitverzögerung}{54}{}%
+\contentsline {section}{\numberline {1.46}Gravitationswellen-Quadrupolformel}{55}{}%
+\contentsline {section}{\numberline {1.47}Quantisierte Raumzeit-Parameter}{56}{}%
+\contentsline {section}{\numberline {1.48}Predictor-Corrector-Verfahren}{57}{}%
+\contentsline {section}{\numberline {1.49}Symplektische Integration}{58}{}%
+\contentsline {section}{\numberline {1.50}Gitter-QCD-Ansatz}{59}{}%
+\contentsline {section}{\numberline {1.51}N-Körper-Weber-Kraft}{60}{}%
+\contentsline {section}{\numberline {1.52}Bewegungsgleichung in Polarkoordinaten}{61}{}%
+\contentsline {section}{\numberline {1.53}Drehimpulserhaltung}{62}{}%
+\contentsline {section}{\numberline {1.54}Modifizierte Radialgleichung}{63}{}%
+\contentsline {section}{\numberline {1.55}Winkelgeschwindigkeit}{64}{}%
+\contentsline {section}{\numberline {1.56}Näherungslösung für Merkurbahn}{65}{}%
+\contentsline {section}{\numberline {1.57}Die Kerninnovation}{66}{}%
+\contentsline {section}{\numberline {1.58}Vollständige Impulsdynamik}{67}{}%
+\contentsline {section}{\numberline {1.59}Impulsverteilungsmechanismus}{68}{}%
+\contentsline {section}{\numberline {1.60}Iterationsschema der Impulsverteilung}{69}{}%
+\contentsline {section}{\numberline {1.61}Gesamtkopplungsmatrix}{70}{}%
+\contentsline {section}{\numberline {1.62}Konvergenzkriterium}{71}{}%
+\contentsline {section}{\numberline {1.63}Erhaltungssicherung}{72}{}%
+\contentsline {section}{\numberline {1.64}Impulsgleichung für modifizierte Keplerbahn}{73}{}%
+\contentsline {section}{\numberline {1.65}Vollständige Impulsverteilung}{74}{}%
+\contentsline {subsection}{\numberline {1.65.1}Grundprinzip}{74}{}%
+\contentsline {subsection}{\numberline {1.65.2}Kopplungsmatrix}{74}{}%
+\contentsline {subsection}{\numberline {1.65.3}Erhaltungssätze}{74}{}%
+\contentsline {subsection}{\numberline {1.65.4}Spezialfall: Zwei Körper}{74}{}%
+\contentsline {section}{\numberline {1.66}Ausgangsgleichungen}{75}{}%
+\contentsline {subsection}{\numberline {1.66.1}Keplerbahn}{75}{}%
+\contentsline {subsection}{\numberline {1.66.2}Drehimpulserhaltung}{75}{}%
+\contentsline {section}{\numberline {1.67}Geschwindigkeitskomponenten}{76}{}%
+\contentsline {subsection}{\numberline {1.67.1}Radialgeschwindigkeit}{76}{}%
+\contentsline {subsection}{\numberline {1.67.2}Azimutalgeschwindigkeit}{76}{}%
+\contentsline {section}{\numberline {1.68}Impulsberechnung}{77}{}%
+\contentsline {subsection}{\numberline {1.68.1}Impuls in Polarkoordinaten}{77}{}%
+\contentsline {subsection}{\numberline {1.68.2}Endergebnis}{77}{}%
+\contentsline {subsection}{\numberline {1.68.3}Betrag des Impulses}{77}{}%
+\contentsline {section}{\numberline {1.69}Spezialfälle}{78}{}%
+\contentsline {subsection}{\numberline {1.69.1}Kreisbahn (e = 0)}{78}{}%
+\contentsline {subsection}{\numberline {1.69.2}Perihel ($\phi = 0$)}{78}{}%
+\contentsline {subsection}{\numberline {1.69.3}Aphel ($\phi = \pi $)}{78}{}%
+\contentsline {section}{\numberline {1.70}Physikalische Interpretation}{79}{}%
+\contentsline {section}{\numberline {1.71}Grundgleichungen und Definitionen}{80}{}%
+\contentsline {subsection}{\numberline {1.71.1}Bahngleichung}{80}{}%
+\contentsline {subsection}{\numberline {1.71.2}Drehimpulserhaltung}{80}{}%
+\contentsline {section}{\numberline {1.72}Berechnung der Geschwindigkeiten}{81}{}%
+\contentsline {subsection}{\numberline {1.72.1}Radialgeschwindigkeit}{81}{}%
+\contentsline {subsection}{\numberline {1.72.2}Azimutalgeschwindigkeit}{81}{}%
+\contentsline {section}{\numberline {1.73}Berechnung des Impulses}{82}{}%
+\contentsline {subsection}{\numberline {1.73.1}Impulsdefinition}{82}{}%
+\contentsline {subsection}{\numberline {1.73.2}Radialkomponente}{82}{}%
+\contentsline {subsection}{\numberline {1.73.3}Azimutalkomponente}{82}{}%
+\contentsline {section}{\numberline {1.74}Endergebnis}{83}{}%
+\contentsline {section}{\numberline {1.75}Zusätzliche Bemerkungen}{84}{}%
+\contentsline {section}{\numberline {1.76}Eingangsparameter}{85}{}%
+\contentsline {subsection}{\numberline {1.76.1}Kraftgleichung (radial)}{85}{}%
+\contentsline {subsection}{\numberline {1.76.2}Keplerbahn \( r(\phi ) \)}{85}{}%
+\contentsline {subsection}{\numberline {1.76.3}Drehimpulserhaltung}{85}{}%
+\contentsline {section}{\numberline {1.77}Berechnung der Zeitableitungen}{86}{}%
+\contentsline {subsection}{\numberline {1.77.1}Radialgeschwindigkeit \( \dot {r} \)}{86}{}%
+\contentsline {subsection}{\numberline {1.77.2}Radialbeschleunigung \( \ddot {r} \)}{86}{}%
+\contentsline {section}{\numberline {1.78}Berechnung des Impulses \( \mathbf {p}(t) \)}{87}{}%
+\contentsline {subsection}{\numberline {1.78.1}Endergebnis}{87}{}%
+\contentsline {section}{\numberline {1.79}Interpretation und Anmerkungen}{88}{}%
+\contentsline {section}{\numberline {1.80}Grundformel}{89}{}%
+\contentsline {section}{\numberline {1.81}Eingangswerte für Merkur}{90}{}%
+\contentsline {section}{\numberline {1.82}Berechnung von $\kappa $}{91}{}%
+\contentsline {subsection}{\numberline {1.82.1}Schritt 1: Nenner $c^2a(1-e^2)$}{91}{}%
+\contentsline {subsection}{\numberline {1.82.2}Schritt 2: Zähler $6GM$}{91}{}%
+\contentsline {subsection}{\numberline {1.82.3}Schritt 3: Berechnung von $\kappa $}{91}{}%
+\contentsline {section}{\numberline {1.83}Periheldrehung pro Umlauf}{92}{}%
+\contentsline {section}{\numberline {1.84}Periheldrehung pro Jahrhundert}{93}{}%
+\contentsline {section}{\numberline {1.85}Vergleich mit Beobachtung}{94}{}%
+\contentsline {section}{\numberline {1.86}Zusammenfassung}{95}{}%
+\contentsline {section}{\numberline {1.87}Grundgleichung der Winkelgeschwindigkeit}{96}{}%
+\contentsline {subsection}{\numberline {1.87.1}Modifizierte Winkelgeschwindigkeit nach Weber}{96}{}%
+\contentsline {section}{\numberline {1.88}Winkeländerung für T = 1 Sekunde}{97}{}%
+\contentsline {subsection}{\numberline {1.88.1}Infinitesimale Änderung}{97}{}%
+\contentsline {subsection}{\numberline {1.88.2}Ergebnis für $\Delta \phi $ (1 Sekunde)}{97}{}%
+\contentsline {section}{\numberline {1.89}Beispiel: Merkur im Perihel ($\varphi _0 = 0$)}{98}{}%
+\contentsline {subsection}{\numberline {1.89.1}Berechnung}{98}{}%
+\contentsline {subsection}{\numberline {1.89.2}$\Delta \phi $ nach 1 Sekunde}{98}{}%
+\contentsline {section}{\numberline {1.90}Kumulative Periheldrehung}{99}{}%
+\contentsline {section}{\numberline {1.91}Grundprinzip}{100}{}%
+\contentsline {subsection}{\numberline {1.91.1}DGL-System}{100}{}%
+\contentsline {subsection}{\numberline {1.91.2}Zeitberechnung}{100}{}%
+\contentsline {section}{\numberline {1.92}Physikalische Bedeutung der Gleichungen}{101}{}%
+\contentsline {subsection}{\numberline {1.92.1}Radialposition ($r$)}{101}{}%
+\contentsline {subsection}{\numberline {1.92.2}Radialgeschwindigkeit ($v_r$)}{101}{}%
+\contentsline {subsection}{\numberline {1.92.3}Winkelgeschwindigkeit ($\omega $)}{101}{}%
+\contentsline {section}{\numberline {1.93}Numerische Lösung}{102}{}%
+\contentsline {subsection}{\numberline {1.93.1}Schritt 1: Initialisierung}{102}{}%
+\contentsline {subsection}{\numberline {1.93.2}Schritt 2: Kraftberechnung}{102}{}%
+\contentsline {subsection}{\numberline {1.93.3}Schritt 3: Integration (Euler-Verfahren)}{102}{}%
+\contentsline {subsection}{\numberline {1.93.4}Hinweis}{102}{}%
+\contentsline {section}{\numberline {1.94}Beispiel: Merkur-Bahn}{103}{}%
+\contentsline {subsection}{\numberline {1.94.1}Parameter}{103}{}%
+\contentsline {subsection}{\numberline {1.94.2}Erster Schritt ($\Delta \phi = 0.01$ rad)}{103}{}%
+\contentsline {section}{\numberline {1.95}Zusammenfassung}{104}{}%
+\contentsline {section}{\numberline {1.96}Knotendynamik \& Energie}{105}{}%
+\contentsline {subsection}{\numberline {1.96.1}Energie-Knoten-Relation}{105}{}%
+\contentsline {subsection}{\numberline {1.96.2}Beispiel Proton}{105}{}%
+\contentsline {section}{\numberline {1.97}SU(3)×SL(2,C)-Vereinheitlichung}{106}{}%
+\contentsline {subsection}{\numberline {1.97.1}Symmetriegruppe}{106}{}%
+\contentsline {subsection}{\numberline {1.97.2}Kombinierte Wirkung}{106}{}%
+\contentsline {section}{\numberline {1.98}Renormierungsgruppenfluss}{107}{}%
+\contentsline {subsection}{\numberline {1.98.1}Beta-Funktion}{107}{}%
+\contentsline {subsection}{\numberline {1.98.2}Knotenspezifische Korrektur}{107}{}%
+\contentsline {section}{\numberline {1.99}Nichtperturbative Quantisierung}{108}{}%
+\contentsline {subsection}{\numberline {1.99.1}Diskretisierte Wirkung}{108}{}%
+\contentsline {subsection}{\numberline {1.99.2}Wilson-Loops}{108}{}%
+\contentsline {section}{\numberline {1.100}Topologische Feldtheorie}{109}{}%
+\contentsline {subsection}{\numberline {1.100.1}Chern-Simons-Wirkung}{109}{}%
+\contentsline {subsection}{\numberline {1.100.2}Verknüpfungszahl}{109}{}%
+\contentsline {section}{\numberline {1.101}Knotenmoden-Klassifikation}{110}{}%
+\contentsline {subsection}{\numberline {1.101.1}Alexander-Conway-Gleichung}{110}{}%
+\contentsline {subsection}{\numberline {1.101.2}Spektraler Index}{110}{}%
+\contentsline {section}{\numberline {1.102}Vektordefinitionen (Kartesische Koordinaten)}{111}{}%
+\contentsline {subsection}{\numberline {1.102.1}Ortsvektor}{111}{}%
+\contentsline {subsection}{\numberline {1.102.2}Geschwindigkeitsvektor}{111}{}%
+\contentsline {subsection}{\numberline {1.102.3}Beschleunigungsvektor}{111}{}%
+\contentsline {section}{\numberline {1.103}Lösungen in Vektorform}{112}{}%
+\contentsline {subsection}{\numberline {1.103.1}Bahngleichung (xy-Ebene)}{112}{}%
+\contentsline {subsection}{\numberline {1.103.2}Geschwindigkeitsfeld}{112}{}%
+\contentsline {section}{\numberline {1.104}N-Körper-Systeme}{113}{}%
+\contentsline {subsection}{\numberline {1.104.1}Beschleunigung des i-ten Körpers}{113}{}%
+\contentsline {subsection}{\numberline {1.104.2}Radialkomponenten}{113}{}%
+\contentsline {section}{\numberline {1.105}Grundgrößen und Konstanten}{114}{}%
+\contentsline {subsection}{\numberline {1.105.1}Abgeleitete Größen}{114}{}%
+\contentsline {section}{\numberline {1.106}Kartesische Bahngleichungen}{115}{}%
+\contentsline {subsection}{\numberline {1.106.1}Positionsvektor $\vec {r}(\phi )$}{115}{}%
+\contentsline {subsection}{\numberline {1.106.2}Geschwindigkeitsvektor $\vec {v}(\phi )$}{115}{}%
+\contentsline {subsection}{\numberline {1.106.3}Winkelgeschwindigkeit $\omega (\phi )$}{115}{}%
+\contentsline {section}{\numberline {1.107}Beispielberechnungen}{116}{}%
+\contentsline {subsection}{\numberline {1.107.1}Perihel ($\phi = 0$)}{116}{}%
+\contentsline {subsection}{\numberline {1.107.2}Physikalische Interpretation}{116}{}%
+\contentsline {section}{\numberline {1.108}Gültigkeitsbereich}{117}{}%
+\contentsline {subsection}{\numberline {1.108.1}Implementierungshinweise}{117}{}%
+\contentsline {section}{\numberline {1.109}Quantisiertes Dodekaeder-Gitter}{118}{}%
+\contentsline {subsection}{\numberline {1.109.1}Knotenenergie aus Jones-Polynomen}{118}{}%
+\contentsline {subsection}{\numberline {1.109.2}Gittereigenschaften}{118}{}%
+\contentsline {section}{\numberline {1.110}Experimentelle Vorhersagen}{119}{}%
+\contentsline {subsection}{\numberline {1.110.1}Unterscheidungsmerkmale}{119}{}%
+\contentsline {section}{\numberline {1.111}Kritik an der Allgemeinen Relativitätstheorie}{120}{}%
+\contentsline {subsection}{\numberline {1.111.1}Probleme der ART}{120}{}%
+\contentsline {subsection}{\numberline {1.111.2}Warum Weber überlegen ist}{120}{}%
+\contentsline {section}{\numberline {1.112}Zusammenfassung: Die Wahrheit gewinnt}{121}{}%
+\contentsline {subsection}{\numberline {1.112.1}Theorie-Eigenschaften}{121}{}%
+\contentsline {subsection}{\numberline {1.112.2}Ausblick}{121}{}%
+\contentsline {section}{\numberline {1.113}Heliozentrisch → Baryzentrisch Transformation}{122}{}%
+\contentsline {subsection}{\numberline {1.113.1}Baryzentrische Position der Sonne}{122}{}%
+\contentsline {subsection}{\numberline {1.113.2}Baryzentrische Positionen der Planeten}{122}{}%
+\contentsline {subsection}{\numberline {1.113.3}Baryzentrische Geschwindigkeiten}{122}{}%
+\contentsline {section}{\numberline {1.114}Validierungstests}{123}{}%
+\contentsline {subsection}{\numberline {1.114.1}Schwerpunkttest}{123}{}%
+\contentsline {subsection}{\numberline {1.114.2}Umkehrtransformation}{123}{}%
+\contentsline {section}{\numberline {1.115}Beispiel: Sonne-Jupiter-System}{124}{}%
+\contentsline {section}{\numberline {1.116}Implementierung}{125}{}%
+\contentsline {subsection}{\numberline {1.116.1}Numerische Genauigkeit}{125}{}%
+\contentsline {subsection}{\numberline {1.116.2}Algorithmus}{125}{}%
+\contentsline {section}{\numberline {1.117}Objektzuordnungen und Variablen}{126}{}%
+\contentsline {subsection}{\numberline {1.117.1}Aktiver Körper (wird gestört)}{126}{}%
+\contentsline {subsection}{\numberline {1.117.2}Störender Körper (verursacht Störung)}{126}{}%
+\contentsline {section}{\numberline {1.118}Weber-Störungsterme}{127}{}%
+\contentsline {subsection}{\numberline {1.118.1}Positionsstörung}{127}{}%
+\contentsline {subsection}{\numberline {1.118.2}Winkelgeschwindigkeitsstörung}{127}{}%
+\contentsline {section}{\numberline {1.119}Physikalische Interpretation}{128}{}%
+\contentsline {section}{\numberline {1.120}Zeitberechnung aus $\omega (\phi )$ mit Korrekturterm}{129}{}%
+\contentsline {subsection}{\numberline {1.120.1}Integralgleichung mit Korrektur}{129}{}%
+\contentsline {section}{\numberline {1.121}Analytische Lösung}{130}{}%
+\contentsline {section}{\numberline {1.122}Beispiel: 1° Merkur-Orbit}{131}{}%
+\contentsline {subsection}{\numberline {1.122.1}Parameter für Merkur}{131}{}%
+\contentsline {section}{\numberline {1.123}Klassische Kepler-Periode}{132}{}%
+\contentsline {section}{\numberline {1.124}Weber-Modifikation (1. Ordnung)}{133}{}%
+\contentsline {section}{\numberline {1.125}Berechnung für Merkur}{134}{}%
+\contentsline {section}{\numberline {1.126}Erweiterte Formel (höhere Ordnungen)}{135}{}%
+\contentsline {subsection}{\numberline {1.126.1}Praktische 1. Ordnungsformel}{135}{}%
+\contentsline {section}{\numberline {1.127}Physikalische Grundlagen}{136}{}%
+\contentsline {section}{\numberline {1.128}Mathematische Herleitung}{137}{}%
+\contentsline {subsection}{\numberline {1.128.1}Integralformulierung}{137}{}%
+\contentsline {subsection}{\numberline {1.128.2}Substitution der Bahnkurve}{137}{}%
+\contentsline {subsection}{\numberline {1.128.3}Lösung der Integrale}{137}{}%
+\contentsline {subsubsection}{Hauptterm (klassisch)}{137}{}%
+\contentsline {subsubsection}{Relativistischer Korrekturterm}{137}{}%
+\contentsline {section}{\numberline {1.129}Anwendungsbeispiel: Merkur-Orbit}{138}{}%
+\contentsline {subsection}{\numberline {1.129.1}Berechnung für 1° Bahnsegment ($\Delta \phi = \pi /180$)}{138}{}%
+\contentsline {subsection}{\numberline {1.129.2}Physikalische Interpretation}{138}{}%
+\contentsline {section}{\numberline {1.130}Vergleich mit der ART}{139}{}%
+\contentsline {subsection}{\numberline {1.130.1}Vorteile der Formulierung}{139}{}%
+\contentsline {section}{\numberline {1.131}Zusammenfassung}{140}{}%
+\contentsline {section}{\numberline {1.132}Universelle Knoten-Gitter-Dynamik}{141}{}%
+\contentsline {subsection}{\numberline {1.132.1}Grundform der Theorie}{141}{}%
+\contentsline {subsection}{\numberline {1.132.2}Symbolerklärungen}{141}{}%
+\contentsline {section}{\numberline {1.133}Vollständige analytische Lösung für $\vec {v}(\phi )$ mit Weber-Kraft}{142}{}%
+\contentsline {subsection}{\numberline {1.133.1}Definition der Variablen}{142}{}%
+\contentsline {subsection}{\numberline {1.133.2}Exakte Bahngleichung}{142}{}%
+\contentsline {subsection}{\numberline {1.133.3}Geschwindigkeitskomponenten}{142}{}%
+\contentsline {subsubsection}{Radialkomponente}{142}{}%
+\contentsline {subsubsection}{Azimutalkomponente}{142}{}%
+\contentsline {subsection}{\numberline {1.133.4}Vektorielle Geschwindigkeit}{142}{}%
+\contentsline {section}{\numberline {1.134}N-Körper-Integration mit Velocity-Verlet}{143}{}%
+\contentsline {subsection}{\numberline {1.134.1}Physikalische Grundgleichungen}{143}{}%
+\contentsline {subsection}{\numberline {1.134.2}Velocity-Verlet Algorithmus}{143}{}%
+\contentsline {subsubsection}{Initialisierung (t = 0)}{143}{}%
+\contentsline {subsubsection}{Zeitschritt $t \to t + \Delta t$}{143}{}%
+\contentsline {subsection}{\numberline {1.134.3}Energieerhaltung}{143}{}%
+\contentsline {subsection}{\numberline {1.134.4}Zeitschrittkontrolle}{143}{}%
+\contentsline {section}{\numberline {1.135}Universelles Zeitformat für Himmelskörper}{144}{}%
+\contentsline {subsection}{\numberline {1.135.1}Standardisiertes Format}{144}{}%
+\contentsline {subsection}{\numberline {1.135.2}Anwendungsbeispiele}{144}{}%
+\contentsline {subsection}{\numberline {1.135.3}Technische Umsetzung}{144}{}%
+\contentsline {subsection}{\numberline {1.135.4}Vorteile}{144}{}%
+\contentsline {subsection}{\numberline {1.135.5}Vergleich mit anderen Systemen}{144}{}%
+\contentsline {subsection}{\numberline {1.135.6}Mars Rover Beispiel}{144}{}%
+\contentsline {section}{\numberline {1.136}Vorteile des himmelsmechanischen Zeitsystems}{145}{}%
+\contentsline {subsection}{\numberline {1.136.1}Physikalisch konsistente Zeitmessung}{145}{}%
+\contentsline {subsection}{\numberline {1.136.2}Universelle Anwendbarkeit}{145}{}%
+\contentsline {subsection}{\numberline {1.136.3}Präzisionsgewinn}{145}{}%
+\contentsline {subsubsection}{Astronomische Beobachtungen}{145}{}%
+\contentsline {subsubsection}{Raumfahrtmissionen}{145}{}%
+\contentsline {subsection}{\numberline {1.136.4}Praktische Anwendungen}{145}{}%
+\contentsline {subsubsection}{Für Mondkolonien}{145}{}%
+\contentsline {subsection}{\numberline {1.136.5}Langfristige Stabilität}{145}{}%
+\contentsline {subsection}{\numberline {1.136.6}Implementierungsbeispiel}{145}{}%
+\contentsline {section}{\numberline {1.137}Natürliche Zeitdefinition für Himmelskörper}{147}{}%
+\contentsline {subsection}{\numberline {1.137.1}Grundprinzip der Winkelzeit}{147}{}%
+\contentsline {subsection}{\numberline {1.137.2}Erde-Mond-Zeitsystem}{147}{}%
+\contentsline {subsubsection}{Erdzeit (ET)}{147}{}%
+\contentsline {subsubsection}{Mondzeit (LT)}{147}{}%
+\contentsline {subsection}{\numberline {1.137.3}Zeitumrechnung}{147}{}%
+\contentsline {subsubsection}{Kepler-Gleichung für den Mond}{147}{}%
+\contentsline {subsection}{\numberline {1.137.4}Kalendersystem}{147}{}%
+\contentsline {subsection}{\numberline {1.137.5}Implementierung}{147}{}%
