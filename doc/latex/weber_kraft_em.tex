@@ -1,86 +1,118 @@
 \section{Klassische Weber-Kraft (Elektrodynamik)}
-\[ F_{Weber}^{EM} = \frac{Qq}{4\pi\epsilon_0 r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\hat{r} \]
+\[ \bm{F}_{\text{Weber}}^{\text{EM}} = \frac{Qq}{4\pi\epsilon_0 r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\bm{\hat{r}} \]
 
-\subsection*{Beschreibung der Symbole:}
-\begin{itemize}
-    \item $F_{Weber}^{EM}$: Weber-Elektrodynamische Kraft zwischen zwei Ladungen
-    \item $Q, q$: Elektrische Ladungen der beiden wechselwirkenden Teilchen
-    \item $\epsilon_0$: Elektrische Feldkonstante (Permittivität des Vakuums)
-    \item $r$: Abstand zwischen den Ladungen
-    \item $\dot{r} = \frac{dr}{dt}$: Relative Radialgeschwindigkeit der Ladungen
-    \item $\ddot{r} = \frac{d^2r}{dt^2}$: Relative Radialbeschleunigung der Ladungen
-    \item $c$: Lichtgeschwindigkeit im Vakuum
-    \item $\hat{r}$: Einheitsvektor in radialer Richtung
+\subsection*{Symbolbeschreibung}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item $\bm{F}_{\text{Weber}}^{\text{EM}}$: Weber-Kraft zwischen Ladungen
+    \item $Q, q$: Elektrische Ladungen
+    \item $\epsilon_0$: Elektrische Feldkonstante
+    \item $r$: Ladungsabstand
+    \item $\dot{r} = \frac{dr}{dt}$: Relative Radialgeschwindigkeit
+    \item $\ddot{r} = \frac{d^2r}{dt^2}$: Relative Radialbeschleunigung
+    \item $c$: Lichtgeschwindigkeit
+    \item $\bm{\hat{r}}$: Radialer Einheitsvektor
 \end{itemize}
 
-\subsection*{Zusammenhang zur Coulomb-Kraft:}
-Die Weber-Kraft verallgemeinert das Coulomb-Gesetz für bewegte Ladungen:
-\begin{itemize}
-    \item Der erste Term $\frac{Qq}{4\pi\epsilon_0 r^2}$ entspricht genau der klassischen Coulomb-Kraft zwischen statischen Ladungen.
-    \item Die zusätzlichen Terme $\left(-\frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)$ beschreiben Geschwindigkeits- und Beschleunigungsabhängige Korrekturen zur Coulomb-Wechselwirkung.
-    \item Für $\dot{r} = 0$ und $\ddot{r} = 0$ (statischer Fall) reduziert sich die Weber-Kraft auf die Coulomb-Kraft.
+\subsection*{Beziehung zur Coulomb-Kraft}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Erster Term entspricht Coulomb-Kraft: $\frac{Qq}{4\pi\epsilon_0 r^2}$
+    \item Zusatzterme $\left(-\frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)$ beschreiben Bewegungsabhängige Korrekturen
+    \item Reduktion auf Coulomb-Kraft im statischen Fall ($\dot{r} = \ddot{r} = 0$)
 \end{itemize}
 
-\subsection*{Bedeutung der Weber-Kraft im Vergleich zu Maxwell:}
-\begin{itemize}
-    \item Die Weber-Elektrodynamik bietet eine alternative Beschreibung elektromagnetischer Phänomene zur Maxwell-Theorie.
-    \item Im Gegensatz zu Maxwells Feldtheorie beschreibt Webers Ansatz die elektrodynamische Wechselwirkung direkt zwischen Ladungen (Fernwirkungskonzept).
-    \item Die Weber-Kraft enthält implizit retardierte Effekte (durch die Geschwindigkeits- und Beschleunigungsterme), während Maxwell diese explizit durch retardierte Potentiale beschreibt.
-    \item Die Weber-Theorie sagt für viele Phänomene (wie die Ampere-Kraft zwischen Stromleitern) dieselben Ergebnisse voraus wie Maxwell, unterscheidet sich aber in einigen Spezialfällen.
-    \item Ein wesentlicher Unterschied ist, dass die Weber-Theorie keine elektromagnetischen Wellen im Vakuum vorhersagt, was ein zentrales Element der Maxwell-Theorie ist.
+\subsection*{Vergleich mit Maxwell-Theorie}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Alternative Beschreibung elektromagnetischer Phänomene
+    \item Fernwirkungsansatz (direkte Ladungswechselwirkung)
+    \item Implizite Retardierung durch Geschwindigkeits-/Beschleunigungsterme
+    \item Keine Vorhersage von EM-Wellen im Vakuum
 \end{itemize}
 
-\section{Zusammenhang zwischen Maxwell-Theorie und ART: Wellenausbreitung und Raummodelle}
+\section{Maxwell und ART: Wellen und Raummodelle}
 
-\subsection{Maxwells elektromagnetische Wellen im flachen Raum}
-Die Maxwell-Gleichungen in ihrer klassischen Form,
-\[
-\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}, \quad
-\nabla \times \mathbf{B} = \mu_0\mathbf{J} + \mu_0\epsilon_0\frac{\partial\mathbf{E}}{\partial t},
-\]
-implizieren die Existenz elektromagnetischer Wellen im Vakuum ($\rho=0$, $\mathbf{J}=0$), beschrieben durch die Wellengleichung:
-\[
-\left(\nabla^2 - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\right)\mathbf{E} = 0, \quad \left(\nabla^2 - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\right)\mathbf{B} = 0
-\]
-\begin{itemize}
-    \item \textbf{Raummodell}: Flacher Minkowski-Raum $\mathbb{R}^{3,1}$ mit konstanter Metrik $\eta_{\mu\nu} = \mathrm{diag}(-1,1,1,1)$
-    \item \textbf{Lichtausbreitung}: Geradlinige Ausbreitung mit $c = \frac{1}{\sqrt{\mu_0\epsilon_0}}$ als universelle Konstante
-    \item \textbf{Voraussetzung}: Isotropie und Homogenität des Raumes für Wellenausbreitung
+\subsection{Maxwell im flachen Raum}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Wellengleichung im Vakuum:
+    \[ \left(\nabla^2 - \frac{1}{c^2}\partial_t^2\right)\bm{E} = 0 \]
+    \item Raummodell: Minkowski-Raum $\mathbb{R}^{3,1}$ mit $\eta_{\mu\nu}$
+    \item Lichtausbreitung: Geradlinig mit $c = 1/\sqrt{\mu_0\epsilon_0}$
 \end{itemize}
 
-\subsection{Allgemeine Relativitätstheorie und gekrümmte Raumzeit}
-In der ART wird die Metrik $g_{\mu\nu}$ dynamisch durch die Einstein-Gleichungen bestimmt:
-\[
-G_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
-\]
-\begin{itemize}
-    \item \textbf{Wellenausbreitung}: Licht folgt nullgeodätischen Bahnen mit $ds^2 = g_{\mu\nu}dx^\mu dx^\nu = 0$
-    \item \textbf{Konsequenzen}:
-    \begin{enumerate}
-        \item Gravitative Lichtablenkung durch Raumzeitkrümmung
-        \item Zeitverzögerung (Shapiro-Verzögerung)
-        \item Frequenzverschiebung (gravitativer Rot-/Blauverschiebung)
+\subsection{ART in gekrümmter Raumzeit}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Einstein-Gleichungen:
+    \[ G_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu} \]
+    \item Lichtausbreitung: Nullgeodäten ($ds^2 = 0$)
+    \item Konsequenzen:
+    \begin{enumerate}[noitemsep]
+        \item Gravitative Lichtablenkung
+        \item Shapiro-Verzögerung
+        \item Gravitative Rot-/Blauverschiebung
     \end{enumerate}
-    \item \textbf{Kontinuum}: Existenz einer differenzierbaren Mannigfaltigkeit als fundamentale Voraussetzung
 \end{itemize}
 
-\subsection{Konzeptioneller Brückenschlag}
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Aspekt} & \textbf{Maxwell (flache Raumzeit)} & \textbf{ART (gekrümmte Raumzeit)} \\
-\hline
-Wellengleichung & Lineare DGL in $\eta_{\mu\nu}$ & Geodätengleichung $\frac{d^2x^\mu}{d\lambda^2} + \Gamma^\mu_{\alpha\beta}\frac{dx^\alpha}{d\lambda}\frac{dx^\beta}{d\lambda} = 0$ \\
-\hline
-Ausbreitungsmedium & Kein Äther, aber absoluter Raum & Dynamische Geometrie $g_{\mu\nu}(x)$ \\
-\hline
-Invarianzen & Lorentz-Transformationen & Allgemeine Kovarianz \\
-\hline
+\begin{table}[h]
+\centering
+\caption{Vergleich Maxwell und ART}
+\begin{tabular}{ll}
+\toprule
+\textbf{Maxwell} & \textbf{ART} \\
+\midrule
+Lineare Wellengleichung & Geodätengleichung \\
+Flache Metrik $\eta_{\mu\nu}$ & Dynamische Metrik $g_{\mu\nu}$ \\
+Lorentz-Invarianz & Allgemeine Kovarianz \\
+\bottomrule
 \end{tabular}
+\end{table}
 
-\subsection*{Fundamentale Erkenntnis}
-Die ART verallgemeinert das Maxwellsche Konzept der Wellenausbreitung:
-\begin{itemize}
-    \item Maxwells $c$ wird zur lokalen Größe in gekrümmter Raumzeit
-    \item Die konstante Metrik $\eta_{\mu\nu}$ wird durch das dynamische Feld $g_{\mu\nu}$ ersetzt
-    \item Die ART benötigt dabei zwingend ein Kontinuumsmodell des Raumes, während Maxwell dies nur implizit voraussetzt
+\section{Weber-Kraft und Quantengravitation}
+
+\subsection{Konzeptionelle Vorteile}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Kein vordefiniertes Raummodell benötigt
+    \item Natürliche Diskretisierung durch Punktteilchen
+    \item Gravitative Erweiterung möglich:
+    \[ \bm{F}_{\text{Weber}}^{G} = G\frac{mM}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\bm{\hat{r}} \]
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\caption{Quantisierungsprobleme und Alternativen}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+\textbf{ART-Problem} & \textbf{Weber-Lösungsansatz} \\
+\midrule
+Nichtrenormierbarkeit & Keine Geometriequantisierung nötig \\
+Singularitäten & Punktteilchen ohne Metrik \\
+Zeitproblem & Explizite Zeitabhängigkeit in $\dot{r}$, $\ddot{r}$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection*{Zusammenfassung}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Umgeht Quantisierungsprobleme der ART
+    \item Ermöglicht diskrete Raumzeitmodelle
+    \item Offene Fragen:
+    \begin{itemize}[noitemsep]
+        \item Verallgemeinerung auf nicht-abelsche Theorien
+        \item Quantenfeldtheoretische Formulierung
+        \item Experimentelle Tests
+    \end{itemize}
+    \item Potentieller Brückenansatz zur Quantengravitation
+\end{itemize}
+
+\section{Weber-Kraft und Gravitation}
+
+\subsection*{Tisserands Ansatz}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Übertragung der elektrodynamischen Weber-Kraft (Originalformel) auf Gravitation:
+    \[ \bm{F} = G\frac{mM}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\bm{\hat{r}} \]
+    \item Scheiterte an der Erklärung der Periheldrehung des Merkur
+\end{itemize}
+
+\subsection*{Hinweis}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Die korrekte gravitative Formulierung wird separat vorgestellt
+    \item Erfordert Modifikation der Original-Weberschen Formel
 \end{itemize}
