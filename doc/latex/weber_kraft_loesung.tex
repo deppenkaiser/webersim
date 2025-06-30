@@ -1,0 +1,37 @@
+\section{Vollständige analytische Lösung für $\vec{v}(\phi)$ mit Weber-Kraft}
+
+\subsection{Definition der Variablen}
+\begin{itemize}
+    \item $G = 6.67430 \times 10^{-11}\,\text{m}^3\,\text{kg}^{-1}\,\text{s}^{-2}$ (Gravitationskonstante)
+    \item $c = 299,\!792,\!458\,\text{m/s}$ (Lichtgeschwindigkeit)
+    \item $M$: Masse des Zentralkörpers [kg]
+    \item $a$: Große Halbachse [m]
+    \item $e$: Exzentrizität ($0 \leq e < 1$)
+    \item $\phi$: Wahre Anomalie [rad]
+    \item $h = \sqrt{G M a(1-e^2)}$ (Spezifischer Drehimpuls)
+    \item $\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}$ (Relativistischer Korrekturfaktor)
+\end{itemize}
+
+\subsection{Exakte Bahngleichung}
+\begin{equation}
+r(\phi) = \frac{a(1-e^2)}{1 + e \cos(\kappa \phi)}
+\end{equation}
+
+\subsection{Geschwindigkeitskomponenten}
+\subsubsection{Radialkomponente}
+\begin{equation}
+v_r(\phi) = \frac{h e \kappa \sin(\kappa \phi)}{a(1-e^2)}
+\end{equation}
+
+\subsubsection{Azimutalkomponente}
+\begin{equation}
+v_\phi(\phi) = \frac{h}{r(\phi)} = \sqrt{\frac{GM}{a(1-e^2)}} \left(1 + e \cos(\kappa \phi)\right)
+\end{equation}
+
+\subsection{Vektorielle Geschwindigkeit}
+\begin{equation}
+\vec{v}(\phi) = \sqrt{\frac{GM}{a(1-e^2)}} \left(
+    \frac{e \kappa \sin(\kappa \phi)}{1 + e \cos(\kappa \phi)} \, \hat{r}
+    + \left[1 + e \cos(\kappa \phi)\right] \hat{\phi}
+\right)
+\end{equation}
