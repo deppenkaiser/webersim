@@ -1,2 +1,86 @@
 \section{Klassische Weber-Kraft (Elektrodynamik)}
 \[ F_{Weber}^{EM} = \frac{Qq}{4\pi\epsilon_0 r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\hat{r} \]
+
+\subsection*{Beschreibung der Symbole:}
+\begin{itemize}
+    \item $F_{Weber}^{EM}$: Weber-Elektrodynamische Kraft zwischen zwei Ladungen
+    \item $Q, q$: Elektrische Ladungen der beiden wechselwirkenden Teilchen
+    \item $\epsilon_0$: Elektrische Feldkonstante (Permittivität des Vakuums)
+    \item $r$: Abstand zwischen den Ladungen
+    \item $\dot{r} = \frac{dr}{dt}$: Relative Radialgeschwindigkeit der Ladungen
+    \item $\ddot{r} = \frac{d^2r}{dt^2}$: Relative Radialbeschleunigung der Ladungen
+    \item $c$: Lichtgeschwindigkeit im Vakuum
+    \item $\hat{r}$: Einheitsvektor in radialer Richtung
+\end{itemize}
+
+\subsection*{Zusammenhang zur Coulomb-Kraft:}
+Die Weber-Kraft verallgemeinert das Coulomb-Gesetz für bewegte Ladungen:
+\begin{itemize}
+    \item Der erste Term $\frac{Qq}{4\pi\epsilon_0 r^2}$ entspricht genau der klassischen Coulomb-Kraft zwischen statischen Ladungen.
+    \item Die zusätzlichen Terme $\left(-\frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)$ beschreiben Geschwindigkeits- und Beschleunigungsabhängige Korrekturen zur Coulomb-Wechselwirkung.
+    \item Für $\dot{r} = 0$ und $\ddot{r} = 0$ (statischer Fall) reduziert sich die Weber-Kraft auf die Coulomb-Kraft.
+\end{itemize}
+
+\subsection*{Bedeutung der Weber-Kraft im Vergleich zu Maxwell:}
+\begin{itemize}
+    \item Die Weber-Elektrodynamik bietet eine alternative Beschreibung elektromagnetischer Phänomene zur Maxwell-Theorie.
+    \item Im Gegensatz zu Maxwells Feldtheorie beschreibt Webers Ansatz die elektrodynamische Wechselwirkung direkt zwischen Ladungen (Fernwirkungskonzept).
+    \item Die Weber-Kraft enthält implizit retardierte Effekte (durch die Geschwindigkeits- und Beschleunigungsterme), während Maxwell diese explizit durch retardierte Potentiale beschreibt.
+    \item Die Weber-Theorie sagt für viele Phänomene (wie die Ampere-Kraft zwischen Stromleitern) dieselben Ergebnisse voraus wie Maxwell, unterscheidet sich aber in einigen Spezialfällen.
+    \item Ein wesentlicher Unterschied ist, dass die Weber-Theorie keine elektromagnetischen Wellen im Vakuum vorhersagt, was ein zentrales Element der Maxwell-Theorie ist.
+\end{itemize}
+
+\section{Zusammenhang zwischen Maxwell-Theorie und ART: Wellenausbreitung und Raummodelle}
+
+\subsection{Maxwells elektromagnetische Wellen im flachen Raum}
+Die Maxwell-Gleichungen in ihrer klassischen Form,
+\[
+\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}, \quad
+\nabla \times \mathbf{B} = \mu_0\mathbf{J} + \mu_0\epsilon_0\frac{\partial\mathbf{E}}{\partial t},
+\]
+implizieren die Existenz elektromagnetischer Wellen im Vakuum ($\rho=0$, $\mathbf{J}=0$), beschrieben durch die Wellengleichung:
+\[
+\left(\nabla^2 - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\right)\mathbf{E} = 0, \quad \left(\nabla^2 - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\right)\mathbf{B} = 0
+\]
+\begin{itemize}
+    \item \textbf{Raummodell}: Flacher Minkowski-Raum $\mathbb{R}^{3,1}$ mit konstanter Metrik $\eta_{\mu\nu} = \mathrm{diag}(-1,1,1,1)$
+    \item \textbf{Lichtausbreitung}: Geradlinige Ausbreitung mit $c = \frac{1}{\sqrt{\mu_0\epsilon_0}}$ als universelle Konstante
+    \item \textbf{Voraussetzung}: Isotropie und Homogenität des Raumes für Wellenausbreitung
+\end{itemize}
+
+\subsection{Allgemeine Relativitätstheorie und gekrümmte Raumzeit}
+In der ART wird die Metrik $g_{\mu\nu}$ dynamisch durch die Einstein-Gleichungen bestimmt:
+\[
+G_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+\]
+\begin{itemize}
+    \item \textbf{Wellenausbreitung}: Licht folgt nullgeodätischen Bahnen mit $ds^2 = g_{\mu\nu}dx^\mu dx^\nu = 0$
+    \item \textbf{Konsequenzen}:
+    \begin{enumerate}
+        \item Gravitative Lichtablenkung durch Raumzeitkrümmung
+        \item Zeitverzögerung (Shapiro-Verzögerung)
+        \item Frequenzverschiebung (gravitativer Rot-/Blauverschiebung)
+    \end{enumerate}
+    \item \textbf{Kontinuum}: Existenz einer differenzierbaren Mannigfaltigkeit als fundamentale Voraussetzung
+\end{itemize}
+
+\subsection{Konzeptioneller Brückenschlag}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Aspekt} & \textbf{Maxwell (flache Raumzeit)} & \textbf{ART (gekrümmte Raumzeit)} \\
+\hline
+Wellengleichung & Lineare DGL in $\eta_{\mu\nu}$ & Geodätengleichung $\frac{d^2x^\mu}{d\lambda^2} + \Gamma^\mu_{\alpha\beta}\frac{dx^\alpha}{d\lambda}\frac{dx^\beta}{d\lambda} = 0$ \\
+\hline
+Ausbreitungsmedium & Kein Äther, aber absoluter Raum & Dynamische Geometrie $g_{\mu\nu}(x)$ \\
+\hline
+Invarianzen & Lorentz-Transformationen & Allgemeine Kovarianz \\
+\hline
+\end{tabular}
+
+\subsection*{Fundamentale Erkenntnis}
+Die ART verallgemeinert das Maxwellsche Konzept der Wellenausbreitung:
+\begin{itemize}
+    \item Maxwells $c$ wird zur lokalen Größe in gekrümmter Raumzeit
+    \item Die konstante Metrik $\eta_{\mu\nu}$ wird durch das dynamische Feld $g_{\mu\nu}$ ersetzt
+    \item Die ART benötigt dabei zwingend ein Kontinuumsmodell des Raumes, während Maxwell dies nur implizit voraussetzt
+\end{itemize}
