@@ -8,54 +8,54 @@
 \contentsline {section}{\numberline {1.3}Weber-Kraft und Quantengravitation}{13}{}%
 \contentsline {subsection}{\numberline {1.3.1}Konzeptionelle Vorteile}{13}{}%
 \contentsline {section}{\numberline {1.4}Weber-Kraft und Gravitation}{13}{}%
-\contentsline {section}{\numberline {1.5}Grundgleichungen der Weber-Kraft}{14}{}%
+\contentsline {section}{\numberline {1.5}Grundgleichungen der Weber-Gravitation}{14}{}%
 \contentsline {subsection}{\numberline {1.5.1}Vorteile der Weber-Gravitation}{14}{}%
-\contentsline {section}{\numberline {1.6}Weber-Kraft im Dreikörpersystem}{15}{}%
-\contentsline {section}{\numberline {1.7}Quantisierte Weber-Kraft (Gittermodell)}{16}{}%
-\contentsline {section}{\numberline {1.8}Einsetzen in die Kraftgleichung}{17}{}%
-\contentsline {section}{\numberline {1.9}Klassische Lösung (0. Ordnung)}{18}{}%
-\contentsline {section}{\numberline {1.10}Relativistische Korrektur (1. Ordnung)}{19}{}%
-\contentsline {section}{\numberline {1.11}Beschleunigung bis zur 1. Ordnung}{20}{}%
-\contentsline {section}{\numberline {1.12}Explizite Form mit Bahnelementen}{21}{}%
-\contentsline {section}{\numberline {1.13}Theoretische Grundlage}{22}{}%
-\contentsline {section}{\numberline {1.14}Schrittweitensteuerung}{23}{}%
-\contentsline {section}{\numberline {1.15}Numerische Korrektur}{24}{}%
-\contentsline {section}{\numberline {1.16}Gesamtlösung}{25}{}%
-\contentsline {section}{\numberline {1.17}Kartesische Koordinaten}{26}{}%
-\contentsline {section}{\numberline {1.18}Zeitliche Ableitungen}{27}{}%
-\contentsline {section}{\numberline {1.19}Skalarprodukte}{28}{}%
-\contentsline {section}{\numberline {1.20}Differentialgleichung für \(x(\phi )\)}{29}{}%
-\contentsline {section}{\numberline {1.21}Differentialgleichung für \(y(\phi )\)}{30}{}%
-\contentsline {section}{\numberline {1.22}Differentialgleichung für \(\omega (\phi )\)}{31}{}%
-\contentsline {section}{\numberline {1.23}Zusammenfassung des DGL-Systems}{32}{}%
-\contentsline {section}{\numberline {1.24}Koordinatensystem und Basisvektoren}{33}{}%
-\contentsline {section}{\numberline {1.25}Geschwindigkeitsquadrat}{34}{}%
-\contentsline {section}{\numberline {1.26}Beschleunigungsskalarprodukt}{35}{}%
-\contentsline {section}{\numberline {1.27}Bewegungsgleichung in vektorieller Form}{36}{}%
-\contentsline {section}{\numberline {1.28}Differentialgleichungssystem}{37}{}%
-\contentsline {section}{\numberline {1.29}Explizite DGL für x-Komponente}{38}{}%
-\contentsline {section}{\numberline {1.30}Explizite DGL für y-Komponente}{39}{}%
-\contentsline {section}{\numberline {1.31}Transformiertes System 1. Ordnung}{40}{}%
-\contentsline {section}{\numberline {1.32}Elektrisches Feld als Deformationsgradient}{41}{}%
-\contentsline {section}{\numberline {1.33}Energie-Impuls-Beziehung für Photonen}{42}{}%
-\contentsline {section}{\numberline {1.34}Theorievergleich: ART vs. Weber}{43}{}%
-\contentsline {section}{\numberline {1.35}Vorteile der Weber-Theorie}{44}{}%
-\contentsline {section}{\numberline {1.36}Historische Dominanz der ART}{45}{}%
-\contentsline {section}{\numberline {1.37}Quantengravitation mit Weber}{46}{}%
-\contentsline {section}{\numberline {1.38}Periheldrehung des Merkur}{47}{}%
-\contentsline {section}{\numberline {1.39}Allgemeine $\beta $-Formel}{48}{}%
-\contentsline {section}{\numberline {1.40}Gravitationswellengleichung}{49}{}%
-\contentsline {section}{\numberline {1.41}Frequenzabhängige Lichtablenkung}{50}{}%
-\contentsline {section}{\numberline {1.42}Hamiltonian des Dodekaeder-Gitters}{51}{}%
-\contentsline {section}{\numberline {1.43}Periheldrehung des Merkur}{52}{}%
-\contentsline {section}{\numberline {1.44}Gravitative Rotverschiebung}{53}{}%
-\contentsline {section}{\numberline {1.45}Shapiro-Laufzeitverzögerung}{54}{}%
-\contentsline {section}{\numberline {1.46}Gravitationswellen-Quadrupolformel}{55}{}%
-\contentsline {section}{\numberline {1.47}Quantisierte Raumzeit-Parameter}{56}{}%
-\contentsline {section}{\numberline {1.48}Predictor-Corrector-Verfahren}{57}{}%
-\contentsline {section}{\numberline {1.49}Symplektische Integration}{58}{}%
-\contentsline {section}{\numberline {1.50}Gitter-QCD-Ansatz}{59}{}%
-\contentsline {section}{\numberline {1.51}N-Körper-Weber-Kraft}{60}{}%
+\contentsline {section}{\numberline {1.6}N-Körper-Weber-Kraft}{15}{}%
+\contentsline {section}{\numberline {1.7}Weber-Kraft im Dreikörpersystem}{16}{}%
+\contentsline {section}{\numberline {1.8}Quantisierte Weber-Kraft (Gittermodell)}{17}{}%
+\contentsline {section}{\numberline {1.9}Einsetzen in die Kraftgleichung}{18}{}%
+\contentsline {section}{\numberline {1.10}Klassische Lösung (0. Ordnung)}{19}{}%
+\contentsline {section}{\numberline {1.11}Relativistische Korrektur (1. Ordnung)}{20}{}%
+\contentsline {section}{\numberline {1.12}Beschleunigung bis zur 1. Ordnung}{21}{}%
+\contentsline {section}{\numberline {1.13}Explizite Form mit Bahnelementen}{22}{}%
+\contentsline {section}{\numberline {1.14}Theoretische Grundlage}{23}{}%
+\contentsline {section}{\numberline {1.15}Schrittweitensteuerung}{24}{}%
+\contentsline {section}{\numberline {1.16}Numerische Korrektur}{25}{}%
+\contentsline {section}{\numberline {1.17}Gesamtlösung}{26}{}%
+\contentsline {section}{\numberline {1.18}Kartesische Koordinaten}{27}{}%
+\contentsline {section}{\numberline {1.19}Zeitliche Ableitungen}{28}{}%
+\contentsline {section}{\numberline {1.20}Skalarprodukte}{29}{}%
+\contentsline {section}{\numberline {1.21}Differentialgleichung für \(x(\phi )\)}{30}{}%
+\contentsline {section}{\numberline {1.22}Differentialgleichung für \(y(\phi )\)}{31}{}%
+\contentsline {section}{\numberline {1.23}Differentialgleichung für \(\omega (\phi )\)}{32}{}%
+\contentsline {section}{\numberline {1.24}Zusammenfassung des DGL-Systems}{33}{}%
+\contentsline {section}{\numberline {1.25}Koordinatensystem und Basisvektoren}{34}{}%
+\contentsline {section}{\numberline {1.26}Geschwindigkeitsquadrat}{35}{}%
+\contentsline {section}{\numberline {1.27}Beschleunigungsskalarprodukt}{36}{}%
+\contentsline {section}{\numberline {1.28}Bewegungsgleichung in vektorieller Form}{37}{}%
+\contentsline {section}{\numberline {1.29}Differentialgleichungssystem}{38}{}%
+\contentsline {section}{\numberline {1.30}Explizite DGL für x-Komponente}{39}{}%
+\contentsline {section}{\numberline {1.31}Explizite DGL für y-Komponente}{40}{}%
+\contentsline {section}{\numberline {1.32}Transformiertes System 1. Ordnung}{41}{}%
+\contentsline {section}{\numberline {1.33}Elektrisches Feld als Deformationsgradient}{42}{}%
+\contentsline {section}{\numberline {1.34}Energie-Impuls-Beziehung für Photonen}{43}{}%
+\contentsline {section}{\numberline {1.35}Theorievergleich: ART vs. Weber}{44}{}%
+\contentsline {section}{\numberline {1.36}Vorteile der Weber-Theorie}{45}{}%
+\contentsline {section}{\numberline {1.37}Historische Dominanz der ART}{46}{}%
+\contentsline {section}{\numberline {1.38}Quantengravitation mit Weber}{47}{}%
+\contentsline {section}{\numberline {1.39}Periheldrehung des Merkur}{48}{}%
+\contentsline {section}{\numberline {1.40}Allgemeine $\beta $-Formel}{49}{}%
+\contentsline {section}{\numberline {1.41}Gravitationswellengleichung}{50}{}%
+\contentsline {section}{\numberline {1.42}Frequenzabhängige Lichtablenkung}{51}{}%
+\contentsline {section}{\numberline {1.43}Hamiltonian des Dodekaeder-Gitters}{52}{}%
+\contentsline {section}{\numberline {1.44}Periheldrehung des Merkur}{53}{}%
+\contentsline {section}{\numberline {1.45}Gravitative Rotverschiebung}{54}{}%
+\contentsline {section}{\numberline {1.46}Shapiro-Laufzeitverzögerung}{55}{}%
+\contentsline {section}{\numberline {1.47}Gravitationswellen-Quadrupolformel}{56}{}%
+\contentsline {section}{\numberline {1.48}Quantisierte Raumzeit-Parameter}{57}{}%
+\contentsline {section}{\numberline {1.49}Predictor-Corrector-Verfahren}{58}{}%
+\contentsline {section}{\numberline {1.50}Symplektische Integration}{59}{}%
+\contentsline {section}{\numberline {1.51}Gitter-QCD-Ansatz}{60}{}%
 \contentsline {section}{\numberline {1.52}Bewegungsgleichung in Polarkoordinaten}{61}{}%
 \contentsline {section}{\numberline {1.53}Drehimpulserhaltung}{62}{}%
 \contentsline {section}{\numberline {1.54}Modifizierte Radialgleichung}{63}{}%
