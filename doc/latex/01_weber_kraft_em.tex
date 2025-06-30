@@ -1,5 +1,7 @@
 \section{Klassische Weber-Kraft (Elektrodynamik)}
-\[ \bm{F}_{\text{Weber}}^{\text{EM}} = \frac{Qq}{4\pi\epsilon_0 r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\bm{\hat{r}} \]
+\begin{equation}\label{eq:weber_em}
+\bm{F}_{\text{Weber}}^{\text{EM}} = \frac{Qq}{4\pi\epsilon_0 r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\bm{\hat{r}}
+\end{equation}
 
 \subsection*{Symbolbeschreibung}
 \begin{itemize}[leftmargin=*,noitemsep]
@@ -33,7 +35,9 @@
 \subsection{Maxwell im flachen Raum}
 \begin{itemize}[leftmargin=*,noitemsep]
     \item Wellengleichung im Vakuum:
-    \[ \left(\nabla^2 - \frac{1}{c^2}\partial_t^2\right)\bm{E} = 0 \]
+    \begin{equation}
+    \left(\nabla^2 - \frac{1}{c^2}\partial_t^2\right)\bm{E} = 0
+    \end{equation}
     \item Raummodell: Minkowski-Raum $\mathbb{R}^{3,1}$ mit $\eta_{\mu\nu}$
     \item Lichtausbreitung: Geradlinig mit $c = 1/\sqrt{\mu_0\epsilon_0}$
 \end{itemize}
@@ -41,7 +45,9 @@
 \subsection{ART in gekrümmter Raumzeit}
 \begin{itemize}[leftmargin=*,noitemsep]
     \item Einstein-Gleichungen:
-    \[ G_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu} \]
+    \begin{equation}
+    G_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+    \end{equation}
     \item Lichtausbreitung: Nullgeodäten ($ds^2 = 0$)
     \item Konsequenzen:
     \begin{enumerate}[noitemsep]
@@ -72,7 +78,10 @@ Lorentz-Invarianz & Allgemeine Kovarianz \\
     \item Kein vordefiniertes Raummodell benötigt
     \item Natürliche Diskretisierung durch Punktteilchen
     \item Gravitative Erweiterung möglich:
-    \[ \bm{F}_{\text{Weber}}^{G} = G\frac{mM}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\bm{\hat{r}} \]
+    \begin{equation}\label{eq:weber_g}
+    \bm{F}_{\text{Weber}}^{G} = G\frac{mM}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\bm{\hat{r}}
+    \end{equation}
+    Die Gleichung \ref{eq:weber_g} entspricht der Gleichung \ref{eq:weber_em} als hypothetische Annahme über die Gravitationskraft.
 \end{itemize}
 
 \begin{table}[h]
@@ -105,14 +114,8 @@ Zeitproblem & Explizite Zeitabhängigkeit in $\dot{r}$, $\ddot{r}$ \\
 \section{Weber-Kraft und Gravitation}
 
 \subsection*{Tisserands Ansatz}
-\begin{itemize}[leftmargin=*,noitemsep]
-    \item Übertragung der elektrodynamischen Weber-Kraft (Originalformel) auf Gravitation:
-    \[ \bm{F} = G\frac{mM}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\bm{\hat{r}} \]
-    \item Scheiterte an der Erklärung der Periheldrehung des Merkur
-\end{itemize}
+Die Übertragung der elektrodynamischen Weber-Kraft \ref{eq:weber_em} auf die Gravitation \ref{eq:weber_g} scheiterte
+an der Erklärung der Periheldrehung des Merkur.
 
 \subsection*{Hinweis}
-\begin{itemize}[leftmargin=*,noitemsep]
-    \item Die korrekte gravitative Formulierung wird separat vorgestellt
-    \item Erfordert Modifikation der Original-Weberschen Formel
-\end{itemize}
+Die korrekte gravitative Formulierung wird separat vorgestellt und erfordert eine Modifikation der Original-Weberschen Formel.
