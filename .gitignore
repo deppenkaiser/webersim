@@ -6,3 +6,5 @@ build
 *.fdb*
 *.syn*
 doc/latex/weber.pdf
+doc/latex/weber.toc
+
