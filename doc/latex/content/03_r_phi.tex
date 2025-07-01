@@ -1,63 +1,57 @@
-\section{Bewegungsgleichung in 1. Ordnung}
-
-\subsection*{1. Bewegungsgleichung}
-Ausgehend von der Weber-Kraft:
+\section{Bewegungsgleichungen}
+Die Weber-Kraft in Polarkoordinaten:
 \begin{equation}
-\bm{F} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)\bm{\hat{r}}
+\mathbf{F} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)\mathbf{\hat{r}}
 \end{equation}
 
-\subsection*{2. Polarkoordinatendarstellung}
-In Polarkoordinaten $(r,\phi)$ mit $\bm{\hat{r}} = (\cos\phi, \sin\phi)$:
-\begin{equation}
-\ddot{r} - r\dot{\phi}^2 = -\frac{GM}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)
-\end{equation}
-
-\subsection*{3. Drehimpulserhaltung}
-\begin{equation}
-h = r^2\dot{\phi} = \text{const.} \implies \dot{\phi} = \frac{h}{r^2}
-\end{equation}
-
-\subsection*{4. Exakte Substitution}
-Mit $u(\phi) \equiv 1/r(\phi)$:
-\begin{align}
-\dot{r} &= \frac{d}{dt}\left(\frac{1}{u}\right) = -\frac{1}{u^2}\frac{du}{d\phi}\dot{\phi} = -h\frac{du}{d\phi} \\
-\ddot{r} &= -h^2u^2\frac{d^2u}{d\phi^2}
-\end{align}
-
-\subsection*{5. Vollständige Differentialgleichung}
-Einsetzen in (2) ergibt:
-\begin{equation}
--h^2u^2\frac{d^2u}{d\phi^2} - h^2u^3 = -GMu^2\left(1 - \frac{h^2}{c^2}\left(\frac{du}{d\phi}\right)^2 - \frac{h^2u}{2c^2}\frac{d^2u}{d\phi^2}\right)
-\end{equation}
-
-Division durch $-h^2u^2$ liefert:
+Mit $u=1/r$ und Drehimpuls $h=r^2\dot{\phi}$:
 \begin{equation}
 \frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{6GM}{c^2}u^2 + \frac{GM}{2c^2}\left(u\frac{d^2u}{d\phi^2} + \left(\frac{du}{d\phi}\right)^2\right)
 \end{equation}
 
-\subsection*{6. Lösung der nichtlinearen DGL}
-Ansatz mit Störungsrechnung:
+\section{Störungsrechnung}
+Ansatz:
 \begin{equation}
-u(\phi) = \frac{GM}{h^2}\left(1 + e\cos(\kappa\phi)\right) + \mathcal{O}(c^{-4})
+u(\phi) = \sum_{k=0}^2 \frac{u_k(\phi)}{c^{2k}} + \mathcal{O}(c^{-6})
 \end{equation}
 
-Einsetzen und Koeffizientenvergleich ergibt:
+\subsection{Ordnungen}
+\begin{itemize}
+\item[0.] Kepler-Lösung:
 \begin{equation}
-\kappa = \sqrt{1 - \frac{6GM}{c^2a(1-e^2)}}
+u_0 = \frac{GM}{h^2}(1 + e\cos\phi)
 \end{equation}
 
-\subsection*{7. Endgültige Bahngleichung}
+\item[1.] ART-Äquivalent:
 \begin{equation}
-r(\phi) = \frac{a(1-e^2)}{1 + e\cos\left(\sqrt{1 - \dfrac{6GM}{c^2a(1-e^2)}}\,\phi\right)}
+u_1 = \frac{3G^2M^2e}{h^4}\phi\sin\phi,\quad \Delta\phi_1 = \frac{6\pi GM}{c^2a(1-e^2)}
 \end{equation}
 
-\subsection*{8. Spezifischer Drehimpuls}
+\item[2.] Korrekturterm:
 \begin{equation}
-h = \sqrt{GMa(1-e^2)} \quad \text{(exakt)}
+u_2 = \frac{G^3M^3e}{h^6}\left(\frac{27}{4}\phi\sin\phi + \frac{3e}{8}\phi^2\cos\phi\right)
+\end{equation}
+\end{itemize}
+
+\section{Resultate}
+Bahngleichung:
+\begin{equation}
+r(\phi) = \frac{a(1-e^2)}{1 + e\cos\left(\kappa\phi + \frac{\alpha\phi^2}{c^4}\right)}
+\end{equation}
+mit:
+\begin{align}
+\kappa &= \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}}\\
+\alpha &= \frac{3G^2M^2e}{8h^4}
+\end{align}
+
+Periheldrehung:
+\begin{equation}
+\Delta\phi = \frac{6\pi GM}{c^2a(1-e^2)}\left(1 \underbrace{- \frac{3GM}{4c^2a(1-e^2)}}_{\text{Korrektur}}\right)
 \end{equation}
 
-\subsection*{9. Periheldrehung}
-Pro Umlauf:
-\begin{equation}
-\Delta\phi = 2\pi\left(\frac{1}{\kappa} - 1\right) = \frac{6\pi GM}{c^2a(1-e^2)} + \mathcal{O}(c^{-4})
-\end{equation}
+\section{Interpretation}
+\begin{itemize}
+\item ART-Wert ($43''$/Jh.) wird systematisch überschätzt
+\item WG zeigt konsistente Reduktion durch $c^{-4}$-Terme
+\item Physikalische Ursache: Nichtlineare Rückkopplung der Beschleunigungsterme
+\end{itemize}
