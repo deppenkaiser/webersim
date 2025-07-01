@@ -5,11 +5,15 @@
 \contentsline {subsection}{\numberline {1.1.1}Ansatz zur Weber-Gravitation (WG)}{7}{}%
 \contentsline {section}{\numberline {1.2}Weber-Kraft und Gravitation}{8}{}%
 \contentsline {section}{\numberline {1.3}Weber-Gravitation als Alternative zur ART}{8}{}%
-\contentsline {section}{\numberline {1.4}Die Überlegenheit der Weber-Gravitation}{8}{}%
-\contentsline {subsection}{\numberline {1.4.1}Periheldrehung des Merkurs}{8}{}%
-\contentsline {subsection}{\numberline {1.4.2}Abweichungen in Planetenbahnen}{8}{}%
-\contentsline {subsection}{\numberline {1.4.3}Konsequenzen}{9}{}%
-\contentsline {subsection}{\numberline {1.4.4}Experimentelle Verifikation}{9}{}%
-\contentsline {section}{\numberline {1.5}Grundgleichungen der Weber-Gravitation}{9}{}%
-\contentsline {subsection}{\numberline {1.5.1}Vorteile der Weber-Gravitation}{9}{}%
-\contentsline {section}{\numberline {1.6}Mathematisch exakte Herleitung der Weber-Gravitation}{10}{}%
+\contentsline {section}{\numberline {1.4}Grundgleichungen der Weber-Gravitation}{8}{}%
+\contentsline {subsection}{\numberline {1.4.1}Vorteile der Weber-Gravitation}{8}{}%
+\contentsline {section}{\numberline {1.5}Herleitung der Weber-Gravitation}{9}{}%
+\contentsline {section}{\numberline {1.6}Bewegungsgleichung in 2. Ordnung}{10}{}%
+\contentsline {section}{\numberline {1.7}Bahngleichung in Polarkoordinaten}{10}{}%
+\contentsline {section}{\numberline {1.8}Störungsrechnung bis $\mathcal {O}(c^{-4})$}{10}{}%
+\contentsline {subsection}{\numberline {1.8.1}0. Ordnung (Kepler-Lösung)}{10}{}%
+\contentsline {subsection}{\numberline {1.8.2}1. Ordnung ($c^{-2}$)}{10}{}%
+\contentsline {subsection}{\numberline {1.8.3}2. Ordnung ($c^{-4}$)}{10}{}%
+\contentsline {section}{\numberline {1.9}Lösung für $r(\phi )$ in 2. Ordnung}{11}{}%
+\contentsline {section}{\numberline {1.10}Periheldrehung in 2. Ordnung}{11}{}%
+\contentsline {section}{\numberline {1.11}Diskussion}{11}{}%

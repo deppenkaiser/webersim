@@ -1,0 +1,58 @@
+\section{Bewegungsgleichung in 2. Ordnung}
+Die unveränderte Weber-Kraft:
+\begin{equation}
+\mathbf{F} = -\frac{GMm}{r^2} \left( 1 - \frac{\dot{r}^2}{c^2} + \frac{r \ddot{r}}{2c^2} \right) \mathbf{\hat{r}}
+\end{equation}
+
+\section{Bahngleichung in Polarkoordinaten}
+Mit $u(\phi) = 1/r(\phi)$ und Drehimpulserhaltung $h = r^2 \dot{\phi}$:
+\begin{equation}
+\frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{6GM}{c^2} u^2 + \frac{GM}{2c^2} \left( u \frac{d^2u}{d\phi^2} + \left( \frac{du}{d\phi} \right)^2 \right)
+\end{equation}
+
+\section{Störungsrechnung bis $\mathcal{O}(c^{-4})$}
+Ansatz:
+\begin{equation}
+u(\phi) = u_0(\phi) + \frac{1}{c^2} u_1(\phi) + \frac{1}{c^4} u_2(\phi) + \mathcal{O}(c^{-6})
+\end{equation}
+
+\subsection{0. Ordnung (Kepler-Lösung)}
+\begin{equation}
+u_0(\phi) = \frac{GM}{h^2} \left( 1 + e \cos \phi \right)
+\end{equation}
+
+\subsection{1. Ordnung ($c^{-2}$)}
+\begin{equation}
+u_1(\phi) = \frac{3G^2M^2 e}{h^4} \phi \sin \phi + \text{periodische Terme}
+\end{equation}
+Führt zur Periheldrehung:
+\begin{equation}
+\Delta \phi = \frac{6\pi GM}{c^2 a(1-e^2)}
+\end{equation}
+
+\subsection{2. Ordnung ($c^{-4}$)}
+\begin{equation}
+u_2(\phi) = \frac{G^3M^3 e}{h^6} \left[ \left( \frac{27}{4} - \frac{9e^2}{8} \right) \phi \sin \phi + \left( \frac{3e}{8} \right) \phi^2 \cos \phi \right] + \text{periodische Terme}
+\end{equation}
+
+\section{Lösung für $r(\phi)$ in 2. Ordnung}
+\begin{equation}
+r(\phi) = \frac{a(1-e^2)}{1 + e \cos \left( \kappa \phi + \frac{\alpha \phi^2}{c^4} \right)} + \mathcal{O}(c^{-6})
+\end{equation}
+mit:
+\begin{align}
+\kappa &= \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)} + \frac{27G^2M^2}{2c^4 a^2(1-e^2)^2}} \\
+\alpha &= \frac{3G^2M^2 e}{8h^4}
+\end{align}
+
+\section{Periheldrehung in 2. Ordnung}
+\begin{equation}
+\Delta \phi = \frac{6\pi GM}{c^2 a(1-e^2)} \left( 1 + \frac{9GM}{4c^2 a(1-e^2)} \right) + \mathcal{O}(c^{-6})
+\end{equation}
+
+\section{Diskussion}
+\begin{itemize}
+\item Die Lösung erfüllt die Weber-Gleichung in 2. Ordnung
+\item Der $c^{-4}$-Term modifiziert die Periheldrehung und fügt eine nichtperiodische Drift ($\phi^2$-Term) hinzu
+\item Abweichungen von der ART treten in 2. Ordnung auf
+\end{itemize}
