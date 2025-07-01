@@ -5,4 +5,4 @@ build
 *.out
 *.fdb*
 *.syn*
-weber.pdf
+doc/latex/weber.pdf

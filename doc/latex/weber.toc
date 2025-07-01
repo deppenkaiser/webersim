@@ -12,3 +12,4 @@
 \contentsline {subsection}{\numberline {1.4.4}Experimentelle Verifikation}{9}{}%
 \contentsline {section}{\numberline {1.5}Grundgleichungen der Weber-Gravitation}{9}{}%
 \contentsline {subsection}{\numberline {1.5.1}Vorteile der Weber-Gravitation}{9}{}%
+\contentsline {section}{\numberline {1.6}Mathematisch exakte Herleitung der Weber-Gravitation}{10}{}%

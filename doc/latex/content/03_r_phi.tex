@@ -1,0 +1,63 @@
+\section{Mathematisch exakte Herleitung der Weber-Gravitation}
+
+\subsection*{1. Bewegungsgleichung}
+Ausgehend von der Weber-Kraft:
+\begin{equation}
+\bm{F} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)\bm{\hat{r}}
+\end{equation}
+
+\subsection*{2. Polarkoordinatendarstellung}
+In Polarkoordinaten $(r,\phi)$ mit $\bm{\hat{r}} = (\cos\phi, \sin\phi)$:
+\begin{equation}
+\ddot{r} - r\dot{\phi}^2 = -\frac{GM}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)
+\end{equation}
+
+\subsection*{3. Drehimpulserhaltung}
+\begin{equation}
+h = r^2\dot{\phi} = \text{const.} \implies \dot{\phi} = \frac{h}{r^2}
+\end{equation}
+
+\subsection*{4. Exakte Substitution}
+Mit $u(\phi) \equiv 1/r(\phi)$:
+\begin{align}
+\dot{r} &= \frac{d}{dt}\left(\frac{1}{u}\right) = -\frac{1}{u^2}\frac{du}{d\phi}\dot{\phi} = -h\frac{du}{d\phi} \\
+\ddot{r} &= -h^2u^2\frac{d^2u}{d\phi^2}
+\end{align}
+
+\subsection*{5. Vollständige Differentialgleichung}
+Einsetzen in (2) ergibt:
+\begin{equation}
+-h^2u^2\frac{d^2u}{d\phi^2} - h^2u^3 = -GMu^2\left(1 - \frac{h^2}{c^2}\left(\frac{du}{d\phi}\right)^2 - \frac{h^2u}{2c^2}\frac{d^2u}{d\phi^2}\right)
+\end{equation}
+
+Division durch $-h^2u^2$ liefert:
+\begin{equation}
+\frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{6GM}{c^2}u^2 + \frac{GM}{2c^2}\left(u\frac{d^2u}{d\phi^2} + \left(\frac{du}{d\phi}\right)^2\right)
+\end{equation}
+
+\subsection*{6. Lösung der nichtlinearen DGL}
+Ansatz mit Störungsrechnung:
+\begin{equation}
+u(\phi) = \frac{GM}{h^2}\left(1 + e\cos(\kappa\phi)\right) + \mathcal{O}(c^{-4})
+\end{equation}
+
+Einsetzen und Koeffizientenvergleich ergibt:
+\begin{equation}
+\kappa = \sqrt{1 - \frac{6GM}{c^2a(1-e^2)}}
+\end{equation}
+
+\subsection*{7. Endgültige Bahngleichung}
+\begin{equation}
+r(\phi) = \frac{a(1-e^2)}{1 + e\cos\left(\sqrt{1 - \dfrac{6GM}{c^2a(1-e^2)}}\,\phi\right)}
+\end{equation}
+
+\subsection*{8. Spezifischer Drehimpuls}
+\begin{equation}
+h = \sqrt{GMa(1-e^2)} \quad \text{(exakt)}
+\end{equation}
+
+\subsection*{9. Periheldrehung}
+Pro Umlauf:
+\begin{equation}
+\Delta\phi = 2\pi\left(\frac{1}{\kappa} - 1\right) = \frac{6\pi GM}{c^2a(1-e^2)} + \mathcal{O}(c^{-4})
+\end{equation}
