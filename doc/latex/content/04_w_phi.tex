@@ -1,0 +1,38 @@
+\section{Exakte Formulierung von \(\omega(\phi)\)}
+
+\subsection{Korrekte Entwicklung von \(\kappa\)}
+Die Konstante \(\kappa\) muss bis zur 2. Ordnung präzise sein:
+\begin{equation}
+\kappa = \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}}
+\end{equation}
+
+\subsection{Winkelgeschwindigkeit}
+Mit dem exakten \(\kappa\) und \(\alpha = \frac{3G^2M^2e}{8h^4c^4}\):
+\begin{equation}
+\boxed
+{
+    \omega(\phi) = \frac{h[1 + e\cos(\kappa\phi + \alpha\phi^2)]^2}{a^2(1-e^2)^2}
+}
+\end{equation}
+
+\subsection{Konsistenzcheck}
+\begin{itemize}
+\item \textbf{Newton-Limit} (\(c \to \infty\)):
+\begin{equation}
+\kappa \to 1,\quad \alpha \to 0 \quad \Rightarrow \quad \omega_N = \frac{h(1+e\cos\phi)^2}{a^2(1-e^2)^2}
+\end{equation}
+
+\item \textbf{1. Ordnung}:
+\begin{equation}
+\omega_{1} = \frac{h}{a^2(1-e^2)^2}\left[1 + 2e\cos\left(\phi - \frac{3GM\phi}{c^2a(1-e^2)}\right)\right]
+\end{equation}
+\end{itemize}
+
+\subsection{Bedeutung der Terme}
+\begin{tabular}{|l|l|}
+\hline
+Term & Physikalische Wirkung \\ \hline
+\(\frac{6GM}{c^2a(1-e^2)}\) & Periheldrehung (43''/Jh für Merkur) \\ \hline
+\(\frac{27G^2M^2}{2c^4a^2(1-e^2)^2}\) & Korrektur zur ART-Vorhersage \\ \hline
+\(\alpha\phi^2\) & Nichtperiodische Bahnstörung \\ \hline
+\end{tabular}
