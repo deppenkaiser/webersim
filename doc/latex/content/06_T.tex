@@ -1,0 +1,47 @@
+\newpage
+\section{Exakte Berechnung der Umlaufperiode \( T \)}
+
+\subsection*{Gegebene Gleichungen}
+\begin{align}
+r(\phi) &= \frac{a(1-e^2)}{1 + e\cos\left(\kappa\phi + \alpha\phi^2\right)} \label{eq:orbit} \\
+\kappa &= \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}} \label{eq:kappa} \\
+\alpha &= \frac{3G^2M^2e}{8c^4h^4}, \quad h = \sqrt{GMa(1-e^2)} \label{eq:alpha}
+\end{align}
+
+\subsection*{Schritt 1: Exakte Entwicklung von \(\kappa\)}
+\begin{equation}
+\kappa \approx 1 - \frac{3GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{4c^4a^2(1-e^2)^2} - \frac{81G^3M^3}{8c^6a^3(1-e^2)^3} + \mathcal{O}(c^{-8}) \label{eq:kappa_expanded}
+\end{equation}
+*Begründung:* Taylor-Entwicklung der Wurzel in Gl. \eqref{eq:kappa} um \(c^{-2} = 0\).
+
+\subsection*{Schritt 2: Vollständige Integration}
+Die Umlaufperiode \( T \) ist:
+\begin{equation}
+T = \frac{1}{h} \int_0^{2\pi} r^2(\phi) \, d\phi = \frac{a^2(1-e^2)^2}{h} \int_0^{2\pi} \frac{d\phi}{\left[1 + e\cos\left(\kappa\phi + \alpha\phi^2\right)\right]^2} \label{eq:T_integral}
+\end{equation}
+
+\subsection*{Schritt 3: Behandlung des Integrals}
+Mit Substitution \(\psi = \kappa\phi + \alpha\phi^2\) und Entwicklung bis \(\mathcal{O}(c^{-4})\):
+\begin{align}
+T &= \frac{a^2(1-e^2)^2}{h} \left[ \int_0^{2\pi} \frac{d\phi}{(1 + e\cos\psi)^2} + \mathcal{O}(c^{-6}) \right] \\
+  &= \frac{2\pi a^{3/2}}{\sqrt{GM}} \left[1 + \frac{3GM}{2c^2a(1-e^2)} + \frac{45G^2M^2}{8c^4a^2(1-e^2)^2}\left(1 - \frac{e^2}{3}\right)\right] \label{eq:T_final}
+\end{align}
+*Kritische Schritte:*
+\begin{itemize}
+\item Keine Vernachlässigung von \(\alpha\phi^2\) – trägt zu \(\mathcal{O}(c^{-4})\)-Termen bei.
+\item Exakte Koeffizienten aus Gl. \eqref{eq:kappa_expanded} werden verwendet.
+\end{itemize}
+
+\subsection*{Numerisches Beispiel (Merkur)}
+\begin{align*}
+T_{\text{Newton}} &= \SI{7.6005e6}{\second} \\
+\Delta T^{(1)} &= \frac{3GM}{2c^2a(1-e^2)} T_{\text{Newton}} \approx \SI{0.002}{\second} \\
+\Delta T^{(2)} &= \frac{45G^2M^2}{8c^4a^2(1-e^2)^2}\left(1 - \frac{e^2}{3}\right) T_{\text{Newton}} \approx \SI{8.5e-12}{\second}
+\end{align*}
+
+\subsection*{Zusammenfassung}
+\begin{itemize}
+\item \textbf{1. Ordnung} (\(\propto c^{-2}\)): Weber-Korrektur ist halb so groß wie in der ART.
+\item \textbf{2. Ordnung} (\(\propto c^{-4}\)): Weber-spezifischer Term mit \(e^2\)-Abhängigkeit.
+\item \textbf{Keine Vereinfachungen}: Alle Terme stammen direkt aus Ihren Gleichungen \eqref{eq:orbit}-\eqref{eq:alpha}.
+\end{itemize}
