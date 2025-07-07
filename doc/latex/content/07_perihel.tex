@@ -121,27 +121,16 @@ Die Simulation der Weber-Gravitation erfolgt bewusst mit der \textbf{Euler-Metho
     \end{itemize}
 \end{itemize}
 
-\subsection{Numerische Integration}
-Die Simulation verwendet bewusst das \textbf{Euler-Verfahren} zur maximalen Transparenz:
-
+\subsubsection*{Bemerkung zur Genauigkeit}
 \begin{itemize}
-    \item \textbf{Algorithmus}:
-    \begin{align*}
-    \phi_{n+1} &= \phi_n + \omega(\phi_n) \cdot \Delta t \\
-    \omega(\phi) &= \frac{h}{r^2(\phi)}, \quad r(\phi) = \frac{a(1-e^2)}{1 + e \cos(\kappa \phi)}
-    \end{align*}
-
-    \subsubsection*{Bemerkung zur Genauigkeit}
+    \item Die Wahl $\Delta t = \SI{0.25}{\second}$ garantiert:
     \begin{itemize}
-        \item Die Wahl $\Delta t = \SI{0.25}{\second}$ garantiert:
-            \begin{itemize}
-                \item Relative Abweichung $< 0.1\%$ vom theoretischen Wert
-                \item Konstante Periheldrehung pro Umlauf
-            \end{itemize}
-        \item Die einfache Euler-Methode ist hier ausreichend, da:
-        \begin{itemize}
-            \item Der Fehler systematisch und kontrollierbar ist
-            \item Die asymptotische Konvergenz gegen $\Delta\phi_{\text{WG}}$ gewährleistet ist
-        \end{itemize}
+        \item Relative Abweichung $< 0.1\%$ vom theoretischen Wert
+        \item Konstante Periheldrehung pro Umlauf
+    \end{itemize}
+    \item Die einfache Euler-Methode ist hier ausreichend, da:
+    \begin{itemize}
+        \item Der Fehler systematisch und kontrollierbar ist
+        \item Die asymptotische Konvergenz gegen $\Delta\phi_{\text{WG}}$ gewährleistet ist
     \end{itemize}
 \end{itemize}
