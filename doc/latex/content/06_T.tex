@@ -33,16 +33,3 @@ T &= \frac{a^2(1-e^2)^2}{h} \left[ \int_0^{2\pi} \frac{d\phi}{(1 + e\cos\psi)^2}
 \begin{itemize}
 \item Keine Vernachlässigung von \(\alpha\phi^2\) – trägt zu \(\mathcal{O}(c^{-4})\)-Termen bei.
 \end{itemize}
-
-\subsection*{Numerisches Beispiel (Merkur)}
-\begin{align*}
-T_{\text{Newton}} &= \SI{7.6005e6}{\second} \\
-\Delta T^{(1)} &= \frac{3GM}{2c^2a(1-e^2)} T_{\text{Newton}} \approx \SI{0.002}{\second} \\
-\Delta T^{(2)} &= \frac{45G^2M^2}{8c^4a^2(1-e^2)^2}\left(1 - \frac{e^2}{3}\right) T_{\text{Newton}} \approx \SI{8.5e-12}{\second}
-\end{align*}
-
-\subsection*{Zusammenfassung}
-\begin{itemize}
-\item \textbf{1. Ordnung} (\(\propto c^{-2}\)): Weber-Korrektur ist halb so groß wie in der ART.
-\item \textbf{2. Ordnung} (\(\propto c^{-4}\)): Weber-spezifischer Term mit \(e^2\)-Abhängigkeit.
-\end{itemize}
