@@ -1,5 +1,37 @@
 \newpage
-\section{Bahngeschwindigkeit in Weber-Gravitation}
+\section{Bahngeschwindigkeit in 1. Ordnung}
+Die Bahngeschwindigkeit \(v(\phi)\) in der Weber-Gravitation bis zur Ordnung \(\mathcal{O}(c^{-2})\) lautet:
+
+\begin{equation}
+v(\phi) = \frac{h}{a(1 - e^2)} \left(1 + e \cos\left(\kappa\phi\right)\right)
+\end{equation}
+
+\noindent mit den Definitionen:
+\begin{align*}
+h &= \sqrt{GMa(1 - e^2)}, \\
+\kappa &= \sqrt{1 - \frac{6GM}{c^2a(1 - e^2)}}.
+\end{align*}
+
+\subsection*{Physikalische Interpretation}
+\begin{itemize}
+    \item \textbf{Struktur}: Die Geschwindigkeit folgt aus \(v(\phi) = h/r(\phi)\) mit der Bahngleichung \(r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa\phi)}\).
+    \item \textbf{Relativistische Korrektur}: Die Wurzel \(\kappa\) modifiziert die Periheldrehung gegenüber Newton (\(\kappa = 1\)).
+    \item \textbf{Grenzfälle}:
+        \begin{itemize}
+            \item Perihel (\(\phi = 0\)): \(v(0) = \frac{h(1 + e)}{a(1 - e^2)}\),
+            \item Aphel (\(\phi = \pi\)): \(v(\pi) = \frac{h(1 - e)}{a(1 - e^2)}\),
+            \item Newton (\(c \to \infty\)): \(v_N(\phi) = \frac{h(1 + e \cos\phi)}{a(1 - e^2)}\).
+        \end{itemize}
+\end{itemize}
+
+\subsection*{Hinweise zur Anwendung}
+\begin{itemize}
+    \item Die Gleichung ist \textbf{valid bis \(\mathcal{O}(c^{-2})\)}, aber die Wurzel in \(\kappa\) wird nicht angenähert.
+    \item Für numerische Berechnungen: \(\kappa\) direkt auswerten.
+    \item Vergleich mit ART: Der Vorfaktor \(6GM\) (Weber) vs. \(3GM\) (ART) in \(\kappa\) führt zu unterschiedlichen Vorhersagen der Periheldrehung.
+\end{itemize}
+
+\section{Bahngeschwindigkeit in 2. Ordnung}
 \subsection*{Definition}
 Die Bahngeschwindigkeit $v(\phi)$ ergibt sich aus Winkelgeschwindigkeit $\omega(\phi)$ und Radialabstand $r(\phi)$:
 \begin{equation}

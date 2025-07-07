@@ -1,4 +1,29 @@
-\section{Exakte Formulierung von \(\omega(\phi)\)}
+\newpage
+\section{Winkelgeschwindigkeit in 1. Ordnung}
+Die Winkelgeschwindigkeit \(\omega(\phi)\) in der Weber-Gravitation bis zur Ordnung \(\mathcal{O}(c^{-2})\) lautet:
+
+\begin{equation}
+\omega(\phi) = \frac{h}{a^2(1 - e^2)^2} \left[1 + e \cos\left(\kappa\phi\right)\right]^2
+\end{equation}
+
+wobei:
+\begin{itemize}
+    \item \(h = \sqrt{GMa(1 - e^2)}\) der spezifische Drehimpuls ist,
+    \item \(\kappa = \sqrt{1 - \frac{6GM}{c^2a(1 - e^2)}}\),
+    \item Terme der Ordnung \(\mathcal{O}(c^{-4})\) (z. B. \(\alpha\phi^2\)) werden vernachlässigt.
+\end{itemize}
+
+\subsection*{Bedeutung der Terme}
+\begin{itemize}
+    \item Die Wurzel \(\kappa\) beschreibt die Periheldrehung 1. Ordnung ohne Näherung.
+    \item Der Faktor \(\frac{6GM}{c^2a(1 - e^2)}\) entspricht der relativistischen Korrektur der ART (aber mit Weber-Koeffizienten).
+    \item Für \(c \to \infty\) wird \(\kappa = 1\), und die Gleichung reduziert sich auf die Newton’sche Form:
+    \[
+    \omega_N(\phi) = \frac{h(1 + e \cos\phi)^2}{a^2(1 - e^2)^2}.
+    \]
+\end{itemize}
+
+\section{Winkelgeschwindigkeit in 2. Ordnung}
 
 \subsection{Korrekte Entwicklung von \(\kappa\)}
 Die Konstante \(\kappa\) muss bis zur 2. Ordnung präzise sein:
@@ -14,19 +39,6 @@ Mit dem exakten \(\kappa\) und \(\alpha = \frac{3G^2M^2e}{8h^4c^4}\):
     \omega(\phi) = \frac{h[1 + e\cos(\kappa\phi + \alpha\phi^2)]^2}{a^2(1-e^2)^2}
 }
 \end{equation}
-
-\subsection{Konsistenzcheck}
-\begin{itemize}
-\item \textbf{Newton-Limit} (\(c \to \infty\)):
-\begin{equation}
-\kappa \to 1,\quad \alpha \to 0 \quad \Rightarrow \quad \omega_N = \frac{h(1+e\cos\phi)^2}{a^2(1-e^2)^2}
-\end{equation}
-
-\item \textbf{1. Ordnung}:
-\begin{equation}
-\omega_{1} = \frac{h}{a^2(1-e^2)^2}\left[1 + 2e\cos\left(\phi - \frac{3GM\phi}{c^2a(1-e^2)}\right)\right]
-\end{equation}
-\end{itemize}
 
 \subsection{Bedeutung der Terme}
 \begin{tabular}{|l|l|}

@@ -1,4 +1,51 @@
 \newpage
+\section{Bewegungsgleichung in Polarkoordinaten (1. Ordnung)}
+Die Bahngleichung \(r(\phi)\) in der Weber-Gravitation bis zur Ordnung \(\mathcal{O}(c^{-2})\) lautet:
+
+\begin{equation}
+r(\phi) = \frac{a(1 - e^2)}{1 + e \cos\left(\kappa\phi\right)}
+\end{equation}
+
+\noindent mit den Definitionen:
+\begin{align*}
+h &= \sqrt{GMa(1 - e^2)}, \\
+\kappa &= \sqrt{1 - \frac{6GM}{c^2a(1 - e^2)}}.
+\end{align*}
+
+\subsection*{Physikalische Interpretation}
+\begin{itemize}
+    \item \textbf{Struktur}: 
+        \begin{itemize}
+            \item Der Nenner \(1 + e \cos(\kappa\phi)\) beschreibt eine Ellipse mit relativistisch\\modifizierter Winkelabhängigkeit.
+            \item Die Wurzel \(\kappa\) quantifiziert die Abweichung von der Kepler-Bahn (\(\kappa = 1\) im Newton-Fall).
+        \end{itemize}
+    
+    \item \textbf{Periheldrehung}:
+        Die Periheldrehung pro Umlauf ergibt sich aus der Nicht-Ganzzahligkeit von \(\kappa\):
+        \[
+        \Delta\phi = 2\pi\left(\frac{1}{\kappa} - 1\right) \approx \frac{6\pi GM}{c^2a(1 - e^2)} + \mathcal{O}(c^{-4}).
+        \]
+    
+    \item \textbf{Grenzfälle}:
+        \begin{itemize}
+            \item Newton (\(c \to \infty\)): \(\kappa = 1\) \(\Rightarrow\) \(r_N(\phi) = \frac{a(1 - e^2)}{1 + e \cos\phi}\).
+            \item Kreisbahn (\(e = 0\)): \(r(\phi) = a\) (keine Winkelabhängigkeit).
+        \end{itemize}
+\end{itemize}
+
+\subsection*{Mathematische Herleitung}
+Die Gleichung folgt aus der Lösung der Bewegungsgleichung (Gl. 1.4.2 im Original):
+\[
+\frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{6GM}{c^2} u^2 \quad \left(u = \frac{1}{r}\right),
+\]
+wobei der Term \(\frac{6GM}{c^2} u^2\) die Weber-spezifische Korrektur 1. Ordnung darstellt. Der Ansatz \(u(\phi) = \frac{1 + e \cos(\kappa\phi)}{a(1 - e^2)}\) führt auf die angegebene Lösung.
+
+\subsection*{Anwendungshinweise}
+\begin{itemize}
+    \item Für \(c^{-2}\)-Effekte (z. B. Merkurbahn) ist diese Form ausreichend.
+    \item Vergleich mit ART: Der Faktor \(6GM\) (Weber) vs. \(3GM\) (ART) führt zu doppelt so großen Korrekturen in \(\kappa\).
+\end{itemize}
+
 \section{Bewegungsgleichungen}
 Die Weber-Kraft in Polarkoordinaten:
 \begin{equation}
@@ -34,7 +81,7 @@ u_2 = \frac{G^3M^3e}{h^6}\left(\frac{27}{4}\phi\sin\phi + \frac{3e}{8}\phi^2\cos
 \end{equation}
 \end{itemize}
 
-\subsection{Resultate}
+\subsection{Bahngleichung 2. Ordnung}
 Bahngleichung:
 \begin{equation}
 \boxed
