@@ -2,17 +2,20 @@
 \section{Berechnung der Umlaufperiode \( T \)}
 
 \subsection*{Gegebene Gleichungen}
-\begin{align}
-r(\phi) &= \frac{a(1-e^2)}{1 + e\cos\left(\kappa\phi + \alpha\phi^2\right)} \label{eq:orbit} \\
-\kappa &= \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}} \label{eq:kappa} \\
-\alpha &= \frac{3G^2M^2e}{8c^4h^4}, \quad h = \sqrt{GMa(1-e^2)} \label{eq:alpha}
-\end{align}
+\begin{equation}
+r(\phi) = \frac{a(1-e^2)}{1 + e\cos\left(\kappa\phi + \alpha\phi^2\right)} \label{eq:orbit}
+\end{equation}
+\begin{equation}
+\kappa = \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}} \label{eq:kappa}
+\end{equation}
+\begin{equation}
+\alpha = \frac{3G^2M^2e}{8c^4h^4}, \quad h = \sqrt{GMa(1-e^2)} \label{eq:alpha}
+\end{equation}
 
 \subsection*{Schritt 1: Entwicklung von \(\kappa\)}
 \begin{equation}
-\kappa \approx 1 - \frac{3GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{4c^4a^2(1-e^2)^2} - \frac{81G^3M^3}{8c^6a^3(1-e^2)^3} + \mathcal{O}(c^{-8}) \label{eq:kappa_expanded}
+\kappa \approx 1 - \frac{3GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{4c^4a^2(1-e^2)^2} - \frac{81G^3M^3}{8c^6a^3(1-e^2)^3} + \mathcal{O}(c^{-8}) 
 \end{equation}
-*Begründung:* Taylor-Entwicklung der Wurzel in Gl. \eqref{eq:kappa} um \(c^{-2} = 0\).
 
 \subsection*{Schritt 2: Vollständige Integration}
 Die Umlaufperiode \( T \) ist:
@@ -29,7 +32,6 @@ T &= \frac{a^2(1-e^2)^2}{h} \left[ \int_0^{2\pi} \frac{d\phi}{(1 + e\cos\psi)^2}
 \textbf{Kritische Schritte:}
 \begin{itemize}
 \item Keine Vernachlässigung von \(\alpha\phi^2\) – trägt zu \(\mathcal{O}(c^{-4})\)-Termen bei.
-\item Koeffizienten aus Gl. \eqref{eq:kappa_expanded} werden verwendet.
 \end{itemize}
 
 \subsection*{Numerisches Beispiel (Merkur)}
@@ -43,5 +45,4 @@ T_{\text{Newton}} &= \SI{7.6005e6}{\second} \\
 \begin{itemize}
 \item \textbf{1. Ordnung} (\(\propto c^{-2}\)): Weber-Korrektur ist halb so groß wie in der ART.
 \item \textbf{2. Ordnung} (\(\propto c^{-4}\)): Weber-spezifischer Term mit \(e^2\)-Abhängigkeit.
-\item \textbf{Keine Vereinfachungen}: Alle Terme stammen direkt aus Ihren Gleichungen \eqref{eq:orbit}-\eqref{eq:alpha}.
 \end{itemize}
