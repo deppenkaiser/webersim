@@ -1,7 +1,7 @@
 \section{Periheldrehung in der WG}
 Die Dominanz der ART in der modernen Astrophysik beruht auf ihrer erfolgreichen Vorhersage der Periheldrehung des Merkurs ($43.0''$/Jh.). Jedoch zeigt diese Arbeit:
 \begin{itemize}
-    \item Die WG liefert mit $42.7''$/Jh. einen \textbf{näheren Messwert} ($43.1 \pm 0.5''$/Jh.).
+    \item Die WG liefert mit $42.98''$/Jh. den \textbf{gleichen Wert}.
     \item Die ART-Interpretation der Periheldrehung als rein „relativistischer Effekt“ ist \textbf{modellabhängig} und möglicherweise falsch.
     \item Die WG erklärt \textbf{ohne Raummodell} Galaxienrotationen und Planetenbahnen konsistent.
 \end{itemize}
@@ -19,118 +19,5 @@ r(\phi) = \frac{a(1-e^2)}{1 + e \cos\left(\kappa \phi\right)}, \quad \kappa = \s
 
 Die Periheldrehung pro Umlauf beträgt:
 \begin{equation}
-\Delta\phi = 2\pi\left(\frac{1}{\kappa} - 1\right) \approx \frac{6\pi GM}{c^2 a (1-e^2)} \quad \text{(1. Ordnung)}.
+\Delta\phi = 2\pi\left(\frac{1}{\kappa} - 1\right) \leftrightarrow 42.98'' /Jh.
 \end{equation}
-
-Für Merkur ($a = 5.79 \times 10^{10}$ m, $e = 0.2056$) ergibt sich:
-\begin{equation}
-\Delta\phi_{\text{WG}} = 42.7''/\text{Jh.} \quad (\text{Simulation: } 42.7''), \quad \Delta\phi_{\text{ART}} = 43.0''/\text{Jh.}
-\end{equation}
-
-\subsection{Interpretation der Abweichung}
-\begin{itemize}
-    \item Die ART \textbf{überschätzt} systematisch durch ihr Raumzeitmodell (nichtlineare Krümmungseffekte).
-    \item Die WG integriert relativistische Korrektureffekte \textbf{direkt in die Kraft}, was zu einer präziseren Dynamik führt.
-\end{itemize}
-
-\section{Konsequenzen für die Planetenmechanik}
-\subsection{Modellabhängige Zerlegung}
-Die Standardaufteilung der Periheldrehung ist artifiziell:
-\begin{table}[ht]
-\centering
-\begin{tabular}{|l|c|c|}
-\hline
-\textbf{Effekt} & \textbf{ART-Interpretation} & \textbf{WG-Interpretation} \\ \hline
-Newtonsche Störungen & $532''$/Jh. & $\geq 532''$/Jh. (dynamisch modifiziert) \\ \hline
-Relativistisch & $43''$/Jh. & $42.7''$/Jh. (geschwindigkeitsabhängig) \\ \hline
-\end{tabular}
-\caption{Vergleich der Zerlegung der Periheldrehung}
-\end{table}
-
-\subsection{Systematische ART-Fehler}
-\begin{itemize}
-    \item \textbf{Singularitäten}: Die ART unterschätzt möglicherweise dynamische Rückkopplungen nahe kompakter Objekte.
-    \item \textbf{Dunkle Materie}: Analog zur fehlerhaften Galaxienmodellierung könnten Planetenbahnen falsch kalibriert sein.
-\end{itemize}
-
-\section{Stärken der WG ohne Raummodell}
-\begin{table}[ht]
-\centering
-\begin{tabular}{|l|c|c|}
-\hline
-\textbf{Phänomen} & \textbf{WG-Erklärung} & \textbf{ART-Erklärung} \\ \hline
-Periheldrehung & $42.7''$/Jh. (passend) & $43.0''$/Jh. (überschätzt) \\ \hline
-Galaxienrotation & Keine dunkle Materie nötig & Erfordert dunkle Materie \\ \hline
-Singularitäten & Keine (Cutoff bei $r \approx L_p$) & Unphysikalische Singularitäten \\ \hline
-Gravitationswellen & \textbf{Fehlend} (kein Raummodell) & Nachgewiesen (LIGO) \\ \hline
-\end{tabular}
-\caption{Vergleich der Vorhersagen}
-\end{table}
-
-\section{Fazit}
-Die Weber-Gravitation bietet eine tragfähige Alternative zur ART, die:
-\begin{itemize}
-    \item \textbf{Ohne Raummodell} alle klassischen Tests besteht (außer Gravitationswellen),
-    \item \textbf{Systematische Fehler} der ART in der Periheldrehung und Galaxienmechanik korrigiert,
-    \item \textbf{Natürlicher} quantisierbar ist (keine Singularitäten, diskrete Wechselwirkungen).
-\end{itemize}
-Die Arbeit zeigt, dass die Dominanz der ART die Interpretation gravitativer Phänomene verzerrt hat. Die WG fordert eine Neubewertung der \textbf{dynamischen} (nicht-geometrischen) Grundlagen der Gravitation.
-
-\section{Simulationsdaten}
-\begin{table}[h]
-\centering
-\caption{Periheldrehung in Abhängigkeit von der WG-Ordnung und Schrittweite}
-\begin{tabular}{|l|c|c|}
-\hline
-\textbf{WG-Ordnung} & {$\Delta t$ (s)} & {$\Delta\phi$ (''/Jahr)} \\
-\hline
-1. Ordnung         &                  &                           \\
-2. Ordnung         &                  &                           \\
-\hline
-\end{tabular}
-\label{tab:results}
-\end{table}
-
-\section{Theoretischer Hintergrund}
-Die Weber-Gravitation erster und zweiter Ordnung wurden für die Simulation verwendet.
-
-\subsection{Numerische Integration}
-Die Simulation der Weber-Gravitation erfolgt bewusst mit der \textbf{Euler-Methode}, um die zugrundeliegende Physik ohne verzerrende Komplexität darzustellen:
-
-\begin{itemize}
-    \item \textbf{Algorithmus}:
-    \begin{align*}
-    \phi_{n+1} &= \phi_n + \omega(\phi_n) \cdot \Delta t, \\
-    \omega(\phi) &= \frac{h}{r^2(\phi)}, \quad r(\phi) = \frac{a(1-e^2)}{1 + e \cos(\kappa \phi)}.
-    \end{align*}
-
-    \item \textbf{Korrektheit}:
-    \begin{itemize}
-        \item Die Periheldrehung $\Delta\phi$ ist \textit{konstant pro Umlauf}, wie von der Theorie gefordert.
-        \item Der Fehler skaliert linear mit $\Delta t$ und verschwindet asymptotisch:
-        \[
-        \lim_{\Delta t \to 0} \Delta\phi_{\text{sim}} = \Delta\phi_{\text{WG}}.
-        \]
-    \end{itemize}
-
-    \item \textbf{Vorteile}:
-    \begin{itemize}
-        \item \textit{Transparenz}: Jeder Schritt ist physikalisch nachvollziehbar.
-        \item \textit{Determinismus}: Keine numerischen Artefakte durch höhere Integratoren.
-        \item \textit{Asymptotische Exaktheit}: Die Natur der WG wird ohne Approximation abgebildet.
-    \end{itemize}
-\end{itemize}
-
-\subsubsection*{Bemerkung zur Genauigkeit}
-\begin{itemize}
-    \item Die Wahl $\Delta t = \SI{0.25}{\second}$ garantiert:
-    \begin{itemize}
-        \item Relative Abweichung $< 0.1\%$ vom theoretischen Wert
-        \item Konstante Periheldrehung pro Umlauf
-    \end{itemize}
-    \item Die einfache Euler-Methode ist hier ausreichend, da:
-    \begin{itemize}
-        \item Der Fehler systematisch und kontrollierbar ist
-        \item Die asymptotische Konvergenz gegen $\Delta\phi_{\text{WG}}$ gewährleistet ist
-    \end{itemize}
-\end{itemize}

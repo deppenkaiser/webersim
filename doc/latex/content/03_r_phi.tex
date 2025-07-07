@@ -22,7 +22,7 @@ h &= \sqrt{GMa(1 - e^2)}, \\
     \item \textbf{Periheldrehung}:
         Die Periheldrehung pro Umlauf ergibt sich aus der Nicht-Ganzzahligkeit von \(\kappa\):
         \[
-        \Delta\phi = 2\pi\left(\frac{1}{\kappa} - 1\right) \approx \frac{6\pi GM}{c^2a(1 - e^2)} + \mathcal{O}(c^{-4}).
+        \Delta\phi = 2\pi\left(\frac{1}{\kappa} - 1\right)
         \]
     \item \textbf{Grenzfälle}:
         \begin{itemize}
@@ -32,17 +32,12 @@ h &= \sqrt{GMa(1 - e^2)}, \\
 \end{itemize}
 
 \subsection*{Mathematische Herleitung}
-Die Gleichung folgt aus der Lösung der Bewegungsgleichung (Gl. 1.4.2 im Original):
-\[
+Die Gleichung folgt aus der Lösung der Bewegungsgleichung:
+\begin{equation}
 \frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{6GM}{c^2} u^2 \quad \left(u = \frac{1}{r}\right),
-\]
-wobei der Term \(\frac{6GM}{c^2} u^2\) die Weber-spezifische Korrektur 1. Ordnung darstellt. Der Ansatz \(u(\phi) = \frac{1 + e \cos(\kappa\phi)}{a(1 - e^2)}\) führt auf die angegebene Lösung.
+\end{equation}
 
-\subsection*{Anwendungshinweise}
-\begin{itemize}
-    \item Für \(c^{-2}\)-Effekte (z. B. Merkurbahn) ist diese Form ausreichend.
-    \item Vergleich mit ART: Der Faktor \(6GM\) (Weber) vs. \(3GM\) (ART) führt zu doppelt so großen Korrekturen in \(\kappa\).
-\end{itemize}
+wobei der Term \(\frac{6GM}{c^2} u^2\) die Weber-spezifische Korrektur 1. Ordnung darstellt. Der Ansatz \(u(\phi) = \frac{1 + e \cos(\kappa\phi)}{a(1 - e^2)}\) führt auf die angegebene Lösung.
 
 \section{Bewegungsgleichungen}
 Die Weber-Kraft in Polarkoordinaten:
@@ -54,30 +49,6 @@ Mit $u=1/r$ und Drehimpuls $\mathbf{h}=r^2\dot{\phi}$:
 \begin{equation}
 \frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{6GM}{c^2}u^2 + \frac{GM}{2c^2}\left(u\frac{d^2u}{d\phi^2} + \left(\frac{du}{d\phi}\right)^2\right)
 \end{equation}
-
-\subsection{Störungsrechnung}
-Ansatz:
-\begin{equation}
-u(\phi) = \sum_{k=0}^2 \frac{u_k(\phi)}{c^{2k}} + \mathcal{O}(c^{-6})
-\end{equation}
-
-\subsection{Ordnungen}
-\begin{itemize}
-\item[0.] Kepler-Lösung:
-\begin{equation}
-u_0 = \frac{GM}{h^2}(1 + e\cos\phi)
-\end{equation}
-
-\item[1.] ART-Äquivalent:
-\begin{equation}
-u_1 = \frac{3G^2M^2e}{h^4}\phi\sin\phi,\quad \Delta\phi_1 = \frac{6\pi GM}{c^2a(1-e^2)}
-\end{equation}
-
-\item[2.] Korrekturterm:
-\begin{equation}
-u_2 = \frac{G^3M^3e}{h^6}\left(\frac{27}{4}\phi\sin\phi + \frac{3e}{8}\phi^2\cos\phi\right)
-\end{equation}
-\end{itemize}
 
 \subsection{Bahngleichung 2. Ordnung}
 Bahngleichung:
@@ -92,15 +63,3 @@ mit:
 \kappa &= \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}}\\
 \alpha &= \frac{3G^2M^2e}{8h^4}
 \end{align}
-
-Periheldrehung:
-\begin{equation}
-\Delta\phi = \frac{6\pi GM}{c^2a(1-e^2)}\left(1 \underbrace{- \frac{3GM}{4c^2a(1-e^2)}}_{\text{Korrektur}}\right)
-\end{equation}
-
-\subsection{Interpretation}
-\begin{itemize}
-\item ART-Wert ($43''$/Jh.) wird systematisch überschätzt
-\item WG zeigt konsistente Reduktion durch $c^{-4}$-Terme
-\item Physikalische Ursache: Nichtlineare Rückkopplung der Beschleunigungsterme
-\end{itemize}
