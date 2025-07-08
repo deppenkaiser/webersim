@@ -1,35 +1,15 @@
 \newpage
-\section{Bewegungsgleichung in Polarkoordinaten (1. Ordnung)}
+\section{Bahngleichung 1. Ordnung}
 Die Bahngleichung \(r(\phi)\) in der Weber-Gravitation bis zur Ordnung \(\mathcal{O}(c^{-2})\) lautet:
 
 \begin{equation}
 r(\phi) = \frac{a(1 - e^2)}{1 + e \cos\left(\kappa\phi\right)}
 \end{equation}
 
-\noindent mit den Definitionen:
+\noindent mit der Definition:
 \begin{align*}
-h &= \sqrt{GMa(1 - e^2)}, \\
 \kappa &= \sqrt{1 - \frac{6GM}{c^2a(1 - e^2)}}.
 \end{align*}
-
-\subsection*{Physikalische Interpretation}
-\begin{itemize}
-    \item \textbf{Struktur}: 
-        \begin{itemize}
-            \item Der Nenner \(1 + e \cos(\kappa\phi)\) beschreibt eine Ellipse mit relativistisch\\modifizierter Winkelabhängigkeit.
-            \item Die Wurzel \(\kappa\) quantifiziert die Abweichung von der Kepler-Bahn (\(\kappa = 1\) im Newton-Fall).
-        \end{itemize}
-    \item \textbf{Periheldrehung}:
-        Die Periheldrehung pro Umlauf ergibt sich aus der Nicht-Ganzzahligkeit von \(\kappa\):
-        \[
-        \Delta\phi = 2\pi\left(\frac{1}{\kappa} - 1\right)
-        \]
-    \item \textbf{Grenzfälle}:
-        \begin{itemize}
-            \item Newton (\(c \to \infty\)): \(\kappa = 1\) \(\Rightarrow\) \(r_N(\phi) = \frac{a(1 - e^2)}{1 + e \cos\phi}\).
-            \item Kreisbahn (\(e = 0\)): \(r(\phi) = a\) (keine Winkelabhängigkeit).
-        \end{itemize}
-\end{itemize}
 
 \subsection*{Mathematische Herleitung}
 Die Gleichung folgt aus der Lösung der Bewegungsgleichung:
@@ -39,49 +19,13 @@ Die Gleichung folgt aus der Lösung der Bewegungsgleichung:
 
 wobei der Term \(\frac{6GM}{c^2} u^2\) die Weber-spezifische Korrektur 1. Ordnung darstellt. Der Ansatz \(u(\phi) = \frac{1 + e \cos(\kappa\phi)}{a(1 - e^2)}\) führt auf die angegebene Lösung.
 
-\section{Bewegungsgleichungen}
-Die Weber-Kraft in Polarkoordinaten:
-\begin{equation}
-\mathbf{F} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)\mathbf{\hat{r}}
-\end{equation}
-
 Mit $u=1/r$ und Drehimpuls $\mathbf{h}=r^2\dot{\phi}$:
 \begin{equation}
 \frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{6GM}{c^2}u^2 + \frac{GM}{2c^2}\left(u\frac{d^2u}{d\phi^2} + \left(\frac{du}{d\phi}\right)^2\right)
 \end{equation}
 
-\subsection{Bahngleichung 2. Ordnung}
-Bahngleichung:
-\begin{equation}
-    \boxed
-    {
-        r(\phi) = \frac{a(1-e^2)}{1 + e\cos\left(\kappa\phi + \alpha\phi^2\right)}
-    }
-\end{equation}
-mit:
-\begin{align}
-\kappa &= \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}}\\
-\alpha &= \frac{3G^2M^2e}{8h^4c^4}
-\end{align}
-
-\section{Herleitung der Periheldrehung $\Delta\phi$ in 1. Ordnung}
-
-Die Periheldrehung in der Weber-Gravitation ergibt sich aus der modifizierten Bahngleichung und lässt sich wie folgt herleiten:
-
-\subsection{Bahngleichung}
-Die Bahn eines Planeten in der Weber-Gravitation wird beschrieben durch:
-\begin{equation}
-r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa\phi)},
-\end{equation}
-wobei:
-\begin{itemize}
-\item $a$ die große Halbachse,
-\item $e$ die Exzentrizität der Bahn,
-\item $\kappa$ eine Konstante ist, die relativistische Korrekturen enthält:
-\begin{equation}
-\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)}}.
-\end{equation}
-\end{itemize}
+\section{Periheldrehung 1. Ordnung}
+Die Periheldrehung $\Delta\phi$ in der Weber-Gravitation ergibt sich aus der modifizierten Bahngleichung und lässt sich wie folgt herleiten:
 
 \subsection{Perihelbedingung}
 Das Perihel (sonnennächster Punkt) tritt auf, wenn der Nenner maximal wird, d.h. wenn:
@@ -113,19 +57,22 @@ Daraus folgt die gesuchte Gleichung:
 \item Für $\kappa < 1$ (Weber-Gravitation) ergibt sich eine positive Periheldrehung, die mit Beobachtungen (z.B. Merkurperihel) übereinstimmt.
 \end{itemize}
 
-\section{Periheldrehung in 2. Ordnung}
-
-\subsection{Erweiterte Bahngleichung}
-In 2. Ordnung lautet die Bahngleichung:
+\section{Bahngleichung 2. Ordnung}
+Bahngleichung:
 \begin{equation}
-r(\phi) = \frac{a(1 - e^2)}{1 + e \cos\left(\kappa\phi + \alpha\phi^2\right)},
+    \boxed
+    {
+        r(\phi) = \frac{a(1-e^2)}{1 + e\cos\left(\kappa\phi + \alpha\phi^2\right)}
+    }
 \end{equation}
-mit den erweiterten Koeffizienten:
+mit:
 \begin{align}
-\kappa &= \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)} + \frac{27G^2 M^2}{2c^4 a^2 (1 - e^2)^2}}, \\
-\alpha &= \frac{3G^2 M^2 e}{8c^4 h^4}, \quad h = \sqrt{GMa(1 - e^2)}.
+\kappa &= \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}}\\
+\alpha &= \frac{3G^2M^2e}{8h^4c^4}\\
+h &= \sqrt{GMa(1 - e^2)}
 \end{align}
 
+\section{Periheldrehung in 2. Ordnung}
 \subsection{Entwicklung von $\kappa$}
 Eine Taylor-Entwicklung von $\kappa$ bis zur 2. Ordnung liefert:
 \begin{equation}
@@ -165,15 +112,9 @@ Einsetzen von $\kappa \approx 1$ im Korrekturterm liefert:
 \Delta\phi \approx 2\pi\left(\frac{1}{\kappa} - 1\right) - 4\pi^2\alpha
 },
 \end{equation}
-wobei:
-\begin{itemize}
-\item Der erste Term die 1. Ordnung (wie zuvor) beschreibt
-\item Der zweite Term ($-4\pi^2\alpha$) die 2. Ordnungskorrektur darstellt
-\item Für Merkur beträgt der 2. Ordnungsterm $\sim 10^{-7}$ Bogensekunden/Jh. und ist damit vernachlässigbar
-\end{itemize}
 
 \subsection{Vollständige Koeffizienten}
-Explizit ausgedrückt:
+Explizit ausgedrückt, mit Bezug auf die Ordnungen:
 \begin{align*}
 \Delta\phi^{(2)} &= \frac{6\pi GM}{c^2 a(1 - e^2)} \left[1 + \frac{9GM}{4c^2 a(1 - e^2)}\right] - \frac{3\pi^2 G^2 M^2 e}{2c^4 h^4} \\
 &= \Delta\phi^{(1)} + \frac{27\pi G^2 M^2}{2c^4 a^2 (1 - e^2)^2} - \frac{3\pi^2 G^2 M^2 e}{2c^4 [GMa(1 - e^2)]^2}
