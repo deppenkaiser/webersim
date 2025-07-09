@@ -1,0 +1,48 @@
+\section{Die Rolle des $\beta$-Parameters}
+\label{sec:beta_parameter}
+
+Der $\beta$-Parameter in der Weber-Kraft
+
+\begin{equation}
+F = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \beta\frac{r\ddot{r}}{c^2}\right)\hat{r}
+\end{equation}
+
+bestimmt das Verhältnis von Beschleunigungs- zu Geschwindigkeitstermen und variiert je nach Wechselwirkungstyp:
+
+\subsection{Elektrodynamik (Original-Weber)}
+Für elektromagnetische Wechselwirkungen gilt $\beta=2$:
+\begin{itemize}
+\item Führt zur korrekten Beschreibung beschleunigter Ladungen
+\item Reproduziert die magnetische Komponente der Lorentz-Kraft
+\item Keine Lichtablenkung ($m=0$ liefert $F=0$)
+\end{itemize}
+
+\subsection{Gravitation (Massen)}
+Für massive Körper im Gravitationsfeld:
+\begin{itemize}
+\item $\beta=0.5$ erklärt die Periheldrehung des Merkur
+\item Führt zur ART-konformen Lichtablenkung für makroskopische Körper
+\item Universelle Formel: $\beta = 1 - \frac{mc^2}{2E}$
+\end{itemize}
+
+\subsection{Photonen (Lichtablenkung)}
+Für masselose Teilchen ($m=0$, $E=h\nu$):
+\begin{itemize}
+\item $\beta=1$ erzwingt die Frequenzabhängigkeit
+\item Beschleunigungsterm dominiert: $\frac{r\ddot{r}}{c^2} \approx \frac{h^2}{c^2r^4}$
+\item Liefert den Zusatzterm $\propto \lambda^{-2}$
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\caption{$\beta$-Werte im Vergleich}
+\begin{tabular}{lcc}
+\hline
+Anwendung & $\beta$ & Physikalische Konsequenz \\
+\hline
+Elektrodynamik & 2 & Magnetische Wechselwirkungen \\
+Gravitation (Massen) & 0.5 & Periheldrehung des Merkur \\
+Photonen & 1 & Frequenzabhängige Lichtablenkung \\
+\hline
+\end{tabular}
+\end{table}
