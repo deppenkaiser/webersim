@@ -1,0 +1,51 @@
+\newpage
+\section{Rotverschiebung in der Weber-Gravitation}
+\label{sec:weber_redshift}
+
+\subsection{Gravitative Rotverschiebung}
+Für Photonen ($m=0$) im Gravitationsfeld folgt aus der Energieerhaltung in der WG:
+
+\begin{equation}
+\frac{E_\text{em}}{E_\text{obs}} = 1 + \frac{GM}{c^2}\left(\frac{1}{r_\text{em}} - \frac{1}{r_\text{obs}}\right) + \frac{3}{2}\frac{v_r^2}{c^2}
+\end{equation}
+
+wobei $v_r$ die Relativgeschwindigkeit zwischen Emitter und Detektor ist. Dies führt zur Rotverschiebung:
+
+\begin{equation}
+\frac{\Delta\lambda}{\lambda} = \underbrace{\frac{GM}{c^2}\left(\frac{1}{r_\text{em}} - \frac{1}{r_\text{obs}}\right)}_{\text{Statischer Term}} + \underbrace{\frac{3}{2}\frac{v_r^2}{c^2}}_{\text{Dynamischer Term}}
+\end{equation}
+
+\subsection{Vergleich der Rotverschiebungstypen}
+\begin{table}[h]
+\centering
+\caption{Unterschiede in der Rotverschiebung}
+\begin{tabular}{lll}
+\hline
+Typ & ART & Weber-Gravitation \\
+\hline
+\textbf{Gravitativ} & $\frac{GM}{c^2}\Delta\left(\frac{1}{r}\right)$ & Identisch + $v_r$-Korrektur \\
+\textbf{Kosmologisch} & $z = \frac{a(t_0)}{a(t)}-1$ & $\frac{3}{2}\frac{v_r^2}{c^2}$ (Näherung) \\
+\textbf{Doppler} & $\sqrt{\frac{1+v/c}{1-v/c}}-1$ & $\frac{v_r}{c} + \frac{3}{4}\frac{v_r^2}{c^2}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Physikalische Interpretation}
+\begin{itemize}
+\item \textbf{Statischer Term}: Entspricht exakt der ART-Vorhersage (Pound-Rebka-Experiment)
+\item \textbf{Dynamischer Term}: Zusätzliche Geschwindigkeitsabhängigkeit in der WG
+\begin{equation}
+z_\text{dyn} \approx \frac{3}{2}\frac{H_0^2 d^2}{c^2} \quad \text{(für $v_r = H_0 d$)}
+\end{equation}
+\item \textbf{Kosmologische Konsequenz}: Die WG erklärt Hubble-Rotverschiebung durch kumulative gravitative Wechselwirkungen statt Expansion
+\end{itemize}
+
+\subsection{Experimentelle Unterscheidung}
+\begin{equation}
+\frac{z_\text{WG}}{z_\text{ART}} = 1 + \frac{3}{2}\left(\frac{v_r}{c}\right)^2 \left(\frac{GM}{c^2r}\right)^{-1}
+\end{equation}
+
+Für Galaxien mit $v_r \approx 1000$ km/s und $r=1$ Mpc:
+\[
+\frac{z_\text{WG}}{z_\text{ART}} \approx 1 + 5\times10^{-7}
+\]
