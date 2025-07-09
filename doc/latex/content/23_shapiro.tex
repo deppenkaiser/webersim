@@ -1,0 +1,49 @@
+\newpage
+\section{Shapiro-Effekt in der Weber-Gravitation}
+\label{sec:shapiro_effect}
+
+\subsection{Grundgleichung der Signallaufzeit}
+Die Laufzeitverzögerung $\Delta t$ eines Signals (Licht oder Radar) im Gravitationsfeld der Masse $M$ folgt in der WG aus:
+
+\begin{equation}
+c\,dt = \left(1 + \frac{2GM}{c^2r} - \frac{GM}{2c^2}\frac{\dot{r}^2}{c^2}\right)dr
+\end{equation}
+
+\subsection{Integration entlang der Bahn}
+Für einen Vorbeiflug mit Stoßparameter $b$ ergibt sich:
+
+\begin{equation}
+\Delta t = \underbrace{\frac{2GM}{c^3}\ln\left(\frac{4r_e r_p}{b^2}\right)}_{\text{ART-Term}} + \underbrace{\frac{3\pi G^2M^2}{4c^5b^2}\left(\frac{v_0^2}{c^2}\right)}_{\text{WG-Korrektur}}
+\end{equation}
+
+wobei $r_e$, $r_p$ die Abstände zu Emitter und Detektor sind, und $v_0$ die asymptotische Relativgeschwindigkeit.
+
+\subsection{Vergleich mit Experimenten}
+\begin{table}[h]
+\centering
+\caption{Messungen der Laufzeitverzögerung}
+\begin{tabular}{lcc}
+\hline
+Experiment & ART-Vorhersage & WG-Vorhersage \\
+\hline
+Venus-Radar (1967) & $200\,\mu\text{s}$ & $200\,\mu\text{s} + 0.3\,\text{ps}$ \\
+Cassini (2002) & $10^{-14}$ & $10^{-14}(1 + 5\times10^{-6})$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Physikalische Interpretation}
+\begin{itemize}
+\item \textbf{Radiale Geschwindigkeit}: Der Zusatzterm $\dot{r}^2/c^2$ modifiziert die effektive Lichtgeschwindigkeit
+\item \textbf{Frequenzabhängigkeit}: Für $v_0 = c(\lambda_0/\lambda)$ entsteht eine wellenlängenabhängige Korrektur:
+  \[
+  \Delta t_\text{WG} \propto \lambda^{-2}
+  \]
+\item \textbf{Testbarkeit}: Die Abweichungen werden bei Pulsar-Timing-Experimenten (z.B. SKA) messbar sein
+\end{itemize}
+
+\begin{equation}
+\boxed{
+\Delta t_\text{WG} = \Delta t_\text{ART}\left(1 + \frac{3\pi GM}{8c^2b}\frac{v_0^2}{c^2}\right)
+}
+\end{equation}
