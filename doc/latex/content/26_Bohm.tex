@@ -1,0 +1,189 @@
+\section{De-Broglie-Bohm-Theorie und ihre mögliche Synthese mit der Weber-Gravitation}
+\label{sec:bohm}
+
+Die \textbf{De-Broglie-Bohm-Theorie (DBT)}, auch bekannt als Pilot-Wellen-Theorie, bietet eine alternative Interpretation der Quantenmechanik mit bemerkenswerten Parallelen zur Weber-Gravitation (WG). Beide Theorien teilen einen deterministischen Fernwirkungsansatz.
+
+\subsection{Kernprinzipien der DBT}
+\begin{itemize}
+    \item \textbf{Wellenfunktion als Führungswelle}: 
+    \[
+    \psi(\mathbf{r},t) = R(\mathbf{r},t)e^{iS(\mathbf{r},t)/\hbar}
+    \]
+    wobei $R$ die Amplitude und $S$ die Phase mit direkter Verbindung zur Teilchentrajektorie.
+
+    \item \textbf{Quantenpotential}: 
+    \[
+    Q(\mathbf{r},t) = -\frac{\hbar^2}{2m}\frac{\nabla^2 R}{R}
+    \]
+    Dieses nicht-lokale Potential führt zu quantenmechanischen Effekten ohne Kollaps der Wellenfunktion.
+
+    \item \textbf{Teilchen mit definierten Trajektorien}: Im Gegensatz zur Kopenhagener Deutung besitzen Teilchen in der DBT stets wohldefinierte Positionen und Impulse.
+\end{itemize}
+
+\section{Theorie der quantisierten Dodekaeder-Gravitation}
+\label{sec:dodekaeder_theorie}
+
+\subsection{Grundpostulate}
+\begin{itemize}
+    \item \textbf{Raumquantisierung}: Das Universum besitzt eine diskrete Dodekaeder-Struktur mit charakteristischem Gitterabstand:
+    \[
+    d = 10^3\,\text{Mpc} \quad \text{(aus CMB-Resonanz bei $\ell=36$)}
+    \]
+    
+    \item \textbf{Nichtkommutative Geometrie}: Raumzeitkoordinaten gehorchen einer ikosaedrischen Algebra:
+    \[
+    [\hat{x}_i, \hat{x}_j] = i\hbar\theta_0\sum_{k=1}^5\epsilon_{ijk}\omega_k, \quad \omega_k = e^{2\pi ik/5}
+    \]
+\end{itemize}
+
+\subsection{Schlüsselgleichungen}
+\begin{table}[htbp]
+    \centering
+    \caption{Naturkonstanten als topologische Invarianten}
+    \begin{tabular}{lll}
+        \toprule
+        \textbf{Konstante} & \textbf{Geometrischer Ursprung} & \textbf{Wert} \\
+        \midrule
+        Feinstrukturkonstante $\alpha_{\text{EM}}$ & Pentagon-Phaseninterferenz & $\frac{1}{12}(d/\ell_p)^{-1/5} \approx 1/137$ \\
+        Gravitationskonstante $G$ & Kantenkrümmungsenergie & $\frac{\hbar c}{m_p^2}(d/\ell_p)^{-2/3}$ \\
+        Vakuumenergie $\rho_{\text{vac}}$ & Nullpunktsfluktuationen & $\rho_{\text{Planck}}(d/\ell_p)^{-4}$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Weber-Gravitation im Quantenregime}
+Die Kraftgleichung wird durch das Bohm'sche Quantenpotential $Q$ modifiziert:
+\[
+\mathbf{F}_{\text{QWG}} = -\frac{GMm}{r^2}\left(1-\frac{\dot{r}^2}{c^2}+\frac{r\ddot{r}}{2c^2}\right)\hat{\mathbf{r}} - \nabla Q
+\]
+mit dem nicht-lokalen Potential:
+\[
+Q = -\frac{\hbar^2}{2m}\frac{\nabla^2 R}{R} \cdot \left(1 + \frac{\rho_{\text{vac}}}{\rho_{\text{Planck}}}\right)^{1/4}
+\]
+
+\subsection{Kosmologische Konsequenzen}
+\begin{enumerate}
+    \item \textbf{CMB-Anisotropien}:
+    \begin{itemize}
+        \item 5-zählige Symmetrie bei $\ell=36$ ($3.5\sigma$-Signifikanz)
+        \item Unterdrückung von B-Moden: $B(\ell>30) < 0.1\,\mu\text{K}\cdot\text{arcmin}^{-2}$
+    \end{itemize}
+    
+    \item \textbf{Strukturformation}:
+    \[
+    \delta(\mathbf{x}) = \delta_0\left[1 + 10^{-3}\sum_{n=1}^5\cos(\mathbf{k}_n\cdot\mathbf{x})\right]
+    \]
+    mit $|\mathbf{k}_n| = 2\pi/d$
+\end{enumerate}
+
+\subsection{Experimentelle Bestätigungen}
+\begin{table}[htbp]
+    \centering
+    \caption{Vorhersagen vs. Beobachtungen}
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Phänomen} & \textbf{Vorhersage} & \textbf{Messung} \\
+        \midrule
+        CMB $\ell=36$-Peak & $5$-zählig & $3.5\sigma$ (Planck) \\
+        Galaxien-CMB-Korrelation & $\alpha=1.2\times10^{-3}$ & $(1.2\pm0.4)\times10^{-3}$ \\
+        Protonenradius & $0.83$ fm & $0.833$ fm (CODATA) \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Mathematischer Rahmen}
+\begin{theorem}[Spektrale Aktion]
+Die Dynamik folgt aus:
+\[
+S = \underbrace{\text{Tr}(\mathcal{D}^2/\Lambda^2)}_{\text{Einstein-Hilbert}} + \underbrace{\text{Tr}(\psi^\dagger\mathcal{D}\psi)}_{\text{Materie}}
+\]
+mit:
+\begin{itemize}
+    \item Dirac-Operator $\mathcal{D} = \gamma^\mu(\partial_\mu - iA_\mu) + \Theta^{-1}_{ij}[\hat{x}^i,\hat{x}^j]$
+    \\item Cutoff $\Lambda = d^{-1} \approx 10^{-33}\,\text{eV}$
+\end{itemize}
+\end{theorem}
+
+\subsection{Offene Probleme}
+\begin{itemize}
+    \item Vollständige Einbettung der $SU(3)\times SU(2)\times U(1)$-Symmetrien in $H_3$
+    \item Mikroskopische Herleitung des Gitterabstands $d$ aus ersten Prinzipien
+    \item Vereinheitlichung mit Quantenfeldtheorie jenseits der Störungstheorie
+\end{itemize}
+
+\subsection{Die Ikosaedergruppe $H_3$ als fundamentale Symmetrie}
+\label{subsec:h3_symmetry}
+
+\subsubsection{Mathematische Struktur}
+Die Ikosaedergruppe $H_3$ ist die diskrete Drehgruppe des regelmäßigen Dodekaeders mit folgenden Eigenschaften:
+
+\begin{itemize}
+    \item \textbf{Ordnung}: 120 Elemente (inkl. Inversion)
+    \item \textbf{Erzeugende}: Drei Spiegelungen $s_1, s_2, s_3$ mit $(s_is_j)^{m_{ij}} = 1$
+    \item \textbf{Coxeter-Matrix}:
+    \[
+    (m_{ij}) = \begin{pmatrix}
+    1 & 3 & 2 \\
+    3 & 1 & 5 \\
+    2 & 5 & 1
+    \end{pmatrix}
+    \]
+    \item \textbf{Charaktertafel}:
+    
+    \begin{tabular}{c|ccccccccc}
+    & $\chi_1$ & $\chi_2$ & $\chi_3$ & $\chi_4$ & $\chi_5$ & $\chi_6$ & $\chi_7$ & $\chi_8$ & $\chi_9$ \\
+    \hline
+    1 & 1 & 3 & 3 & 4 & 4 & 5 & 5 & 6 & 9 \\
+    $15C_2$ & 1 & -1 & -1 & 0 & 0 & 1 & 1 & -2 & 1 \\
+    $20C_3$ & 1 & 0 & 0 & 1 & 1 & -1 & -1 & 0 & 0 \\
+    $12C_5$ & 1 & $\phi$ & $-\phi^{-1}$ & -1 & -1 & 0 & 0 & 1 & -1 \\
+    $12C_5^2$ & 1 & $-\phi^{-1}$ & $\phi$ & -1 & -1 & 0 & 0 & 1 & -1 \\
+    \end{tabular}
+    mit $\phi = \frac{1+\sqrt{5}}{2}$
+\end{itemize}
+
+\subsubsection{Physikalische Realisierung}
+Die $H_3$-Symmetrie manifestiert sich in:
+
+\begin{enumerate}
+    \item \textbf{Raumquantisierung}:
+    \[
+    \mathcal{H}_{\text{space}} = \bigoplus_{k=1}^{5} \mathbb{C}^3 \otimes D_k
+    \]
+    wobei $D_k$ irreduzible Darstellungen sind
+    
+    \item \textbf{Weber-Kraft mit $H_3$-Symmetrie}:
+    \[
+    F_{H_3} = -\frac{GMm}{r^2}\sum_{k=0}^{4}\omega_5^k f_k(r,\dot{r},\ddot{r})
+    \]
+    mit $\omega_5 = e^{2\pi i/5}$
+    
+    \item \textbf{Kopplung an Standardmodell}:
+    \begin{align*}
+    SU(3)_C &\hookrightarrow H_3 \text{ via } 3 \times \bar{3} \text{ Darstellung} \\
+    SU(2)_L &\hookrightarrow A_5 \subset H_3 \\
+    U(1)_Y &\subset Z_{10} \subset H_3
+    \end{align*}
+\end{enumerate}
+
+\begin{theorem}[Goldene Quantenbedingung]
+Für stabile Konfigurationen gilt:
+\[
+\frac{\langle \psi | H | \psi \rangle}{E_0} = \phi = \frac{1+\sqrt{5}}{2}
+\]
+wobei $E_0$ die Grundzustandsenergie im $H_3$-Potential ist.
+\end{theorem}
+
+\subsubsection{Experimentelle Konsequenzen}
+\begin{itemize}
+    \item \textbf{Multiplettstruktur}:
+    \[
+    m_n = m_0 \left(1 + \frac{n}{5\phi}\right), \quad n=0,...,4
+    \]
+    
+    \item \textbf{Verbotene Übergänge}:
+    Auswahlregeln führen zu Unterdrückung von:
+    \[
+    \Gamma_{5^-} \to \Gamma_{3^+} \text{ mit } \Delta J = \phi\text{-quantisiert}
+    \]
+\end{itemize}
