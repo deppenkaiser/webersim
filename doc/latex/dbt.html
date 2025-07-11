@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interferenz ohne Wellen | Guerrilla-Physics</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: "Linux Libertine", Georgia, serif;
+            line-height: 1.6;
+            color: #222;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            counter-reset: theorem;
+        }
+        h1, h2, h3 {
+            color: #b00;
+            font-weight: normal;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .abstract {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-left: 3px solid #b00;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        .theorem {
+            background-color: #f8f8f8;
+            border-left: 3px solid #07a;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+        .theorem::before {
+            content: "Theorem " counter(theorem) ".";
+            counter-increment: theorem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #07a;
+        }
+        .proof::before {
+            content: "Beweis.";
+            font-style: italic;
+            color: #07a;
+        }
+        .figure {
+            text-align: center;
+            margin: 30px 0;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        .manifesto {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.1em;
+            margin: 40px 0;
+            color: #555;
+        }
+        .MathJax {
+            font-size: 1.1em !important;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Interferenz ohne Wellen:<br>Der Doppelspalt als nicht-lokales energetisches Optimierungssystem</h1>
+
+<div class="abstract">
+    <strong>Zusammenfassung</strong><br>
+    Das Doppelspaltexperiment wird traditionell als Beweis für den „Wellencharakter" von Quantenteilchen interpretiert. Wir zeigen, dass die Interferenzmuster durch eine <strong>instantane energetische Kopplung</strong> zwischen Quelle und Spalt entstehen. Die Verteilung \(\rho = |\Psi|^2\) ist das <strong>globale Energie-Minimum</strong> eines nicht-lokal korrelierten Systems:
+    \[
+    \mathcal{E}[\rho] = \int \rho(\mathbf{x}) Q(\mathbf{x}) \, d^3x + \int \rho(\mathbf{x}) V(\mathbf{x}) \, d^3x + \lambda \left( \int \rho(\mathbf{x}) \, d^3x - 1 \right)
+    \]
+    wobei \( Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}} \) das Bohm'sche Quantenpotential ist.
+</div>
+
+<h2>1. Die fundamentale Täuschung der Quantenmechanik</h2>
+
+<p>Die Standardinterpretation beruht auf zwei Dogmen:</p>
+<ol>
+    <li>Der Existenz eines „Wellencharakters" (\(\lambda = h/p\))</li>
+    <li>Der probabilistischen Deutung von \(\rho = |\Psi|^2\)</li>
+</ol>
+
+<p>Beide werden hinfällig durch:</p>
+\[
+\delta \mathcal{E} = 0 \quad \Rightarrow \quad \frac{\delta \mathcal{E}}{\delta \rho} = Q + V + \lambda = 0
+\]
+
+<div class="theorem">
+    Die Minimierung von \(\mathcal{E}[\rho]\) führt exakt zu \(\rho = |\Psi|^2\).
+</div>
+
+<div class="proof">
+    Mit \(\Psi = \sqrt{\rho}e^{iS/\hbar}\) wird die Euler-Lagrange-Gleichung:
+    \[
+    -\frac{\hbar^2}{2m}\nabla^2\Psi + V\Psi = -\lambda\Psi
+    \]
+    Dies ist die stationäre Schrödinger-Gleichung.
+</div>
+
+<h2>2. Schlüsselexperiment: Doppelspalt mit Supraleitern</h2>
+
+<p>Vorhersagen im Vergleich:</p>
+
+<table>
+    <tr>
+        <th>Phänomen</th>
+        <th>Standard-QM</th>
+        <th>Diese Theorie</th>
+    </tr>
+    <tr>
+        <td>Materialeffekt</td>
+        <td>\(\frac{\partial \rho}{\partial \epsilon} = 0\)</td>
+        <td>\(\frac{\partial \rho}{\partial \epsilon} \neq 0\) für Supraleiter</td>
+    </tr>
+    <tr>
+        <td>Reaktionszeit</td>
+        <td>\(\Delta t \geq \frac{d}{c}\)</td>
+        <td>\(\Delta t = 0\) (instantane Anpassung)</td>
+    </tr>
+</table>
+
+<div class="theorem">
+    Jede Änderung der Spaltgeometrie führt zur sofortigen (\(t=0\)) Neuverteilung:
+    \[
+    \rho(\mathbf{x}, t) \rightarrow \rho_{\text{opt}}(\mathbf{x})
+    \]
+</div>
+
+<h2>3. Physikalische Konsequenzen</h2>
+
+<p>Die Wellengleichung wird ersetzt durch:</p>
+\[
+\frac{\partial S}{\partial t} = -\left( \frac{(\nabla S)^2}{2m} + Q + V \right)
+\]
+<p>wobei \(S\) die Phase der Führungswelle ist.</p>
+
+<div class="manifesto">
+    „Die Quantenmechanik ist keine Theorie über Wellen,<br> 
+    sondern über <strong>die instantane Optimierung von Energie</strong>.<br>
+    Die ‚Welle‘ ist eine Illusion des statistischen Gleichgewichts."<br><br>
+    — Guerrilla-Physics Manifest
+</div>
+
+</body>
+</html>
