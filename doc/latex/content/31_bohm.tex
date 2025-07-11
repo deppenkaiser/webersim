@@ -224,3 +224,56 @@ De-Broglie-Bohm-Theorie (Kapitel~\ref{sec:quanten-wg}) eine alternative Interpre
     \item Die Unschärfe ist \textit{epistemisch} (durch versteckte Variablen des Quantenpotentials $Q$ bedingt).
     \item In starken Gravitationsfeldern könnte der Weber-Term $\frac{GM}{c^2 r}$ die effektive Unschärfe beeinflussen (vgl. \cite{bohm1952}).
 \end{itemize}
+
+\newpage
+\section{Die De-Broglie-Bohm-Theorie und die nicht-lokale Dynamik der Führungswelle}
+
+Die De-Broglie-Bohm-Theorie (DBT) bietet eine deterministische Interpretation der Quantenmechanik, in der Teilchen durch eine Führungswelle $\Psi$ gesteuert werden. Dieser Abschnitt erläutert die mathematischen Grundlagen und die physikalischen Implikationen der DBT, insbesondere im Kontext des Doppelspaltexperiments.
+
+\subsection{Grundgleichungen der DBT}
+
+Die Dynamik der Führungswelle $\Psi$ wird durch die Schrödinger-Gleichung beschrieben:
+\[ i\hbar\frac{\partial\Psi}{\partial t} = \left[-\frac{\hbar^2}{2m}\nabla^2 + V(x)\right]\Psi \]
+wobei $V(x)$ das Potential der Spalte darstellt:
+\[ V(x) = \begin{cases} 
+0 & \text{in den Spaltöffnungen} \\
+\infty & \text{sonst}
+\end{cases} \]
+
+Die Teilchenbewegung folgt aus der Bohmschen Trajektoriengleichung:
+\[ \frac{d\mathbf{x}}{dt} = \frac{\hbar}{m}\text{Im}\left(\frac{\nabla\Psi}{\Psi}\right) \]
+mit dem Quantenpotential:
+\[ Q(x,t) = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|} \]
+
+\subsection{Nicht-lokale Dynamik der Führungswelle}
+
+Die Lösung $\Psi(x,t)$ reagiert instantan auf die Spaltbedingungen:
+\[ \Psi(x,t) = \int G(x,x',t)\Psi_0(x')\,dx' \]
+wobei $G(x,x',t)$ der nicht-lokale Propagator ist, der alle Pfade durch beide Spalte gleichzeitig berücksichtigt.
+
+Für Spalte bei $x = \pm d/2$ ergibt sich das Interferenzmuster:
+\[ \Psi(x,t) \sim e^{i(kx-\omega t)}\left[\exp\left(-\frac{(x-d/2)^2}{4\sigma^2}\right) + \exp\left(-\frac{(x+d/2)^2}{4\sigma^2}\right)\right] \]
+\[ |\Psi|^2 \propto \cos^2\left(\frac{kdx}{2\sigma^2}\right) \]
+
+\subsection{Energieerhaltung und instantaner Ausgleich}
+
+Die Wahrscheinlichkeitserhaltung folgt aus der Kontinuitätsgleichung:
+\[ \frac{\partial\rho}{\partial t} + \nabla\cdot(\rho\mathbf{v}) = 0 \quad \text{mit} \quad \rho = |\Psi|^2 \]
+
+Die Gesamtenergie bleibt konstant:
+\[ E_{\text{ges}} = \underbrace{\frac{1}{2}mv^2}_{\text{kin. Energie}} + \underbrace{Q(x,t)}_{\text{Quantenpotential}} + \underbrace{V(x)}_{\text{äußeres Potential}} \]
+
+\subsection{Interpretation der Führungswelle}
+
+Die nicht-lokale Dynamik lässt sich als instantane Energieoptimierung verstehen. Das effektive Energiefunktional des Systems lautet:
+\[ \mathcal{E}[\Psi] = \underbrace{\frac{\hbar^2}{2m}\int|\nabla\Psi|^2\,d^3x}_{Q\text{-Term}} + \underbrace{\int V(x)|\Psi|^2\,d^3x}_{\text{Randbedingungen}} + \lambda\left(\int|\Psi|^2\,d^3x - 1\right) \]
+
+Die stationäre Führungswelle $\Psi_0(x)$ realisiert das Minimum von $\mathcal{E}[\Psi]$, was äquivalent zur zeitunabhängigen Schrödinger-Gleichung ist.
+
+\subsection{Konsequenzen}
+
+\begin{itemize}
+\item Die Interferenzmuster sind energetische Attraktoren des Systems
+\item Die \enquote{spukhafte Fernwirkung} entspricht einem sofortigen Energieausgleich durch $Q(x,t)$
+\item Experimentelle Vorhersage: Änderungen von $V(x)$ führen zu instantanen Änderungen von $\rho(x,t)$
+\end{itemize}

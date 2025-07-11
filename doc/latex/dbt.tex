@@ -5,6 +5,7 @@
 \usepackage{lmodern}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{csquotes}
 
 \title{Nicht-lokale Dynamik der Führungswelle $\Psi$ im Doppelspaltexperiment}
 \author{}
@@ -96,5 +97,45 @@ Für ein Elektron mit Anfangsbedingung $\Psi_0(x) = e^{-x^2/4\sigma^2}$:
 \item Die nicht-lokale Natur von $\Psi$ erklärt die instantane "Kenntnis" der Spaltgeometrie
 \item Die Energieerhaltung folgt direkt aus der Struktur des Quantenpotentials $Q$
 \end{itemize}
+
+\section{Interpretation der Führungswelle}
+\label{sec:energetische_interpretation}
+
+Die nicht-lokale Dynamik der Führungswelle lässt sich als \textbf{instantane Energieoptimierung} verstehen. Wir definieren das \textit{effektive Energiefunktional} des Gesamtsystems (Teilchen + Spalt):
+
+\begin{equation}
+\mathcal{E}[\Psi] = \underbrace{\frac{\hbar^2}{2m} \int |\nabla \Psi|^2 \, d^3x}_{Q\text{-Term}} + \underbrace{\int V(x) |\Psi|^2 \, d^3x}_{\text{Randbedingungen}} + \underbrace{\lambda \left( \int |\Psi|^2 \, d^3x - 1 \right)}_{\text{Normierung}}
+\end{equation}
+
+\subsection{Minimierungsprinzip}
+Die stationäre Führungswelle $\Psi_0(x)$ realisiert das Minimum von $\mathcal{E}[\Psi]$:
+
+\begin{equation}
+\frac{\delta \mathcal{E}}{\delta \Psi} \bigg|_{\Psi_0} = 0 \quad \Rightarrow \quad \left[ -\frac{\hbar^2}{2m} \nabla^2 + V(x) + \lambda \right] \Psi_0 = 0
+\end{equation}
+
+Dies ist äquivalent zur zeitunabhängigen Schrödinger-Gleichung (Gl. 1 im Haupttext).
+
+\subsection{Energieflüsse im Doppelspalt}
+Für die Dynamik (Gl. 3) gilt:
+
+\begin{itemize}
+\item Der \textbf{Energiestrom} ist gegeben durch:
+\begin{equation}
+\mathbf{S} = -\frac{\hbar^2}{2m} \mathrm{Re} \left( \Psi^* \nabla \frac{\partial \Psi}{\partial t} \right)
+\end{equation}
+
+\item Die \textbf{instantane Anpassung} (Gl. 5) entspricht einer globalen Energie-Neutralisation:
+\begin{equation}
+\Delta E(t) := \mathcal{E}[\Psi(t)] - \mathcal{E}[\Psi_0] \to 0 \quad \text{für} \quad t \to 0^+
+\end{equation}
+\end{itemize}
+
+\subsection{Konsequenzen}
+\begin{enumerate}
+\item Die Interferenzmuster sind \textbf{energetische Attraktoren} des Systems.
+\item Die \enquote{spukhafte Fernwirkung} entspricht\\einem \textbf{sofortigen Energieausgleich} durch $Q(x,t)$.
+\item Experimentelle Vorhersage: Modifikation von $V(x)$ während des Experiments führt zu \textit{instantanen} Änderungen von $\rho(x,t)$, nicht propagiert mit $v \leq c$.
+\end{enumerate}
 
 \end{document}
