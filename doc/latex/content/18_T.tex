@@ -4,10 +4,8 @@ Die Umlaufperiode $T$ eines Planeten in der Weber-Gravitation (WG) ergibt sich a
 
 \subsubsection*{Ausgangsgleichungen}
 \begin{enumerate}
-    \item Bahngleichung in Polarkoordinaten:
-    \begin{equation}
-        r(\phi) = \frac{a(1-e^2)}{1 + e \cos(\kappa \phi)}, \quad \kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}.
-    \end{equation}    
+    \item Bahngleichung in Polarkoordinaten (\ref{eq:bahngleichung_1_ordnung})
+    \item $\kappa$ aus Gl. (\ref{eq:kappa_1_ordnung})
 \end{enumerate}
 
 \subsubsection*{Schritt 1: Winkelgeschwindigkeit}
@@ -47,16 +45,13 @@ Einsetzen in Gl.~\eqref{eq:integral_t} liefert die Periode in 1. Ordnung:
 \newpage
 \section{Umlaufperiode \( T \) 2. Ordnung}
 
-\subsection*{Gegebene Gleichungen}
-\begin{equation}
-r(\phi) = \frac{a(1-e^2)}{1 + e\cos\left(\kappa\phi + \alpha\phi^2\right)}
-\end{equation}
-\begin{equation}
-\kappa = \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}}
-\end{equation}
-\begin{equation}
-\alpha = \frac{3G^2M^2e}{8c^4h^4}, \quad h = \sqrt{GMa(1-e^2)}
-\end{equation}
+\subsubsection*{Ausgangsgleichungen}
+\begin{enumerate}
+    \item Bahngleichung in Polarkoordinaten (\ref{eq:bahngleichung_2_ordnung})
+    \item $\kappa$ aus Gl. (\ref{eq:kappa_2_ordnung})
+    \item $\alpha$ aus Gl. (\ref{eq:alpha})
+    \item $h$ aus Gl. (\ref{eq:spezifischer_drehimpuls_h})
+\end{enumerate}
 
 \subsection*{Schritt 1: Entwicklung von \(\kappa\)}
 \begin{equation}
@@ -75,7 +70,3 @@ Mit Substitution \(\psi = \kappa\phi + \alpha\phi^2\) und Entwicklung bis \(\mat
 T &= \frac{a^2(1-e^2)^2}{h} \left[ \int_0^{2\pi} \frac{d\phi}{(1 + e\cos\psi)^2} + \mathcal{O}(c^{-6}) \right] \\
   &= \frac{2\pi a^{3/2}}{\sqrt{GM}} \left[1 + \frac{3GM}{2c^2a(1-e^2)} + \frac{45G^2M^2}{8c^4a^2(1-e^2)^2}\left(1 - \frac{e^2}{3}\right)\right]
 \end{align}
-\textbf{Kritische Schritte:}
-\begin{itemize}
-\item Keine Vernachlässigung von \(\alpha\phi^2\) – trägt zu \(\mathcal{O}(c^{-4})\)-Termen bei.
-\end{itemize}
