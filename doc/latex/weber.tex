@@ -19,9 +19,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage[labelfont=bf]{caption}
 \usepackage{tcolorbox}
+\usepackage{showlabels}
+\usepackage{refcheck}
 
 \newtheorem{theorem}{Theorem} % Definiert das 'theorem'-Environment
 \newtheorem{lemma}{Lemma}     % Falls Sie auch Lemmas verwenden möchten
+\showlabels{cite,label}
 
 \renewcommand{\arraystretch}{1.1}
 \numberwithin{equation}{section}
@@ -84,12 +87,14 @@ ernstzunehmenden Ansatz in der modernen Gravitationsphysik zu betrachten.
 % Einbindung der einzelnen TeX-Dateien
 \part{Grundlagen}
 \chapter{Weber-Kraft}
+\label{chapter:weber_kraft}
 \input{content/07_weber_kraft_em}
 \input{content/09_grundgleichungen}
 \input{content/10_r_phi}
 \input{content/12_w_phi}
 \input{content/13_v_phi}
 \chapter{Sonnensystem}
+\label{chapter:sonnensystem}
 \input{content/15_perihel}
 \input{content/16_lichtablenkung}
 \input{content/18_T}
@@ -99,10 +104,12 @@ ernstzunehmenden Ansatz in der modernen Gravitationsphysik zu betrachten.
 \input{content/23_shapiro}
 \part{Anhang}
 \chapter{Diskussionen}
+\label{chapter:diskussion}
 \input{content/28_welle}
 \input{content/30_konsequenzen_rotverschiebung}
 \input{content/31_bohm}
 \chapter{Ergänzende Informationen}
+\label{chapter:information}
 \input{content/37_beta}
 
 \begin{thebibliography}{9}
