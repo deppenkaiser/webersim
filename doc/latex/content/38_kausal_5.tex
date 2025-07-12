@@ -1,0 +1,64 @@
+\section{Rückwirkende Systematisierung durch das Wellenprinzip}
+\label{sec:wellenprinzip_systematik}
+
+\subsection{Das universelle Wirkprinzip}
+Alle vorherigen Gleichungen lassen sich aus einem einheitlichen Variationsprinzip ableiten:
+
+\begin{equation}
+\delta \int \mathcal{L}[\Psi,\partial_\mu\Psi] d^4x = 0 \quad \text{mit} \quad 
+\mathcal{L} = \underbrace{\frac{1}{2}\partial_\mu\Psi\partial^\mu\Psi}_{\text{Kinetik}} - \underbrace{V(\Psi)}_{\text{Selbstwirkung}}
+\end{equation}
+
+\subsection{Konsequente Revision der Grundgleichungen}
+
+\subsubsection{1. Weber-Gravitation}
+Die ursprüngliche Bewegungsgleichung
+\begin{equation}
+\mathbf{F} = -\frac{GMm}{r^2}\left(1-\frac{\dot{r}^2}{c^2}+\frac{r\ddot{r}}{2c^2}\right)
+\end{equation}
+wird zur Feldgleichung:
+\begin{equation}
+\Box \phi = 4\pi G\left(\rho + \frac{1}{c^2}\partial_t^2\rho\right)
+\end{equation}
+
+\subsubsection{2. Quantenpotential}
+Das Bohm'sche Quantenpotential
+\begin{equation}
+Q = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|}
+\end{equation}
+erscheint als natürlicher Bestandteil des Wellenlagrangians:
+\begin{equation}
+\mathcal{L}_Q = \frac{\hbar^2}{2m}|\nabla\Psi|^2
+\end{equation}
+
+\subsubsection{3. Lichtablenkung}
+Die hybriden Terme in
+\begin{equation}
+\Delta\phi = \frac{4GM}{c^2b}\left(1 + \frac{3\pi}{16}\frac{\lambda^2}{\lambda_0^2} + \frac{\hbar^2\omega^2}{4c^4b^2}\right)
+\end{equation}
+folgen aus der Störungstheorie des Wellenoperators:
+\begin{equation}
+\Box \Psi = \left(\frac{1}{c^2}\partial_t^2 - \nabla^2\right)\Psi = \frac{4\pi G}{c^4}T_{\mu\nu}\partial^\mu\partial^\nu\Psi
+\end{equation}
+
+\subsection{Systematische Klassifikation}
+\begin{table}[h]
+\centering
+\begin{tabular}{p{0.25\textwidth}p{0.25\textwidth}p{0.25\textwidth}}
+\toprule
+\textbf{Originalgleichung} & \textbf{Wellenformulierung} & \textbf{Physikalische Konsequenz} \\
+\midrule
+Newton-Kraft & $\delta\mathcal{E}[\phi]=0$ & Weber-Terme \\
+Schrödinger-Gleichung & $\Psi=e^{iS/\hbar}$ & Quantenpotential \\
+Geodätengleichung & $\Box h_{\mu\nu}=0$ & Metrik-Wellen-Kopplung \\
+\bottomrule
+\end{tabular}
+\caption{Systematische Vereinheitlichung durch das Wellenprinzip}
+\end{table}
+
+\subsection{Fundamentale Einsichten}
+\begin{itemize}
+\item Alle Wechselwirkungen sind Manifestationen \textit{einer} Grundgleichung
+\item Der scheinbare Widerspruch zwischen Lokalität und Gleichzeitigkeit löst sich auf
+\item Die \enquote{Kraft}-Begriffe werden durch energetische Optimierung ersetzt
+\end{itemize}
