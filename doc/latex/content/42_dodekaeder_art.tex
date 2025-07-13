@@ -1,0 +1,53 @@
+\section{Emergenz der Allgemeinen Relativitätstheorie}
+\label{sec:emergenz_art}
+
+\subsection{Kontinuumslimes der Netzwerkdynamik}
+Aus der mikroskopischen Wirkung des Dodekaeder-Netzwerks
+\begin{equation}
+\mathcal{S}_{\text{net}} = \sum_{\langle ij \rangle} \int \left[ \frac{\mathcal{K}}{2} \left( \dot{r}_{ij}^2 - \frac{\dot{r}_{ij}^4}{4c^4} + \frac{r_{ij}\ddot{r}_{ij}}{2c^2} \right) + \lambda \hbar \mathcal{I}_{ij} |\Psi_i - \Psi_j|^2 \right] dt
+\end{equation}
+emergiert im makroskopischen Limes ($N \to \infty$, $\ell_p \to 0$) die effektive Raumzeit-Metrik
+\begin{equation}
+g_{\mu\nu}(x) = \lim_{\epsilon \to 0} \frac{1}{N_\epsilon} \sum_{i,j \in B_\epsilon(x)} \frac{\Delta x_{ij}^\mu \Delta x_{ij}^\nu}{r_{ij}^2}
+\end{equation}
+
+\subsection{Herleitung der Einstein-Hilbert-Wirkung}
+Die Entwicklung der Netzwerkfluktuationen $\delta r_{ij} = r_{ij} - \bar{r}$ führt auf
+\begin{equation}
+\mathcal{S}_{\text{eff}} = \int d^4x \sqrt{-g} \left( \frac{R}{16\pi G} - \Lambda + \mathcal{L}_{\text{m}} \right) + \mathcal{O}(\ell_p^2)
+\end{equation}
+mit:
+\begin{itemize}
+\item $G = \frac{3\sqrt{5}}{8} \frac{c^4\ell_p^2}{\mathcal{K}\hbar}$ (emergente Gravitationskonstante)
+\item $\Lambda = \frac{5(1-\phi)}{2\ell_p^2}$ ($\phi$ = Goldberg-Coxeter-Parameter)
+\item $\mathcal{L}_{\text{m}} = \sum_f \bar{\psi}_f (i\gamma^\mu D_\mu - m_f)\psi_f$ (emergente Materiefelder)
+\end{itemize}
+
+\subsection{Einstein-Gleichungen als effektive Dynamik}
+Die Variation $\delta\mathcal{S}_{\text{eff}}/\delta g_{\mu\nu} = 0$ liefert
+\begin{equation}
+G_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}
+\end{equation}
+wobei der Energie-Impuls-Tensor aus den Materiefluktuationen entsteht:
+\begin{equation}
+T_{\mu\nu} = \frac{2}{\sqrt{-g}} \frac{\delta (\sqrt{-g}\mathcal{L}_{\text{m}})}{\delta g^{\mu\nu}}
+\end{equation}
+
+\subsection{Konsistenzbedingungen}
+Für die exakte Emergenz müssen gelten:
+\begin{enumerate}
+\item \textbf{Skalierungsrelation}:
+\begin{equation}
+\frac{\langle r_{ij}^2 \rangle}{\ell_p^2} = 5(3-\sqrt{5}) \approx 6.91
+\end{equation}
+
+\item \textbf{Lorentz-Symmetrierestoration}:
+\begin{equation}
+\text{SO}(4,1)_{\text{mikro}} \to \text{SO}(3,1)_{\text{macro}} \quad \text{für} \quad \frac{E}{E_p} < 10^{-5}
+\end{equation}
+
+\item \textbf{Störungstheoretische Konvergenz}:
+\begin{equation}
+\sum_{n=0}^\infty \left( \frac{\ell_p}{L} \right)^n \mathcal{O}_n \to 0 \quad \text{für} \quad L \gg \ell_p
+\end{equation}
+\end{enumerate}

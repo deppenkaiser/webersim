@@ -1,0 +1,70 @@
+\section{Renormierungsgruppenanalyse des Dodekaeder-Modells}
+\subsection{Skalenabhängige Kopplungskonstanten}
+
+Die Renormierungsgruppenflüsse der fundamentalen Parameter werden durch folgende Differentialgleichungen beschrieben:
+
+\begin{equation}
+\frac{dg_i}{d\ln\mu} = \beta_i(g_j), \quad i,j \in \{\mathcal{K},\lambda,G,\hbar\}
+\end{equation}
+
+Mit den beta-Funktionen:
+
+\begin{equation}
+\begin{aligned}
+\beta_\mathcal{K} &= \frac{5-\sqrt{5}}{4\pi^2}\mathcal{K}^2 - \frac{\mathcal{K}^3}{12c^4} \\
+\beta_\lambda &= 3\lambda^2 - \frac{\lambda}{2\pi}\left(\frac{\mathcal{K}}{c^2}-\frac{4G\mu^2}{\hbar c^3}\right) \\
+\beta_G &= \frac{G^2\mu^2}{\hbar c^5}(2-\omega) \\
+\beta_\hbar &= -\frac{\hbar}{2\pi}\left(\frac{\lambda^2}{4} + \frac{G\mu^2}{c^5}\right)
+\end{aligned}
+\end{equation}
+
+\subsection{Fixpunkte und Phasenübergänge}
+
+Die kritischen Punkte ergeben sich aus $\beta_i(g_j^*) = 0$:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccl}
+\toprule
+Fixpunkt & $\mathcal{K}^*$ & $\lambda^*$ & Stabilität \\
+\midrule
+Gaußscher FP & 0 & 0 & UV-stabil \\
+Weber-FP & $\frac{5\pi c^2}{3}$ & 0 & IR-attraktiv \\
+Quanten-FP & $\frac{2G\mu^2}{\hbar c}$ & $\frac{1}{\sqrt{3}}$ & kritisch \\
+\bottomrule
+\end{tabular}
+\caption{Fixpunkte der Renormierungsgruppe}
+\end{table}
+
+\subsection{Anomalie-Dimensionen}
+
+Die Skalendimensionen der Felder am Quanten-Fixpunkt:
+
+\begin{equation}
+\gamma_\phi = \frac{5-\sqrt{5}}{16\pi^2}\mathcal{K}^*, \quad \gamma_\Psi = \frac{\lambda^*}{12\pi^2}
+\end{equation}
+
+\subsection{Phasendiagramm}
+
+\begin{equation}
+\mathcal{F} = -T \ln Z = \int d^4x \left[ \frac{1}{2}(\nabla \phi)^2 + \frac{m^2}{2}\phi^2 + \frac{\lambda}{4!}\phi^4 \right]
+\end{equation}
+
+Mit den Übergangstemperaturen:
+
+\begin{equation}
+T_c = \begin{cases}
+\frac{\hbar c}{k_B}\sqrt{\frac{3\mathcal{K}}{2G}} & \text{(Geometrie-Phase)} \\
+\frac{\hbar}{k_B}\left(\frac{\lambda^3c^7}{G^2}\right)^{1/5} & \text{(Materie-Phase)}
+\end{cases}
+\end{equation}
+
+\subsection{Asymptotische Freiheit}
+
+Die effektive Kopplung zeigt das charakteristische Verhalten:
+
+\begin{equation}
+\alpha_{\text{WG}}(\mu) = \frac{\mathcal{K}(\mu)}{4\pi c^2} \approx \frac{1}{11\ln(\mu^2/\Lambda^2_{\text{QG}})}
+\end{equation}
+
+wobei $\Lambda_{\text{QG}} \sim 10^{19}$ GeV die Quantengravitationsskala ist.

@@ -1,0 +1,37 @@
+\newpage
+\section{Dodekaedrisches Raummodell für die Weber-Gravitation}
+\subsection{Mathematische Grundlagen}
+Inspiriert durch quasikristalline Strukturen schlagen wir ein \textbf{Dodekaeder-Netzwerk} als fundamentale Raumstruktur vor. Sei $\mathcal{D} = (V,E)$ ein ungerichteter Graph mit:
+
+\begin{itemize}
+\item Knotenmenge $V$ als diskreten Raumzeit-Ereignissen
+\item Kanten $E$ mit Längen $r_{ij}(t)$, die der Weber-Dynamik gehorchen
+\end{itemize}
+
+Die Wirkung des Systems lautet:
+\begin{equation}
+\mathcal{S}_{\mathcal{D}} = \sum_{(i,j)\in E} \int \left[ 
+\frac{\mathcal{K}}{2} \left( \dot{r}_{ij}^2 - \frac{\dot{r}_{ij}^4}{4c^4} + \frac{r_{ij}\ddot{r}_{ij}}{2c^2} \right) 
++ \lambda \hbar \, \mathcal{I}_{ij} |\Psi_i - \Psi_j|^2 
+\right] dt
+\end{equation}
+
+\subsection{Emergenz der Metrik}
+Im Kontinuumslimes definieren wir die effektive Metrik:
+\begin{equation}
+g_{\mu\nu}(x) = \lim_{\epsilon \to 0} \frac{1}{N_\epsilon} \sum_{i,j \in B_\epsilon(x)} \frac{\Delta x_{ij}^\mu \Delta x_{ij}^\nu}{r_{ij}^2}
+\end{equation}
+wobei $B_\epsilon(x)$ eine $\epsilon$-Kugel um $x$ und $N_\epsilon$ die Normierung ist.
+
+\subsection{Weber-Kraft aus Gitterdynamik}
+Störungstheorie liefert die effektive Kraft:
+\begin{equation}
+F_{ij} = -\frac{\partial \mathcal{V}_{\text{eff}}}{\partial r_{ij}} = -\frac{G m_i m_j}{r_{ij}^2} \left(1 - \frac{\dot{r}_{ij}^2}{c^2} + \frac{r_{ij}\ddot{r}_{ij}}{2c^2}\right)
+\end{equation}
+
+\subsection{Quantenmechanische Erweiterung}
+Die Führungswelle $\Psi$ entsteht als Eigenlösung des Netzwerkoperators:
+\begin{equation}
+\hat{H} \Psi = \left[ -\frac{\hbar^2}{2m} \sum_{\langle ijk \rangle} \nabla_{ijk}^2 + \mathcal{V}_{\text{WG}} \right] \Psi = E \Psi
+\end{equation}
+wobei $\nabla_{ijk}^2$ der diskrete Laplace-Operator auf Dodekaeder-Flächen ist.
