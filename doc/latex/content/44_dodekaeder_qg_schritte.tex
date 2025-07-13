@@ -1,0 +1,73 @@
+\section{Fehlende Komponenten zur vollständigen Quantengravitation}
+
+Die Quanten-Weber-Gravitation (QWG) benötigt folgende Erweiterungen, um eine vollständige Theorie der Quantengravitation zu werden:
+
+\subsection{Quantenfeldtheorie der Gravitation}
+\begin{itemize}
+    \item Einführung eines gravitativen Feldoperators:
+    \begin{equation}
+        \hat{\mathcal{G}}_{\mu\nu}(x) = -\frac{\hbar^2}{\ell_p^2} \frac{\delta}{\delta g^{\mu\nu}(x)} \ln|\Psi[g]|
+    \end{equation}
+    \item Entwicklung einer Störungstheorie für $\hat{\mathcal{G}}_{\mu\nu}$
+\end{itemize}
+
+\subsection{Dynamische Quantisierung der Raumzeit}
+\begin{itemize}
+    \item Pfadintegral-Formulierung des Netzwerks:
+    \begin{equation}
+        Z = \int \mathcal{D}[r_{ij}] e^{i\mathcal{S}_{\text{net}}[r_{ij}]/\hbar}, \quad \mathcal{S}_{\text{net}} = \sum_{\langle ij \rangle} \mathcal{K}\left(\dot{r}_{ij}^2 + \beta r_{ij}\ddot{r}_{ij}\right)
+    \end{equation}
+    \item Spin-Netzwerk-Quantisierung der Zellflächen:
+    \begin{equation}
+        \hat{A}_f|j\rangle = 8\pi\gamma\ell_p^2\sqrt{j(j+1)}|j\rangle
+    \end{equation}
+\end{itemize}
+
+\subsection{Kopplung an das Standardmodell}
+\begin{itemize}
+    \item Konstruktion chiraler Fermionen:
+    \begin{equation}
+        \hat{\psi}_L(x) = \prod_{\gamma_L} \hat{h}_{ij}, \quad \hat{\psi}_R(x) = \prod_{\gamma_R} \hat{h}_{ij}
+    \end{equation}
+    \item Generierung von Eichfeldern:
+    \begin{equation}
+        \hat{A}_\mu(x) = \sum_{\langle ij \rangle} \epsilon_\mu^{ij}(\hat{h}_{ij} - \hat{h}_{ji})
+    \end{equation}
+\end{itemize}
+
+\subsection{Renormierung und UV-Vollständigkeit}
+\begin{itemize}
+    \item Erweiterte Renormierungsgruppengleichungen:
+    \begin{equation}
+        \beta_G = \frac{G^2}{\hbar c^5}(2 - \omega + a_1G^2 + a_2\lambda^2)
+    \end{equation}
+    \item Suche nach nicht-trivialen UV-Fixpunkten $(G^*,\lambda^*)$
+\end{itemize}
+
+\subsection{Kausalitätsstruktur}
+\begin{itemize}
+    \item Quanten-kausale Weber-Kraft:
+    \begin{equation}
+        \hat{F}_{ij}(t) = \int_{-\infty}^t K(t-t';\ell_p/c)\hat{F}_{ij}^{\text{inst}}(t')\,dt'
+    \end{equation}
+    \item Kausalkern mit Planck-Zeit-Cutoff:
+    \begin{equation}
+        K(\tau) \sim e^{-\tau^2c^2/2\ell_p^2}
+    \end{equation}
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\caption{Zusammenfassung der fehlenden Komponenten}
+\begin{tabular}{ll}
+\toprule
+\textbf{Komponente} & \textbf{Erforderliche Erweiterung} \\
+\midrule
+Quantenfeldtheorie & Feldoperator $\hat{\mathcal{G}}_{\mu\nu}$ \\
+Raumzeit-Quantisierung & Pfadintegral über Netzwerkkonfigurationen \\
+Standardmodell & Chirale Fermionen und Eichfelder \\
+UV-Vollständigkeit & Nicht-trivialer RG-Fixpunkt \\
+Kausalität & Quanten-kausaler Propagator \\
+\bottomrule
+\end{tabular}
+\end{table}

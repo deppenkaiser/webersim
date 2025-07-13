@@ -1,0 +1,36 @@
+\section{Autonome Quanten-Weber-Gravitation}
+Die Weber-Gravitation (WG) formuliert eine eigenständige Quantentheorie der Gravitation, die ohne Rückgriff auf ART oder SRT auskommt. Ihre fundamentalen Prinzipien sind:
+
+\subsection{Raumzeit-Konzept}
+\begin{itemize}
+    \item \textbf{Diskrete Basis}: Die Raumzeit wird durch ein dynamisches Dodekaeder-Netzwerk $\mathcal{D}=(V,E)$ beschrieben, wobei Knoten $v\in V$ Quantenzustände $|j,m\rangle$ und Kanten $e_{ij}\in E$ Operatoren $\hat{r}_{ij}$ mit Planck-Länge $\ell_p$ tragen.
+    
+    \item \textbf{Emergente Metrik}: Die klassische Metrik entsteht als Mittelwert:
+    \begin{equation}
+        g_{\mu\nu}(x) = \lim_{\epsilon\to0} \frac{1}{N_\epsilon} \sum_{\substack{i,j\in B_\epsilon(x)}} \frac{\Delta x_{ij}^\mu \Delta x_{ij}^\nu}{\langle \hat{r}_{ij}^2 \rangle}
+    \end{equation}
+\end{itemize}
+
+\subsection{Quanten-Dynamik}
+Die Zeitentwicklung folgt aus dem Weber-Hamiltonoperator:
+\begin{equation}
+    \hat{H}_{\text{WG}} = \sum_{\langle ij \rangle} \left( \frac{\hat{p}_{ij}^2}{2m_{ij}} - \frac{Gm_im_j}{\hat{r}_{ij}} \left[1 - \frac{\langle \hat{\dot{r}}_{ij}^2 \rangle}{c^2} + \beta \frac{\hat{r}_{ij}\hat{\ddot{r}}_{ij}}{c^2}\right] \right) + \hat{Q}
+\end{equation}
+wobei $\hat{Q} = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|}$ das nicht-lokale Quantenpotential ist.
+
+\subsection{Schlüsselunterschiede zu ART/SRT}
+\begin{tabular}{ll}
+    \textbf{WG} & \textbf{ART/SRT} \\
+    \hline
+    Fernwirkung via $\hat{r}_{ij}$, $\hat{\ddot{r}}_{ij}$ & Lokale Krümmung $R_{\mu\nu}$ \\
+    Frequenzabhängige Lichtablenkung & Metrik-basierte Ablenkung \\
+    Statisches Universum mit $z\sim v_r^2$ & Expandierende Raumzeit \\
+    Quantisiertes $r_{ij}\in n\ell_p$ & Kontinuierliche Koordinaten \\
+\end{tabular}
+
+\subsection{Konsequenzen}
+\begin{itemize}
+    \item Singularitätsfreiheit durch $\hat{Q}$-Divergenz bei $r_{ij}\to0$
+    \item Lorentz-Invarianz nur als Niedrigenergie-Näherung
+    \item Nachweisbare Abweichungen bei $\lambda\lesssim\ell_p$ (z.B. $\Delta\phi(\lambda)$)
+\end{itemize}
