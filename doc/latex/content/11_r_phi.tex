@@ -4,13 +4,19 @@ Die Bahngleichung \(r(\phi)\) in der Weber-Gravitation bis zur Ordnung \(\mathca
 
 \begin{equation}
 \label{eq:bahngleichung_1_ordnung}
-r(\phi) = \frac{a(1 - e^2)}{1 + e \cos\left(\kappa\phi\right)}
+\boxed
+{
+    r(\phi) = \frac{a(1 - e^2)}{1 + e \cos\left(\kappa\phi\right)}
+}
 \end{equation}
 
 \noindent mit der Definition:
 \begin{equation}
 \label{eq:kappa_1_ordnung}
-\kappa = \sqrt{1 - \frac{6GM}{c^2a(1 - e^2)}}
+\boxed
+{
+    \kappa = \sqrt{1 - \frac{6GM}{c^2a(1 - e^2)}}    
+}
 \end{equation}
 
 \subsection*{Mathematische Herleitung}
@@ -40,11 +46,17 @@ mit:
 $h$ aus Gleichung (\ref{eq:spezifischer_drehimpuls_h})
 \begin{equation}
 \label{eq:kappa_2_ordnung}
-\kappa = \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}}
+\boxed
+{
+    \kappa = \sqrt{1 - \frac{6GM}{c^2a(1-e^2)} + \frac{27G^2M^2}{2c^4a^2(1-e^2)^2}}
+}
 \end{equation}
 \begin{equation}
 \label{eq:alpha}
-\alpha = \frac{3G^2M^2e}{8h^4c^4}
+\boxed
+{
+    \alpha = \frac{3G^2M^2e}{8h^4c^4}    
+}
 \end{equation}
 
 \newpage
@@ -107,25 +119,12 @@ Die Lösung lautet:
 \subsection*{Näherung für kleine Korrekturen}
 Da $\alpha \sim c^{-4}$ klein ist, entwickeln wir die Wurzel:
 \[
-    \phi \approx \frac{2\pi}{\kappa} - \frac{4\pi^2\alpha}{\kappa^3} + \mathcal{O}(\alpha^2).
+    \phi \approx \frac{2\pi}{\kappa} - \frac{4\pi^2\alpha}{\kappa^3} + \mathcal{O}(\alpha^2)
 \]
 Die Periheldrehung pro Umlauf wird damit:
 \begin{equation}
-\Delta\phi = \phi - 2\pi \approx 2\pi\left(\frac{1}{\kappa} - 1\right) - \frac{4\pi^2\alpha}{\kappa^3}.    
+    \boxed
+    {
+        \Delta\phi = \phi - 2\pi \approx 2\pi\left(\frac{1}{\kappa} - 1\right) - \frac{4\pi^2\alpha}{\kappa^3}
+    }
 \end{equation}
-
-\subsection*{Endgültige Formel}
-Einsetzen von $\kappa \approx 1$ im Korrekturterm liefert:
-\begin{equation}
-\boxed
-{
-    \Delta\phi \approx 2\pi\left(\frac{1}{\kappa} - 1\right) - 4\pi^2\alpha
-},
-\end{equation}
-
-\subsection*{Vollständige Koeffizienten}
-Explizit ausgedrückt, mit Bezug auf die Ordnungen:
-\begin{align*}
-\Delta\phi^{(2)} &= \frac{6\pi GM}{c^2 a(1 - e^2)} \left[1 + \frac{9GM}{4c^2 a(1 - e^2)}\right] - \frac{3\pi^2 G^2 M^2 e}{2c^4 h^4} \\
-&= \Delta\phi^{(1)} + \frac{27\pi G^2 M^2}{2c^4 a^2 (1 - e^2)^2} - \frac{3\pi^2 G^2 M^2 e}{2c^4 [GMa(1 - e^2)]^2}
-\end{align*}
