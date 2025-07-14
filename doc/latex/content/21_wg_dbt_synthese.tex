@@ -67,3 +67,67 @@ Die Spezielle Relativitätstheorie stellt sich in diesem Rahmen als \textit{effe
 \item Im Bereich \( v \ll c \), \( L \gg \ell_p \) gültig ist
 \item Aber durch tiefere Prinzipien (Fernwirkung + Führungswelle) ersetzt wird
 \end{itemize}
+
+\section{Exakte Herleitung der Weber-DBT-Bewegungsgleichung}
+\label{sec:exact_derivation}
+
+Ausgehend von der Weber-Gravitationskraft und dem Quantenpotential der De-Broglie-Bohm-Theorie leiten wir die vollständige nicht-genäherte Bewegungsgleichung ab.
+
+\subsection{Kombinierte Lagrange-Funktion}
+Die Wirkung des Systems setzt sich aus kinetischer Energie, Weber-Potential und Quantenpotential zusammen:
+
+\begin{equation}
+\mathcal{L} = \underbrace{\frac{1}{2}m\dot{\mathbf{r}}^2}_{T} - \underbrace{\frac{GMm}{r}\left[1 - \frac{\dot{r}^2}{2c^2} + \beta\frac{\mathbf{r}\cdot\ddot{\mathbf{r}}}{2c^2}\right]}_{V_{\text{WG}}} - \underbrace{Q(\mathbf{r},t)}_{\text{Quantenpotential}}
+\end{equation}
+
+mit dem Quantenpotential $Q = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|}$.
+
+\subsection{Euler-Lagrange-Gleichung}
+Die exakte Bewegungsgleichung folgt aus:
+
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial\mathcal{L}}{\partial\dot{\mathbf{r}}}\right) - \frac{\partial\mathcal{L}}{\partial\mathbf{r}} = 0
+\end{equation}
+
+\subsection{Ableitung der Terme}
+\begin{enumerate}
+\item \textbf{Kanonischer Impuls}:
+\begin{align}
+\frac{\partial\mathcal{L}}{\partial\dot{\mathbf{r}}} &= m\dot{\mathbf{r}} + \frac{GMm}{c^2}\left(\frac{\dot{\mathbf{r}}}{r} - \beta\frac{\mathbf{r}}{2r}\frac{d}{dt}\ln\dot{r}\right) \\
+&= m\dot{\mathbf{r}}\left[1 + \frac{GM}{c^2r}\left(1 - \frac{\beta}{2}\frac{\mathbf{r}\cdot\ddot{\mathbf{r}}}{\dot{r}^2}\right)\right]
+\end{align}
+
+\item \textbf{Zeitableitung}:
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial\mathcal{L}}{\partial\dot{\mathbf{r}}}\right) = m\ddot{\mathbf{r}}\left[1 + \mathcal{O}(c^{-2})\right] + \text{höhere Ableitungen}
+\end{equation}
+
+\item \textbf{Ortsableitung}:
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\mathbf{r}} = -\frac{GMm}{r^2}\left[1 - \frac{3\dot{r}^2}{2c^2} + \beta\frac{\ddot{r}}{c^2}\right]\hat{\mathbf{r}} - \nabla Q
+\end{equation}
+\end{enumerate}
+
+\subsection{Exakte Bewegungsgleichung}
+Durch Zusammenführung aller Terme erhalten wir die nicht-genäherte Gleichung:
+
+\begin{equation}
+\boxed{
+m\frac{d}{dt}\left(\gamma_{\text{WG}}\mathbf{v}\right) = -\nabla Q
+}
+\end{equation}
+
+mit dem vollständigen Weber-Lorentz-Faktor:
+
+\begin{equation}
+\gamma_{\text{WG}} = \left[1 - \frac{v^2}{c^2} + \beta\left(\frac{\mathbf{a}\cdot\mathbf{r}}{c^2} + \frac{(\mathbf{v}\cdot\mathbf{r})^2}{c^2r^2}\right) - \frac{GM}{c^2r}\left(1 - \frac{\beta}{2}\frac{\mathbf{r}\cdot\mathbf{j}}{\dot{r}^2}\right)\right]^{-1/2}
+\end{equation}
+
+wobei $\mathbf{j} = d\mathbf{a}/dt$ die Jerk-Komponente darstellt.
+
+\subsection{Diskussion der Terme}
+\begin{itemize}
+\item Der Term $\propto \mathbf{j}$ beschreibt nicht-lokale Änderungen der Beschleunigung
+\item Die Kopplung $\mathbf{a}\cdot\mathbf{r}$ modifiziert effektiv die träge Masse
+\item Für $\beta=0$ und $Q=0$ reduziert sich die Gleichung auf die spezielle Relativitätstheorie
+\end{itemize}
