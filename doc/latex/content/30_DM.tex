@@ -1,38 +1,23 @@
-\section{Kernaussage zur dunklen Materie}
-Die Weber-Gravitation erklärt galaktische Rotationskurven \textbf{ohne dunkle Materie}\\durch ihre nicht-newtonschen Terme:
+\section{Berechnung der Rotationskurven in der Weber-Gravitation}
+
+\subsection{Grundgleichungen}
+Die Bewegungsgleichung 2. Ordnung für die Weber-Gravitation lautet:
+
 \begin{equation}
-\mathbf{F}_{\text{Weber}}^G = -\frac{GMm}{r^2}\left(1 \underbrace{-\frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}}_{\text{relativistische Korrekturen}}\right)\mathbf{\hat{r}}
+\frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{6GM}{c^2}u^2 + \frac{GM}{2c^2}\left(u\frac{d^2u}{d\phi^2} + \left(\frac{du}{d\phi}\right)^2\right)
 \end{equation}
 
-\section*{Mathematischer Beweis}
-
-\subsection*{Rotationskurven von Galaxien}
-Für eine Kreisbahn (\(\dot{r}=0\), \(\ddot{r} = -r\dot{\phi}^2\)) reduziert sich die Weber-Kraft zu:
-\begin{equation}
-F_{\text{Weber}} = -\frac{GMm}{r^2}\left(1 - \frac{v^2}{2c^2}\right), \quad v = r\dot{\phi}
-\end{equation}
-Die Zentripetalkraft \(F = mv^2/r\) führt zur modifizierten Geschwindigkeit:
-\begin{equation}
-v(r) = \sqrt{\frac{GM}{r}} \left(1 + \frac{GM}{4c^2r}\right)
-\end{equation}
-
-\subsection*{Vergleich mit Beobachtungen}
+wobei:
 \begin{itemize}
-\item \textbf{Newton}: \(v \propto r^{-1/2}\) (Abfall nicht beobachtet)
-\item \textbf{Weber}: Zusatzterm \(\propto r^{-3/2}\) kompensiert den Abfall bei großen \(r\)
-\item \textbf{ART}: Erfordert dunkle Materie für flache Rotationskurven \cite{rubin1970}
+\item $u = 1/r$ der reziproke Abstand ist
+\item $h = r^2\dot{\phi}$ der spezifische Drehimpuls
+\item $c$ die Lichtgeschwindigkeit
 \end{itemize}
 
-\section*{Numerisches Beispiel (Milchstraße)}
-\begin{align*}
-\text{Bereich} &\quad r = \SI{10}{kpc} \\
-\text{Weber-Korrektur} &\quad \frac{GM}{4c^2r} \approx 0.12 \quad (\text{12\% Erhöhung}) \\
-\text{Beobachtung} &\quad v \approx \SI{220}{km/s} \ (\text{konstant über } r)
-\end{align*}
+\subsection{Lösung für Rotationskurven}
+Die exakte Lösung bis zur 2. Ordnung ergibt folgendes Geschwindigkeitsprofil:
 
-\section*{Konsequenzen}
-\begin{itemize}
-\item \textbf{Keine dunkle Materie}: Die Weber-Korrektur wirkt wie eine effektive Massenerhöhung \(\Delta M \approx \frac{GM(r)}{4c^2r}M\).
-\item \textbf{Quantitativ}: Für \(r \to \infty\) wird \(v(r)\) konstant – genau wie beobachtet.
-\item \textbf{Unterschied zu MOND}: Die Korrektur folgt natürlicherweise aus der Weber-Formel, ohne ad-hoc-Anpassungen.
-\end{itemize}
+\begin{equation}
+\label{eq:galaxie_rotation}
+v(r) = \sqrt{\frac{GM}{r}}\left(1 + \frac{3GM}{4c^2r} - \frac{15G^2M^2}{8c^4r^2}\right)
+\end{equation}
