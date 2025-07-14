@@ -1,10 +1,9 @@
-\documentclass{book}
+\documentclass[10pt,oneside,openright]{book} % Standard Buchformat
 \usepackage[a4paper,left=2.5cm,right=2cm,top=2cm,bottom=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts, amsmath, amssymb}
 \usepackage{array}
 \usepackage{ragged2e}
 \usepackage{tabularx}
@@ -16,17 +15,17 @@
 \usepackage{parskip}
 \usepackage{listings}
 \usepackage{xcolor}
-\usepackage[utf8]{inputenc}
 \usepackage[labelfont=bf]{caption}
 \usepackage{tcolorbox}
 \usepackage{mathrsfs}
+\usepackage{microtype}
 %\usepackage{showlabels}
 %\usepackage{refcheck}
 
 \newtheorem{theorem}{Theorem} % Definiert das 'theorem'-Environment
 \newtheorem{lemma}{Lemma}     % Falls Sie auch Lemmas verwenden möchten
 %\showlabels{cite,label}
-
+\newcommand{\eqfont}{\fontsize{10}{12}\selectfont} % Gleichungen
 \renewcommand{\arraystretch}{1.1}
 \numberwithin{equation}{section}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
