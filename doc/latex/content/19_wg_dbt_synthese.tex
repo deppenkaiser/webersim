@@ -1,0 +1,58 @@
+\section{Relativistische Energie-Impuls-Beziehung in der WG-DBT-Synthese}
+\label{sec:energy-momentum}
+
+Die Herleitung der relativistischen Energie-Impuls-Beziehung aus der Weber-Gravitation (WG) und De-Broglie-Bohm-Theorie (DBT) erfolgt wie folgt:
+
+\subsection{Grundgleichungen}
+Ausgehend von der verallgemeinerten Weber-Kraft für ein freies Teilchen:
+\begin{equation}
+m\frac{d}{dt}(\gamma\mathbf{v}) = -\nabla Q
+\end{equation}
+mit:
+\begin{itemize}
+\item $\gamma = (1 - \frac{v^2}{c^2} + \beta\frac{\mathbf{v}\cdot\mathbf{a}}{c^2})^{-1/2}$ (Weber-Lorentz-Faktor)
+\item $Q = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|}$ (Quantenpotential)
+\end{itemize}
+
+\subsection{Stationäre Lösung}
+Für $\mathbf{F} = 0$ und konstante Geschwindigkeit ($\mathbf{a} = 0$):
+\begin{equation}
+\gamma m\mathbf{v} = \mathbf{p} = \text{konstant}
+\end{equation}
+Mit der DBT-Impulsdefinition:
+\begin{equation}
+\mathbf{p} = \hbar\nabla S
+\end{equation}
+
+\subsection{Energie-Impuls-Relation}
+\begin{align}
+E &= \gamma mc^2 = \frac{mc^2}{\sqrt{1-v^2/c^2}} \\
+p^2 &= \gamma^2m^2v^2 = \frac{m^2v^2}{1-v^2/c^2} \\
+\Rightarrow v^2 &= \frac{p^2c^2}{m^2c^2 + p^2} \\
+E &= \sqrt{m^2c^4 + p^2c^2}
+\end{align}
+
+\subsection{Kovariante Formulierung}
+\begin{equation}
+p^\mu p_\mu = \frac{E^2}{c^2} - p^2 = m^2c^2
+\end{equation}
+
+\subsection{Interpretation}
+\begin{itemize}
+\item Die WG liefert die relativistische Dynamik
+\item Die DBT verknüpft diese mit der Quantenmechanik
+\item Die SRT-Relation emergiert als Grenzfall
+\item Das Quantenpotential $Q$ führt zu zusätzlichen Quanteneffekten
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\caption{Grenzfälle der Energie-Impuls-Beziehung}
+\begin{tabular}{ll}
+\hline
+Nicht-relativistisch ($v \ll c$) & $E \approx mc^2 + \frac{p^2}{2m} + Q$ \\
+Ultra-relativistisch ($v \to c$) & $E \approx pc$ \\
+Quantenlimit & $E \approx \sqrt{p^2c^2 + m^2c^4} + Q$ \\
+\hline
+\end{tabular}
+\end{table}
