@@ -131,3 +131,72 @@ wobei $\mathbf{j} = d\mathbf{a}/dt$ die Jerk-Komponente darstellt.
 \item Die Kopplung $\mathbf{a}\cdot\mathbf{r}$ modifiziert effektiv die träge Masse
 \item Für $\beta=0$ und $Q=0$ reduziert sich die Gleichung auf die spezielle Relativitätstheorie
 \end{itemize}
+
+\section{Kovariante Formulierung der exakten Weber-DBT-Gleichung}
+\label{sec:covariant_formulation}
+
+Die vollständige kovariante Formulierung der Weber-Dynamik kombiniert mit der De-Broglie-Bohm-Theorie erfordert eine manifest relativistische Darstellung unter Berücksichtigung aller höherer Ordnungen.
+
+\subsection{Kovariante Grundgrößen}
+Wir definieren in Minkowski-Raumzeit mit Metrik $\eta_{\mu\nu} = \mathrm{diag}(-1,1,1,1)$:
+
+\begin{align}
+\text{Vierergeschwindigkeit:} &\quad u^\mu = \gamma(c, \mathbf{v}), \quad \gamma = (1-v^2/c^2)^{-1/2} \\
+\text{Eigenbeschleunigung:} &\quad a^\mu = \frac{du^\mu}{d\tau} = \gamma^4\left(\frac{\mathbf{v}\cdot\mathbf{a}}{c}, \mathbf{a} + \gamma^2\frac{(\mathbf{v}\cdot\mathbf{a})\mathbf{v}}{c^2}\right) \\
+\text{Eigen-Jerk:} &\quad j^\mu = \frac{da^\mu}{d\tau} = \gamma^7\left(\frac{a^2 + \mathbf{v}\cdot\mathbf{j}}{c}, \mathbf{j} + 3\gamma^2\frac{(\mathbf{v}\cdot\mathbf{a})\mathbf{a}}{c^2} + \gamma^2\frac{(\mathbf{v}\cdot\mathbf{j})\mathbf{v}}{c^2}\right)
+\end{align}
+
+\subsection{Exakter Weber-Lorentz-Faktor}
+Der vollständige relativistische Faktor inklusive Jerk-Termen lautet:
+
+\begin{equation}
+\gamma_{\mathrm{WG}} = \left[1 - \frac{v^2}{c^2} + \beta\left(\frac{\mathbf{r}\cdot\mathbf{a}}{c^2} + \frac{(\mathbf{v}\cdot\mathbf{r})^2}{c^2r^2}\right) - \beta\frac{GM}{c^4}\left(\frac{\mathbf{r}\cdot\mathbf{j}}{r} + \frac{(\mathbf{v}\cdot\mathbf{r})(\mathbf{a}\cdot\mathbf{r})}{r^3}\right)\right]^{-1/2}
+\end{equation}
+
+\subsection{Kovariante Bewegungsgleichung}
+Die exakte kovariante Form der Weber-DBT-Dynamik:
+
+\begin{equation}
+\boxed{
+m\frac{D}{D\tau}\left(\gamma_{\mathrm{WG}} u^\mu\right) = -\frac{\hbar^2}{2m}\partial^\mu\left(\frac{\Box|\Psi|}{|\Psi|}\right)
+}
+\end{equation}
+
+mit:
+\begin{itemize}
+\item Kovariante Ableitung: $\frac{D}{D\tau} = u^\nu\partial_\nu$
+\item d'Alembert-Operator: $\Box = \partial_\mu\partial^\mu = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2} + \nabla^2$
+\end{itemize}
+
+\subsection{Komponentenentwicklung}
+
+\subsubsection{Zeitkomponente ($\mu=0$)}
+\begin{equation}
+\frac{d}{d\tau}\left(\gamma_{\mathrm{WG}}\gamma c\right) = \frac{\hbar^2}{2mc^2}\frac{\partial}{\partial t}\left(\frac{\Box|\Psi|}{|\Psi|}\right)
+\end{equation}
+
+\subsubsection{Raumkomponenten ($\mu=1,2,3$)}
+\begin{equation}
+\frac{d}{d\tau}\left(\gamma_{\mathrm{WG}}\gamma\mathbf{v}\right) = -\frac{\hbar^2}{2m}\nabla\left(\frac{\Box|\Psi|}{|\Psi|}\right)
+\end{equation}
+
+\subsection{Diskussion der Terme}
+\begin{itemize}
+\item \textbf{Jerk-Abhängigkeit}: Die $\mathbf{j}$-Terme in $\gamma_{\mathrm{WG}}$ beschreiben nicht-lokale Fernwirkungseffekte
+\item \textbf{Quantenpotential}: Der kovariante d'Alembert-Operator $\Box$ ersetzt das klassische $\nabla^2$
+\item \textbf{Energieerhaltung}: Die Zeitkomponente enthält Korrekturen zur relativistischen Energie-Impuls-Beziehung
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\caption{Vergleich der Formulierungen}
+\begin{tabular}{ll}
+\hline
+\textbf{Genäherte Form (4.1.1)} & \textbf{Exakte kovariante Form} \\
+\hline
+$\gamma_{\mathrm{WG}} \approx 1 + \frac{v^2}{2c^2}$ & Vollständige Jerk-Abhängigkeit \\
+$-\nabla Q$ & $-\partial^\mu(\hbar^2\Box|\Psi|/2m|\Psi|)$ \\
+Newton-artige Darstellung & Manifest kovariant \\
+\hline
+\end{tabular}
+\end{table}
