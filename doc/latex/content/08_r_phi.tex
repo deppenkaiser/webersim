@@ -1,3 +1,55 @@
+\section{Verallgemeinerung der Kraftgleichung}
+
+Die gegebene skalare Gleichung lautet:
+\begin{equation}
+F = -F_N \left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)
+\end{equation}
+
+\subsection{Schritt 1: Vektorielle Darstellung der Ableitungen}
+
+Für einen beliebigen Ortsvektor $\mathbf{r}(t)$ mit $r = |\mathbf{r}|$ gelten folgende Beziehungen:
+
+\begin{align}
+\dot{r} &= \frac{d}{dt}\sqrt{\mathbf{r}\cdot\mathbf{r}} = \frac{\mathbf{r}\cdot\dot{\mathbf{r}}}{r} = \frac{\mathbf{r}\cdot\mathbf{v}}{r} \\
+\ddot{r} &= \frac{d}{dt}\left(\frac{\mathbf{r}\cdot\mathbf{v}}{r}\right) = \frac{v^2 + \mathbf{r}\cdot\mathbf{a}}{r} - \frac{(\mathbf{r}\cdot\mathbf{v})^2}{r^3}
+\end{align}
+
+\subsection{Schritt 2: Einsetzen in die Originalgleichung}
+
+Wir setzen die Ausdrücke für $\dot{r}$ und $\ddot{r}$ ein:
+
+\begin{align}
+F &= -F_N \left[1 - \frac{1}{c^2}\left(\frac{\mathbf{r}\cdot\mathbf{v}}{r}\right)^2 + \frac{r}{2c^2}\left(\frac{v^2 + \mathbf{r}\cdot\mathbf{a}}{r} - \frac{(\mathbf{r}\cdot\mathbf{v})^2}{r^3}\right)\right] \\
+&= -F_N \left[1 - \frac{(\mathbf{r}\cdot\mathbf{v})^2}{c^2 r^2} + \frac{v^2 + \mathbf{r}\cdot\mathbf{a}}{2c^2} - \frac{(\mathbf{r}\cdot\mathbf{v})^2}{2c^2 r^2}\right]
+\end{align}
+
+\subsection{Schritt 3: Vereinfachung und Endergebnis}
+
+Zusammenfassen der Terme ergibt die verallgemeinerte \textbf{\enquote{vektorielle Form}}:
+
+\begin{equation}
+    \boxed
+    {
+        F = -F_N \left(1 + \frac{v^2}{2c^2} + \frac{\mathbf{r}\cdot\mathbf{a}}{2c^2} - \frac{3(\mathbf{r}\cdot\mathbf{v})^2}{2c^2 r^2}\right)
+    }
+\end{equation}
+
+\subsection{Physikalische Interpretation}
+
+\begin{itemize}
+\item $\dfrac{v^2}{2c^2}$: Relativistische Korrektur zur kinetischen Energie
+\item $\dfrac{\mathbf{r}\cdot\mathbf{a}}{2c^2}$: Beschleunigungsabhängiger Term
+\item $\dfrac{3(\mathbf{r}\cdot\mathbf{v})^2}{2c^2 r^2}$: Richtungsabhängige Korrektur für nicht-radiale Bewegung
+\end{itemize}
+
+\subsection{Spezialfall: Radiale Bewegung}
+
+Für $\mathbf{v} \parallel \mathbf{r}$ ($\mathbf{r}\cdot\mathbf{v} = rv$) und $\mathbf{a} = 0$:
+
+\begin{equation}
+F = -F_N \left(1 + \frac{v^2}{2c^2} - \frac{3v^2}{2c^2}\right) = -F_N \left(1 - \frac{v^2}{c^2}\right)
+\end{equation}
+
 \section{Bahngleichungen}
 \subsection{Bahngleichung 1. Ordnung}
 Die Bahngleichung \(r(\phi)\) in der Weber-Gravitation bis zur Ordnung \(\mathcal{O}(c^{-2})\) lautet:
@@ -18,19 +70,6 @@ Die Bahngleichung \(r(\phi)\) in der Weber-Gravitation bis zur Ordnung \(\mathca
     \kappa = \sqrt{1 - \frac{6GM}{c^2a(1 - e^2)}}    
 }
 \end{equation}
-
-\subsection*{Mathematische Herleitung}
-Die Gleichung folgt aus der Lösung der Bewegungsgleichung:
-\[
-\frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{6GM}{c^2} u^2 \quad \left(u = \frac{1}{r}\right),
-\]
-
-wobei der Term \(\frac{6GM}{c^2} u^2\) die Weber-spezifische Korrektur 1. Ordnung darstellt. Der Ansatz \(u(\phi) = \frac{1 + e \cos(\kappa\phi)}{a(1 - e^2)}\) führt auf die angegebene Lösung.
-
-Mit $u=1/r$ und Drehimpuls $h$ (\ref{eq:spezifischer_drehimpuls_h}):
-\[
-\frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2} + \frac{6GM}{c^2}u^2 + \frac{GM}{2c^2}\left(u\frac{d^2u}{d\phi^2} + \left(\frac{du}{d\phi}\right)^2\right)
-\]
 
 \subsection{Bahngleichung 2. Ordnung}
 Bahngleichung:
@@ -59,7 +98,6 @@ $h$ aus Gleichung (\ref{eq:spezifischer_drehimpuls_h})
 }
 \end{equation}
 
-\newpage
 \section{Periheldrehung}
 \subsection{Periheldrehung 1. Ordnung}
 Die Periheldrehung $\Delta\phi$ in der Weber-Gravitation ergibt sich aus der modifizierten Bahngleichung und lässt sich wie folgt herleiten:

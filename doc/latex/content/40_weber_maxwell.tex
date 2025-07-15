@@ -1,0 +1,58 @@
+\section{Vergleich der Weber-Elektrodynamik mit der Maxwell-Theorie}
+
+Wir betrachten zwei Punktladungen $q_1$ und $q_2$ mit konstanter Geschwindigkeit $\mathbf{v}_1 = \mathbf{v}_2 = \mathbf{v}$ (gleichförmige Bewegung) und Abstandsvektor $\mathbf{r} = \mathbf{r}_1 - \mathbf{r}_2$.
+
+\subsection{Weber-Elektrodynamik}
+Die verallgemeinerte Weber-Kraft für die Kraft auf $q_1$ durch $q_2$ lautet in vektorieller Form:
+
+\subsubsection{Klassische Weber-Kraft (Variante a)}
+\begin{equation}
+F_W^{(a)} = \frac{q_1 q_2}{4 \pi \epsilon_0 r^2} \left(1 + \frac{v^2}{c^2} + \frac{\mathbf{r} \cdot \mathbf{a}}{c^2} - \frac{3 (\mathbf{r} \cdot \mathbf{v})^2}{2 c^2 r^2}\right)
+\end{equation}
+
+\subsubsection{Alternative Weber-Kraft (Variante b)}
+\begin{equation}
+F_W^{(b)} = \frac{q_1 q_2}{4 \pi \epsilon_0 r^2} \left(1 + \frac{2 v^2}{c^2} + \frac{2 \mathbf{r} \cdot \mathbf{a}}{c^2} - \frac{3 (\mathbf{r} \cdot \mathbf{v})^2}{c^2 r^2}\right)
+\end{equation}
+
+Für den Spezialfall paralleler Bewegung ($\mathbf{v} \parallel \mathbf{r}$) mit $\mathbf{a} = 0$ vereinfachen sich diese Ausdrücke zu:
+\begin{align}
+F_W^{(a)} &= \frac{q_1 q_2}{4 \pi \epsilon_0 r^2} \left(1 - \frac{v^2}{2 c^2}\right) \\
+F_W^{(b)} &= \frac{q_1 q_2}{4 \pi \epsilon_0 r^2} \left(1 - \frac{v^2}{c^2}\right)
+\end{align}
+
+\subsection{Maxwell-Theorie (Lorentz-Kraft)}
+In der Maxwell-Elektrodynamik ergibt sich die Kraft aus der Lorentz-Kraft auf $q_1$:
+\begin{equation}
+\mathbf{F}_M = q_1 (\mathbf{E}_2 + \mathbf{v}_1 \times \mathbf{B}_2)
+\end{equation}
+
+Für eine gleichförmig bewegte Ladung ($\mathbf{v} = \text{const.}$, $\mathbf{a} = 0$) parallel zu $\mathbf{r}$ erhält man:
+\begin{equation}
+\mathbf{E}_2 = \frac{q_2}{4 \pi \epsilon_0 r^2} \left(1 - \frac{v^2}{c^2}\right) \hat{r}, \quad \mathbf{B}_2 = 0
+\end{equation}
+Damit wird die Lorentz-Kraft:
+\begin{equation}
+\mathbf{F}_M = \frac{q_1 q_2}{4 \pi \epsilon_0 r^2} \left(1 - \frac{v^2}{c^2}\right) \hat{r}
+\end{equation}
+
+\subsection{Vergleich der Ergebnisse}
+\begin{table}[h]
+\centering
+\begin{tabular}{lc}
+\hline
+\textbf{Theorie} & \textbf{Kraftformel ($\mathbf{v} \parallel \mathbf{r}$)} \\
+\hline
+Weber (Variante a) & $F_W^{(a)} = \dfrac{q_1 q_2}{4 \pi \epsilon_0 r^2} \left(1 - \dfrac{v^2}{2 c^2}\right)$ \\
+Weber (Variante b) & $F_W^{(b)} = \dfrac{q_1 q_2}{4 \pi \epsilon_0 r^2} \left(1 - \dfrac{v^2}{c^2}\right)$ \\
+Maxwell & $\mathbf{F}_M = \dfrac{q_1 q_2}{4 \pi \epsilon_0 r^2} \left(1 - \dfrac{v^2}{c^2}\right) \hat{r}$ \\
+\hline
+\end{tabular}
+\caption{Vergleich der Weber- und Maxwell-Kräfte für parallele Bewegung}
+\end{table}
+
+\subsection{Interpretation}
+\begin{itemize}
+\item Die Weber-Kraft \textbf{(Variante b)} stimmt exakt mit der Maxwell-Theorie für gleichförmige Bewegung ($\mathbf{a} = 0$) überein.
+\item Die Weber-Kraft \textbf{(Variante a)} weicht ab (Faktor $1/2$ beim $v^2/c^2$-Term).
+\end{itemize}
