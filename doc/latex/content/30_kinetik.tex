@@ -1,0 +1,74 @@
+\section{Bahngleichung in der Weber-DBT-Gravitation}
+\label{sec:bahngleichung}
+
+\subsection{Bewegungsgleichung in Polarkoordinaten}
+Die Bewegungsgleichung für ein Teilchen der Masse \( m \) im kombinierten Weber-DBT-Feld lautet:
+
+\begin{equation}
+m \frac{d}{dt} (\gamma_{\text{WG}} \mathbf{v}) = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r \ddot{r}}{c^2}\right) \hat{\mathbf{r}} - \nabla Q,
+\label{eq:bewegungsgleichung}
+\end{equation}
+
+mit dem Weber-Lorentz-Faktor
+\begin{equation}
+\gamma_{\text{WG}} = \left(1 - \frac{v^2}{c^2} + \beta \frac{\mathbf{r} \cdot \mathbf{a}}{c^2}\right)^{-1/2}
+\end{equation}
+und dem Quantenpotential
+\begin{equation}
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 |\Psi|}{|\Psi|}.
+\end{equation}
+
+\subsection{Polarkoordinatenformulierung}
+In Polarkoordinaten \((r, \phi)\) werden Geschwindigkeit und Beschleunigung zu:
+
+\begin{align}
+\mathbf{v} &= \dot{r} \hat{\mathbf{r}} + r \dot{\phi} \hat{\boldsymbol{\phi}}, \\
+\mathbf{a} &= (\ddot{r} - r \dot{\phi}^2) \hat{\mathbf{r}} + (r \ddot{\phi} + 2 \dot{r} \dot{\phi}) \hat{\boldsymbol{\phi}}.
+\end{align}
+
+Der spezifische Drehimpuls \( h = r^2 \dot{\phi} \) ist eine Erhaltungsgröße.
+
+\subsection{Radiale Komponente}
+Die radiale Komponente von Gl.~\eqref{eq:bewegungsgleichung} lautet:
+
+\begin{equation}
+m \frac{d}{dt} (\gamma_{\text{WG}} \dot{r}) - m \gamma_{\text{WG}} r \dot{\phi}^2 = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r \ddot{r}}{c^2}\right) - \frac{\partial Q}{\partial r}.
+\label{eq:radial}
+\end{equation}
+
+\subsection{Substitution und Umformung}
+Mit der Substitution \( u = 1/r \) und \( h = r^2 \dot{\phi} \) erhalten wir:
+
+\begin{align}
+\dot{r} &= -h \frac{du}{d\phi}, \\
+\ddot{r} &= -h^2 u^2 \frac{d^2 u}{d\phi^2}.
+\end{align}
+
+Einsetzen in Gl.~\eqref{eq:radial} führt auf:
+
+\begin{equation}
+\frac{d^2 u}{d\phi^2} + u = \frac{GM}{h^2} \left(1 - \frac{h^2}{c^2} \left(\frac{du}{d\phi}\right)^2 + \beta \frac{h^2}{c^2} u \frac{d^2 u}{d\phi^2}\right) + \frac{1}{m h^2 u^2} \frac{\partial Q}{\partial u}.
+\label{eq:hauptgleichung}
+\end{equation}
+
+\subsection{Quantenpotential in Polarkoordinaten}
+Für eine radialsymmetrische Wellenfunktion \( |\Psi(r)| \) wird das Quantenpotential:
+
+\begin{equation}
+Q = -\frac{\hbar^2}{2m} \frac{1}{|\Psi|} \left(\frac{d^2 |\Psi|}{dr^2} + \frac{1}{r} \frac{d|\Psi|}{dr}\right).
+\end{equation}
+
+\subsection{Vollständige Bahngleichung}
+Die exakte Bahngleichung der Weber-DBT-Gravitation lautet somit:
+
+\begin{equation}
+\frac{d^2 u}{d\phi^2} \left(1 - \beta \frac{GM}{c^2} u\right) + u = \frac{GM}{h^2} \left(1 - \frac{h^2}{c^2} \left(\frac{du}{d\phi}\right)^2\right) - \frac{\hbar^2}{2m h^2 u^2} \frac{d}{du} \left(\frac{\nabla^2 |\Psi|}{|\Psi|}\right).
+\label{eq:final}
+\end{equation}
+
+\subsection{Bemerkungen}
+\begin{itemize}
+\item Für \( Q = 0 \) reduziert sich Gl.~\eqref{eq:final} auf die reine Weber-Gravitation
+\item Die Nichtlinearitäten erfordern i.A. numerische Lösungsmethoden
+\item Der Parameter \( \beta = 0.5 \) reproduziert die beobachtete Periheldrehung des Merkur
+\end{itemize}
