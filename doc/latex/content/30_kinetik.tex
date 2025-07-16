@@ -92,3 +92,48 @@ $Q$ & Quantenpotential \\
 \hline
 \end{tabular}
 \end{table}
+
+\section{Periheldrechnung in der Weber-DBT-Theorie}
+Die Bewegungsgleichung der Weber-DBT-Synthese (Gl. 4.1.10) lautet vollständig:
+
+\begin{equation}
+\frac{d^2 u}{d\phi^2} \left(1 - \beta \frac{GM}{c^2} u \right) + u = \frac{GM}{h^2} \left(1 - \frac{h^2}{c^2} \left(\frac{du}{d\phi}\right)^2 \right) - \frac{\hbar^2}{2m^2 h^2 u^2} \frac{d}{du} \left(\frac{\nabla^2 |\Psi|}{|\Psi|} \right)
+\end{equation}
+
+\subsection{Quantenpotential-Explizierung}
+Für das Quantenpotential wird die Wellenfunktion eines kohärenten makroskopischen Zustands angesetzt:
+\begin{align}
+|\Psi| &\propto e^{-(r - r_0)^2/(2\sigma^2)}, \quad \sigma \sim \text{Planetenradius} \\
+\frac{\nabla^2 |\Psi|}{|\Psi|} &= \frac{1}{\sigma^2}\left(1 - \frac{(r - r_0)^2}{\sigma^2}\right) \\
+\frac{d}{du} \left(\frac{\nabla^2 |\Psi|}{|\Psi|}\right) &= \frac{2r^3}{\sigma^4}(r - r_0)
+\end{align}
+
+\subsection{Vollständige Differentialgleichung}
+Einsetzen aller Terme ergibt:
+\begin{equation}
+\frac{d^2 u}{d\phi^2} \left(1 - \frac{GM}{2c^2} u \right) + u = \frac{GM}{h^2} \left(1 - \frac{h^2}{c^2} \left(\frac{du}{d\phi}\right)^2 \right) - \frac{\hbar^2 r^3 (r - r_0)}{m^2 h^2 \sigma^4 u^2}
+\end{equation}
+
+\subsection{Störungstheorie um Newtonsche Lösung}
+\begin{itemize}
+\item Newtonsche Bahn: $u_0(\phi) = \frac{GM}{h^2}(1 + e \cos\phi)$
+\item Ansatz: $u = u_0 + \delta u$ mit Störung $\delta u$
+\item Exakte Störungsgleichung:
+\begin{equation}
+\frac{d^2 \delta u}{d\phi^2} + \delta u = \underbrace{\frac{GM}{2c^2} u_0 \frac{d^2 u_0}{d\phi^2}}_{\text{Weber-Term}} - \underbrace{\frac{h^2}{c^2} \left(\frac{du_0}{d\phi}\right)^2}_{\text{Relativistisch}} - \underbrace{\frac{\hbar^2 r^3 (r - r_0)}{m^2 h^2 \sigma^4 u_0^2}}_{\text{Quantenterm}}
+\end{equation}
+\end{itemize}
+
+\subsection{Beitragsanalyse}
+\begin{itemize}
+\item Weber-Term: $-\frac{G^2 M^2 e}{2c^2 h^4} \cos\phi$
+\item Relativistischer Term: $-\frac{G^2 M^2 e^2}{c^2 h^4} \sin^2\phi$
+\item Quantenterm: $\mathcal{O}\left(\frac{\hbar^2}{m^2 \sigma^4}\left(\frac{h^2}{GM}\right)^5\right) \approx 10^{-80} \text{ (formal erhalten)}$
+\end{itemize}
+
+\subsection{Resultat}
+Die Periheldrehung pro Umlauf ergibt sich aus der säkularen Drift:
+\begin{equation}
+\Delta \phi = \frac{6\pi GM}{c^2 a(1 - e^2)} + \mathcal{O}\left(\frac{\hbar^2}{m^2 \sigma^4}\right)
+\end{equation}
+
