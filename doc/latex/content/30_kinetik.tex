@@ -137,3 +137,33 @@ Die Periheldrehung pro Umlauf ergibt sich aus der säkularen Drift:
 \Delta \phi = \frac{6\pi GM}{c^2 a(1 - e^2)} + \mathcal{O}\left(\frac{\hbar^2}{m^2 \sigma^4}\right)
 \end{equation}
 
+\section{Physikalische Überlegenheit der WG-DBT-Lösung}
+Die reine WG-Lösung für Bahngleichungen führt zu nichtlinearen Effekten (Rosettenbahn). Die WG-DBT-Synthese liefert ein anderes Ergebnis.
+
+\subsection{Kritik an der reinen WG-Lösung}
+\begin{itemize}
+\item \textbf{Mathematisches Artefakt}: Die Rosettenbahn entsteht durch Abbruch der Störungsreihe nach $\mathcal{O}(c^{-4})$
+\item \textbf{Fehlende Physik}: Höhere Ordnungen ($c^{-6}, c^{-8},...$) werden ignoriert, obwohl sie für $r \to 0$ dominieren
+\item \textbf{Pathologisches Verhalten}: Die $\alpha\phi^2$-Terme führen zu nicht-physikalischen Divergenzen
+\end{itemize}
+
+\subsection{Vorteile der WG-DBT-Synthese}
+\begin{itemize}
+\item \textbf{Vollständige Kompensation}: Das Quantenpotential 
+$Q = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|}$ 
+kompensiert exakt alle höheren WG-Ordnungen
+
+\item \textbf{Reguläre Lösung}: Für $r \to 0$ dominiert $Q \sim \hbar^2/(mr^2)$ und verhindert Singularitäten
+
+\item \textbf{Physikalischer Grenzfall}:
+\begin{equation}
+\lim_{\hbar \to 0} \text{(WG-DBT)} = \text{ART} + \mathcal{O}(c^{-4})
+\end{equation}
+\end{itemize}
+
+\subsection{Zentrale Einsicht}
+Die Rosettenbahnen der WG sind \underline{rechentechnische Artefakte} - die WG-DBT-Lösung zeigt die \underline{echte Physik}:
+\begin{itemize}
+\item Makroskopisch: Übereinstimmung mit ART
+\item Mikroskopisch: Quantenstrukturen statt Pathologien
+\end{itemize}
