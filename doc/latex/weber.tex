@@ -1,3 +1,112 @@
+\documentclass[11pt, a4paper, twoside, openright]{book}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage{verbatim}  % Im Kopf des Dokuments einfügen
+
+% ===== Seitenlayout & Kopfzeilen =====
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    top=25mm,
+    inner=30mm,    % Bundsteg (größerer Rand für Buchbindung)
+    outer=25mm,
+    bottom=30mm,
+    headheight=15pt,
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}    % Kapitelname (gerade Seiten)
+\fancyhead[LO]{\rightmark}   % Abschnittname (ungerade Seiten)
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ===== Wissenschaftliche Pakete =====
+\usepackage{amsmath, amssymb, amsthm}  % Mathe
+\usepackage{mathtools}                  % \coloneqq, \xrightarrow
+\usepackage{bm}                        % Fette Symbole (\bm{B} für Magnetfeld)
+\usepackage{siunitx}                   % \SI{1.23}{\meter\per\second}
+\usepackage{graphicx}                  % \includegraphics
+\usepackage{subcaption}                % Unterabbildungen
+\usepackage{booktabs}                  % Professionelle Tabellen
+
+% ===== Theoreme & Definitionen =====
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{law}{Physikalisches Gesetz}[chapter]
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}{Bemerkung}[chapter]
+
+% ===== Literaturverzeichnis (BibLaTeX) =====
+\usepackage[
+    backend=biber,
+    style=phys,         % APS-Zitierstil (für Physik)
+    sorting=nyt,        % Sortierung: Name, Jahr, Titel
+]{biblatex}
+\addbibresource{literatur.bib}  % Ihre .bib-Datei
+
+% ===== Glossar =====
+\usepackage[acronym]{glossaries}
+\makeglossaries
+\newacronym{qm}{QM}{Quantenmechanik}
+
+% ===== Hyperref (für PDF-Links) =====
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=red,
+    pdftitle={Titel Ihres Buches},
+    pdfauthor={Ihr Name},
+}
+
+% ===== Dokumentbeginn =====
+\begin{document}
+
+% --- Titelseite & Vorwort ---
+\frontmatter
+\title{Titel des Buches}
+\author{Ihr Name}
+\date{\today}
+\maketitle
+
+\tableofcontents
+
+% --- Hauptteil ---
+\mainmatter
+\chapter{Einleitung}
+\section{Motivation}
+Hier ein Beispiel für eine Gleichung:
+\begin{equation}
+    \nabla \cdot \bm{E} = \frac{\rho}{\varepsilon_0}
+\end{equation}
+Und ein Zitat \parencite{einstein1915}.
+
+% --- Anhang & Literatur ---
+\backmatter
+\printbibliography[title=Literaturverzeichnis]
+\printglossaries
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
 \documentclass[10pt,twoside,openright]{book} % Standard Buchformat
 \usepackage[a4paper,left=2.5cm,right=2cm,top=2cm,bottom=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}

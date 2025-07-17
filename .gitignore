@@ -3,6 +3,13 @@ build
 *.fls
 *.log
 *.out
+*.xml
+*.ist
+*.glo
+*.blg
+*.acn
+*.bbl
+*.bcf
 *.fdb*
 *.syn*
 doc/latex/weber.pdf
