@@ -1,0 +1,35 @@
+\geometry{
+    a4paper,
+    top=25mm,
+    inner=30mm,    % Bundsteg (größerer Rand für Buchbindung)
+    outer=25mm,
+    bottom=30mm,
+    headheight=15pt,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}    % Kapitelname (gerade Seiten)
+\fancyhead[LO]{\rightmark}   % Abschnittname (ungerade Seiten)
+\renewcommand{\headrulewidth}{0.4pt}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{law}{Physikalisches Gesetz}[chapter]
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}{Bemerkung}[chapter]
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=red,
+    pdftitle={Weber-Gravitation und De-Broglie-Bohm-Theorie},
+    pdfauthor={Dipl.-Ing. (FH) Michael Czybor},
+}
+
+\addbibresource{literatur.bib}  % Ihre .bib-Datei
+\makeglossaries
