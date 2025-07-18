@@ -64,7 +64,7 @@ Für ein Elektron mit $x(t) = x_0\cos(\omega t)$:
 
 \begin{align}
 \textbf{Maxwell:}\quad & P = \frac{e^2\omega^4 x_0^2}{6\pi\epsilon_0 c^3}\cos^2(\omega t) \\
-\textbf{Weber:}\quad & F_{\text{dampf}} = -\frac{e^2\omega^2\dot{x}}{4\pi\epsilon_0 c^3}
+\textbf{Weber:}\quad & F_{\text{damp}} = -\frac{e^2\omega^2\dot{x}}{4\pi\epsilon_0 c^3}
 \end{align}
 
 \begin{figure}[ht]
@@ -75,7 +75,7 @@ Für ein Elektron mit $x(t) = x_0\cos(\omega t)$:
 \draw[domain=0:3.5,smooth,variable=\x,blue] plot ({\x},{sin(2*\x r)});
 \draw[domain=0:3.5,smooth,variable=\x,red] plot ({\x},{cos(2*\x r)});
 \node[blue] at (3,1.2) {Maxwell ($F_{\text{rad}}$)};
-\node[red] at (3,-1.2) {Weber ($F_{\text{dampf}}$)};
+\node[red] at (3,-1.2) {Weber ($F_{\text{damp}}$)};
 \end{tikzpicture}
 \caption{Zeitlicher Verlauf der Rückwirkungskräfte}
 \end{figure}
