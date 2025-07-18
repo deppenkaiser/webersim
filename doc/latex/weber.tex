@@ -9,12 +9,13 @@
 \usepackage{geometry}
 \usepackage{fancyhdr}
 \usepackage{amsmath, amssymb, amsthm}  % Mathe
-\usepackage{mathtools}                  % \coloneqq, \xrightarrow
+\usepackage{mathtools}                 % \coloneqq, \xrightarrow
 \usepackage{bm}                        % Fette Symbole (\bm{B} für Magnetfeld)
 \usepackage{siunitx}                   % \SI{1.23}{\meter\per\second}
 \usepackage{graphicx}                  % \includegraphics
 \usepackage{subcaption}                % Unterabbildungen
 \usepackage{booktabs}                  % Professionelle Tabellen
+\usepackage{tikz}                      % Für Diagramme
 \usepackage[
     backend=biber,
     style=phys,         % APS-Zitierstil (für Physik)
@@ -37,6 +38,7 @@
 
 \mainmatter
 \include{einleitung/einleitung}
+\include{weber-kraft/weber_kraft}
 
 \backmatter
 \printbibliography[title=Literaturverzeichnis]
