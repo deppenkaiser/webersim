@@ -39,3 +39,4 @@
 \contentsline {subsection}{\numberline {2.4.1}Nicht-Lokalität: Zwei physikalische Manifestationen}{14}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Instantaneität und Kausalitätsbegriff}{15}{subsection.2.4.2}%
 \contentsline {section}{\numberline {2.5}Raummodelle}{15}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Weber-Gravitation}{17}{chapter.3}%
