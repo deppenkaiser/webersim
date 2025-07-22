@@ -1,1 +1,76 @@
 \chapter{Weber-Gravitation}
+\section{Herleitung der Weber-Gravitation}
+Die Idee einer gravitativen Analogie zur Weber-Elektrodynamik geht auf den französischen Astronomen François-Félix Tisserand (1889) zurück. Inspiriert von der strukturellen
+Ähnlichkeit zwischen dem Newton’schen Gravitationsgesetz und dem Coulomb’schen Gesetz,
+\[
+\vec{F}_{\text{Newton}} = -G \frac{m_1 m_2}{r^2} \hat{r}, \vec{F}_{\text{Coulomb}} = \frac{1}{4 \pi \epsilon_0} \frac{q_1 q_2}{r^2} \hat{r}
+\]
+versuchte Tisserand, die Weber-Kraft (ursprünglich für elektrodynamische Wechselwirkungen formuliert) auf die Gravitation zu übertragen. Die Weber-Gravitation ergibt sich damit als:
+\[
+\vec{F}_{\text{WG-Tisserand}} = -G \frac{m_1 m_2}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{2 r \ddot{r}}{c^2} \right] \hat{r}
+\]
+\begin{itemize}
+    \item $G$: Gravitationskonstante
+    \item $m_1, m_2$: Wechselwirkende Massen
+    \item $r$: Abstand zwischen den Massen
+    \item $\dot{r}$: Relative Radialgeschwindigkeit ($dr/dt$)
+    \item $\ddot{r}$: Relative Radialbeschleunigung ($d^2r/dt^2$)
+    \item $c$: Lichtgeschwindigkeit
+\end{itemize}
+
+Diese Gleichung fügt zu Newton’s Gesetz geschwindigkeits- und beschleunigungsabhängige Korrekturen hinzu, analog zur Weber-Elektrodynamik.
+\subsection{Test am Merkur-Perihel – und warum die Theorie scheiterte}
+Tisserands Motivation war die Erklärung der anomalen Periheldrehung des Merkur, die bereits im 19. Jahrhundert bekannt war (ca. 43 Bogensekunden pro Jahrhundert).
+Die Weber-Gravitation sagte zwar eine Perihelverschiebung voraus, jedoch:
+\begin{enumerate}
+    \item Quantitatives Versagen: Die berechnete Abweichung stimmte nicht mit den Beobachtungen überein.
+    \item ART als überlegene Lösung: Erst Einsteins \gls{art} lieferte die exakte Korrektur von 43" pro Jahrhundert – ein 100 Jahre andauernder Triumph der
+    Raumzeit-Krümmung gegenüber reinen Fernwirkungsmodellen.
+\end{enumerate}
+
+Die Weber-Gravitation (WG) bietet eine alternative Beschreibung gravitativer Phänomene durch eine Erweiterung des Newtonschen Gravitationsgesetzes um
+geschwindigkeits- und beschleunigungsabhängige Terme. Die zentrale Gleichung der WG lautet:
+\[
+\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right) \hat{r}.
+\]
+wobei $\dot{r}$ die radiale Relativgeschwindigkeit und $\ddot{r}$ die radiale Beschleunigung darstellen. Diese Modifikation führt zu Bahngleichungen, die in
+erster und zweiter Ordnung entwickelt werden können, um präzise Vorhersagen für Planetenbahnen und andere gravitative Effekte zu liefern. Der $\beta$-Parameter ist
+eine zentrale Größe in der Weber-Gravitation, die das Verhältnis zwischen beschleunigungs- und geschwindigkeitsabhängigen Termen in der modifizierten
+Gravitationskraft bestimmt; $\beta$ ein dimensionsloser Faktor, dessen Wert je nach physikalischem Kontext variiert und entscheidende Auswirkungen auf die Vorhersagen
+der Theorie hat.
+
+\subsection{Physikalische Bedeutung des beta-Parameters}
+Der Parameter $\beta$ quantifiziert den Einfluss der radialen Beschleunigung $\ddot{r}$ relativ zur Geschwindigkeitskorrektur $\dot{r}^2$.
+\begin{itemize}
+    \item Für $\beta=0$ verschwindet der Beschleunigungsterm, und die Kraft reduziert sich auf eine rein geschwindigkeitsabhängige Modifikation der Newtonschen Gravitation.
+    \item Für $\beta>0$ dominiert der Beschleunigungsterm bei dynamischen Prozessen wie der Lichtablenkung oder der Periheldrehung.
+    \item Der Wert $\beta=0.5$ reproduziert die Periheldrehung des Merkur exakt, während $\beta=1$ für masselose Teilchen (Photonen) benötigt wird, um frequenzabhängige Effekte zu erklären.
+\end{itemize}
+
+\subsection{Anwendungen des beta-Parameters}
+\textbf{1. Lichtablenkung im Gravitationsfeld}
+
+Für Photonen ($m=0$) wird $\beta=1$ gesetzt, was zu einer frequenzabhängigen Korrektur der Ablenkung führt. Die Bahngleichung für Licht lautet:
+\[
+\frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 h^2} u^3\right).
+\]
+Wobei $u=1/r$ und $E=h\nu$ die Photonenenergie ist. Die Lösung für kleine Ablenkungen $\Delta\phi$ zeigt einen zusätzlichen Term proportional zur Wellenlänge $\lambda$:
+\[
+\Delta \phi = \frac{4GM}{c^2 b} \left(1 + \frac{3\pi}{16} \frac{\lambda^2}{\lambda_0^2}\right).
+\]
+Hier ist $\lambda_0=hc/E$ eine charakteristische Längenskala. Dieser Effekt könnte mit hochpräzisen Interferometern (z. B. LISA) überprüft werden.
+
+\subsection{Bahngleichung 1. Ordnung}
+Die Bahngleichung in erster Ordnung $r(\phi)$ ergibt sich aus der Lösung der Bewegungsgleichung unter Vernachlässigung von Termen höherer Ordnung in $c^{-2}$. Sie lautet:
+\[
+r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi)},
+\]
+\[
+\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)}}.
+\]
+Wobei $\kappa$ eine Korrektur gegenüber der Newtonschen Mechanik darstellt. Hierbei sind $a$ die große Halbachse und $e$ die Exzentrizität der Bahn.
+Diese Gleichung beschreibt die Bahn eines Planeten unter Berücksichtigung relativistischer Effekte, die zu einer Periheldrehung führen.
+Die Periheldrehung pro Umlauf beträgt:
+\[
+\Delta \phi = 2\pi \left(\frac{1}{\kappa} - 1\right).
+\]
