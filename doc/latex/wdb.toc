@@ -43,5 +43,13 @@
 \contentsline {subsection}{\numberline {3.1.1}Test am Merkur-Perihel – und warum die Theorie scheiterte}{15}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Physikalische Bedeutung des beta-Parameters}{16}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Anwendungen des beta-Parameters}{16}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Bahngleichung 1. Ordnung}{17}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Bahngleichung 2. Ordnung}{17}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Expansion (Hubble-Konstante) und Rotverschiebung in der Weber-Gravitation}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Rotverschiebung in der Weber-Gravitation}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Hubble-Konstante in der WG}{17}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Konsequenzen für die Kosmologie}{18}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Experimentelle Unterscheidung}{18}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Konsequenzen für die Größe des Universums}{18}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Statisches Universum}{18}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Kosmologische Implikationen}{19}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Bahngleichung 1. Ordnung}{19}{subsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.2.9}Bahngleichung 2. Ordnung}{19}{subsection.3.2.9}%
