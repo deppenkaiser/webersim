@@ -12,6 +12,6 @@ build
 *.bcf
 *.fdb*
 *.syn*
-doc/latex/weber.pdf
-doc/latex/weber.toc
+doc/latex/wdb.pdf
+doc/latex/wdb.toc
 
