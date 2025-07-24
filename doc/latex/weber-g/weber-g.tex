@@ -7,16 +7,8 @@ Die Idee einer gravitativen Analogie zur Weber-Elektrodynamik geht auf den franz
 \]
 versuchte Tisserand, die Weber-Kraft (ursprünglich für elektrodynamische Wechselwirkungen formuliert) auf die Gravitation zu übertragen. Die Weber-Gravitation ergibt sich damit als:
 \[
-\vec{F}_{\text{WG-Tisserand}} = -G \frac{m_1 m_2}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{2 r \ddot{r}}{c^2} \right] \hat{r}
+\vec{F}_{\text{WG-Tisserand}} = -G \frac{m_1 m_2}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{2 r \ddot{r}}{c^2} \right] \hat{r}.
 \]
-\begin{itemize}
-    \item $G$: Gravitationskonstante
-    \item $m_1, m_2$: Wechselwirkende Massen
-    \item $r$: Abstand zwischen den Massen
-    \item $\dot{r}$: Relative Radialgeschwindigkeit ($dr/dt$)
-    \item $\ddot{r}$: Relative Radialbeschleunigung ($d^2r/dt^2$)
-    \item $c$: Lichtgeschwindigkeit
-\end{itemize}
 
 Diese Gleichung fügt zu Newton’s Gesetz geschwindigkeits- und beschleunigungsabhängige Korrekturen hinzu, analog zur Weber-Elektrodynamik.
 \subsection{Test am Merkur-Perihel – und warum die Theorie scheiterte}
@@ -24,20 +16,27 @@ Tisserands Motivation war die Erklärung der anomalen Periheldrehung des Merkur,
 Die Weber-Gravitation sagte zwar eine Perihelverschiebung voraus, jedoch:
 \begin{enumerate}
     \item Quantitatives Versagen: Die berechnete Abweichung stimmte nicht mit den Beobachtungen überein.
-    \item ART als überlegene Lösung: Erst Einsteins \gls{art} lieferte die exakte Korrektur von 43" pro Jahrhundert – ein 100 Jahre andauernder Triumph der
+    \item \gls{art} als überlegene Lösung: Erst Einsteins \gls{art} lieferte die exakte Korrektur von 43" pro Jahrhundert – ein 100 Jahre andauernder Triumph der
     Raumzeit-Krümmung gegenüber reinen Fernwirkungsmodellen.
 \end{enumerate}
 
 Die Weber-Gravitation (WG) bietet eine alternative Beschreibung gravitativer Phänomene durch eine Erweiterung des Newtonschen Gravitationsgesetzes um
 geschwindigkeits- und beschleunigungsabhängige Terme. Die zentrale Gleichung der WG lautet:
-\[
-\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right) \hat{r}.
-\]
+
+\begin{equation}
+\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right) \hat{r},
+\end{equation}
+
 wobei $\dot{r}$ die radiale Relativgeschwindigkeit und $\ddot{r}$ die radiale Beschleunigung darstellen. Diese Modifikation führt zu Bahngleichungen, die in
 erster und zweiter Ordnung entwickelt werden können, um präzise Vorhersagen für Planetenbahnen und andere gravitative Effekte zu liefern. Der $\beta$-Parameter ist
 eine zentrale Größe in der Weber-Gravitation, die das Verhältnis zwischen beschleunigungs- und geschwindigkeitsabhängigen Termen in der modifizierten
 Gravitationskraft bestimmt; $\beta$ ein dimensionsloser Faktor, dessen Wert je nach physikalischem Kontext variiert und entscheidende Auswirkungen auf die Vorhersagen
 der Theorie hat.
+
+Zur Vereinfachung der Gleichungen wird der spezifische Drehimpuls $h$ definiert:
+\begin{equation}
+h = \sqrt{GMa(1 - e^2)}.
+\end{equation}
 
 \subsection{Physikalische Bedeutung des beta-Parameters}
 Der Parameter $\beta$ quantifiziert den Einfluss der radialen Beschleunigung $\ddot{r}$ relativ zur Geschwindigkeitskorrektur $\dot{r}^2$.
@@ -54,23 +53,88 @@ Für Photonen ($m=0$) wird $\beta=1$ gesetzt, was zu einer frequenzabhängigen K
 \[
 \frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 h^2} u^3\right).
 \]
-Wobei $u=1/r$ und $E=h\nu$ die Photonenenergie ist. Die Lösung für kleine Ablenkungen $\Delta\phi$ zeigt einen zusätzlichen Term proportional zur Wellenlänge $\lambda$:
-\[
+Wobei $u=1/r$ und $E=h_\text{P}\nu$ die Photonenenergie ist. Die Lösung für kleine Ablenkungen $\Delta\phi$ zeigt einen zusätzlichen Term proportional zur Wellenlänge $\lambda$:
+\begin{equation}
 \Delta \phi = \frac{4GM}{c^2 b} \left(1 + \frac{3\pi}{16} \frac{\lambda^2}{\lambda_0^2}\right).
-\]
+\end{equation}
+
 Hier ist $\lambda_0=hc/E$ eine charakteristische Längenskala. Dieser Effekt könnte mit hochpräzisen Interferometern (z. B. LISA) überprüft werden.
+
+\textbf{2. Shapiro-Laufzeitverzögerung}
+Die Laufzeit $\Delta t$ eines Signals im Gravitationsfeld wird durch $\beta$ modifiziert. Die integrierte Verzögerung entlang der Bahn beträgt:
+\begin{equation}
+\Delta t = \frac{2GM}{c^3} \ln\left(\frac{4r_e r_p}{b^2}\right) + \frac{3\pi G^2 M^2}{4c^5 b^2} \left(\frac{v_0^2}{c^2}\right).
+\end{equation}
+
+Der zweite Term (proportional zu $\beta=1$) führt zu einer wellenlängenabhängigen Korrektur:
+\[
+\Delta t_\text{WG} \propto \lambda^{-2},
+\]
+die bei Pulsar-Timing-Experimenten (z. B. mit dem Square Kilometre Array) messbar sein sollte. Im Vergleich zur \gls{art} ($\beta=0$) ist die Abweichung zwar klein ($\approx 10^{-6}$),
+aber prinzipiell nachweisbar.
+
+\[
+\begin{array}{|l|c|l|}
+\hline
+\text{Anwendung} & \beta & \text{Konsequenz} \\
+\hline
+\text{Elektrodynamik} & 2 & \text{Magnetische Wechselwirkungen} \\
+\text{Gravitation (Massen)} & 0.5 & \text{Periheldrehung des Merkur} \\
+\text{Photonen} & 1 & \text{Frequenzabhängige Effekte} \\
+\hline
+\end{array}
+\]
+
+Der $\beta$-Parameter fungiert somit als \enquote{Schlüssel} zur Anpassung der Weber-Gravitation an unterschiedliche physikalische Szenarien – von klassischen Planetenbahnen
+bis zu quantenphysikalischen Phänomenen. Seine Rolle unterstreicht die Flexibilität der Theorie, aber auch die Notwendigkeit präziser experimenteller Tests, um die korrekten
+Werte zu validieren.
 
 \subsection{Bahngleichung 1. Ordnung}
 Die Bahngleichung in erster Ordnung $r(\phi)$ ergibt sich aus der Lösung der Bewegungsgleichung unter Vernachlässigung von Termen höherer Ordnung in $c^{-2}$. Sie lautet:
-\[
-r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi)},
-\]
-\[
+\begin{equation}
+r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi)},    
+\end{equation}
+\begin{equation}
 \kappa = \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)}}.
-\]
+\end{equation}
+
 Wobei $\kappa$ eine Korrektur gegenüber der Newtonschen Mechanik darstellt. Hierbei sind $a$ die große Halbachse und $e$ die Exzentrizität der Bahn.
 Diese Gleichung beschreibt die Bahn eines Planeten unter Berücksichtigung relativistischer Effekte, die zu einer Periheldrehung führen.
 Die Periheldrehung pro Umlauf beträgt:
-\[
-\Delta \phi = 2\pi \left(\frac{1}{\kappa} - 1\right).
-\]
+\begin{equation}
+\Delta \phi = 2\pi \left(\frac{1}{\kappa} - 1\right),
+\end{equation}
+
+was für den Merkur den beobachteten Wert von 42,98'' pro Jahrhundert liefert.
+
+\textbf{Winkel- und Bahngeschwindigkeit:}
+\begin{equation}
+\omega(\phi) = \frac{h}{a^2(1 - e^2)^2} \left[1 + e \cos(\kappa \phi)\right]^2    
+\end{equation}
+
+\begin{equation}    
+v(\phi) = \frac{h \left(1 + e \cos(\kappa \phi)\right)}{a(1 - e^2)}
+\end{equation}
+
+\subsection{Bahngleichung 2. Ordnung}
+In zweiter Ordnung werden zusätzliche Korrekturen berücksichtigt, die aus der Entwicklung von $\kappa$ und der Einführung eines quadratischen Terms in $\phi$ resultieren.
+Die Bahngleichung nimmt dann die Form an:
+\begin{equation}
+\label{eq:weber_r_2_ordnung}
+r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi + \alpha \phi^2)},
+\end{equation}
+
+\begin{equation}
+\alpha = \frac{3G^2 M^2 e}{8c^4 h^4},
+\end{equation}
+
+\begin{equation}
+\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)} + \frac{27G^2 M^2}{2c^4 a^2 (1 - e^2)^2}}.
+\end{equation}
+
+In der Gl. (\refeq{eq:weber_r_2_ordnung}) taucht der Term $\alpha \phi^2$ auf. Dieser Term würde keine geschlossenen Planetenbahnen (\enquote{Rosettenbahnen}) zur Folge haben.
+Das erscheint fragwürdig. Die Gleichungen für die 1. Ordnung haben hingegen \gls{art}-Genauigkeit. Die \gls{wg} höherer Ordnung zeigt unwahrscheinliche Bahnen an, dies deutet
+auf eine Unvollständigkeit hin. Auf der anderen Seite liefert sie in der 1. Ordnung sehr gute Ergebnisse, die erst bei höherer Ordnung zu minimalen Abweichungen führen.
+
+Die \gls{wg} ist somit in der Lage, hochpräzise Aussagen zur Gravitation machen zu können, wobei nicht eindeutig geklärt ist, inwiefern die Abweichung zur \gls{art} eine
+Verbesserung oder Verschlechterung darstellt; in jedem Fall ist sie weitaus einfacher und verständlicher als die \gls{art}.
