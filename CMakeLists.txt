@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
-project(webersim LANGUAGES C)
+project(simulator LANGUAGES C)
 
 set(SOURCES
-    main.c
+    src/main.c
+    src/resources.c
+    src/configuration.c
 )
 
 set(LIBRARIES
@@ -25,11 +27,11 @@ add_subdirectory(string)
 add_subdirectory(physics)
 add_subdirectory(logging)
 add_subdirectory(vector)
-add_executable(webersim ${SOURCES})
+add_executable(simulator ${SOURCES})
 
-target_link_libraries(webersim ${LIBRARIES})
-target_include_directories(webersim PRIVATE ${INCLUDES})
+target_link_libraries(simulator ${LIBRARIES})
+target_include_directories(simulator PRIVATE ${INCLUDES})
 
-target_compile_definitions(webersim PRIVATE
+target_compile_definitions(simulator PRIVATE
     $<$<CONFIG:Debug>:DEBUG>
 )

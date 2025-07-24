@@ -17,6 +17,8 @@ void string_directory_create(const char* directory);
 bool string_filepath_exist(char* filepath);
 const char* string_append_directory_to_path_and_create(const char* path, const char* directory);
 int32_t string_calculate_substring_index(const char* string, const char* sub_string);
+void string_set_cursor_position(int x, int y);
+void string_clear_screen();
 
 // ANSI-Farbcodes
 #define COLOR_RED     "\x1b[31m"

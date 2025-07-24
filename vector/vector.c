@@ -47,34 +47,34 @@ struct vector_3d vector_nabla(vector_time_row_t r)
     return w;
 }
 
-struct vector_3d vector_rotation_x(vector_3d_t r, double phi_rad)
+struct vector_3d vector_rotation_x(vector_3d_t r, cld phi_rad)
 {
     struct vector_3d row1 = {1.0, 0.0, 0.0};
-    struct vector_3d row2 = {0.0, cos(phi_rad), -sin(phi_rad)};
-    struct vector_3d row3 = {0.0, sin(phi_rad), cos(phi_rad)};
+    struct vector_3d row2 = {0.0, cosl(phi_rad), -sinl(phi_rad)};
+    struct vector_3d row3 = {0.0, sinl(phi_rad), cosl(phi_rad)};
     struct vector_3d v = {vector_dot(r, &row1), vector_dot(r, &row2), vector_dot(r, &row3)};
     return v;
 }
 
-struct vector_3d vector_rotation_y(vector_3d_t r, double phi_rad)
+struct vector_3d vector_rotation_y(vector_3d_t r, cld phi_rad)
 {
-    struct vector_3d row1 = {cos(phi_rad), 0.0, sin(phi_rad)};
+    struct vector_3d row1 = {cosl(phi_rad), 0.0, sinl(phi_rad)};
     struct vector_3d row2 = {0.0, 1.0, 0.0};
-    struct vector_3d row3 = {-sin(phi_rad), 0.0, cos(phi_rad)};
+    struct vector_3d row3 = {-sinl(phi_rad), 0.0, cosl(phi_rad)};
     struct vector_3d v = {vector_dot(r, &row1), vector_dot(r, &row2), vector_dot(r, &row3)};
     return v;
 }
 
-struct vector_3d vector_rotation_z(vector_3d_t r, double phi_rad)
+struct vector_3d vector_rotation_z(vector_3d_t r, cld phi_rad)
 {
-    struct vector_3d row1 = {cos(phi_rad), -sin(phi_rad), 0.0};
-    struct vector_3d row2 = {sin(phi_rad), cos(phi_rad), 0.0};
+    struct vector_3d row1 = {cosl(phi_rad), -sinl(phi_rad), 0.0};
+    struct vector_3d row2 = {sinl(phi_rad), cosl(phi_rad), 0.0};
     struct vector_3d row3 = {0.0, 0.0, 1.0};
     struct vector_3d v = {vector_dot(r, &row1), vector_dot(r, &row2), vector_dot(r, &row3)};
     return v;
 }
 
-struct vector_3d vector_multiply_scalar(vector_3d_t a, double s)
+struct vector_3d vector_multiply_scalar(vector_3d_t a, cld s)
 {
     struct vector_3d v = {0};
     v.x = a->x * s;
@@ -83,7 +83,7 @@ struct vector_3d vector_multiply_scalar(vector_3d_t a, double s)
     return v;
 }
 
-struct vector_3d vector_divide_scalar(vector_3d_t a, double s)
+struct vector_3d vector_divide_scalar(vector_3d_t a, cld s)
 {
     struct vector_3d v = {0};
     v.x = a->x / s;
@@ -95,21 +95,21 @@ struct vector_3d vector_divide_scalar(vector_3d_t a, double s)
 struct vector_astro vector_cartesian_to_astronomical(vector_3d_t a)
 {
     struct vector_astro p = {0};
-    const double rho_sqr = a->x * a->x + a->y * a->y;
-    const double rho = sqrt(rho_sqr);
-    p.r = sqrt(rho_sqr + a->z * a->z);
-    p.theta = ((a->z == 0.0) || (rho == 0.0)) ? 0.0 : atan2(a->z, rho);
-    p.phi = ((a->x == 0.0) || (a->y == 0.0)) ? 0.0 : atan2(a->y, a->x);
-    p.phi = (p.phi >= 0.0) ? p.phi : p.phi + 2.0 * acos(-1.0);
+    cld rho_sqr = a->x * a->x + a->y * a->y;
+    cld rho = sqrtl(rho_sqr);
+    p.r = sqrtl(rho_sqr + a->z * a->z);
+    p.theta = ((a->z == 0.0) || (rho == 0.0)) ? 0.0 : atan2l(a->z, rho);
+    p.phi = ((a->x == 0.0) || (a->y == 0.0)) ? 0.0 : atan2l(a->y, a->x);
+    p.phi = (p.phi >= 0.0) ? p.phi : p.phi + 2.0 * acosl(-1.0);
     return p;
 }
 
-double vector_dot(vector_3d_t a, vector_3d_t b)
+ld vector_dot(vector_3d_t a, vector_3d_t b)
 {
     return a->x * b->x + a->y * b->y + a->z * b->z;
 }
 
-double vector_norm(vector_3d_t a)
+ld vector_norm(vector_3d_t a)
 {
     return sqrt(a->x * a->x + a->y * a->y + a->z * a->z);
 }

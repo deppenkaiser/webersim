@@ -4,6 +4,7 @@
 #include <sys/stat.h>
 #include <libgen.h>
 #include <unistd.h>
+#include <stdio.h>
 
 int32_t string_copy(char* destination, size_t destinantion_size_bytes, const char* source)
 {
@@ -77,4 +78,16 @@ int32_t string_calculate_substring_index(const char* string, const char* sub_str
         index = delimiter - string;
     }
     return index;
+}
+
+void string_set_cursor_position(int x, int y)
+{
+    printf("\033[%d;%dH", y, x);
+}
+
+void string_clear_screen()
+{
+    printf("\033[2J");  // Bildschirm löschen
+    printf("\033[H");   // Cursor nach Hause (1,1) bewegen
+    fflush(stdout);     // Ausgabepuffer leeren
 }
