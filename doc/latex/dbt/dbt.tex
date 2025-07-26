@@ -59,3 +59,63 @@ Die De-Broglie-Bohm-Theorie bietet eine kohärente, deterministische Interpretat
 Durch ihre nicht-lokale, aber kausale Struktur stellt sie eine ideale Ergänzung zur Weber-Elektrodynamik dar. Die gemeinsame Grundlage beider Theorien – die Beschreibung der Physik
 durch direkte Teilchenwechselwirkungen – legt den Grundstein für eine umfassende Theorie der Quantengravitation, die im nächsten Kapitel entwickelt werden soll.
 
+\section{Die Synthese von WG und DBT}
+Die Vereinigung der \gls{wg} mit der \gls{dbt} bietet eine einzigartige Perspektive auf das Problem der Quantengravitation. Beide Theorien teilen fundamentale Prinzipien:
+deterministische Dynamik, nicht-lokale Wechselwirkungen und die Vermeidung von Singularitäten. Während die WG eine klassische Fernwirkungstheorie der Gravitation darstellt,
+die auf Geschwindigkeits- und Beschleunigungstermen basiert, erweitert die DBT die Quantenmechanik um wohldefinierte Teilchentrajektorien, die durch ein Quantenpotential gesteuert
+werden. Die Synthese beider Ansätze führt zu einer kohärenten Theorie, die sowohl die Phänomene der ART als auch der Quantenmechanik erklärt – ohne auf dunkle Materie, Singularitäten
+oder den Kollaps der Wellenfunktion zurückgreifen zu müssen.
+
+\subsection{Herleitung der Synthese}
+Die WG beschreibt die Gravitationskraft durch eine Modifikation des Newtonschen Gesetzes:
+\[
+    \vec{F}_{\text{WG}} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right)\hat{r}
+\]
+wobei $\beta$ je nach Kontext variiert ($\beta=0.5$ für Planetenbahnen, $\beta=1$ für Photonen). Diese Kraft wirkt instantan, berücksichtigt jedoch retardierte Effekte durch die
+Terme $\dot{r}$ und $\ddot{r}$.
+
+Die \gls{dbt} hingegen führt ein Quantenpotential $Q$ ein, das die Wellenfunktion $\psi$ mit den Teilchentrajektorien koppelt:
+\begin{equation}
+    Q = -\frac{\hbar^2}{2m}\frac{\nabla^2 |\Psi|}{|\Psi|}, \quad m\frac{d^2\vec{x}}{dt^2} = -\vec{\nabla}(V + Q)
+\end{equation}
+Hier steuert $Q$ die Teilchenbewegung nicht-lokal und verhindert Singularitäten (z. B. in Schwarzen Löchern), da es bei $r \to 0$ divergiert.
+
+Die Kombination beider Konzepte ergibt die Hybrid-Gleichung der\\Weber-De Broglie-Bohm-Gravitation:
+
+\begin{equation}
+    m\frac{d^2\vec{r}}{dt^2} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right)\hat{{r}} - \vec{\nabla} Q
+\end{equation}
+
+Diese Gleichung vereint die Vorteile beider Theorien:
+\begin{enumerate}
+    \item \textbf{Deterministische Gravitation:} Die \gls{wg}-Terme ersetzen die Raumzeitkrümmung der \gls{art}.
+    \item \textbf{Quantenmechanische Konsistenz:} Das Quantenpotential $Q$ erklärt Interferenz und Verschränkung.
+    \item \textbf{Singularitätsfreiheit:} Die Divergenz von $Q$ bei kleinen Abständen verhindert Kollaps zu Singularitäten.
+\end{enumerate}
+
+\subsection{Physikalische Konsequenzen}
+\textbf{1. Galaktische Rotation ohne dunkle Materie}\\
+Die \gls{wg} erklärt flache Rotationskurven durch den Zusatzterm $\frac{GM}{4c^2r}$. Die \gls{dbt} liefert die mikroskopische Begründung:
+\begin{equation}
+    v(r) = \sqrt{\frac{GM}{r}} \left(1 + \frac{GM}{4c^2 r} + \frac{\hbar^2}{m^2 r^3} \nabla^2 \ln|\Psi|\right)^{1/2}
+\end{equation}
+Hier korrigiert $Q$ die Dynamik auf kleinen Skalen ($<1 pc$), während die \gls{wg}-Korrektur auf galaktischen Skalen wirkt.
+
+\textbf{2. Frequenzabhängige Lichtablenkung}\\
+Für Photonen ($m=0, \beta=1$) sagt die Synthese eine wellenlängenabhängige Ablenkung voraus:
+\begin{equation}
+    \Delta\phi = \frac{4GM}{c^2 b}\left(1 + \frac{3\pi}{16}\frac{\lambda^2}{\lambda_0^2} + \frac{\hbar^2 \omega^2}{4c^4 b^2}\right)
+\end{equation}
+Dieser Effekt wäre mit hochpräzisen Interferometern (z. B. LISA) nachweisbar und unterscheidet die Theorie von der \gls{art}.
+
+\textbf{3. Quantisierte Periheldrehung}\\
+In der Synthese zeigt die Periheldrehung diskrete Korrekturen durch $Q$:
+\begin{equation}
+    \Delta\phi_n = \Delta\phi_{\text{WG}} + n\frac{\hbar}{mc^2 g} \quad (n \in \mathbb{Z})    
+\end{equation}
+wobei $g$ die Gravitationsbeschleunigung ist. Dies könnte durch Laser-Ranging-Experimente am Merkur überprüft werden.
+
+Die Synthese aus \gls{wg} und \gls{dbt} bietet eine minimalistische, aber leistungsfähige Alternative zu konventionellen Quantengravitationsmodellen. Sie vermeidet nicht nur
+die Probleme der \gls{art} (Singularitäten, dunkle Materie) und der Quantenmechanik (Messproblem), sondern liefert auch testbare Vorhersagen. Während sie keine vollständige
+Feldquantisierung der Gravitation leistet, ist sie eine effektive Theorie für Skalen unterhalb der Planck-Länge und oberhalb der Quantenfluktuationen. Ihr größter Vorteil
+liegt in der kausalen Interpretierbarkeit aller Phänomene – von der kosmologischen Rotverschiebung bis zur Quantenverschränkung.
