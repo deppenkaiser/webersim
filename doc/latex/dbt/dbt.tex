@@ -93,3 +93,71 @@ Diese Gleichung vereint die Vorteile beider Theorien:
     \item \textbf{Singularitätsfreiheit:} Die Divergenz von $Q$ bei kleinen Abständen verhindert Kollaps zu Singularitäten.
 \end{enumerate}
 
+\subsection{Exakte Herleitung der Rotationskurven}
+
+\subsubsection{1. Weber-Gravitation für Kreisbahnen}
+Ausgehend von der Weber-Kraft (Gl. 3.3) für eine \textit{kreisförmige} Bahn ($\ddot{r} = 0$, $\dot{r} = 0$):
+
+\begin{equation}
+F_{\text{WG}} = -\frac{GMm}{r^2}\left(1 + \beta\frac{v^2}{c^2}\right) \quad \text{mit} \quad \beta = 0.5
+\end{equation}
+
+Gleichsetzen mit der Zentripetalkraft $F_z = mv^2/r$:
+
+\begin{equation}
+\frac{mv^2}{r} = \frac{GMm}{r^2}\left(1 + \frac{v^2}{2c^2}\right)
+\end{equation}
+
+Multiplikation mit $r^2$ und Umstellen:
+
+\begin{equation}
+v^2r = GM\left(1 + \frac{v^2}{2c^2}\right) \quad \Rightarrow \quad v^2\left(r - \frac{GM}{2c^2}\right) = GM
+\end{equation}
+
+Lösung für $v^2$ (bis zur 1. Ordnung in $v^2/c^2$):
+
+\begin{equation}
+v^2 \approx \frac{GM}{r}\left(1 + \frac{GM}{2c^2r}\right) \quad \text{(Taylor-Entwicklung)}
+\end{equation}
+
+\subsubsection{2. Quantenpotential für exponentielle Dichte}
+Annahme: Dichteverteilung $\rho(r) = \rho_0 e^{-r/r_0}$ mit Skalenlänge $r_0$.
+
+Für die Wellenfunktion $\Psi = \sqrt{\rho} e^{iS/\hbar}$ gilt:
+
+\begin{equation}
+Q = -\frac{\hbar^2}{2m}\frac{\nabla^2\sqrt{\rho}}{\sqrt{\rho}} = -\frac{\hbar^2}{2m}\left[\frac{1}{r_0^2} - \frac{2}{rr_0}\right]
+\end{equation}
+
+Für $r \gg r_0$ dominiert der erste Term:
+
+\begin{equation}
+Q \approx -\frac{\hbar^2}{2m r_0^2}, \quad \vec{F}_Q = -\vec{\nabla}Q \approx -\frac{\hbar^2}{2m r_0^3}\hat{r}
+\end{equation}
+
+\subsubsection{3. Bewegungsgleichung mit Quantenpotential}
+Die modifizierte Bewegungsgleichung lautet:
+
+\begin{equation}
+m\frac{v^2}{r} = \frac{GMm}{r^2}\left(1 + \frac{v^2}{2c^2}\right) + \frac{\hbar^2}{2m r_0^3}
+\end{equation}
+
+Umstellung nach $v^2$:
+
+\begin{equation}
+v^2 = \underbrace{\frac{GM}{r}\left(1 + \frac{GM}{2c^2r}\right)}_{\text{WG-Korrektur}} + \underbrace{\frac{\hbar^2 r}{2m^2 r_0^3}}_{\text{DBT-Beitrag}}
+\end{equation}
+
+\subsubsection{4. Asymptotisches Verhalten}
+\begin{itemize}
+\item \textbf{Innerer Bereich ($r \ll r_0$)}: DBT-Term vernachlässigbar
+\begin{equation}
+v \approx \sqrt{\frac{GM}{r}} \left(1 + \frac{GM}{4c^2r}\right)
+\end{equation}
+
+\item \textbf{Äußerer Bereich ($r \gg r_0$)}: WG-Term wird klein
+\begin{equation}
+v \approx \sqrt{\frac{\hbar^2}{2m^2 r_0^3}} \cdot \sqrt{r} \quad \text{(flacher Verlauf für $r \sim r_0$)}
+\end{equation}
+\end{itemize}
+
