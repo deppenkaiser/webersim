@@ -119,3 +119,49 @@ Die Synthese aus \gls{wg} und \gls{dbt} bietet eine minimalistische, aber leistu
 die Probleme der \gls{art} (Singularitäten, dunkle Materie) und der Quantenmechanik (Messproblem), sondern liefert auch testbare Vorhersagen. Während sie keine vollständige
 Feldquantisierung der Gravitation leistet, ist sie eine effektive Theorie für Skalen unterhalb der Planck-Länge und oberhalb der Quantenfluktuationen. Ihr größter Vorteil
 liegt in der kausalen Interpretierbarkeit aller Phänomene – von der kosmologischen Rotverschiebung bis zur Quantenverschränkung.
+
+\section{Herleitung der Rotationskurve im WG-DBT-Modell}
+\label{sec:rotationskurve_herleitung}
+
+\subsection{Grundgleichungen}
+Aus der Weber-Gravitation (Gl. 3.3) und De-Broglie-Bohm-Theorie (Gl. 4.4) folgen:
+
+\begin{equation}
+F_{\text{WG}} = -\frac{GM(r)m}{r^2}\left(1 + \beta\frac{v^2}{c^2}\right), \quad \beta = 0.5
+\label{eq:wg_force}
+\end{equation}
+
+\begin{equation}
+Q = -\frac{\hbar^2}{8m}\frac{\nabla^2\sqrt{\rho}}{\sqrt{\rho}}, \quad \rho(r) = \rho_0 e^{-r/r_0}
+\label{eq:qpotential}
+\end{equation}
+
+\subsection{Schrittweise Herleitung}
+\subsubsection{1. Kräftegleichgewicht}
+Für eine Kreisbahn ($\dot{r} = 0$, $\ddot{r} = -v^2/r$) gilt:
+
+\begin{equation}
+\frac{mv^2}{r} = \frac{GM(r)m}{r^2}\left(1 + \frac{0.5v^2}{c^2}\right) - \frac{dQ}{dr}
+\label{eq:force_balance}
+\end{equation}
+
+\subsubsection{2. Quantenpotential-Ableitung}
+Für $\rho(r) = \rho_0 e^{-r/r_0}$:
+
+\begin{equation}
+\frac{dQ}{dr} = \frac{\hbar^2}{8m}\left(\frac{1}{r_0 r^2} - \frac{1}{r^3}\right)
+\label{eq:dqdr}
+\end{equation}
+
+\subsubsection{3. Exakte Lösung für $v(r)$}
+Einsetzen von \eqref{eq:dqdr} in \eqref{eq:force_balance} und Auflösen nach $v^2$:
+
+\begin{equation}
+v^2\left(1 - \frac{0.5GM(r)}{c^2 r}\right) = \frac{GM(r)}{r} - \frac{\hbar^2}{8m r_0 r}\left(1 - \frac{r_0}{r}\right)
+\label{eq:v2_intermediate}
+\end{equation}
+
+\begin{equation}
+v(r) = \sqrt{\frac{\frac{GM(r)}{r} - \frac{\hbar^2}{8m r_0 r}\left(1 - \frac{r_0}{r}\right)}{1 - \frac{0.5GM(r)}{c^2 r}}}
+\label{eq:vfinal}
+\end{equation}
