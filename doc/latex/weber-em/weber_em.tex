@@ -10,9 +10,9 @@ Effekte berücksichtigen.
 In der Weber-Elektrodynamik wird der Impuls- und Energietransport direkt durch die Wechselwirkung zwischen Ladungen beschrieben. Die Gesamtenergie des Systems setzt sich aus der potentiellen
 Energie der Coulomb-Wechselwirkung und den kinetischen Termen der relativen Bewegung zusammen:
 
-\[
-    E = \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 + \frac{q_1 q_2}{4 \pi \epsilon_0 r} \left[ 1 - \frac{\dot{r}^2}{2c^2} \right]
-\]
+\begin{equation}
+    E = \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 + \frac{q_1 q_2}{4 \pi \epsilon_0 r} \left[ 1 - \frac{\dot{r}^2}{2c^2} \right]    
+\end{equation}
 
 Diese Formulierung zeigt, wie die Weber-Theorie die Energieerhaltung auch bei dynamischen Prozessen gewährleistet.
 
@@ -104,7 +104,7 @@ Für den Relativvektor $\vec{r} = \vec{r}_1 - \vec{r}_2$ gilt:
 \begin{enumerate}
 \item \textbf{Erste Ableitung:}
 \begin{equation}
-\dot{r} = \frac{d}{dt}\|\vec{r}\| = \frac{\vec{r} \cdot \dot{\vec{r}}}{r} = \hat{r} \cdot \vec{v}
+\dot{r} = \frac{d}{dt}\|\vec{r}\| = \frac{\vec{r} \cdot \dot{\vec{r}}}{r} = \hat{\vec{r}} \cdot \vec{v}
 \end{equation}
 wobei $\vec{v} = \dot{\vec{r}}$ die Relativgeschwindigkeit und $\hat{r} = \vec{r}/r$ der Einheitsvektor ist.
 
@@ -112,7 +112,7 @@ wobei $\vec{v} = \dot{\vec{r}}$ die Relativgeschwindigkeit und $\hat{r} = \vec{r
 \begin{align}
 \ddot{r} &= \frac{d}{dt}\left(\frac{\vec{r} \cdot \vec{v}}{r}\right) \nonumber \\
 &= \frac{\|\vec{v}\|^2 + \vec{r} \cdot \vec{a}}{r} - \frac{(\vec{r} \cdot \vec{v})^2}{r^3} \nonumber \\
-&= \frac{v^2 - (\hat{r} \cdot \vec{v})^2}{r} + \hat{r} \cdot \vec{a}
+&= \frac{v^2 - (\hat{\vec{r}} \cdot \vec{v})^2}{r} + \hat{\vec{r}} \cdot \vec{a}
 \end{align}
 mit $\vec{a} = \dot{\vec{v}}$ der Relativbeschleunigung.
 \end{enumerate}
@@ -122,7 +122,7 @@ Durch Einsetzen in Gl.~(\ref{eq:weber_em_skalar}) ergibt sich die \textbf{\enquo
 
 \begin{equation}
 \vec{F}_{12} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left\{
-\left[1 - \frac{v^2}{c^2} + \frac{2r(\hat{r} \cdot \vec{a})}{c^2}\right]\hat{r} + \frac{2(\hat{r} \cdot \vec{v})}{c^2}\vec{v}
+\left[1 - \frac{v^2}{c^2} + \frac{2r(\hat{\vec{r}} \cdot \vec{a})}{c^2}\right]\hat{\vec{r}} + \frac{2(\hat{\vec{r}} \cdot \vec{v})}{c^2}\vec{v}
 \right\}
 \label{eq:weber_vector}
 \end{equation}
@@ -139,8 +139,8 @@ Für eine Ladung $q_2$ mit $\vec{v} \perp \vec{r}$ (z.B. Kreisbahn):
 
 \begin{equation}
 \vec{F}_{12} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left[
-\left(1 - \frac{v^2}{c^2}\right)\hat{r} + \frac{2v^2}{c^2}\hat{r}
-\right] = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left(1 + \frac{v^2}{c^2}\right)\hat{r}
+\left(1 - \frac{v^2}{c^2}\right)\hat{\vec{r}} + \frac{2v^2}{c^2}\hat{\vec{r}}
+\right] = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left(1 + \frac{v^2}{c^2}\right)\hat{\vec{r}}
 \end{equation}
 
 Hier zeigt sich:
@@ -183,8 +183,8 @@ $\vec{F}_{\text{ges}}$: Gesamtkraft (lila). Die Grafik zeigt den Fall $\theta = 
 Ausgehend von Abb.~\ref{fig:weber_force} ergeben sich die Komponenten:
 
 \begin{align}
-\vec{F}_r &= \frac{q_1 q_2}{4\pi\epsilon_0 r^2}\left[1 - \frac{v^2}{c^2} + \frac{2r a_r}{c^2}\right]\hat{r} \\
-\vec{F}_t &= \frac{q_1 q_2}{4\pi\epsilon_0 r^2}\left[\frac{2v_r v_t}{c^2}\right]\hat{t}
+\vec{F}_r &= \frac{q_1 q_2}{4\pi\epsilon_0 r^2}\left[1 - \frac{v^2}{c^2} + \frac{2r a_r}{c^2}\right]\hat{\vec{r}} \\
+\vec{F}_t &= \frac{q_1 q_2}{4\pi\epsilon_0 r^2}\left[\frac{2v_r v_t}{c^2}\right]\hat{\vec{t}}
 \end{align}
 
 mit:
@@ -198,12 +198,12 @@ mit:
 
 \textbf{Fall 1: Rein radiale Bewegung ($\theta = 0^\circ$)}
 \begin{equation}
-\vec{F} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2}\left[1 - \frac{v^2}{c^2} + \frac{2r a}{c^2}\right]\hat{r}
+\vec{F} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2}\left[1 - \frac{v^2}{c^2} + \frac{2r a}{c^2}\right]\hat{\vec{r}}
 \end{equation}
 
 \textbf{Fall 2: Kreisbewegung ($\theta = 90^\circ$)}
 \begin{equation}
-\vec{F} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2}\left[\left(1 + \frac{v^2}{c^2}\right)\hat{r} + \frac{2v^2}{c^2}\hat{t}\right]
+\vec{F} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2}\left[\left(1 + \frac{v^2}{c^2}\right)\hat{\vec{r}} + \frac{2v^2}{c^2}\hat{\vec{t}}\right]
 \end{equation}
 
 \subsection{Vorteile gegenüber der Maxwell-Theorie}

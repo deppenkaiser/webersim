@@ -114,28 +114,28 @@ Wellen besitzen eine einzigartige Doppelnatur, die sich durch die gesamte Physik
 Eigenschaften auf, die sich jeder klassischen Kausalität entziehen. Diese Dualität wird besonders deutlich, wenn wir die fundamentalen Wechselwirkungen betrachten.
 
 Die newtonsche Mechanik postuliert mit \enquote{actio = reactio} eine instantane Fernwirkung - eine Kraft wirkt unverzüglich zwischen zwei Körpern. Mathematisch ausgedrückt:
-\[
+\begin{equation}
     \vec{F}{12} = -\vec{F}{21}
-\]
+\end{equation}
 Diese Gleichung beschreibt eine momentane Wechselwirkung ohne zeitliche Verzögerung. Ähnlich verhält es sich im Coulombschen Gesetz:
-\[
-    \vec{F} = \frac{1}{4\pi\epsilon_0}\frac{q_1q_2}{r^2}\hat{r}
-\]
+\begin{equation}
+    \vec{F} = \frac{1}{4\pi\epsilon_0}\frac{q_1q_2}{r^2}\hat{\vec{r}}
+\end{equation}
 Diese Fernwirkungstheorien funktionieren in ihrem Gültigkeitsbereich bemerkenswert gut, wie die erfolgreiche Beschreibung planetarer Bewegungen zeigt. Sie bleiben aber unvollständig,
 da sie den Energie- und Impulstransport zwischen den wechselwirkenden Körpern nicht erklären können.
 
 Interferenzphänomene offenbaren eine weitere tiefgreifende Eigenschaft von Wellen. Betrachten wir das Doppelspaltexperiment: Die Wahrscheinlichkeitsdichte an einem Punkt x auf dem
 Schirm ergibt sich aus der Überlagerung der Teilwellen:
-\[
+\begin{equation}
     |\Psi(x)|^2 = |\psi_1(x) + \psi_2(x)|^2
-\]
+\end{equation}
 Dieses Muster erfüllt einen energetischen Zweck - es minimiert die Gesamtenergie des Systems. Die Welle \enquote{weiß} instantan, wie sie sich verteilen muss, um dieses Minimum zu erreichen,
 ohne dass eine lokale Wechselwirkung dies erklären könnte.
 
 Die Weber-Elektrodynamik bietet hier einen interessanten Brückenschlag. Sie erweitert das Coulombsche Gesetz um geschwindigkeits- und beschleunigungsabhängige Terme:
 \begin{equation}
     \label{eq:weber_em_skalar}
-    \vec{F} = \frac{q_1q_2}{4\pi\epsilon_0r^2}\left[1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right]\hat{r}
+    \vec{F} = \frac{q_1q_2}{4\pi\epsilon_0r^2}\left[1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right]\hat{\vec{r}}
 \end{equation}
 Diese Gleichung beschreibt:
 \begin{enumerate}
@@ -147,9 +147,11 @@ Die instantane Komponente bleibt erhalten, wird aber durch retardierte Effekte e
 Diese Form soll als \textbf{\enquote{skalare Form}} bezeichnet werden.
 
 Die energetische Betrachtung offenbart den tieferen Sinn dieser Doppelnatur. Eine Welle im Gleichgewichtszustand minimiert stets die Gesamtenergie:
-\[
-    \delta \int \left[\frac{\hbar^2}{2m}|\nabla\Psi|^2 + V|\Psi|^2\right] d^3x = 0
-\]
+
+\begin{equation}
+    \delta \int \left[\frac{\hbar^2}{2m}|\nabla\Psi|^2 + V|\Psi|^2\right] d^3x = 0    
+\end{equation}
+
 Diese Bedingung wird global instantan erfüllt, während sich lokale Störungen mit endlicher Geschwindigkeit ausbreiten. Die Weber-Elektrodynamik zeigt, dass ähnliche Prinzipien auch in der
 klassischen Physik wirksam sind - die instantane Komponente sorgt für die Energieerhaltung, während die retardierten Terme den Energietransport beschreiben.
 
@@ -178,7 +180,7 @@ Randbedingungen beschrieben wird, folgt die systemische Kausalität einem Variat
 Das Quantenpotential \cite{bohm1952}
 \begin{equation}
     \label{eq:bohm_potenzial}
-    Q(\mathbf{r},t) = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho(\mathbf{r},t)}}{\sqrt{\rho(\mathbf{r},t)}}
+    Q(\vec{r},t) = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho(\vec{r},t)}}{\sqrt{\rho(\vec{r},t)}}
 \end{equation}
 ist hierfür ein ausgezeichnetes Beispiel - es wirkt nicht durch lokale Wechselwirkungen, sondern durch die instantane Anpassung der gesamten
 Wellenfunktion an die globalen Randbedingungen.

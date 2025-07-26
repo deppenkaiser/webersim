@@ -2,14 +2,13 @@
 \section{Herleitung der Weber-Gravitation}
 Die Idee einer gravitativen Analogie zur Weber-Elektrodynamik geht auf den französischen Astronomen François-Félix Tisserand (1889) zurück. Inspiriert von der strukturellen
 Ähnlichkeit zwischen dem Newton’schen Gravitationsgesetz und dem Coulomb’schen Gesetz,
-\[
-\vec{F}_{\text{Newton}} = -G \frac{m_1 m_2}{r^2} \hat{r}, \vec{F}_{\text{Coulomb}} = \frac{1}{4 \pi \epsilon_0} \frac{q_1 q_2}{r^2} \hat{r}
-\]
+\begin{equation}
+    \vec{F}_{\text{Newton}} = -G \frac{m_1 m_2}{r^2} \hat{\vec{r}}, \vec{F}_{\text{Coulomb}} = \frac{1}{4 \pi \epsilon_0} \frac{q_1 q_2}{r^2} \hat{\vec{r}}
+\end{equation}
 versuchte Tisserand, die Weber-Kraft (ursprünglich für elektrodynamische Wechselwirkungen formuliert) auf die Gravitation zu übertragen. Die Weber-Gravitation ergibt sich damit als:
-\[
-\vec{F}_{\text{WG-Tisserand}} = -G \frac{m_1 m_2}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{2 r \ddot{r}}{c^2} \right] \hat{r}.
-\]
-
+\begin{equation}
+    \vec{F}_{\text{WG-Tisserand}} = -G \frac{m_1 m_2}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{2 r \ddot{r}}{c^2} \right] \hat{\vec{r}}.
+\end{equation}
 Diese Gleichung fügt zu Newton’s Gesetz geschwindigkeits- und beschleunigungsabhängige Korrekturen hinzu, analog zur Weber-Elektrodynamik.
 \subsection{Test am Merkur-Perihel – und warum die Theorie scheiterte}
 Tisserands Motivation war die Erklärung der anomalen Periheldrehung des Merkur, die bereits im 19. Jahrhundert bekannt war (ca. 43 Bogensekunden pro Jahrhundert).
@@ -24,7 +23,7 @@ Die Weber-Gravitation (WG) bietet eine alternative Beschreibung gravitativer Ph�
 geschwindigkeits- und beschleunigungsabhängige Terme. Die zentrale Gleichung der WG lautet:
 
 \begin{equation}
-\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right) \hat{r},
+\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right) \hat{\vec{r}},
 \end{equation}
 
 wobei $\dot{r}$ die radiale Relativgeschwindigkeit und $\ddot{r}$ die radiale Beschleunigung darstellen. Diese Modifikation führt zu Bahngleichungen, die in
@@ -50,9 +49,9 @@ Der Parameter $\beta$ quantifiziert den Einfluss der radialen Beschleunigung $\d
 \textbf{1. Lichtablenkung im Gravitationsfeld}
 
 Für Photonen ($m=0$) wird $\beta=1$ gesetzt, was zu einer frequenzabhängigen Korrektur der Ablenkung führt. Die Bahngleichung für Licht lautet:
-\[
-\frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 h^2} u^3\right).
-\]
+\begin{equation}
+    \frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 h^2} u^3\right).
+\end{equation}
 Wobei $u=1/r$ und $E=h_\text{P}\nu$ die Photonenenergie ist. Die Lösung für kleine Ablenkungen $\Delta\phi$ zeigt einen zusätzlichen Term proportional zur Wellenlänge $\lambda$:
 \begin{equation}
 \Delta \phi = \frac{4GM}{c^2 b} \left(1 + \frac{3\pi}{16} \frac{\lambda^2}{\lambda_0^2}\right).
@@ -67,9 +66,9 @@ Die Laufzeit $\Delta t$ eines Signals im Gravitationsfeld wird durch $\beta$ mod
 \end{equation}
 
 Der zweite Term (proportional zu $\beta=1$) führt zu einer wellenlängenabhängigen Korrektur:
-\[
-\Delta t_\text{WG} \propto \lambda^{-2},
-\]
+\begin{equation}
+    \Delta t_\text{WG} \propto \lambda^{-2},
+\end{equation}
 die bei Pulsar-Timing-Experimenten (z. B. mit dem Square Kilometre Array) messbar sein sollte. Im Vergleich zur \gls{art} ($\beta=0$) ist die Abweichung zwar klein ($\approx 10^{-6}$),
 aber prinzipiell nachweisbar.
 

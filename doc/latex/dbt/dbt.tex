@@ -9,7 +9,7 @@ Im Kern postuliert die \gls{dbt} zwei fundamentale Entitäten: reale Teilchen mi
 Standardquantenmechanik den Teilchen keine definierten Positionen zuschreibt, bis eine Messung erfolgt, beschreibt die \gls{dbt} die Teilchendynamik durch die Führungsgleichung:
 
 \begin{equation}
-    \frac{d\vec{x}}{dt} = \frac{\hbar}{m} \text{Im} \left( \frac{\nabla \Psi}{\Psi} \right) = \frac{\nabla S}{m}
+    \frac{d\vec{x}}{dt} = \frac{\hbar}{m} \text{Im} \left( \frac{\vec{\nabla} \Psi}{\Psi} \right) = \frac{\vec{\nabla} S}{m}
 \end{equation}
 
 Hierbei ist die Wellenfunktion in ihrer Polarform $\psi = R e^{iS}/\hbar$ dargestellt, wobei $R$ die Amplitude und $S$ die Phase beschreibt. Diese Gleichung zeigt, dass die
@@ -18,7 +18,7 @@ Teilchenbewegung durch ein \enquote{Führungsfeld} geleitet wird, das von der We
 Ein zentrales Konzept der \gls{dbt} ist das Quantenpotential $Q$, das aus der Umformung der Schrödinger-Gleichung in eine Hamilton-Jacobi-ähnliche Form hervorgeht:
 
 \begin{equation}
-    \frac{\partial S}{\partial t} + \frac{(\nabla S)^2}{2m} + V + Q = 0
+    \frac{\partial S}{\partial t} + \frac{(\vec{\nabla} S)^2}{2m} + V + Q = 0
 \end{equation}
 
 mit
@@ -69,7 +69,7 @@ oder den Kollaps der Wellenfunktion zurückgreifen zu müssen.
 \subsection{Herleitung der Synthese}
 Die WG beschreibt die Gravitationskraft durch eine Modifikation des Newtonschen Gesetzes:
 \[
-    \vec{F}_{\text{WG}} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right)\hat{r}
+    \vec{F}_{\text{WG}} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right)\hat{\vec{r}}
 \]
 wobei $\beta$ je nach Kontext variiert ($\beta=0.5$ für Planetenbahnen, $\beta=1$ für Photonen). Diese Kraft wirkt instantan, berücksichtigt jedoch retardierte Effekte durch die
 Terme $\dot{r}$ und $\ddot{r}$.
@@ -83,7 +83,7 @@ Hier steuert $Q$ die Teilchenbewegung nicht-lokal und verhindert Singularitäten
 Die Kombination beider Konzepte ergibt die Hybrid-Gleichung der\\Weber-De Broglie-Bohm-Gravitation:
 
 \begin{equation}
-    m\frac{d^2\vec{r}}{dt^2} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right)\hat{{r}} - \vec{\nabla} Q
+    m\frac{d^2\vec{r}}{dt^2} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right)\hat{{\vec{r}}} - \vec{\nabla} Q
 \end{equation}
 
 Diese Gleichung vereint die Vorteile beider Theorien:
