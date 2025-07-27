@@ -1,0 +1,91 @@
+\chapter{Diskussion}
+\section{Eine quantisierte De-Broglie-Bohm-Theorie – Konsequenzen und Perspektiven}
+Die Idee einer raumzeitlich quantisierten \gls{dbt} stellt einen radikalen, aber folgerichtigen Schritt in der Entwicklung einer physikalisch konsistenten Quantengravitation dar.
+Wenn wir annehmen, dass sowohl Raum als Zeit nicht kontinuierlich, sondern aus diskreten Einheiten bestehen, ergeben sich tiefgreifende Konsequenzen für die Struktur der \gls{dbt} – und
+möglicherweise Lösungen für einige ihrer offenen Fragen.
+
+\subsection{Grundannahmen des Modells}
+In dieser modifizierten \gls{dbt} wird die klassische Raumzeit durch ein diskretes Gitter ersetzt:
+\begin{itemize}
+    \item \textbf{Raum} ist ein Vielfaches einer fundamentalen Länge $l_0$ (z. B. Planck-Länge oder Compton-Wellenlänge eines Elementarteilchens).
+    \item \textbf{Zeit} verläuft in ganzzahligen Schritten $t_n = n\tau_0$ wobei $\tau_0$ eine elementare Zeiteinheit darstellt.
+    \item Die Wellenfunktion $\psi$ wird nicht mehr über einen kontinuierlichen Raum, sondern über diskrete Gitterpunkte definiert.
+\end{itemize}
+Diese Annahmen führen zu einer digitalen Physik, in der alle messbaren Größen – Positionen, Impulse, Energien – als ganzzahlige Vielfache elementarer Einheiten auftreten.
+
+\subsection{Konsequenzen für die Dynamik der DBT}
+\textbf{(a) Das Quantenpotential wird diskret}\\
+In der Standard-\gls{dbt} steuert das Quantenpotential (Gl. \refeq{eq:bohm_potenzial}) die Teilchenbewegung. In der quantisierten Version müssen Ableitungen durch Finite
+Differenzen ersetzt werden:
+\begin{equation}
+    \nabla^{2} \psi \to \sum_\text{Nachbarn j} \left( \psi_j - \psi_i \right),
+\end{equation}
+wobei die Summe über benachbarte Gitterpunkte läuft. Das Quantenpotential erhält damit eine lokal begrenzte Wirkung, was die Nicht-Lokalität der DBT mildert, ohne sie ganz aufzuheben.
+
+\textbf{(b) Teilchentrajektorien werden schrittweise}\\
+Die Bahnen von Teilchen sind nicht mehr glatte Kurven, sondern Sprünge zwischen Gitterpunkten, getaktet durch die diskrete Zeit. Dies erinnert an Pfadintegral-Formulierungen der
+Quantenmechanik, bei denen Teilchen alle möglichen Pfade \enquote{abtasten} – nur dass hier die Pfade auf das Gitter beschränkt sind.
+
+\textbf{(c) Natürliche Regularisierung der Vakuumenergie}\\
+Ein Hauptproblem der Quantenfeldtheorie – die divergente Vakuumenergie – entfällt, da das Modell eine kürzestmögliche Wellenlänge $\lambda_\text{min} = 2l_0$ vorsieht. Hochfrequente Fluktuationen,
+die in kontinuierlichen Theorien zu Unendlichkeiten führen, werden automatisch abgeschnitten.
+
+\subsection{Experimentelle Konsequenzen}
+Falls Raum und Zeit tatsächlich quantisiert sind, müssten sich in Präzisionsexperimenten Abweichungen von der Standard-\gls{dbt} zeigen:
+
+\begin{itemize}
+    \item \textbf{Energieniveaus in Atomen:} Die diskrete Raumzeit würde zu minimalen Verschiebungen in Spektrallinien führen, insbesondere bei schweren Atomen.
+    \item \textbf{Quanteninterferenz:} Doppelspaltexperimente mit sehr kurzen Wellenlängen könnten \enquote{Pixelierungs-Effekte} offenbaren.
+\end{itemize}
+
+\subsection{Philosophische Implikationen}
+Diese Theorie würde die ontologische Frage nach der Natur der Realität neu stellen:
+\begin{itemize}
+    \item Ist die Wellenfunktion nur ein mathematisches Hilfsmittel – oder bildet sie eine fundamentale, diskrete Struktur ab?
+    \item Wenn Raum und Zeit zählbar sind, könnte das Universum letztlich ein algorithmischer Prozess sein, bei dem $\psi$ die \enquote{Programmierung} und $Q$ die \enquote{Ausführungsregeln} darstellt.
+    \item Die Nicht-Lokalität der Quantenmechanik würde zu einer geometrischen Eigenschaft des Gitters – ähnlich wie Verschränkung in Tensor-Netzwerk-Modellen.
+\end{itemize}
+
+\subsection{Die quantisierte De-Broglie-Bohm-Theorie}
+\label{sec:discrete-dbb}
+
+\subsubsection{Grundgleichungen}
+Die Wellenfunktion lebt auf einem diskreten Gitter mit Abstand $\ell_0$ und Zeitschritten $\tau_0$:
+
+\begin{equation}
+\Psi(\vec{r}, t) \rightarrow \Psi_{i,j,k}^n \quad \text{mit} \quad 
+\begin{cases}
+\vec{r} = (i\ell_0, j\ell_0, k\ell_0) & i,j,k \in \mathbb{Z} \\
+t = n \tau_0 & n \in \mathbb{N}
+\end{cases}
+\end{equation}
+
+Das Quantenpotential wird diskretisiert:
+
+\begin{equation}
+Q_{i,j,k}^n = -\frac{\hbar^2}{2m\ell_0^2} \left( \frac{\Delta^2 R}{R} \right)_{i,j,k}^n
+\end{equation}
+
+wobei der diskrete Laplace-Operator:
+
+\begin{equation}
+(\Delta^2 R)_{i,j,k} = R_{i+1,j,k} + R_{i-1,j,k} + \text{(zyklisch)} - 6R_{i,j,k}
+\end{equation}
+
+\subsubsection{Bewegungsgleichung}
+Die Teilchentrajektorie $\vec{r}(t)$ wird zu einer Folge von Gittersprüngen:
+
+\begin{equation}
+\vec{r}^{~n+1} = \vec{r}^{~n} + \tau_0 \left. \frac{\nabla S}{m} \right|_{\vec{r}^{~n}}^n
+\end{equation}
+
+mit der diskreten Phase $S_{i,j,k}^n = \hbar \arg(\Psi_{i,j,k}^n)$.
+
+Eine quantisierte \gls{dbt} bietet eine brückenschlagende Perspektive zwischen der deterministischen Führung der Bohm'schen Mechanik und den diskreten Strukturen der
+Quantengravitation. Während sie experimentell noch nicht überprüft ist, liefert sie ein faszinierendes Gedankenmodell, das zeigt:
+\begin{itemize}
+    \item Die Raumzeit könnte emergenter sein als angenommen.
+    \item Die Wellenfunktion könnte eine tiefere, algorithmische Bedeutung haben.
+    \item Die DBT ist anpassungsfähiger, als ihre traditionelle Form vermuten lässt.
+\end{itemize}
+Diese Überlegungen werfen mehr Fragen auf, als sie beantworten – aber genau das macht sie zu einem lohnenden Thema für die zukünftige physikalische Grundlagenforschung.
