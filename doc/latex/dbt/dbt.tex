@@ -68,9 +68,10 @@ oder den Kollaps der Wellenfunktion zurückgreifen zu müssen.
 
 \subsection{Herleitung der Synthese}
 Die WG beschreibt die Gravitationskraft durch eine Modifikation des Newtonschen Gesetzes:
-\[
+\begin{equation}
+    \label{eq:wg-dbt}
     \vec{F}_{\text{WG}} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right)\hat{\vec{r}}
-\]
+\end{equation}
 wobei $\beta$ je nach Kontext variiert ($\beta=0.5$ für Planetenbahnen, $\beta=1$ für Photonen). Diese Kraft wirkt instantan, berücksichtigt jedoch retardierte Effekte durch die
 Terme $\dot{r}$ und $\ddot{r}$.
 
@@ -97,7 +98,7 @@ Diese Gleichung vereint die Vorteile beider Theorien:
 \subsection{Herleitung der Rotationskurven}
 
 \subsubsection{1. Weber-Gravitation für Kreisbahnen}
-Ausgehend von der Weber-Kraft (Gl. 3.3) für eine \textit{kreisförmige} Bahn ($\ddot{r} = 0$, $\dot{r} = 0$):
+Ausgehend von der Weber-Kraft (Gl. \refeq{eq:wg-dbt}) für eine \textit{kreisförmige} Bahn ($\ddot{r} = 0$, $\dot{r} = 0$):
 
 \begin{equation}
 F_{\text{WG}} = -\frac{GMm}{r^2}\left(1 + \beta\frac{v^2}{c^2}\right) \quad \text{mit} \quad \beta = 0.5
@@ -165,3 +166,76 @@ v \approx \sqrt{\frac{\hbar^2}{2m^2 r_0^3}} \cdot \sqrt{r} \quad \text{(flacher 
 \end{equation}
 \end{itemize}
 
+\section{Herleitung der Lichtablenkung in der WG-DBT-Synthese}
+\label{sec:lichtablenkung}
+
+Die Synthese aus \gls{wg} und \gls{dbt} führt zu einer modifizierten Beschreibung der Lichtablenkung im Gravitationsfeld. Im Folgenden leiten wir den Ablenkwinkel systematisch her
+und diskutieren die physikalischen Konsequenzen.
+
+\subsection{Grundgleichungen der Synthese}
+Die kombinierte Bewegungsgleichung für ein Teilchen (hier ein Photon) lautet:
+
+\begin{equation}
+m \frac{d^2 \vec{r}}{dt^2} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r \ddot{r}}{c^2}\right) \hat{\vec{r}} - \vec{\nabla} Q,
+\end{equation}
+
+wobei:
+\begin{itemize}
+\item $\beta = 1$ für Photonen (vgl. Gl. \ref{eq:wg-dbt}),
+\item $Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 |\Psi|}{|\Psi|}$ das Quantenpotential der DBT darstellt.
+\end{itemize}
+
+Für Photonen ($m \to 0$) dominiert der WG-Term, da $Q \propto 1/m$ divergiert. Die effektive Kraft reduziert sich auf:
+
+\begin{equation}
+\vec{F}_{\text{WG}} \approx -\frac{GMm}{r^2} \left(1 + \frac{v^2}{c^2}\right) \hat{\vec{r}} \quad \text{(für $\beta = 1$, $\dot{r} = 0$, $\ddot{r} = -v^2/r$)}.
+\end{equation}
+
+\subsection{Bahngleichung für Photonen}
+Mit dem Drehimpuls $h = r^2 \dot{\phi} = \text{konstant}$ und der Substitution $u = 1/r$ erhalten wir die Bahngleichung:
+
+\begin{equation}
+\frac{d^2 u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 h^2} u^3\right),
+\label{eq:bahngleichung}
+\end{equation}
+
+wobei $E = h_{\text{P}} \nu$ die Photonenenergie ist. Diese Gleichung verallgemeinert die Standardform der ART um einen wellenlängenabhängigen Term.
+
+\subsection{Lösung für kleine Ablenkungen}
+Für schwache Gravitation ($GM/c^2 r \ll 1$) entwickeln wir die Lösung störungstheoretisch:
+
+\begin{itemize}
+\item \textbf{Homogene Lösung:} $u_0 = \frac{1}{b} \sin \phi$ beschreibt eine Gerade im Abstand $b$ (Stoßparameter).
+\item \textbf{Inhomogener Anteil:} Die Störung $\delta u$ ergibt sich aus Gl.~\ref{eq:bahngleichung} zu:
+\begin{equation}
+\delta u \approx \frac{GM}{c^2 b^2} (1 + \cos^2 \phi).
+\end{equation}
+\end{itemize}
+
+Der Gesamtablenkwinkel folgt durch Integration über $\phi \in [-\pi/2, \pi/2]$:
+
+\begin{equation}
+\Delta \phi = \frac{4GM}{c^2 b} \left(1 + \frac{3\pi}{16} \frac{\lambda^2}{\lambda_0^2}\right),
+\label{eq:ablenkwinkel}
+\end{equation}
+
+mit $\lambda_0 = hc/E$ als charakteristischer Längenskala. Der zweite Term repräsentiert die wellenlängenabhängige Korrektur der WG-DBT-Synthese.
+
+\subsection{Quantenmechanische Korrektur}
+Das Quantenpotential $Q$ liefert einen zusätzlichen Beitrag:
+
+\begin{equation}
+\Delta \phi_{\text{DBT}} \approx \frac{\hbar^2 b}{2m^2 c^2 \lambda_0^3},
+\end{equation}
+
+der jedoch für Photonen ($m \to 0$) vernachlässigbar ist. Für massive Teilchen würde dieser Term eine mikroskopische Korrektur zur gravitativen Streuung bewirken.
+
+\subsection{Experimentelle Konsequenzen}
+Gleichung (\ref{eq:ablenkwinkel}) sagt voraus:
+\begin{itemize}
+\item \textbf{Dispersion im Gravitationsfeld:} Blaues Licht ($\lambda \ll \lambda_0$) wird stärker abgelenkt als rotes Licht.
+\item \textbf{Messbare Abweichung:} Für $\lambda \approx 500\,\text{nm}$ und $\lambda_0 \approx 10^{-12}\,\text{m}$ (Gammabereich) beträgt die relative Abweichung von der ART $\sim 10^{-6}$.
+\end{itemize}
+
+Dieser Effekt könnte mit hochpräzisen Interferometern (z.B. LISA oder dem geplanten \textit{Athena}-Observatorium) überprüft werden, indem die Ablenkung verschiedener
+Spektralbereiche verglichen wird.
