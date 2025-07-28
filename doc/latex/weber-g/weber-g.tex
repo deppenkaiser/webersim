@@ -166,36 +166,37 @@ Die WG bietet damit eine konsistente Alternative zum Standardmodell, die ohne Ex
 \subsection{Bahngleichung 1. Ordnung}
 Die Bahngleichung in erster Ordnung $r(\phi)$ ergibt sich aus der Lösung der Bewegungsgleichung unter Vernachlässigung von Termen höherer Ordnung in $c^{-2}$. Sie lautet:
 \begin{equation}
-r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi)},    
+    \label{eq:weber_r_1_ordnung}
+    r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi)},    
 \end{equation}
 \begin{equation}
-\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)}}.
+    \kappa = \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)}}.
 \end{equation}
 
 Wobei $\kappa$ eine Korrektur gegenüber der Newtonschen Mechanik darstellt. Hierbei sind $a$ die große Halbachse und $e$ die Exzentrizität der Bahn.
 Diese Gleichung beschreibt die Bahn eines Planeten unter Berücksichtigung relativistischer Effekte, die zu einer Periheldrehung führen.
 Die Periheldrehung pro Umlauf beträgt:
 \begin{equation}
-\Delta \phi = 2\pi \left(\frac{1}{\kappa} - 1\right),
+    \Delta \phi = 2\pi \left(\frac{1}{\kappa} - 1\right),
 \end{equation}
 
 was für den Merkur den beobachteten Wert von 42,98'' pro Jahrhundert liefert.
 
 \textbf{Winkel- und Bahngeschwindigkeit:}
 \begin{equation}
-\omega(\phi) = \frac{h}{a^2(1 - e^2)^2} \left[1 + e \cos(\kappa \phi)\right]^2    
+    \omega(\phi) = \frac{h}{a^2(1 - e^2)^2} \left[1 + e \cos(\kappa \phi)\right]^2    
 \end{equation}
 
-\begin{equation}    
-v(\phi) = \frac{h \left(1 + e \cos(\kappa \phi)\right)}{a(1 - e^2)}
+\begin{equation}
+    v(\phi) = \frac{h \left(1 + e \cos(\kappa \phi)\right)}{a(1 - e^2)}
 \end{equation}
 
 \subsection{Bahngleichung 2. Ordnung}
 In zweiter Ordnung werden zusätzliche Korrekturen berücksichtigt, die aus der Entwicklung von $\kappa$ und der Einführung eines quadratischen Terms in $\phi$ resultieren.
 Die Bahngleichung nimmt dann die Form an:
 \begin{equation}
-\label{eq:weber_r_2_ordnung}
-r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi + \alpha \phi^2)},
+    \label{eq:weber_r_2_ordnung}
+    r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi + \alpha \phi^2)},
 \end{equation}
 
 \begin{equation}
