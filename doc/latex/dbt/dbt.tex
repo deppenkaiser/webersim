@@ -243,7 +243,7 @@ Spektralbereiche verglichen wird.
 
 \newpage
 \section{Herleitung des Shapiro-Effekts in der Weber-Gravitation}
-\label{sec:shapiro_effect}
+\label{sec:shapiro_effect_wg_dbt}
 
 Der Shapiro-Effekt beschreibt die gravitative Laufzeitverzögerung elektromagnetischer Signale. Wir leiten ihn hier streng aus der WG her und zeigen die Abweichungen von der Allgemeinen Relativitätstheorie (ART).
 
@@ -383,3 +383,25 @@ Die exakte Aufhebung von $\alpha \phi^{2}$ und $Q_\text{Comp}$ ist kein Zufall, 
 Die exponentielle Wellenfunktion ist eine natürliche Näherung für gebundene Zustände, und die Kompensation des $\alpha \phi^{2}$-Terms demonstriert die Selbstkonsistenz der WG-DBT-Synthese.
 Die Vernachlässigung höherer Ordnungen ist experimentell gerechtfertigt, und die physikalische Interpretation betont die Rolle der Nicht-Lokalität in beiden Theorien. Damit ist
 Abschnitt (\ref{sec:bahn_alpha_beweis}) nicht nur mathematisch korrekt, sondern auch konzeptionell schlüssig.
+
+\section{Herleitung der Winkelgeschwindigkeit}
+\label{sec:angular_velocity}
+
+Die Winkelgeschwindigkeit $\omega(\phi) = d\phi/dt$ folgt aus der WG-Bahngleichung:
+
+\begin{equation}
+r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi)},
+\end{equation}
+wobei $\kappa = \sqrt{1 - \frac{6GM}{c^2 a (1 - e^2)}}$. 
+
+Mit dem Drehimpuls $h = r^2 \dot{\phi}$ ergibt sich:
+\begin{equation}
+\omega(\phi) = \frac{h}{r^2} = \sqrt{\frac{GM}{a^3 (1 - e^2)^3}} \left(1 + \frac{3GM}{c^2 a (1 - e^2)}\right) \left(1 + e \cos(\kappa \phi)\right)^2.
+\end{equation}
+
+\subsection*{Interpretation}
+\begin{itemize}
+\item Die WG führt zu einer \textbf{modulierten Winkelgeschwindigkeit}, die von $\phi$ abhängt.
+\item Im Perihel ($\phi = 0$) ist $\omega$ maximal, im Aphel ($\phi = \pi/\kappa$) minimal.
+\item Die ART liefert eine äquivalente, aber strukturell unterschiedliche Vorhersage.
+\end{itemize}
