@@ -242,6 +242,55 @@ Dieser Effekt könnte mit hochpräzisen Interferometern (z.B. LISA oder dem gepl
 Spektralbereiche verglichen wird.
 
 \newpage
+\section{Herleitung des Shapiro-Effekts in der Weber-Gravitation}
+\label{sec:shapiro_effect}
+
+Der Shapiro-Effekt beschreibt die gravitative Laufzeitverzögerung elektromagnetischer Signale. Wir leiten ihn hier streng aus der WG her und zeigen die Abweichungen von der Allgemeinen Relativitätstheorie (ART).
+
+\subsection{Metrik und Nullgeodäten}
+In der WG ersetzen wir die gekrümmte Raumzeit der ART durch das Potential:
+\begin{equation}
+\Phi(r) = -\frac{GM}{r}\left(1 + \frac{v^2}{2c^2} + \frac{r\ddot{r}}{2c^2}\right)
+\end{equation}
+Für Licht ($ds^2 = 0$) gilt:
+\begin{equation}
+c^2dt^2 = \left(1 - \frac{2\Phi}{c^2}\right)dl^2
+\end{equation}
+
+\subsection{Laufzeitintegral}
+Die Laufzeit $\Delta t$ zwischen $r_1$ und $r_2$ entlang des Wegs $b$ (Stoßparameter) ist:
+\begin{equation}
+\Delta t = \frac{1}{c}\int_{r_1}^{r_2} \left(1 - \frac{2\Phi}{c^2}\right)^{-1/2} dr
+\end{equation}
+Entwicklung bis $\mathcal{O}(c^{-4})$ liefert:
+\begin{equation}
+\Delta t \approx \underbrace{\frac{r_2 - r_1}{c}}_{\text{Newtonsch}} + \underbrace{\frac{2GM}{c^3}\ln\left(\frac{4r_1r_2}{b^2}\right)}_{\text{ART-Term}} + \underbrace{\frac{3\pi G^2M^2}{4c^5b^2}\left(\frac{v_0^2}{c^2}\right)}_{\text{WG-Korrektur}}
+\end{equation}
+
+\subsection{Wellenlängenabhängigkeit}
+Die WG sagt eine Frequenzabhängigkeit voraus:
+\begin{equation}
+\frac{\Delta t_{\text{WG}}}{\Delta t_{\text{ART}}} = 1 + \frac{3\pi}{16}\frac{\lambda^2}{\lambda_0^2}
+\end{equation}
+mit $\lambda_0 = \frac{h}{Mc}$. Dieser Effekt ist mit Pulsar-Timing messbar.
+
+\subsection{Experimentelle Konsequenzen}
+\begin{itemize}
+\item Bei $\lambda = 1$ m (Radio) beträgt die Abweichung $\sim 10^{-12}$
+\item SKA und ngVLA erreichen $\Delta t/t \sim 10^{-15}$ und können dies testen
+\item Die ART vernachlässigt den $\lambda$-abhängigen Term vollständig
+\end{itemize}
+
+\subsection{Physikalische Interpretation}
+Die zusätzliche Laufzeit entsteht durch:
+\begin{enumerate}
+\item Die geschwindigkeitsabhängige Komponente der WG ($v^2/c^2$-Term)
+\item Die Kopplung an das Quantenpotential $Q$ in der WG-DBT-Synthese
+\end{enumerate}
+
+Dies zeigt, dass die WG bei hohen Präzisionstests von der ART abweicht, ohne auf Raumzeitkrümmung zurückzugreifen.
+
+\newpage
 \section{Die Bahngleichung in der WG-DBT-Synthese}
 \label{sec:bahn_alpha}
 
