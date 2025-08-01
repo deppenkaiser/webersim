@@ -135,3 +135,41 @@ Dies stimmt exakt mit den Beobachtungen und der ART überein.
 \end{itemize}
 
 Diese Herleitung zeigt, dass die WG nur in Kombination mit der DBT eine konsistente Alternative zur ART darstellt.
+
+\section{Potentialunterschiede in Weber-Theorien}
+\label{sec:weber_potentials}
+
+\subsection{Weber-Elektrodynamik}
+Die Weber-Kraft zwischen zwei Ladungen $q_1$ und $q_2$ lautet:
+\[
+\vec{F}_{\text{Weber-EM}} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{EM}} \frac{r\ddot{r}}{c^2}\right)\hat{r}, \quad \beta_{\text{EM}} = 2
+\]
+\begin{itemize}
+\item \textbf{Nicht-Konservativität}: Die Kraft enthält explizit Geschwindigkeits- ($\dot{r}^2$) und Beschleunigungsterme ($\ddot{r}$), was die Existenz eines klassischen Potentials $\Phi$ verhindert.
+\item \textbf{Pseudo-Potential}: Nur für $\ddot{r} = 0$ lässt sich ein energieähnlicher Ausdruck ableiten:
+\[
+E_{\text{Weber-EM}} = \frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 + \underbrace{\frac{q_1 q_2}{4\pi\epsilon_0 r}\left(1 - \frac{\dot{r}^2}{2c^2}\right)}_{\text{Kein echtes Potential}}
+\]
+\end{itemize}
+
+\subsection{Weber-Gravitation}
+Das Gravitationspotential einer Masse $M$ lautet:
+\[
+\Phi_{\text{WG}}(r) = -\frac{GM}{r}\left(1 + \frac{v^2}{2c^2} + \beta_{\text{G}} \frac{r\ddot{r}}{2c^2}\right), \quad \beta_{\text{G}} = 
+\begin{cases}
+0.5 & \text{(Massen)} \\
+1 & \text{(Photonen)}
+\end{cases}
+\]
+\begin{itemize}
+\item \textbf{Konservativität}: Trotz $\ddot{r}$-Term ist $\Phi_{\text{WG}}$ wohldefiniert, da die Gravitation eine rein anziehende Wechselwirkung ist.
+\item \textbf{Physikalische Begründung}: Der Term $\beta_{\text{G}}\frac{r\ddot{r}}{2c^2}$ ist notwendig, um die Periheldrehung des Merkur ($\beta_{\text{G}} = 0.5$) und Lichtablenkung ($\beta_{\text{G}} = 1$) zu reproduzieren.
+\end{itemize}
+
+\subsection*{Zusammenfassung}
+\begin{tabular}{ll}
+\textbf{Weber-Elektrodynamik} & \textbf{Weber-Gravitation} \\ \hline
+$\beta_{\text{EM}} = 2$ (Lorentz-Kraft) & $\beta_{\text{G}} = 0.5/1$ (ART-Konsistenz) \\
+Kein allgemeines Potential & Wohldefiniertes Potential \\
+Nicht-konservativ (Strahlungsverluste) & Konservativ \\
+\end{tabular}
