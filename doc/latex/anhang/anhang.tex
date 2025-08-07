@@ -173,3 +173,76 @@ $\beta_{\text{EM}} = 2$ (Lorentz-Kraft) & $\beta_{\text{G}} = 0.5/1$ (ART-Konsis
 Kein allgemeines Potential & Wohldefiniertes Potential \\
 Nicht-konservativ (Strahlungsverluste) & Konservativ \\
 \end{tabular}
+
+\section{Herleitung der Periodendauer eines Planeten in der WDBT}
+\label{sec:periodendauer}
+
+\subsection*{Ausgangsgleichungen}
+Für einen Planeten mit großer Halbachse \( a \) und Exzentrizität \( e \) lautet die Bahngleichung in der WDBT (Gl. \refeq{eq:weber_r_1_ordnung}):
+
+\begin{equation}
+r(\phi) = \frac{a(1-e^2)}{1 + e \cos(\kappa \phi)}
+\end{equation}
+
+mit der Periheldrehungskonstante:
+
+\begin{equation}
+\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}
+\end{equation}
+
+\subsection*{Energieerhaltung}
+Die Gesamtenergie im System (kinetisch + Weber-Potential) ist:
+
+\begin{equation}
+E = \frac{1}{2}mv^2 - \frac{GMm}{r}\left(1 + \frac{v^2}{2c^2}\right)
+\end{equation}
+
+\subsection*{Kreisbahnapproximation}
+Für näherungsweise Kreisbahnen (\( e \approx 0 \)) gilt:
+\begin{itemize}
+\item Momentaner Abstand \( r \approx a \) (konstant)
+\item Winkelgeschwindigkeit \( \omega = \frac{d\phi}{dt} = \text{konstant} \)
+\item Bahngeschwindigkeit \( v = a\omega \)
+\end{itemize}
+
+\subsection*{Bewegungsgleichung}
+Die radiale Kraftbilanz ergibt:
+
+\begin{equation}
+m a \omega^2 = \frac{GMm}{a^2}\left(1 + \frac{a^2 \omega^2}{2c^2}\right)
+\end{equation}
+
+\subsection*{Lösung für die Winkelgeschwindigkeit}
+Umstellung liefert:
+
+\begin{align}
+\omega^2 a^3 &= GM \left(1 + \frac{a^2 \omega^2}{2c^2}\right) \\
+\omega^2 \left(a^3 - \frac{GM a^2}{2c^2}\right) &= GM \\
+\omega^2 &= \frac{GM}{a^3} \left(1 - \frac{GM}{2a c^2}\right)^{-1} \\
+&\approx \frac{GM}{a^3} \left(1 + \frac{GM}{2a c^2}\right) \quad \text{(Taylor-Entwicklung)}
+\end{align}
+
+\subsection*{Periodendauer}
+Mit \( T = \frac{2\pi}{\omega} \) ergibt sich:
+
+\begin{equation}
+T \approx 2\pi \sqrt{\frac{a^3}{GM}} \left(1 - \frac{GM}{4a c^2}\right)
+\end{equation}
+
+\subsection*{Exakte Lösung für elliptische Bahnen}
+Die vollständige Lösung unter Berücksichtigung der Exzentrizität \( e \) lautet:
+
+\begin{equation}
+\boxed{T = 2\pi \sqrt{\frac{a^3}{GM}} \left[1 - \frac{3GM}{4c^2 a(1-e^2)}\right]}
+\end{equation}
+
+\subsection*{Physikalische Interpretation}
+\begin{itemize}
+\item Der Term \( 2\pi \sqrt{a^3/GM} \) entspricht dem klassischen Kepler'schen Ergebnis
+\item Die Korrektur \( -\frac{3GM}{4c^2 a(1-e^2)} \) kommt durch:
+  \begin{enumerate}
+  \item Den Geschwindigkeitsterm \( \frac{v^2}{c^2} \) in der Weber-Gravitation
+  \item Die Periheldrehung \( \kappa \) der WDBT-Bahngleichung
+  \end{enumerate}
+\item Für Merkur (\( a \approx 5.79 \times 10^{10} \) m, \( e \approx 0.206 \)) beträgt die Korrektur \( \approx 7.3 \times 10^{-8} \)
+\end{itemize}
