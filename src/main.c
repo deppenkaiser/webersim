@@ -22,14 +22,20 @@ bool state_update(sm_state_t next_state, void* user_data)
 
         cld r_m = vector_norm(&data->objects[i].body.r_m);
         cld v_m_s = vector_norm(&data->objects[i].body.v_m_s);
+        cld periods_per_century = 100.0L / data->objects[i].body.T_a;
+        cld perihel_shift = physics_rad_to_deg(data->objects[i].body.perihel_arc_s) * periods_per_century * 3600.0L;
 
         string_set_cursor_position(1, i);
         printf(COLOR_RED"\r%s: "COLOR_RESET, data->objects[i].body.name);
         string_set_cursor_position(10, i);
+        printf("%.3Lf a ", data->objects[i].body.T_a);
+        string_set_cursor_position(21, i);
+        printf("%.2Lf'' ", perihel_shift);
+        string_set_cursor_position(29, i);
         printf("%.8Lf° ", physics_rad_to_deg(data->objects[i].phi_rad));
-        string_set_cursor_position(25, i);
+        string_set_cursor_position(44, i);
         printf("%.2Lf km/s ", v_m_s / 1000.0L);
-        string_set_cursor_position(37, i);
+        string_set_cursor_position(56, i);
         printf("%.2Lf AU            ", r_m / PHYSICS_AU);
         data->objects[i].phi_rad += vector_norm(&data->objects[i].body.w_rad_s) * data->T_step_s;
         if (data->objects[i].phi_rad > pi_2)

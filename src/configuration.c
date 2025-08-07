@@ -17,7 +17,7 @@ bool state_config(sm_state_t next_state, void* user_data)
         {
             .a_m = 0.0L,
             .e = 0.0L,
-            .T_s = 0.0L,
+            .T_a = 0.0L,
             .mass_kg = PHYSICS_SUN_MASS,
             .name = "Sun"
         }
@@ -128,12 +128,11 @@ bool state_config(sm_state_t next_state, void* user_data)
         {
             data->objects[i].body.e_square = pow(data->objects[i].body.e, 2.0L);
             data->objects[i].body.h = physics_weber_h(&data->objects[i].body, PHYSICS_SUN_MASS);
-            data->objects[i].body.A = physics_weber_alpha(&data->objects[i].body, PHYSICS_SUN_MASS);
-            data->objects[i].body.K_1 = physics_weber_k_1st_order(&data->objects[i].body, PHYSICS_SUN_MASS);
-            data->objects[i].body.K_2 = physics_weber_k_2nd_order(&data->objects[i].body, PHYSICS_SUN_MASS);
-            data->objects[i].body.T_s = physics_weber_periodtime(&data->objects[i].body, PHYSICS_SUN_MASS);
+            data->objects[i].body.K = physics_weber_k(&data->objects[i].body, PHYSICS_SUN_MASS);
+            data->objects[i].body.T_a = physics_weber_periodtime(&data->objects[i].body, PHYSICS_SUN_MASS) / physics_seconds_per_year();
             struct vector_3d perihel_m = physics_weber_position(&data->objects[i].body, PHYSICS_SUN_MASS, 0.0L);
             data->objects[i].body.perihel_m = vector_norm(&perihel_m);
+            data->objects[i].body.perihel_arc_s = physics_deltaphi_per_revolution(&data->objects[i].body, PHYSICS_SUN_MASS);
         }
     }
 
