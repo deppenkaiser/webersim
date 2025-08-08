@@ -246,3 +246,15 @@ Die vollständige Lösung unter Berücksichtigung der Exzentrizität \( e \) lau
   \end{enumerate}
 \item Für Merkur (\( a \approx 5.79 \times 10^{10} \) m, \( e \approx 0.206 \)) beträgt die Korrektur \( \approx 7.3 \times 10^{-8} \)
 \end{itemize}
+
+\section{Dynamik der wahren Anomalie}
+Die zeitliche Entwicklung von \(\phi(t)\) folgt der Differentialgleichung:
+\[
+\frac{d\phi}{dt} = \frac{h (1 + e \cos(\kappa \phi))^2}{a^2 (1-e^2)^2},
+\]
+wobei:
+\begin{itemize}
+\item \(h = \sqrt{GMa(1-e^2)}\) der spezifische Drehimpuls,
+\item \(\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}\) die Periheldrehungskorrektur.
+\end{itemize}
+Die Lösung \(\phi(t)\) muss numerisch integriert werden, um \(\Delta \phi\) für \(\Delta T = T_1 - T_0\) zu erhalten.
