@@ -689,3 +689,50 @@ automatisch in der richtigen Größenordnung von etwa $10^{-123}$ in Planck-Einh
 
 Die Theorie bietet zudem innovative Ansätze für einige der drängendsten Probleme der modernen Physik: Die Baryonenasymmetrie könnte durch CP-verletzende Effekte des Quantenpotentials
 entstanden sein, das Horizontproblem löst sich durch die instantane Vernetzung via $Q$, und die Quantengravitation ergibt sich natürlich aus der Kopplung an $D$-dimensionale Spin-Netzwerke.
+
+\section{Der spezifische Widerstand in der Weber-Elektrodynamik}
+\label{sec:weber_widerstand}
+
+Die Weber-Elektrodynamik bietet eine alternative Herleitung des spezifischen Widerstands $\rho$ in Metallen, die auf direkten Teilchenwechselwirkungen und der fraktalen Raumstruktur basiert. Im Gegensatz zur Drude-Theorie werden dabei keine Quantenfelder, sondern geometrische Eigenschaften des zugrundeliegenden Raumgitters genutzt.
+
+\subsection{Modellierung der Elektronenstreuung}
+Elektronen werden als topologische Defekte (Knoten) in einem fraktalen Dodekaeder-Gitter mit der Dimension $D \approx 2.71$ interpretiert. Der Streuquerschnitt $\sigma_s$ für Elektron-Gitter-Wechselwirkungen ergibt sich aus:
+
+\begin{equation}
+\sigma_s = \lambda_K^2 \left(\frac{l_0}{\lambda_K}\right)^{3-D},
+\end{equation}
+
+wobei:
+\begin{itemize}
+\item $\lambda_K \approx l_0$ die Ausdehnung des Elektronenknotens (Planck-Länge $l_0 \sim 10^{-35}$\,m),
+\item $D = 2.71$ die fraktale Dimension des Raumgitters ist.
+\end{itemize}
+
+\subsection{Herleitung des spezifischen Widerstands}
+Die mittlere Stoßzeit $\tau$ zwischen Elektronen und Gitterknoten folgt aus der Fermigeschwindigkeit $v_F$ und dem Streuquerschnitt:
+
+\begin{equation}
+\tau = \frac{l_0^{3-D}}{v_F \sigma_s}.
+\end{equation}
+
+Einsetzen in die klassische Widerstandsformel liefert:
+
+\begin{equation}
+\rho = \frac{m_e}{n e^2 \tau} = \frac{m_e v_F \sigma_s}{n e^2 l_0^{3-D}},
+\end{equation}
+
+mit:
+\begin{itemize}
+\item $n$: Elektronendichte,
+\item $m_e$: Elektronenmasse,
+\item $e$: Elementarladung.
+\end{itemize}
+
+\subsection{Temperaturabhängigkeit und experimentelle Konsequenzen}
+Die fraktale Struktur modifiziert die Temperaturabhängigkeit gegenüber der Drude-Theorie:
+
+\begin{equation}
+\rho(T) \approx \rho_0 + A \cdot T^{D-1} \quad \text{(mit } D-1 \approx 1.71\text{)}.
+\end{equation}
+
+Diese Abweichung vom linearen Verhalten ($\rho \sim T$) könnte in Supraleitern oder Nanostrukturen nachweisbar sein.
