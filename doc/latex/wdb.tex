@@ -25,13 +25,66 @@
 \usepackage[acronym, toc]{glossaries}
 \usepackage{hyperref}
 \usepackage{parskip}
+\usepackage{pgfplots}
 \input{styles}
 \input{glossar}
 
 \begin{document}
 
 \frontmatter
-\title{WDB-Theorie\\Eine effektive Quantengravitation}
+\begin{tikzpicture}[remember picture, overlay]
+
+  % Hintergrund (Dunkel mit fraktalem Gitter)
+  \fill[hintergrund] (current page.south west) rectangle (current page.north east);
+  \foreach \i in {0,10,...,360} {
+    \draw[quantenblau!10, line width=0.1pt] 
+      (current page.center) -- +(\i:5cm);
+  }
+
+  % Dodekaeder (abstrahiert)
+  \node[rotate=25, scale=2, quantenblau!50] at (current page.center) {
+    \begin{tikzpicture}[scale=0.3]
+      \draw[quantenblau] (0:1) \foreach \a in {72,144,...,360} { -- (\a:1) } -- cycle;
+      \foreach \a in {36,108,...,324} { \draw[quantenblau] (0,0) -- (\a:1.6); }
+    \end{tikzpicture}
+  };
+
+  % Titeltext (mit Schatten-Effekt)
+  \node[align=center, text=white, font=\sffamily\bfseries\Huge] 
+    at ($(current page.center)+(0,3cm)$) {
+    \textbf{Die Weber-De Broglie-Bohm-Theorie}
+  };
+  \node[align=center, text=quantenblau!80, font=\sffamily\Large] 
+    at ($(current page.center)+(0,1.8cm)$)
+    {
+        Eine effektive Quantengravitation
+    };
+
+  % Kernformeln (rechts unten)
+  \node[align=left, anchor=south east, text=weberrot!70, font=\small] 
+    at ($(current page.south east)+(-1cm,1cm)$) {
+    $\displaystyle \vec{F}_{\text{WG}} = -\frac{GMm}{r^2}\left(1-\frac{\dot{r}^2}{c^2}+\beta\frac{r\ddot{r}}{c^2}\right)$
+  };
+  \node[align=left, anchor=north east, text=quantenblau!70, font=\small] 
+    at ($(current page.south east)+(-1cm,3cm)$) {
+    $\displaystyle Q = -\frac{\hbar^2}{2m}\frac{\nabla^2\sqrt{\rho}}{\sqrt{\rho}}$
+  };
+
+  % Autor (unten mittig)
+  \node[align=center, text=white, font=\sffamily\large] 
+    at ($(current page.south)+(0,1cm)$) {
+    \textbf{Michael Czybor}
+  };
+
+  % Fraktale Dimension (links oben)
+  \node[align=right, text=quantenblau!50, font=\small] 
+    at ($(current page.north west)+(2cm,-1cm)$) {
+    $D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71$
+  };
+
+\end{tikzpicture}
+
+\title{Die Weber-De Broglie-Bohm-Theorie\\Eine effektive Quantengravitation}
 \author{Michael Czybor}
 \date{\today}
 \maketitle
@@ -103,6 +156,7 @@ Forscher attraktiv, die nach alternativen Pfaden in der Grundlagenforschung such
 \end{flushright}
 
 \tableofcontents
+\listoffigures
 
 \mainmatter
 \include{einleitung/einleitung}

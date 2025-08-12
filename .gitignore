@@ -14,4 +14,4 @@ build
 *.syn*
 doc/latex/wdb.pdf
 doc/latex/wdb.toc
-
+doc/latex/wdb.lof
