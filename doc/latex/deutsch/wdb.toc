@@ -1,0 +1,169 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Grundlagen einer alternativen Quantengravitation}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Dogmatismus und blinde Flecken der modernen Physik}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Spekulation statt Fortschritt}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Alternative Theorien}{2}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Abweichende Perspektiven in der Physik: Licht, Relativität und alternative Modelle}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Feynmans Teilchenmodell des Lichts}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Widersprüche in der QED: Überlichtschnelle Photonen und Pfadintegrale}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Energieabhängige Lichtgeschwindigkeit? Experimentelle Hinweise}{3}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Die Entwicklung des Wellenkonzepts in der Physik}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Wellenphänomene: Die Dualität von instantaner Ganzheit und lokaler Ausbreitung}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Das erweiterte Kausalitätskonzept: Eine synthetische Betrachtung von instantaner Ganzheit und lokaler Dynamik}{5}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Weber-Elektrodynamik}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Die Gleichung der Weber-Elektrodynamik}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Impuls und Energie}{7}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Lichtgeschwindigkeit und Raummodell}{7}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Vorteile der Weber-Elektrodynamik}{7}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Vergleichende Beispielrechnungen}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Kraft zwischen gleichförmig bewegten Ladungen}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Strahlungsdämpfung harmonischer Schwingung}{8}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Interpretation der Ergebnisse}{8}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Vektorielle Form der Weber-Kraft}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Herleitung aus der skalaren Form}{9}{subsection.2.3.1}%
+\contentsline {subsubsection}{Umrechnung der zeitlichen Ableitungen}{9}{section*.7}%
+\contentsline {subsection}{\numberline {2.3.2}Vollständige vektorielle Form}{9}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Physikalische Interpretation}{10}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Anwendungsbeispiel: Kreisförmige Bewegung}{10}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Grafische Darstellung der Kraftkomponenten}{10}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Vektorielle Komponentenzerlegung}{10}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.7}Praktische Anwendungsfälle}{11}{subsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.3.8}Vorteile gegenüber der Maxwell-Theorie}{11}{subsection.2.3.8}%
+\contentsline {subsection}{\numberline {2.3.9}Konkrete Beispiele}{11}{subsection.2.3.9}%
+\contentsline {subsubsection}{1. Nicht-neutrale Plasmen in Fallen}{11}{section*.9}%
+\contentsline {subsubsection}{2. Molekulare Dynamik in starken Feldern}{12}{section*.10}%
+\contentsline {subsection}{\numberline {2.3.10}Grenzen der Anwendbarkeit}{12}{subsection.2.3.10}%
+\contentsline {section}{\numberline {2.4}Die Weber-Elektrodynamik und das EPR-Paradoxon: Zwei komplementäre Ansätze}{12}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Nicht-Lokalität: Zwei physikalische Manifestationen}{12}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Instantaneität und Kausalitätsbegriff}{13}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Raummodelle}{13}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Weber-Gravitation}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Herleitung der Weber-Gravitation}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Test am Merkur-Perihel – und warum die Theorie scheiterte}{15}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Modifizierter Tisserand-Ansatz}{15}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Physikalische Bedeutung des beta-Parameters}{16}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Anwendungen des beta-Parameters}{16}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Expansion (Hubble-Konstante) und Rotverschiebung in der Weber-Gravitation}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Rotverschiebung in der Weber-Gravitation}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Hubble-Konstante in der Weber-Gravitation}{18}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Konsequenzen für die Kosmologie}{18}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Experimentelle Unterscheidung}{18}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Konsequenzen für die Größe des Universums}{18}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Statisches Universum}{19}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Kosmologische Implikationen}{19}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Bahngleichung 1. Ordnung}{19}{subsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.2.9}Bahngleichung 2. Ordnung}{20}{subsection.3.2.9}%
+\contentsline {chapter}{\numberline {4}De-Broglie-Bohm-Theorie}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Eine kausale Alternative zur Quantenmechanik}{21}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Grundlegende Konzepte der DBT}{21}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Vergleich mit der Standardquantenmechanik}{22}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Nicht-Lokalität und Kausalität}{22}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Synthese mit der Weber-Elektrodynamik}{22}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Zusammenfassung und Ausblick}{22}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Die Synthese von WG und DBT}{23}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Herleitung der Synthese}{23}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Herleitung der Rotationskurven in der WG-DBT-Synthese}{23}{subsection.4.2.2}%
+\contentsline {subsubsection}{1. Weber-Gravitation für Kreisbahnen}{24}{section*.11}%
+\contentsline {subsubsection}{2. Quantenpotential für exponentielle Dichte}{24}{section*.12}%
+\contentsline {subsubsection}{3. Bewegungsgleichung mit Quantenpotential}{24}{section*.13}%
+\contentsline {subsubsection}{4. Asymptotisches Verhalten}{25}{section*.14}%
+\contentsline {section}{\numberline {4.3}Herleitung der Lichtablenkung in der WG-DBT-Synthese}{25}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Grundgleichungen der Synthese}{25}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Bahngleichung für Photonen}{25}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Lösung für kleine Ablenkungen}{26}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Quantenmechanische Korrektur in der WG-DBT-Synthese}{26}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Experimentelle Konsequenzen}{26}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Herleitung des Shapiro-Effekts in der Weber-Gravitation}{26}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Metrik und Nullgeodäten}{27}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Laufzeitintegral}{27}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Wellenlängenabhängigkeit}{27}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Experimentelle Konsequenzen}{27}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Shapiro-Effekt in der WG-DBT-Synthese}{27}{subsection.4.4.5}%
+\contentsline {section}{\numberline {4.5}Die Bahngleichung in der WG-DBT-Synthese}{28}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Herleitung der kompensierten Lösung}{28}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Mathematischer Beweis der Termkompensation}{28}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Vertiefende Erklärungen zur Bahngleichung}{29}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}Herleitung der Winkelgeschwindigkeit}{30}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Winkelgeschwindigkeit in der WG-DBT-Synthese}{30}{subsection.4.6.1}%
+\contentsline {chapter}{\numberline {5}Diskussion}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Eine quantisierte De-Broglie-Bohm-Theorie – Konsequenzen und Perspektiven}{31}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Grundannahmen des Modells}{31}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Konsequenzen für die Dynamik der DBT}{31}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Experimentelle Konsequenzen}{32}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Philosophische Implikationen}{32}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Die quantisierte De-Broglie-Bohm-Theorie}{32}{subsection.5.1.5}%
+\contentsline {subsubsection}{Grundgleichungen}{32}{section*.18}%
+\contentsline {subsubsection}{Bewegungsgleichung}{33}{section*.19}%
+\contentsline {section}{\numberline {5.2}Emergenz physikalischer Theorien aus diskreten Strukturen}{33}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Emergenz der Speziellen Relativitätstheorie}{33}{subsection.5.2.1}%
+\contentsline {subsubsection}{Herleitung der SRT-Grenzfalles}{33}{section*.20}%
+\contentsline {subsubsection}{Physikalische Interpretation}{34}{section*.21}%
+\contentsline {subsection}{\numberline {5.2.2}Emergenz der Allgemeinen Relativitätstheorie}{34}{subsection.5.2.2}%
+\contentsline {subsubsection}{Dodekaeder-Raummodell}{34}{section*.22}%
+\contentsline {subsubsection}{Mittelung der Gitterfluktuationen}{34}{section*.23}%
+\contentsline {subsubsection}{Einstein-Gleichungen}{34}{section*.24}%
+\contentsline {subsection}{\numberline {5.2.3}Fraktale Grundlagen der Dodekaeder-Struktur}{34}{subsection.5.2.3}%
+\contentsline {subsubsection}{Skaleninvariantes Wachstumsmodell}{34}{section*.25}%
+\contentsline {subsubsection}{Selbstkonsistenzbedingung}{35}{section*.26}%
+\contentsline {subsubsection}{Mathematischer Beweis}{35}{section*.27}%
+\contentsline {subsection}{\numberline {5.2.4}Experimentelle Konsequenzen}{35}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Zusammenfassung}{35}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Die fraktale Dimension}{35}{subsection.5.2.6}%
+\contentsline {section}{\numberline {5.3}Fraktale Raumstruktur und kritische Dimension}{36}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Mathematische Herleitung der fraktalen Dimension}{36}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Physikalische Interpretation}{36}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Vergleich mit der Euler-Zahl}{37}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Konsequenzen für die Quantengravitation}{37}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Das fundamentale Raumwachstumsgesetz}{37}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Kritik am Euler'schen Wachstumsmodell}{37}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Das fraktale Raumwachstumsgesetz}{38}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Physikalische Konsequenzen}{38}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Experimentelle Evidenz}{39}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5.5}Paradigmenwechsel in der Wachstumsmodellierung}{39}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Herleitung der Naturkonstanten aus fraktaler Raumstruktur}{40}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Fundamentale Parameter des Raumgitters}{40}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Herleitung der Lichtgeschwindigkeit}{40}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Gravitationskonstante und Quantenpotential}{41}{subsection.5.6.3}%
+\contentsline {subsection}{\numberline {5.6.4}Planck-Wirkungsquantum}{41}{subsection.5.6.4}%
+\contentsline {subsection}{\numberline {5.6.5}Feinstrukturkonstante als topologische Invariante}{41}{subsection.5.6.5}%
+\contentsline {section}{\numberline {5.7}Materieerzeugung im nicht-Urknall-basierten Universum}{42}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Mögliche Erklärungsansätze im Überblick}{42}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Die minimalste universelle Erklärung}{43}{subsection.5.7.2}%
+\contentsline {subsection}{\numberline {5.7.3}Rolle der weiteren Mechanismen}{43}{subsection.5.7.3}%
+\contentsline {subsection}{\numberline {5.7.4}Der nächste minimalste Schritt}{43}{subsection.5.7.4}%
+\contentsline {section}{\numberline {5.8}Materieentstehung in der WDBT}{44}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Die Dynamik von Materie und Kosmos in der WDBT}{45}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Der spezifische Widerstand in der Weber-Elektrodynamik}{46}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Modellierung der Elektronenstreuung}{47}{subsection.5.10.1}%
+\contentsline {subsection}{\numberline {5.10.2}Herleitung des spezifischen Widerstands}{47}{subsection.5.10.2}%
+\contentsline {subsection}{\numberline {5.10.3}Temperaturabhängigkeit und experimentelle Konsequenzen}{47}{subsection.5.10.3}%
+\contentsline {chapter}{\numberline {6}Fazit}{49}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Systematische Widersprüche der etablierten Theorien und ihre Auflösung durch die WDBT}{49}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Die Widersprüche der ART}{49}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Die Widersprüche der Maxwell-Theorie}{49}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Die Heuchelei des Establishments}{50}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Der Weg zur wissenschaftlichen Revolution}{50}{subsection.6.1.4}%
+\contentsline {chapter}{\numberline {7}Anhang}{51}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Der Aharonov-Bohm-Effekt}{51}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Experimentelle Anordnung}{51}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Theoretische Beschreibung}{51}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Physikalische Bedeutung}{51}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Experimentelle Bestätigung}{51}{subsection.7.1.4}%
+\contentsline {section}{\numberline {7.2}Bellsche Ungleichungen}{52}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Theoretische Formulierung}{52}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Quantenmechanische Vorhersage}{52}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Experimentelle Bestätigung}{52}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Interpretation}{52}{subsection.7.2.4}%
+\contentsline {section}{\numberline {7.3}Exakte Herleitung der Weber-Gravitationsbahngleichung}{53}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Ausgangsgleichungen}{53}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Transformation auf Winkelkoordinaten}{53}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Störungsrechnung}{53}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Lösung der Störungsgleichung}{53}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}Periheldrehung}{54}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}Kritische Diskussion}{54}{subsection.7.3.6}%
+\contentsline {section}{\numberline {7.4}Potentialunterschiede in Weber-Theorien}{54}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Weber-Elektrodynamik}{54}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Weber-Gravitation}{54}{subsection.7.4.2}%
+\contentsline {section}{\numberline {7.5}Herleitung der Periodendauer eines Planeten in der WDBT}{55}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Dynamik der wahren Anomalie}{56}{section.7.6}%
