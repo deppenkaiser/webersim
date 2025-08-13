@@ -1,260 +1,259 @@
-\chapter{Anhang}
-\section{Der Aharonov-Bohm-Effekt}
+\chapter{Appendix}
+\section{The Aharonov-Bohm Effect}
 \label{sec:aharonov-bohm}
 
-Der \textbf{Aharonov-Bohm-Effekt} (AB-Effekt) ist ein grundlegendes Quantenphänomen, das zeigt, dass elektromagnetische Potentiale ($\vec{A}$, $\Phi$) eine direkte physikalische
-Wirkung auf Quantenteilchen haben, selbst in Regionen wo die Felder ($\vec{E}$, $\vec{B}$) null sind.
+The \textbf{Aharonov-Bohm effect} (AB effect) is a fundamental quantum phenomenon demonstrating that electromagnetic potentials ($\vec{A}$, $\Phi$) directly influence quantum particles, even in regions where fields ($\vec{E}$, $\vec{B}$) are zero.
 
-\subsection{Experimentelle Anordnung}
-Ein Elektronenstrahl wird in zwei Pfade aufgeteilt, die eine Region mit magnetischem Fluss $\Phi$ umschließen.
+\subsection{Experimental Setup}
+An electron beam is split into two paths enclosing a region with magnetic flux $\Phi$.
 
-\subsection{Theoretische Beschreibung}
-Die Wellenfunktion $\psi$ eines Teilchens mit Ladung $q$ wird durch das Vektorpotential $\vec{A}$ modifiziert:
+\subsection{Theoretical Description}
+The wavefunction $\psi$ of a particle with charge $q$ is modified by the vector potential $\vec{A}$:
 
 \begin{equation}
 \psi \rightarrow \psi \cdot \exp\left(i\frac{q}{\hbar}\int \vec{A}\cdot d\vec{l}\right)
 \end{equation}
 
-Die Phasendifferenz zwischen den beiden Pfaden beträgt:
+The phase difference between the two paths is:
 
 \begin{equation}
 \Delta\phi = \frac{q}{\hbar}\oint \vec{A}\cdot d\vec{l} = \frac{q}{\hbar}\Phi_B
 \end{equation}
 
-\subsection{Physikalische Bedeutung}
+\subsection{Physical Significance}
 \begin{itemize}
-\item \textbf{Nicht-Lokalität}: Quantenteilchen \enquote{spüren} $\vec{A}$ auch in feldfreien Regionen
-\item \textbf{Topologische Invariante}: Die Phase hängt nur vom eingeschlossenen Fluss $\Phi_B$ ab
-\item \textbf{Paradigmenwechsel}: Widerlegt die klassische Annahme, dass nur $\vec{E}$ und $\vec{B}$ physikalisch relevant sind
+\item \textbf{Non-locality}: Quantum particles "sense" $\vec{A}$ even in field-free regions.
+\item \textbf{Topological invariant}: The phase depends only on the enclosed flux $\Phi_B$.
+\item \textbf{Paradigm shift}: Refutes the classical assumption that only $\vec{E}$ and $\vec{B}$ are physically relevant.
 \end{itemize}
 
-\subsection{Experimentelle Bestätigung}
+\subsection{Experimental Confirmation}
 \begin{itemize}
-\item Theoretische Vorhersage: Aharonov \& Bohm (1959)
-\item Erste Experimente: Chambers (1960), Tonomura et al. (1982)
-\item Moderne Anwendungen: Quanteninterferometer, topologische Quantenmaterialien
+\item Theoretical prediction: Aharonov \& Bohm (1959).
+\item First experiments: Chambers (1960), Tonomura et al. (1982).
+\item Modern applications: Quantum interferometers, topological quantum materials.
 \end{itemize}
 
-\section{Bellsche Ungleichungen}
+\section{Bell Inequalities}
 \label{sec:bell}
 
-Die \textbf{Bellsche Ungleichung} (1964) ist ein zentrales Ergebnis der Quantenphysik, das zeigt, dass keine lokale Theorie mit verborgenen Variablen die Vorhersagen der Quantenmechanik reproduzieren kann.
+The \textbf{Bell inequality} (1964) is a cornerstone of quantum physics, proving that no local hidden-variable theory can reproduce quantum mechanical predictions.
 
-\subsection{Theoretische Formulierung}
-Für ein verschränktes Teilchenpaar (z.B. Photonen mit Spin- oder Polarisationskorrelation) gilt die CHSH-Ungleichung:
+\subsection{Theoretical Formulation}
+For an entangled particle pair (e.g., photons with spin/polarization correlations), the CHSH inequality holds:
 
 \begin{equation}
 S = |E(a,b) - E(a,b')| + |E(a',b) + E(a',b')| \leq 2
 \end{equation}
 
-wobei $E(\theta_1, \theta_2)$ die Korrelationsfunktion der Messungen bei Winkeln $\theta_1$ und $\theta_2$ ist.
+where $E(\theta_1, \theta_2)$ is the correlation function for measurements at angles $\theta_1$ and $\theta_2$.
 
-\subsection{Quantenmechanische Vorhersage}
-Die Quantenmechanik erlaubt für bestimmte Winkelkombinationen:
+\subsection{Quantum Mechanical Prediction}
+Quantum mechanics permits for certain angle combinations:
 
 \begin{equation}
 S_{\text{QM}} = 2\sqrt{2} \approx 2.828 > 2
 \end{equation}
 
-was die Bell-Ungleichung verletzt.
+violating Bell's inequality.
 
-\subsection{Experimentelle Bestätigung}
+\subsection{Experimental Confirmation}
 \begin{itemize}
-\item Erste Tests: Alain Aspect (1982) mit Photonenpaaren
-\item Loophole-free Experimente: Hensen et al. (2015), Zeilinger-Gruppe (2017)
-\item Heutige Anwendungen: Quantenkryptographie (BB84-Protokoll)
+\item First tests: Alain Aspect (1982) with photon pairs.
+\item Loophole-free experiments: Hensen et al. (2015), Zeilinger group (2017).
+\item Current applications: Quantum cryptography (BB84 protocol).
 \end{itemize}
 
 \subsection{Interpretation}
 \begin{itemize}
-\item Widerlegung lokaler realistischer Theorien (Einstein-Podolsky-Rosen-Paradoxon)
-\item Bestätigung der Quantenverschränkung als physikalische Realität
-\item Grundlage für Quanteninformationstechnologien
+\item Refutes local realistic theories (Einstein-Podolsky-Rosen paradox).
+\item Confirms quantum entanglement as physical reality.
+\item Foundation for quantum information technologies.
 \end{itemize}
 
 \newpage
-\section{Exakte Herleitung der Weber-Gravitationsbahngleichung}
-\label{sec:exakte_herleitung}
+\section{Exact Derivation of the Weber Gravitational Orbital Equation}
+\label{sec:exact_derivation}
 
-In diesem Anhang leiten wir die Bahngleichung der Weber-Gravitation (WG) streng her, ohne die in Kapitel~3 verwendeten Vereinfachungen. Die volle Bewegungsgleichung wird bis zur Ordnung $\mathcal{O}(c^{-4})$ entwickelt.
+This appendix rigorously derives the orbital equation of Weber gravity (WG) without the simplifications used in Chapter~3. The full equation of motion is expanded to order $\mathcal{O}(c^{-4})$.
 
-\subsection{Ausgangsgleichungen}
-Die Weber-Gravitationskraft lautet:
+\subsection{Starting Equations}
+The Weber gravitational force is:
 \begin{equation}
 \vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right)\hat{\vec{r}}
 \end{equation}
-Für Planetenbahnen setzen wir $\beta = 0.5$ (siehe Abschnitt~3.1.2). Die Bewegungsgleichung in Polarkoordinaten ist:
+For planetary orbits, we set $\beta = 0.5$ (see Section~3.1.2). The equation of motion in polar coordinates is:
 \begin{equation}
 m\left(\ddot{r} - r\dot{\phi}^2\right) = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)
 \end{equation}
 
-\subsection{Transformation auf Winkelkoordinaten}
-Mit dem Drehimpuls $h = r^2\dot{\phi} = \text{const.}$ und der Substitution $u = 1/r$ erhalten wir:
+\subsection{Transformation to Angular Coordinates}
+Using angular momentum $h = r^2\dot{\phi} = \text{const.}$ and substitution $u = 1/r$, we obtain:
 \begin{align}
 \dot{r} &= -h\frac{du}{d\phi} \\
 \ddot{r} &= -h^2u^2\frac{d^2u}{d\phi^2}
 \end{align}
-Einsetzen in die Bewegungsgleichung ergibt die exakte Differentialgleichung:
+Substituting into the equation of motion yields the exact differential equation:
 \begin{equation}
 \frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2}\left[1 - h^2\left(\frac{du}{d\phi}\right)^2 + \frac{h^2u}{2}\frac{d^2u}{d\phi^2}\right]
 \end{equation}
 
-\subsection{Störungsrechnung}
-Wir entwickeln die Lösung als Reihe:
+\subsection{Perturbation Theory}
+We expand the solution as a series:
 \begin{equation}
 u(\phi) = u_0(\phi) + \frac{GM}{c^2h^2}u_1(\phi) + \mathcal{O}(c^{-4})
 \end{equation}
-wobei $u_0$ die Newtonsche Lösung ist:
+where $u_0$ is the Newtonian solution:
 \begin{equation}
 u_0(\phi) = \frac{GM}{h^2}(1 + e\cos\phi)
 \end{equation}
 
-Die Störungsgleichung für $u_1$ lautet:
+The perturbation equation for $u_1$ is:
 \begin{equation}
 \frac{d^2u_1}{d\phi^2} + u_1 = \frac{G^2M^2e^2}{h^4}\left(\sin^2\phi + \frac{1 + e\cos\phi}{2}\cos\phi\right)
 \end{equation}
 
-\subsection{Lösung der Störungsgleichung}
-Die allgemeine Lösung besteht aus homogenen und partikulären Anteilen:
+\subsection{Solution of the Perturbation Equation}
+The general solution consists of homogeneous and particular terms:
 \begin{equation}
 u_1(\phi) = \frac{G^2M^2e}{8h^4}\left[3e\phi\sin\phi + (4 + e^2)\cos\phi\right]
 \end{equation}
 
-\subsection{Periheldrehung}
-Der nicht-periodische Term $\propto \phi\sin\phi$ führt zur Perihelverschiebung:
+\subsection{Perihelion Precession}
+The non-periodic term $\propto \phi\sin\phi$ causes perihelion shift:
 \begin{equation}
 \Delta\phi = \frac{6\pi G^2M^2}{c^2h^4} = \frac{6\pi GM}{c^2a(1 - e^2)}
 \end{equation}
-Dies stimmt exakt mit den Beobachtungen und der ART überein.
+This matches observations and GR exactly.
 
-\subsection{Kritische Diskussion}
+\subsection{Critical Discussion}
 \begin{itemize}
-\item Die Wahl $\beta = 0.5$ ist essentiell - andere Werte führen zu falschen Vorhersagen
-\item Die Vernachlässigung von $\dot{r}^2$ ist nur für $e \ll 1$ gerechtfertigt
-\item Die DBT-Kompensation der $\mathcal{O}(c^{-4})$-Terme (Gl. \refeq{eq:shapiro}) stellt die Bahnstabilität sicher
+\item The choice $\beta = 0.5$ is essential – other values yield incorrect predictions.
+\item Neglecting $\dot{r}^2$ is justified only for $e \ll 1$.
+\item DBT compensation of $\mathcal{O}(c^{-4})$ terms (Eq. \refeq{eq:shapiro}) ensures orbital stability.
 \end{itemize}
 
-Diese Herleitung zeigt, dass die WG nur in Kombination mit der DBT eine konsistente Alternative zur ART darstellt.
+This derivation shows that WG, combined with DBT, forms a consistent alternative to GR.
 
-\section{Potentialunterschiede in Weber-Theorien}
+\section{Potential Differences in Weber Theories}
 \label{sec:weber_potentials}
 
-\subsection{Weber-Elektrodynamik}
-Die Weber-Kraft zwischen zwei Ladungen $q_1$ und $q_2$ lautet:
+\subsection{Weber Electrodynamics}
+The Weber force between two charges $q_1$ and $q_2$ is:
 \[
 \vec{F}_{\text{Weber-EM}} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{EM}} \frac{r\ddot{r}}{c^2}\right)\hat{r}, \quad \beta_{\text{EM}} = 2
 \]
 \begin{itemize}
-\item \textbf{Nicht-Konservativität}: Die Kraft enthält explizit Geschwindigkeits- ($\dot{r}^2$) und Beschleunigungsterme ($\ddot{r}$), was die Existenz eines klassischen Potentials $\Phi$ verhindert.
-\item \textbf{Pseudo-Potential}: Nur für $\ddot{r} = 0$ lässt sich ein energieähnlicher Ausdruck ableiten:
+\item \textbf{Non-conservativity}: The force explicitly includes velocity ($\dot{r}^2$) and acceleration terms ($\ddot{r}$), precluding a classical potential $\Phi$.
+\item \textbf{Pseudo-potential}: Only for $\ddot{r} = 0$ can an energy-like expression be derived:
 \[
-E_{\text{Weber-EM}} = \frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 + \underbrace{\frac{q_1 q_2}{4\pi\epsilon_0 r}\left(1 - \frac{\dot{r}^2}{2c^2}\right)}_{\text{Kein echtes Potential}}
+E_{\text{Weber-EM}} = \frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 + \underbrace{\frac{q_1 q_2}{4\pi\epsilon_0 r}\left(1 - \frac{\dot{r}^2}{2c^2}\right)}_{\text{Not a true potential}}
 \]
 \end{itemize}
 
-\subsection{Weber-Gravitation}
-Das Gravitationspotential einer Masse $M$ lautet:
+\subsection{Weber Gravity}
+The gravitational potential of a mass $M$ is:
 \[
 \Phi_{\text{WG}}(r) = -\frac{GM}{r}\left(1 + \frac{v^2}{2c^2} + \beta_{\text{G}} \frac{r\ddot{r}}{2c^2}\right), \quad \beta_{\text{G}} = 
 \begin{cases}
-0.5 & \text{(Massen)} \\
-1 & \text{(Photonen)}
+0.5 & \text{(masses)} \\
+1 & \text{(photons)}
 \end{cases}
 \]
 \begin{itemize}
-\item \textbf{Konservativität}: Trotz $\ddot{r}$-Term ist $\Phi_{\text{WG}}$ wohldefiniert, da die Gravitation eine rein anziehende Wechselwirkung ist.
-\item \textbf{Physikalische Begründung}: Der Term $\beta_{\text{G}}\frac{r\ddot{r}}{2c^2}$ ist notwendig, um die Periheldrehung des Merkur ($\beta_{\text{G}} = 0.5$) und Lichtablenkung ($\beta_{\text{G}} = 1$) zu reproduzieren.
+\item \textbf{Conservativity}: Despite the $\ddot{r}$ term, $\Phi_{\text{WG}}$ is well-defined because gravity is purely attractive.
+\item \textbf{Physical justification}: The term $\beta_{\text{G}}\frac{r\ddot{r}}{2c^2}$ is necessary to reproduce Mercury's perihelion precession ($\beta_{\text{G}} = 0.5$) and light deflection ($\beta_{\text{G}} = 1$).
 \end{itemize}
 
-\subsection*{Zusammenfassung}
+\subsection*{Summary}
 \begin{tabular}{ll}
-\textbf{Weber-Elektrodynamik} & \textbf{Weber-Gravitation} \\ \hline
-$\beta_{\text{EM}} = 2$ (Lorentz-Kraft) & $\beta_{\text{G}} = 0.5/1$ (ART-Konsistenz) \\
-Kein allgemeines Potential & Wohldefiniertes Potential \\
-Nicht-konservativ (Strahlungsverluste) & Konservativ \\
+\textbf{Weber Electrodynamics} & \textbf{Weber Gravity} \\ \hline
+$\beta_{\text{EM}} = 2$ (Lorentz force) & $\beta_{\text{G}} = 0.5/1$ (GR consistency) \\
+No general potential & Well-defined potential \\
+Non-conservative (radiation losses) & Conservative \\
 \end{tabular}
 
-\section{Herleitung der Periodendauer eines Planeten in der WDBT}
-\label{sec:periodendauer}
+\section{Derivation of Planetary Orbital Period in WDBT}
+\label{sec:orbital_period}
 
-\subsection*{Ausgangsgleichungen}
-Für einen Planeten mit großer Halbachse \( a \) und Exzentrizität \( e \) lautet die Bahngleichung in der WDBT (Gl. \refeq{eq:weber_r_1_ordnung}):
+\subsection*{Starting Equations}
+For a planet with semi-major axis \( a \) and eccentricity \( e \), the orbital equation in WDBT (Eq. \refeq{eq:weber_r_1_ordnung}) is:
 
 \begin{equation}
 r(\phi) = \frac{a(1-e^2)}{1 + e \cos(\kappa \phi)}
 \end{equation}
 
-mit der Periheldrehungskonstante:
+with the perihelion precession constant:
 
 \begin{equation}
 \kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}
 \end{equation}
 
-\subsection*{Energieerhaltung}
-Die Gesamtenergie im System (kinetisch + Weber-Potential) ist:
+\subsection*{Energy Conservation}
+The total energy (kinetic + Weber potential) is:
 
 \begin{equation}
 E = \frac{1}{2}mv^2 - \frac{GMm}{r}\left(1 + \frac{v^2}{2c^2}\right)
 \end{equation}
 
-\subsection*{Kreisbahnapproximation}
-Für näherungsweise Kreisbahnen (\( e \approx 0 \)) gilt:
+\subsection*{Circular Orbit Approximation}
+For near-circular orbits (\( e \approx 0 \)):
 \begin{itemize}
-\item Momentaner Abstand \( r \approx a \) (konstant)
-\item Winkelgeschwindigkeit \( \omega = \frac{d\phi}{dt} = \text{konstant} \)
-\item Bahngeschwindigkeit \( v = a\omega \)
+\item Instantaneous distance \( r \approx a \) (constant).
+\item Angular velocity \( \omega = \frac{d\phi}{dt} = \text{constant} \).
+\item Orbital velocity \( v = a\omega \).
 \end{itemize}
 
-\subsection*{Bewegungsgleichung}
-Die radiale Kraftbilanz ergibt:
+\subsection*{Equation of Motion}
+The radial force balance yields:
 
 \begin{equation}
 m a \omega^2 = \frac{GMm}{a^2}\left(1 + \frac{a^2 \omega^2}{2c^2}\right)
 \end{equation}
 
-\subsection*{Lösung für die Winkelgeschwindigkeit}
-Umstellung liefert:
+\subsection*{Solution for Angular Velocity}
+Rearranging gives:
 
 \begin{align}
 \omega^2 a^3 &= GM \left(1 + \frac{a^2 \omega^2}{2c^2}\right) \\
 \omega^2 \left(a^3 - \frac{GM a^2}{2c^2}\right) &= GM \\
 \omega^2 &= \frac{GM}{a^3} \left(1 - \frac{GM}{2a c^2}\right)^{-1} \\
-&\approx \frac{GM}{a^3} \left(1 + \frac{GM}{2a c^2}\right) \quad \text{(Taylor-Entwicklung)}
+&\approx \frac{GM}{a^3} \left(1 + \frac{GM}{2a c^2}\right) \quad \text{(Taylor expansion)}
 \end{align}
 
-\subsection*{Periodendauer}
-Mit \( T = \frac{2\pi}{\omega} \) ergibt sich:
+\subsection*{Orbital Period}
+With \( T = \frac{2\pi}{\omega} \), we obtain:
 
 \begin{equation}
 T \approx 2\pi \sqrt{\frac{a^3}{GM}} \left(1 - \frac{GM}{4a c^2}\right)
 \end{equation}
 
-\subsection*{Exakte Lösung für elliptische Bahnen}
-Die vollständige Lösung unter Berücksichtigung der Exzentrizität \( e \) lautet:
+\subsection*{Exact Solution for Elliptical Orbits}
+The full solution including eccentricity \( e \) is:
 
 \begin{equation}
 \boxed{T = 2\pi \sqrt{\frac{a^3}{GM}} \left[1 - \frac{3GM}{4c^2 a(1-e^2)}\right]}
 \end{equation}
 
-\subsection*{Physikalische Interpretation}
+\subsection*{Physical Interpretation}
 \begin{itemize}
-\item Der Term \( 2\pi \sqrt{a^3/GM} \) entspricht dem klassischen Kepler'schen Ergebnis
-\item Die Korrektur \( -\frac{3GM}{4c^2 a(1-e^2)} \) kommt durch:
+\item The term \( 2\pi \sqrt{a^3/GM} \) matches the classical Keplerian result.
+\item The correction \( -\frac{3GM}{4c^2 a(1-e^2)} \) arises from:
   \begin{enumerate}
-  \item Den Geschwindigkeitsterm \( \frac{v^2}{c^2} \) in der Weber-Gravitation
-  \item Die Periheldrehung \( \kappa \) der WDBT-Bahngleichung
+  \item The velocity term \( \frac{v^2}{c^2} \) in Weber gravity.
+  \item The perihelion precession \( \kappa \) in the WDBT orbital equation.
   \end{enumerate}
-\item Für Merkur (\( a \approx 5.79 \times 10^{10} \) m, \( e \approx 0.206 \)) beträgt die Korrektur \( \approx 7.3 \times 10^{-8} \)
+\item For Mercury (\( a \approx 5.79 \times 10^{10} \) m, \( e \approx 0.206 \)), the correction is \( \approx 7.3 \times 10^{-8} \).
 \end{itemize}
 
-\section{Dynamik der wahren Anomalie}
-Die zeitliche Entwicklung von \(\phi(t)\) folgt der Differentialgleichung:
+\section{Dynamics of True Anomaly}
+The time evolution of \(\phi(t)\) follows the differential equation:
 \[
 \frac{d\phi}{dt} = \frac{h (1 + e \cos(\kappa \phi))^2}{a^2 (1-e^2)^2},
 \]
-wobei:
+where:
 \begin{itemize}
-\item \(h = \sqrt{GMa(1-e^2)}\) der spezifische Drehimpuls,
-\item \(\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}\) die Periheldrehungskorrektur.
+\item \(h = \sqrt{GMa(1-e^2)}\) is the specific angular momentum,
+\item \(\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}\) is the perihelion precession correction.
 \end{itemize}
-Die Lösung \(\phi(t)\) muss numerisch integriert werden, um \(\Delta \phi\) für \(\Delta T = T_1 - T_0\) zu erhalten.
+The solution \(\phi(t)\) requires numerical integration to determine \(\Delta \phi\) for \(\Delta T = T_1 - T_0\).

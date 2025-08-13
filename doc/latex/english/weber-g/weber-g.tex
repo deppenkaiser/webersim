@@ -1,173 +1,171 @@
-\chapter{Weber-Gravitation}
-Dieses Kapitel beschäftigt sich nur mit der \gls{wg}, und soll die Leistungsfähigkeit der \gls{wg} gegenüber der \gls{art} aufzeigen.
-\section{Herleitung der Weber-Gravitation}
-Die Idee einer gravitativen Analogie zur Weber-Elektrodynamik geht auf den französischen Astronomen François-Félix Tisserand (1889) zurück. Inspiriert von der strukturellen
-Ähnlichkeit zwischen dem Newton’schen Gravitationsgesetz und dem Coulomb’schen Gesetz,
+\chapter{Weber Gravity}
+This chapter deals exclusively with \gls{wg} and aims to demonstrate the capabilities of \gls{wg} compared to \gls{art}.
+\section{Derivation of Weber Gravity}
+The idea of a gravitational analogue to Weber electrodynamics dates back to the French astronomer François-Félix Tisserand (1889). Inspired by the structural
+similarity between Newton's law of gravitation and Coulomb's law,
 \begin{equation}
     \vec{F}_{\text{Newton}} = -G \frac{m_1 m_2}{r^2} \hat{\vec{r}}, \vec{F}_{\text{Coulomb}} = \frac{1}{4 \pi \epsilon_0} \frac{q_1 q_2}{r^2} \hat{\vec{r}}
 \end{equation}
-versuchte Tisserand, die Weber-Kraft (ursprünglich für elektrodynamische Wechselwirkungen formuliert) auf die Gravitation zu übertragen. Die Weber-Gravitation ergibt sich damit als:
+Tisserand attempted to transfer the Weber force (originally formulated for electrodynamic interactions) to gravity. Weber gravity thus emerges as:
 \begin{equation}
     \vec{F}_{\text{WG-Tisserand}} = -G \frac{m_1 m_2}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{2 r \ddot{r}}{c^2} \right] \hat{\vec{r}}.
 \end{equation}
-Diese Gleichung fügt zu Newton’s Gesetz geschwindigkeits- und beschleunigungsabhängige Korrekturen hinzu, analog zur Weber-Elektrodynamik.
-\subsection{Test am Merkur-Perihel – und warum die Theorie scheiterte}
-Tisserands Motivation war die Erklärung der anomalen Periheldrehung des Merkur, die bereits im 19. Jahrhundert bekannt war (ca. 43 Bogensekunden pro Jahrhundert).
-Die Weber-Gravitation sagte zwar eine Perihelverschiebung voraus, jedoch:
+This equation adds velocity- and acceleration-dependent corrections to Newton's law, analogous to Weber electrodynamics.
+\subsection{Test at Mercury's Perihelion – and Why the Theory Failed}
+Tisserand's motivation was explaining Mercury's anomalous perihelion advance, already known in the 19th century (~43 arcseconds per century).
+While Weber gravity predicted a perihelion shift:
 \begin{enumerate}
-    \item \textbf{Quantitatives Versagen:}\\Die berechnete Abweichung stimmte nicht mit den Beobachtungen überein.
-    \item \textbf{\gls{art} als überlegene Lösung:}\\Erst Einsteins \gls{art} lieferte die exakte Korrektur von 43" pro Jahrhundert – ein 100 Jahre andauernder Triumph der
-    Raumzeit-Krümmung gegenüber reinen Fernwirkungsmodellen.
+    \item \textbf{Quantitative Failure:}\\The calculated deviation did not match observations.
+    \item \textbf{\gls{art} as Superior Solution:}\\Only Einstein's \gls{art} provided the exact correction of 43"/century – a 100-year triumph of
+    spacetime curvature over pure action-at-a-distance models.
 \end{enumerate}
 
-\subsection{Modifizierter Tisserand-Ansatz}
-Die \gls{wg} (\textbf{modifizierter Tisserand-Ansatz}) bietet eine alternative Beschreibung gravitativer Phänomene durch eine Erweiterung des Newtonschen Gravitationsgesetzes um
-geschwindigkeits- und beschleunigungsabhängige Terme. Die zentrale Gleichung der WG lautet:
+\subsection{Modified Tisserand Approach}
+The \gls{wg} (\textbf{modified Tisserand approach}) offers an alternative description of gravitational phenomena by extending Newton's law of gravitation with
+velocity- and acceleration-dependent terms. The central WG equation is:
 
 \begin{equation}
     \label{eq:wg-beta}
     \vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right) \hat{\vec{r}},
 \end{equation}
 
-wobei $\dot{r}$ die radiale Relativgeschwindigkeit und $\ddot{r}$ die radiale Beschleunigung darstellen. Diese Modifikation führt zu Bahngleichungen, die in
-erster und zweiter Ordnung entwickelt werden können, um präzise Vorhersagen für Planetenbahnen und andere gravitative Effekte zu liefern. Der \textbf{$\beta$-Parameter} ist
-eine zentrale Größe in der Weber-Gravitation, die das Verhältnis zwischen beschleunigungs- und geschwindigkeitsabhängigen Termen in der modifizierten
-Gravitationskraft bestimmt; $\beta$ ein dimensionsloser Faktor, dessen Wert je nach physikalischem Kontext variiert und \textbf{entscheidende Auswirkungen auf die Vorhersagen
-der Theorie hat}.
+where $\dot{r}$ is the radial relative velocity and $\ddot{r}$ the radial acceleration. This modification leads to orbital equations that can be
+expanded to first and second order to provide precise predictions for planetary orbits and other gravitational effects. The \textbf{$\beta$-parameter} is
+a central quantity in Weber gravity that determines the ratio between acceleration- and velocity-dependent terms in the modified
+gravitational force; $\beta$ is a dimensionless factor whose value varies depending on physical context and has \textbf{decisive impacts on the theory's predictions}.
 
-Zur Vereinfachung der Gleichungen wird der spezifische Drehimpuls $h$ definiert:
+For simplification of the equations, the specific angular momentum $h$ is defined:
 \begin{equation}
 h = \sqrt{GMa(1 - e^2)}.
 \end{equation}
 
-\subsection{Physikalische Bedeutung des beta-Parameters}
-Der Parameter $\beta$ quantifiziert den Einfluss der radialen Beschleunigung $\ddot{r}$ relativ zur Geschwindigkeitskorrektur $\dot{r}^2$.
+\subsection{Physical Meaning of the beta Parameter}
+The parameter $\beta$ quantifies the influence of radial acceleration $\ddot{r}$ relative to the velocity correction $\dot{r}^2$.
 \begin{itemize}
-    \item Für $\beta=0$ verschwindet der Beschleunigungsterm, und die Kraft reduziert sich auf eine rein geschwindigkeitsabhängige Modifikation der Newtonschen Gravitation.
-    \item Für $\beta>0$ dominiert der Beschleunigungsterm bei dynamischen Prozessen wie der Lichtablenkung oder der Periheldrehung.
-    \item Der Wert $\beta=0.5$ reproduziert die Periheldrehung des Merkur exakt, während $\beta=1$ für masselose Teilchen (Photonen) benötigt wird, um frequenzabhängige Effekte zu erklären.
+    \item For $\beta=0$, the acceleration term vanishes, and the force reduces to a purely velocity-dependent modification of Newtonian gravity.
+    \item For $\beta>0$, the acceleration term dominates in dynamic processes like light deflection or perihelion advance.
+    \item The value $\beta=0.5$ reproduces Mercury's perihelion advance exactly, while $\beta=1$ is needed for massless particles (photons) to explain frequency-dependent effects.
 \end{itemize}
 
-\subsection{Anwendungen des beta-Parameters}
-\textbf{1. Lichtablenkung im Gravitationsfeld}
+\subsection{Applications of the beta Parameter}
+\textbf{1. Light Deflection in Gravitational Field}
 
-Für Photonen ($m=0$) wird $\beta=1$ gesetzt, was zu einer frequenzabhängigen Korrektur der Ablenkung führt. Die Bahngleichung für Licht lautet:
+For photons ($m=0$), $\beta=1$ is set, leading to a frequency-dependent correction of the deflection. The orbital equation for light is:
 \begin{equation}
     \frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 h^2} u^3\right).
 \end{equation}
-Wobei $u=1/r$ und $E=h_\text{P}\nu$ die Photonenenergie ist. Die Lösung für kleine Ablenkungen $\Delta\phi$ zeigt einen zusätzlichen Term proportional zur Wellenlänge $\lambda$:
+Where $u=1/r$ and $E=h_\text{P}\nu$ is the photon energy. The solution for small deflections $\Delta\phi$ shows an additional term proportional to wavelength $\lambda$:
 \begin{equation}
 \Delta \phi = \frac{4GM}{c^2 b} \left(1 + \frac{3\pi}{16} \frac{\lambda^2}{\lambda_0^2}\right).
 \end{equation}
 
-Hier ist $\lambda_0=hc/E$ eine charakteristische Längenskala. Dieser Effekt könnte mit hochpräzisen Interferometern (z. B. LISA) überprüft werden.
+Here $\lambda_0=hc/E$ is a characteristic length scale. This effect could be verified with high-precision interferometers (e.g., LISA).
 
-\textbf{2. Shapiro-Laufzeitverzögerung}
-Die Laufzeit $\Delta t$ eines Signals im Gravitationsfeld wird durch $\beta$ modifiziert. Die integrierte Verzögerung entlang der Bahn beträgt:
+\textbf{2. Shapiro Time Delay}
+The travel time $\Delta t$ of a signal in a gravitational field is modified by $\beta$. The integrated delay along the path is:
 \begin{equation}
 \Delta t = \frac{2GM}{c^3} \ln\left(\frac{4r_e r_p}{b^2}\right) + \frac{3\pi G^2 M^2}{4c^5 b^2} \left(\frac{v_0^2}{c^2}\right).
 \end{equation}
 
-Der zweite Term (proportional zu $\beta=1$) führt zu einer wellenlängenabhängigen Korrektur:
+The second term (proportional to $\beta=1$) leads to a wavelength-dependent correction:
 \begin{equation}
     \Delta t_\text{WG} \propto \lambda^{-2},
 \end{equation}
-die bei Pulsar-Timing-Experimenten (z. B. mit dem Square Kilometre Array) messbar sein sollte. Im Vergleich zur \gls{art} ($\beta=0$) ist die Abweichung zwar klein ($\approx 10^{-6}$),
-aber prinzipiell nachweisbar.
+which should be measurable in pulsar timing experiments (e.g., with the Square Kilometre Array). Compared to \gls{art} ($\beta=0$), the deviation is small ($\approx 10^{-6}$),
+but in principle detectable.
 
 \[
 \begin{array}{|l|c|l|}
 \hline
-\text{Anwendung} & \beta & \text{Konsequenz} \\
+\text{Application} & \beta & \text{Consequence} \\
 \hline
-\text{Elektrodynamik} & 2 & \text{Magnetische Wechselwirkungen} \\
-\text{Gravitation (Massen)} & 0.5 & \text{Periheldrehung des Merkur} \\
-\text{Photonen} & 1 & \text{Frequenzabhängige Effekte} \\
+\text{Electrodynamics} & 2 & \text{Magnetic interactions} \\
+\text{Gravity (masses)} & 0.5 & \text{Mercury's perihelion advance} \\
+\text{Photons} & 1 & \text{Frequency-dependent effects} \\
 \hline
 \end{array}
 \]
 
-Der $\beta$-Parameter fungiert somit als \enquote{Schlüssel} zur Anpassung der Weber-Gravitation an unterschiedliche physikalische Szenarien – von klassischen Planetenbahnen
-bis zu quantenphysikalischen Phänomenen. Seine Rolle unterstreicht die Flexibilität der Theorie, aber auch die Notwendigkeit präziser experimenteller Tests, um die korrekten
-Werte zu validieren.
+The $\beta$-parameter thus acts as a \enquote{key} for adapting Weber gravity to different physical scenarios – from classical planetary orbits
+to quantum phenomena. Its role highlights the theory's flexibility but also the need for precise experimental tests to validate the correct
+values.
 
-\section{Expansion (Hubble-Konstante) und Rotverschiebung in der Weber-Gravitation}
-Die \gls{wg} bietet eine radikal alternative Interpretation der kosmologischen Rotverschiebung und der Hubble-Konstante im Vergleich zur \gls{art}. Während die
-\gls{art} die Rotverschiebung als Folge der Expansion des Universums deutet und die Hubble-Konstante $H_0$ als Maß für diese Expansion interpretiert, erklärt die \gls{wg}
-dieselben Beobachtungen durch kumulative gravitative Wechselwirkungen in einem statischen Universum.
+\section{Expansion (Hubble Constant) and Redshift in Weber Gravity}
+The \gls{wg} offers a radically alternative interpretation of cosmological redshift and the Hubble constant compared to \gls{art}. While
+\gls{art} interprets redshift as a consequence of universal expansion and the Hubble constant $H_0$ as a measure of this expansion, \gls{wg}
+explains the same observations through cumulative gravitational interactions in a static universe.
 
-\subsection{Rotverschiebung in der Weber-Gravitation}
-In der \gls{wg} setzt sich die Rotverschiebung $z$ aus zwei Komponenten zusammen: einem statischen Term, der der klassischen gravitativen Rotverschiebung entspricht, und einem
-dynamischen Term, der von der Relativgeschwindigkeit $v_r$ zwischen Quelle und Beobachter abhängt. Die Gesamtrotverschiebung lautet:
+\subsection{Redshift in Weber Gravity}
+In \gls{wg}, redshift $z$ consists of two components: a static term corresponding to classical gravitational redshift and a
+dynamic term depending on the relative velocity $v_r$ between source and observer. The total redshift is:
 
 \begin{equation}
     z \approx \frac{GM}{c^2} \left( \frac{1}{r_{\text{em}}} - \frac{1}{r_{\text{obs}}} \right) + \frac{3}{2} \frac{v_r^2}{c^2}
 \end{equation}
 
-Der erste Term ist identisch mit der Vorhersage der \gls{art} für gravitative Rotverschiebung (z. B. im Pound-Rebka-Experiment). Der zweite Term hingegen ist ein neuer Beitrag,
-der die dynamischen Effekte der WG erfasst. Für kosmologische Distanzen, bei denen $v_r \approx H_0 d$ (mit $H_0$ als Hubble-Konstante und $d$ als Entfernung), dominiert
-der dynamische Term:
+The first term is identical to \gls{art}'s prediction for gravitational redshift (e.g., in the Pound-Rebka experiment). The second term, however, is a new contribution
+capturing WG's dynamic effects. For cosmological distances where $v_r \approx H_0 d$ (with $H_0$ as Hubble constant and $d$ as distance), the dynamic term dominates:
 
 \begin{equation}
     z \approx \frac{3}{2} \frac{H_0^2 d^2}{c^2}
 \end{equation}
 
-Dies führt zu einem alternativen Hubble-Gesetz, das quadratisch von der Entfernung abhängt, im Gegensatz zum linearen Zusammenhang $z \approx H_0 d / c$ der \gls{art}.
+This leads to an alternative Hubble law that depends quadratically on distance, unlike the linear relation $z \approx H_0 d / c$ of \gls{art}.
 
-\subsection{Hubble-Konstante in der Weber-Gravitation}
-Die \gls{wg} interpretiert die Hubble-Konstante nicht als Expansionsrate, sondern als Effekt der kumulativen gravitativen Wechselwirkungen über große Distanzen. Durch Umstellen
-der dynamischen Rotverschiebung ergibt sich eine effektive Hubble-Konstante:
+\subsection{Hubble Constant in Weber Gravity}
+The \gls{wg} interprets the Hubble constant not as an expansion rate but as an effect of cumulative gravitational interactions over large distances. Rearranging
+the dynamic redshift yields an effective Hubble constant:
 
 \begin{equation}
     H_0^{\text{WG}} = \sqrt{\frac{2}{3}} \frac{c}{d} \sqrt{z} \approx 67.8 \, \text{km/s/Mpc}
 \end{equation}
 
-Dieser Wert liegt erstaunlich nahe am gemessenen Wert der Planck-Mission\\($H_0 \approx 67.4 km/s/Mpc$), was die WG als plausible Alternative zur \gls{art} erscheinen lässt.
+This value remarkably matches the Planck mission's measured value ($H_0 \approx 67.4 km/s/Mpc$), making WG a plausible alternative to \gls{art}.
 
-\subsection{Konsequenzen für die Kosmologie}
+\subsection{Consequences for Cosmology}
 \begin{enumerate}
-    \item \textbf{Keine Expansion des Universums:} Die \gls{wg} benötigt keine Raumexpansion, um die Rotverschiebung zu erklären. Stattdessen entsteht $z$ durch die Geschwindigkeitsabhängigkeit der gravitativen Wechselwirkung.
-    \item \textbf{Keine dunkle Energie:} Die beschleunigte Expansion des Universums entfällt, da es keine Expansion gibt. Die beobachtete Rotverschiebung wird durch den dynamischen Term erklärt.
-    \item \textbf{Statisches Universum:} Die \gls{wg} postuliert ein unendliches, statisches Universum ohne Urknall. Die kosmologische Rotverschiebung ist ein lokaler Effekt, der durch die Bewegung von Galaxien relativ zueinander entsteht.
+    \item \textbf{No Universal Expansion:} \gls{wg} requires no space expansion to explain redshift. Instead, $z$ arises from the velocity dependence of gravitational interaction.
+    \item \textbf{No Dark Energy:} The universe's accelerated expansion disappears since there is no expansion. Observed redshift is explained by the dynamic term.
+    \item \textbf{Static Universe:} \gls{wg} postulates an infinite, static universe without a Big Bang. Cosmological redshift is a local effect caused by galaxies' relative motion.
 \end{enumerate}
 
-\subsection{Experimentelle Unterscheidung}
-Die \gls{wg} sagt voraus, dass die Rotverschiebung in Galaxienhaufen eine leichte Abweichung vom linearen Hubble-Gesetz zeigt:
+\subsection{Experimental Discrimination}
+\gls{wg} predicts that redshift in galaxy clusters shows a slight deviation from the linear Hubble law:
 
 \begin{equation}
     \frac{z_{\text{WG}}}{z_{\text{ART}}} = 1 + \frac{3}{2} \left( \frac{v_r}{c} \right)^2 \left( \frac{GM}{c^2 r} \right)^{-1}
 \end{equation}
 
-Für $v_r \approx 1000 km/s$ und $r = 1 Mpc$ beträgt die Abweichung etwa $10^{-4}$, was mit zukünftigen Teleskopen wie dem Extremely Large Telescope (ELT) messbar sein könnte.
+For $v_r \approx 1000 km/s$ and $r = 1 Mpc$, the deviation is about $10^{-4}$, potentially measurable with future telescopes like the Extremely Large Telescope (ELT).
 
-Die \gls{wg} bietet damit eine konsistente Alternative zur Standardkosmologie, die ohne dunkle Energie, Urknall oder Raumexpansion auskommt und dennoch die beobachtete Rotverschiebung erklärt.
-Experimentelle Tests der frequenzabhängigen Effekte könnten die Theorie in Zukunft validieren oder widerlegen.
+Thus, \gls{wg} offers a consistent alternative to standard cosmology, requiring no dark energy, Big Bang, or space expansion while explaining observed redshift.
+Experimental tests of frequency-dependent effects could validate or refute the theory in the future.
 
-\subsection{Konsequenzen für die Größe des Universums}
-Die \gls{wg} hat fundamentale Auswirkungen auf unser Verständnis der kosmischen Größenverhältnisse:
+\subsection{Consequences for the Universe's Size}
+\gls{wg} has fundamental implications for our understanding of cosmic scales:
 
-\subsection{Statisches Universum}
-Im Gegensatz zum Standard-$\Lambda$CDM-Modell postuliert die WG ein \textbf{nicht-expandierendes Universum} mit folgenden Eigenschaften:
+\subsection{Static Universe}
+Unlike the standard $\Lambda$CDM model, WG postulates a \textbf{non-expanding universe} with these properties:
 
 \begin{itemize}
-\item Keine zeitliche Veränderung der Gesamtgröße
-\item Mögliche Unendlichkeit des Raumes
-\item Kein Urknall als Anfangspunkt
+\item No temporal change in overall size
+\item Possible infinity of space
+\item No Big Bang as starting point
 \end{itemize}
 
-\subsection{Kosmologische Implikationen}
+\subsection{Cosmological Implications}
 \begin{itemize}
-\item Keine Notwendigkeit für Inflation
-\item Natürliche Erklärung der CMB-Homogenität
-\item Alternative Interpretation der beobachteten Rotverschiebung
-\item Wegfall der Notwendigkeit dunkler Energie
+\item No need for inflation
+\item Natural explanation of CMB homogeneity
+\item Alternative interpretation of observed redshift
+\item Elimination of dark energy necessity
 \end{itemize}
 
-Die WG bietet damit eine konsistente Alternative zum Standardmodell, die ohne Expansion des Universums auskommt und dessen Größe als fundamentalen, zeitunabhängigen Parameter betrachtet.
+WG thus provides a consistent alternative to the standard model, requiring no universe expansion and treating its size as a fundamental, time-independent parameter.
 
 
-\subsection{Bahngleichung 1. Ordnung}
-Die Bahngleichung in erster Ordnung $r(\phi)$ ergibt sich aus der Lösung der Bewegungsgleichung unter Vernachlässigung von Termen höherer Ordnung in $c^{-2}$. Sie lautet:
+\subsection{Orbital Equation 1st Order}
+The 1st-order orbital equation $r(\phi)$ results from solving the equation of motion while neglecting higher-order terms in $c^{-2}$. It reads:
 \begin{equation}
     \label{eq:weber_r_1_ordnung}
     r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi)},    
@@ -176,16 +174,16 @@ Die Bahngleichung in erster Ordnung $r(\phi)$ ergibt sich aus der Lösung der Be
     \kappa = \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)}}.
 \end{equation}
 
-Wobei $\kappa$ eine Korrektur gegenüber der Newtonschen Mechanik darstellt. Hierbei sind $a$ die große Halbachse und $e$ die Exzentrizität der Bahn.
-Diese Gleichung beschreibt die Bahn eines Planeten unter Berücksichtigung relativistischer Effekte, die zu einer Periheldrehung führen.
-Die Periheldrehung pro Umlauf beträgt:
+Where $\kappa$ represents a correction to Newtonian mechanics. Here, $a$ is the semi-major axis and $e$ the orbital eccentricity.
+This equation describes a planet's orbit including relativistic effects leading to perihelion advance.
+The perihelion advance per orbit is:
 \begin{equation}
     \Delta \phi = 2\pi \left(\frac{1}{\kappa} - 1\right),
 \end{equation}
 
-was für den Merkur den beobachteten Wert von 42,98'' pro Jahrhundert liefert.
+yielding Mercury's observed value of 42.98'' per century.
 
-\textbf{Winkel- und Bahngeschwindigkeit:}
+\textbf{Angular and Orbital Velocity:}
 \begin{equation}
     \omega(\phi) = \frac{h}{a^2(1 - e^2)^2} \left[1 + e \cos(\kappa \phi)\right]^2    
 \end{equation}
@@ -194,9 +192,9 @@ was für den Merkur den beobachteten Wert von 42,98'' pro Jahrhundert liefert.
     v(\phi) = \frac{h \left(1 + e \cos(\kappa \phi)\right)}{a(1 - e^2)}
 \end{equation}
 
-\subsection{Bahngleichung 2. Ordnung}
-In zweiter Ordnung werden zusätzliche Korrekturen berücksichtigt, die aus der Entwicklung von $\kappa$ und der Einführung eines quadratischen Terms in $\phi$ resultieren.
-Die Bahngleichung nimmt dann die Form an:
+\subsection{Orbital Equation 2nd Order}
+In 2nd order, additional corrections are considered, resulting from expanding $\kappa$ and introducing a quadratic term in $\phi$.
+The orbital equation then takes the form:
 \begin{equation}
     \label{eq:weber_r_2_ordnung}
     r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi + \alpha \phi^2)},
@@ -210,16 +208,16 @@ Die Bahngleichung nimmt dann die Form an:
 \kappa = \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)} + \frac{27G^2 M^2}{2c^4 a^2 (1 - e^2)^2}}.
 \end{equation}
 
-In Gleichung (Gl. \refeq{eq:weber_r_2_ordnung}) erscheint der Term $\alpha \phi^2$, der zu nicht-geschlossenen Planetenbahnen (sogenannten \enquote{Rosettenbahnen}) führen würde.
-Dies wirft physikalische Fragen auf, da stabile, geschlossene Umlaufbahnen in unserem Sonnensystem beobachtet werden. Interessanterweise liefern die Gleichungen erster Ordnung
-der \gls{wg} bereits Ergebnisse, die mit der Genauigkeit der \gls{art} übereinstimmen. Die Abweichungen in höheren Ordnungen deuten jedoch auf eine mögliche Unvollständigkeit der
-Theorie hin. Dennoch bleibt festzuhalten, dass die WG in erster Näherung äußerst präzise Vorhersagen trifft, während die Abweichungen in höheren Ordnungen nur minimal ausfallen.
+In equation (Eq. \ref{eq:weber_r_2_ordnung}), the term $\alpha \phi^2$ appears, which would lead to non-closed planetary orbits (so-called \enquote{rosette orbits}).
+This raises physical questions, as stable, closed orbits are observed in our solar system. Interestingly, \gls{wg}'s 1st-order equations already yield results
+matching \gls{art}'s accuracy. The higher-order deviations, however, suggest possible incompleteness of the theory. Nonetheless, it remains clear that WG provides
+highly precise predictions in first approximation, while higher-order deviations are minimal.
 
-Damit erweist sich die \gls{wg} als leistungsfähiges Werkzeug zur Beschreibung gravitativer Phänomene. Ob ihre Abweichungen von der \gls{art} eine Verbesserung oder Verschlechterung
-darstellen, ist noch nicht abschließend geklärt. Unbestreitbar ist jedoch, dass die \gls{wg} mathematisch einfacher und konzeptionell verständlicher ist als die komplexe \gls{art}.
+Thus, \gls{wg} proves to be a powerful tool for describing gravitational phenomena. Whether its deviations from \gls{art} represent an improvement or deterioration
+is not yet conclusively settled. What is undeniable, however, is that \gls{wg} is mathematically simpler and conceptually more accessible than the complex \gls{art}.
 
-Zudem kann die \gls{wg} auch Phänomene wie die frequenzabhängige Lichtablenkung und die gravitative Laufzeitverzögerung erklären.
+Moreover, \gls{wg} can also explain phenomena like frequency-dependent light deflection and gravitational time delay.
 
-Besonders bemerkenswert ist ihre Vorhersage einer
-wellenlängenabhängigen Lichtablenkung, die sich klar von den Aussagen der \gls{art} unterscheidet und \textbf{prinzipiell experimentell überprüfbar} ist. Dies unterstreicht das Potenzial
-der \gls{wg} als alternative Gravitationstheorie, die sowohl präzise als auch intuitiv zugänglich ist.
+Particularly noteworthy is its prediction of
+wavelength-dependent light deflection, which clearly differs from \gls{art}'s predictions and is \textbf{in principle experimentally verifiable}. This underscores \gls{wg}'s potential
+as an alternative gravity theory that is both precise and intuitively accessible.
