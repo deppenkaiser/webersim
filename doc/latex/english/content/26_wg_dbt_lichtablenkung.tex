@@ -1,0 +1,57 @@
+\newpage
+\section{Lichtablenkung in der Weber-DBT-Gravitation}
+\label{sec:light_deflection}
+
+Die Ablenkung von Licht im Gravitationsfeld lässt sich in der Weber-DBT-Theorie durch eine Modifikation der geodätischen Gleichung beschreiben. Wir leiten den Ablenkwinkel $\alpha$ für einen Lichtstrahl mit Stoßparameter $b$ her.
+
+\subsection{Bewegungsgleichung für Photonen}
+Aus der WG-DBT-Gleichung folgt für masselose Teilchen ($m \to 0$, aber $E = h\nu \neq 0$):
+
+\begin{equation}
+\frac{d}{d\lambda}\left(\frac{dx^\mu}{d\lambda}\right) = -\Gamma^\mu_{\nu\sigma}\frac{dx^\nu}{d\lambda}\frac{dx^\sigma}{d\lambda} - \frac{1}{E}\nabla^\mu Q
+\end{equation}
+
+wobei:
+\begin{itemize}
+\item $\lambda$ ein affiner Parameter ist
+\item $Q = -\frac{\hbar^2}{2E}\frac{\Box|\Psi|}{|\Psi|}$ das quantenmechanische Potential für Photonen
+\item $\Gamma^\mu_{\nu\sigma}$ die Weber-Korrekturen zu den Christoffel-Symbolen enthält
+\end{itemize}
+
+\subsection{Lösung für kleine Ablenkungen}
+Für einen Lichtstrahl in $z$-Richtung mit Stoßparameter $b$ lautet die transversale Beschleunigung:
+
+\begin{equation}
+\frac{d^2x}{dz^2} \approx -\frac{GM}{c^2}\left(\frac{1}{b^2} + \beta\frac{\partial^2_x \Phi}{c^2}\right)x - \frac{\hbar^2}{2E^2}\partial_x\left(\frac{\Box|\Psi|}{|\Psi|}\right)
+\end{equation}
+
+mit $\Phi = -GM/r$ dem Newton-Potential. 
+
+\subsection{Quantenpotential für Licht}
+Für eine ebene Welle $|\Psi| \propto e^{-r^2/2\sigma^2}$ ergibt sich:
+
+\begin{equation}
+Q \approx -\frac{\hbar^2}{2E\sigma^2}\left(1 - \frac{r^2}{\sigma^2}\right)
+\end{equation}
+
+Die typische Wirkungsskala ist $\sigma \sim b$, sodass:
+
+\begin{equation}
+\frac{1}{E}\nabla_x Q \approx \frac{\hbar^2}{E^2b^3}x
+\end{equation}
+
+\subsection{Integrierter Ablenkwinkel}
+Der Gesamtablenkwinkel $\alpha$ ergibt sich durch Integration entlang der Trajektorie:
+
+\begin{align}
+\alpha &= \frac{2GM}{c^2b}\left(1 + \beta\frac{2GM}{c^2b}\right) + \frac{\pi\hbar^2}{4E^2b^2} \\
+&= \underbrace{\frac{4GM}{c^2b}}_{\text{Einstein (ART)}} + \underbrace{\frac{2GM}{c^2b}\left(\beta - 2\right)}_{\text{Weber-Korrektur}} + \underbrace{\frac{\pi\hbar^2}{4E^2b^2}}_{\text{DBT-Term}}
+\end{align}
+
+Für $\beta = 1$ (Lichtablenkung) und $E = h\nu$:
+
+\begin{equation}
+\boxed{
+\alpha = \frac{4GM}{c^2b} - \frac{2GM}{c^2b} + \frac{\pi h^2}{4(h\nu)^2b^2}
+}
+\end{equation}

@@ -1,0 +1,225 @@
+\chapter{Weber-Gravitation}
+Dieses Kapitel beschäftigt sich nur mit der \gls{wg}, und soll die Leistungsfähigkeit der \gls{wg} gegenüber der \gls{art} aufzeigen.
+\section{Herleitung der Weber-Gravitation}
+Die Idee einer gravitativen Analogie zur Weber-Elektrodynamik geht auf den französischen Astronomen François-Félix Tisserand (1889) zurück. Inspiriert von der strukturellen
+Ähnlichkeit zwischen dem Newton’schen Gravitationsgesetz und dem Coulomb’schen Gesetz,
+\begin{equation}
+    \vec{F}_{\text{Newton}} = -G \frac{m_1 m_2}{r^2} \hat{\vec{r}}, \vec{F}_{\text{Coulomb}} = \frac{1}{4 \pi \epsilon_0} \frac{q_1 q_2}{r^2} \hat{\vec{r}}
+\end{equation}
+versuchte Tisserand, die Weber-Kraft (ursprünglich für elektrodynamische Wechselwirkungen formuliert) auf die Gravitation zu übertragen. Die Weber-Gravitation ergibt sich damit als:
+\begin{equation}
+    \vec{F}_{\text{WG-Tisserand}} = -G \frac{m_1 m_2}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{2 r \ddot{r}}{c^2} \right] \hat{\vec{r}}.
+\end{equation}
+Diese Gleichung fügt zu Newton’s Gesetz geschwindigkeits- und beschleunigungsabhängige Korrekturen hinzu, analog zur Weber-Elektrodynamik.
+\subsection{Test am Merkur-Perihel – und warum die Theorie scheiterte}
+Tisserands Motivation war die Erklärung der anomalen Periheldrehung des Merkur, die bereits im 19. Jahrhundert bekannt war (ca. 43 Bogensekunden pro Jahrhundert).
+Die Weber-Gravitation sagte zwar eine Perihelverschiebung voraus, jedoch:
+\begin{enumerate}
+    \item \textbf{Quantitatives Versagen:}\\Die berechnete Abweichung stimmte nicht mit den Beobachtungen überein.
+    \item \textbf{\gls{art} als überlegene Lösung:}\\Erst Einsteins \gls{art} lieferte die exakte Korrektur von 43" pro Jahrhundert – ein 100 Jahre andauernder Triumph der
+    Raumzeit-Krümmung gegenüber reinen Fernwirkungsmodellen.
+\end{enumerate}
+
+\subsection{Modifizierter Tisserand-Ansatz}
+Die \gls{wg} (\textbf{modifizierter Tisserand-Ansatz}) bietet eine alternative Beschreibung gravitativer Phänomene durch eine Erweiterung des Newtonschen Gravitationsgesetzes um
+geschwindigkeits- und beschleunigungsabhängige Terme. Die zentrale Gleichung der WG lautet:
+
+\begin{equation}
+    \label{eq:wg-beta}
+    \vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right) \hat{\vec{r}},
+\end{equation}
+
+wobei $\dot{r}$ die radiale Relativgeschwindigkeit und $\ddot{r}$ die radiale Beschleunigung darstellen. Diese Modifikation führt zu Bahngleichungen, die in
+erster und zweiter Ordnung entwickelt werden können, um präzise Vorhersagen für Planetenbahnen und andere gravitative Effekte zu liefern. Der \textbf{$\beta$-Parameter} ist
+eine zentrale Größe in der Weber-Gravitation, die das Verhältnis zwischen beschleunigungs- und geschwindigkeitsabhängigen Termen in der modifizierten
+Gravitationskraft bestimmt; $\beta$ ein dimensionsloser Faktor, dessen Wert je nach physikalischem Kontext variiert und \textbf{entscheidende Auswirkungen auf die Vorhersagen
+der Theorie hat}.
+
+Zur Vereinfachung der Gleichungen wird der spezifische Drehimpuls $h$ definiert:
+\begin{equation}
+h = \sqrt{GMa(1 - e^2)}.
+\end{equation}
+
+\subsection{Physikalische Bedeutung des beta-Parameters}
+Der Parameter $\beta$ quantifiziert den Einfluss der radialen Beschleunigung $\ddot{r}$ relativ zur Geschwindigkeitskorrektur $\dot{r}^2$.
+\begin{itemize}
+    \item Für $\beta=0$ verschwindet der Beschleunigungsterm, und die Kraft reduziert sich auf eine rein geschwindigkeitsabhängige Modifikation der Newtonschen Gravitation.
+    \item Für $\beta>0$ dominiert der Beschleunigungsterm bei dynamischen Prozessen wie der Lichtablenkung oder der Periheldrehung.
+    \item Der Wert $\beta=0.5$ reproduziert die Periheldrehung des Merkur exakt, während $\beta=1$ für masselose Teilchen (Photonen) benötigt wird, um frequenzabhängige Effekte zu erklären.
+\end{itemize}
+
+\subsection{Anwendungen des beta-Parameters}
+\textbf{1. Lichtablenkung im Gravitationsfeld}
+
+Für Photonen ($m=0$) wird $\beta=1$ gesetzt, was zu einer frequenzabhängigen Korrektur der Ablenkung führt. Die Bahngleichung für Licht lautet:
+\begin{equation}
+    \frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 h^2} u^3\right).
+\end{equation}
+Wobei $u=1/r$ und $E=h_\text{P}\nu$ die Photonenenergie ist. Die Lösung für kleine Ablenkungen $\Delta\phi$ zeigt einen zusätzlichen Term proportional zur Wellenlänge $\lambda$:
+\begin{equation}
+\Delta \phi = \frac{4GM}{c^2 b} \left(1 + \frac{3\pi}{16} \frac{\lambda^2}{\lambda_0^2}\right).
+\end{equation}
+
+Hier ist $\lambda_0=hc/E$ eine charakteristische Längenskala. Dieser Effekt könnte mit hochpräzisen Interferometern (z. B. LISA) überprüft werden.
+
+\textbf{2. Shapiro-Laufzeitverzögerung}
+Die Laufzeit $\Delta t$ eines Signals im Gravitationsfeld wird durch $\beta$ modifiziert. Die integrierte Verzögerung entlang der Bahn beträgt:
+\begin{equation}
+\Delta t = \frac{2GM}{c^3} \ln\left(\frac{4r_e r_p}{b^2}\right) + \frac{3\pi G^2 M^2}{4c^5 b^2} \left(\frac{v_0^2}{c^2}\right).
+\end{equation}
+
+Der zweite Term (proportional zu $\beta=1$) führt zu einer wellenlängenabhängigen Korrektur:
+\begin{equation}
+    \Delta t_\text{WG} \propto \lambda^{-2},
+\end{equation}
+die bei Pulsar-Timing-Experimenten (z. B. mit dem Square Kilometre Array) messbar sein sollte. Im Vergleich zur \gls{art} ($\beta=0$) ist die Abweichung zwar klein ($\approx 10^{-6}$),
+aber prinzipiell nachweisbar.
+
+\[
+\begin{array}{|l|c|l|}
+\hline
+\text{Anwendung} & \beta & \text{Konsequenz} \\
+\hline
+\text{Elektrodynamik} & 2 & \text{Magnetische Wechselwirkungen} \\
+\text{Gravitation (Massen)} & 0.5 & \text{Periheldrehung des Merkur} \\
+\text{Photonen} & 1 & \text{Frequenzabhängige Effekte} \\
+\hline
+\end{array}
+\]
+
+Der $\beta$-Parameter fungiert somit als \enquote{Schlüssel} zur Anpassung der Weber-Gravitation an unterschiedliche physikalische Szenarien – von klassischen Planetenbahnen
+bis zu quantenphysikalischen Phänomenen. Seine Rolle unterstreicht die Flexibilität der Theorie, aber auch die Notwendigkeit präziser experimenteller Tests, um die korrekten
+Werte zu validieren.
+
+\section{Expansion (Hubble-Konstante) und Rotverschiebung in der Weber-Gravitation}
+Die \gls{wg} bietet eine radikal alternative Interpretation der kosmologischen Rotverschiebung und der Hubble-Konstante im Vergleich zur \gls{art}. Während die
+\gls{art} die Rotverschiebung als Folge der Expansion des Universums deutet und die Hubble-Konstante $H_0$ als Maß für diese Expansion interpretiert, erklärt die \gls{wg}
+dieselben Beobachtungen durch kumulative gravitative Wechselwirkungen in einem statischen Universum.
+
+\subsection{Rotverschiebung in der Weber-Gravitation}
+In der \gls{wg} setzt sich die Rotverschiebung $z$ aus zwei Komponenten zusammen: einem statischen Term, der der klassischen gravitativen Rotverschiebung entspricht, und einem
+dynamischen Term, der von der Relativgeschwindigkeit $v_r$ zwischen Quelle und Beobachter abhängt. Die Gesamtrotverschiebung lautet:
+
+\begin{equation}
+    z \approx \frac{GM}{c^2} \left( \frac{1}{r_{\text{em}}} - \frac{1}{r_{\text{obs}}} \right) + \frac{3}{2} \frac{v_r^2}{c^2}
+\end{equation}
+
+Der erste Term ist identisch mit der Vorhersage der \gls{art} für gravitative Rotverschiebung (z. B. im Pound-Rebka-Experiment). Der zweite Term hingegen ist ein neuer Beitrag,
+der die dynamischen Effekte der WG erfasst. Für kosmologische Distanzen, bei denen $v_r \approx H_0 d$ (mit $H_0$ als Hubble-Konstante und $d$ als Entfernung), dominiert
+der dynamische Term:
+
+\begin{equation}
+    z \approx \frac{3}{2} \frac{H_0^2 d^2}{c^2}
+\end{equation}
+
+Dies führt zu einem alternativen Hubble-Gesetz, das quadratisch von der Entfernung abhängt, im Gegensatz zum linearen Zusammenhang $z \approx H_0 d / c$ der \gls{art}.
+
+\subsection{Hubble-Konstante in der Weber-Gravitation}
+Die \gls{wg} interpretiert die Hubble-Konstante nicht als Expansionsrate, sondern als Effekt der kumulativen gravitativen Wechselwirkungen über große Distanzen. Durch Umstellen
+der dynamischen Rotverschiebung ergibt sich eine effektive Hubble-Konstante:
+
+\begin{equation}
+    H_0^{\text{WG}} = \sqrt{\frac{2}{3}} \frac{c}{d} \sqrt{z} \approx 67.8 \, \text{km/s/Mpc}
+\end{equation}
+
+Dieser Wert liegt erstaunlich nahe am gemessenen Wert der Planck-Mission\\($H_0 \approx 67.4 km/s/Mpc$), was die WG als plausible Alternative zur \gls{art} erscheinen lässt.
+
+\subsection{Konsequenzen für die Kosmologie}
+\begin{enumerate}
+    \item \textbf{Keine Expansion des Universums:} Die \gls{wg} benötigt keine Raumexpansion, um die Rotverschiebung zu erklären. Stattdessen entsteht $z$ durch die Geschwindigkeitsabhängigkeit der gravitativen Wechselwirkung.
+    \item \textbf{Keine dunkle Energie:} Die beschleunigte Expansion des Universums entfällt, da es keine Expansion gibt. Die beobachtete Rotverschiebung wird durch den dynamischen Term erklärt.
+    \item \textbf{Statisches Universum:} Die \gls{wg} postuliert ein unendliches, statisches Universum ohne Urknall. Die kosmologische Rotverschiebung ist ein lokaler Effekt, der durch die Bewegung von Galaxien relativ zueinander entsteht.
+\end{enumerate}
+
+\subsection{Experimentelle Unterscheidung}
+Die \gls{wg} sagt voraus, dass die Rotverschiebung in Galaxienhaufen eine leichte Abweichung vom linearen Hubble-Gesetz zeigt:
+
+\begin{equation}
+    \frac{z_{\text{WG}}}{z_{\text{ART}}} = 1 + \frac{3}{2} \left( \frac{v_r}{c} \right)^2 \left( \frac{GM}{c^2 r} \right)^{-1}
+\end{equation}
+
+Für $v_r \approx 1000 km/s$ und $r = 1 Mpc$ beträgt die Abweichung etwa $10^{-4}$, was mit zukünftigen Teleskopen wie dem Extremely Large Telescope (ELT) messbar sein könnte.
+
+Die \gls{wg} bietet damit eine konsistente Alternative zur Standardkosmologie, die ohne dunkle Energie, Urknall oder Raumexpansion auskommt und dennoch die beobachtete Rotverschiebung erklärt.
+Experimentelle Tests der frequenzabhängigen Effekte könnten die Theorie in Zukunft validieren oder widerlegen.
+
+\subsection{Konsequenzen für die Größe des Universums}
+Die \gls{wg} hat fundamentale Auswirkungen auf unser Verständnis der kosmischen Größenverhältnisse:
+
+\subsection{Statisches Universum}
+Im Gegensatz zum Standard-$\Lambda$CDM-Modell postuliert die WG ein \textbf{nicht-expandierendes Universum} mit folgenden Eigenschaften:
+
+\begin{itemize}
+\item Keine zeitliche Veränderung der Gesamtgröße
+\item Mögliche Unendlichkeit des Raumes
+\item Kein Urknall als Anfangspunkt
+\end{itemize}
+
+\subsection{Kosmologische Implikationen}
+\begin{itemize}
+\item Keine Notwendigkeit für Inflation
+\item Natürliche Erklärung der CMB-Homogenität
+\item Alternative Interpretation der beobachteten Rotverschiebung
+\item Wegfall der Notwendigkeit dunkler Energie
+\end{itemize}
+
+Die WG bietet damit eine konsistente Alternative zum Standardmodell, die ohne Expansion des Universums auskommt und dessen Größe als fundamentalen, zeitunabhängigen Parameter betrachtet.
+
+
+\subsection{Bahngleichung 1. Ordnung}
+Die Bahngleichung in erster Ordnung $r(\phi)$ ergibt sich aus der Lösung der Bewegungsgleichung unter Vernachlässigung von Termen höherer Ordnung in $c^{-2}$. Sie lautet:
+\begin{equation}
+    \label{eq:weber_r_1_ordnung}
+    r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi)},    
+\end{equation}
+\begin{equation}
+    \kappa = \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)}}.
+\end{equation}
+
+Wobei $\kappa$ eine Korrektur gegenüber der Newtonschen Mechanik darstellt. Hierbei sind $a$ die große Halbachse und $e$ die Exzentrizität der Bahn.
+Diese Gleichung beschreibt die Bahn eines Planeten unter Berücksichtigung relativistischer Effekte, die zu einer Periheldrehung führen.
+Die Periheldrehung pro Umlauf beträgt:
+\begin{equation}
+    \Delta \phi = 2\pi \left(\frac{1}{\kappa} - 1\right),
+\end{equation}
+
+was für den Merkur den beobachteten Wert von 42,98'' pro Jahrhundert liefert.
+
+\textbf{Winkel- und Bahngeschwindigkeit:}
+\begin{equation}
+    \omega(\phi) = \frac{h}{a^2(1 - e^2)^2} \left[1 + e \cos(\kappa \phi)\right]^2    
+\end{equation}
+
+\begin{equation}
+    v(\phi) = \frac{h \left(1 + e \cos(\kappa \phi)\right)}{a(1 - e^2)}
+\end{equation}
+
+\subsection{Bahngleichung 2. Ordnung}
+In zweiter Ordnung werden zusätzliche Korrekturen berücksichtigt, die aus der Entwicklung von $\kappa$ und der Einführung eines quadratischen Terms in $\phi$ resultieren.
+Die Bahngleichung nimmt dann die Form an:
+\begin{equation}
+    \label{eq:weber_r_2_ordnung}
+    r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi + \alpha \phi^2)},
+\end{equation}
+
+\begin{equation}
+\alpha = \frac{3G^2 M^2 e}{8c^4 h^4},
+\end{equation}
+
+\begin{equation}
+\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1 - e^2)} + \frac{27G^2 M^2}{2c^4 a^2 (1 - e^2)^2}}.
+\end{equation}
+
+In Gleichung (Gl. \refeq{eq:weber_r_2_ordnung}) erscheint der Term $\alpha \phi^2$, der zu nicht-geschlossenen Planetenbahnen (sogenannten \enquote{Rosettenbahnen}) führen würde.
+Dies wirft physikalische Fragen auf, da stabile, geschlossene Umlaufbahnen in unserem Sonnensystem beobachtet werden. Interessanterweise liefern die Gleichungen erster Ordnung
+der \gls{wg} bereits Ergebnisse, die mit der Genauigkeit der \gls{art} übereinstimmen. Die Abweichungen in höheren Ordnungen deuten jedoch auf eine mögliche Unvollständigkeit der
+Theorie hin. Dennoch bleibt festzuhalten, dass die WG in erster Näherung äußerst präzise Vorhersagen trifft, während die Abweichungen in höheren Ordnungen nur minimal ausfallen.
+
+Damit erweist sich die \gls{wg} als leistungsfähiges Werkzeug zur Beschreibung gravitativer Phänomene. Ob ihre Abweichungen von der \gls{art} eine Verbesserung oder Verschlechterung
+darstellen, ist noch nicht abschließend geklärt. Unbestreitbar ist jedoch, dass die \gls{wg} mathematisch einfacher und konzeptionell verständlicher ist als die komplexe \gls{art}.
+
+Zudem kann die \gls{wg} auch Phänomene wie die frequenzabhängige Lichtablenkung und die gravitative Laufzeitverzögerung erklären.
+
+Besonders bemerkenswert ist ihre Vorhersage einer
+wellenlängenabhängigen Lichtablenkung, die sich klar von den Aussagen der \gls{art} unterscheidet und \textbf{prinzipiell experimentell überprüfbar} ist. Dies unterstreicht das Potenzial
+der \gls{wg} als alternative Gravitationstheorie, die sowohl präzise als auch intuitiv zugänglich ist.

@@ -1,0 +1,202 @@
+\section{Relativistische Energie-Impuls-Beziehung in der WG-DBT-Synthese}
+\label{sec:energy-momentum}
+
+Die Herleitung der relativistischen Energie-Impuls-Beziehung aus der Weber-Gravitation (WG) und De-Broglie-Bohm-Theorie (DBT) erfolgt wie folgt:
+
+\subsection{Grundgleichungen}
+Ausgehend von der verallgemeinerten Weber-Kraft für ein freies Teilchen:
+\begin{equation}
+\label{eq:wg_dbt_srt}
+    \boxed
+    {
+        m\frac{d}{dt}(\gamma\mathbf{v}) = -\nabla Q
+    }
+\end{equation}
+mit:
+\begin{itemize}
+\item $\gamma = (1 - \frac{v^2}{c^2} + \beta\frac{\mathbf{v}\cdot\mathbf{a}}{c^2})^{-1/2}$ (Weber-Lorentz-Faktor)
+\item $Q = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|}$ (Quantenpotential)
+\end{itemize}
+
+\subsection{Stationäre Lösung}
+Für $\mathbf{F} = 0$ und konstante Geschwindigkeit ($\mathbf{a} = 0$):
+\begin{equation}
+\gamma m\mathbf{v} = \mathbf{p} = \text{konstant}
+\end{equation}
+Mit der DBT-Impulsdefinition:
+\begin{equation}
+\mathbf{p} = \hbar\nabla S
+\end{equation}
+
+\subsection{Energie-Impuls-Relation}
+\begin{align}
+E &= \gamma mc^2 = \frac{mc^2}{\sqrt{1-v^2/c^2}} \\
+p^2 &= \gamma^2m^2v^2 = \frac{m^2v^2}{1-v^2/c^2} \\
+\Rightarrow v^2 &= \frac{p^2c^2}{m^2c^2 + p^2} \\
+E &= \sqrt{m^2c^4 + p^2c^2}
+\end{align}
+
+\subsection{Kovariante Formulierung}
+\begin{equation}
+p^\mu p_\mu = \frac{E^2}{c^2} - p^2 = m^2c^2
+\end{equation}
+
+\subsection{Interpretation}
+\begin{itemize}
+\item Die WG liefert die relativistische Dynamik
+\item Die DBT verknüpft diese mit der Quantenmechanik
+\item Die SRT-Relation emergiert als Grenzfall
+\item Das Quantenpotential $Q$ führt zu zusätzlichen Quanteneffekten
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\caption{Grenzfälle der Energie-Impuls-Beziehung}
+\begin{tabular}{ll}
+\hline
+Nicht-relativistisch ($v \ll c$) & $E \approx mc^2 + \frac{p^2}{2m} + Q$ \\
+Ultra-relativistisch ($v \to c$) & $E \approx pc$ \\
+Quantenlimit & $E \approx \sqrt{p^2c^2 + m^2c^4} + Q$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection*{Ontologischer Status der SRT}
+Die Spezielle Relativitätstheorie stellt sich in diesem Rahmen als \textit{effektive Beschreibung} heraus, die:
+\begin{itemize}
+\item Im Bereich \( v \ll c \), \( L \gg \ell_p \) gültig ist
+\item Aber durch tiefere Prinzipien (Fernwirkung + Führungswelle) ersetzt wird
+\end{itemize}
+
+\section{Exakte Herleitung der Weber-DBT-Bewegungsgleichung}
+\label{sec:exact_derivation}
+
+Ausgehend von der Weber-Gravitationskraft und dem Quantenpotential der De-Broglie-Bohm-Theorie leiten wir die vollständige nicht-genäherte Bewegungsgleichung ab.
+
+\subsection{Kombinierte Lagrange-Funktion}
+Die Wirkung des Systems setzt sich aus kinetischer Energie, Weber-Potential und Quantenpotential zusammen:
+
+\begin{equation}
+\mathcal{L} = \underbrace{\frac{1}{2}m\dot{\mathbf{r}}^2}_{T} - \underbrace{\frac{GMm}{r}\left[1 - \frac{\dot{r}^2}{2c^2} + \beta\frac{\mathbf{r}\cdot\ddot{\mathbf{r}}}{2c^2}\right]}_{V_{\text{WG}}} - \underbrace{Q(\mathbf{r},t)}_{\text{Quantenpotential}}
+\end{equation}
+
+mit dem Quantenpotential $Q = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|}$.
+
+\subsection{Euler-Lagrange-Gleichung}
+Die exakte Bewegungsgleichung folgt aus:
+
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial\mathcal{L}}{\partial\dot{\mathbf{r}}}\right) - \frac{\partial\mathcal{L}}{\partial\mathbf{r}} = 0
+\end{equation}
+
+\subsection{Ableitung der Terme}
+\begin{enumerate}
+\item \textbf{Kanonischer Impuls}:
+\begin{align}
+\frac{\partial\mathcal{L}}{\partial\dot{\mathbf{r}}} &= m\dot{\mathbf{r}} + \frac{GMm}{c^2}\left(\frac{\dot{\mathbf{r}}}{r} - \beta\frac{\mathbf{r}}{2r}\frac{d}{dt}\ln\dot{r}\right) \\
+&= m\dot{\mathbf{r}}\left[1 + \frac{GM}{c^2r}\left(1 - \frac{\beta}{2}\frac{\mathbf{r}\cdot\ddot{\mathbf{r}}}{\dot{r}^2}\right)\right]
+\end{align}
+
+\item \textbf{Zeitableitung}:
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial\mathcal{L}}{\partial\dot{\mathbf{r}}}\right) = m\ddot{\mathbf{r}}\left[1 + \mathcal{O}(c^{-2})\right] + \text{höhere Ableitungen}
+\end{equation}
+
+\item \textbf{Ortsableitung}:
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\mathbf{r}} = -\frac{GMm}{r^2}\left[1 - \frac{3\dot{r}^2}{2c^2} + \beta\frac{\ddot{r}}{c^2}\right]\hat{\mathbf{r}} - \nabla Q
+\end{equation}
+\end{enumerate}
+
+\subsection{Exakte Bewegungsgleichung}
+Durch Zusammenführung aller Terme erhalten wir die nicht-genäherte Gleichung:
+
+\begin{equation}
+\boxed{
+m\frac{d}{dt}\left(\gamma_{\text{WG}}\mathbf{v}\right) = -\nabla Q
+}
+\end{equation}
+
+mit dem vollständigen Weber-Lorentz-Faktor:
+
+\begin{equation}
+\gamma_{\text{WG}} = \left[1 - \frac{v^2}{c^2} + \beta\left(\frac{\mathbf{a}\cdot\mathbf{r}}{c^2} + \frac{(\mathbf{v}\cdot\mathbf{r})^2}{c^2r^2}\right) - \frac{GM}{c^2r}\left(1 - \frac{\beta}{2}\frac{\mathbf{r}\cdot\mathbf{j}}{\dot{r}^2}\right)\right]^{-1/2}
+\end{equation}
+
+wobei $\mathbf{j} = d\mathbf{a}/dt$ die Jerk-Komponente darstellt.
+
+\subsection{Diskussion der Terme}
+\begin{itemize}
+\item Der Term $\propto \mathbf{j}$ beschreibt nicht-lokale Änderungen der Beschleunigung
+\item Die Kopplung $\mathbf{a}\cdot\mathbf{r}$ modifiziert effektiv die träge Masse
+\item Für $\beta=0$ und $Q=0$ reduziert sich die Gleichung auf die spezielle Relativitätstheorie
+\end{itemize}
+
+\section{Kovariante Formulierung der exakten Weber-DBT-Gleichung}
+\label{sec:covariant_formulation}
+
+Die vollständige kovariante Formulierung der Weber-Dynamik kombiniert mit der De-Broglie-Bohm-Theorie erfordert eine manifest relativistische Darstellung unter Berücksichtigung aller höherer Ordnungen.
+
+\subsection{Kovariante Grundgrößen}
+Wir definieren in Minkowski-Raumzeit mit Metrik $\eta_{\mu\nu} = \mathrm{diag}(-1,1,1,1)$:
+
+\begin{align}
+\text{Vierergeschwindigkeit:} &\quad u^\mu = \gamma(c, \mathbf{v}), \quad \gamma = (1-v^2/c^2)^{-1/2} \\
+\text{Eigenbeschleunigung:} &\quad a^\mu = \frac{du^\mu}{d\tau} = \gamma^4\left(\frac{\mathbf{v}\cdot\mathbf{a}}{c}, \mathbf{a} + \gamma^2\frac{(\mathbf{v}\cdot\mathbf{a})\mathbf{v}}{c^2}\right) \\
+\text{Eigen-Jerk:} &\quad j^\mu = \frac{da^\mu}{d\tau} = \gamma^7\left(\frac{a^2 + \mathbf{v}\cdot\mathbf{j}}{c}, \mathbf{j} + 3\gamma^2\frac{(\mathbf{v}\cdot\mathbf{a})\mathbf{a}}{c^2} + \gamma^2\frac{(\mathbf{v}\cdot\mathbf{j})\mathbf{v}}{c^2}\right)
+\end{align}
+
+\subsection{Exakter Weber-Lorentz-Faktor}
+Der vollständige relativistische Faktor inklusive Jerk-Termen lautet:
+
+\begin{equation}
+\gamma_{\mathrm{WG}} = \left[1 - \frac{v^2}{c^2} + \beta\left(\frac{\mathbf{r}\cdot\mathbf{a}}{c^2} + \frac{(\mathbf{v}\cdot\mathbf{r})^2}{c^2r^2}\right) - \beta\frac{GM}{c^4}\left(\frac{\mathbf{r}\cdot\mathbf{j}}{r} + \frac{(\mathbf{v}\cdot\mathbf{r})(\mathbf{a}\cdot\mathbf{r})}{r^3}\right)\right]^{-1/2}
+\end{equation}
+
+\subsection{Kovariante Bewegungsgleichung}
+Die exakte kovariante Form der Weber-DBT-Dynamik:
+
+\begin{equation}
+\boxed{
+m\frac{D}{D\tau}\left(\gamma_{\mathrm{WG}} u^\mu\right) = -\frac{\hbar^2}{2m}\partial^\mu\left(\frac{\Box|\Psi|}{|\Psi|}\right)
+}
+\end{equation}
+
+mit:
+\begin{itemize}
+\item Kovariante Ableitung: $\frac{D}{D\tau} = u^\nu\partial_\nu$
+\item d'Alembert-Operator: $\Box = \partial_\mu\partial^\mu = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2} + \nabla^2$
+\end{itemize}
+
+\subsection{Komponentenentwicklung}
+
+\subsubsection{Zeitkomponente ($\mu=0$)}
+\begin{equation}
+\frac{d}{d\tau}\left(\gamma_{\mathrm{WG}}\gamma c\right) = \frac{\hbar^2}{2mc^2}\frac{\partial}{\partial t}\left(\frac{\Box|\Psi|}{|\Psi|}\right)
+\end{equation}
+
+\subsubsection{Raumkomponenten ($\mu=1,2,3$)}
+\begin{equation}
+\frac{d}{d\tau}\left(\gamma_{\mathrm{WG}}\gamma\mathbf{v}\right) = -\frac{\hbar^2}{2m}\nabla\left(\frac{\Box|\Psi|}{|\Psi|}\right)
+\end{equation}
+
+\subsection{Diskussion der Terme}
+\begin{itemize}
+\item \textbf{Jerk-Abhängigkeit}: Die $\mathbf{j}$-Terme in $\gamma_{\mathrm{WG}}$ beschreiben nicht-lokale Fernwirkungseffekte
+\item \textbf{Quantenpotential}: Der kovariante d'Alembert-Operator $\Box$ ersetzt das klassische $\nabla^2$
+\item \textbf{Energieerhaltung}: Die Zeitkomponente enthält Korrekturen zur relativistischen Energie-Impuls-Beziehung
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\caption{Vergleich der Formulierungen}
+\begin{tabular}{ll}
+\hline
+\textbf{Genäherte Form (4.1.1)} & \textbf{Exakte kovariante Form} \\
+\hline
+$\gamma_{\mathrm{WG}} \approx 1 + \frac{v^2}{2c^2}$ & Vollständige Jerk-Abhängigkeit \\
+$-\nabla Q$ & $-\partial^\mu(\hbar^2\Box|\Psi|/2m|\Psi|)$ \\
+Newton-artige Darstellung & Manifest kovariant \\
+\hline
+\end{tabular}
+\end{table}

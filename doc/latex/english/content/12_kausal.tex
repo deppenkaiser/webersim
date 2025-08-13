@@ -1,0 +1,284 @@
+\section{Fundamentale Charakteristika aller Wellen}
+\label{sec:wellen}
+Wellen besitzen \enquote{instantane} Eigenschaften, welche ebenfalls von Fernwirkungstheorien unterstellt werden.
+Hier zeigt sich auch ein Zusammenhang zur De-Broglie-Bohm-Theorie (DBT).
+
+Jede Welle besitzt zwei komplementäre Eigenschaftsebenen:
+
+\subsection*{1. Lokale Eigenschaften (beobachtbar)}
+\begin{itemize}
+    \item \textbf{Störungsausbreitung} mit mediumabhängiger Phasengeschwindigkeit:
+    \[
+    v_p = \frac{\omega}{k} = f(\text{Medium})
+    \]
+    Beispiele:
+    \begin{itemize}
+        \item Elektromagnetische Wellen: $v_p = 1/\sqrt{\mu\epsilon}$
+        \item Schallwellen: $v_p = \sqrt{K/\rho}$
+        \item Wasserwellen: $v_p = \sqrt{g/k} \tanh(kh)$
+    \end{itemize}
+    
+    \item \textbf{Sichtbare Dynamik} durch Feldgröße $\psi(x,t)$:
+    \[
+    \psi(x,t) = A e^{i(kx-\omega t)} \quad \text{(harmonische Näherung)}
+    \]
+\end{itemize}
+
+\subsection*{2. Nicht-lokale Eigenschaften (instantane Korrelation)}
+\begin{itemize}
+    \item \textbf{Energieerhaltung} durch phasenkritische Kopplung:
+    \[
+    \partial_t \mathcal{E} + \nabla \cdot \vec{S} = 0 \quad \text{(Kontinuitätsgleichung)}
+    \]
+    mit $\mathcal{E} = \mathcal{E}_\text{kin} + \mathcal{E}_\text{pot}$ und $\vec{S}$ als Energiestromdichte.
+    
+    \item \textbf{Universalmechanismus}:
+    \begin{itemize}
+        \item Maximales $\mathcal{E}_\text{pot}$ bei $\psi = \pm A$ $\leftrightarrow$ Maximales $\mathcal{E}_\text{kin}$ bei $\psi = 0$
+        \item Phasenversatz $\Delta\phi = \pi/2$ zwischen $\psi$ und $\partial_t\psi$
+    \end{itemize}
+\end{itemize}
+
+\section*{Medienübergreifende Prinzipien}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Wellentyp} & \textbf{Lokale Größe $\psi$} & \textbf{Nicht-lokaler Erhalt} \\
+    \hline
+    Mechanisch (Wasser) & Oberflächenauslenkung $\eta$ & $E_\text{kin} + E_\text{pot} = \text{const}$ \\
+    \hline
+    Akustisch & Druck $p$ & $\frac{p^2}{\rho c^2} + \rho v^2 = \text{const}$ \\
+    \hline
+    Elektromagnetisch & Felder $\vec{E},\vec{B}$ & $\frac{\epsilon_0 E^2}{2} + \frac{B^2}{2\mu_0} = \text{const}$ \\
+    \hline
+    Quantenmechanisch & Wellenfunktion $\Psi$ & $|\Psi|^2 = \text{Wahrscheinlichkeit}$ \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\section*{Mathematische Universalstruktur}
+\begin{itemize}
+    \item \textbf{Dispersionsrelation}: $\omega = \omega(k)$ verknüpft lokale und nicht-lokale Ebene
+    \item \textbf{Wellengleichung}: 
+    \[
+    \partial_t^2 \psi = v_p^2 \nabla^2 \psi + \text{Nichtlinearitäten}
+    \]
+    \item \textbf{Energietransport}:
+    \[
+    \vec{S} = 
+    \begin{cases}
+    \frac{1}{2}\rho g A^2 v_g & \text{(Wasser)} \\
+    \vec{E} \times \vec{B}/\mu_0 & \text{(EM)} \\
+    p \vec{v} & \text{(Schall)}
+    \end{cases}
+    \]
+\end{itemize}
+
+\section*{Zusammenfassung}
+\begin{itemize}
+    \item Alle Wellen zeigen \textit{duales Verhalten}: 
+    \begin{itemize}
+        \item Lokale Propagierung mit $v_p < \infty$
+        \item Globale instantane Energie-Neutralisation
+    \end{itemize}
+    \item Die nicht-lokale Korrelation ist \textit{kein} kausaler Prozess, sondern strukturelle Konsequenz der Wellengleichung
+    \item Energieerhaltung erfolgt instantan und nicht-lokal durch \textit{phasenstarre Kopplung} im gesamten System
+\end{itemize}
+
+\section{Zusammenhang zur De-Broglie-Bohm-Theorie}
+\label{sec:dbt}
+Die Weber-Gravitation (WG) und die De-Broglie-Bohm-Theorie \cite{bohm1952} (DBT) teilen konzeptionelle Parallelen, insbesondere in ihrer Behandlung nicht-lokaler Wechselwirkungen und der Rolle instantaner Korrelationen. 
+
+\subsection{Nicht-Lokalität und Fernwirkung}
+\begin{itemize}
+    \item \textbf{WG}: Die gravitative Weber-Kraft wirkt direkt zwischen Massen, ohne Vermittlung durch ein Feld oder eine gekrümmte Raumzeit. Dies entspricht einem \textit{Fernwirkungsansatz}, der Geschwindigkeits- und Beschleunigungsterme ($\dot{r}$, $\ddot{r}$) einbezieht.
+    
+    \item \textbf{DBT}: Die Quantenpotentiale der DBT wirken instantan über beliebige Distanzen, was eine Form nicht-lokaler Kausalität impliziert. Die Wellenfunktion $\Psi$ steuert Teilchentrajektorien durch das Quantenpotential $Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 |\Psi|}{|\Psi|}$.
+\end{itemize}
+
+\subsection{Instantane Korrelationen}
+Beide Theorien postulieren eine zugrundeliegende instantane Dynamik:
+\begin{itemize}
+    \item In der WG manifestiert sich dies in der \textit{Energieerhaltung} durch phasenstarre Kopplung (vgl. Abschnitt \ref{sec:wellen}), die globale Korrelationen ohne Zeitverzögerung beschreibt.
+    
+    \item In der DBT führt das Quantenpotential zu sofortigen Anpassungen der Teilchenbahnen, unabhängig von ihrer räumlichen Trennung (\textit{„pilot wave“-Mechanismus}).
+\end{itemize}
+
+\subsection{Mathematische Analogien}
+Die Struktur der Bewegungsgleichungen zeigt formale Ähnlichkeiten:
+\begin{align}
+    \text{WG:} \quad & \mathbf{F} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right) \hat{\mathbf{r}}, \\
+    \text{DBT:} \quad & m \frac{d^2 \mathbf{x}}{dt^2} = -\nabla (V + Q), 
+\end{align}
+wobei $V$ das klassische Potential und $Q$ das Quantenpotential ist. In beiden Fällen modifizieren Zusatzterme ($\dot{r}^2$, $\ddot{r}$ bzw. $Q$) die Newtonsche Dynamik.
+
+\section{Quanten-Weber-Gravitation: Eine deterministische Synthese}
+Die Kombination der Weber-Gravitation (WG) mit der De-Broglie-Bohm-Theorie (DBT) ermöglicht eine singularitätsfreie Quantengravitation mit experimentell prüfbaren Konsequenzen.
+
+\subsection{Kernidee der Synthese}
+Beide Theorien basieren auf deterministischen Fernwirkungen:
+\begin{itemize}
+    \item Die \textbf{WG} ersetzt die Raumzeitkrümmung durch Geschwindigkeits-/Beschleunigungsterme ($\dot{r}, \ddot{r}$).
+    \item Die \textbf{DBT} fügt der klassischen Dynamik ein nicht-lokales Quantenpotential $Q$ hinzu.
+\end{itemize}
+
+\subsection{Hybrid-Gleichung}
+Für ein Teilchen der Masse $m$ im Gravitationsfeld:
+\begin{equation}
+    m\frac{d^2\mathbf{r}}{dt^2} = \underbrace{-\frac{GMm}{r^2}\left(1-\frac{\dot{r}^2}{c^2}+\beta\frac{r\ddot{r}}{c^2}\right)\hat{\mathbf{r}}}_{\text{Weber-Kraft}} - \underbrace{\nabla Q}_{\text{Quantenpotential}}
+\end{equation}
+mit $Q = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|}$. Dies vermeidet Singularitäten, da $Q$ bei $r \to 0$ divergiert und Kollaps verhindert.
+
+\subsection{Unschärferelation in der Weber-DBT-Synthese}
+Die Heisenberg’sche Unschärferelation wird in der Weber-Gravitation nicht direkt modifiziert, da die Theorie klassisch-deterministisch ist. Allerdings zeigt die Synthese mit der
+De-Broglie-Bohm-Theorie (Abschnitt~\ref{sec:dbt}) eine alternative Interpretation:
+\begin{itemize}
+    \item Die Unschärfe ist \textit{epistemisch} (durch versteckte Variablen des Quantenpotentials $Q$ bedingt).
+    \item In starken Gravitationsfeldern könnte der Weber-Term $\frac{GM}{c^2 r}$ die effektive Unschärfe beeinflussen (vgl. \cite{bohm1952}).
+\end{itemize}
+
+\section{Die De-Broglie-Bohm-Theorie und die nicht-lokale Dynamik der Führungswelle}
+
+Die De-Broglie-Bohm-Theorie (DBT) bietet eine deterministische Interpretation der Quantenmechanik, in der Teilchen durch eine Führungswelle $\Psi$ gesteuert werden. Dieser Abschnitt erläutert die mathematischen Grundlagen und die physikalischen Implikationen der DBT, insbesondere im Kontext des Doppelspaltexperiments.
+
+\subsection{Grundgleichungen der DBT}
+
+Die Dynamik der Führungswelle $\Psi$ wird durch die Schrödinger-Gleichung beschrieben:
+\[ i\hbar\frac{\partial\Psi}{\partial t} = \left[-\frac{\hbar^2}{2m}\nabla^2 + V(x)\right]\Psi \]
+wobei $V(x)$ das Potential der Spalte darstellt:
+\[ V(x) = \begin{cases} 
+0 & \text{in den Spaltöffnungen} \\
+\infty & \text{sonst}
+\end{cases} \]
+
+Die Teilchenbewegung folgt aus der Bohmschen Trajektoriengleichung:
+\[ \frac{d\mathbf{x}}{dt} = \frac{\hbar}{m}\text{Im}\left(\frac{\nabla\Psi}{\Psi}\right) \]
+mit dem Quantenpotential:
+\[ Q(x,t) = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|} \]
+
+\subsection{Nicht-lokale Dynamik der Führungswelle}
+
+Die Lösung $\Psi(x,t)$ reagiert instantan auf die Spaltbedingungen:
+\[ \Psi(x,t) = \int G(x,x',t)\Psi_0(x')\,dx' \]
+wobei $G(x,x',t)$ der nicht-lokale Propagator ist, der alle Pfade durch beide Spalte gleichzeitig berücksichtigt.
+
+Für Spalte bei $x = \pm d/2$ ergibt sich das Interferenzmuster:
+\[ \Psi(x,t) \sim e^{i(kx-\omega t)}\left[\exp\left(-\frac{(x-d/2)^2}{4\sigma^2}\right) + \exp\left(-\frac{(x+d/2)^2}{4\sigma^2}\right)\right] \]
+\[ |\Psi|^2 \propto \cos^2\left(\frac{kdx}{2\sigma^2}\right) \]
+
+\subsection{Energieerhaltung und instantaner Ausgleich}
+
+Die Wahrscheinlichkeitserhaltung folgt aus der Kontinuitätsgleichung:
+\[ \frac{\partial\rho}{\partial t} + \nabla\cdot(\rho\mathbf{v}) = 0 \quad \text{mit} \quad \rho = |\Psi|^2 \]
+
+Die Gesamtenergie bleibt konstant:
+\[ E_{\text{ges}} = \underbrace{\frac{1}{2}mv^2}_{\text{kin. Energie}} + \underbrace{Q(x,t)}_{\text{Quantenpotential}} + \underbrace{V(x)}_{\text{äußeres Potential}} \]
+
+\subsection{Interpretation der Führungswelle}
+
+Die nicht-lokale Dynamik lässt sich als instantane Energieoptimierung verstehen. Das effektive Energiefunktional des Systems lautet:
+\[ \mathcal{E}[\Psi] = \underbrace{\frac{\hbar^2}{2m}\int|\nabla\Psi|^2\,d^3x}_{Q\text{-Term}} + \underbrace{\int V(x)|\Psi|^2\,d^3x}_{\text{Randbedingungen}} + \lambda\left(\int|\Psi|^2\,d^3x - 1\right) \]
+
+Die stationäre Führungswelle $\Psi_0(x)$ realisiert das Minimum von $\mathcal{E}[\Psi]$, was äquivalent zur zeitunabhängigen Schrödinger-Gleichung ist.
+
+\subsection{Konsequenzen}
+
+\begin{itemize}
+\item Die Interferenzmuster sind energetische Attraktoren des Systems
+\item Die \enquote{spukhafte Fernwirkung} entspricht einem sofortigen Energieausgleich durch $Q(x,t)$
+\item Experimentelle Vorhersage: Änderungen von $V(x)$ führen zu instantanen Änderungen von $\rho(x,t)$
+\end{itemize}
+
+\section{Kausalität durch Gleichzeitigkeit}
+\label{sec:gleichzeitige_kausalitaet}
+
+\subsection{Kernthese}
+Die physikalische Standarddefinition von Kausalität ist unnötig restriktiv, wenn sie gleichzeitige Wechselwirkungen ausschließt. Ich argumentiere für einen erweiterten Kausalitätsbegriff, der zwei Prinzipien vereint:
+
+\begin{itemize}
+    \item \textbf{Determinismus}: Der Zustand $Z(t) = \{r, \dot{r}\}$ bestimmt eindeutig $Z(t+dt)$
+    \item \textbf{Systemische Abhängigkeit}: Instantane Korrelationen sind kausal, wenn sie aus einer gemeinsamen Ursache folgen
+\end{itemize}
+
+\subsection{Anwendung auf die Weber-Kraft}
+Die Weber-Gravitation zeigt dies exemplarisch:
+
+\begin{equation}
+    F = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)
+\end{equation}
+
+\begin{itemize}
+    \item Die Abhängigkeit von $\ddot{r}$ \textit{scheint} nicht-lokal
+    \item Tatsächlich beschreibt sie eine \textit{systeminterne} Rückkopplung:
+\end{itemize}
+
+\begin{equation}
+    \ddot{r} = f(r, \dot{r}) \quad \text{(lösbar nach Lipschitz-Bedingung)}
+\end{equation}
+
+\subsection{Philosophische Begründung}
+\begin{itemize}
+    \item Newtons 3. Gesetz wirkt ebenfalls instantan (actio = reactio)
+    \item Quantenverschränkung zeigt: Gleichzeitige Korrelationen verletzen keine Kausalität
+    \item Entscheidend ist nicht die \textit{Lokalität}, sondern die \textit{Eindeutigkeit} der Zeitentwicklung
+\end{itemize}
+
+\subsection{Konsequenzen}
+\begin{tabular}{p{0.45\textwidth}p{0.45\textwidth}}
+    \hline
+    \textbf{Konventionelle Sicht} & \textbf{Diese Arbeit} \\
+    \hline
+    Kausalität erfordert Zeitverzögerung & Gleichzeitige Kausalität möglich \\
+    Nicht-Lokalität = problematisch & Systemische Abhängigkeiten sind natürlich \\
+    \hline
+\end{tabular}
+
+\section{Das Prinzip der energetischen Gleichzeitigkeit}
+\label{sec:energetische_gleichzeitigkeit}
+
+\subsection{Die fundamentale Rolle der Welle}
+Die Natur realisiert durch Wellenphänomene eine \emph{instantane energetische Optimierung}:
+
+\begin{itemize}
+    \item Eine Welle $\Psi(\mathbf{x},t)$ stellt zu jedem Zeitpunkt $t$ global sicher, dass:
+    \begin{equation}
+        \delta \mathcal{E}[\Psi] = 0 \quad \text{(Energieminimierung)}
+    \end{equation}
+    
+    \item Dieses Prinzip wirkt \emph{ohne Zeitverzug} und ist damit kausal im erweiterten Sinn
+\end{itemize}
+
+\subsection{Naturprinzip vs. Kausalitätsdogma}
+Die konventionelle Kausalitätsdefinition widerspricht diesem Grundprinzip:
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{Mainstream-Kausalität} & \textbf{Energetische Gleichzeitigkeit} \\
+        \midrule
+        Lokale Wechselwirkungen & Globale Optimierung \\
+        Ursache-Wirkung-Kette & Instantanes Minimum \\
+        Lichtkegel-Beschränkung & Sofortige Anpassung \\
+        \bottomrule
+    \end{tabular}
+    \caption{Konflikt der Paradigmen}
+\end{table}
+
+\subsection{Mathematische Konsequenz}
+Das Wellenprinzip erzwingt eine Revision der Bewegungsgleichungen:
+
+\begin{equation}
+    \underbrace{\frac{\partial \Psi}{\partial t}}_{\text{Dynamik}} = 
+    \underbrace{\mathcal{H}[\Psi]}_{\text{Instantane Optimierung}}
+\end{equation}
+
+wobei $\mathcal{H}$ ein \emph{globaler} Energieoperator ist.
+
+\subsection{Physikalische Implikationen}
+\begin{itemize}
+    \item Die Weber-Kraft mit $\ddot{r}$-Abhängigkeit wird zur natürlichen Konsequenz
+    \item Quantenverschränkung ist direkter Ausdruck dieses Prinzips
+    \item Der Raum wird zum Träger der instantanen energetischen Information
+\end{itemize}

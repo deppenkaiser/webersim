@@ -1,0 +1,51 @@
+\section{Shapiro-Effekt in der Weber-DBT-Gravitation}
+\label{sec:shapiro_effect}
+
+Der Shapiro-Effekt beschreibt die gravitative Zeitverzögerung von Lichtsignalen. In der Weber-DBT-Theorie ergibt sich eine modifizierte Version dieses Effekts durch die Kombination aus Weber-Gravitation und Quantenpotential.
+
+\subsection{Laufzeitverzögerung}
+Für ein Lichtsignal, das an einer Masse $M$ mit minimalem Abstand $b$ vorbeiläuft, beträgt die zusätzliche Laufzeit:
+
+\begin{equation}
+\Delta t = \frac{2GM}{c^3}\left[\ln\left(\frac{4r_e r_p}{b^2}\right) + \frac{\beta GM}{c^2b}\right] + \frac{\hbar^2}{4E^2c^3b^2}(r_e + r_p)
+\end{equation}
+
+wobei:
+\begin{itemize}
+\item $r_e$ und $r_p$ die Abstände von Masse zu Emitter bzw. Detektor sind
+\item $\beta = 0.5$ für die Weber-Gravitation
+\item $E = h\nu$ die Photonenenergie
+\end{itemize}
+
+\subsection{Herleitung}
+Aus der WG-DBT-Metrik für schwache Felder:
+
+\begin{equation}
+ds^2 = -\left(1 - \frac{2GM}{c^2r} + \frac{Q}{E}\right)c^2dt^2 + \left(1 + \frac{2GM}{c^2r}\right)dr^2
+\end{equation}
+
+Die Lichtlaufzeit folgt aus:
+
+\begin{equation}
+\Delta t = 2\int_{b}^{r_e} \frac{1}{c}\left[\left(1 + \frac{2GM}{c^2r} - \frac{Q}{E}\right)^{-1} - 1\right] dr
+\end{equation}
+
+Mit dem Quantenpotential $Q \approx -\hbar^2/(2Eb^2)$ für $r \approx b$:
+
+\begin{equation}
+\Delta t \approx \frac{2GM}{c^3}\ln\left(\frac{4r_e r_p}{b^2}\right) + \frac{\beta G^2M^2}{c^5b} + \frac{\hbar^2(r_e + r_p)}{4E^2c^3b^2}
+\end{equation}
+
+\subsection{Physikalische Interpretation}
+\begin{itemize}
+\item Der erste Term entspricht der klassischen ART-Vorhersage
+\item Der Weber-Term ($\beta$) führt zu einer zusätzlichen $1/b$-Abhängigkeit
+\item Der DBT-Term zeigt charakteristische Frequenzabhängigkeit ($\propto \nu^{-2}$)
+\end{itemize}
+
+Für Radarsignale ($\nu \sim 10^{10}$ Hz) im Sonnensystem:
+\begin{equation}
+\Delta t_{\text{WG-DBT}} \approx 240\,\mu\text{s} - 10^{-36}\,\mu\text{s} + 10^{-72}\,\mu\text{s}
+\end{equation}
+
+Die Quantenkorrektur ist vernachlässigbar, aber prinzipiell vorhanden.

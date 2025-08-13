@@ -1,0 +1,62 @@
+\section{Weber-Gravitation als Alternative zur ART}
+Die allgemeine Relativitätstheorie (ART) gilt als der Goldstandard der modernen Astrophysik, allerdings werden bestimmte Aspekte dieser Theorie
+nicht objektiv betrachtet. Die ART überzeugt durch die Fähigkeit die Merkur-Periheldrehung vorhersagen zu können, aber auch durch die Vorhersage
+der Gravitationswellen. Das sind große Leistungen dieser Gravitationstheorie.
+
+Auf der anderen Seite liefert sie unphysikalische Ergebnisse für schwarze Löcher und für galaktische Skalen. Schwarze Löcher werden als Singularitäten
+dargestellt, wobei davon ausgegangen werden muss, dass die gravitativen Verhältnisse in der Nähe dieser Singularitäten ebenfalls ungenau sein müssen. Die
+Rotationskurven von Galaxien werden nicht korrekt Vorhergesagt, weswegen die ART \enquote{dunkle Materie} benötigt.
+
+\subsection{Grundgleichungen der Weber-Gravitation}
+\subsection*{Weber-Gravitations Gleichung}
+\begin{equation}
+\label{eq:weber_g}
+\boxed
+{
+    \mathbf{F} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)\mathbf{\hat{r}}
+}
+\end{equation}
+
+\subsection*{Spezifischer Drehimpuls}
+Der Drehimpuls pro Masseneinheit $h$ ist definiert als:
+\begin{equation}
+\label{eq:spezifischer_drehimpuls_h}
+\boxed
+{
+    h = r^2\dot{\phi} = \sqrt{GMa(1-e^2)}
+}
+\end{equation}
+wobei $a$ die große Halbachse und $e$ die Exzentrizität der Bahn ist.
+
+\subsection{Bewegungsgleichung in Polarkoordinaten}
+\[
+\mathbf{a} = \left(\ddot{r} - r\dot{\phi}^2\right)\mathbf{\hat{r}} + \left(r\ddot{\phi} + 2\dot{r}\dot{\phi}\right)\mathbf{\hat{\phi}} = -\frac{GM}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2}\right)\mathbf{\hat{r}}
+\]
+
+\subsection*{Variablenbeschreibung}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item $\mathbf{F}$: Gravitationskraftvektor (Weber-Kraft) [N]
+    \item $\mathbf{a}$: Beschleunigungsvektor [m/s²]
+    \item $G$: Gravitationskonstante [m³/kg/s²]
+    \item $M$, $m$: Massen der wechselwirkenden Körper [kg]
+    \item $r$: Abstand zwischen den Massenschwerpunkten [m]
+    \item $\dot{r} = \frac{dr}{dt}$: Radiale Relativgeschwindigkeit [m/s]
+    \item $\ddot{r} = \frac{d^2r}{dt^2}$: Radiale Relativbeschleunigung [m/s²]
+    \item $c$: Lichtgeschwindigkeit [m/s]
+    \item $\phi$: Azimutwinkel [rad]
+    \item $\dot{\phi} = \frac{d\phi}{dt}$: Winkelgeschwindigkeit [rad/s]
+    \item $\ddot{\phi} = \frac{d^2\phi}{dt^2}$: Winkelbeschleunigung [rad/s²]
+    \item $h$: Spezifischer Drehimpuls [m²/s]
+    \item $\mathbf{\hat{r}}$: Radialer Einheitsvektor (zeigt von $M$ zu $m$)
+    \item $\mathbf{\hat{\phi}}$: Azimutaler Einheitsvektor (senkrecht zu $\mathbf{\hat{r}}$)
+\end{itemize}
+
+\subsection*{Physikalische Interpretation}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Der Term $-\frac{GMm}{r^2}$ entspricht der klassischen Newton'schen Gravitation
+    \item $\frac{\dot{r}^2}{c^2}$: Relativistische Korrektur für radiale Bewegung
+    \item $\frac{r\ddot{r}}{2c^2}$: Korrektur für radiale Beschleunigung
+    \item $r\dot{\phi}^2$: Zentripetalbeschleunigung
+    \item $2\dot{r}\dot{\phi}$: Coriolis-Term
+    \item $h$: Erhaltungsgröße für Planetenbahnen
+\end{itemize}

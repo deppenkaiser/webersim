@@ -1,0 +1,169 @@
+\section{Bahngleichung in der Weber-DBT-Gravitation}
+\label{sec:bahngleichung}
+
+Die Kombination der Weber-Gravitation (WG) mit der De-Broglie-Bohm-Theorie (DBT) führt zu einer modifizierten Bahndynamik, die durch eine nichtlineare Differentialgleichung beschrieben wird. Im Folgenden leiten wir die exakte Bahngleichung $r(\phi)$ her.
+
+\subsection{Kraftgleichung und Potentiale}
+Ausgehend von der verallgemeinerten Bewegungsgleichung (Gl.~3.2.7 der Arbeit):
+
+\begin{equation}
+m \frac{d}{dt}(\gamma_{\mathrm{WG}}\mathbf{v}) = \mathbf{F}_{\mathrm{WG}} + \mathbf{F}_Q
+\end{equation}
+
+mit den Komponenten:
+\begin{itemize}
+\item Weber-Gravitationskraft:
+\begin{equation}
+\mathbf{F}_{\mathrm{WG}} = -\frac{GMm}{r^2}\left(1-\frac{\dot{r}^2}{c^2}+\beta\frac{r\ddot{r}}{c^2}\right)\hat{\mathbf{r}}
+\end{equation}
+
+\item Quantenkraft:
+\begin{equation}
+\mathbf{F}_Q = -\nabla Q = \frac{\hbar^2}{2m}\nabla\left(\frac{\nabla^2|\Psi|}{|\Psi|}\right)
+\end{equation}
+
+\item Weber-Lorentz-Faktor:
+\begin{equation}
+\gamma_{\mathrm{WG}} = \left[1-\frac{v^2}{c^2}+\beta\left(\frac{\mathbf{a}\cdot\mathbf{r}}{c^2}+\frac{(\mathbf{v}\cdot\mathbf{r})^2}{c^2r^2}\right)\right]^{-1/2}
+\end{equation}
+\end{itemize}
+
+\subsection{Transformation auf Polarkoordinaten}
+Mit den Polarkoordinaten $(r,\phi)$ und dem spezifischen Drehimpuls $h = r^2\dot{\phi} = \mathrm{const.}$ ergibt sich:
+
+\begin{align}
+\mathbf{v} &= \dot{r}\hat{\mathbf{r}} + r\dot{\phi}\hat{\boldsymbol{\phi}} \\
+\mathbf{a} &= (\ddot{r}-r\dot{\phi}^2)\hat{\mathbf{r}} + (r\ddot{\phi}+2\dot{r}\dot{\phi})\hat{\boldsymbol{\phi}}
+\end{align}
+
+\subsection{Radiale Komponente der Bewegungsgleichung}
+Die radiale Komponente lautet:
+
+\begin{equation}
+\frac{d}{dt}(\gamma_{\mathrm{WG}}\dot{r}) - \gamma_{\mathrm{WG}}r\dot{\phi}^2 = -\frac{GM}{r^2}\left(1-\frac{\dot{r}^2}{c^2}+\beta\frac{r\ddot{r}}{c^2}\right) + \frac{\hbar^2}{2m^2}\frac{\partial}{\partial r}\left(\frac{\nabla^2|\Psi|}{|\Psi|}\right)
+\end{equation}
+
+\subsection{Substitution und exakte Differentialgleichung}
+Mit der Variablentransformation $u = 1/r$ und den Ableitungen:
+
+\begin{align}
+\dot{r} &= -h\frac{du}{d\phi} \\
+\ddot{r} &= -h^2u^2\frac{d^2u}{d\phi^2}
+\end{align}
+
+erhalten wir die nichtlineare Bahngleichung:
+
+\begin{equation}
+\boxed{
+\frac{d^2u}{d\phi^2}\left(1-\beta\frac{GM}{c^2}u\right) + u = \frac{GM}{h^2}\left(1-\frac{h^2}{c^2}\left(\frac{du}{d\phi}\right)^2\right) - \frac{\hbar^2}{2m^2h^2u^2}\frac{d}{du}\left(\frac{\nabla^2|\Psi|}{|\Psi|}\right)
+}
+\label{eq:master}
+\end{equation}
+
+\subsection{Diskussion der Terme}
+\begin{itemize}
+\item Der Term $\propto \beta$ modifiziert die effektive Masse
+\item Der $(\frac{du}{d\phi})^2$-Term entspricht der relativistischen Korrektur
+\item Das Quantenpotential $\propto \hbar^2$ führt zu nicht-lokalen Effekten
+\end{itemize}
+
+\subsection{Grenzfälle}
+\begin{enumerate}
+\item \textbf{Newton'scher Grenzfall} ($c\to\infty$, $\hbar\to0$):
+\begin{equation}
+\frac{d^2u}{d\phi^2} + u = \frac{GM}{h^2}
+\end{equation}
+
+\item \textbf{Reine Weber-Gravitation} ($\hbar\to0$):
+\begin{equation}
+\frac{d^2u}{d\phi^2}\left(1-\beta\frac{GM}{c^2}u\right) + u = \frac{GM}{h^2}\left(1-\frac{h^2}{c^2}\left(\frac{du}{d\phi}\right)^2\right)
+\end{equation}
+\end{enumerate}
+
+\begin{table}[h]
+\centering
+\caption{Parameter der Bahngleichung}
+\begin{tabular}{ll}
+\hline
+Symbol & Physikalische Bedeutung \\ \hline
+$\beta$ & Weber-Beschleunigungsparameter ($\beta=0.5$ für Gravitation) \\
+$h$ & Spezifischer Drehimpuls \\
+$Q$ & Quantenpotential \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Periheldrechnung in der Weber-DBT-Theorie}
+Die Bewegungsgleichung der Weber-DBT-Synthese (Gl. 4.1.10) lautet vollständig:
+
+\begin{equation}
+\frac{d^2 u}{d\phi^2} \left(1 - \beta \frac{GM}{c^2} u \right) + u = \frac{GM}{h^2} \left(1 - \frac{h^2}{c^2} \left(\frac{du}{d\phi}\right)^2 \right) - \frac{\hbar^2}{2m^2 h^2 u^2} \frac{d}{du} \left(\frac{\nabla^2 |\Psi|}{|\Psi|} \right)
+\end{equation}
+
+\subsection{Quantenpotential-Explizierung}
+Für das Quantenpotential wird die Wellenfunktion eines kohärenten makroskopischen Zustands angesetzt:
+\begin{align}
+|\Psi| &\propto e^{-(r - r_0)^2/(2\sigma^2)}, \quad \sigma \sim \text{Planetenradius} \\
+\frac{\nabla^2 |\Psi|}{|\Psi|} &= \frac{1}{\sigma^2}\left(1 - \frac{(r - r_0)^2}{\sigma^2}\right) \\
+\frac{d}{du} \left(\frac{\nabla^2 |\Psi|}{|\Psi|}\right) &= \frac{2r^3}{\sigma^4}(r - r_0)
+\end{align}
+
+\subsection{Vollständige Differentialgleichung}
+Einsetzen aller Terme ergibt:
+\begin{equation}
+\frac{d^2 u}{d\phi^2} \left(1 - \frac{GM}{2c^2} u \right) + u = \frac{GM}{h^2} \left(1 - \frac{h^2}{c^2} \left(\frac{du}{d\phi}\right)^2 \right) - \frac{\hbar^2 r^3 (r - r_0)}{m^2 h^2 \sigma^4 u^2}
+\end{equation}
+
+\subsection{Störungstheorie um Newtonsche Lösung}
+\begin{itemize}
+\item Newtonsche Bahn: $u_0(\phi) = \frac{GM}{h^2}(1 + e \cos\phi)$
+\item Ansatz: $u = u_0 + \delta u$ mit Störung $\delta u$
+\item Exakte Störungsgleichung:
+\begin{equation}
+\frac{d^2 \delta u}{d\phi^2} + \delta u = \underbrace{\frac{GM}{2c^2} u_0 \frac{d^2 u_0}{d\phi^2}}_{\text{Weber-Term}} - \underbrace{\frac{h^2}{c^2} \left(\frac{du_0}{d\phi}\right)^2}_{\text{Relativistisch}} - \underbrace{\frac{\hbar^2 r^3 (r - r_0)}{m^2 h^2 \sigma^4 u_0^2}}_{\text{Quantenterm}}
+\end{equation}
+\end{itemize}
+
+\subsection{Beitragsanalyse}
+\begin{itemize}
+\item Weber-Term: $-\frac{G^2 M^2 e}{2c^2 h^4} \cos\phi$
+\item Relativistischer Term: $-\frac{G^2 M^2 e^2}{c^2 h^4} \sin^2\phi$
+\item Quantenterm: $\mathcal{O}\left(\frac{\hbar^2}{m^2 \sigma^4}\left(\frac{h^2}{GM}\right)^5\right) \approx 10^{-80} \text{ (formal erhalten)}$
+\end{itemize}
+
+\subsection{Resultat}
+Die Periheldrehung pro Umlauf ergibt sich aus dem säkularen Drift:
+\begin{equation}
+\Delta \phi = \frac{6\pi GM}{c^2 a(1 - e^2)} + \mathcal{O}\left(\frac{\hbar^2}{m^2 \sigma^4}\right)
+\end{equation}
+
+\section{Physikalische Überlegenheit der WG-DBT-Lösung}
+Die reine WG-Lösung für Bahngleichungen führt zu nichtlinearen Effekten (Rosettenbahn). Die WG-DBT-Synthese liefert ein anderes Ergebnis.
+
+\subsection{Kritik an der reinen WG-Lösung}
+\begin{itemize}
+\item \textbf{Mathematisches Artefakt}: Die Rosettenbahn entsteht durch Abbruch der Störungsreihe nach $\mathcal{O}(c^{-4})$
+\item \textbf{Fehlende Physik}: Höhere Ordnungen ($c^{-6}, c^{-8},...$) werden ignoriert, obwohl sie für $r \to 0$ dominieren
+\item \textbf{Pathologisches Verhalten}: Die $\alpha\phi^2$-Terme führen zu nicht-physikalischen Divergenzen
+\end{itemize}
+
+\subsection{Vorteile der WG-DBT-Synthese}
+\begin{itemize}
+\item \textbf{Vollständige Kompensation}: Das Quantenpotential 
+$Q = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|}$ 
+kompensiert exakt alle höheren WG-Ordnungen
+
+\item \textbf{Reguläre Lösung}: Für $r \to 0$ dominiert $Q \sim \hbar^2/(mr^2)$ und verhindert Singularitäten
+
+\item \textbf{Physikalischer Grenzfall}:
+\begin{equation}
+\lim_{\hbar \to 0} \text{(WG-DBT)} = \text{ART} + \mathcal{O}(c^{-4})
+\end{equation}
+\end{itemize}
+
+\subsection{Zentrale Einsicht}
+Die Rosettenbahnen der WG sind \underline{rechentechnische Artefakte} - die WG-DBT-Lösung zeigt die \underline{echte Physik}:
+\begin{itemize}
+\item Makroskopisch: Übereinstimmung mit ART
+\item Mikroskopisch: Quantenstrukturen statt Pathologien
+\end{itemize}

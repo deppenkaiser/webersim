@@ -1,0 +1,79 @@
+\section{Herleitung der kombinierten WG-DBT Bewegungsgleichung}
+
+\subsection*{1. Ausgangspunkt: Weber-Gravitationskraft}
+Die klassische Weber-Kraft für zwei Massen $m$ und $M$ lautet:
+\begin{equation}
+\mathbf{F}_{\text{WG}} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \beta\frac{r\ddot{r}}{c^2}\right)\hat{\mathbf{r}}
+\end{equation}
+
+\subsection*{2. Umformung der radiale Beschleunigungsterme}
+Wir entwickeln die Terme $\dot{r}^2$ und $r\ddot{r}$ in vektorieller Form:
+
+\begin{align}
+\dot{r} &= \frac{d}{dt}\sqrt{\mathbf{r}\cdot\mathbf{r}} = \frac{\mathbf{r}\cdot\mathbf{v}}{r} \\
+\dot{r}^2 &= \left(\frac{\mathbf{r}\cdot\mathbf{v}}{r}\right)^2 \\
+r\ddot{r} &= \frac{d}{dt}(r\dot{r}) - \dot{r}^2 = \mathbf{v}\cdot\mathbf{v} + \mathbf{r}\cdot\mathbf{a} - \left(\frac{\mathbf{r}\cdot\mathbf{v}}{r}\right)^2
+\end{align}
+
+Für kleine Abweichungen von Kreisbahnen vernachlässigen wir den letzten Term und erhalten:
+\begin{equation}
+r\ddot{r} \approx v^2 + \mathbf{r}\cdot\mathbf{a}
+\end{equation}
+
+\subsection*{3. Verallgemeinerte Weber-Kraft in vektorieller Form}
+Einsetzen in (1) ergibt:
+\begin{equation}
+\mathbf{F}_{\text{WG}} = -\frac{GMm}{r^2}\left(1 - \frac{(\mathbf{r}\cdot\mathbf{v})^2}{c^2r^2} + \beta\frac{v^2 + \mathbf{r}\cdot\mathbf{a}}{c^2}\right)\hat{\mathbf{r}}
+\end{equation}
+
+\subsection*{4. Lagrange-Formulierung der Weber-Gravitation}
+Das effektive Weber-Potential lautet:
+\begin{equation}
+V_{\text{WG}} = -\frac{GMm}{r}\left(1 - \frac{v^2}{2c^2} + \beta\frac{\mathbf{r}\cdot\mathbf{a}}{2c^2}\right)
+\end{equation}
+
+Die Lagrange-Funktion wird:
+\begin{equation}
+\mathscr{L}_{\text{WG}} = T - V_{\text{WG}} = \frac{1}{2}mv^2 + \frac{GMm}{r}\left(1 - \frac{v^2}{2c^2} + \beta\frac{\mathbf{r}\cdot\mathbf{a}}{2c^2}\right)
+\end{equation}
+
+\subsection*{5. Euler-Lagrange-Gleichungen}
+Anwendung der Euler-Lagrange-Gleichung:
+\begin{equation}
+\frac{d}{dt}\left(\frac{\partial\mathscr{L}}{\partial\mathbf{v}}\right) - \frac{\partial\mathscr{L}}{\partial\mathbf{r}} = 0
+\end{equation}
+
+Berechnung der Terme:
+\begin{align}
+\frac{\partial\mathscr{L}}{\partial\mathbf{v}} &= m\mathbf{v} - \frac{GMm}{c^2r}\mathbf{v} + \beta\frac{GMm}{2c^2}\frac{\mathbf{r}}{r} \\
+\frac{d}{dt}\left(\frac{\partial\mathscr{L}}{\partial\mathbf{v}}\right) &= m\mathbf{a} - \frac{GMm}{c^2}\left(\frac{\mathbf{a}}{r} - \frac{\dot{r}\mathbf{v}}{r^2}\right) + \beta\frac{GMm}{2c^2}\left(\frac{\mathbf{v}}{r} - \frac{\dot{r}\mathbf{r}}{r^2}\right) \\
+\frac{\partial\mathscr{L}}{\partial\mathbf{r}} &= -\frac{GMm}{r^2}\hat{\mathbf{r}} + \frac{GMm}{2c^2}\left(\frac{v^2}{r^2}\hat{\mathbf{r}} - \beta\frac{\mathbf{a}}{r}\right)
+\end{align}
+
+\subsection*{6. De-Broglie-Bohm'sches Quantenpotential}
+Das Quantenpotential der DBT ist:
+\begin{equation}
+Q = -\frac{\hbar^2}{2m}\frac{\nabla^2|\Psi|}{|\Psi|}
+\end{equation}
+
+Die quantenmechanische Kraft ergibt sich aus:
+\begin{equation}
+\mathbf{F}_{\text{Q}} = -\nabla Q
+\end{equation}
+
+\subsection*{7. Kombinierte Bewegungsgleichung}
+Addition der Weber- und Quantenkräfte führt zu:
+\begin{equation}
+m\frac{d}{dt}\left[\left(1 - \frac{GM}{c^2r} + \beta\frac{GM}{2c^2}\frac{\mathbf{r}\cdot\mathbf{v}}{r^2}\right)\mathbf{v}\right] = -\frac{GMm}{r^2}\hat{\mathbf{r}} - \nabla Q
+\end{equation}
+
+Definition des Weber-Lorentz-Faktors:
+\begin{equation}
+\gamma_{\text{WG}} \equiv \left(1 - \frac{v^2}{c^2} + \beta\frac{\mathbf{v}\cdot\mathbf{a}}{c^2}\right)^{-1/2} \approx 1 + \frac{v^2}{2c^2} - \beta\frac{\mathbf{v}\cdot\mathbf{a}}{2c^2}
+\end{equation}
+
+\subsection*{8. Finale Bewegungsgleichung (\ref{eq:wg_dbt_srt})}
+Nach Vernachlässigung höherer Ordnungen erhalten wir:
+\begin{equation}
+m\frac{d}{dt}(\gamma_{\text{WG}}\mathbf{v}) = -\nabla Q
+\end{equation}

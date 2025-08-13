@@ -1,0 +1,141 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, physics}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{csquotes}
+
+\title{Nicht-lokale Dynamik der Führungswelle $\Psi$ im Doppelspaltexperiment}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Einleitung}
+Die De-Broglie-Bohm-Theorie (DBT) bietet eine deterministische Interpretation der Quantenmechanik, in der Teilchen durch eine Führungswelle $\Psi$ gesteuert werden. Dieses Dokument zeigt mathematisch, warum das Interferenzmuster im Doppelspaltexperiment bereits in $\Psi$ vordefiniert ist und wie die instantane Wechselwirkung zwischen Quelle, Spalten und $\Psi$ zu verstehen ist.
+
+\section{Grundgleichungen der DBT}
+
+\subsection{Schrödinger-Gleichung für die Führungswelle}
+Die Dynamik von $\Psi$ wird durch die Schrödinger-Gleichung beschrieben:
+\begin{equation}
+i\hbar \pdv{\Psi}{t} = \left[ -\frac{\hbar^2}{2m} \nabla^2 + V(x) \right] \Psi
+\end{equation}
+Hier ist $V(x)$ das Potenzial der Spalte:
+\begin{equation}
+V(x) = \begin{cases}
+0 & \text{in den Spaltöffnungen} \\
+\infty & \text{sonst}
+\end{cases}
+\end{equation}
+
+\subsection{Bohmsche Trajektoriengleichung}
+Die Teilchenbewegung folgt aus:
+\begin{equation}
+\dv{\vb{x}}{t} = \frac{\hbar}{m} \Im\left( \frac{\nabla \Psi}{\Psi} \right)
+\end{equation}
+mit dem Quantenpotential:
+\begin{equation}
+Q(x,t) = -\frac{\hbar^2}{2m} \frac{\nabla^2 |\Psi|}{|\Psi|}
+\end{equation}
+
+\section{Nicht-lokale Dynamik der Führungswelle}
+
+\subsection{Instantane Anpassung an Spaltbedingungen}
+Die Lösung $\Psi(x,t)$ reagiert sofort auf $V(x)$:
+\begin{equation}
+\Psi(x,t) = \int G(x,x',t) \Psi_0(x') \dd{x'}
+\end{equation}
+wobei $G(x,x',t)$ der nicht-lokale Propagator ist, der alle Pfade durch beide Spalte gleichzeitig berücksichtigt.
+
+\subsection{Interferenzmuster für Doppelspalt}
+Für Spalte bei $x = \pm d/2$:
+\begin{equation}
+\Psi(x,t) \sim e^{i(kx-\omega t)} \left[ \exp\left( -\frac{(x-d/2)^2}{4\sigma^2} \right) + \exp\left( -\frac{(x+d/2)^2}{4\sigma^2} \right) \right]
+\end{equation}
+Dies ergibt die Interferenz:
+\begin{equation}
+|\Psi|^2 \propto \cos^2\left( \frac{kdx}{2\sigma^2} \right)
+\end{equation}
+
+\section{Energieerhaltung und instantaner Ausgleich}
+
+\subsection{Kontinuitätsgleichung}
+Die Wahrscheinlichkeitserhaltung folgt aus:
+\begin{equation}
+\pdv{\rho}{t} + \nabla \cdot (\rho \vb{v}) = 0 \quad \text{mit} \quad \rho = |\Psi|^2
+\end{equation}
+
+\subsection{Quantenpotential als Ausgleichsmechanismus}
+Die Gesamtenergie bleibt konstant:
+\begin{equation}
+E_{\text{ges}} = \underbrace{\frac{1}{2}m\vb{v}^2}_{\text{kin. Energie}} + \underbrace{Q(x,t)}_{\text{Quantenpotential}} + \underbrace{V(x)}_{\text{äußeres Potenzial}}
+\end{equation}
+
+\section{Beispiel: Elektron am Doppelspalt}
+
+\subsection{Zeitentwicklung der Lösung}
+Für ein Elektron mit Anfangsbedingung $\Psi_0(x) = e^{-x^2/4\sigma^2}$:
+\begin{equation}
+\Psi(x,t) \propto \exp\left( \frac{imx^2}{2\hbar t} \right) \left[ \exp\left( -\frac{(x-d/2)^2}{4\sigma^2(1 + i\hbar t/2m\sigma^2)} \right) + (d \to -d) \right]
+\end{equation}
+
+\subsection{Interpretation}
+\begin{itemize}
+\item Die Interferenz $\propto \cos(mdx/\hbar t)$ existiert ab $t > 0$
+\item Das Quantenpotential $Q(x,t)$ lenkt Teilchen von Knotenlinien ($|\Psi|=0$) weg
+\item Die Energie bleibt durch instantane Anpassung von $Q$ erhalten
+\end{itemize}
+
+\section{Schlussfolgerungen}
+\begin{itemize}
+\item Die Führungswelle $\Psi$ enthält das Interferenzmuster \textit{ab Initiation} des Experiments
+\item Die nicht-lokale Natur von $\Psi$ erklärt die instantane "Kenntnis" der Spaltgeometrie
+\item Die Energieerhaltung folgt direkt aus der Struktur des Quantenpotentials $Q$
+\end{itemize}
+
+\section{Interpretation der Führungswelle}
+\label{sec:energetische_interpretation}
+
+Die nicht-lokale Dynamik der Führungswelle lässt sich als \textbf{instantane Energieoptimierung} verstehen. Wir definieren das \textit{effektive Energiefunktional} des Gesamtsystems (Teilchen + Spalt):
+
+\begin{equation}
+\mathcal{E}[\Psi] = \underbrace{\frac{\hbar^2}{2m} \int |\nabla \Psi|^2 \, d^3x}_{Q\text{-Term}} + \underbrace{\int V(x) |\Psi|^2 \, d^3x}_{\text{Randbedingungen}} + \underbrace{\lambda \left( \int |\Psi|^2 \, d^3x - 1 \right)}_{\text{Normierung}}
+\end{equation}
+
+\subsection{Minimierungsprinzip}
+Die stationäre Führungswelle $\Psi_0(x)$ realisiert das Minimum von $\mathcal{E}[\Psi]$:
+
+\begin{equation}
+\frac{\delta \mathcal{E}}{\delta \Psi} \bigg|_{\Psi_0} = 0 \quad \Rightarrow \quad \left[ -\frac{\hbar^2}{2m} \nabla^2 + V(x) + \lambda \right] \Psi_0 = 0
+\end{equation}
+
+Dies ist äquivalent zur zeitunabhängigen Schrödinger-Gleichung (Gl. 1 im Haupttext).
+
+\subsection{Energieflüsse im Doppelspalt}
+Für die Dynamik (Gl. 3) gilt:
+
+\begin{itemize}
+\item Der \textbf{Energiestrom} ist gegeben durch:
+\begin{equation}
+\mathbf{S} = -\frac{\hbar^2}{2m} \mathrm{Re} \left( \Psi^* \nabla \frac{\partial \Psi}{\partial t} \right)
+\end{equation}
+
+\item Die \textbf{instantane Anpassung} (Gl. 5) entspricht einer globalen Energie-Neutralisation:
+\begin{equation}
+\Delta E(t) := \mathcal{E}[\Psi(t)] - \mathcal{E}[\Psi_0] \to 0 \quad \text{für} \quad t \to 0^+
+\end{equation}
+\end{itemize}
+
+\subsection{Konsequenzen}
+\begin{enumerate}
+\item Die Interferenzmuster sind \textbf{energetische Attraktoren} des Systems.
+\item Die \enquote{spukhafte Fernwirkung} entspricht\\einem \textbf{sofortigen Energieausgleich} durch $Q(x,t)$.
+\item Experimentelle Vorhersage: Modifikation von $V(x)$ während des Experiments führt zu \textit{instantanen} Änderungen von $\rho(x,t)$, nicht propagiert mit $v \leq c$.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,94 @@
+\section{Klassische Weber-Kraft (Elektrodynamik)}
+Die Ausgangsgleichung der Weber-Elektrodynamik soll in der hier angegebenen Form als \textbf{\enquote{skalare Form}} bezeichnet werden.
+
+\begin{equation}
+    \boxed
+    {
+        \bm{F}_{\text{Weber}}^{\text{EM}} = \frac{Qq}{4\pi\epsilon_0 r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)\bm{\hat{r}}
+    }
+\end{equation}
+
+\subsection*{Symbolbeschreibung}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item $\bm{F}_{\text{Weber}}^{\text{EM}}$: Weber-Kraft zwischen Ladungen
+    \item $Q, q$: Elektrische Ladungen
+    \item $\epsilon_0$: Elektrische Feldkonstante
+    \item $r$: Ladungsabstand
+    \item $\dot{r} = \frac{dr}{dt}$: Relative Radialgeschwindigkeit
+    \item $\ddot{r} = \frac{d^2r}{dt^2}$: Relative Radialbeschleunigung
+    \item $c$: Lichtgeschwindigkeit
+    \item $\bm{\hat{r}}$: Radialer Einheitsvektor
+\end{itemize}
+
+\subsection*{Beziehung zur Coulomb-Kraft}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Erster Term entspricht Coulomb-Kraft: $\frac{Qq}{4\pi\epsilon_0 r^2}$
+    \item Zusatzterme $\left(-\frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)$ beschreiben Bewegungsabhängige Korrekturen
+    \item Reduktion auf Coulomb-Kraft im statischen Fall ($\dot{r} = \ddot{r} = 0$)
+\end{itemize}
+
+\newpage
+\section{Verallgemeinerung der Weber-Kraft}
+
+Die ursprüngliche skalare Form der Weber-Kraft lautet:
+
+\begin{equation}
+F = F_Q \left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right)
+\end{equation}
+
+wobei $F_Q = \dfrac{q_1 q_2}{4\pi\epsilon_0 r^2}$ die Coulomb-Kraft ist.
+
+\subsection{Schritt 1: Ersetzung der zeitlichen Ableitungen}
+
+Für einen beliebigen Ortsvektor $\mathbf{r}(t)$ mit $r = |\mathbf{r}|$ gilt:
+
+\begin{align}
+\dot{r} &= \frac{d}{dt}\sqrt{\mathbf{r}\cdot\mathbf{r}} = \frac{\mathbf{r}\cdot\dot{\mathbf{r}}}{r} = \frac{\mathbf{r}\cdot\mathbf{v}}{r} \\
+\ddot{r} &= \frac{d}{dt}\left(\frac{\mathbf{r}\cdot\mathbf{v}}{r}\right) = \frac{\dot{\mathbf{r}}\cdot\mathbf{v} + \mathbf{r}\cdot\dot{\mathbf{v}}}{r} - \frac{(\mathbf{r}\cdot\mathbf{v})^2}{r^3} \\
+&= \frac{v^2 + \mathbf{r}\cdot\mathbf{a}}{r} - \frac{(\mathbf{r}\cdot\mathbf{v})^2}{r^3}
+\end{align}
+
+\subsection{Schritt 2: Einsetzen in die ursprüngliche Gleichung}
+
+Setzen wir diese Ausdrücke in die Weber-Kraft ein:
+
+\begin{align}
+F &= F_Q \left[1 - \frac{(\mathbf{r}\cdot\mathbf{v})^2}{c^2 r^2} + \frac{2r}{c^2}\left(\frac{v^2 + \mathbf{r}\cdot\mathbf{a}}{r} - \frac{(\mathbf{r}\cdot\mathbf{v})^2}{r^3}\right)\right] \\
+&= F_Q \left[1 - \frac{(\mathbf{r}\cdot\mathbf{v})^2}{c^2 r^2} + \frac{2(v^2 + \mathbf{r}\cdot\mathbf{a})}{c^2} - \frac{2(\mathbf{r}\cdot\mathbf{v})^2}{c^2 r^2}\right]
+\end{align}
+
+\subsection{Schritt 3: Vereinfachung und Endergebnis}
+
+Zusammenfassen der Terme ergibt die verallgemeinerte vektorielle Form, diese Form soll als \textbf{\enquote{vektorielle Form}} bezeichnet werden:
+
+\begin{equation}
+    \boxed
+    {
+        F = F_Q \left(1 + \frac{2v^2}{c^2} + \frac{2\mathbf{r}\cdot\mathbf{a}}{c^2} - \frac{3(\mathbf{r}\cdot\mathbf{v})^2}{c^2 r^2}\right)
+    }
+\end{equation}
+
+\subsection{Interpretation der Terme}
+
+\begin{itemize}
+\item $\dfrac{2v^2}{c^2}$: Relativistische Korrektur der kinetischen Energie
+\item $\dfrac{2\mathbf{r}\cdot\mathbf{a}}{c^2}$: Beschleunigungsabhängiger Term
+\item $\dfrac{3(\mathbf{r}\cdot\mathbf{v})^2}{c^2 r^2}$: Richtungsabhängige Korrektur für nicht-radiale Bewegung
+\end{itemize}
+
+\subsection{Spezialfall: Radiale Bewegung}
+
+Für $\mathbf{v} \parallel \mathbf{r}$ ($\mathbf{r}\cdot\mathbf{v} = rv$) und $\mathbf{a} = 0$ vereinfacht sich dies zu:
+
+\begin{equation}
+F = F_Q \left(1 + \frac{2v^2}{c^2} - \frac{3v^2}{c^2}\right) = F_Q \left(1 - \frac{v^2}{c^2}\right)
+\end{equation}
+
+was exakt mit der entsprechenden Lösung der Maxwell-Theorie übereinstimmt.
+
+\section{Weber-Kraft und Gravitation}
+\subsection*{Tisserands Ansatz}
+Die Übertragung der elektrodynamischen Weber-Kraft \cite{tisserand1894} auf die Gravitation scheiterte an der Erklärung der Periheldrehung des Merkurs.
+
+\subsection*{Hinweis}
+Die korrekte gravitative Formulierung wird separat vorgestellt und erfordert eine Modifikation der Original-Weberschen Formel.
