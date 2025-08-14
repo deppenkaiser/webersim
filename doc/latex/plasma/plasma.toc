@@ -1,0 +1,8 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Einführung}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Plasmen als Schlüssel zu einer neuen Physik}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Das kosmische Plasma: Eine Herausforderung für die Standardmodelle}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Sternentstehung und Plasmadynamik}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Kernfusion: Vom ITER zum feldlosen Plasma}{2}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Die Anwendungen: Von der Medizin zur Raumfahrt}{2}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Eine neue Ära der Physik}{2}{section.1.3}%
