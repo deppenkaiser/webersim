@@ -12,6 +12,12 @@ build
 *.bcf
 *.fdb*
 *.syn*
-doc/latex/wdb.pdf
-doc/latex/wdb.toc
-doc/latex/wdb.lof
+doc/latex/wdbt/deutsch/wdb.pdf
+doc/latex/wdbt/deutsch/wdb.toc
+doc/latex/wdbt/deutsch/wdb.lof
+doc/latex/wdbt/english/wdb.pdf
+doc/latex/wdbt/english/wdb.toc
+doc/latex/wdbt/english/wdb.lof
+doc/latex/plasma/plasma.pdf
+doc/latex/plasma/plasma.toc
+doc/latex/plasma/plasma.lof
