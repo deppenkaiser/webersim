@@ -1,2 +1,99 @@
 \chapter{Diskussion}
-\section{Elektron-Photon-Wechselwirkung in der WED}
+
+\section{Photonen als Solitonen der Weber-Kraft}
+Die Quantenelektrodynamik (QED) interpretiert Photonen als Eichbosonen. Die Weber-Elektrodynamik (WED) hingegen beschreibt sie als \textbf{nicht-lokale Solitonen} kollektiver Ladungsfluktuationen.  
+
+\subsection{Lagrange-Dichte}
+Die Lagrange-Dichte $\mathcal{L}_{\text{WED}}$ kombiniert:  
+\begin{equation}
+\mathcal{L} = \int d^3r'\, \rho(\vec{r},t) \rho(\vec{r}',t) V_{\text{Weber}}(|\vec{r}-\vec{r}'|) + \frac{\hbar^2}{8m_e} \frac{(\nabla \rho)^2}{\rho} - e \vec{P} \cdot \vec{E}_{\text{eff}},
+\end{equation}
+mit:
+\begin{itemize}
+    \item $V_{\text{Weber}} = \dfrac{q_1 q_2}{4\pi \epsilon_0 r} \left(1 - \dfrac{\dot{r}^2}{2c^2} + 2 \dfrac{r \ddot{r}}{c^2}\right)$,
+    \item $\rho(\vec{r},t)$: Ladungsdichte des Solitons,
+    \item $\vec{P}$: Polarisationsfeld.
+\end{itemize}
+
+\subsection{Bewegungsgleichung}
+Variation von $\mathcal{L}$ liefert:  
+\begin{equation}
+i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m_e} \nabla^2 \psi + \left[ V_{\text{Weber}} + Q \right] \psi, \quad \psi = \sqrt{\rho} e^{iS/\hbar}.
+\end{equation}
+Die Solitonlösung ist:  
+\begin{equation}
+\rho(\vec{r},t) = \rho_0 \, \text{sech}^2\left(\frac{z - ct}{\lambda}\right), \quad \lambda = \sqrt{\frac{\hbar^2}{m_e V_{\text{Weber}}}}.
+\end{equation}
+
+\section{Emergenz der QED}
+Die QED emergiert als \textbf{effektive Theorie} bei $\mathbf{k \ll m_e c/\hbar}$:  
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{QED-Konzept} & \textbf{WDBT-Äquivalent} \\
+\midrule
+Photonen & Ladungssolitonen \\
+Virtuelle Photonen & Instanton-ähnliche Weber-Konfigurationen \\
+$g-2$ des Elektrons & Weber-Kraft-Korrekturen \\
+\bottomrule
+\end{tabular}
+\caption{Korrespondenz zwischen QED und WDBT}
+\end{table}
+
+\subsection{Experimentelle Konsequenzen}
+\begin{itemize}
+    \item \textbf{Anomale Dispersion in Plasmen}:  
+    \begin{equation}
+    \frac{\Delta c}{c} \sim \alpha \left(\frac{\omega_p}{\omega}\right)^2.
+    \end{equation}
+    \item \textbf{Modifizierte Lamb-Shift}:  
+    \begin{equation}
+    \Delta E_{\text{Lamb}}^{\text{WED}} = \Delta E_{\text{QED}} + \frac{e^2 \hbar}{4\pi \epsilon_0 m_e^2 c^3} \langle \ddot{r} \rangle.
+    \end{equation}
+\end{itemize}
+
+\section{Experimentelle Konsequenzen und Validierung der WDBT}
+\label{sec:experimentelle_konsequenzen}  
+
+Die \gls{wdbt} mit ihrer fraktalen Dodekaeder-Raumstruktur ($D \approx 2.71$) und feldlosen Wechselwirkungen sagt messbare Abweichungen von den Vorhersagen der etablierten Theorien
+(\gls{qed}, \gls{art}) voraus. Dieser Abschnitt diskutiert experimentelle Signaturen und laufende Tests zur Validierung des Frameworks.  
+
+\subsection{Plasmaphysikalische Tests}
+Die \gls{wdbt} bietet klare Vorhersagen für Plasmen, die in Labor- und astrophysikalischen Kontexten überprüfbar sind:
+
+\begin{itemize}  
+    \item \textbf{Stabilisierung von Fusionsplasmen}:\\Das Quantenpotential $Q = -\frac{\hbar^2}{2m_e} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}$ (Gl.~2.4) modifiziert die Dispersionsrelation von Plasmawellen zu  
+    \[
+    \omega^2 = \omega_p^2 \left(1 + \frac{\hbar^2 k^2}{4m_e^2 \omega_p^2}\right),  
+    \]  
+    was stabilere Wellen bei hohen Dichten ($n_e > 10^{20}\, \text{m}^{-3}$) erklärt, wie in Wendelstein~7-X beobachtet.  
+
+    \item \textbf{Anomale Transportphänomene}:\\Die direkten Weber-Kräfte (Gl.~2.2) führen zu nicht-lokalen Korrelationen, die den \enquote{anomalen Widerstand} in Tokamaks ohne Turbulenzmodelle beschreiben. Experimente an ITER könnten hier entscheidende Daten liefern.
+\end{itemize}  
+
+\subsection{Atomphysik und Quanteneffekte}  
+Die Emergenz der \gls{qed} aus der \gls{wdbt} manifestiert sich in subtilen Korrekturen:  
+
+\begin{itemize}  
+    \item \textbf{Modifizierter Lamb-Shift}:  
+    Die \gls{wdbt} sagt einen Zusatzterm zur \gls{qed}-Vorhersage voraus (Gl.~3.5):
+    \[
+    \Delta E_{\text{Lamb}}^{\text{WED}} = \Delta E_{\text{QED}} + \frac{e^2 \hbar}{4\pi \epsilon_0 m_e^2 c^3} \langle r \rangle.  
+    \]  
+    Präzisionsmessungen an schweren Atomen (z.\,B. Myonium) können diese Abweichung testen.  
+
+    \item \textbf{Photonen als Solitonen}:\\Statt virtueller Photonen beschreibt die \gls{wdbt} Licht als nicht-lokale Ladungssolitonen (Gl.~3.3). Dies könnte frequenzabhängige Lichtablenkung ($\Delta \phi \propto \lambda^2$, Gl.~4.21) in Gravitationslinsen erklären.  
+\end{itemize}  
+
+\subsection{Kosmologische Implikationen}  
+Die fraktale Raumstruktur ($D \approx 2.71$) bietet alternative Erklärungen für:  
+
+\begin{itemize}  
+    \item \textbf{CMB-Anisotropien}:\\Die skaleninvariante Dichteverteilung $\langle (\delta\rho/\rho)^2 \rangle \sim k^{D-3}$ (Gl.~2.6) reproduziert das flache Spektrum bei $l < 20$ (Planck-Daten).  
+    \item \textbf{Galaxienrotation}:\\Die Dodekaeder-Geometrie führt zu $\rho(r) \sim r^{D-3}$ – dunkle Materie wird überflüssig.  
+\end{itemize}  
+
+\noindent  
+Die \gls{wdbt} bietet damit nicht nur eine theoretische Alternative, sondern auch ein \textit{experimentell falsifizierbares} Framework für Plasma-, Quanten- und Kosmologiephysik.
