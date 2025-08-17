@@ -188,10 +188,10 @@ m \frac{d^2 \vec{r}}{dt^2} = -\frac{GMm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + 
 wobei:
 \begin{itemize}
 \item $\beta = 1$ für Photonen (vgl. Gl. \ref{eq:wg-dbt}),
-\item $Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 |\Psi|}{|\Psi|}$ das Quantenpotential der DBT darstellt.
+\item $Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 |\Psi|}{|\Psi|}$ das Quantenpotential der \gls{dbt} darstellt.
 \end{itemize}
 
-Für Photonen ($m \to 0$) dominiert der WG-Term, da $Q \propto 1/m$ divergiert. Die effektive Kraft reduziert sich auf:
+Für Photonen ($m \to 0$) dominiert der \gls{wg}-Term, da $Q \propto 1/m$ divergiert. Die effektive Kraft reduziert sich auf:
 
 \begin{equation}
 \vec{F}_{\text{WG}} \approx -\frac{GMm}{r^2} \left(1 + \frac{v^2}{c^2}\right) \hat{\vec{r}} \quad \text{(für $\beta = 1$, $\dot{r} = 0$, $\ddot{r} = -v^2/r$)}.
@@ -205,7 +205,7 @@ Mit dem Drehimpuls $h = r^2 \dot{\phi} = \text{konstant}$ und der Substitution $
 \label{eq:bahngleichung}
 \end{equation}
 
-wobei $E = h_{\text{P}} \nu$ die Photonenenergie ist. Diese Gleichung verallgemeinert die Standardform der ART um einen wellenlängenabhängigen Term.
+wobei $E = h_{\text{P}} \nu$ die Photonenenergie ist. Diese Gleichung verallgemeinert die Standardform der \gls{art} um einen wellenlängenabhängigen Term.
 
 \subsection{Lösung für kleine Ablenkungen}
 Für schwache Gravitation ($GM/c^2 r \ll 1$) entwickeln wir die Lösung störungstheoretisch:
@@ -228,7 +228,7 @@ Der Gesamtablenkwinkel folgt durch Integration über $\phi \in [-\pi/2, \pi/2]$:
     }
 \end{equation}
 
-mit $\lambda_0 = hc/E$ als charakteristischer Längenskala. Der zweite Term repräsentiert die wellenlängenabhängige Korrektur der WG-DBT-Synthese.
+mit $\lambda_0 = hc/E$ als charakteristischer Längenskala. Der zweite Term repräsentiert die wellenlängenabhängige Korrektur der \gls{wg}-\gls{dbt}-Synthese.
 
 \subsection{Quantenmechanische Korrektur in der WG-DBT-Synthese}
 Das Quantenpotential $Q$ liefert einen zusätzlichen Beitrag:
@@ -252,10 +252,10 @@ Spektralbereiche verglichen wird.
 \section{Herleitung des Shapiro-Effekts in der Weber-Gravitation}
 \label{sec:shapiro_effect_wg_dbt}
 
-Der Shapiro-Effekt beschreibt die gravitative Laufzeitverzögerung elektromagnetischer Signale. Wir leiten ihn hier streng aus der WG her und zeigen die Abweichungen von der Allgemeinen Relativitätstheorie (ART).
+Der Shapiro-Effekt beschreibt die gravitative Laufzeitverzögerung elektromagnetischer Signale. Wir leiten ihn hier streng aus der \gls{wg} her und zeigen die Abweichungen von der \gls{art}.
 
 \subsection{Metrik und Nullgeodäten}
-In der WG ersetzen wir die gekrümmte Raumzeit der ART durch das Potential:
+In der \gls{wg} ersetzen wir die gekrümmte Raumzeit der \gls{art} durch das Potential:
 \begin{equation}
 \Phi(r) = -\frac{GM}{r}\left(1 + \frac{v^2}{2c^2} + \frac{r\ddot{r}}{2c^2}\right)
 \end{equation}
@@ -271,13 +271,13 @@ Die Laufzeit $\Delta t$ zwischen $r_1$ und $r_2$ entlang des Wegs $b$ (Stoßpara
 \end{equation}
 Entwicklung bis $\mathcal{O}(c^{-4})$ liefert:
 \begin{equation}
-\Delta t \approx \underbrace{\frac{r_2 - r_1}{c}}_{\text{Newtonsch}} + \underbrace{\frac{2GM}{c^3}\ln\left(\frac{4r_1r_2}{b^2}\right)}_{\text{ART-Term}} + \underbrace{\frac{3\pi G^2M^2}{4c^5b^2}\left(\frac{v_0^2}{c^2}\right)}_{\text{WG-Korrektur}}
+\Delta t \approx \underbrace{\frac{r_2 - r_1}{c}}_{\text{Newtonsch}} + \underbrace{\frac{2GM}{c^3}\ln\left(\frac{4r_1r_2}{b^2}\right)}_{\text{\gls{art}-Term}} + \underbrace{\frac{3\pi G^2M^2}{4c^5b^2}\left(\frac{v_0^2}{c^2}\right)}_{\text{WG-Korrektur}}
 \end{equation}
 
 \subsection{Wellenlängenabhängigkeit}
-Die WG sagt eine Frequenzabhängigkeit voraus:
+Die \gls{wg} sagt eine Frequenzabhängigkeit voraus:
 \begin{equation}
-\frac{\Delta t_{\text{WG}}}{\Delta t_{\text{ART}}} = 1 + \frac{3\pi}{16}\frac{\lambda^2}{\lambda_0^2}
+\frac{\Delta t_{\text{\gls{wg}}}}{\Delta t_{\text{\gls{art}}}} = 1 + \frac{3\pi}{16}\frac{\lambda^2}{\lambda_0^2}
 \end{equation}
 mit $\lambda_0 = \frac{h}{Mc}$. Dieser Effekt ist mit Pulsar-Timing messbar.
 
@@ -285,10 +285,10 @@ mit $\lambda_0 = \frac{h}{Mc}$. Dieser Effekt ist mit Pulsar-Timing messbar.
 \begin{itemize}
 \item Bei $\lambda = 1$ m (Radio) beträgt die Abweichung $\sim 10^{-12}$
 \item SKA und ngVLA erreichen $\Delta t/t \sim 10^{-15}$ und können dies testen
-\item Die ART vernachlässigt den $\lambda$-abhängigen Term vollständig
+\item Die \gls{art} vernachlässigt den $\lambda$-abhängigen Term vollständig
 \end{itemize}
 
-Dies zeigt, dass die WG bei hohen Präzisionstests von der ART abweicht, ohne auf Raumzeitkrümmung zurückzugreifen.
+Dies zeigt, dass die \gls{wg} bei hohen Präzisionstests von der \gls{art} abweicht, ohne auf Raumzeitkrümmung zurückzugreifen.
 
 \subsection{Shapiro-Effekt in der WG-DBT-Synthese}  
 \label{sec:shapiro_dbt}  
@@ -303,7 +303,7 @@ Die vollständige Laufzeitverzögerung unter Einbeziehung des Quantenpotentials 
 \end{equation}
 \subsection*{Rolle der De-Broglie-Bohm-Theorie}  
 \begin{itemize}  
-\item Der DBT-Term $\propto \lambda^{-3}$ dominiert für $\lambda < 10\,$cm.  
+\item Der \gls{dbt}-Term $\propto \lambda^{-3}$ dominiert für $\lambda < 10\,$cm.  
 \item Konsequenz: \textbf{Frequenzabhängige Dispersion} im Gravitationsfeld.  
 \item Testbar mit Millisekundenpulsaren (z.B. PSR J0337+1715).  
 \end{itemize}  
@@ -312,7 +312,7 @@ Die vollständige Laufzeitverzögerung unter Einbeziehung des Quantenpotentials 
 \label{sec:bahn_alpha}
 
 \subsection{Herleitung der kompensierten Lösung}
-Die vollständige Bahngleichung in WG-DBT-Synthese lautet:
+Die vollständige Bahngleichung in \gls{wg}-\gls{dbt}-Synthese lautet:
 \begin{equation}
     \label{eq:r_wg_dbt}
     r(\phi) = \frac{a(1-e^2)}{1 + e\cos(\kappa\phi)} \quad \text{mit} \quad \kappa = \sqrt{1 - \frac{6GM}{c^2a(1-e^2)}}
@@ -321,8 +321,8 @@ Die Gleichung (\refeq{eq:r_wg_dbt}) entspricht genau der Bahngleichung der reine
 
 \subsection{Mathematischer Beweis der Termkompensation}
 \label{sec:bahn_alpha_beweis}
-Die Bahngleichung (\refeq{eq:weber_r_2_ordnung}) der \gls{wg} enthält einen unphysikalischen Term zweiter Ordnung $\alpha\phi^2$, der zu nicht-geschlossenen Bahnen führen würde. Dieser Term wird
-jedoch durch das Quantenpotential der \gls{dbt} exakt kompensiert. Die Herleitung dieser Kompensation:
+Die Bahngleichung (\refeq{eq:weber_r_2_ordnung}) der \gls{wg} enthält einen unphysikalischen Term zweiter Ordnung $\alpha\phi^2$, der zu nicht-geschlossenen Bahnen führen würde.
+Dieser Term wird jedoch durch das Quantenpotential der \gls{dbt} exakt kompensiert. Die Herleitung dieser Kompensation:
 
 \begin{enumerate}
     \item \textbf{Ausgangsterm (reine WG):}
@@ -361,7 +361,7 @@ jedoch durch das Quantenpotential der \gls{dbt} exakt kompensiert. Die Herleitun
     \item Die Vorhersage für Merkur ($\Delta\phi = 42{,}98''$ pro Jahrhundert) erhalten bleibt
 \end{itemize}
 
-Die exakte Aufhebung des $\alpha\phi^2$-Terms demonstriert die konsistente Synthese von WG und DBT und unterstreicht die physikalische Validität des hybriden Ansatzes.
+Die exakte Aufhebung des $\alpha\phi^2$-Terms demonstriert die konsistente Synthese von \gls{wg} und \gls{dbt} und unterstreicht die physikalische Validität des hybriden Ansatzes.
 
 \subsection{Vertiefende Erklärungen zur Bahngleichung}
 \textbf{1. Wahl der exponentiellen Wellenfunktion $R(r)=R_0 e^{-r/\lambda}$}
@@ -375,7 +375,7 @@ Die exponentielle Form der Wellenfunktion wird aus folgenden Gründen gewählt:
 
 \textbf{2. Kompensation des $\alpha \phi^{2}$-Terms}
 
-Der unphysikalische Term $\alpha \phi^{2}$ in der WG-Bahngleichung (Gl. \refeq{eq:weber_r_2_ordnung}) würde zu einer spiralförmigen Abweichung führen, die nicht beobachtet wird.
+Der unphysikalische Term $\alpha \phi^{2}$ in der \gls{wg}-Bahngleichung (Gl. \refeq{eq:weber_r_2_ordnung}) würde zu einer spiralförmigen Abweichung führen, die nicht beobachtet wird.
 Die \gls{dbt} korrigiert dies durch:
 \begin{itemize}
     \item \textbf{Quantenpotential als Gegenwirkung:}\\Das Quantenpotential $Q$ wirkt wie eine \enquote{Rückstellkraft}, die die Abweichung kompensiert. Die Form $Q \approx \phi^{2}$ (Gl. \refeq{eq:q_laplace_wg_dbt}) ergibt sich aus der diskreten Laplace-Operation auf die Wellenfunktion (Gl. \refeq{eq:q_wg_dbt}).
@@ -386,7 +386,7 @@ Die \gls{dbt} korrigiert dies durch:
 
 \begin{itemize}
     \item \textbf{Bedeutung der Vernachlässigung:}\\Terme der Ordnung $c^{-6}$ sind um den Faktor $(v/c)^{6}$ kleiner als die führenden Beiträge. Für Planetenbahnen ($v \ll c$) sind sie praktisch irrelevant (z. B. Merkur: $v/c \approx 10^{-4}$).
-    \item \textbf{Experimentelle Konsequenzen:}\\Selbst moderne Tests der \gls{art} (z. B. LISA) sind nicht empfindlich genug, um solche Korrekturen zu messen. Die WG-DBT-Synthese ist somit in 1. Ordnung ausreichend genau.
+    \item \textbf{Experimentelle Konsequenzen:}\\Selbst moderne Tests der \gls{art} (z. B. LISA) sind nicht empfindlich genug, um solche Korrekturen zu messen. Die \gls{wg}-\gls{dbt}-Synthese ist somit in 1. Ordnung ausreichend genau.
 \end{itemize}
 
 \textbf{4. Physikalische Interpretation der Kompensation}
@@ -404,7 +404,7 @@ Abschnitt (\ref{sec:bahn_alpha_beweis}) nicht nur mathematisch korrekt, sondern 
 \section{Herleitung der Winkelgeschwindigkeit}
 \label{sec:angular_velocity}
 
-Die Winkelgeschwindigkeit $\omega(\phi) = d\phi/dt$ folgt aus der WG-Bahngleichung:
+Die Winkelgeschwindigkeit $\omega(\phi) = d\phi/dt$ folgt aus der \gls{wg}-Bahngleichung:
 
 \begin{equation}
 r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa \phi)},
@@ -418,9 +418,9 @@ Mit dem Drehimpuls $h = r^2 \dot{\phi}$ ergibt sich:
 
 \subsection*{Interpretation}
 \begin{itemize}
-\item Die WG führt zu einer \textbf{modulierten Winkelgeschwindigkeit}, die von $\phi$ abhängt.
+\item Die \gls{wg} führt zu einer \textbf{modulierten Winkelgeschwindigkeit}, die von $\phi$ abhängt.
 \item Im Perihel ($\phi = 0$) ist $\omega$ maximal, im Aphel ($\phi = \pi/\kappa$) minimal.
-\item Die ART liefert eine äquivalente, aber strukturell unterschiedliche Vorhersage.
+\item Die \gls{art} liefert eine äquivalente, aber strukturell unterschiedliche Vorhersage.
 \end{itemize}
 
 \subsection{Winkelgeschwindigkeit in der WG-DBT-Synthese}  
@@ -432,11 +432,11 @@ Die Winkelgeschwindigkeit $\omega(\phi)$ unter Einfluss des Quantenpotentials $Q
 \omega(\phi) = \sqrt{\frac{GM}{r^3(\phi)}} \left[1 + \frac{3GM}{2c^2 r(\phi)} - \frac{\hbar^2}{4m^2 c^2 \lambda^3 r(\phi)}\right],  
 \end{equation}  
 
-wobei $r(\phi) = \frac{a(1-e^2)}{1 + e \cos(\kappa \phi)}$ die WG-Bahn beschreibt.  
+wobei $r(\phi) = \frac{a(1-e^2)}{1 + e \cos(\kappa \phi)}$ die \gls{wg}-Bahn beschreibt.  
 
 \subsection*{Konsequenzen}  
 \begin{itemize}  
-\item \textbf{Mikroskopische Systeme}: Die DBT-Korrektur $\propto \lambda^{-3}$ ist für Elektronen in Atomen messbar ($\Delta \omega/\omega \sim 10^{-4}$).  
+\item \textbf{Mikroskopische Systeme}: Die \gls{dbt}-Korrektur $\propto \lambda^{-3}$ ist für Elektronen in Atomen messbar ($\Delta \omega/\omega \sim 10^{-4}$).  
 \item \textbf{Planetenbahnen}: Der Effekt verschwindet ($\lambda \gg r$), aber die WG-Korrektur $\propto c^{-2}$ bleibt.  
-\item \textbf{Unterschied zur ART}: Die DBT führt zu einer \textbf{abstoßenden} Komponente, die Singularitäten verhindert.  
+\item \textbf{Unterschied zur \gls{art}}: Die \gls{dbt} führt zu einer \textbf{abstoßenden} Komponente, die Singularitäten verhindert.  
 \end{itemize}

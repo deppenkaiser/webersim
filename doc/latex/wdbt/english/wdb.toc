@@ -144,26 +144,26 @@
 \contentsline {subsection}{\numberline {6.1.2}Contradictions of Maxwell Theory}{47}{subsection.6.1.2}%
 \contentsline {subsection}{\numberline {6.1.3}The Hypocrisy of the Establishment}{48}{subsection.6.1.3}%
 \contentsline {subsection}{\numberline {6.1.4}The Path to Scientific Revolution}{48}{subsection.6.1.4}%
-\contentsline {chapter}{\numberline {7}Appendix}{49}{chapter.7}%
-\contentsline {section}{\numberline {7.1}The Aharonov-Bohm Effect}{49}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Experimental Setup}{49}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Theoretical Description}{49}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Physical Significance}{49}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}Experimental Confirmation}{49}{subsection.7.1.4}%
-\contentsline {section}{\numberline {7.2}Bell Inequalities}{50}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Theoretical Formulation}{50}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Quantum Mechanical Prediction}{50}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Experimental Confirmation}{50}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Interpretation}{50}{subsection.7.2.4}%
-\contentsline {section}{\numberline {7.3}Exact Derivation of the Weber Gravitational Orbital Equation}{51}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Starting Equations}{51}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Transformation to Angular Coordinates}{51}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Perturbation Theory}{51}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Solution of the Perturbation Equation}{51}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}Perihelion Precession}{52}{subsection.7.3.5}%
-\contentsline {subsection}{\numberline {7.3.6}Critical Discussion}{52}{subsection.7.3.6}%
-\contentsline {section}{\numberline {7.4}Potential Differences in Weber Theories}{52}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Weber Electrodynamics}{52}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Weber Gravity}{52}{subsection.7.4.2}%
-\contentsline {section}{\numberline {7.5}Derivation of Planetary Orbital Period in WDBT}{53}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Dynamics of True Anomaly}{54}{section.7.6}%
+\contentsline {chapter}{\numberline {A}Additional Information and Supplements}{49}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The Aharonov-Bohm Effect}{49}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Experimental Setup}{49}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Theoretical Description}{49}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Physical Significance}{49}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Experimental Confirmation}{49}{subsection.A.1.4}%
+\contentsline {section}{\numberline {A.2}Bell Inequalities}{50}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Theoretical Formulation}{50}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Quantum Mechanical Prediction}{50}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Experimental Confirmation}{50}{subsection.A.2.3}%
+\contentsline {subsection}{\numberline {A.2.4}Interpretation}{50}{subsection.A.2.4}%
+\contentsline {section}{\numberline {A.3}Exact Derivation of the Weber Gravitational Orbital Equation}{51}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Starting Equations}{51}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Transformation to Angular Coordinates}{51}{subsection.A.3.2}%
+\contentsline {subsection}{\numberline {A.3.3}Perturbation Theory}{51}{subsection.A.3.3}%
+\contentsline {subsection}{\numberline {A.3.4}Solution of the Perturbation Equation}{51}{subsection.A.3.4}%
+\contentsline {subsection}{\numberline {A.3.5}Perihelion Shift}{52}{subsection.A.3.5}%
+\contentsline {subsection}{\numberline {A.3.6}Critical Discussion}{52}{subsection.A.3.6}%
+\contentsline {section}{\numberline {A.4}Potential Differences in Weber Theories}{52}{section.A.4}%
+\contentsline {subsection}{\numberline {A.4.1}Weber Electrodynamics}{52}{subsection.A.4.1}%
+\contentsline {subsection}{\numberline {A.4.2}Weber Gravitation}{52}{subsection.A.4.2}%
+\contentsline {section}{\numberline {A.5}Derivation of a Planet's Orbital Period in WDBT}{53}{section.A.5}%
+\contentsline {section}{\numberline {A.6}Dynamics of True Anomaly}{54}{section.A.6}%

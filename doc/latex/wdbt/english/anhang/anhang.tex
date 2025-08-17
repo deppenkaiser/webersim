@@ -1,11 +1,11 @@
-\chapter{Appendix}
+\chapter{Additional Information and Supplements}
 \section{The Aharonov-Bohm Effect}
 \label{sec:aharonov-bohm}
 
-The \textbf{Aharonov-Bohm effect} (AB effect) is a fundamental quantum phenomenon demonstrating that electromagnetic potentials ($\vec{A}$, $\Phi$) directly influence quantum particles, even in regions where fields ($\vec{E}$, $\vec{B}$) are zero.
+The \textbf{Aharonov-Bohm effect} (AB effect) is a fundamental quantum phenomenon demonstrating that electromagnetic potentials ($\vec{A}$, $\Phi$) have a direct physical influence on quantum particles, even in regions where the fields ($\vec{E}$, $\vec{B}$) are zero.
 
 \subsection{Experimental Setup}
-An electron beam is split into two paths enclosing a region with magnetic flux $\Phi$.
+An electron beam is split into two paths that enclose a region with magnetic flux $\Phi$.
 
 \subsection{Theoretical Description}
 The wavefunction $\psi$ of a particle with charge $q$ is modified by the vector potential $\vec{A}$:
@@ -22,9 +22,9 @@ The phase difference between the two paths is:
 
 \subsection{Physical Significance}
 \begin{itemize}
-\item \textbf{Non-locality}: Quantum particles "sense" $\vec{A}$ even in field-free regions.
-\item \textbf{Topological invariant}: The phase depends only on the enclosed flux $\Phi_B$.
-\item \textbf{Paradigm shift}: Refutes the classical assumption that only $\vec{E}$ and $\vec{B}$ are physically relevant.
+\item \textbf{Non-Locality}: Quantum particles "sense" $\vec{A}$ even in field-free regions.
+\item \textbf{Topological Invariant}: The phase depends only on the enclosed flux $\Phi_B$.
+\item \textbf{Paradigm Shift}: Challenges the classical assumption that only $\vec{E}$ and $\vec{B}$ are physically relevant.
 \end{itemize}
 
 \subsection{Experimental Confirmation}
@@ -37,10 +37,10 @@ The phase difference between the two paths is:
 \section{Bell Inequalities}
 \label{sec:bell}
 
-The \textbf{Bell inequality} (1964) is a cornerstone of quantum physics, proving that no local hidden-variable theory can reproduce quantum mechanical predictions.
+The \textbf{Bell inequality} (1964) is a central result in quantum physics, showing that no local hidden-variable theory can reproduce the predictions of quantum mechanics.
 
 \subsection{Theoretical Formulation}
-For an entangled particle pair (e.g., photons with spin/polarization correlations), the CHSH inequality holds:
+For an entangled particle pair (e.g., photons with spin or polarization correlations), the CHSH inequality holds:
 
 \begin{equation}
 S = |E(a,b) - E(a,b')| + |E(a',b) + E(a',b')| \leq 2
@@ -49,13 +49,13 @@ S = |E(a,b) - E(a,b')| + |E(a',b) + E(a',b')| \leq 2
 where $E(\theta_1, \theta_2)$ is the correlation function for measurements at angles $\theta_1$ and $\theta_2$.
 
 \subsection{Quantum Mechanical Prediction}
-Quantum mechanics permits for certain angle combinations:
+Quantum mechanics allows for certain angle combinations:
 
 \begin{equation}
 S_{\text{QM}} = 2\sqrt{2} \approx 2.828 > 2
 \end{equation}
 
-violating Bell's inequality.
+which violates the Bell inequality.
 
 \subsection{Experimental Confirmation}
 \begin{itemize}
@@ -66,8 +66,8 @@ violating Bell's inequality.
 
 \subsection{Interpretation}
 \begin{itemize}
-\item Refutes local realistic theories (Einstein-Podolsky-Rosen paradox).
-\item Confirms quantum entanglement as physical reality.
+\item Refutation of local realistic theories (Einstein-Podolsky-Rosen paradox).
+\item Confirmation of quantum entanglement as physical reality.
 \item Foundation for quantum information technologies.
 \end{itemize}
 
@@ -75,7 +75,7 @@ violating Bell's inequality.
 \section{Exact Derivation of the Weber Gravitational Orbital Equation}
 \label{sec:exact_derivation}
 
-This appendix rigorously derives the orbital equation of Weber gravity (WG) without the simplifications used in Chapter~3. The full equation of motion is expanded to order $\mathcal{O}(c^{-4})$.
+This appendix rigorously derives the orbital equation of Weber Gravitation (WG) without the simplifications used in Chapter~3. The full equation of motion is developed up to order $\mathcal{O}(c^{-4})$.
 
 \subsection{Starting Equations}
 The Weber gravitational force is:
@@ -88,7 +88,7 @@ m\left(\ddot{r} - r\dot{\phi}^2\right) = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}
 \end{equation}
 
 \subsection{Transformation to Angular Coordinates}
-Using angular momentum $h = r^2\dot{\phi} = \text{const.}$ and substitution $u = 1/r$, we obtain:
+Using the angular momentum $h = r^2\dot{\phi} = \text{const.}$ and the substitution $u = 1/r$, we obtain:
 \begin{align}
 \dot{r} &= -h\frac{du}{d\phi} \\
 \ddot{r} &= -h^2u^2\frac{d^2u}{d\phi^2}
@@ -114,26 +114,26 @@ The perturbation equation for $u_1$ is:
 \end{equation}
 
 \subsection{Solution of the Perturbation Equation}
-The general solution consists of homogeneous and particular terms:
+The general solution consists of homogeneous and particular parts:
 \begin{equation}
 u_1(\phi) = \frac{G^2M^2e}{8h^4}\left[3e\phi\sin\phi + (4 + e^2)\cos\phi\right]
 \end{equation}
 
-\subsection{Perihelion Precession}
-The non-periodic term $\propto \phi\sin\phi$ causes perihelion shift:
+\subsection{Perihelion Shift}
+The non-periodic term $\propto \phi\sin\phi$ leads to the perihelion shift:
 \begin{equation}
 \Delta\phi = \frac{6\pi G^2M^2}{c^2h^4} = \frac{6\pi GM}{c^2a(1 - e^2)}
 \end{equation}
-This matches observations and GR exactly.
+This matches observations and general relativity exactly.
 
 \subsection{Critical Discussion}
 \begin{itemize}
-\item The choice $\beta = 0.5$ is essential – other values yield incorrect predictions.
+\item The choice $\beta = 0.5$ is essential—other values lead to incorrect predictions.
 \item Neglecting $\dot{r}^2$ is justified only for $e \ll 1$.
-\item DBT compensation of $\mathcal{O}(c^{-4})$ terms (Eq. \refeq{eq:shapiro}) ensures orbital stability.
+\item The DBT compensation of $\mathcal{O}(c^{-4})$ terms (Eq. \ref{eq:shapiro}) ensures orbital stability.
 \end{itemize}
 
-This derivation shows that WG, combined with DBT, forms a consistent alternative to GR.
+This derivation shows that WG, in combination with DBT, provides a consistent alternative to general relativity.
 
 \section{Potential Differences in Weber Theories}
 \label{sec:weber_potentials}
@@ -144,14 +144,14 @@ The Weber force between two charges $q_1$ and $q_2$ is:
 \vec{F}_{\text{Weber-EM}} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{EM}} \frac{r\ddot{r}}{c^2}\right)\hat{r}, \quad \beta_{\text{EM}} = 2
 \]
 \begin{itemize}
-\item \textbf{Non-conservativity}: The force explicitly includes velocity ($\dot{r}^2$) and acceleration terms ($\ddot{r}$), precluding a classical potential $\Phi$.
-\item \textbf{Pseudo-potential}: Only for $\ddot{r} = 0$ can an energy-like expression be derived:
+\item \textbf{Non-Conservativity}: The force explicitly includes velocity ($\dot{r}^2$) and acceleration ($\ddot{r}$) terms, preventing the existence of a classical potential $\Phi$.
+\item \textbf{Pseudo-Potential}: Only for $\ddot{r} = 0$ can an energy-like expression be derived:
 \[
 E_{\text{Weber-EM}} = \frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 + \underbrace{\frac{q_1 q_2}{4\pi\epsilon_0 r}\left(1 - \frac{\dot{r}^2}{2c^2}\right)}_{\text{Not a true potential}}
 \]
 \end{itemize}
 
-\subsection{Weber Gravity}
+\subsection{Weber Gravitation}
 The gravitational potential of a mass $M$ is:
 \[
 \Phi_{\text{WG}}(r) = -\frac{GM}{r}\left(1 + \frac{v^2}{2c^2} + \beta_{\text{G}} \frac{r\ddot{r}}{2c^2}\right), \quad \beta_{\text{G}} = 
@@ -162,28 +162,28 @@ The gravitational potential of a mass $M$ is:
 \]
 \begin{itemize}
 \item \textbf{Conservativity}: Despite the $\ddot{r}$ term, $\Phi_{\text{WG}}$ is well-defined because gravity is purely attractive.
-\item \textbf{Physical justification}: The term $\beta_{\text{G}}\frac{r\ddot{r}}{2c^2}$ is necessary to reproduce Mercury's perihelion precession ($\beta_{\text{G}} = 0.5$) and light deflection ($\beta_{\text{G}} = 1$).
+\item \textbf{Physical Justification}: The term $\beta_{\text{G}}\frac{r\ddot{r}}{2c^2}$ is necessary to reproduce Mercury's perihelion shift ($\beta_{\text{G}} = 0.5$) and light deflection ($\beta_{\text{G}} = 1$).
 \end{itemize}
 
 \subsection*{Summary}
 \begin{tabular}{ll}
-\textbf{Weber Electrodynamics} & \textbf{Weber Gravity} \\ \hline
+\textbf{Weber Electrodynamics} & \textbf{Weber Gravitation} \\ \hline
 $\beta_{\text{EM}} = 2$ (Lorentz force) & $\beta_{\text{G}} = 0.5/1$ (GR consistency) \\
 No general potential & Well-defined potential \\
 Non-conservative (radiation losses) & Conservative \\
 \end{tabular}
 
-\section{Derivation of Planetary Orbital Period in WDBT}
+\section{Derivation of a Planet's Orbital Period in WDBT}
 \label{sec:orbital_period}
 
 \subsection*{Starting Equations}
-For a planet with semi-major axis \( a \) and eccentricity \( e \), the orbital equation in WDBT (Eq. \refeq{eq:weber_r_1_ordnung}) is:
+For a planet with semi-major axis \( a \) and eccentricity \( e \), the orbital equation in WDBT (Eq. \ref{eq:weber_r_1_ordnung}) is:
 
 \begin{equation}
 r(\phi) = \frac{a(1-e^2)}{1 + e \cos(\kappa \phi)}
 \end{equation}
 
-with the perihelion precession constant:
+with the perihelion shift constant:
 
 \begin{equation}
 \kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}
@@ -197,7 +197,7 @@ E = \frac{1}{2}mv^2 - \frac{GMm}{r}\left(1 + \frac{v^2}{2c^2}\right)
 \end{equation}
 
 \subsection*{Circular Orbit Approximation}
-For near-circular orbits (\( e \approx 0 \)):
+For nearly circular orbits (\( e \approx 0 \)):
 \begin{itemize}
 \item Instantaneous distance \( r \approx a \) (constant).
 \item Angular velocity \( \omega = \frac{d\phi}{dt} = \text{constant} \).
@@ -229,7 +229,7 @@ T \approx 2\pi \sqrt{\frac{a^3}{GM}} \left(1 - \frac{GM}{4a c^2}\right)
 \end{equation}
 
 \subsection*{Exact Solution for Elliptical Orbits}
-The full solution including eccentricity \( e \) is:
+The full solution, accounting for eccentricity \( e \), is:
 
 \begin{equation}
 \boxed{T = 2\pi \sqrt{\frac{a^3}{GM}} \left[1 - \frac{3GM}{4c^2 a(1-e^2)}\right]}
@@ -237,11 +237,11 @@ The full solution including eccentricity \( e \) is:
 
 \subsection*{Physical Interpretation}
 \begin{itemize}
-\item The term \( 2\pi \sqrt{a^3/GM} \) matches the classical Keplerian result.
+\item The term \( 2\pi \sqrt{a^3/GM} \) corresponds to the classical Keplerian result.
 \item The correction \( -\frac{3GM}{4c^2 a(1-e^2)} \) arises from:
   \begin{enumerate}
-  \item The velocity term \( \frac{v^2}{c^2} \) in Weber gravity.
-  \item The perihelion precession \( \kappa \) in the WDBT orbital equation.
+  \item The velocity term \( \frac{v^2}{c^2} \) in Weber gravitation.
+  \item The perihelion shift \( \kappa \) in the WDBT orbital equation.
   \end{enumerate}
 \item For Mercury (\( a \approx 5.79 \times 10^{10} \) m, \( e \approx 0.206 \)), the correction is \( \approx 7.3 \times 10^{-8} \).
 \end{itemize}
@@ -254,6 +254,6 @@ The time evolution of \(\phi(t)\) follows the differential equation:
 where:
 \begin{itemize}
 \item \(h = \sqrt{GMa(1-e^2)}\) is the specific angular momentum,
-\item \(\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}\) is the perihelion precession correction.
+\item \(\kappa = \sqrt{1 - \frac{6GM}{c^2 a(1-e^2)}}\) is the perihelion shift correction.
 \end{itemize}
-The solution \(\phi(t)\) requires numerical integration to determine \(\Delta \phi\) for \(\Delta T = T_1 - T_0\).
+The solution \(\phi(t)\) must be numerically integrated to determine \(\Delta \phi\) for \(\Delta T = T_1 - T_0\).
