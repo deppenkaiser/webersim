@@ -1,5 +1,6 @@
 \chapter{Begründung der Sternentstehung in der WDBT}
 \label{app:sternentstehung}
+Dieser Anhang beschreibt die Physik der Sternenentstehung.
 
 \section{Grundgleichungen der Plasmadynamik}
 Die Dynamik eines Plasmas in der Weber-De-Broglie-Bohm-Theorie wird durch folgendes gekoppeltes System beschrieben:
@@ -87,3 +88,75 @@ P(k) = P_0 k^{-0.29} \quad \text{(entsprechend } D \approx 2.71\text{)}
 \end{equation}
 
 Diese Skalierung erklärt sowohl die großskalige Wolkenstruktur als auch die Subfragmentierung in protostellaren Kernen.
+
+\chapter{Fusionsplasmen in der WDBT}
+\section{Grundgleichungen der WDBT für Plasmen}
+
+Die Dynamik eines Fusionsplasmas wird in der \gls{wdbt} durch die gekoppelten Gleichungen für die Wirkungsfunktion $S(\vec{r},t)$ und die Teilchendichte $\rho(\vec{r},t)$ beschrieben:
+
+\begin{align}
+\frac{\partial S}{\partial t} + \frac{(\nabla S - q\vec{A})^2}{2m} + V + Q + \Phi_{\text{Weber}} &= 0 \label{eq:C1} \\
+\frac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \frac{\nabla S - q\vec{A}}{m}\right) &= 0 \label{eq:C2}
+\end{align}
+
+mit dem Quantenpotential:
+\begin{equation}
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}} \label{eq:Q}
+\end{equation}
+
+und dem Weber-Potential für Teilchenwechselwirkungen:
+\begin{equation}
+\Phi_{\text{Weber}} = \int d^3r' \rho(\vec{r}') V_{\text{Weber}}(|\vec{r}-\vec{r}'|) g(|\vec{r}-\vec{r}'|)
+\end{equation}
+
+\subsection{Modifizierte Plasmadynamik}
+
+Die Weber-Kraftdichte im Plasma ergibt sich aus der Integration über Paarkorrelationen:
+
+\begin{equation}
+\vec{f}_{\text{Weber}} = n_e n_i \int d^3r \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left[ \left(1-\frac{v^2}{c^2}\right)\hat{r} + \frac{2(\vec{v}\cdot\hat{r})}{c^2}\vec{v} \right] g(\vec{r})
+\end{equation}
+
+Dies führt zu einer modifizierten magnetischen Dynamik:
+
+\begin{equation}
+\label{eq:modified_ampere}
+\nabla \times \vec{B} = \mu_0 \vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t}
+\end{equation}
+
+\subsection{Stabilitätsanalyse für Fusionsplasmen}
+
+Die Dispersionrelation für Plasmawellen unter Berücksichtigung des Quantenpotentials:
+
+\begin{equation}
+\label{eq:dispersion}
+\omega^2 = \omega_p^2 \left(1 + \frac{\hbar^2 k^2}{4m_e^2 \omega_p^2}\right)
+\end{equation}
+
+Die Stabilitätsbedingung für ein zylindrisches Plasma mit Radius $R$:
+
+\begin{equation}
+\label{eq:stability}
+\frac{d}{dr}\left(r\frac{dQ}{dr}\right) - \frac{m^2}{r}Q + \left(\frac{\omega^2}{v_A^2} - k^2\right)rQ = 0
+\end{equation}
+
+mit $v_A = B/\sqrt{\mu_0 \rho_m}$ der Alfvén-Geschwindigkeit.
+
+\subsection{Fraktale Skalierung der Stromdichte}
+
+Die WDBT sagt für Birkeland-Ströme eine charakteristische Skalierung voraus:
+
+\begin{equation}
+j(r) = j_0 \left(\frac{r}{r_0}\right)^{D-3} \approx j_0 \left(\frac{r}{r_0}\right)^{-0.29}
+\end{equation}
+
+mit der fraktalen Dimension $D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71$.
+
+\subsection{Energiebilanz im feldlosen Plasma}
+
+Die Energieerhaltung unter Berücksichtigung des Quantenpotentials:
+
+\begin{equation}
+\label{eq:energy}
+\frac{d}{dt}\left(\frac{3}{2}n_e k_B T_e + \frac{\hbar^2}{8m_e} \frac{(\nabla n_e)^2}{n_e}\right) = P_{\text{ext}} - P_{\text{rad}}
+\end{equation}
