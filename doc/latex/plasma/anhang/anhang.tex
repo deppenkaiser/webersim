@@ -160,3 +160,131 @@ Die Energieerhaltung unter Berücksichtigung des Quantenpotentials:
 \label{eq:energy}
 \frac{d}{dt}\left(\frac{3}{2}n_e k_B T_e + \frac{\hbar^2}{8m_e} \frac{(\nabla n_e)^2}{n_e}\right) = P_{\text{ext}} - P_{\text{rad}}
 \end{equation}
+
+\chapter{Antriebstechnik}
+\section{Elektrisch geladene Druckkammer als gerichteter Plasmaantrieb}
+\label{sec:plasma-antrieb}
+
+\subsection{Prinzip und Theorie}
+Das vorgeschlagene Antriebssystem nutzt eine \textbf{negativ geladene Druckkammer}, um nach Laserionisation eines kryogenen Treibstoffs (z.B. flüssiger Wasserstoff, LH\textsubscript{2}) Elektronen und Protonen getrennt zu beschleunigen. Der Stromkreis wird durch die Raumschiffhülle geschlossen.
+
+\subsubsection*{Hauptgleichungen}
+\begin{itemize}
+    \item \textbf{Ladungstrennung} nach Ionisation:
+        \begin{equation}
+            n_e = n_p = \frac{\rho_{\text{LH}_2} N_A}{M_{\text{H}_2}} \approx 4.23 \times 10^{28}\,\text{m}^{-3} \quad \text{(bei vollständiger Ionisation)}
+            \label{eq:dichte}
+        \end{equation}
+    
+    \item \textbf{Abzugsfeldstärke} für Elektronen:
+        \begin{equation}
+            E = \frac{V_{\text{Kammer}}}{d} \quad \text{(typisch } V_{\text{Kammer}} = -1\,\text{MV}, d = 0.1\,\text{m} \Rightarrow E = 10\,\text{MV/m})
+            \label{eq:feld}
+        \end{equation}
+    
+    \item \textbf{Protonenbeschleunigung} (nicht-relativistisch):
+        \begin{equation}
+            F_p = n_p \cdot e \cdot v_p \times B \quad \text{(Lorentzkraft)}
+            \label{eq:lorentz_2}
+        \end{equation}
+\end{itemize}
+
+\subsection{Kritische Analyse}
+\subsubsection*{Vorteile}
+\begin{itemize}
+    \item \textbf{Präzise Steuerung}: Separierte Kontrolle von Elektronen (elektrostatisch) und Protonen (magnetisch).
+    \item \textbf{Energierückgewinnung}: Elektronenstrom könnte genutzt werden (z.B. für Kühlung).
+    \item \textbf{Keine mechanische Abnutzung}: Keine beweglichen Teile in der Düse.
+\end{itemize}
+
+\subsubsection*{Herausforderungen}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{Problem} & \textbf{Lösungsansatz} \\
+        \midrule
+        Gigavolt-Potentiale & Pulsbetrieb mit $f > 1\,\text{kHz}$ \\
+        Hüllenstrom >1\,MA & Supraleitende Beschichtung (YBCO) \\
+        Protonenstrahl-Streuung & Quantenpotential $Q$ der WDBT \\
+        \bottomrule
+    \end{tabular}
+    \caption{Technische Herausforderungen und Lösungsvorschläge.}
+    \label{tab:probleme}
+\end{table}
+
+\subsection{Machbarkeit und Ausblick}
+Das System erfordert Fortschritte in:
+\begin{enumerate}
+    \item \textbf{Hochspannungstechnik}: Vakuum-isolierte Kammerdesigns (Diamant-Wolfram).
+    \item \textbf{Supraleitung}: Stabile Supraleiter für Magnetfelder >20\,T.
+    \item \textbf{Lasertechnik}: Femtosekundenpulse mit $E > 100\,\text{J}$ bei MHz-Frequenzen.
+\end{enumerate}
+
+\begin{equation}
+    \text{Fazit: } \boxed{\text{Theoretisch machbar, aber experimentelle Validierung im Labormaßstab nötig.}}
+\end{equation}
+
+\section{Kombinierter Antrieb und Strahlungsschutz durch Hüllenstrom}
+\label{sec:hullenstrom}
+
+\subsection{Prinzip des Dual-Use-Systems}
+Die Raumschiffhülle dient sowohl als \textbf{Stromrückleitung} für den Plasmaantrieb (vgl. Abschnitt~\ref{sec:plasma-antrieb}) als auch als \textbf{aktive Strahlungsabschirmung} durch das induzierte Magnetfeld. 
+
+\subsection{Physikalische Grundlagen}
+\subsubsection*{Magnetfeldberechnung (Ampèresches Gesetz)}
+Das vom Hüllenstrom $I_H$ erzeugte toroidale Magnetfeld im Innenraum:
+\begin{equation}
+    B_\phi(r) = \frac{\mu_0 I_H}{2\pi r} \quad \text{(Zylinderkoordinaten)}
+    \label{eq:bfeld}
+\end{equation}
+
+\subsubsection*{Strahlungsablenkung (Lorentzkraft)}
+Geladene kosmische Teilchen (Protonen, $\alpha$-Teilchen) werden abgelenkt:
+\begin{equation}
+    F_L = q v \times B \quad \Rightarrow \quad r_L = \frac{m v_\perp}{|q| B} \quad \text{(Gyrationsradius)}
+    \label{eq:lorentz}
+\end{equation}
+
+\subsection{Technische Spezifikation}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Parameter} & \textbf{Wert} \\
+        \midrule
+        Hüllenstrom $I_H$ & 1\,MA \\
+        Hüllenradius $R$ & 5\,m \\
+        Magnetfeld $B(R)$ & 0.08\,T (800\,G) \\
+        Abschirmwirkung (für 1\,GeV-Protonen) & $r_L \approx 125\,\text{m}$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Beispielrechnung für ein bemanntes Raumschiff.}
+    \label{tab:specs}
+\end{table}
+
+\subsection{Kritische Bewertung}
+\subsubsection*{Vorteile}
+\begin{itemize}
+    \item \textbf{Energieeffizienz}: Nutzung des Antriebsstroms für passiven Schutz.
+    \item \textbf{Richtungsabhängigkeit}: Maximale Abschirmung entlang der Torusachse.
+\end{itemize}
+
+\subsubsection*{Herausforderungen}
+\begin{itemize}
+    \item \textbf{Supraleiter-Ressourcen}: Für 1\,MA sind \textbf{supraleitende Kabel} nötig (YBCO oder MgB\textsubscript{2}).
+    \item \textbf{Neutrale Teilchen}: Unabgelenkte Neutronen erfordern zusätzliche Polymerschichten.
+    \item \textbf{Störfelder}: Magnetfeld interferiert mit Bordelektronik ($\mu$-metal-Abschirmung nötig).
+\end{itemize}
+
+\subsection{Integrierte Lösung}
+Kombination mit dem Plasmaantrieb aus Abschnitt~\ref{sec:plasma-antrieb}:
+\begin{enumerate}
+    \item Elektronenstrom fließt über supraleitende Hülle zurück.
+    \item Induziertes $B$-Feld bildet \textbf{miniaturisiertes Magnetosphärenmodell}.
+    \item Zusätzliche Abschirmung durch \textbf{Plasmarückstoß} (sekundäre Wechselwirkungen).
+\end{enumerate}
+
+\begin{equation}
+    \text{Gesamtschutzwirkung} \approx \exp\left(-\frac{d}{r_L}\right) \quad \text{(Exponentielle Dämpfung)}
+\end{equation}
