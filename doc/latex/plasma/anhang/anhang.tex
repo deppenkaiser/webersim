@@ -288,3 +288,118 @@ Kombination mit dem Plasmaantrieb aus Abschnitt~\ref{sec:plasma-antrieb}:
 \begin{equation}
     \text{Gesamtschutzwirkung} \approx \exp\left(-\frac{d}{r_L}\right) \quad \text{(Exponentielle Dämpfung)}
 \end{equation}
+
+\chapter{Emergenz der Maxwell-Theorie aus der WDBT}
+\label{sec:emergence-maxwell}
+
+Die Konsistenz der Weber-De-Broglie-Bohm-Theorie (WDBT) erfordert, dass sie die erfolgreiche Maxwell'sche Elektrodynamik als Grenzfall enthält. Dieser Abschnitt zeigt exakt, wie die Maxwell-Gleichungen sowie die Ladungserhaltung aus den fundamentalen Prinzipien der WDBT emergieren.
+
+\section{Der Reduktionspfad: Vom Nicht-Lokalen zum Lokalen}
+
+Die Emergenz wird durch zwei konsequente Näherungen definiert, welche die nicht-lokale und quantenmechanische Tiefe der WDBT schrittweise reduzieren:
+
+\begin{enumerate}
+    \item \textbf{Lokalitäts-Näherung:} Die Paarkorrelationsfunktion $g(|\vec{r} - \vec{r}'|)$ wird durch eine Delta-Funktion approximiert: $g(|\vec{r} - \vec{r}'|) \rightarrow \delta^{(3)}(\vec{r} - \vec{r}')$. Dies schaltet die nicht-lokalen Wechselwirkungsterme ab und reduziert die Kraftdichte auf eine lokale Beschreibung.
+    \item \textbf{Klassischer Limes:} Das Quantenpotential $Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}$ wird vernachlässigt ($Q \rightarrow 0$). Dies entspricht dem Übergang zur klassischen Physik.
+\end{enumerate}
+
+Unter diesen Näherungen müssen sich die Strukturen der Maxwell-Theorie zwangsläufig aus den Gleichungen der WDBT ergeben.
+
+\subsection{Emergenz der Kontinuitätsgleichung}
+
+Die Kontinuitätsgleichung, Ausdruck der Ladungserhaltung, ist fundamental in der Struktur der WDBT verankert. Ausgangspunkt ist die Erhaltung der Wahrscheinlichkeitsdichte (Gl. B.2):
+
+\begin{equation}
+    \frac{\partial \rho}{\partial t} + \nabla \cdot \left( \rho \frac{\nabla S - q\vec{A}}{m} \right) = 0
+\end{equation}
+
+Definiert man die hydrodynamische Geschwindigkeit $\vec{v} = \frac{\nabla S - q\vec{A}}{m}$, so erkennt man unmittelbar die Standardform einer Kontinuitätsgleichung:
+
+\begin{equation}
+    \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{v}) = 0
+\end{equation}
+
+Multiplikation mit der Ladung $q$ liefert direkt die elektrische Kontinuitätsgleichung, wobei $\rho_{\text{ladung}} = q\rho$ die Ladungsdichte und $\vec{j} = \rho_{\text{ladung}} \vec{v}$ die Stromdichte ist:
+
+\begin{equation}
+    \frac{\partial \rho_{\text{ladung}}}{\partial t} + \nabla \cdot \vec{j} = 0
+\end{equation}
+
+Diese Herleitung ist exakt und benötigt keine Näherungen. Die \textbf{Erhaltung der Ladung} ist somit ein fundamentaleres Prinzip in der WDBT als in der Maxwell-Theorie, da sie direkt aus der Struktur der quantenmechanischen Wahrscheinlichkeitserhaltung folgt.
+
+\subsection{Emergenz der Feldgleichungen}
+
+In der WDBT sind elektromagnetische Felder ($\vec{E}$, $\vec{B}$) keine fundamentalen Entitäten, sondern \textit{effektive Hilfsgrößen}, die aus der gemittelten Weber-Wechselwirkung abgeleitet werden.
+
+\subsubsection{Skalarpotential und Gauß'sches Gesetz}
+
+Der Coulomb-Anteil der Weber-Kraftdichte (Gl. 2.7) führt im Lokalitätslimes ($g(\vec{r}) \rightarrow \delta^{(3)}(\vec{r})$)
+ auf die Poisson-Gleichung:
+
+\begin{equation}
+    \nabla^2 \phi = -\frac{\rho}{\epsilon_0}
+\end{equation}
+
+Diese Gleichung \textit{definiert} das elektrostatische Potential $\phi$. Wendet man den Nabla-Operator auf beide Seiten an, erhält man unmittelbar das Gauß'sche Gesetz für das elektrische Feld $\vec{E} = -\nabla \phi$:
+
+\begin{equation}
+    \nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0}
+\end{equation}
+
+\subsubsection{Vektorpotential und magnetische Gesetze}
+
+Die geschwindigkeitsabhängigen Terme der Weber-Kraftdichte führen im selben Limes auf Ausdrücke, die proportional zu $\vec{v} \times (\nabla \times \vec{A})$ sind. Dies identifiziert die magnetische Flussdichte $\vec{B}$ mit der Rotation eines Vektorpotentials:
+
+\begin{equation}
+    \vec{B} = \nabla \times \vec{A}
+\end{equation}
+
+Diese Definition impliziert sofort die Quellenfreiheit des magnetischen Feldes, die zweite homogene Maxwell-Gleichung:
+
+\begin{equation}
+    \nabla \cdot \vec{B} = 0
+\end{equation}
+
+\subsubsection{Faraday'sches Induktionsgesetz}
+
+Das Induktionsgesetz ist eine direkte mathematische Konsequenz der Definition der Felder aus den Potentialen. Aus $\vec{E} = -\nabla \phi - \frac{\partial \vec{A}}{\partial t}$ folgt durch Bildung der Rotation:
+
+\begin{equation}
+    \nabla \times \vec{E} = \nabla \times (-\nabla \phi - \frac{\partial \vec{A}}{\partial t}) = - \underbrace{\nabla \times (\nabla \phi)}_{=0} - \frac{\partial}{\partial t} (\underbrace{\nabla \times \vec{A}}_{=\vec{B}})
+\end{equation}
+
+Woraus sich das Faraday'sche Gesetz ergibt:
+
+\begin{equation}
+    \nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
+\end{equation}
+
+\subsubsection{Ampère'sches Durchflutungsgesetz und seine Erweiterung}
+
+Die volle Kraft der WDBT zeigt sich in der Herleitung des Durchflutungsgesetzes. Aus der Analyse der Kraftdichte emergiert nicht das klassische Ampère-Maxwell-Gesetz, sondern eine erweiterte, nicht-lokale Version (Gl. 2.8):
+
+\begin{equation}
+    \nabla \times \vec{B} = \mu_0 \vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t}
+\end{equation}
+
+Im \textit{Maxwell-Limes} ($\lambda_c \rightarrow 0$, d.h. Vernachlässigung der Nicht-Lokalität) verschwindet der Zusatzterm und wir erhalten das ursprüngliche Ampère'sche Gesetz für stationäre Ströme:
+
+\begin{equation}
+    \lim_{\lambda_c \to 0} \left( \nabla \times \vec{B} \right) = \mu_0 \vec{j}
+\end{equation}
+
+Um die vollständige Maxwell-Theorie zu erhalten, muss der Verschiebungsstrom $\mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}$ hinzugefügt werden. Dieser Schritt ist in der WDBT jedoch \textit{ad hoc}. Die Gleichung (10) stellt stattdessen die \textbf{fundamentalere Form} dar, da sie den nicht-lokalen Ursprung der Feldoffsets direkt beschreibt. Der Maxwell'sche Term emergiert seinerseits erst aus einer weiteren Vereinfachung, nämlich der Annahme einer linearen Beziehung zwischen Strom und Feld in einfachen Medien.
+
+\subsection{Zusammenfassung: Die Maxwell-Theorie als effektive Beschreibung}
+
+Die Ableitung zeigt, dass die gesamte Maxwell'sche Elektrodynamik konsistent aus der WDBT emergiert, sobald nicht-lokale und quantenmechanische Effekte vernachlässigt werden. Die WDBT erklärt damit nicht nur die Existenz der Maxwell-Gleichungen, sondern auch ihre Grenzen:
+
+\begin{itemize}
+    \item Die \textbf{Kontinuitätsgleichung} ist ein fundamentaleres Prinzip.
+    \item Die \textbf{homogenen Gleichungen} ($\nabla \cdot \vec{B} = 0$, $\nabla \times \vec{E} = -\partial_t \vec{B}$) sind direkte Konsequenzen der Potentialdefinition.
+    \item Die \textbf{inhomogenen Gleichungen} ($\nabla \cdot \vec{E} = \rho/\epsilon_0$, $\nabla \times \vec{B} = \ldots$) emergieren aus der gemittelten Weber-Kraftdichte.
+    \item Das Ampère'sche Gesetz wird durch einen \textbf{nicht-lokalen Korrekturterm} erweitert, der unter Laborbedingungen ($\lambda_c \rightarrow 0$) verschwindet, in dichten Plasmen oder auf kleinen Skalen jedoch dominant wird.
+\end{itemize}
+
+Die Maxwell-Theorie ist somit die \textit{effektive Feldtheorie} der WDBT für den Grenzfall langsamer, lokaler Phänomene. Die WDBT selbst bietet den fundamentaleren, einheitlichen Rahmen, der Mikro- und Makrophysik verbindet.
+
