@@ -71,14 +71,14 @@ f(t) \approx R_0\left(1 - \frac{t}{t_{\text{coll}}}\right)^{2/3}, \quad t_{\text
 Modell & $t_{\text{coll}}$ (Myr) & $D$ & $\frac{\delta\rho}{\rho}$ & $\chi^2$ \\
 \midrule
 Klassisch & 1.2 & -- & 0.1 & 4.2 \\
-MHD & 1.6 & 2.3 & 0.3 & 2.8 \\
-WDBT & 1.5 & 2.71 & 0.25 & 1.1 \\
+\gls{mhd} & 1.6 & 2.3 & 0.3 & 2.8 \\
+\gls{wdbt} & 1.5 & 2.71 & 0.25 & 1.1 \\
 ALMA-Daten & 1.4 $\pm$ 0.3 & 2.7 $\pm$ 0.1 & 0.22 $\pm$ 0.05 & -- \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Die WDBT zeigt bessere Übereinstimmung ($\chi^2 = 1.1$) mit den ALMA-Beobachtungen als klassische Modelle. Die vorhergesagte fraktale Dimension $D = 2.71$ entspricht innerhalb der Fehlergrenzen den gemessenen $2.7 \pm 0.1$.
+Die \gls{wdbt} zeigt bessere Übereinstimmung ($\chi^2 = 1.1$) mit den ALMA-Beobachtungen als klassische Modelle. Die vorhergesagte fraktale Dimension $D = 2.71$ entspricht innerhalb der Fehlergrenzen den gemessenen $2.7 \pm 0.1$.
 
 \section{Fraktale Strukturbildung}
 Die Dichtefluktuationen folgen:
@@ -144,7 +144,7 @@ mit $v_A = B/\sqrt{\mu_0 \rho_m}$ der Alfvén-Geschwindigkeit.
 
 \subsection{Fraktale Skalierung der Stromdichte}
 
-Die WDBT sagt für Birkeland-Ströme eine charakteristische Skalierung voraus:
+Die \gls{wdbt} sagt für Birkeland-Ströme eine charakteristische Skalierung voraus:
 
 \begin{equation}
 j(r) = j_0 \left(\frac{r}{r_0}\right)^{D-3} \approx j_0 \left(\frac{r}{r_0}\right)^{-0.29}
@@ -206,7 +206,7 @@ Das vorgeschlagene Antriebssystem nutzt eine \textbf{negativ geladene Druckkamme
         \midrule
         Gigavolt-Potentiale & Pulsbetrieb mit $f > 1\,\text{kHz}$ \\
         Hüllenstrom >1\,MA & Supraleitende Beschichtung (YBCO) \\
-        Protonenstrahl-Streuung & Quantenpotential $Q$ der WDBT \\
+        Protonenstrahl-Streuung & Quantenpotential $Q$ der \gls{wdbt} \\
         \bottomrule
     \end{tabular}
     \caption{Technische Herausforderungen und Lösungsvorschläge.}
@@ -292,22 +292,23 @@ Kombination mit dem Plasmaantrieb aus Abschnitt~\ref{sec:plasma-antrieb}:
 \chapter{Emergenz der Maxwell-Theorie aus der WDBT}
 \label{sec:emergence-maxwell}
 
-Die Konsistenz der Weber-De-Broglie-Bohm-Theorie (WDBT) erfordert, dass sie die erfolgreiche Maxwell'sche Elektrodynamik als Grenzfall enthält. Dieser Abschnitt zeigt exakt, wie die Maxwell-Gleichungen sowie die Ladungserhaltung aus den fundamentalen Prinzipien der WDBT emergieren.
+Die Konsistenz der Weber-De-Broglie-Bohm-Theorie (\gls{wdbt}) erfordert, dass sie die erfolgreiche Maxwell'sche Elektrodynamik als Grenzfall enthält. Dieser Abschnitt zeigt exakt, wie
+die Maxwell-Gleichungen sowie die Ladungserhaltung aus den fundamentalen Prinzipien der \gls{wdbt} emergieren.
 
 \section{Der Reduktionspfad: Vom Nicht-Lokalen zum Lokalen}
 
-Die Emergenz wird durch zwei konsequente Näherungen definiert, welche die nicht-lokale und quantenmechanische Tiefe der WDBT schrittweise reduzieren:
+Die Emergenz wird durch zwei konsequente Näherungen definiert, welche die nicht-lokale und quantenmechanische Tiefe der \gls{wdbt} schrittweise reduzieren:
 
 \begin{enumerate}
     \item \textbf{Lokalitäts-Näherung:} Die Paarkorrelationsfunktion $g(|\vec{r} - \vec{r}'|)$ wird durch eine Delta-Funktion approximiert: $g(|\vec{r} - \vec{r}'|) \rightarrow \delta^{(3)}(\vec{r} - \vec{r}')$. Dies schaltet die nicht-lokalen Wechselwirkungsterme ab und reduziert die Kraftdichte auf eine lokale Beschreibung.
     \item \textbf{Klassischer Limes:} Das Quantenpotential $Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}$ wird vernachlässigt ($Q \rightarrow 0$). Dies entspricht dem Übergang zur klassischen Physik.
 \end{enumerate}
 
-Unter diesen Näherungen müssen sich die Strukturen der Maxwell-Theorie zwangsläufig aus den Gleichungen der WDBT ergeben.
+Unter diesen Näherungen müssen sich die Strukturen der Maxwell-Theorie zwangsläufig aus den Gleichungen der \gls{wdbt} ergeben.
 
 \subsection{Emergenz der Kontinuitätsgleichung}
 
-Die Kontinuitätsgleichung, Ausdruck der Ladungserhaltung, ist fundamental in der Struktur der WDBT verankert. Ausgangspunkt ist die Erhaltung der Wahrscheinlichkeitsdichte (Gl. B.2):
+Die Kontinuitätsgleichung, Ausdruck der Ladungserhaltung, ist fundamental in der Struktur der \gls{wdbt} verankert. Ausgangspunkt ist die Erhaltung der Wahrscheinlichkeitsdichte (Gl. B.2):
 
 \begin{equation}
     \frac{\partial \rho}{\partial t} + \nabla \cdot \left( \rho \frac{\nabla S - q\vec{A}}{m} \right) = 0
@@ -325,11 +326,13 @@ Multiplikation mit der Ladung $q$ liefert direkt die elektrische Kontinuitätsgl
     \frac{\partial \rho_{\text{ladung}}}{\partial t} + \nabla \cdot \vec{j} = 0
 \end{equation}
 
-Diese Herleitung ist exakt und benötigt keine Näherungen. Die \textbf{Erhaltung der Ladung} ist somit ein fundamentaleres Prinzip in der WDBT als in der Maxwell-Theorie, da sie direkt aus der Struktur der quantenmechanischen Wahrscheinlichkeitserhaltung folgt.
+Diese Herleitung ist exakt und benötigt keine Näherungen. Die \textbf{Erhaltung der Ladung} ist somit ein fundamentaleres Prinzip in der \gls{wdbt} als in der Maxwell-Theorie, da sie direkt aus der
+Struktur der quantenmechanischen Wahrscheinlichkeitserhaltung folgt.
 
 \subsection{Emergenz der Feldgleichungen}
 
-In der WDBT sind elektromagnetische Felder ($\vec{E}$, $\vec{B}$) keine fundamentalen Entitäten, sondern \textit{effektive Hilfsgrößen}, die aus der gemittelten Weber-Wechselwirkung abgeleitet werden.
+In der \gls{wdbt} sind elektromagnetische Felder ($\vec{E}$, $\vec{B}$) keine fundamentalen Entitäten, sondern \textit{effektive Hilfsgrößen}, die aus der gemittelten Weber-Wechselwirkung abgeleitet
+werden.
 
 \subsubsection{Skalarpotential und Gauß'sches Gesetz}
 
@@ -376,7 +379,8 @@ Woraus sich das Faraday'sche Gesetz ergibt:
 
 \subsubsection{Ampère'sches Durchflutungsgesetz und seine Erweiterung}
 
-Die volle Kraft der WDBT zeigt sich in der Herleitung des Durchflutungsgesetzes. Aus der Analyse der Kraftdichte emergiert nicht das klassische Ampère-Maxwell-Gesetz, sondern eine erweiterte, nicht-lokale Version (Gl. 2.8):
+Die volle Kraft der \gls{wdbt} zeigt sich in der Herleitung des Durchflutungsgesetzes. Aus der Analyse der Kraftdichte emergiert nicht das klassische Ampère-Maxwell-Gesetz, sondern eine erweiterte,
+nicht-lokale Version (Gl. 2.8):
 
 \begin{equation}
     \nabla \times \vec{B} = \mu_0 \vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t}
@@ -388,11 +392,14 @@ Im \textit{Maxwell-Limes} ($\lambda_c \rightarrow 0$, d.h. Vernachlässigung der
     \lim_{\lambda_c \to 0} \left( \nabla \times \vec{B} \right) = \mu_0 \vec{j}
 \end{equation}
 
-Um die vollständige Maxwell-Theorie zu erhalten, muss der Verschiebungsstrom $\mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}$ hinzugefügt werden. Dieser Schritt ist in der WDBT jedoch \textit{ad hoc}. Die Gleichung (10) stellt stattdessen die \textbf{fundamentalere Form} dar, da sie den nicht-lokalen Ursprung der Feldoffsets direkt beschreibt. Der Maxwell'sche Term emergiert seinerseits erst aus einer weiteren Vereinfachung, nämlich der Annahme einer linearen Beziehung zwischen Strom und Feld in einfachen Medien.
+Um die vollständige Maxwell-Theorie zu erhalten, muss der Verschiebungsstrom $\mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}$ hinzugefügt werden. Dieser Schritt ist in der \gls{wdbt}
+jedoch \textit{ad hoc}. Die Gleichung (10) stellt stattdessen die \textbf{fundamentalere Form} dar, da sie den nicht-lokalen Ursprung der Feldoffsets direkt beschreibt. Der Maxwell'sche Term
+emergiert seinerseits erst aus einer weiteren Vereinfachung, nämlich der Annahme einer linearen Beziehung zwischen Strom und Feld in einfachen Medien.
 
 \subsection{Zusammenfassung: Die Maxwell-Theorie als effektive Beschreibung}
 
-Die Ableitung zeigt, dass die gesamte Maxwell'sche Elektrodynamik konsistent aus der WDBT emergiert, sobald nicht-lokale und quantenmechanische Effekte vernachlässigt werden. Die WDBT erklärt damit nicht nur die Existenz der Maxwell-Gleichungen, sondern auch ihre Grenzen:
+Die Ableitung zeigt, dass die gesamte Maxwell'sche Elektrodynamik konsistent aus der \gls{wdbt} emergiert, sobald nicht-lokale und quantenmechanische Effekte vernachlässigt werden. Die \gls{wdbt}
+erklärt damit nicht nur die Existenz der Maxwell-Gleichungen, sondern auch ihre Grenzen:
 
 \begin{itemize}
     \item Die \textbf{Kontinuitätsgleichung} ist ein fundamentaleres Prinzip.
@@ -401,5 +408,5 @@ Die Ableitung zeigt, dass die gesamte Maxwell'sche Elektrodynamik konsistent aus
     \item Das Ampère'sche Gesetz wird durch einen \textbf{nicht-lokalen Korrekturterm} erweitert, der unter Laborbedingungen ($\lambda_c \rightarrow 0$) verschwindet, in dichten Plasmen oder auf kleinen Skalen jedoch dominant wird.
 \end{itemize}
 
-Die Maxwell-Theorie ist somit die \textit{effektive Feldtheorie} der WDBT für den Grenzfall langsamer, lokaler Phänomene. Die WDBT selbst bietet den fundamentaleren, einheitlichen Rahmen, der Mikro- und Makrophysik verbindet.
-
+Die Maxwell-Theorie ist somit die \textit{effektive Feldtheorie} der \gls{wdbt} für den Grenzfall langsamer, lokaler Phänomene. Die \gls{wdbt} selbst bietet den fundamentaleren, einheitlichen Rahmen,
+der Mikro- und Makrophysik verbindet.
