@@ -61,19 +61,19 @@ oder nicht-lokale Wechselwirkungen – genau jene Phänomene, die in Fusionsplas
 Stellaratoren erschweren.
 
 \subsubsection{Die WDBT als Alternative: Mikroskopische Fundierung und Selbstorganisation}
-Die \gls{wdbt} löst diese Probleme, indem sie Plasmen nicht als Fluide, sondern als Systeme direkt wechselwirkender Teilchen beschreibt. Die Weber-Kraft (Gl. 2.2) berücksichtigt nicht
-nur die Coulomb-Wechselwirkung, sondern auch geschwindigkeits- und beschleunigungsabhängige Terme, die in der \gls{mhd} fehlen. Dadurch erfasst sie kollektive Phänomene wie Plasmawellen oder
-Turbulenz präziser. Besonders relevant ist das Bohm’sche Quantenpotential (Gl. 2.4), das nicht-lokale Korrelationen zwischen Teilchen beschreibt und in dichten Plasmen eine stabilisierende
-Wirkung entfaltet. Experimente in Wendelstein 7-X zeigen bereits, dass Plasmen bei hohen Dichten ($n_e > 10^{20}m^{-3}$) stabiler sind als die \gls{mhd} vorhersagt – ein Effekt, den die \gls{wdbt}
-durch den Quantenterm $Q$ natürlich erklärt.
+Die \gls{wdbt} löst diese Probleme, indem sie Plasmen nicht als Fluide, sondern als Systeme direkt wechselwirkender Teilchen beschreibt. Die Weber-Kraft (Gl. \refeq{eq:weber_em_vektor}) berücksichtigt
+nicht nur die Coulomb-Wechselwirkung, sondern auch geschwindigkeits- und beschleunigungsabhängige Terme, die in der \gls{mhd} fehlen. Dadurch erfasst sie kollektive Phänomene wie Plasmawellen oder
+Turbulenz präziser. Besonders relevant ist das Bohm’sche Quantenpotential (Gl. \refeq{eq:quantenpotential}), das nicht-lokale Korrelationen zwischen Teilchen beschreibt und in dichten Plasmen eine
+stabilisierende Wirkung entfaltet. Experimente in Wendelstein 7-X zeigen bereits, dass Plasmen bei hohen Dichten ($n_e > 10^{20}m^{-3}$) stabiler sind als die \gls{mhd} vorhersagt – ein Effekt,
+den die \gls{wdbt} durch den Quantenterm $Q$ natürlich erklärt.
 
 \subsubsection{Praktische Vorteile: Kompaktere Reaktoren und effizientere Plasmen}
 Die \gls{wdbt} bietet konkrete Vorteile für die Fusionsforschung:
 
 \begin{enumerate}
     \item \textbf{Selbstorganisierte Stabilität:}\\Das Quantenpotential $Q$ wirkt wie eine intrinsische Dämpfung, die Instabilitäten wie Edge-Localized Modes (ELMs) unterdrücken kann. Dadurch könnten aufwendige Magnetfeldspulen teilweise überflüssig werden.
-    \item \textbf{Reduzierter anomaler Transport:}\\Die Weber-Kraftdichte (Gl. 2.7) beschreibt den Teilchentransport durch Paarkorrelationen, nicht durch statistische Turbulenzmodelle. Dies könnte Energieverluste minimieren und die Einschlusszeiten verlängern.
-    \item \textbf{Filamentäre Strukturen:}\\Die fraktale Skalierung von Birkeland-Strömen (Gl. 2.14) legt nahe, dass sich Plasmen in Fusionsreaktoren selbstorganisieren könnten – ähnlich wie in astrophysikalischen Phänomenen. Dies würde kompaktere Reaktordesigns ermöglichen.
+    \item \textbf{Reduzierter anomaler Transport:}\\Die Weber-Kraftdichte (Gl. \refeq{eq:force_density}) beschreibt den Teilchentransport durch Paarkorrelationen, nicht durch statistische Turbulenzmodelle. Dies könnte Energieverluste minimieren und die Einschlusszeiten verlängern.
+    \item \textbf{Filamentäre Strukturen:}\\Die fraktale Skalierung von Birkeland-Strömen (Gl. \refeq{eq:fractal_current}) legt nahe, dass sich Plasmen in Fusionsreaktoren selbstorganisieren könnten – ähnlich wie in astrophysikalischen Phänomenen. Dies würde kompaktere Reaktordesigns ermöglichen.
 \end{enumerate}
 
 \subsubsection{Experimentelle Perspektiven}
@@ -82,7 +82,7 @@ Um das Potenzial der \gls{wdbt} auszuschöpfen, sind gezielte Experimente nötig
 \begin{itemize}
     \item \textbf{Quantenpotential-Effekte:}\\Hochdichte-Experimente (z. B. SPARC) könnten den Einfluss von $Q$ auf Plasmawellen direkt messen.
     \item \textbf{Nicht-lokaler Transport:}\\Präzise Messungen des anomalen Widerstands in Tokamaks könnten die Vorhersagen der \gls{wdbt} validieren.
-    \item \textbf{Filamentbildung:}\\Laborexperimente mit Z-Pinch-Anordnungen sollten die fraktale Skalierung (Gl. 2.14) überprüfen.
+    \item \textbf{Filamentbildung:}\\Laborexperimente mit Z-Pinch-Anordnungen sollten die fraktale Skalierung (Gl. \refeq{eq:fractal_current}) überprüfen.
 \end{itemize}
 
 \subsubsection{Fazit: Ein Paradigmenwechsel in der Fusionsforschung}
@@ -102,7 +102,7 @@ Antriebskonzepte entstehen, die das Zeitalter der interplanetaren Raumfahrt einl
 \section{Hybrid-Plasmaantrieb: Thermoelektrische Resonanzexpansion}
 \label{sec:hybrid_antrieb}
 
-Die Kombination kryogener Treibstoffe mit Weber-De-Broglie-Bohm-Elektrodynamik (WDBT) führt zu einem neuartigen Antriebskonzept, das die Vorteile chemischer und elektrischer Systeme vereint.
+Die Kombination kryogener Treibstoffe mit Weber-De-Broglie-Bohm-Elektrodynamik (\gls{wdbt}) führt zu einem neuartigen Antriebskonzept, das die Vorteile chemischer und elektrischer Systeme vereint.
 
 \subsection{Physikalische Grundlagen}
 \label{subsec:grundlagen}
@@ -134,7 +134,7 @@ f_r = \frac{c_s}{2\pi}\sqrt{\frac{A_d}{V_c L_d}} \quad \text{mit} \quad c_s = \s
 \subsection{Energietransferanalyse}
 \label{subsec:energie}
 
-Die \textbf{Energiedichteskalierung} zeigt den WDBT-Vorteil:
+Die \textbf{Energiedichteskalierung} zeigt den \gls{wdbt}-Vorteil:
 
 \begin{table}[h]
 \centering
@@ -146,7 +146,7 @@ Treibstofftyp & $E$ [MJ/kg] & $p_{\text{max}}$ [GPa] \\
 \midrule
 TNT & 4.6 & 20 \\
 Flüssiger Wasserstoff & 142 & 25 \\
-WDBT-Plasma (LH$_2$) & 175 & 175 \\
+\gls{wdbt}-Plasma (LH$_2$) & 175 & 175 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -177,7 +177,7 @@ B > \frac{m_i v_{\text{exp}}}{e r_d} \approx 0.5\,\text{T}\quad\text{(für }r_d=
 \subsection{Experimentelle Validierung}
 \label{subsec:experiment}
 
-Messgrößen zur Bestätigung der WDBT-Effekte:
+Messgrößen zur Bestätigung der \gls{wdbt}-Effekte:
 
 \begin{itemize}
 \item \textbf{Expansionsgeschwindigkeit}:
@@ -196,7 +196,7 @@ Das Konzept kombiniert erstmals:
 \begin{enumerate}
 \item Kryogene Energiespeicherung,
 \item Elektrostatische Druckverstärkung,
-\item Nicht-lineare WDBT-Resonanz.
+\item Nicht-lineare \gls{wdbt}-Resonanz.
 \end{enumerate}
 
 \subsection{Das Prinzip des Hybrid-Plasmaantriebs}

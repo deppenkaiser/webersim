@@ -4,6 +4,7 @@ Die \gls{wdbt} bietet einen radikalen Perspektivwechsel für die Plasmaphysik, i
 Teilchenkräfte beschreibt. Ausgangspunkt ist die skalare Weber-Kraft zwischen zwei Ladungen $q_1$ und $q_2$:
 
 \begin{equation}
+    \label{eq:weber_em_skalar}
     F_{12} = \frac{q_1 q_2}{4\pi \epsilon_0 r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r \ddot{r}}{c^2} \right],\quad \beta = 2
 \end{equation}
 
@@ -11,13 +12,15 @@ Diese Gleichung kombiniert instantane Fernwirkung (Coulomb-Term) mit relativisti
 wo Bewegungsrichtungen entscheidend sind, wird die vektorielle Form benötigt:
 
 \begin{equation}
+    \label{eq:weber_em_vektor}
     \vec{F}_{12} = \frac{q_1 q_2}{4\pi \epsilon_0 r^2} \left\{ \left[ 1 - \frac{v^2}{c^2} + \frac{2 r (\hat{r} \cdot \vec{a})}{c^2} \right] \hat{r} + \frac{2 (\hat{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
 \end{equation}
 
 In Plasmen dominiert die kollektive Dynamik vieler Teilchen. Die gemittelte Kraftdichte ergibt sich durch Integration über die Paarkorrelationsfunktion $g(\vec{r})$:
 
 \begin{equation}
-\vec{f}_{\text{Weber}} = n_e n_i \int d^3r \, \vec{F}_{12}(\vec{r}) g(\vec{r})
+    \label{eq:weber_kraftdichte}
+    \vec{f}_{\text{Weber}} = n_e n_i \int d^3r \, \vec{F}_{12}(\vec{r}) g(\vec{r})
 \end{equation}
 
 Dieser Ansatz vermeidet die Ad-hoc-Annahmen der \gls{mhd} und erklärt Phänomene wie \textbf{anomale Widerstände} in Tokamaks, die klassisch nur durch Turbulenzmodelle beschrieben
@@ -27,13 +30,15 @@ werden.
 Die \gls{wdbt} erweitert die Plasmatheorie durch das Quantenpotential $Q$, das nicht-lokale Korrelationen zwischen Teilchen beschreibt:
 
 \begin{equation}
-Q = -\frac{\hbar^2}{2m_e} \frac{\nabla^2 \sqrt{n_e}}{\sqrt{n_e}}
+    \label{eq:quantenpotential}
+    Q = -\frac{\hbar^2}{2m_e} \frac{\nabla^2 \sqrt{n_e}}{\sqrt{n_e}}
 \end{equation}
 
 Es modifiziert die Dynamik von Elektronenwellen im Plasma. Die \textbf{Dispersionsrelation für Plasmawellen} lautet nun:
 
 \begin{equation}
-\omega^2 = \omega_p^2 \left( 1 + \frac{\hbar^2 k^2}{4 m_e^2 \omega_p^2} \right)
+    \label{eq:dispersionrelation}
+    \omega^2 = \omega_p^2 \left( 1 + \frac{\hbar^2 k^2}{4 m_e^2 \omega_p^2} \right)
 \end{equation}
 
 Diese Korrektur ist messbar: In Fusionsplasmen (z. B. Wendelstein 7-X) beobachtet man stabilere Wellenausbreitung bei hohen Dichten ($n_e > 10^{20} m^{-3}$), was mit dem $Q$-Term
@@ -43,7 +48,8 @@ konsistent ist.
 Die \gls{wdbt} sagt \textbf{skaleninvariante Dichtefluktuationen} voraus:
 
 \begin{equation}
-\left\langle \left( \frac{\delta \rho}{\rho} \right)^2 \right\rangle \sim k^{D-3}, \quad D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71
+    \label{eq:dichtefluktuation}
+    \left\langle \left( \frac{\delta \rho}{\rho} \right)^2 \right\rangle \sim k^{D-3}, \quad D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71
 \end{equation}
 
 Dies erklärt:
@@ -72,32 +78,31 @@ der Filamentstrukturen, von Laborexperimenten bis zu kosmischen Dimensionen.
 
 % 1. Weber-Kraftdichte
 \begin{equation}
-\label{eq:force_density}
-\vec{f}_{\text{Weber}} = n_e n_i \int d^3r \, \frac{q_1 q_2}{4\pi\epsilon_0 r^2} 
-\left[ \left(1 - \frac{v^2}{c^2}\right)\hat{r} + \frac{2(\vec{v}\cdot\hat{r})}{c^2}\vec{v} \right] g(\vec{r})
+    \label{eq:force_density}
+    \vec{f}_{\text{Weber}} = n_e n_i \int d^3r \, \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left[ \left(1 - \frac{v^2}{c^2}\right)\hat{r} + \frac{2(\vec{v}\cdot\hat{r})}{c^2}\vec{v} \right] g(\vec{r})
 \end{equation}
 
 % 2. Modifizierte Ampère-Gleichung
 \begin{equation}
-\label{eq:birkeland_ampere}
-\nabla \times \vec{B} = \mu_0 \vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t}
+    \label{eq:birkeland_ampere}
+    \nabla \times \vec{B} = \mu_0 \vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t}
 \end{equation}
 
 % 3. Dispersionsrelation für Stromfilamente
 \begin{equation}
-\omega^2 = \frac{c^2 k^2}{1 + (e^2 n_e \lambda_c^2)/(\epsilon_0 c^2)} \approx v_A^2 k^2 \quad (k\lambda_c \ll 1)
+    \omega^2 = \frac{c^2 k^2}{1 + (e^2 n_e \lambda_c^2)/(\epsilon_0 c^2)} \approx v_A^2 k^2 \quad (k\lambda_c \ll 1)
 \end{equation}
 
 % 4. Fraktale Skalierung
 \begin{equation}
-\label{eq:fractal_scaling}
-j(r) \propto r^{D-3} \quad \text{mit} \quad D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71
+    \label{eq:fractal_scaling}
+    j(r) \propto r^{D-3} \quad \text{mit} \quad D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71
 \end{equation}
 
 % 5. Quantenpotential im Plasma
 \begin{equation}
-\label{eq:quantenpotential_plasma}
-Q = -\frac{\hbar^2}{2m_e} \frac{\nabla^2 \sqrt{n_e}}{\sqrt{n_e}}
+    \label{eq:quantenpotential_plasma}
+    Q = -\frac{\hbar^2}{2m_e} \frac{\nabla^2 \sqrt{n_e}}{\sqrt{n_e}}
 \end{equation}
 
 \subsection{Interpretation und Bedeutung}
@@ -181,35 +186,35 @@ Die \gls{wdbt} ermöglicht eine systematische Herleitung der Birkeland-Ströme a
 erscheinen.
 
 \subsection{Nicht-lokale Stromdynamik}
-Aus der Weber-Kraftdichte (Gl.~\ref{eq:force_density}) folgt die modifizierte magnetische Dynamik:
+Aus der Weber-Kraftdichte (Gl. \ref{eq:force_density}) folgt die modifizierte magnetische Dynamik:
 
 \begin{equation}
-\nabla \times \vec{B} = \mu_0\vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t} + \underbrace{\frac{2\mu_0 e^2 n_e^2}{\epsilon_0 c^2} \int d^3r'\, g(\vec{r}')(\vec{v}(\vec{r}')\cdot\hat{r}')\vec{v}(\vec{r}')}_{\text{Nicht-lokaler Weber-Term}}
-\label{eq:full_ampere}
+    \label{eq:full_ampere}
+    \nabla \times \vec{B} = \mu_0\vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t} + \underbrace{\frac{2\mu_0 e^2 n_e^2}{\epsilon_0 c^2} \int d^3r'\, g(\vec{r}')(\vec{v}(\vec{r}')\cdot\hat{r}')\vec{v}(\vec{r}')}_{\text{Nicht-lokaler Weber-Term}}
 \end{equation}
 
 \subsection{Birkeland-Limes}
 Für $\lambda_c \to 0$ und $v \ll c$ verschwinden die WDBT-Korrekturen:
 
 \begin{equation}
-\nabla \times \vec{B} \approx \mu_0 \vec{j}_{\text{Birkeland}}
-\label{eq:birkeland_limit}
+    \label{eq:birkeland_limit}
+    \nabla \times \vec{B} \approx \mu_0 \vec{j}_{\text{Birkeland}}
 \end{equation}
 
-Dies reproduziert Birkelands empirische Relation (Gl.~\ref{eq:birkeland_ampere}).
+Dies reproduziert Birkelands empirische Relation (Gl. \ref{eq:birkeland_ampere}).
 
 \subsection{Fraktale Stromverteilung}
 Die \gls{wdbt} sagt für die Stromdichte skaleninvariantes Verhalten voraus:
 
 \begin{equation}
-\frac{j(r)}{j_0} = \left(\frac{r}{r_0}\right)^{D-3} \approx \left(\frac{r}{r_0}\right)^{-0.29}
-\label{eq:fractal_current}
+    \label{eq:fractal_current}
+    \frac{j(r)}{j_0} = \left(\frac{r}{r_0}\right)^{D-3} \approx \left(\frac{r}{r_0}\right)^{-0.29}
 \end{equation}
 
 \subsection{Interpretation}
 Die \gls{wdbt} erklärt damit drei Schlüsseleigenschaften der Birkeland-Ströme:
 \begin{itemize}
-\item Ihre Entstehung durch nicht-lokale Plasmakopplungen (Term $\propto \partial_t j$ in Gl.~\ref{eq:full_ampere})
-\item Die beobachtete $r^{-0.3}$-Skalierung (Gl.~\ref{eq:fractal_current})
+\item Ihre Entstehung durch nicht-lokale Plasmakopplungen (Term $\propto \partial_t j$ in Gl. \ref{eq:full_ampere})
+\item Die beobachtete $r^{-0.3}$-Skalierung (Gl. \ref{eq:fractal_current})
 \item Die Stabilität durch fraktale Selbstorganisation ($D \approx 2.71$)
 \end{itemize}
