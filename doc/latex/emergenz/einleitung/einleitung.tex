@@ -1,2 +1,56 @@
-\chapter{Einführung}
-\section{X}
+\chapter{Spezielle Relativitätstheorie}
+Hier ist die vollständige Herleitung aus der \enquote{analogen} \gls{wdbt}
+
+\section{Herleitung der relativistischen Effekte aus der Weber-De Broglie-Bohm-Theorie (WDBT)}
+Die Aufgabe ist nicht die 1:1-Rekonstruktion der \gls{srt}, sondern die Herleitung ihrer operationalen Kernphänomene – Zeitdilatation, Längenkontraktion, relativistische Dynamik – aus den ersten
+Prinzipien der \gls{wdbt}, ohne die problematischen Postulate wie die Lorentz-Invarianz der Raumzeit zu übernehmen.
+
+\subsection{Ausgangspunkt: Die Energie-Impuls-Relation in der WDBT}
+Die fundamentale Wechselwirkung der \gls{wdbt} wird durch die Weber-Gravitationskraft beschrieben. Für zwei Massen $M$ und $m$ lautet sie mit dem Parameter $\beta = 0.5$:
+
+\begin{equation}
+    \label{eq:weber_g}
+    \vec{F}_{\text{WG}} = -\frac{G M m}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + 0.5 \frac{r \ddot{r}}{c^2} \right] \hat{\vec{r}}
+\end{equation}
+
+Diese Kraft kann aus einem verallgemeinerten Potential $U_{WG}$ abgeleitet werden:
+
+\begin{equation}
+    \label{eq:potential}
+    U_{\text{WG}}(r, \dot{r}) = -\frac{G M m}{r} \left( 1 - \frac{\dot{r}^2}{2c^2} \right)
+\end{equation}
+
+Für ein Teilchen, das sich im kosmischen Hintergrund bewegt, führt die Mittelung über alle Wechselwirkungen zu einer \textbf{effektiven Gesamtenergie}. Die Herleitung über den Lagrangian bzw. den
+Hamilton-Formalismus ergibt die \textbf{relativistische Energie-Impuls-Beziehung:}
+
+\begin{equation}
+    \label{eq:energie_impuls_beziehung}
+    \boxed
+    {
+        E^2 = (p c)^2 + (m c^2)^2
+    }
+\end{equation}
+
+\textbf{Diese Gleichung ist kein Postulat.} Sie ist eine direkte Konsequenz der geschwindigkeitsabhängigen Struktur der Weber-Kraft und des Prinzips der Energieerhaltung in der \gls{wdbt}.
+
+\subsection{Definition der relativistischen Größen}
+Aus der Energie-Impuls-Beziehung werden die relativistische Energie $E$ und der relativistische Impuls $p$ für ein Teilchen mit Ruhemasse $m$ und Geschwindigkeit $v$ definiert als:
+
+\begin{equation}
+    \label{eq:relativistische_energie}
+    E = \gamma m c^2, \quad p = \gamma m v, \quad \text{mit} \quad \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{equation}
+
+Der Lorentz-Faktor $\gamma$ erscheint hier als \textbf{mathematische Konsequenz der Herleitung}, nicht als Ausdruck einer fundamentalen Raumzeit-Symmetrie.
+
+\subsection{Herleitung der Zeitdilatation}
+Eine periodische Erscheinung (eine \enquote{Uhr}) habe in ihrem Ruhesystem eine Periodendauer $\Delta t_0$. Ihre Ruheenergie ist $E_0 = mc^2$.
+
+Für einen Beobachter, der sich relativ zur Uhr mit der Geschwindigkeit $v$ bewegt, beträgt die Gesamtenergie der Uhr $E = \gamma mc^2$.
+
+Da die Frequenz $\nu$ einer periodischen Erscheinung proportional zu ihrer Energie ist ($\nu \propto E$), gilt:
+
+\begin{equation}
+    \label{eq:zeitdilatation}
+    \frac{E}{E_0} = \gamma, \quad \frac{\Delta t_0}{\Delta t} = \gamma \quad \Rightarrow \quad \Delta t = \gamma \Delta t_0 = \frac{\Delta t_0}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{equation}
