@@ -1,21 +1,5 @@
 \chapter{Begründung der Sternentstehung in der WDBT}
 \label{app:sternentstehung}
-Dieser Anhang beschreibt die Physik der Sternenentstehung.
-
-\paragraph{Zur Plasmazusammensetzung und der Herleitung der Abstoßungsterme:}
-Die zugrundeliegende Herleitung betrachtet ein Plasma, das aus Elektronen und einfach ionisierten Wasserstoffatomen (Protonen) besteht. In einem solchen System wirken drei Arten von
-Paarwechselwirkungen: Elektron-Elektron-Abstoßung, Proton-Proton-Abstoßung und Elektron-Proton-Anziehung. In einer perfekt neutralen und homogenen Kugel wäre die netto elektromagnetische Kraft null.
-
-Für die Fragestellung des gravitativen Kollapses ist jedoch nicht die Netto-Kraft, sondern die \textit{energetische Barriere} entscheidend, die einer Kompression entgegensteht. Diese Barriere wird
-maßgeblich von zwei Faktoren dominiert:
-
-1.  \textbf{Der Quantendruck der Elektronen:} Der Term $\frac{\hbar^2}{m_e}$ im Quantenpotential $Q$ ist für Elektronen um den Faktor $m_p/m_e \approx 1836$ größer als für Protonen. Die Elektronen widersetzen sich einer Verdichtung daher um Größenordnungen stärker.
-
-2.  \textbf{Die Coulomb-Abstoßung der Elektronen:} Aufgrund ihrer geringen Masse und hohen Mobilität tragen die Elektronen den Hauptanteil des elektrostatischen Drucks. Die Protonen sind zwar ebenfalls einer direkten Coulomb-Abstoßung unterworfen, ihre Bewegung ist jedoch über die Coulomb-Anziehung an die Elektronen gekoppelt. Eine Kontraktion des Gesamtsystems erfordert daher, dass die Elektronenwolke komprimiert wird, was gegen deren kombinierte Coulomb- und Quantenbarriere geschehen muss.
-
-Daher ist die in den Gleichungen A.5 und A.6 vorgenommene Fokussierung auf die Kraftdichte zwischen Elektronen eine gerechtfertigte Näherung, die den physikalisch limitierenden Prozess erfasst. Die
-Vernachlässigung der direkten Proton-Proton-Abstoßung führt zu einer leichten Unterschätzung der gesamten Abstoßung, bleibt jedoch in der gleichen Größenordnung und ändert nichts an den qualitativen
-Schlussfolgerungen der Theorie.
 
 \section{Grundgleichungen der Plasmadynamik}
 Die Dynamik eines Plasmas in der Weber-De-Broglie-Bohm-Theorie wird durch folgendes gekoppeltes System beschrieben:
@@ -37,20 +21,11 @@ wobei:
 \end{itemize}
 
 \section{Weber-Kraft und Gravitation}
-\paragraph{Zur Kombination der Kräfte:}
-Im Gegensatz zur elektromagnetischen Weber-Kraft (mit $\beta_{\text{em}} = 2$) wird für die gravitative Weber-Kraft historisch der Parameter $\beta_g = \frac{1}{2}$ verwendet. Daher können die Kräfte
-nicht einfach algebraisch addiert werden, sondern wirken als überlagernde, aber separate Kraftbeiträge:Die kombinierte Weber-Kraft für Gravitation und Elektrodynamik:
+Die kombinierte Weber-Kraft für Gravitation und Elektrodynamik:
 
 \begin{equation}
     \label{eq:weber_em_und_g}
     \vec{F}_{12} = \left[ \frac{G m_1 m_2}{r^2} \left( 1 - \frac{\alpha_g v^2}{c^2} + \frac{\beta_g r \ddot{r}}{c^2} \right) - \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left( 1 - \frac{\alpha_{em} v^2}{c^2} + \frac{\beta_{em} r \ddot{r}}{c^2} \right) \right] \hat{r}
-\end{equation}
-
-Für ein Plasma mit Korrelationsfunktion $g(\vec{r})$:
-
-\begin{equation}
-    \label{eq:kraftdichte_em_und_g}
-    \vec{f} = \vec{f}_{\text{grav}} + \vec{f}_{\text{em}} = \int d^3r'\, \rho(\vec{r}) \rho(\vec{r}') \vec{F}_{\text{grav}}(|\vec{r} - \vec{r}'|) g(|\vec{r} - \vec{r}'|) + \int d^3r'\, \rho(\vec{r}) \rho(\vec{r}') \vec{F}_{\text{em}}(|\vec{r} - \vec{r}'|) g(|\vec{r} - \vec{r}'|)    
 \end{equation}
 
 \section{Stabilitätsanalyse einer kollabierenden Wolke}
