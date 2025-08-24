@@ -1,0 +1,89 @@
+\chapter{Die Emergenz der Quantenmechanik}
+\section{Die fundamentale Bewegungsgleichung der WDBT}
+Die analoge \gls{wdbt} postuliert für ein Teilchen der Masse $m$ die folgende vollständige Kraftgleichung. Für ein neutrales Teilchen, auf das nur ein konservatives Potential $V(\vec{x})$ und das
+Quantenpotential $Q$ wirken, vereinfacht sich diese zu:
+
+\begin{equation}
+    \label{eq:deterministische_bewegungsgleichung}
+    m \frac{d^2\vec{x}}{dt^2} = -\vec{\nabla} V - \vec{\nabla} Q
+\end{equation}
+
+wobei das Bohm'sche Quantenpotential $Q$ definiert ist als:
+
+\begin{equation}
+    Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 R}{R}
+\end{equation}
+
+Hier ist $R = R(\vec{x},t)$ die Amplitude der sogenannten \enquote{Führungswelle} oder \enquote{pilot wave}, und $\rho = R^2$ ist die Wahrscheinlichkeitsdichte des Teilchensensembles. Gleichung
+(\refeq{eq:deterministische_bewegungsgleichung}) ist die \textbf{deterministische Bewegungsgleichung} eines Teilchens in der \gls{wdbt}.
+
+\section{Die Madelung-Transformation: Von der Teilchentrajektorie zur Feldbeschreibung}
+Um von der Beschreibung einzelner Teilchentrajektorien zur Beschreibung eines Ensembles (einem \enquote{Fluid}) überzugehen, führen wir die Madelung-Transformation durch. Wir formulieren eine komplexe
+Wellenfunktion $\psi(\vec{x}, t)$, deren Phase $S$ mit dem Impuls des Teilchens und deren Betragsquadrat mit der Dichte verbunden ist:
+
+\begin{equation}
+    \psi(\vec{x}, t) = R(\vec{x}, t)  e^{i S(\vec{x}, t) / \hbar}
+\end{equation}
+
+Dabei ist:
+
+\begin{itemize}
+    \item $R(\vec{x},t)$: Reelle Amplitude ($\rho = R^2$ ist die Wahrscheinlichkeitsdichte).
+    \item $S(\vec{x},t)$: Reelle Phasenfunktion (entspricht der Wirkung bzw. dem Impulspotential).
+\end{itemize}
+
+Unser Ziel ist es nun zu zeigen, dass die Bewegungsgleichung (\refeq{eq:deterministische_bewegungsgleichung}) und die Annahme einer Kontinuitätsgleichung für die Dichte $\rho$ äquivalent zur
+Schrödinger-Gleichung für $\psi$ sind.
+
+\section{Herleitung der Kontinuitätsgleichung}
+Der Impuls $\vec{p}$ eines Teilchens auf seiner Trajektorie ist in der \gls{wdbt} durch den Gradienten der Phasenfunktion $S$ gegeben:
+
+\begin{equation}
+    \label{eq:impuls}
+    \vec{p} = m \vec{v} = \vec{\nabla} S
+\end{equation}
+
+Die Erhaltung der Wahrscheinlichkeit (Teilchen können nicht einfach verschwinden oder erzeugt werden) führt auf eine Kontinuitätsgleichung für die Dichte $\rho$:
+
+\begin{equation}
+    \frac{\partial \rho}{\partial t} + \vec{\nabla} \cdot (\rho \vec{v}) = 0
+\end{equation}
+
+Setzen wir $\rho = R^2$ und $\vec{v} = \frac{\vec{\nabla} S}{m}$ ein, erhalten wir:
+
+\begin{equation}
+    \frac{\partial (R^2)}{\partial t} + \vec{\nabla} \cdot \left( R^2 \frac{\vec{\nabla} S}{m} \right) = 0
+\end{equation}
+
+Diese Gleichung beschreibt die zeitliche Entwicklung der Dichteverteilung des Ensembles.
+
+\section{Herleitung der Hamilton-Jacobi-Gleichung}
+Wir beginnen nun mit der Newtonschen Bewegungsgleichung der \gls{wdbt} (Gl. \refeq{eq:deterministische_bewegungsgleichung}) und formen sie schrittweise um.
+
+\begin{equation}
+    m \frac{d^2\vec{x}}{dt^2} = -\vec{\nabla} V - \vec{\nabla} Q \tag{3.1}
+\end{equation}
+
+Die substantielle Zeitableitung der Geschwindigkeit $\vec{v} = \frac{d \vec{x}}{dt}$ ist:
+
+\begin{equation}
+    \frac{d\vec{v}}{dt} = \frac{\partial \vec{v}}{\partial t} + (\vec{v} \cdot \vec{\nabla}) \vec{v}
+\end{equation}
+
+Mit $\vec{v} = \frac{\vec{\nabla} S}{m}$ (aus Gl. \refeq{eq:impuls}) wird der Beschleunigungsterm ($\vec{v} \cdot \vec{\nabla})$ zu:
+
+\begin{equation}
+    (\vec{v} \cdot \vec{\nabla}) \vec{v} = \frac{1}{m^2} \left[ (\vec{\nabla} S \cdot \vec{\nabla}) \vec{\nabla} S \right]
+\end{equation}
+
+Eine nützliche Vektoridentität hilft uns, diesen Term umzuschreiben:
+
+\begin{equation}
+    (\vec{\nabla} S \cdot \vec{\nabla}) \vec{\nabla} S = \frac{1}{2} \vec{\nabla} (\vec{\nabla} S \cdot \vec{\nabla} S) = \frac{1}{2} \vec{\nabla} (\left|\vec{\nabla} S \right|^2)
+\end{equation}
+
+Somit wird die linke Seite der Bewegungsgleichung zu:
+
+\begin{equation}
+    m \frac{d\vec{v}}{dt} = m \left( \frac{\partial \vec{v}}{\partial t} \right) + \frac{1}{2m} \vec{\nabla} (\left| \vec{\nabla} S \right|^2)
+\end{equation}
