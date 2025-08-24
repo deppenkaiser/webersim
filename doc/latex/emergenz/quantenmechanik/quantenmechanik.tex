@@ -11,6 +11,7 @@ Quantenpotential $Q$ wirken, vereinfacht sich diese zu:
 wobei das Bohm'sche Quantenpotential $Q$ definiert ist als:
 
 \begin{equation}
+    \label{eq:quantenpotential}
     Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 R}{R}
 \end{equation}
 
@@ -36,6 +37,7 @@ Unser Ziel ist es nun zu zeigen, dass die Bewegungsgleichung (\refeq{eq:determin
 Schrödinger-Gleichung für $\psi$ sind.
 
 \section{Herleitung der Kontinuitätsgleichung}
+\label{sec:kontinuitätsgleichung}
 Der Impuls $\vec{p}$ eines Teilchens auf seiner Trajektorie ist in der \gls{wdbt} durch den Gradienten der Phasenfunktion $S$ gegeben:
 
 \begin{equation}
@@ -52,12 +54,14 @@ Die Erhaltung der Wahrscheinlichkeit (Teilchen können nicht einfach verschwinde
 Setzen wir $\rho = R^2$ und $\vec{v} = \frac{\vec{\nabla} S}{m}$ ein, erhalten wir:
 
 \begin{equation}
+    \label{eq:kontinuitätsgleichung}
     \frac{\partial (R^2)}{\partial t} + \vec{\nabla} \cdot \left( R^2 \frac{\vec{\nabla} S}{m} \right) = 0
 \end{equation}
 
 Diese Gleichung beschreibt die zeitliche Entwicklung der Dichteverteilung des Ensembles.
 
 \section{Herleitung der Hamilton-Jacobi-Gleichung}
+\label{sec:hamilton_jakobi_gleichung}
 Wir beginnen nun mit der Newtonschen Bewegungsgleichung der \gls{wdbt} (Gl. \refeq{eq:deterministische_bewegungsgleichung}) und formen sie schrittweise um.
 
 \begin{equation}
@@ -87,3 +91,124 @@ Somit wird die linke Seite der Bewegungsgleichung zu:
 \begin{equation}
     m \frac{d\vec{v}}{dt} = m \left( \frac{\partial \vec{v}}{\partial t} \right) + \frac{1}{2m} \vec{\nabla} (\left| \vec{\nabla} S \right|^2)
 \end{equation}
+
+Nun setzen wir $\vec{v} = \frac{\vec{\nabla} S}{m}$ ein und setzen dies gleich der rechten Seite von (\refeq{eq:deterministische_bewegungsgleichung}):
+
+\begin{equation}
+    m \frac{\partial}{\partial t}\left( \frac{\vec{\nabla} S}{m} \right) + \frac{1}{2m} \vec{\nabla} (\left| \vec{\nabla} S \right|^2) = -\vec{\nabla} V - \vec{\nabla} Q
+\end{equation}
+
+Durch Vertauschung ($\frac{\partial}{\partial t} \vec{\nabla} S = \vec{\nabla} \frac{\partial S}{\partial t}$), vereinfacht sich dies zu:
+
+\begin{equation}
+    \vec{\nabla} \left( \frac{\partial S}{\partial t} \right) + \frac{1}{2m} \vec{\nabla} (\left| \vec{\nabla} S \right|^2) = -\vec{\nabla} V - \vec{\nabla} Q
+\end{equation}
+
+Wir können nun den Gradientenoperator $\vec{\nabla}$ auf alle Terme anwenden:
+
+\begin{equation}
+    \label{eq:zwischenstand}
+    \vec{\nabla} \left( \frac{\partial S}{\partial t} + \frac{1}{2m} \left| \vec{\nabla} S \right|^2 + V + Q \right) = 0
+\end{equation}
+
+Gleichung (\refeq{eq:zwischenstand}) besagt, dass der Ausdruck in der Klammer räumlich konstant ist. Dies führt uns zur modifizierten Hamilton-Jacobi-Gleichung:
+
+\begin{equation}
+    \frac{\partial S}{\partial t} + \frac{1}{2m} \left| \vec{\nabla} S \right|^2 + V + Q = 0
+\end{equation}
+
+Setzen wir nun die Definition des Quantenpotentials (\refeq{eq:quantenpotential}) ein, erhalten wir die zentrale Gleichung:
+
+\begin{equation}
+    \label{eq:modifizierte_hamilton_jacobi}
+    \frac{\partial S}{\partial t} + \frac{1}{2m} \left| \vec{\nabla} S \right|^2 + V - \frac{\hbar^2}{2m} \frac{\nabla^2 R}{R} = 0
+\end{equation}
+
+\section{Synthese zur Schrödinger-Gleichung}
+\label{sec:schrödinger_gleichung}
+Wir haben nun die beiden realen Gleichungen, die die Dynamik des Systems beschreiben:
+
+\begin{enumerate}
+    \item Die Kontinuitätsgleichung (\refeq{eq:kontinuitätsgleichung})
+    \item Die modifizierte Hamilton-Jacobi-Gleichung (\refeq{eq:modifizierte_hamilton_jacobi})
+\end{enumerate}
+
+Die geniale Einsicht ist, dass diese beiden Gleichungen äquivalent zur einen komplexen Schrödinger-Gleichung sind. Um dies zu sehen, setzen wir die Wellenfunktion $\psi = R e^{iS/\hbar}$
+in die zeitabhängige Schrödinger-Gleichung ein:
+
+\begin{equation}
+    i\hbar \frac{\partial \psi}{\partial t} = \left( -\frac{\hbar^2}{2m} \nabla^2 + V \right) \psi
+\end{equation}
+
+Wir führen die Ableitungen explizit aus.
+
+\textbf{Linke Seite:}
+
+\begin{equation}
+    \frac{\partial \psi}{\partial t} = \frac{\partial R}{\partial t} e^{iS/\hbar} + R \cdot \frac{i}{\hbar} \frac{\partial S}{\partial t} e^{iS/\hbar}
+\end{equation}
+
+\begin{equation}
+    i\hbar \frac{\partial \psi}{\partial t} = i\hbar \frac{\partial R}{\partial t} e^{iS/\hbar} - R \frac{\partial S}{\partial t} e^{iS/\hbar}
+\end{equation}
+
+\textbf{Rechte Seite:}\\
+Wir berechnen zuerst $\nabla^2 \psi$.
+
+\begin{equation}
+    \vec{\nabla} \psi = (\vec{\nabla} R) e^{iS/\hbar} + R \frac{i}{\hbar} (\vec{\nabla} S) e^{iS/\hbar}
+\end{equation}
+
+\begin{equation}
+    \nabla^2 \psi = \left[ \nabla^2 R + \frac{2i}{\hbar} (\vec{\nabla} R \cdot \vec{\nabla} S) + \frac{i}{\hbar} R \nabla^2 S - \frac{1}{\hbar^2} R \left| \vec{\nabla} S \right|^2 \right] e^{iS/\hbar}
+\end{equation}
+
+Somit wird die rechte Seite:
+
+\begin{equation}
+    \left( -\frac{\hbar^2}{2m} \nabla^2 + V \right) \psi = -\frac{\hbar^2}{2m} \left[ \nabla^2 R + \frac{2i}{\hbar} (\vec{\nabla} R \cdot \vec{\nabla} S) + \frac{i}{\hbar} R \nabla^2 S - \frac{1}{\hbar^2} R \left| \vec{\nabla} S \right|^2 \right] e^{iS/\hbar} + V R e^{iS/\hbar}
+\end{equation}
+
+Setzen wir nun linke und rechte Seite gleich und teilen durch den gemeinsamen Faktor $e^{iS/\hbar}$:
+
+\begin{equation}
+    i\hbar \frac{\partial R}{\partial t} - R \frac{\partial S}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 R - \frac{i\hbar}{m} (\vec{\nabla} R \cdot \vec{\nabla} S) - \frac{i\hbar}{2m} R \nabla^2 S + \frac{1}{2m} R \left| \vec{\nabla} S \right|^2 + V R
+\end{equation}
+
+Wir trennen nun Real- und Imaginärteil.
+
+\textbf{Imaginärteil:}
+
+\begin{equation}
+    \hbar \frac{\partial R}{\partial t} = -\frac{\hbar}{m} (\vec{\nabla} R \cdot \vec{\nabla} S) - \frac{\hbar}{2m} R \nabla^2 S
+\end{equation}
+
+Multipliziert man beide Seiten mit $2R/\hbar$, erhält man:
+
+\begin{equation}
+    2R \frac{\partial R}{\partial t} = -\frac{2}{m} R (\vec{\nabla} R \cdot \vec{\nabla} S) - \frac{1}{m} R^2 \nabla^2 S
+\end{equation}
+
+\begin{equation}
+    \frac{\partial (R^2)}{\partial t} + \vec{\nabla} \cdot \left( R^2 \frac{\vec{\nabla} S}{m} \right) = 0 \tag{\refeq{eq:kontinuitätsgleichung}}
+\end{equation}
+
+Dies ist exakt die \textbf{Kontinuitätsgleichung (\refeq{eq:kontinuitätsgleichung})} aus Abschnitt (\ref{sec:kontinuitätsgleichung}).
+
+\textbf{Realteil:}
+
+\begin{equation}
+    - R \frac{\partial S}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 R + \frac{1}{2m} R \left| \vec{\nabla} S \right|^2 + V R
+\end{equation}
+
+Teilt man durch $R$:
+
+\begin{equation}
+    - \frac{\partial S}{\partial t} = -\frac{\hbar^2}{2m} \frac{\nabla^2 R}{R} + \frac{1}{2m} |\nabla S|^2 + V
+\end{equation}
+
+\begin{equation}
+    \frac{\partial S}{\partial t} + \frac{1}{2m} \left| \vec{\nabla} S \right|^2 + V - \frac{\hbar^2}{2m} \frac{\nabla^2 R}{R} = 0 \tag{\refeq{eq:modifizierte_hamilton_jacobi}}
+\end{equation}
+
+Dies ist exakt die modifizierte Hamilton-Jacobi-Gleichung (\refeq{eq:modifizierte_hamilton_jacobi}) aus Abschnitt (\ref{sec:schrödinger_gleichung}).
