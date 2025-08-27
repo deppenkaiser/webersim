@@ -22,3 +22,51 @@ Die Gesamtkraft auf das Elektron ist nach Gl. (\refeq{eq:kraft_wdbt_em}):
     \item $Q_\text{vak}$ das Quantenpotential des Vakuums.
 \end{itemize}
 
+\section{Störungstheorie für die Energieverschiebung}
+Die Verschiebung des Energieniveaus $\Delta E$ aufgrund einer kleinen Störung (hier: $Q_\text{vak}$) wird in erster Ordnung Störungstheorie durch den Erwartungswert des Störoperators im ungestörten
+Zustand gegeben:
+
+\begin{equation}
+    \Delta E = \langle \psi^{(0)} | H_{\text{Stör}} | \psi^{(0)} \rangle
+\end{equation}
+
+In diesem Fall ist der Störoperator die zusätzliche potentielle Energie, die das Elektron im Quantenpotential des Vakuums hat:
+
+\begin{equation}
+    H_{\text{Stör}} = Q_{\text{vak}}
+\end{equation}
+
+Somit:
+
+\begin{equation}
+    \Delta E_{\text{Lamb}}^{\text{WDBT}} = \langle \psi_{nlm} | Q_{\text{vak}} | \psi_{nlm} \rangle
+\end{equation}
+
+Dabei ist $\psi_\text{nlm}$ die ungestörte Wasserstoff-Wellenfunktion für den Zustand mit den Quantenzahlen $n,l,m$.
+
+\section{Modellierung des Vakuum-Quantenpotentials}
+Der entscheidende Schritt ist die Modellierung von $Q_\text{vak}$. Das Vakuum wird als ein Meer von Nullpunktsfluktuationen mit einer charakteristischen \textbf{mittleren quadratischen Amplitude}
+$\langle (\delta \vec{r})^2 \rangle$ und einer \textbf{korrelierten Längenskala} $\lambda_c$ modelliert, die in der Größenordnung der Compton-Wellenlänge $\lambda_c = \frac{\hbar}{m_e c}$ liegt.
+
+Das Quantenpotential für eine solche fluktuierende Dichteverteilung $\rho_\text{vak}= \left|\psi_{vak}\right|^2$ kann genähert werden durch:
+
+\begin{equation}
+    Q_{\text{vak}} \approx -\frac{\hbar^2}{2m_{\text{eff}}} \frac{\nabla^2 \sqrt{\rho_{\text{vak}}}}{\sqrt{\rho_{\text{vak}}}} \approx D \cdot \nabla^2 \rho_{\text{vak}}
+\end{equation}
+
+wobei $D$ eine Konstante ist, die die \enquote{Steifheit} des Vakuums beschreibt. Die zentrale Annahme ist nun, dass die Vakuumfluktuationen \textbf{mit der Elektronendichte koppeln}. Die einfachste
+kovariante Kopplung ist ein Term proportional zum Überlapp der Dichten:
+
+\begin{equation}
+    \rho_\text{vak} \propto \left| \psi_e \right|^2 = \rho_e
+\end{equation}
+
+Somit wird das auf das Elektron wirkende Vakuum-Quantenpotential \textbf{von der eigenen Elektronendichte am Ort des Elektrons beeinflusst}:
+
+\begin{equation}
+    Q_{\text{vak}} \approx K \cdot \nabla^2 \rho_e    
+\end{equation}
+
+wobei $K$ eine Kopplungskonstante ist, die die Stärke der Wechselwirkung mit dem Vakuum parametrisiert.
+
+\section{Berechnung des Erwartungswerts}
