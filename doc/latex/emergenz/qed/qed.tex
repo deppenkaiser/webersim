@@ -21,3 +21,51 @@ mit:
 
 Die Felder $\vec{E}$ und $\vec{B}$ sind dabei effektive Beschreibungen der gemittelten Weber-Wechselwirkung mit allen anderen Ladungen im Universum, wie in Kapitel \ref{ch:maxwell} hergeleitet. Gleichung
 (\refeq{eq:kraft_wdbt_em}) ist \textbf{deterministisch} und beschreibt eine wohldefinierte Trajektorie.
+
+\newpage
+\section{Die Emergenz der Schrödinger- und Maxwell-Gleichungen}
+Um die Statistik eines Ensembles identischer Systeme (z.B. viele Atome im gleichen Zustand) zu beschreiben, wird die Madelung-Transformation durchgeführt (vgl. Abschnitt \ref{sec:madelung}). Wir führen
+eine komplexe Wellenfunktion $\psi(\vec{x},t)=R(\vec{x},t)e^{iS(\vec{x},t)/\hbar}$ ein, für die gilt:
+
+\begin{enumerate}
+    \item $\rho=\left| \psi \right|^2$ (Wahrscheinlichkeitsdichte)
+    \item $\vec{v} = \frac{1}{m}\vec{\nabla}S$ (Teilchengeschwindigkeit)
+\end{enumerate}
+
+Wie in Abschnitt \ref{sec:schrödinger_gleichung} gezeigt, ist die Bewegungsgleichung (\refeq{eq:kraft_wdbt_em}) äquivalent zur zeitabhängigen Schrödinger-Gleichung für $\psi$:
+
+\begin{equation}
+    i\hbar \frac{\partial \psi}{\partial t} = \left( -\frac{\hbar^2}{2m} \nabla^2 + V + q\phi \right) \psi
+\end{equation}
+
+wobei das Vektorpotential $\vec{A}$ über $\vec{B} = \vec{\nabla} \times \vec{A}$ in die minimale Kopplung eingeht. Parallel dazu emergieren aus der Weber-Elektrodynamik durch Kontinuumslimes die
+klassischen Maxwell-Gleichungen (Abschnitt \ref{sec:kontinuumslimes}). Damit ist die \textbf{nicht-relativistische Quantenmechanik} und die \textbf{klassische Elektrodynamik} bereits als effektive
+Beschreibungsebenen aus der \gls{wdbt} hergeleitet.
+
+\section{Photonen als Anregungen des Quanten-Vakuums}
+Die konventionelle \gls{qed} postuliert die Quantisierung des elektromagnetischen Feldes. In der \gls{wdbt} ergibt sich dieser Schritt naturalistisch aus der Berücksichtigung des Quantenpotentials
+des Vakuums.
+
+Das Vakuum ist in der \gls{wdbt} kein leerer Raum, sondern ein \textbf{Quantenmedium} mit einer Grundfluktuation, beschrieben durch eine Vakuum-Wellenfunktion $\psi_\text{Vak}$. Deren zugehöriges Quantenpotential
+$Q_\text{Vak}$ wirkt auf alle Teilchen. Die Anregungen dieses Mediums – beschrieben durch stehende Wellen in einer Box mit bestimmten Frequenzen – entsprechen den Photonen.
+
+Die Energie einer Anregung der Frequenz $\omega$ ist:
+
+\begin{equation}
+    E = \hbar \omega
+\end{equation}
+
+Diese Relation emergiert aus der Skalierung des Quantenpotentials $Q$ mit $\hbar^2$ und der Dispensionsrelation der \gls{wed}. Die \textbf{Feldoperatoren} der \gls{qed} (Erzeuger/Vernichter) sind deshalb
+mathematische Hilfsgrößen zur Beschreibung dieser angeregten Moden des Quanten-Vakuums, nicht fundamentale Entitäten.
+
+\section{Herleitung der Feynman-Regeln aus der nicht-lokalen Weber-Wechselwirkung}
+Die Stärke der \gls{qed} liegt in der Störungstheorie und den \textbf{Feynman-Diagrammen}. Diese emergieren in der \gls{wdbt} aus der \textbf{Mittelung über alle möglichen nicht-lokalen Wechselwirkungspfade}.
+
+In der \gls{wed} wirkt die Kraft zwischen zwei Ladungen instantan und hängt von Geschwindigkeit und Beschleunigung ab. Die Wahrscheinlichkeitsamplitude dafür, dass ein Teilchen von $A$ nach $B$ gelangt,
+muss über alle möglichen Trajektorien summiert werden, die alle durch ihre eigene Führungswelle und ihr Quantenpotential beeinflusst werden.
+
+\subsubsection{Herleitungsschritte:}
+\begin{enumerate}
+    \item Die \textbf{Wirkung} $S$ für einen Weber-Wechselwirkungspfad wird definiert.
+\end{enumerate}
+
