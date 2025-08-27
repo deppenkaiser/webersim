@@ -1,5 +1,5 @@
 \chapter{Herleitung des modifizierten Lamb-Shifts in der WDBT}
-\label{app:lamb_shift}
+\label{att:lamb_shift}
 
 \section{Das Modell: Wasserstoffatom im Quantenvakuum}
 In der \gls{wdbt} besteht das System aus drei Komponenten:
@@ -10,4 +10,15 @@ In der \gls{wdbt} besteht das System aus drei Komponenten:
     \item \textbf{Das Quantenvakuum:} Ein dynamisches Medium, beschrieben durch eine Hintergrund-Wellenfunktion $\psi_\text{vak}$. Dessen Quantenpotential $Q_{\text{vak}} = -\frac{\hbar^2}{2m_{\text{eff}}} \frac{\nabla^2 \left|{\psi_{\text{vak}}}\right|}{\left|{\psi_{\text{vak}}}\right|}$ wirkt auf das Elektron. $m_\text{eff}$ ist eine effektive Masse für Vakuumfluktuationen.
 \end{enumerate}
 
-Die Gesamtkraft auf das Elektron ist nach Gl. (5.1):
+Die Gesamtkraft auf das Elektron ist nach Gl. (\refeq{eq:kraft_wdbt_em}):
+
+\begin{equation}
+    m_e \frac{d^2\vec{x}_e}{dt^2} = -e\vec{E}_{\text{Kern}} - \nabla Q_e - \nabla Q_{\text{vak}}
+\end{equation}
+
+\begin{itemize}
+    \item $\vec{E}_{\text{Kern}} = \frac{e}{4\pi\epsilon_0} \frac{\hat{r}}{r^2}$ das effektive Coulomb-Feld des Kerns.
+    \item $Q_e = -\frac{\hbar^2}{2m_e} \frac{\nabla^2 |\psi_e|}{|\psi_e|}$ das Quantenpotential des Elektrons.
+    \item $Q_\text{vak}$ das Quantenpotential des Vakuums.
+\end{itemize}
+
