@@ -13,6 +13,7 @@ In der \gls{wdbt} besteht das System aus drei Komponenten:
 Die Gesamtkraft auf das Elektron ist nach Gl. (\refeq{eq:kraft_wdbt_em}):
 
 \begin{equation}
+    \label{eq:wdbt_lamb_kraft}
     m_e \frac{d^2\vec{x}_e}{dt^2} = -e\vec{E}_{\text{Kern}} - \nabla Q_e - \nabla Q_{\text{vak}}
 \end{equation}
 
@@ -70,3 +71,14 @@ Somit wird das auf das Elektron wirkende Vakuum-Quantenpotential \textbf{von der
 wobei $K$ eine Kopplungskonstante ist, die die Stärke der Wechselwirkung mit dem Vakuum parametrisiert.
 
 \section{Berechnung des Erwartungswerts}
+Wir setzen den Ausdruck für $Q_\text{vak}$ in die Gleichung für die Energieverschiebung (\refeq{eq:wdbt_lamb_kraft}) ein:
+
+\begin{equation}
+    \Delta E_{\text{Lamb}}^{\text{WDBT}} = \langle \psi_{nlm} | K \cdot \nabla^2 \rho_e | \psi_{nlm} \rangle = K \int \psi_{nlm}^* (\nabla^2 \rho_e) \psi_{nlm}  d^3r
+\end{equation}
+
+Da $\rho_e = \left| \psi_\text{nlm}\right|^2$, vereinfacht sich dies zu:
+
+\begin{equation}
+    \Delta E_{\text{Lamb}}^{\text{WDBT}} = K \int |\psi_{nlm}|^2 \, \nabla^2 |\psi_{nlm}|^2  d^3r
+\end{equation}
