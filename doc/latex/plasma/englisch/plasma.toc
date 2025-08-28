@@ -1,0 +1,83 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Plasmas as the Key to a New Physics}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}The Cosmic Plasma: A Challenge for the Standard Models}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Star Formation and Plasma Dynamics}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Nuclear Fusion: From ITER to Field-Free Plasma}{2}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Applications: From Medicine to Space Travel}{2}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Plasma Propulsion: Thermoelectric Resonance Expansion}{2}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Resonance Conditions}{2}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Energy Transfer Analysis}{2}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Technical Implementation}{3}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}Foundations of Plasma Dynamics in WDBT}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Derivation of Plasma Theory from WDBT}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Quantum Potential and Collective Effects}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Fractal Structures and Cosmic Plasmas}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Derivation of Birkeland Currents from WDBT}{6}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Summary: Microfoundation of Plasma Physics}{6}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Fusion Research}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Fusion Research in the Light of WDBT}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Self-Organized Plasma Stabilization}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Non-Local Transport and Anomalous Resistances}{7}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Birkeland Currents and Scalable Fusion Configurations}{7}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Experimental Challenges and Perspectives}{7}{subsection.3.1.4}%
+\contentsline {chapter}{\numberline {4}Plasma Medicine and Space Travel}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Theoretical Perspectives of WDBT}{9}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Astrophysical Plasmas in the Framework of WDBT}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Fractal Plasma Universe: Novel Explanatory Approaches}{11}{section.5.1}%
+\contentsline {subsubsection}{Cosmic Filaments and Fractality:}{11}{section*.6}%
+\contentsline {subsubsection}{Galaxy Rotation and Dark Matter:}{11}{section*.7}%
+\contentsline {subsubsection}{Cosmic Microwave Background (CMB):}{11}{section*.8}%
+\contentsline {section}{\numberline {5.2}The Sun as a Plasma Phenomenon: New Perspectives from WDBT}{12}{section.5.2}%
+\contentsline {subsubsection}{Structure and Dynamics:}{12}{section*.9}%
+\contentsline {subsubsection}{Coronal Heating and Solar Wind:}{12}{section*.10}%
+\contentsline {subsubsection}{Solar Activity Phenomena:}{12}{section*.11}%
+\contentsline {section}{\numberline {5.3}The Solar Wind as a Consequence of Continuous Matter Creation and Non-Local Quantum Dynamics}{12}{section.5.3}%
+\contentsline {paragraph}{Experimental Consequence:}{12}{section*.12}%
+\contentsline {paragraph}{Core Message:}{12}{section*.13}%
+\contentsline {chapter}{\numberline {6}Discussion}{13}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Photons as Solitons of the Weber Force}{13}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Emergence of QED}{13}{section.6.2}%
+\contentsline {subsubsection}{Experimental Consequences:}{13}{section*.15}%
+\contentsline {section}{\numberline {6.3}Experimental Validation of WDBT}{14}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Plasma Cosmology as an Emergent Phenomenon}{14}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Conclusion}{15}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Significance and Revolutionary Argumentation}{15}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}WDBT as a Coherent Superstructure}{15}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}The Recursive Nature: A Sign of Deeper Mathematical Depth}{15}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Emergence Through Filtering: The Gain in Physical Validity}{16}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}A Paradigm Shift in Justification}{16}{section.7.3}%
+\contentsline {chapter}{\numberline {A}Justification of Star Formation in WDBT}{17}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Basic Equations of Plasma Dynamics}{17}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Weber Force and Gravitation}{17}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Stability Analysis of a Collapsing Cloud}{17}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Jeans Criterion}{18}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Numerical Solution}{18}{subsection.A.3.2}%
+\contentsline {paragraph}{On the Role of the Quantum Potential:}{18}{section*.16}%
+\contentsline {section}{\numberline {A.4}Fractal Structure Formation}{19}{section.A.4}%
+\contentsline {chapter}{\numberline {B}Fusion Plasmas in WDBT}{21}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Basic Equations of WDBT for Plasmas}{21}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Modified Plasma Dynamics}{21}{subsection.B.1.1}%
+\contentsline {subsection}{\numberline {B.1.2}Stability Analysis for Fusion Plasmas}{22}{subsection.B.1.2}%
+\contentsline {subsection}{\numberline {B.1.3}Fractal Scaling of Current Density}{22}{subsection.B.1.3}%
+\contentsline {subsection}{\numberline {B.1.4}Energy Balance in a Field-Free Plasma}{22}{subsection.B.1.4}%
+\contentsline {chapter}{\numberline {C}Propulsion Technology}{23}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Electrically Charged Pressure Chamber as Directed Plasma Propulsion}{23}{section.C.1}%
+\contentsline {subsection}{\numberline {C.1.1}Principle and Theory}{23}{subsection.C.1.1}%
+\contentsline {subsection}{\numberline {C.1.2}Critical Analysis}{23}{subsection.C.1.2}%
+\contentsline {subsection}{\numberline {C.1.3}Feasibility and Outlook}{23}{subsection.C.1.3}%
+\contentsline {section}{\numberline {C.2}Combined Propulsion and Radiation Protection via Hull Current}{24}{section.C.2}%
+\contentsline {subsection}{\numberline {C.2.1}Principle of the Dual-Use System}{24}{subsection.C.2.1}%
+\contentsline {subsection}{\numberline {C.2.2}Physical Foundations}{24}{subsection.C.2.2}%
+\contentsline {subsection}{\numberline {C.2.3}Technical Specifications}{24}{subsection.C.2.3}%
+\contentsline {subsection}{\numberline {C.2.4}Critical Assessment}{25}{subsection.C.2.4}%
+\contentsline {subsection}{\numberline {C.2.5}Integrated Solution}{25}{subsection.C.2.5}%
+\contentsline {chapter}{\numberline {D}Emergence of Maxwell Theory from WDBT}{27}{appendix.D}%
+\contentsline {section}{\numberline {D.1}The Reduction Path: From Non-Local to Local}{27}{section.D.1}%
+\contentsline {subsection}{\numberline {D.1.1}Emergence of the Continuity Equation}{27}{subsection.D.1.1}%
+\contentsline {subsection}{\numberline {D.1.2}Emergence of the Field Equations}{28}{subsection.D.1.2}%
+\contentsline {subsubsection}{Scalar Potential and Gauss's Law}{28}{section*.26}%
+\contentsline {subsubsection}{Vector Potential and Magnetic Laws}{28}{section*.27}%
+\contentsline {subsubsection}{Faraday's Law of Induction}{28}{section*.28}%
+\contentsline {subsubsection}{Ampère's Circuital Law and its Extension}{29}{section*.29}%
+\contentsline {subsection}{\numberline {D.1.3}Summary: Maxwell Theory as an Effective Description}{29}{subsection.D.1.3}%

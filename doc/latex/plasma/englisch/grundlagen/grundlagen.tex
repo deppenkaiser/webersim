@@ -1,0 +1,77 @@
+\chapter{Foundations of Plasma Dynamics in WDBT}
+\label{ch:grundlagen}
+\section{Derivation of Plasma Theory from WDBT}
+The \gls{wdbt} offers a radical change of perspective for plasma physics by describing electromagnetic interactions not through fields, but through direct particle forces. The starting point is the scalar Weber force between two charges $q_1$ and $q_2$:
+
+\begin{equation}
+    \label{eq:weber_em_skalar}
+    F_{12} = \frac{q_1 q_2}{4\pi \epsilon_0 r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r \ddot{r}}{c^2} \right],\quad \beta = 2
+\end{equation}
+
+This equation combines instantaneous action at a distance (Coulomb term) with relativistic corrections ($\dot{r}^2$ term) and acceleration effects ($\ddot{r}$ term). For plasmas, where directions of motion are crucial, the \textbf{vector form} is needed:
+
+\begin{equation}
+    \label{eq:weber_em_vektor}
+    \vec{F}_{12} = \frac{q_1 q_2}{4\pi \epsilon_0 r^2} \left\{ \left[ 1 - \frac{v^2}{c^2} + \frac{2 r (\hat{r} \cdot \vec{a})}{c^2} \right] \hat{r} + \frac{2 (\hat{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
+\end{equation}
+
+In plasmas, the collective dynamics of many particles dominate. The averaged force density is obtained by integration over the pair correlation function $g(\vec{r})$:
+
+\begin{equation}
+    \label{eq:weber_kraftdichte}
+    \vec{f}_{\text{Weber}} = n_e n_i \int d^3r \, \vec{F}_{12}(\vec{r}) g(\vec{r})
+\end{equation}
+
+This approach avoids the ad-hoc assumptions of \gls{mhd} and explains phenomena like \textbf{anomalous resistances} in tokamaks, which classically can only be described by turbulence models.
+
+\section{Quantum Potential and Collective Effects}
+The \gls{wdbt} extends plasma theory through the quantum potential $Q$, which describes non-local correlations between particles:
+
+\begin{equation}
+    \label{eq:quantenpotential}
+    Q = -\frac{\hbar^2}{2m_e} \frac{\nabla^2 \sqrt{n_e}}{\sqrt{n_e}}
+\end{equation}
+
+It modifies the dynamics of electron waves in the plasma. The \textbf{dispersion relation for plasma waves} now reads:
+
+\begin{equation}
+    \label{eq:dispersionrelation}
+    \omega^2 = \omega_p^2 \left( 1 + \frac{\hbar^2 k^2}{4 m_e^2 \omega_p^2} \right)
+\end{equation}
+
+This correction is measurable: In fusion plasmas (e.g., Wendelstein 7-X), more stable wave propagation is observed at high densities ($n_e > 10^{20} m^{-3}$), which is consistent with the $Q$ term.
+
+\section{Fractal Structures and Cosmic Plasmas}
+The \gls{wdbt} predicts \textbf{scale-invariant density fluctuations}:
+
+\begin{equation}
+    \label{eq:dichtefluktuation}
+    \left\langle \left( \frac{\delta \rho}{\rho} \right)^2 \right\rangle \sim k^{D-3}, \quad D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71
+\end{equation}
+
+This explains:
+
+\begin{itemize}
+    \item \textbf{CMB anisotropies}:\\The missing correlations at large angles ($l < 20$) in Planck data.
+    \item \textbf{Galactic filaments}:\\Fractal dimension $D \approx 2.7$ in SDSS catalogs.
+\end{itemize}
+
+\section{Derivation of Birkeland Currents from WDBT}
+The formation of large-scale Birkeland currents can be consistently derived from the averaged Weber force density. For the special case of long-range correlations, a modified magnetic dynamics results:
+
+% 2. Modified Ampère's Law
+\begin{equation}
+    \label{eq:birkeland_ampere}
+    \nabla \times \vec{B} = \mu_0 \vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t}
+\end{equation}
+
+Stability analysis of this equation shows that axially symmetric solutions with filamentary current flow and accompanying azimuthal magnetic field are particularly favored – the Birkeland currents. Their fractal scaling is a direct consequence of the underlying interactions:
+
+% 4. Fractal Scaling
+\begin{equation}
+    \label{eq:fractal_scaling}
+    j(r) \propto r^{D-3} \quad \text{with} \quad D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71
+\end{equation}
+
+\section{Summary: Microfoundation of Plasma Physics}
+The \gls{wdbt} replaces the field concept with a microscopically founded description of collective dynamics. The integration of the Weber force over pair correlations provides a natural explanation for transport phenomena that in \gls{mhd} can only be modeled empirically. The quantum potential $Q$ adds non-local coherence effects, which become particularly relevant at high densities and have a stabilizing effect. The resulting fractal structure also offers a unified explanatory framework for phenomena on all scales.

@@ -1,0 +1,397 @@
+\chapter{Justification of Star Formation in WDBT}
+\label{app:sternentstehung}
+
+\section{Basic Equations of Plasma Dynamics}
+The dynamics of a plasma in the Weber-De Broglie-Bohm Theory (WDBT) is described by the following coupled system:
+
+\begin{equation}
+\frac{\partial S}{\partial t} + \frac{(\nabla S - q\vec{A})^2}{2m} + V + Q + \Phi_{\text{Weber}} = 0
+\end{equation}
+
+\begin{equation}
+\frac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \frac{\nabla S - q\vec{A}}{m}\right) = 0
+\end{equation}
+
+where:
+\begin{itemize}
+\item $S(\vec{r},t)$ is the action function
+\item $\rho(\vec{r},t)$ is the particle density
+\item $Q = -\frac{\hbar^2}{2m}\frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}$ is the quantum potential
+\item $\Phi_{\text{Weber}}$ is the Weber potential
+\end{itemize}
+
+\section{Weber Force and Gravitation}
+The combined Weber force for gravitation and electrodynamics:
+
+\begin{equation}
+    \label{eq:weber_em_und_g}
+    \vec{F}_{12} = \left[ \frac{G m_1 m_2}{r^2} \left( 1 - \frac{\alpha_g v^2}{c^2} + \frac{\beta_g r \ddot{r}}{c^2} \right) - \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left( 1 - \frac{\alpha_{em} v^2}{c^2} + \frac{\beta_{em} r \ddot{r}}{c^2} \right) \right] \hat{r}
+\end{equation}
+
+\section{Stability Analysis of a Collapsing Cloud}
+For a homogeneous spherical cloud with radius $R(t)$:
+
+\begin{equation}
+    \label{eq:bewegungsgleichung}
+    \ddot{R} = -\frac{G M}{R^2} + \frac{9 \hbar^2}{4 m_e^2 R^3} - \frac{3}{16\pi} \frac{e^2 N}{\epsilon_0 m_e R^2}
+    \quad \text{with} \quad M = N m_p
+\end{equation}
+
+\subsection{Jeans Criterion}
+Collapse condition:
+
+\begin{equation}
+    M > \frac{9 \hbar^2}{4 G m_e^2 R} + \frac{3}{16\pi} \frac{e^2 N}{\epsilon_0 G m_e}
+    \quad \text{with} \quad M = N m_p
+\end{equation}
+
+Here, $N$ is the total number of electron-proton pairs in the system, $m_e$ is the electron mass, and $m_p$ is the proton mass. The total mass of the cloud is $M = N m_p$, neglecting the smaller electron mass. The dominant repulsion term primarily results from the Coulomb barrier of the electrons, enhanced by their quantum pressure.
+
+\subsection{Numerical Solution}
+Analyzing the collapse dynamics requires the numerical integration of the equation of motion (Eq. \ref{eq:bewegungsgleichung}). Using the substitution approach $R(t) = R_0 f(t)$ yields the following second-order initial value problem:
+
+\begin{equation}
+\label{eq:corrected_dimensionless}
+\frac{d^{2}f}{dt^{2}} = -\frac{G M}{R_{0}^{3} f^{2}} + \frac{9 \hbar^{2}}{4 m_e^{2} R_{0}^{4} f^{3}} - \frac{3}{16\pi} \frac{e^{2} N}{\epsilon_{0} m_e R_{0}^{3} f^{2}}
+\end{equation}
+
+\noindent with the initial conditions $f(0) = 1$ and $\frac{df}{dt}(0) = 0$.
+
+The characteristic time scale of the problem is defined by the free-fall time neglecting the other terms:
+\[
+\tau_{\text{ff}} = \sqrt{\frac{R_0^3}{G M}}
+\]
+
+Equation~\ref{eq:corrected_dimensionless} is integrated numerically to determine the time evolution $f(t)$ and the collapse time $t_{\text{coll}}$, which is defined as the time when $f(t) \rightarrow 0$.
+
+The numerical integration of the equation of motion (Eq. A.5) was performed for an astrophysically relevant parameter set ($M = 10^3 \, M_\odot$, $R_0 = 1 \, \text{LY}$). Neglecting the small quantum term ($\alpha \approx 2.5 \times 10^{-9}$), the combined effect of gravitation and electromagnetic repulsion ($\beta \approx 0.1$) dominates.
+
+The calculated collapse time is $t_{\text{coll}} \approx 1.3 \times 10^5$ years. This is in good agreement with observations, which suggest collapse times on the order of $10^5$ years for clouds of this mass. The result shows that the corrected theory predicts rapid gravitational collapse despite the inhibiting effect of Coulomb repulsion.
+
+\paragraph{On the Role of the Quantum Potential:} The numerical integration for a macroscopic cloud ($M = 10^3 \, M_\odot$, $R_0 \approx 1 \, \text{LY}$) suggests that the contribution of the quantum potential $Q$ in the equation of motion is negligible. This conclusion is deceptive and based on a scaling effect. The true, crucial function of $Q$ is not to provide a direct force counteracting gravity, but to stabilize the electron cloud against its intrinsic Coulomb repulsion and enable coherent contraction in the first place.
+
+Without the quantum potential, the electron component of the cloud would immediately disperse, and gravitational collapse would be blocked by electrostatic repulsion. $Q$ acts as a non-local, cohesive force that suppresses this dispersion. While its contribution appears quantitatively small in the early phase of contraction (large $R$), it becomes dominant on small scales ($R \to 0$), as it scales with $\propto 1/R^3$ – and thus grows faster than gravity ($\propto 1/R^2$) and Coulomb repulsion ($\propto 1/R^2$).
+
+Thus, $Q$ is not the \textit{driver} of the collapse, but its fundamental \textit{guarantor}. It is the physical entity that enforces fractal structure formation (Eq. \ref{eq:dichtefluktuation}) and explains why stars can form despite the overwhelming electromagnetic barrier. The numerical solution merely confirms that the initial contraction on large scales is dominated by gravity; the actual proof of the theory lies in the successful stabilization on the micro level, which is not visible in the present macroscopic calculation.
+
+\section{Fractal Structure Formation}
+The density fluctuations follow:
+
+\begin{equation}
+P(k) = P_0 k^{-0.29} \quad \text{(corresponding to } D \approx 2.71\text{)}
+\end{equation}
+
+This scaling explains both the large-scale cloud structure and the sub-fragmentation into protostellar cores.
+
+\chapter{Fusion Plasmas in WDBT}
+\section{Basic Equations of WDBT for Plasmas}
+
+The dynamics of a fusion plasma in the \gls{wdbt} is described by the coupled equations for the action function $S(\vec{r},t)$ and the particle density $\rho(\vec{r},t)$:
+
+\begin{align}
+\frac{\partial S}{\partial t} + \frac{(\nabla S - q\vec{A})^2}{2m} + V + Q + \Phi_{\text{Weber}} &= 0 \label{eq:B1} \\
+\frac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \frac{\nabla S - q\vec{A}}{m}\right) &= 0 \label{eq:B2}
+\end{align}
+
+with the quantum potential:
+\begin{equation}
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}} \label{eq:Q}
+\end{equation}
+
+and the Weber potential for particle interactions:
+\begin{equation}
+\Phi_{\text{Weber}} = \int d^3r' \rho(\vec{r}') V_{\text{Weber}}(|\vec{r}-\vec{r}'|) g(|\vec{r}-\vec{r}'|)
+\end{equation}
+
+\subsection{Modified Plasma Dynamics}
+
+The Weber force density in the plasma results from the integration over pair correlations:
+
+\begin{equation}
+\vec{f}_{\text{Weber}} = n_e n_i \int d^3r \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left[ \left(1-\frac{v^2}{c^2}\right)\hat{r} + \frac{2(\vec{v}\cdot\hat{r})}{c^2}\vec{v} \right] g(\vec{r})
+\end{equation}
+
+This leads to a modified magnetic dynamics:
+
+\begin{equation}
+\label{eq:modified_ampere}
+\nabla \times \vec{B} = \mu_0 \vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t}
+\end{equation}
+
+\subsection{Stability Analysis for Fusion Plasmas}
+
+The dispersion relation for plasma waves considering the quantum potential:
+
+\begin{equation}
+\label{eq:dispersion}
+\omega^2 = \omega_p^2 \left(1 + \frac{\hbar^2 k^2}{4m_e^2 \omega_p^2}\right)
+\end{equation}
+
+The stability condition for a cylindrical plasma with radius $R$:
+
+\begin{equation}
+\label{eq:stability}
+\frac{d}{dr}\left(r\frac{dQ}{dr}\right) - \frac{m^2}{r}Q + \left(\frac{\omega^2}{v_A^2} - k^2\right)rQ = 0
+\end{equation}
+
+with $v_A = B/\sqrt{\mu_0 \rho_m}$ the Alfvén velocity.
+
+\subsection{Fractal Scaling of Current Density}
+
+The \gls{wdbt} predicts a characteristic scaling for Birkeland currents:
+
+\begin{equation}
+j(r) = j_0 \left(\frac{r}{r_0}\right)^{D-3} \approx j_0 \left(\frac{r}{r_0}\right)^{-0.29}
+\end{equation}
+
+with the fractal dimension $D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71$.
+
+\subsection{Energy Balance in a Field-Free Plasma}
+
+Energy conservation considering the quantum potential:
+
+\begin{equation}
+\label{eq:energy}
+\frac{d}{dt}\left(\frac{3}{2}n_e k_B T_e + \frac{\hbar^2}{8m_e} \frac{(\nabla n_e)^2}{n_e}\right) = P_{\text{ext}} - P_{\text{rad}}
+\end{equation}
+
+\chapter{Propulsion Technology}
+\section{Electrically Charged Pressure Chamber as Directed Plasma Propulsion}
+\label{sec:plasma-antrieb}
+
+\subsection{Principle and Theory}
+The proposed propulsion system uses a \textbf{negatively charged pressure chamber} to separately accelerate electrons and protons after laser ionization of a cryogenic propellant (e.g., liquid hydrogen, LH\textsubscript{2}). The electrical circuit is closed through the spacecraft hull.
+
+\subsubsection*{Main Equations}
+\begin{itemize}
+    \item \textbf{Charge separation} after ionization:
+        \begin{equation}
+            n_e = n_p = \frac{\rho_{\text{LH}_2} N_A}{M_{\text{H}_2}} \approx 4.23 \times 10^{28}\,\text{m}^{-3} \quad \text{(at complete ionization)}
+            \label{eq:density}
+        \end{equation}
+    
+    \item \textbf{Extraction field strength} for electrons:
+        \begin{equation}
+            E = \frac{V_{\text{chamber}}}{d} \quad \text{(typically } V_{\text{chamber}} = -1\,\text{MV}, d = 0.1\,\text{m} \Rightarrow E = 10\,\text{MV/m})
+            \label{eq:field}
+        \end{equation}
+    
+    \item \textbf{Proton acceleration} (non-relativistic):
+        \begin{equation}
+            F_p = n_p \cdot e \cdot v_p \times B \quad \text{(Lorentz force)}
+            \label{eq:lorentz_2}
+        \end{equation}
+\end{itemize}
+
+\subsection{Critical Analysis}
+\subsubsection*{Advantages}
+\begin{itemize}
+    \item \textbf{Precise control}: Separate control of electrons (electrostatic) and protons (magnetic).
+    \item \textbf{Energy recovery}: Electron current could be utilized (e.g., for cooling).
+    \item \textbf{No mechanical wear}: No moving parts in the nozzle.
+\end{itemize}
+
+\subsubsection*{Challenges}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{Problem} & \textbf{Proposed Solution} \\
+        \midrule
+        Gigavolt potentials & Pulsed operation with $f > 1\,\text{kHz}$ \\
+        Hull current >1\,MA & Superconducting coating (YBCO) \\
+        Proton beam scattering & Quantum potential $Q$ of the \gls{wdbt} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Technical challenges and proposed solutions.}
+    \label{tab:problems}
+\end{table}
+
+\subsection{Feasibility and Outlook}
+The system requires advances in:
+\begin{enumerate}
+    \item \textbf{High-voltage technology}: Vacuum-insulated chamber designs (diamond-tungsten).
+    \item \textbf{Superconductivity}: Stable superconductors for magnetic fields >20\,T.
+    \item \textbf{Laser technology}: Femtosecond pulses with $E > 100\,\text{J}$ at MHz frequencies.
+\end{enumerate}
+
+\begin{equation}
+    \text{Conclusion: } \boxed{\text{Theoretically feasible, but experimental validation on a laboratory scale is necessary.}}
+\end{equation}
+
+\section{Combined Propulsion and Radiation Protection via Hull Current}
+\label{sec:hullcurrent}
+
+\subsection{Principle of the Dual-Use System}
+The spacecraft hull serves both as a \textbf{current return path} for the plasma propulsion (cf. Section~\ref{sec:plasma-antrieb}) and as an \textbf{active radiation shield} via the induced magnetic field.
+
+\subsection{Physical Foundations}
+\subsubsection*{Magnetic Field Calculation (Ampère's Law)}
+The toroidal magnetic field generated by the hull current $I_H$ in the interior:
+\begin{equation}
+    B_\phi(r) = \frac{\mu_0 I_H}{2\pi r} \quad \text{(Cylindrical coordinates)}
+    \label{eq:bfield}
+\end{equation}
+
+\subsubsection*{Radiation Deflection (Lorentz Force)}
+Charged cosmic particles (protons, $\alpha$-particles) are deflected:
+\begin{equation}
+    F_L = q v \times B \quad \Rightarrow \quad r_L = \frac{m v_\perp}{|q| B} \quad \text{(Gyroradius)}
+    \label{eq:lorentz}
+\end{equation}
+
+\subsection{Technical Specifications}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Parameter} & \textbf{Value} \\
+        \midrule
+        Hull current $I_H$ & 1\,MA \\
+        Hull radius $R$ & 5\,m \\
+        Magnetic field $B(R)$ & 0.08\,T (800\,G) \\
+        Shielding effectiveness (for 1\,GeV protons) & $r_L \approx 125\,\text{m}$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Sample calculation for a manned spacecraft.}
+    \label{tab:specs}
+\end{table}
+
+\subsection{Critical Assessment}
+\subsubsection*{Advantages}
+\begin{itemize}
+    \item \textbf{Energy efficiency}: Utilization of the propulsion current for passive protection.
+    \item \textbf{Direction dependence}: Maximum shielding along the torus axis.
+\end{itemize}
+
+\subsubsection*{Challenges}
+\begin{itemize}
+    \item \textbf{Superconductor resources}: \textbf{Superconducting cables} are needed for 1\,MA (YBCO or MgB\textsubscript{2}).
+    \item \textbf{Neutral particles}: Undeflected neutrons require additional polymer layers.
+    \item \textbf{Interference fields}: Magnetic field interferes with onboard electronics ($\mu$-metal shielding required).
+\end{itemize}
+
+\subsection{Integrated Solution}
+Combination with the plasma propulsion from Section~\ref{sec:plasma-antrieb}:
+\begin{enumerate}
+    \item Electron current flows back via the superconducting hull.
+    \item Induced $B$-field forms a \textbf{miniaturized magnetosphere model}.
+    \item Additional shielding via \textbf{plasma recoil} (secondary interactions).
+\end{enumerate}
+
+\begin{equation}
+    \text{Total shielding effectiveness} \approx \exp\left(-\frac{d}{r_L}\right) \quad \text{(Exponential damping)}
+\end{equation}
+
+\chapter{Emergence of Maxwell Theory from WDBT}
+\label{sec:emergence-maxwell}
+
+The consistency of the Weber-De Broglie-Bohm Theory (\gls{wdbt}) requires that it contains the successful Maxwellian electrodynamics as a limiting case. This section shows exactly how Maxwell's equations and charge conservation emerge from the fundamental principles of the \gls{wdbt}.
+
+\section{The Reduction Path: From Non-Local to Local}
+
+The emergence is defined by two consistent approximations, which gradually reduce the non-local and quantum mechanical depth of the \gls{wdbt}:
+
+\begin{enumerate}
+    \item \textbf{Locality Approximation:} The pair correlation function $g(|\vec{r} - \vec{r}'|)$ is approximated by a delta function: $g(|\vec{r} - \vec{r}'|) \rightarrow \delta^{(3)}(\vec{r} - \vec{r}')$. This switches off the non-local interaction terms and reduces the force density to a local description.
+    \item \textbf{Classical Limit:} The quantum potential $Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}$ is neglected ($Q \rightarrow 0$). This corresponds to the transition to classical physics.
+\end{enumerate}
+
+Under these approximations, the structures of Maxwell theory must necessarily emerge from the equations of the \gls{wdbt}.
+
+\subsection{Emergence of the Continuity Equation}
+
+The continuity equation, expressing charge conservation, is fundamentally embedded in the structure of the \gls{wdbt}. The starting point is the conservation of probability density (Eq. \ref{eq:B2}):
+
+\begin{equation}
+    \frac{\partial \rho}{\partial t} + \nabla \cdot \left( \rho \frac{\nabla S - q\vec{A}}{m} \right) = 0
+\end{equation}
+
+Defining the hydrodynamic velocity $\vec{v} = \frac{\nabla S - q\vec{A}}{m}$, one immediately recognizes the standard form of a continuity equation:
+
+\begin{equation}
+    \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{v}) = 0
+\end{equation}
+
+Multiplication by the charge $q$ directly yields the electrical continuity equation, where $\rho_{\text{charge}} = q\rho$ is the charge density and $\vec{j} = \rho_{\text{charge}} \vec{v}$ is the current density:
+
+\begin{equation}
+    \frac{\partial \rho_{\text{charge}}}{\partial t} + \nabla \cdot \vec{j} = 0
+\end{equation}
+
+This derivation is exact and requires no approximations. \textbf{Charge conservation} is thus a more fundamental principle in the \gls{wdbt} than in Maxwell theory, as it follows directly from the structure of quantum mechanical probability conservation.
+
+\subsection{Emergence of the Field Equations}
+
+In the \gls{wdbt}, electromagnetic fields ($\vec{E}$, $\vec{B}$) are not fundamental entities, but \textit{effective auxiliary quantities} derived from the averaged Weber interaction.
+
+\subsubsection{Scalar Potential and Gauss's Law}
+
+The Coulomb part of the Weber force density (Eq. \ref{eq:weber_force_density}) leads, in the locality limit ($g(\vec{r}) \rightarrow \delta^{(3)}(\vec{r})$), to the Poisson equation:
+
+\begin{equation}
+    \nabla^2 \phi = -\frac{\rho}{\epsilon_0}
+\end{equation}
+
+This equation \textit{defines} the electrostatic potential $\phi$. Applying the nabla operator to both sides immediately yields Gauss's law for the electric field $\vec{E} = -\nabla \phi$:
+
+\begin{equation}
+    \nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0}
+\end{equation}
+
+\subsubsection{Vector Potential and Magnetic Laws}
+
+The velocity-dependent terms of the Weber force density lead, in the same limit, to expressions proportional to $\vec{v} \times (\nabla \times \vec{A})$. This identifies the magnetic flux density $\vec{B}$ with the curl of a vector potential:
+
+\begin{equation}
+    \vec{B} = \nabla \times \vec{A}
+\end{equation}
+
+This definition immediately implies the source-free nature of the magnetic field, the second homogeneous Maxwell equation:
+
+\begin{equation}
+    \nabla \cdot \vec{B} = 0
+\end{equation}
+
+\subsubsection{Faraday's Law of Induction}
+
+The law of induction is a direct mathematical consequence of the definition of the fields from the potentials. From $\vec{E} = -\nabla \phi - \frac{\partial \vec{A}}{\partial t}$, taking the curl yields:
+
+\begin{equation}
+    \nabla \times \vec{E} = \nabla \times (-\nabla \phi - \frac{\partial \vec{A}}{\partial t}) = - \underbrace{\nabla \times (\nabla \phi)}_{=0} - \frac{\partial}{\partial t} (\underbrace{\nabla \times \vec{A}}_{=\vec{B}})
+\end{equation}
+
+From which Faraday's law follows:
+
+\begin{equation}
+    \nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
+\end{equation}
+
+\subsubsection{Ampère's Circuital Law and its Extension}
+
+The full power of the \gls{wdbt} is shown in the derivation of the circuital law. From the analysis of the force density emerges not the classical Ampère-Maxwell law, but an extended, non-local version (Eq. \ref{eq:modified_ampere}):
+
+\begin{equation}
+    \nabla \times \vec{B} = \mu_0 \vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t}
+\end{equation}
+
+In the \textit{Maxwell limit} ($\lambda_c \rightarrow 0$, i.e., neglecting non-locality), the additional term vanishes and we obtain the original Ampère's law for stationary currents:
+
+\begin{equation}
+    \lim_{\lambda_c \to 0} \left( \nabla \times \vec{B} \right) = \mu_0 \vec{j}
+\end{equation}
+
+To obtain the complete Maxwell theory, the displacement current $\mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}$ must be added. However, this step is \textit{ad hoc} in the \gls{wdbt}. Equation (10) instead represents the \textbf{more fundamental form}, as it directly describes the non-local origin of the field offsets. The Maxwellian term itself only emerges from a further simplification, namely the assumption of a linear relationship between current and field in simple media.
+
+\subsection{Summary: Maxwell Theory as an Effective Description}
+
+The derivation shows that the entire Maxwellian electrodynamics consistently emerges from the \gls{wdbt} once non-local and quantum mechanical effects are neglected. The \gls{wdbt} thus not only explains the existence of Maxwell's equations but also their limits:
+
+\begin{itemize}
+    \item The \textbf{continuity equation} is a more fundamental principle.
+    \item The \textbf{homogeneous equations} ($\nabla \cdot \vec{B} = 0$, $\nabla \times \vec{E} = -\partial_t \vec{B}$) are direct consequences of the potential definition.
+    \item The \textbf{inhomogeneous equations} ($\nabla \cdot \vec{E} = \rho/\epsilon_0$, $\nabla \times \vec{B} = \ldots$) emerge from the averaged Weber force density.
+    \item Ampère's law is extended by a \textbf{non-local correction term} that vanishes under laboratory conditions ($\lambda_c \rightarrow 0$), but becomes dominant in dense plasmas or on small scales.
+\end{itemize}
+
+Maxwell theory is thus the \textit{effective field theory} of the \gls{wdbt} for the limiting case of slow, local phenomena. The \gls{wdbt} itself provides the more fundamental, unified framework connecting micro and macro physics.

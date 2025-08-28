@@ -1,0 +1,98 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=2cm}
+
+\title{Zusammenfassung: Weber-De-Broglie-Bohm-Theorie (WDBT)}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Kernidee}
+Die WDBT vereint die \textbf{Weber-Elektrodynamik} (WED) mit der \textbf{De-Broglie-Bohm-Theorie} (DBT) zu einer feldlosen, nicht-lokalen Theorie der Physik. Sie beschreibt elektromagnetische Wechselwirkungen durch direkte, geschwindigkeitsabhängige Kräfte zwischen Ladungen und integriert Quanteneffekte über das Bohm'sche Quantenpotential.
+
+\section*{Grundgleichungen}
+
+\subsection*{Weber-Kraft (skalar)}
+\[
+F_{12} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left[1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r \ddot{r}}{c^2} \right], \quad \beta = 2
+\]
+
+\subsection*{Weber-Kraft (vektoriell)}
+\[
+\vec{F}_{12} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left\{ \left[1 - \frac{v^2}{c^2} + \frac{2r(\hat{r} \cdot \vec{a})}{c^2} \right] \hat{r} + \frac{2(\hat{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
+\]
+
+\subsection*{Quantenpotential}
+\[
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}
+\]
+
+\subsection*{Kraftdichte im Plasma}
+\[
+\vec{f}_{\text{Weber}} = n_e n_i \int d^3r \, \vec{F}_{12}(\vec{r}) \, g(\vec{r})
+\]
+
+\subsection*{Fraktale Dimension}
+\[
+D = \frac{\ln 20}{\ln(2 + \phi)} \approx 2.71
+\]
+
+\section*{Modifizierte Plasmatheorie}
+
+\subsection*{Dispersionsrelation}
+\[
+\omega^2 = \omega_p^2 \left(1 + \frac{\hbar^2 k^2}{4m_e^2 \omega_p^2} \right)
+\]
+
+\subsection*{Modifizierte Ampere-Gleichung}
+\[
+\nabla \times \vec{B} = \mu_0 \vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t}
+\]
+
+\subsection*{Fraktale Skalierung}
+\[
+j(r) \propto r^{D-3} \approx r^{-0.29}
+\]
+
+\section*{Anwendungen}
+
+\subsection*{Fusionsforschung}
+\begin{itemize}
+    \item Selbstorganisierte Plasmastabilisierung durch $Q$
+    \item Erklärung anomaler Transportphänomene ohne Turbulenzmodelle
+    \item Fraktale Birkeland-Ströme ermöglichen kompaktere Reaktoren
+\end{itemize}
+
+\subsection*{Astrophysik}
+\begin{itemize}
+    \item Erklärung von Galaxienfilamenten und CMB-Anisotropien durch fraktale Dichteverteilung
+    \item Alternative zu dunkler Materie via Weber-Gravitation und $Q$
+    \item Sonnenwind als emergent Quantenphänomen
+\end{itemize}
+
+\subsection*{Raumfahrtantrieb}
+\begin{itemize}
+    \item Hybrid-Plasmaantrieb durch Coulomb-Explosion und Quantenresonanz
+    \item Höhere Effizienz durch nicht-lokale Beschleunigung
+\end{itemize}
+
+\section*{Emergenz der Maxwell-Theorie}
+Im Limes $g(\vec{r}) \to \delta(\vec{r})$ und $Q \to 0$ gehen die Gleichungen der WDBT in die Maxwell-Gleichungen über. Die WDBT ist damit die fundamentalere Theorie.
+
+\section*{Experimentelle Vorhersagen}
+\begin{itemize}
+    \item Stabilere Plasmawellen bei hohen Dichten ($n_e > 10^{20}  \text{m}^{-3}$)
+    \item Modifizierter Lamb-Shift: $\Delta E_{\text{Lamb}}^{\text{WED}} = \Delta E_{\text{QED}} + \frac{e^2 h}{4\pi\epsilon_0 m_e^2 c^3} \langle r \rangle$
+    \item Fraktale Strukturen in astrophysikalischen und Laborplasmen ($D \approx 2.71$)
+\end{itemize}
+
+\section*{Zusammenfassung}
+Die WDBT bietet eine feldlose, nicht-lokale und deterministische Alternative zur QED und MHD. Sie vereint Plasmaphysik, Quantenmechanik und Gravitation in einem konsistenten Rahmen und sagt messbare Abweichungen von etablierten Theorien voraus.
+
+\end{document}

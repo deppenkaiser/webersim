@@ -1,0 +1,69 @@
+\chapter{Discussion}
+
+\section{Photons as Solitons of the Weber Force}
+The \gls{wdbt} interprets photons not as gauge bosons, but as non-local solitons of collective charge fluctuations. The associated Lagrangian density combines Weber interaction, quantum potential, and polarization field:
+
+The Lagrangian density $\mathcal{L}_{\text{WED}}$ combines:
+\begin{equation}
+\mathcal{L} = \int d^3r'\, \rho(\vec{r},t) \rho(\vec{r}',t) V_{\text{Weber}}(|\vec{r}-\vec{r}'|) + \frac{\hbar^2}{8m_e} \frac{(\nabla \rho)^2}{\rho} - e \vec{P} \cdot \vec{E}_{\text{eff}},
+\end{equation}
+where:
+\begin{itemize}
+    \item $V_{\text{Weber}} = \dfrac{q_1 q_2}{4\pi \epsilon_0 r} \left(1 - \dfrac{\dot{r}^2}{2c^2} + 2 \dfrac{r \ddot{r}}{c^2}\right)$,
+    \item $\rho(\vec{r},t)$: charge density of the soliton,
+    \item $\vec{P}$: polarization field.
+\end{itemize}
+
+Variation of $\mathcal{L}$ yields:
+
+\begin{equation}
+i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m_e} \nabla^2 \psi + \left[ V_{\text{Weber}} + Q \right] \psi, \quad \psi = \sqrt{\rho} e^{iS/\hbar}.
+\end{equation}
+
+The soliton solution is:
+\begin{equation}
+\rho(\vec{r},t) = \rho_0 \, \text{sech}^2\left(\frac{z - ct}{\lambda}\right), \quad \lambda = \sqrt{\frac{\hbar^2}{m_e V_{\text{Weber}}}}.
+\end{equation}
+
+\section{Emergence of QED}
+The \gls{qed} emerges as an \textbf{effective theory} for $\mathbf{k \ll m_e c/\hbar}$:
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{QED Concept} & \textbf{WDBT Equivalent} \\
+\midrule
+Photons & Charge solitons \\
+Virtual photons & Instanton-like Weber configurations \\
+$g-2$ of the electron & Weber force corrections \\
+\bottomrule
+\end{tabular}
+\caption{Correspondence between QED and WDBT}
+\end{table}
+
+\subsubsection{Experimental Consequences:}
+
+\begin{itemize}
+    \item \textbf{Anomalous dispersion in plasmas}:
+    \begin{equation}
+    \frac{\Delta c}{c} \sim \alpha \left(\frac{\omega_p}{\omega}\right)^2.
+    \end{equation}
+    \item \textbf{Modified Lamb shift}:
+    \begin{equation}
+        \label{eq:lamb_shift}
+        \Delta E_{\text{Lamb}}^{\text{WED}} = \Delta E_{\text{QED}} + \frac{e^2 \hbar}{4\pi \epsilon_0 m_e^2 c^3} \langle \ddot{r} \rangle.
+    \end{equation}
+\end{itemize}
+
+\section{Experimental Validation of WDBT}
+\label{sec:experimentelle_konsequenzen}
+
+\begin{enumerate}
+    \item \textbf{Plasma physics tests:} Stabilization of fusion plasmas by $Q$ (Eq. \ref{eq:quantenpotential}), non-local transport in tokamaks.
+    \item \textbf{Atomic physics:} Modified Lamb shift (Eq. \ref{eq:lamb_shift}), photons as solitons.
+    \item \textbf{Cosmology:} Fractal \gls{cmb} anisotropies (Eq. \ref{eq:dichtefluktuation}), galaxy rotation without dark matter.
+\end{enumerate}
+
+\section{Plasma Cosmology as an Emergent Phenomenon}
+The \gls{wdbt} provides a fundamental framework for describing non-local interactions in plasmas. The mathematical structure suggests that large-scale phenomena of plasma cosmology (Birkeland currents, galactic filaments) can be naturally derived. The fractal scaling (Eq. \ref{eq:dichtefluktuation}) explains the observed hierarchy of cosmic structures without additional assumptions like dark matter or inflation.

@@ -1,0 +1,119 @@
+\documentclass[11pt, a5paper, twoside, openright]{book}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage{verbatim}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[
+    backend=biber,
+    style=phys,
+    sorting=nyt,
+]{biblatex}
+\usepackage[acronym, toc]{glossaries}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{pgfplots}
+\usepackage{glossaries}
+\makeglossaries
+\input{styles}
+\input{glossar}
+
+\begin{document}
+
+\frontmatter
+\begin{tikzpicture}[remember picture, overlay]
+
+  \fill[hintergrund] (current page.south west) rectangle (current page.north east);
+  \foreach \i in {0,10,...,360} {
+    \draw[quantenblau!10, line width=0.1pt] 
+      (current page.center) -- +(\i:5cm);
+  }
+
+  \node[rotate=25, scale=2, quantenblau!50] at (current page.center) {
+    \begin{tikzpicture}[scale=0.3]
+      \draw[quantenblau] (0:1) \foreach \a in {72,144,...,360} { -- (\a:1) } -- cycle;
+      \foreach \a in {36,108,...,324} { \draw[quantenblau] (0,0) -- (\a:1.6); }
+    \end{tikzpicture}
+  };
+
+  \node[align=center, text=white, font=\sffamily\bfseries\Huge] 
+    at ($(current page.center)+(0,3cm)$) {
+    \textbf{Weber Electrodynamics and Plasmas}
+  };
+  \node[align=center, text=quantenblau!80, font=\sffamily\Large] 
+    at ($(current page.center)+(0,1.8cm)$)
+    {
+        Beyond Quantum Fields
+    };
+
+  \node[align=left, anchor=south east, text=weberrot!70, font=\small] 
+    at ($(current page.south east)+(-1cm,1cm)$) {
+    $\displaystyle \vec{F}_{\text{WG}} = -\frac{GMm}{r^2}\left(1-\frac{\dot{r}^2}{c^2}+\beta\frac{r\ddot{r}}{c^2}\right)$
+  };
+  \node[align=left, anchor=north east, text=quantenblau!70, font=\small] 
+    at ($(current page.south east)+(-1cm,3cm)$) {
+    $\displaystyle Q = -\frac{\hbar^2}{2m}\frac{\nabla^2\sqrt{\rho}}{\sqrt{\rho}}$
+  };
+
+  \node[align=center, text=white, font=\sffamily\large] 
+    at ($(current page.south)+(0,1cm)$) {
+    \textbf{Michael Czybor}
+  };
+
+  \node[align=right, text=quantenblau!50, font=\small] 
+    at ($(current page.north west)+(2cm,-1cm)$) {
+    $D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71$
+  };
+
+\end{tikzpicture}
+
+\title{Weber Electrodynamics and Plasmas\\Beyond Quantum Fields}
+\author{Michael Czybor}
+\date{\today}
+\maketitle
+
+\chapter*{Preface}
+This book introduces the \gls{wdbt} - a consistent further development of established approaches that combines \gls{wed} with \gls{dbt}. The core of the \gls{wdbt} is radically simple:
+Electromagnetic effects are not mediated by fields, but by direct, velocity- and acceleration-dependent forces between charges. Combined with the non-local quantum potential of \gls{dbt}, this creates a coherent theoretical framework that uniformly explains plasmas, quantum phenomena, and astrophysical processes without needing to resort to the ad-hoc assumptions of classical field theories.
+
+\begin{flushright}
+    Michael Czybor \\
+    \emph{Langenstein/AT, August 2025}
+\end{flushright}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+\include{einleitung/einleitung}
+\include{grundlagen/grundlagen}
+\include{fusion/fusion}
+\include{raum/raum}
+\include{astrophysik/astrophysik}
+\include{diskussion/diskussion}
+\include{fazit/fazit}
+
+\appendix
+\include{anhang/anhang}
+
+\backmatter
+\printbibliography[title=Literaturverzeichnis]
+\glswritefiles
+\printglossary[title=Glossar]
+\printglossary[type=acronym, title=Abkürzungen]
+
+\end{document}
