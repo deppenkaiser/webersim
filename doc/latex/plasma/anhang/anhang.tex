@@ -32,6 +32,7 @@ Die kombinierte Weber-Kraft für Gravitation und Elektrodynamik:
 Für eine homogene sphärische Wolke mit Radius $R(t)$:
 
 \begin{equation}
+    \label{eq:bewegungsgleichung}
     \ddot{R} = -\frac{G M}{R^2} + \frac{9 \hbar^2}{4 m_e^2 R^3} - \frac{3}{16\pi} \frac{e^2 N}{\epsilon_0 m_e R^2}
     \quad \text{mit} \quad M = N m_p
 \end{equation}
@@ -48,7 +49,7 @@ Hierbei ist $N$ die Gesamtzahl der Elektron-Protonen-Paare im System, $m_e$ die 
 der geringeren Elektronenmasse. Der dominante Abstoßungsterm resultiert primär aus der Coulomb-Barriere der Elektronen, verstärkt durch ihren Quantendruck.
 
 \subsection{Numerische Lösung}
-Die Analyse der Kollapsdynamik erfordert die numerische Integration der Bewegungsgleichung (Gl. A.5). Mit dem Substitutionsansatz $R(t) = R_0 f(t)$ ergibt sich das folgende
+Die Analyse der Kollapsdynamik erfordert die numerische Integration der Bewegungsgleichung (Gl. \refeq{eq:bewegungsgleichung}). Mit dem Substitutionsansatz $R(t) = R_0 f(t)$ ergibt sich das folgende
 Anfangswertproblem zweiter Ordnung:
 
 \begin{equation}
@@ -77,12 +78,12 @@ vernachlässigbar sei. Diese Schlussfolgerung ist trügerisch und beruht auf ein
 Gravitation entgegenwirkt, sondern die Elektronenwolke gegen ihre intrinsische Coulomb-Abstoßung zu stabilisieren und eine kohärente Kontraktion überhaupt erst zu ermöglichen.
 
 Ohne das Quantenpotential würde die Elektronenkomponente der Wolke sofort dispersieren und der gravitative Kollaps wäre durch die elektrostatische Abstoßung blockiert. $Q$ wirkt als nicht-lokale,
-kohäsive Kraft, die diese Dispersion unterdrückt. Während sein Beitrag in der early-phase der Kontraktion (großes $R$) quantitativ klein erscheint, wird es auf kleinen Skalen ($R \to 0$) dominant,
+kohäsive Kraft, die diese Dispersion unterdrückt. Während sein Beitrag in der frühen Phase der Kontraktion (großes $R$) quantitativ klein erscheint, wird es auf kleinen Skalen ($R \to 0$) dominant,
 da es mit $\propto 1/R^3$ skaliert – und somit schneller anwächst als die Gravitation ($\propto 1/R^2$) und die Coulomb-Abstoßung ($\propto 1/R^2$). 
 
-Somit ist $Q$ nicht der \textit{Antrieb} des Kollapses, sondern sein fundamentaler \textit{Enabler}. Es ist die physikalische Instanz, die die fraktale Strukturbildung (Gl. 2.6, A.9) erzwingt und
-erklärt, warum sich Sterne trotz der überwältigenden elektromagnetischen Barriere bilden können. Die numerische Lösung bestätigt lediglich, dass die initiale Kontraktion auf großen Skalen durch
-die Gravitation dominiert wird; der eigentliche Beweis der Theorie liegt in der erfolgreichen Stabilisierung auf der Mikroebene, die in der vorliegenden makroskopischen Rechnung nicht sichtbar wird.
+Somit ist $Q$ nicht der \textit{Antrieb} des Kollapses, sondern sein fundamentaler \textit{Garant}. Es ist die physikalische Instanz, die die fraktale Strukturbildung (Gl. \refeq{eq:dichtefluktuation})
+erzwingt und erklärt, warum sich Sterne trotz der überwältigenden elektromagnetischen Barriere bilden können. Die numerische Lösung bestätigt lediglich, dass die initiale Kontraktion auf großen Skalen
+durch die Gravitation dominiert wird; der eigentliche Beweis der Theorie liegt in der erfolgreichen Stabilisierung auf der Mikroebene, die in der vorliegenden makroskopischen Rechnung nicht sichtbar wird.
 
 \section{Fraktale Strukturbildung}
 Die Dichtefluktuationen folgen:
@@ -99,8 +100,8 @@ Diese Skalierung erklärt sowohl die großskalige Wolkenstruktur als auch die Su
 Die Dynamik eines Fusionsplasmas wird in der \gls{wdbt} durch die gekoppelten Gleichungen für die Wirkungsfunktion $S(\vec{r},t)$ und die Teilchendichte $\rho(\vec{r},t)$ beschrieben:
 
 \begin{align}
-\frac{\partial S}{\partial t} + \frac{(\nabla S - q\vec{A})^2}{2m} + V + Q + \Phi_{\text{Weber}} &= 0 \label{eq:C1} \\
-\frac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \frac{\nabla S - q\vec{A}}{m}\right) &= 0 \label{eq:C2}
+\frac{\partial S}{\partial t} + \frac{(\nabla S - q\vec{A})^2}{2m} + V + Q + \Phi_{\text{Weber}} &= 0 \label{eq:B1} \\
+\frac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \frac{\nabla S - q\vec{A}}{m}\right) &= 0 \label{eq:B2}
 \end{align}
 
 mit dem Quantenpotential:
@@ -312,7 +313,7 @@ Unter diesen Näherungen müssen sich die Strukturen der Maxwell-Theorie zwangsl
 
 \subsection{Emergenz der Kontinuitätsgleichung}
 
-Die Kontinuitätsgleichung, Ausdruck der Ladungserhaltung, ist fundamental in der Struktur der \gls{wdbt} verankert. Ausgangspunkt ist die Erhaltung der Wahrscheinlichkeitsdichte (Gl. B.2):
+Die Kontinuitätsgleichung, Ausdruck der Ladungserhaltung, ist fundamental in der Struktur der \gls{wdbt} verankert. Ausgangspunkt ist die Erhaltung der Wahrscheinlichkeitsdichte (Gl. \refeq{eq:B2}):
 
 \begin{equation}
     \frac{\partial \rho}{\partial t} + \nabla \cdot \left( \rho \frac{\nabla S - q\vec{A}}{m} \right) = 0
@@ -340,7 +341,7 @@ werden.
 
 \subsubsection{Skalarpotential und Gauß'sches Gesetz}
 
-Der Coulomb-Anteil der Weber-Kraftdichte (Gl. 2.7) führt im Lokalitätslimes ($g(\vec{r}) \rightarrow \delta^{(3)}(\vec{r})$)
+Der Coulomb-Anteil der Weber-Kraftdichte (Gl. \refeq{eq:weber_kraftdichte}) führt im Lokalitätslimes ($g(\vec{r}) \rightarrow \delta^{(3)}(\vec{r})$)
  auf die Poisson-Gleichung:
 
 \begin{equation}
@@ -384,7 +385,7 @@ Woraus sich das Faraday'sche Gesetz ergibt:
 \subsubsection{Ampère'sches Durchflutungsgesetz und seine Erweiterung}
 
 Die volle Kraft der \gls{wdbt} zeigt sich in der Herleitung des Durchflutungsgesetzes. Aus der Analyse der Kraftdichte emergiert nicht das klassische Ampère-Maxwell-Gesetz, sondern eine erweiterte,
-nicht-lokale Version (Gl. 2.8):
+nicht-lokale Version (Gl. \refeq{eq:modified_ampere}):
 
 \begin{equation}
     \nabla \times \vec{B} = \mu_0 \vec{j} + \frac{\mu_0 e^2 n_e \lambda_c^2}{\epsilon_0} \frac{\partial \vec{j}}{\partial t}
