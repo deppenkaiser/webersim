@@ -1,0 +1,113 @@
+\chapter{Die Emergenz der Quantenelektrodynamik}
+\section{Die Aufgabe der Reduktion}
+Die \gls{qed} beschreibt die Wechselwirkung zwischen Licht und Materie mit unvergleichlicher Präzision. Ihr Herzstück ist das Konzept der Quantenfelder und virtueller Teilchen. Dieses Kapitel zeigt,
+wie die scheinbar abstrakten Konzepte der \gls{qed} – die Feldquantisierung, Feynman-Diagramme und die Renormierung – aus der deterministischen, teilchenbasierten \gls{wdbt} emergieren. Die Strategie
+ist nicht die 1:1-Rekonstruktion, sondern die Herleitung der operationalen Kernaussagen der \gls{qed} aus den ersten Prinzipien der \gls{wdbt}.
+
+\section{Die vollständige Kraftgleichung der WDBT}
+Die fundamentale Gleichung für ein geladenes Teilchen (Masse $m$, Ladung $q$) in der \gls{wdbt} ist die Erweiterung der Lorentz-Kraft um das Quantenpotential $Q$:
+
+\begin{equation}
+    \label{eq:kraft_wdbt_em}
+    m \frac{d^2\vec{x}}{dt^2} = q(\vec{E} + \vec{v} \times \vec{B}) - \nabla Q
+\end{equation}
+
+mit:
+
+\begin{equation}
+    \label{eq:quantenpotential_wdbt_em}
+    Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}
+\end{equation}
+
+Die Felder $\vec{E}$ und $\vec{B}$ sind dabei effektive Beschreibungen der gemittelten Weber-Wechselwirkung mit allen anderen Ladungen im Universum, wie in Kapitel \ref{ch:maxwell} hergeleitet. Gleichung
+(\refeq{eq:kraft_wdbt_em}) ist \textbf{deterministisch} und beschreibt eine wohldefinierte Trajektorie.
+
+\newpage
+\section{Die Emergenz der Schrödinger- und Maxwell-Gleichungen}
+Um die Statistik eines Ensembles identischer Systeme (z.B. viele Atome im gleichen Zustand) zu beschreiben, wird die Madelung-Transformation durchgeführt (vgl. Abschnitt \ref{sec:madelung}). Wir führen
+eine komplexe Wellenfunktion $\psi(\vec{x},t)=R(\vec{x},t)e^{iS(\vec{x},t)/\hbar}$ ein, für die gilt:
+
+\begin{enumerate}
+    \item $\rho=\left| \psi \right|^2$ (Wahrscheinlichkeitsdichte)
+    \item $\vec{v} = \frac{1}{m}\vec{\nabla}S$ (Teilchengeschwindigkeit)
+\end{enumerate}
+
+Wie in Abschnitt \ref{sec:schrödinger_gleichung} gezeigt, ist die Bewegungsgleichung (\refeq{eq:kraft_wdbt_em}) äquivalent zur zeitabhängigen Schrödinger-Gleichung für $\psi$:
+
+\begin{equation}
+    i\hbar \frac{\partial \psi}{\partial t} = \left( -\frac{\hbar^2}{2m} \nabla^2 + V + q\phi \right) \psi
+\end{equation}
+
+wobei das Vektorpotential $\vec{A}$ über $\vec{B} = \vec{\nabla} \times \vec{A}$ in die minimale Kopplung eingeht. Parallel dazu emergieren aus der Weber-Elektrodynamik durch Kontinuumslimes die
+klassischen Maxwell-Gleichungen (Abschnitt \ref{sec:kontinuumslimes}). Damit ist die \textbf{nicht-relativistische Quantenmechanik} und die \textbf{klassische Elektrodynamik} bereits als effektive
+Beschreibungsebenen aus der \gls{wdbt} hergeleitet.
+
+\section{Photonen als Anregungen des Quanten-Vakuums}
+Die konventionelle \gls{qed} postuliert die Quantisierung des elektromagnetischen Feldes. In der \gls{wdbt} ergibt sich dieser Schritt naturalistisch aus der Berücksichtigung des Quantenpotentials
+des Vakuums.
+
+Das Vakuum ist in der \gls{wdbt} kein leerer Raum, sondern ein \textbf{Quantenmedium} mit einer Grundfluktuation, beschrieben durch eine Vakuum-Wellenfunktion $\psi_\text{Vak}$. Deren zugehöriges Quantenpotential
+$Q_\text{Vak}$ wirkt auf alle Teilchen. Die Anregungen dieses Mediums – beschrieben durch stehende Wellen in einer Box mit bestimmten Frequenzen – entsprechen den Photonen.
+
+Die Energie einer Anregung der Frequenz $\omega$ ist:
+
+\begin{equation}
+    E = \hbar \omega
+\end{equation}
+
+Diese Relation emergiert aus der Skalierung des Quantenpotentials $Q$ mit $\hbar^2$ und der Dispensionsrelation der \gls{wed}. Die \textbf{Feldoperatoren} der \gls{qed} (Erzeuger/Vernichter) sind deshalb
+mathematische Hilfsgrößen zur Beschreibung dieser angeregten Moden des Quanten-Vakuums, nicht fundamentale Entitäten.
+
+\section{Herleitung der Feynman-Regeln aus der nicht-lokalen Weber-Wechselwirkung}
+Die Stärke der \gls{qed} liegt in der Störungstheorie und den \textbf{Feynman-Diagrammen}. Diese emergieren in der \gls{wdbt} aus der \textbf{Mittelung über alle möglichen nicht-lokalen Wechselwirkungspfade}.
+
+In der \gls{wed} wirkt die Kraft zwischen zwei Ladungen instantan und hängt von Geschwindigkeit und Beschleunigung ab. Die Wahrscheinlichkeitsamplitude dafür, dass ein Teilchen von $A$ nach $B$ gelangt,
+muss über alle möglichen Trajektorien summiert werden, die alle durch ihre eigene Führungswelle und ihr Quantenpotential beeinflusst werden.
+
+\subsubsection{Herleitungsschritte:}
+\begin{enumerate}
+    \item Die \textbf{Wirkung} $S$ für einen Weber-Wechselwirkungspfad wird definiert.
+    \item Die \textbf{Amplitude} für einen Pfad ist proportional zu $e^{iS/\hbar}$.
+    \item Das \textbf{Pfadintegral} (Summe über alle Pfade) wird eingeführt.
+    \item Die \textbf{Weber-Kraft} wird in eine Störungsreihe entwickelt. Jeder Term dieser Reihe entspricht einem \textbf{elementaren Weber-Wechselwirkungsvertex}.
+    \item Die \textbf{Propagatoren} (z.B. $\frac{i}{p^2 - m^2 + i\epsilon}$ für ein Elektron) beschreiben die Ausbreitung zwischen zwei Wechselwirkungen unter dem Einfluss des freien Quantenpotentials.
+    \item Die \textbf{Feynman-Regeln} emergieren als effiziente Buchhaltungsmethode für die Berechnung der Gesamtamplitude unter Berücksichtigung aller möglichen Pfade und Vertices.
+\end{enumerate}
+
+Ein Feynman-Diagramm ist somit keine Darstellung virtueller Teilchen, sondern eine \textbf{graphische Darstellung der Mittelung über nicht-lokale Weber-Wechselwirkungsterme} in der Störungsreihe.
+
+\section{Regularisierung durch das Quantenpotential}
+Die konventionelle \gls{qed} leidet unter divergierenden Integralen (Unendlichkeiten). Die Renormierung entfernt diese durch eine Neudefinition von Masse und Ladung. In der \gls{wdbt} sind diese
+Divergenzen artefaktisch und werden von vornherein vermieden.
+
+Der Grund ist das \textbf{Quantenpotential} $Q$. Da es von der Dichte $\rho$ abhängt und diese für ein Teilchen nie punktförmig wird (die Führungswelle hat immer eine endliche Ausdehnung), sind alle
+Wechselwirkungen \textbf{regularisiert}. Die \enquote{nackte} Ladung und Masse sind endlich, da die Selbstenergie eines Teilchens durch die Wechselwirkung mit seiner eigenen, ausgedehnten Führungswelle
+begrenzt ist. Die Renormierung emergiert somit als der effektive Kalkül, um die endlichen, beobachtbaren Größen aus der zugrundeliegenden regularisierten \gls{wdbt}-Dynamik zu extrahieren.
+
+\section{Lamb-Shift und g-Faktor}
+Die Erfolge der \gls{qed} müssen von der \gls{wdbt} reproduziert werden. Die Berechnung der Lamb-Verschiebung und des anomalen magnetischen Moments des Elektrons folgt in der \gls{wdbt} einem
+modifizierten, aber konzeptionell klaren Pfad.
+
+\begin{itemize}
+    \item \textbf{Lamb-Shift:} Sie ergibt sich aus der Wechselwirkung des Elektrons mit dem fluktuierenden Quantenpotential des Vakuums ($Q_\text{Vak}$). Die \gls{wdbt}-Vorhersage enthält einen Zusatzterm zur \gls{qed}:
+    \begin{equation}
+        \label{eq:lamb_shift}
+        \Delta E_{\text{Lamb}}^{\text{WDBT}} = \Delta E_{\text{QED}} + \frac{e^2 \hbar}{4\pi \epsilon_0 m_e^2 c^3} \langle r \rangle
+    \end{equation}
+    Dieser term ist klein, aber prinzipiell messbar und stellt eine verfalsifizierbare Abweichung von der \gls{qed} dar. Anhang \ref{att:lamb_shift} zeigt mehr Details.
+    \item \textbf{g-Faktor:} Der anomaler g-Faktor emergiert aus der nicht-lokalen Kopplung des Elektronenspins (modelliert als Zitterbewegung in der \gls{wdbt}) an den kosmischen elektromagnetischen Hintergrund. Die Vorhersage stimmt mit der der \gls{qed} überein, da beide auf der gleichen effektiven Algebra der Spinwechselwirkung führen.
+\end{itemize}
+
+\section{QED als triumphierende effektive Feldtheorie}
+Die Quantenelektrodynamik emergiert vollständig aus der Weber-De Broglie-Bohm-Theorie als deren effektive, statistische Beschreibung im Kontinuumslimes.
+
+\begin{itemize}
+    \item \textbf{Felder} emergieren aus der Mittelung instantaner Weber-Wechselwirkungen.
+    \item \textbf{Feldquantisierung} emergiert aus den Anregungen des Quanten-Vakuummediums.
+    \item \textbf{Feynman-Diagramme} emergieren aus der Störungsentwicklung der nicht-lokalen Wechselwirkung.
+    \item \textbf{Renormierung} emergiert als Verfahren zur Extraktion beobachtbarer Größen aus der regularisierten \gls{wdbt}.
+\end{itemize}
+
+Die \gls{wdbt} löst damit die konzeptionellen Probleme der \gls{qed} (Unendlichkeiten, Virtualität, Ontologie) und bewahrt gleichzeitig deren gesamten empirischen Erfolg. Sie stellt die \gls{qed} auf
+ein solides, ontologisch klares Fundament direkter Teilchenwechselwirkungen und deterministischer Dynamik. Die \gls{qed} ist nicht falsch, sondern eine unvollständige Beschreibung einer tieferliegenden,
+nicht-lokalen Realität.

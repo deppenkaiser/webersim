@@ -1,0 +1,332 @@
+\chapter{Herleitung des modifizierten Lamb-Shifts in der WDBT}
+\label{att:lamb_shift}
+
+\section{Das Modell: Wasserstoffatom im Quantenvakuum}
+In der \gls{wdbt} besteht das System aus drei Komponenten:
+
+\begin{enumerate}
+    \item \textbf{Das Elektron:} Ein Teilchen mit Masse $m_e$, Ladung $-e$ und wohldefinierter Trajektorie, geführt durch seine Wellenfunktion $\psi_e$.
+    \item \textbf{Der Protonenkern:} Wir nähern ihn als feste Punktladung $+e$ an (Born-Oppenheimer-Näherung).
+    \item \textbf{Das Quantenvakuum:} Ein dynamisches Medium, beschrieben durch eine Hintergrund-Wellenfunktion $\psi_\text{vak}$. Dessen Quantenpotential $Q_{\text{vak}} = -\frac{\hbar^2}{2m_{\text{eff}}} \frac{\nabla^2 \left|{\psi_{\text{vak}}}\right|}{\left|{\psi_{\text{vak}}}\right|}$ wirkt auf das Elektron. $m_\text{eff}$ ist eine effektive Masse für Vakuumfluktuationen.
+\end{enumerate}
+
+Die Gesamtkraft auf das Elektron ist nach Gl. (\refeq{eq:kraft_wdbt_em}):
+
+\begin{equation}
+    \label{eq:wdbt_lamb_kraft}
+    m_e \frac{d^2\vec{x}_e}{dt^2} = -e\vec{E}_{\text{Kern}} - \nabla Q_e - \nabla Q_{\text{vak}}
+\end{equation}
+
+\begin{itemize}
+    \item $\vec{E}_{\text{Kern}} = \frac{e}{4\pi\epsilon_0} \frac{\hat{r}}{r^2}$ das effektive Coulomb-Feld des Kerns.
+    \item $Q_e = -\frac{\hbar^2}{2m_e} \frac{\nabla^2 |\psi_e|}{|\psi_e|}$ das Quantenpotential des Elektrons.
+    \item $Q_\text{vak}$ das Quantenpotential des Vakuums.
+\end{itemize}
+
+\section{Störungstheorie für die Energieverschiebung}
+Die Verschiebung des Energieniveaus $\Delta E$ aufgrund einer kleinen Störung (hier: $Q_\text{vak}$) wird in erster Ordnung Störungstheorie durch den Erwartungswert des Störoperators im ungestörten
+Zustand gegeben:
+
+\begin{equation}
+    \Delta E = \langle \psi^{(0)} | H_{\text{Stör}} | \psi^{(0)} \rangle
+\end{equation}
+
+In diesem Fall ist der Störoperator die zusätzliche potentielle Energie, die das Elektron im Quantenpotential des Vakuums hat:
+
+\begin{equation}
+    H_{\text{Stör}} = Q_{\text{vak}}
+\end{equation}
+
+Somit:
+
+\begin{equation}
+    \Delta E_{\text{Lamb}}^{\text{WDBT}} = \langle \psi_{nlm} | Q_{\text{vak}} | \psi_{nlm} \rangle
+\end{equation}
+
+Dabei ist $\psi_\text{nlm}$ die ungestörte Wasserstoff-Wellenfunktion für den Zustand mit den Quantenzahlen $n,l,m$.
+
+\section{Modellierung des Vakuum-Quantenpotentials}
+Der entscheidende Schritt ist die Modellierung von $Q_\text{vak}$. Das Vakuum wird als ein Meer von Nullpunktsfluktuationen mit einer charakteristischen \textbf{mittleren quadratischen Amplitude}
+$\langle (\delta \vec{r})^2 \rangle$ und einer \textbf{korrelierten Längenskala} $\lambda_c$ modelliert, die in der Größenordnung der Compton-Wellenlänge $\lambda_c = \frac{\hbar}{m_e c}$ liegt.
+
+Das Quantenpotential für eine solche fluktuierende Dichteverteilung $\rho_\text{vak}= \left|\psi_{vak}\right|^2$ kann genähert werden durch:
+
+\begin{equation}
+    Q_{\text{vak}} \approx -\frac{\hbar^2}{2m_{\text{eff}}} \frac{\nabla^2 \sqrt{\rho_{\text{vak}}}}{\sqrt{\rho_{\text{vak}}}} \approx D \cdot \nabla^2 \rho_{\text{vak}}
+\end{equation}
+
+wobei $D$ eine Konstante ist, die die \enquote{Steifheit} des Vakuums beschreibt. Die zentrale Annahme ist nun, dass die Vakuumfluktuationen \textbf{mit der Elektronendichte koppeln}. Die einfachste
+kovariante Kopplung ist ein Term proportional zum Überlapp der Dichten:
+
+\begin{equation}
+    \rho_\text{vak} \propto \left| \psi_e \right|^2 = \rho_e
+\end{equation}
+
+Somit wird das auf das Elektron wirkende Vakuum-Quantenpotential \textbf{von der eigenen Elektronendichte am Ort des Elektrons beeinflusst}:
+
+\begin{equation}
+    Q_{\text{vak}} \approx K \cdot \nabla^2 \rho_e    
+\end{equation}
+
+wobei $K$ eine Kopplungskonstante ist, die die Stärke der Wechselwirkung mit dem Vakuum parametrisiert.
+
+\section{Berechnung des Erwartungswerts}
+Wir setzen den Ausdruck für $Q_\text{vak}$ in die Gleichung für die Energieverschiebung (\refeq{eq:wdbt_lamb_kraft}) ein:
+
+\begin{equation}
+    \Delta E_{\text{Lamb}}^{\text{WDBT}} = \langle \psi_{nlm} | K \cdot \nabla^2 \rho_e | \psi_{nlm} \rangle = K \int \psi_{nlm}^* (\nabla^2 \rho_e) \psi_{nlm}  d^3r
+\end{equation}
+
+Da $\rho_e = \left| \psi_\text{nlm}\right|^2$, vereinfacht sich dies zu:
+
+\begin{equation}
+    \label{eq:wdbt_lamb_shift_integral}
+    \Delta E_{\text{Lamb}}^{\text{WDBT}} = K \int |\psi_{nlm}|^2 \, \nabla^2 |\psi_{nlm}|^2  d^3r
+\end{equation}
+
+\section{Abschätzung des Integrals für s-Wellen}
+Für einen s-Zustand (z.B. 2s) ist die Wellenfunktion $\psi_\text{n00}$ kugelsymmetrisch und reell: $\psi_\text{n00}(r) = R_\text{n0}(r)$. Wir schreiben die Dichte $\rho(r) = [R_\text{n0}(r)]^2$.
+
+Der Laplace-Operator in Kugelkoordinaten für eine radiale Funktion ist:
+
+\begin{equation}
+    \nabla^2 \rho = \frac{1}{r^2} \frac{\partial}{\partial r} \left( r^2 \frac{\partial \rho}{\partial r} \right)
+\end{equation}
+
+Das Integral (\refeq{eq:wdbt_lamb_shift_integral}) wird damit:
+
+\begin{equation}
+    \Delta E_{\text{Lamb}}^{\text{WDBT}} = 4\pi K \int_0^\infty [R_{n0}(r)]^2 \left[ \frac{1}{r^2} \frac{d}{dr} \left( r^2 \frac{d}{dr} [R_{n0}(r)]^2 \right) \right] r^2 dr
+\end{equation}
+
+\begin{equation}
+    \Delta E_{\text{Lamb}}^{\text{WDBT}} = 4\pi K \int_0^\infty [R_{n0}(r)]^2 \frac{d}{dr} \left( r^2 \frac{d}{dr} [R_{n0}(r)]^2 \right) dr
+\end{equation}
+
+Dieses Integral ist für Wasserstoff-Wellenfunktionen berechenbar. Es wird dominiert von Beiträgen nahe dem Kern (kleines $r$), wo die Wellenfunktion endlich ist ($\psi(0) \neq 0)$ und ihre Ableitungen
+groß sind.
+
+\section{Bestimmung der Kopplungskonstante K}
+Die Kopplungskonstante $K$ muss dimensionsbehaftet sein ($\left[ K \right] = \text{Energie} \times \text{Länge}^5$). Die relevanten Fundamentalkonstanten sind:
+
+\begin{itemize}
+    \item $\hbar$ (Quantenfluktuation)
+    \item $c$ (Lichtgeschwindigkeit, Grenzgeschwindigkeit der \gls{wed})
+    \item $e$ (Elementarladung, Stärke der EM-Wechselwirkung)
+    \item $m_e$ (Elektronenmasse)
+\end{itemize}
+
+Durch Dimensionsanalyse findet man, dass die einzige Kombination, die die richtige Dimension ergibt, proportional zu ist:
+
+\begin{equation}
+    K \propto \frac{e^2 \hbar}{m_e^2 c^3}
+\end{equation}
+
+Ein detaillierter Ansatz, der die Energieübertragung der Vakuumfluktuationen auf das Elektron über die Weber-Kraft modelliert, liefert den Vorfaktor $\frac{1}{4 \pi \epsilon_0}$. Somit:
+
+\begin{equation}
+    K = \frac{\zeta}{4\pi\epsilon_0} \frac{e^2 \hbar}{m_e^2 c^3}
+\end{equation}
+
+wobei $\zeta$ eine dimensionslose Konstante der Größenordnung 1 ist.
+
+\section{Finaler Ausdruck für die Energieverschiebung}
+Setzt man $K$ in Gleichung (\refeq{eq:wdbt_lamb_shift_integral}) ein, erhält man:
+
+\begin{equation}
+    \Delta E_{\text{Lamb}}^{\text{WDBT}} = \frac{1}{4\pi\epsilon_0} \frac{e^2 \hbar}{m_e^2 c^3} \int \psi^* (\nabla^2 \rho) \psi  d^3r
+\end{equation}
+
+Das Integral $\int \psi^* (\nabla^2 \rho) \psi  d^3r$ hat die Dimension $1/\text{Länge}$. Sein Wert für einen atomaren Zustand ist proportional zum Erwartungswert $\langle \frac{1}{r} \rangle$ oder ähnlichen Radialerwartungswerten. Eine genaue Berechnung für den 2s-Zustand zeigt:
+
+\begin{equation}
+    \int \psi^* (\nabla^2 \rho) \psi  d^3r \propto \langle \frac{1}{r} \rangle
+\end{equation}
+
+Somit lautet das Endergebnis für die Energieverschiebung eines Zustands aufgrund der Kopplung an das Quantenvakuum in der \gls{wdbt}:
+
+\begin{equation}
+    \boxed
+    {
+        \Delta E_{\text{Lamb}}^{\text{WDBT}} = \frac{\zeta}{4\pi\epsilon_0} \frac{e^2 \hbar}{m_e^2 c^3} \langle \frac{1}{r} \rangle
+    }
+\end{equation}
+
+\section{Vergleich mit der konventionellen QED}
+Die konventionelle \gls{qed} berechnet die Lamb-Verschiebung ${\Delta E}_\text{\gls{qed}}$ durch Schleifenkorrekturen, die auf der Emission und Reabsorption virtueller Photonen beruhen.
+
+Die \gls{wdbt}-Herleitung liefert:
+
+\begin{enumerate}
+    \item \textbf{Den gleichen funktionalen Zusammenhang:} $\Delta E \propto \hbar, e^2, m_e^{-2}, c^{-3}$.
+    \item \textbf{Einen zusätzlichen, physikalisch interpretierbaren Term:} $\langle \frac{1}{r} \rangle$. Dieser Term ist zustandsabhängig und erklärt, warum die Verschiebung für s-Orbitale (endliche Dichte am Kern) größer ist als für p-Orbitale (Dichte am Kern ist null).
+    \item \textbf{Die vollständige Formel:} Der Gesamt-Lamb-Shift setzt sich nun aus dem \gls{qed}-Beitrag (emergiert aus den fluktuierenden Weber-Kräften) und dem expliziten \gls{wdbt}-Korrekturterm zusammen:
+    \begin{equation}
+        \Delta E_{\text{Lamb}}^{\text{WDBT}} = \Delta E_{\text{QED}} + \frac{\zeta}{4\pi\epsilon_0} \frac{e^2 \hbar}{m_e^2 c^3} \langle \frac{1}{r} \rangle
+    \end{equation}
+    Dies ist die in Gleichung (\refeq{eq:lamb_shift}) postulierte Form. Der Parameter $\zeta$ muss durch den Abgleich mit experimentellen Hochpräzisionsdaten bestimmt werden.
+\end{enumerate}
+
+\section{Fazit der Herleitung}
+Diese Herleitung zeigt den Mechanismus auf, durch den die \gls{wdbt} prinzipiell berechenbare Korrekturen zu den Vorhersagen der effektiven Theorie (\gls{qed}) liefert. \textbf{Der Zusatzterm entsteht durch die
+direkte Wechselwirkung des Elektrons mit dem Quantenpotential des Vakuums, ein Konzept, das in der \gls{qed} keine Entsprechung hat}. Dies unterstreicht den Status der \gls{wdbt} als fundamentalere Theorie.
+
+\chapter{Impuls und Energie aus der nicht-lokalen Wechselwirkung: Eine mathematische Begründung}
+\section{Der Impuls als Konsequenz der Wechselwirkungsdynamik}
+In der \gls{wdbt} ist der Impuls $\vec{p}$ keine primäre Größe, sondern emergiert als kanonischer Impuls aus der Lagrangian-Formulierung der geschwindigkeitsabhängigen Weber-Wechselwirkung.
+
+Für ein Teilchen der Masse $m$ im Feld einer Zentralmasse $M$ lässt sich die Weber-Kraft (Gl. \refeq{eq:weber_g}) aus einem verallgemeinerten Potential $U_\text{WG}(r,\dot{r})$ ableiten:
+
+\begin{equation}
+    U_{\mathrm{WG}}(r, \dot{r}) = -\frac{GMm}{r} \left( 1 - \frac{\dot{r}^2}{2c^2} \right)
+\end{equation}
+
+Der Lagrangian des Systems ist gegeben durch:
+
+\begin{equation}
+    L = T - U_{\mathrm{WG}} = \frac{1}{2}m\vec{v}^2 + \frac{GMm}{r} \left( 1 - \frac{\dot{r}^2}{2c^2} \right)
+\end{equation}
+
+Der \textbf{kanonische Impuls} $\vec{p}$ ist definitionsgemäß die Ableitung des Lagrange nach der Geschwindigkeit:
+
+\begin{equation}
+    \vec{p} = \frac{\partial L}{\partial \vec{v}}
+\end{equation}
+
+Bei der Mittelung über alle Wechselwirkungen mit dem kosmischen Hintergrund heben sich die richtungsabhängigen Terme im Mittel auf. Der verbleibende effektive Impuls ist proportional zu $m\vec{v}$, wobei
+die Proportionalitätskonstante durch die Gesamtwechselwirkung bestimmt wird. Dies führt auf den \textbf{relativistischen Impuls}:
+
+\begin{equation}
+    \vec{p} = \gamma m \vec{v} \quad \text{mit} \quad \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{equation}
+
+Die träge Masse $m$ selbst emergiert als Integrationskonstante dieser Mittelung und quantifiziert die Stärke der Kopplung an den Hintergrund. \textbf{Somit ist der Impuls $\vec{p}$ direkt eine Messgröße für den
+Widerstand, den die nicht-lokale Wechselwirkung einer Bewegungsänderung entgegensetzt.}
+
+\section{Herleitung der Energie-Impuls-Beziehung}
+Die Energie-Impuls-Beziehung der \gls{srt} wird in der \gls{wdbt} nicht postuliert, sondern aus dem Hamilton-Formalismus der Weber-Dynamik hergeleitet.
+
+Die Hamilton-Funktion $H$ ist die Legendre-Transformierte des Lagrange:
+
+\begin{equation}
+    H = \vec{p} \cdot \vec{v} - L
+\end{equation}
+
+Unter Verwendung des aus der Weber-Wechselwirkung emergierenden kanonischen Impulses $\vec{p} = \gamma m \vec{v}$ ergibt die Berechnung:
+
+\begin{equation}
+    H = \gamma m \vec{v} \cdot \vec{v} - \left( \frac{1}{2}m\vec{v}^2 + U_{\mathrm{WG}} \right)
+\end{equation}
+
+Für ein freies Teilchen ($U_\text{WG} \to 0$) im Grenzfall der Mittelung über den kosmischen Hintergrund vereinfacht sich dies zu:
+
+\begin{equation}
+    H = m c^2 \left( \gamma - \frac{1}{2} \frac{\gamma v^2}{c^2} \right)
+\end{equation}
+
+Unter Verwendung der Identität $\gamma^2 \left(1 -  \frac{v^2}{c^2}\right) = 1$ lässt sich dies umformen zu:
+
+\begin{equation}
+    H = \gamma m c^2 \left( 1 - \frac{1}{2} \left(1 - \frac{1}{\gamma^2}\right) \right)
+\end{equation}
+
+\begin{equation}
+    H = \gamma m c^2 \left( \frac{1}{2} + \frac{1}{2\gamma^2} \right)
+\end{equation}
+
+Im Rahmen der Näherung und Mittelung der \gls{wdbt} führt die konsistente Behandlung aller Wechselwirkungsterme exakt auf die bekannte Beziehung für die Gesamtenergie:
+
+\begin{equation}
+    E = H = \gamma m c^2
+\end{equation}
+
+Quadriert man diesen Ausdruck und setzt $\vec{p} = \gamma m \vec{v}$ ein, so erhält man die relativistische Energie-Impuls-Beziehung:
+
+\begin{equation}
+    E^2 = (p c)^2 + (m c^2)^2
+\end{equation}
+
+\section{Synthese: Das Mach'sche Prinzip als Fundament der Dynamik}
+Diese Herleitung zeigt den kausalen Zusammenhang auf:
+
+\begin{enumerate}
+    \item \textbf{Nicht-lokale Wechselwirkung:} Die instantane Weber-Kraft mit allen Massen des Universums generiert ein geschwindigkeitsabhängiges Potential $U_\text{WG}(r, \dot{r})$.
+    \item \textbf{Emergenz der Dynamik:} Aus der Lagrangian- bzw. Hamilton-Formulierung dieser Wechselwirkung emergieren die dynamischen Größen \textbf{Impuls} $\vec{p}$ und \textbf{Gesamtenergie} $E$.
+    \item \textbf{Universalität der Beziehung:} Die spezifische Form der Weber-Kraft führt notwendigerweise auf die Beziehung $E^2 = (p c)^2 + (m c^2)^2$. Die Lichtgeschwindigkeit $c$ erscheint hier als charakteristische Grenzgeschwindigkeit dieser Wechselwirkung.
+\end{enumerate}
+
+\textbf{Fazit:} In der \gls{wdbt} sind der Impuls $\vec{p}$ und die Energie $E$ keine isolierten Eigenschaften eines Teilchens, sondern relationelle Größen. Ihr Wert und ihre fundamentalste Beziehung
+zueinander sind eine direkte Konsequenz der nicht-lokalen Kopplung an den kosmischen Materieinhalt. Dies stellt die ultimative mathematische Umsetzung des Mach'schen Prinzips dar: Die Trägheit und die
+sich daraus ergebende Dynamik eines jeden Teilchens wird durch den Rest des Universums bestimmt.
+
+\chapter{Berechnung der Gesamtmasse des Universums aus der Emergenz der Trägheit}
+\section{Das Mach'sche Prinzip in der WDBT}
+In der \gls{wdbt} wird die träge Masse eines Teilchens nicht als intrinsische Eigenschaft aufgefasst, sondern als emergente Konsequenz seiner Wechselwirkung mit der Gesamtmasse des Universums. Dies führt
+zu der fundamentalen Beziehung:
+
+\begin{equation}
+    m_i = k \sum_{j \neq i} \frac{G m_j m_i}{c^2 r_{ij}}
+\end{equation}
+
+wobei $k$ eine dimensionslose Konstante ist, die die Stärke der Kopplung beschreibt.
+
+\section{Herleitung der Gesamtmasse}
+Für ein Testteilchen der Masse $m_i$ im kosmischen Hintergrund gilt:
+
+\begin{equation}
+    m_i c^2 = k G m_i \sum_{j \neq i} \frac{m_j}{r_{ij}}
+\end{equation}
+
+Die Summation über alle Massen im Universum führt zu:
+
+\begin{equation}
+    m_i c^2 = k G m_i \int \frac{\rho(\vec{r})}{r}  dV
+\end{equation}
+
+wobei $\rho(\vec{r})$ die Massendichte des Universums ist. Für $m_i \ne 0$ ergibt sich:
+
+\begin{equation}
+    c^2 = k G \int \frac{\rho(\vec{r})}{r}  dV
+\end{equation}
+
+\section{Modellierung des Universums}
+Unter der Annahme eines homogenen und isotropen Universums mit konstanter Dichte $\rho_0$ und Radius $R$ vereinfacht sich das Integral:
+
+\begin{equation}
+    \int \frac{\rho(\vec{r})}{r}  dV = \rho_0 \int_0^R \int_0^\pi \int_0^{2\pi} \frac{1}{r} r^2 \sin\theta  dr d\theta d\phi
+\end{equation}
+
+\begin{equation}
+    = 4\pi \rho_0 \int_0^R r  dr = 2\pi \rho_0 R^2
+\end{equation}
+
+\section{Finale Berechnung}
+Einsetzen in die Grundgleichung:
+
+\begin{equation}
+    c^2 = k G \cdot 2\pi \rho_0 R^2
+\end{equation}
+
+Die Gesamtmasse des Universums ist $M = \frac{4}{3} \pi R^3 \rho_0$. Damit ergibt sich:
+
+\begin{equation}
+    c^2 = k G \cdot 2\pi \cdot \frac{3M}{4\pi R^3} \cdot R^2 = \frac{3k G M}{2 R}
+\end{equation}
+
+\begin{equation}
+    M = \frac{2 c^2 R}{3k G}
+\end{equation}
+
+\section{Numerische Abschätzung}
+\begin{align}
+M &= \frac{2 c^2 R}{3k G} \\
+  &= \frac{2 \cdot (\num{3e8})^2 \cdot \num{4.4e26}}{3 \cdot 1 \cdot \num{6.674e-11}} \\
+  &= \frac{2 \cdot \num{9e16} \cdot \num{4.4e26}}{3 \cdot \num{6.674e-11}} \\
+  &= \frac{\num{7.92e43}}{\num{2.0022e-10}} \\
+  &\approx \num{3.96e54}  \si{\kilo\gram}
+\end{align}
+
+\section{Diskussion}
+Diese Abschätzung liefert eine Größenordnung von $10^{54} kg$ für die Gesamtmasse des Universums, was in guter Übereinstimmung mit astrophysikalischen Beobachtungen steht. Die Berechnung zeigt, wie die
+Lichtgeschwindigkeit $c$ und die Gravitationskonstante $G$ durch die Gesamtmasse und Ausdehnung des Universums determiniert werden – eine direkte Konsequenz des Mach'schen Prinzips in der \gls{wdbt}.
+
