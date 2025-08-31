@@ -1,0 +1,143 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\title{Systematische Auflistung: Emergenz der Kosmologie \\ Die Weber-De Broglie-Bohm-Theorie (WDBT) als Ur-Theorie}
+\author{Zusammengefasst aus dem Manuskript von Michael Czybor}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Einleitung}
+Die WDBT vereint die Weber-Elektrodynamik (WED) und die De-Broglie-Bohm-Theorie (DBT) zu einer fundamentalen Ur-Theorie. Ihr Ziel ist die \textbf{Emergenz} der gesamten bekannten Physik aus wenigen Grundprinzipien, ohne deren Postulate zu übernehmen.
+
+\section{Kapitel 1: Spezielle Relativitätstheorie}
+
+\subsection*{Grundpostulat}
+Die relativistische Physik emergiert aus der geschwindigkeitsabhängigen Weber-Gravitationskraft.
+
+\subsection*{Systematische Herleitung}
+\begin{enumerate}
+    \item \textbf{Ausgangsgleichung:} Weber-Gravitationskraft (Gl. 1.1)
+        \[
+        \vec{F}_{WG} = -\frac{GMm}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2} \right] \hat{r} \quad \text{mit} \quad \beta_m = 0.5
+        \]
+    \item \textbf{Herleitung:} Über ein verallgemeinertes Potential $U_{WG}(r, \dot{r})$ (Gl. 1.2) und Mittelung über den kosmischen Hintergrund wird die Energie-Impuls-Beziehung hergeleitet (Gl. 1.3).
+        \[
+        E^2 = (pc)^2 + (mc^2)^2
+        \]
+    \item \textbf{Definition:} Aus (1.3) werden die relativistischen Größen \textit{definiert} (Gl. 1.4):
+        \[
+        E = \gamma m c^2, \quad p = \gamma m v, \quad \gamma = \frac{1}{\sqrt{1 - v^2/c^2}}
+        \]
+    \item \textbf{Emergenz der Effekte:}
+        \begin{itemize}
+            \item Zeitdilatation (Gl. 1.5): $\Delta t = \gamma \Delta t_0$
+            \item Längenkontraktion (Gl. 1.6): $L = L_0 / \gamma$
+            \item Relativistische Dynamik (Gl. 1.7): $\vec{F} = \frac{d}{dt}(\gamma m \vec{v})$
+        \end{itemize}
+    \item \textbf{Schlussfolgerung:} Die Lorentz-Invarianz ist keine fundamentale Eigenschaft der Raumzeit, sondern ein emergentes Phänomen. Die Lichtgeschwindigkeit $c$ ist die Grenzgeschwindigkeit der Weber-Wechselwirkung.
+\end{enumerate}
+
+\section{Kapitel 2: Emergenz der Maxwell-Gleichungen}
+
+\subsection*{Grundpostulat}
+Die klassische Elektrodynamik emergiert aus der Weber-Elektrodynamik (WED) durch Kontinuumslimes und Mittelung.
+
+\subsection*{Systematische Herleitung}
+\begin{enumerate}
+    \item \textbf{Ausgangsgleichung:} Vektorielle Weber-Kraft zwischen Ladungen (Gl. 2.1).
+    \item \textbf{Superposition:} Gesamtkraft auf eine Testladung (Gl. 2.2).
+    \item \textbf{Definition effektiver Felder:} Durch Koeffizientenvergleich mit der Lorentz-Kraft $\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})$ werden $\vec{E}$ (Gl. 2.4) und $\vec{B}$ (Gl. 2.5) definiert.
+    \item \textbf{Kontinuumslimes:} Übergang von Summen zu Integralen für Ladungs- und Stromdichte (Gl. 2.6, 2.7).
+    \item \textbf{Emergenz der Feldgleichungen:} Im Kontinuumslimes ergeben sich die Maxwell-Gleichungen:
+        \begin{align*}
+            \nabla \cdot \vec{E} &= \frac{\rho}{\epsilon_0} \quad &\text{(Gauß)} \\
+            \nabla \cdot \vec{B} &= 0 \quad &\text{(Gauß f. Mag.)} \\
+            \nabla \times \vec{E} &= -\frac{\partial \vec{B}}{\partial t} \quad &\text{(Faraday)} \\
+            \nabla \times \vec{B} &= \mu_0 \vec{j} + \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t} \quad &\text{(Maxwell)}
+        \end{align*}
+    \item \textbf{Modifikation in der WDBT:} In der vollständigen WDBT wird die Kraftgleichung um das Quantenpotential $Q$ erweitert (Gl. 2.19), was zu modifizierten Maxwell-Gleichungen führt (Gl. 2.23, 2.24).
+\end{enumerate}
+
+\section{Kapitel 3: Emergenz der Quantenmechanik}
+
+\subsection*{Grundpostulat}
+Die Schrödinger-Gleichung emergiert als effektive Beschreibung für die Dynamik eines Ensembles von Teilchen, deren Trajektorien deterministisch durch die WDBT-Gleichung geführt werden.
+
+\subsection*{Systematische Herleitung}
+\begin{enumerate}
+    \item \textbf{Ausgangsgleichung:} Fundamentale Bewegungsgleichung der WDBT (Gl. 3.1)
+        \[
+        m \frac{d^2 \vec{x}}{dt^2} = -\vec{\nabla}V - \vec{\nabla}Q
+        \]
+    \item \textbf{Madelung-Transformation:} Einführung der Wellenfunktion $\psi(\vec{x},t) = R(\vec{x},t)e^{iS(\vec{x},t)/\hbar}$ mit $\rho = R^2$ und $\vec{v} = \frac{1}{m}\vec{\nabla}S$.
+    \item \textbf{Herleitung zweier reeller Gleichungen:}
+        \begin{itemize}
+            \item Kontinuitätsgleichung (Gl. 3.6) aus Teilchenerhaltung.
+            \item Modifizierte Hamilton-Jacobi-Gleichung (Gl. 3.15) aus der Newtonschen Gleichung.
+            \[
+            \frac{\partial S}{\partial t} + \frac{1}{2m} |\nabla S|^2 + V - \frac{\hbar^2}{2m} \frac{\nabla^2 R}{R} = 0
+            \]
+        \end{itemize}
+    \item \textbf{Synthese:} Zeigen, dass die beiden realen Gleichungen äquivalent zur komplexen Schrödinger-Gleichung sind (Gl. 3.16).
+        \[
+        i\hbar \frac{\partial \psi}{\partial t} = \left( -\frac{\hbar^2}{2m} \nabla^2 + V \right) \psi
+        \]
+\end{enumerate}
+
+\section{Kapitel 4: Konvergente Emergenz der ART}
+
+\subsection*{Kernargument}
+Die Allgemeine Relativitätstheorie (ART) wird durch Einführung des Quantenpotentials $Q$ vervollständigt (ART+). ART+ und WDBT konvergieren konzeptionell, bleiben aber experimentell unterscheidbar.
+
+\subsection*{Systematischer Vergleich}
+\begin{enumerate}
+    \item \textbf{Problem der ART:} Singularitäten (Schwarze Löcher, Urknall).
+    \item \textbf{Schritt 1 (Vervollständigung):} Einführung des Quantenpotentials in die Einstein-Gleichungen (Gl. 4.1).
+        \[
+        G_{\mu\nu} = 8\pi G (T_{\mu\nu} + Q_{\mu\nu})
+        \]
+        $\rightarrow$ Führt zu Singularitätenfreiheit (Big Bounce), Determinismus und Nicht-Lokalität.
+    \item \textbf{Schritt 2 (Nicht-Lokalität):} Berücksichtigung instantaner (avancierter) Lösungen der Einstein-Gleichungen neben retardierten Wellen.
+    \item \textbf{Konvergenz:} ART+ und WDBT sind in zentralen Eigenschaften (Singularitätenfreiheit, Determinismus) äquivalent.
+    \item \textbf{Experimenteller Unterschied:}
+        \begin{itemize}
+            \item ART+: Lichtablenkung ist frequenzunabhängig (geometrisch).
+            \item WDBT: Lichtablenkung ist frequenzabhängig $\Delta\phi(f)$ (dynamisch).
+        \end{itemize}
+\end{enumerate}
+
+\section{Kapitel 5: Emergenz der Quantenelektrodynamik}
+
+\subsection*{Kernargument}
+Die Konzepte der QED (Feldquantisierung, Feynman-Diagramme, Renormierung) emergieren aus der WDBT.
+
+\subsection*{Systematische Emergenzbeziehungen}
+\begin{itemize}
+    \item \textbf{Feldquantisierung:} Photonen emergieren als Anregungen des Quanten-Vakuums, beschrieben durch eine Vakuum-Wellenfunktion $\psi_{\text{Vak}}$.
+    \item \textbf{Feynman-Diagramme:} Emergieren aus der Mittelung über alle nicht-lokalen Weber-Wechselwirkungspfade (Pfadintegral-Formulierung).
+    \item \textbf{Renormierung:} Divergenzen werden durch das Quantenpotential $Q$ regularisiert, da die Führungswelle endliche Ausdehnung hat.
+    \item \textbf{Vorhersagen:} Die WDBT reproduziert QED-Ergebnisse (z.B. g-Faktor) und sagt modifizierte Vorhersagen (z.B. Lamb-Shift, Gl. 5.5) voraus.
+        \[
+        \Delta E^{\text{WDBT}}_{\text{Lamb}} = \Delta E_{\text{QED}} + \frac{e^2 \hbar}{4\pi\epsilon_0 m_e^2 c^3} \langle r \rangle
+        \]
+\end{itemize}
+
+\section*{Anhänge: Zentrale Herleitungen}
+\begin{itemize}
+    \item \textbf{Anhang A:} Herleitung des modifizierten Lamb-Shifts durch Kopplung an das Quantenpotential des Vakuums $Q_{\text{vak}}$.
+    \item \textbf{Anhang B:} Herleitung von Impuls und Energie ($\vec{p} = \gamma m \vec{v}$, $E = \gamma m c^2$) aus der Lagrangian-Formulierung der Weber-Wechselwirkung. Ultimative Umsetzung des Mach'schen Prinzips.
+    \item \textbf{Anhang C:} Berechnung der Gesamtmasse des Universums $M$ aus der Emergenz der Trägheit (Gl. C.9), basierend auf dem Mach'schen Prinzip.
+        \[
+        c^2 = kG \int \frac{\rho(\vec{r})}{r}  dV \quad \rightarrow \quad M = \frac{2c^2 R}{3kG}
+        \]
+\end{itemize}
+
+\end{document}
