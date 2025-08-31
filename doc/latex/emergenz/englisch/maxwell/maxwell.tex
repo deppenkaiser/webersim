@@ -1,44 +1,44 @@
-\chapter{Die Emergenz der Maxwell-Gleichungen}
+\chapter{The Emergence of Maxwell's Equations}
 \label{ch:maxwell}
-\section{Grundlagen der Weber-Elektrodynamik}
+\section{Foundations of Weber Electrodynamics}
 \label{sec:grundlagen}
-Die \gls{wed} postuliert eine instantane, geschwindigkeits- und beschleunigungsabhängige Kraft zwischen zwei Ladungen $q_1$ und $q_2$. Die vektorielle Form der Weber-Kraft lautet:
+\gls{wed} postulates an instantaneous, velocity- and acceleration-dependent force between two charges $q_1$ and $q_2$. The vector form of the Weber force is:
 
 \begin{equation}
     \vec{F}_{12} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left\{ \left[ 1 - \frac{v^2}{c^2} + \frac{2r(\hat{\vec{r}}\cdot\vec{a})}{c^2} \right] \hat{\vec{r}} + \frac{2(\hat{\vec{r}}\cdot\vec{v})}{c^2} \vec{v} \right\}
 \end{equation}
 
-wobei:
+where:
 
 \begin{itemize}
-    \item $r = \left| \vec{r} \right|$ der Abstand zwischen den Ladungen,
-    \item $\hat{\vec{r}} = \frac{\vec{r}}{r}$ der Einheitsvektor in Richtung von $q_1$ nach $q_2$,
-    \item $\vec{v} = \dot{\vec{r}}$ die Relativgeschwindigkeit,
-    \item $\vec{a} = \ddot{\vec{r}}$ die Relativbeschleunigung,
-    \item $c$ die charakteristische Grenzgeschwindigkeit der Wechselwirkung ist.
+    \item $r = \left| \vec{r} \right|$ is the distance between the charges,
+    \item $\hat{\vec{r}} = \frac{\vec{r}}{r}$ is the unit vector in the direction from $q_1$ to $q_2$,
+    \item $\vec{v} = \dot{\vec{r}}$ is the relative velocity,
+    \item $\vec{a} = \ddot{\vec{r}}$ is the relative acceleration,
+    \item $c$ is the characteristic limit velocity of the interaction.
 \end{itemize}
 
-Diese Kraft kann aus einem verallgemeinerten Potential abgeleitet werden und erfüllt die Energie- und Impulserhaltung.
+This force can be derived from a generalized potential and satisfies energy and momentum conservation.
 
-\section{Superposition und Gesamtkraft auf eine Testladung}
-Für eine Testladung $q$ im Feld von $N$ anderen Ladungen $q_i (i = 1,...,N)$ gilt das Superpositionsprinzip. Die Gesamtkraft auf $q$ ist:
+\section{Superposition and Total Force on a Test Charge}
+For a test charge $q$ in the field of $N$ other charges $q_i (i = 1,...,N)$, the principle of superposition holds. The total force on $q$ is:
 
 \begin{equation}
     \label{eq:gesamtkraft}
     \vec{F}_{\text{ges}} = q \sum_{i=1}^N \frac{q_i}{4\pi\epsilon_0 r_i^2} \left\{ \left[ 1 - \frac{v_i^2}{c^2} + \frac{2r_i(\hat{r}_i\cdot\vec{a}_i)}{c^2} \right] \hat{r}_i + \frac{2(\hat{r}_i\cdot\vec{v}_i)}{c^2} \vec{v}_i \right\}
 \end{equation}
 
-wobei $\vec{r_i}$ der Vektor von $q$ zu $q_i$ ist.
+where $\vec{r_i}$ is the vector from $q$ to $q_i$.
 
-\section{Definition der effektiven Felder}
-Die Gesamtkraft aus den effektiven Feldern $\vec{E}$ und $\vec{B}$ lässt sich in die Form der Lorentz-Kraft bringen:
+\section{Definition of the Effective Fields}
+The total force from the effective fields $\vec{E}$ and $\vec{B}$ can be cast into the form of the Lorentz force:
 
 \begin{equation}
     \label{eq:lorentz_kraft}
     \vec{F} = q \left( \vec{E} + \vec{v} \times \vec{B} \right)
 \end{equation}
 
-Durch Koeffizientenvergleich ergeben sich die Definitionen der effektiven Felder:
+By comparing coefficients, the definitions of the effective fields emerge:
 
 \begin{equation}
     \vec{E} = \sum_{i=1}^N \frac{q_i}{4\pi\epsilon_0 r_i^2} \left[ 1 - \frac{v_i^2}{c^2} + \frac{2r_i(\hat{r}_i\cdot\vec{a}_i)}{c^2} \right] \hat{r}_i
@@ -48,11 +48,11 @@ Durch Koeffizientenvergleich ergeben sich die Definitionen der effektiven Felder
     \vec{B} = \sum_{i=1}^N \frac{q_i}{4\pi\epsilon_0 r_i^2 c^2} \cdot 2(\hat{r}_i\cdot\vec{v}_i) \vec{v}_i
 \end{equation}
 
-Diese effektiven Felder sind mathematische Hilfsgrößen, die die gemittelte Wirkung aller anderen Ladungen beschreiben.
+These effective fields are mathematical auxiliary quantities describing the averaged effect of all other charges.
 
-\section{Kontinuumslimes und Feldgleichungen}
+\section{Continuum Limit and Field Equations}
 \label{sec:kontinuumslimes}
-Bei einer kontinuierlichen Ladungsverteilung mit Dichte $\rho(\vec{r}, t)$ und Stromdichte $\vec{j}(\vec{r},t)$ gehen die Summen in Integrale über. Die Felder werden zu:
+For a continuous charge distribution with density $\rho(\vec{r}, t)$ and current density $\vec{j}(\vec{r},t)$, the sums turn into integrals. The fields become:
 
 \begin{equation}
     \vec{E}(\vec{r}, t) = \frac{1}{4\pi\epsilon_0} \int \rho(\vec{r}~', t) \left[ 1 - \frac{v^2}{c^2} + \frac{2r(\hat{\vec{r}}\cdot\vec{a})}{c^2} \right] \frac{\hat{\vec{r}}}{r^2}  d^3r~'
@@ -62,40 +62,40 @@ Bei einer kontinuierlichen Ladungsverteilung mit Dichte $\rho(\vec{r}, t)$ und S
     \vec{B}(\vec{r}, t) = \frac{1}{4\pi\epsilon_0 c^2} \int \vec{j}(\vec{r}~', t) \cdot 2(\hat{\vec{r}}\cdot\vec{v}) \frac{\hat{\vec{r}}}{r^2}  d^3r~'
 \end{equation}
 
-% Variablenerklärung für die Integrale
+% Variable explanation for the integrals
 \begin{align*}
-&\vec{r} && \text{Ortsvektor zum Aufpunkt} \\
-&\vec{r}~' && \text{Ortsvektor zur Quellladung} \\
-&\vec{r} = \vec{r} - \vec{r}~' && \text{Abstandsvektor} \\
-&r = |\vec{r} - \vec{r}~'| && \text{Abstand} \\
-&\hat{\vec{r}} = \frac{\vec{r} - \vec{r}~'}{|\vec{r} - \vec{r}~'|} && \text{Einheitsvektor} \\
-&\rho(\vec{r}~', t) && \text{Ladungsdichte am Quellpunkt} \\
-&\vec{j}(\vec{r}~', t) && \text{Stromdichte am Quellpunkt} \\
-&d^3r~' && \text{Volumenelement im Quellraum}
+&\vec{r} && \text{Position vector to the field point} \\
+&\vec{r}~' && \text{Position vector to the source charge} \\
+&\vec{r} = \vec{r} - \vec{r}~' && \text{Separation vector} \\
+&r = |\vec{r} - \vec{r}~'| && \text{Distance} \\
+&\hat{\vec{r}} = \frac{\vec{r} - \vec{r}~'}{|\vec{r} - \vec{r}~'|} && \text{Unit vector} \\
+&\rho(\vec{r}~', t) && \text{Charge density at the source point} \\
+&\vec{j}(\vec{r}~', t) && \text{Current density at the source point} \\
+&d^3r~' && \text{Volume element in source space}
 \end{align*}
 
-\subsection{Gauß'sches Gesetz}
+\subsection{Gauss's Law}
 \begin{equation}
     \nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0}
 \end{equation}
 
-\subsection{Gauß'sches Gesetz für den Magnetismus}
+\subsection{Gauss's Law for Magnetism}
 \begin{equation}
     \nabla \cdot \vec{B} = 0
 \end{equation}
 
-\subsection{Faraday'sches Induktionsgesetz}
+\subsection{Faraday's Law of Induction}
 \begin{equation}
     \nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
 \end{equation}
 
-\subsection{Maxwell'scher Verschiebungsstrom}
+\subsection{Maxwell's Displacement Current}
 \begin{equation}
     \nabla \times \vec{B} = \mu_0 \vec{j} + \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}
 \end{equation}
 
-\section{Emergenz der elektromagnetischen Wellen}
-Im Vakuum $(\rho = 0, \vec{j} = 0)$ vereinfachen sich die Maxwell-Gleichungen zu:
+\section{Emergence of Electromagnetic Waves}
+In vacuum $(\rho = 0, \vec{j} = 0)$, Maxwell's equations simplify to:
 
 \begin{align}
 \nabla \cdot \vec{E} =&~0\\
@@ -104,66 +104,66 @@ Im Vakuum $(\rho = 0, \vec{j} = 0)$ vereinfachen sich die Maxwell-Gleichungen zu
 \nabla \times \vec{B} =& \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}
 \end{align}
 
-Durch Bildung der Rotation der letzten beiden Gleichungen erhält man die Wellengleichungen:
+By taking the curl of the last two equations, one obtains the wave equations:
 
 \begin{align}
 \nabla^2 \vec{E} =& \mu_0 \epsilon_0 \frac{\partial^2 \vec{E}}{\partial t^2}\\
 \nabla^2 \vec{B} =& \mu_0 \epsilon_0 \frac{\partial^2 \vec{B}}{\partial t^2}
 \end{align}
 
-Die Ausbreitungsgeschwindigkeit ist:
+The propagation velocity is:
 
 \begin{equation}
     c = \frac{1}{\sqrt{\mu_0 \epsilon_0}}
 \end{equation}
 
 \newpage
-\section{Die analoge WDBT und die Rolle des Quantenpotentials}
-\subsection{Die vollständige Kraftgleichung der analogen WDBT}
-Die \gls{wdbt} kombiniert zwei selten genutzte etablierte Konzepte:
+\section{The Analogous WDBT and the Role of the Quantum Potential}
+\subsection{The Complete Force Equation of the Analogous WDBT}
+\gls{wdbt} combines two rarely used established concepts:
 
 \begin{enumerate}
-    \item Die \textbf{\gls{wed}} für die klassische instantane Wechselwirkung.
-    \item Die \textbf{\gls{dbt}} für die Quantenmechanik via Quantenpotential.
+    \item \textbf{\gls{wed}} for the classical instantaneous interaction.
+    \item \textbf{\gls{dbt}} for quantum mechanics via the quantum potential.
 \end{enumerate}
 
-Die Gesamtkraft auf ein Teilchen der Masse $m$ und Ladung $q$ in der analogen \gls{wdbt} ist daher:
+The total force on a particle of mass $m$ and charge $q$ in the analogous \gls{wdbt} is therefore:
 
 \begin{equation}
     \vec{F}_{\text{ges, WDBT}} = q(\vec{E} + \vec{v} \times \vec{B}) - \nabla Q
 \end{equation}
 
-mit dem \textbf{Bohm'schen Quantenpotential:}
+with the \textbf{Bohmian quantum potential:}
 
 \begin{equation}
     Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}
 \end{equation}
 
-\subsection{Emergenz der klassischen Physik in der WDBT}
-Die klassische Physik emergiert in zwei Schritten aus der \gls{wdbt}:
+\subsection{Emergence of Classical Physics in WDBT}
+Classical physics emerges from \gls{wdbt} in two steps:
 
 \begin{enumerate}
-    \item \textbf{Emergenz der Maxwell-Theorie:} Wie in Abschnitt \ref{sec:grundlagen} gezeigt, geht die \gls{wed} durch Mittelung über viele Ladungen in die Maxwell-Gleichungen über.
-    \item \textbf{Emergenz der Newton'schen Mechanik:} Für $\hbar \to 0$ oder auf makroskopischen Skalen, wo Quanteneffekte vernachlässigbar sind, verschwindet das Quantenpotential ($Q \to 0$). Die Kraftgleichung der \gls{wdbt} reduziert sich auf die \textbf{Lorentz-Kraft} (Gl. \refeq{eq:lorentz_kraft}) der klassischen Elektrodynamik.
+    \item \textbf{Emergence of Maxwell Theory:} As shown in Section \ref{sec:grundlagen}, \gls{wed} transitions into Maxwell's equations through averaging over many charges.
+    \item \textbf{Emergence of Newtonian Mechanics:} For $\hbar \to 0$ or on macroscopic scales where quantum effects are negligible, the quantum potential vanishes ($Q \to 0$). The force equation of \gls{wdbt} reduces to the \textbf{Lorentz force} (Eq. \refeq{eq:lorentz_kraft}) of classical electrodynamics.
 \end{enumerate}
 
-Zusammen mit den emergenten Maxwell-Gleichungen ist dies die vollständige klassische Beschreibung.
+Together with the emergent Maxwell's equations, this is the complete classical description.
 
-\subsection{Die erweiterte Kraftdichte und die Kontinuitätsgleichung}
-In der analogen \gls{wdbt} wirkt auf eine Ladungsdichte $\rho$ nicht nur die Lorentz-Kraftdichte, sondern auch die Kraftdichte aus dem Quantenpotential $Q$. Die vollständige Kraftdichte lautet:
+\subsection{The Extended Force Density and the Continuity Equation}
+In the analogous \gls{wdbt}, a charge density $\rho$ is acted upon not only by the Lorentz force density but also by the force density from the quantum potential $Q$. The complete force density is:
 
 \begin{equation}
     \vec{f}_{\text{WDBT}} = \rho \vec{E} + \vec{j} \times \vec{B} - \rho \nabla Q
 \end{equation}
 
-Diese Kraftdichte muss in die Impulsbilanz der Kontinuumsmechanik eingesetzt werden. Zusätzlich gilt die Kontinuitätsgleichung (Ladungserhaltung) unverändert:
+This force density must be inserted into the momentum balance of continuum mechanics. Additionally, the continuity equation (charge conservation) holds unchanged:
 
 \begin{equation}
     \frac{\partial \rho}{\partial t} + \nabla \cdot \vec{j} = 0
 \end{equation}
 
-\subsection{Herleitung der modifizierten Maxwell-Gleichungen}
-Durch die Einführung des Quantenpotentials $Q$ werden die Quellterme in den Maxwell-Gleichungen erweitert. Die modifizierten inhomogenen Maxwell-Gleichungen in der analogen \gls{wdbt} lauten:
+\subsection{Derivation of the Modified Maxwell's Equations}
+By introducing the quantum potential $Q$, the source terms in Maxwell's equations are extended. The modified inhomogeneous Maxwell's equations in the analogous \gls{wdbt} are:
 
 \begin{equation}
     \nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0} - \frac{1}{\epsilon_0} \nabla \cdot (\rho \nabla Q)
@@ -173,16 +173,16 @@ Durch die Einführung des Quantenpotentials $Q$ werden die Quellterme in den Max
     \nabla \times \vec{B} = \mu_0 \vec{j} + \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t} + \mu_0 \nabla \times (\rho \nabla Q)
 \end{equation}
 
-Begründung:
+Justification:
 
 \begin{itemize}
-    \item Der Term $-\rho \nabla Q$ in der Kraftdichte wirkt wie eine zusätzliche Quanten-Ladungsdichte bzw. ein Quanten-Strom.
-    \item Diese Zusatzterme müssen in den Quellgleichungen für $\vec{E}$ und $\vec{B}$ erscheinen, um die Konsistenz mit der Impulserhaltung zu wahren.
-    \item Die homogenen Gleichungen ($\nabla \cdot \vec{B} = 0, \nabla \times \vec{E} = -\partial_t \vec{B}$) bleiben unverändert, da sie aus den Definitionen der Felder folgen.
+    \item The term $-\rho \nabla Q$ in the force density acts like an additional quantum charge density or quantum current.
+    \item These additional terms must appear in the source equations for $\vec{E}$ and $\vec{B}$ to maintain consistency with momentum conservation.
+    \item The homogeneous equations ($\nabla \cdot \vec{B} = 0, \nabla \times \vec{E} = -\partial_t \vec{B}$) remain unchanged, as they follow from the definitions of the fields.
 \end{itemize}
 
-\subsubsection{Klassischer Grenzfall und Reduktion}
-Im klassischen Grenzfall ($Q \to 0$ oder $\hbar \to 0$) verschwinden die Zusatzterme:
+\subsubsection{Classical Limit and Reduction}
+In the classical limit ($Q \to 0$ or $\hbar \to 0$), the additional terms vanish:
 
 \begin{equation}
     \lim_{Q \to 0} \left( \nabla \cdot \vec{E} \right) = \frac{\rho}{\epsilon_0}
@@ -192,20 +192,19 @@ Im klassischen Grenzfall ($Q \to 0$ oder $\hbar \to 0$) verschwinden die Zusatzt
     \lim_{Q \to 0} \left( \nabla \times \vec{B} \right) = \mu_0 \vec{j} + \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}
 \end{equation}
 
-Somit emergieren ebenfalls exakt die klassischen Maxwell-Gleichungen.
+Thus, the classical Maxwell's equations also emerge exactly.
 
-\section{Die digitale WDBT: Eine hypothetische Fundierung}
-Die \textbf{digitale \gls{wdbt}} zielt darauf ab, den Ursprung \textbf{sowohl der Weber-Kraft als auch des Quantenpotentials} in einer einzigen fundamentalen Theorie zu erklären:
+\section{The Digital WDBT: A Hypothetical Foundation}
+The \textbf{digital \gls{wdbt}} aims to explain the origin \textbf{of both the Weber force and the quantum potential} in a single fundamental theory:
 
 \begin{itemize}
-    \item Das digital-fraktale Raummodell (mit $D \approx 2.71$) soll die instantane Wechselwirkung (\gls{wed}) und die Quantenfluktuationen ($Q$) aus der gleichen Ursache generieren.
-    \item In dieser Theorie würden die modifizierten Maxwell-Gleichungen nicht postuliert, sondern als effektive Feldgleichungen aus der Mittelung über die diskrete Raumzeit-Struktur emergieren.
-    \item Dies wäre analog zur Emergenz der Hydrodynamik aus der Atomphysik.
+    \item The digital-fractal space model (with $D \approx 2.71$) is supposed to generate the instantaneous interaction (\gls{wed}) and the quantum fluctuations ($Q$) from the same cause.
+    \item In this theory, the modified Maxwell's equations would not be postulated but would emerge as effective field equations from averaging over the discrete spacetime structure.
+    \item This would be analogous to the emergence of hydrodynamics from atomic physics.
 \end{itemize}
 
-\section{Zusammenfassung}
+\section{Summary}
 \begin{itemize}
-    \item \textbf{Analoge WDBT:} Führt zu modifizierten Maxwell-Gleichungen mit Quelltermen proportional zu $\nabla Q$.
-    \item \textbf{Digitale WDBT:} Ist eine Hypothese, die beide Anteile (\gls{wed} und $Q$) aus einem gemeinsamen Prinzip (fraktaler Raum) ableiten will.
+    \item \textbf{Analog \gls{wdbt}:} Leads to modified Maxwell's equations with source terms proportional to $\nabla Q$.
+    \item \textbf{Digital \gls{wdbt}:} Is a hypothesis that aims to derive both components (\gls{wed} and $Q$) from a common principle (fractal space).
 \end{itemize}
-

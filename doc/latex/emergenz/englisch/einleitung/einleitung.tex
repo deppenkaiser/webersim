@@ -1,27 +1,25 @@
-\chapter{Spezielle Relativitätstheorie}
-Hier ist die vollständige Herleitung aus der \enquote{analogen} \gls{wdbt}
+\chapter{Special Theory of Relativity}
+Here is the complete derivation from the \enquote{analogous} \gls{wdbt}
 
-\section{Herleitung der relativistischen Effekte aus der Weber-De Broglie-Bohm-Theorie (WDBT)}
-Die Aufgabe ist nicht die 1:1-Rekonstruktion der \gls{srtn}, sondern die Herleitung ihrer operationalen Kernphänomene – Zeitdilatation, Längenkontraktion, relativistische Dynamik – aus den ersten
-Prinzipien der \gls{wdbt}, ohne die problematischen Postulate wie die Lorentz-Invarianz der Raumzeit zu übernehmen.
+\section{Derivation of Relativistic Effects from the Weber-De Broglie-Bohm Theory (WDBT)}
+The task is not the 1:1 reconstruction of \gls{srtn}, but the derivation of its operational core phenomena – time dilation, length contraction, relativistic dynamics – from the first principles of \gls{wdbt}, without adopting problematic postulates like Lorentz invariance of spacetime.
 
-\subsection{Ausgangspunkt: Die Energie-Impuls-Relation in der WDBT}
-Die fundamentale Wechselwirkung der \gls{wdbt} wird durch die Weber-Gravitationskraft beschrieben. Für zwei Massen $M$ und $m$ lautet sie mit dem Parameter $\beta = 0.5$:
+\subsection{Starting Point: The Energy-Momentum Relation in WDBT}
+The fundamental interaction of \gls{wdbt} is described by the Weber gravitational force. For two masses $M$ and $m$ it reads with the parameter $\beta = 0.5$:
 
 \begin{equation}
     \label{eq:weber_g}
     \vec{F}_{\text{WG}} = -\frac{G M m}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + 0.5 \frac{r \ddot{r}}{c^2} \right] \hat{\vec{r}}
 \end{equation}
 
-Diese Kraft kann aus einem verallgemeinerten Potential $U_{WG}$ abgeleitet werden:
+This force can be derived from a generalized potential $U_{WG}$:
 
 \begin{equation}
     \label{eq:potential}
     U_{\text{WG}}(r, \dot{r}) = -\frac{G M m}{r} \left( 1 - \frac{\dot{r}^2}{2c^2} \right)
 \end{equation}
 
-Für ein Teilchen, das sich im kosmischen Hintergrund bewegt, führt die Mittelung über alle Wechselwirkungen zu einer \textbf{effektiven Gesamtenergie}. Die Herleitung über den Lagrangian bzw. den
-Hamilton-Formalismus ergibt die \textbf{relativistische Energie-Impuls-Beziehung:}
+For a particle moving in the cosmic background, averaging over all interactions leads to an \textbf{effective total energy}. The derivation via the Lagrangian or Hamiltonian formalism yields the \textbf{relativistic energy-momentum relation:}
 
 \begin{equation}
     \label{eq:energie_impuls_beziehung}
@@ -31,212 +29,206 @@ Hamilton-Formalismus ergibt die \textbf{relativistische Energie-Impuls-Beziehung
     }
 \end{equation}
 
-\textbf{Diese Gleichung ist kein Postulat.} Sie ist eine direkte Konsequenz der geschwindigkeitsabhängigen Struktur der Weber-Kraft und des Prinzips der Energieerhaltung in der \gls{wdbt}.
+\textbf{This equation is not a postulate.} It is a direct consequence of the velocity-dependent structure of the Weber force and the principle of energy conservation in \gls{wdbt}.
 
-\subsection{Definition der relativistischen Größen}
-Aus der Energie-Impuls-Beziehung werden die relativistische Energie $E$ und der relativistische Impuls $p$ für ein Teilchen mit Ruhemasse $m$ und Geschwindigkeit $v$ definiert als:
+\subsection{Definition of Relativistic Quantities}
+From the energy-momentum relation, the relativistic energy $E$ and relativistic momentum $p$ for a particle with rest mass $m$ and velocity $v$ are defined as:
 
 \begin{equation}
     \label{eq:relativistische_energie}
-    E = \gamma m c^2, \quad p = \gamma m v, \quad \text{mit} \quad \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+    E = \gamma m c^2, \quad p = \gamma m v, \quad \text{with} \quad \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
 \end{equation}
 
-Der Lorentz-Faktor $\gamma$ erscheint hier als \textbf{mathematische Konsequenz der Herleitung}, nicht als Ausdruck einer fundamentalen Raumzeit-Symmetrie.
+The Lorentz factor $\gamma$ appears here as a \textbf{mathematical consequence of the derivation}, not as an expression of a fundamental spacetime symmetry.
 
-\subsection{Herleitung der Zeitdilatation}
-Eine periodische Erscheinung (eine \enquote{Uhr}) habe in ihrem Ruhesystem eine Periodendauer $\Delta t_0$. Ihre Ruheenergie ist $E_0 = mc^2$.
+\subsection{Derivation of Time Dilation}
+A periodic phenomenon (a \enquote{clock}) has a period $\Delta t_0$ in its rest frame. Its rest energy is $E_0 = mc^2$.
 
-Für einen Beobachter, der sich relativ zur Uhr mit der Geschwindigkeit $v$ bewegt, beträgt die Gesamtenergie der Uhr $E = \gamma mc^2$.
+For an observer moving relative to the clock with velocity $v$, the total energy of the clock is $E = \gamma mc^2$.
 
-Da die Frequenz $\nu$ einer periodischen Erscheinung proportional zu ihrer Energie ist ($\nu \propto E$), gilt:
+Since the frequency $\nu$ of a periodic phenomenon is proportional to its energy ($\nu \propto E$), it follows:
 
 \begin{equation}
     \label{eq:zeitdilatation}
     \frac{E}{E_0} = \gamma, \quad \frac{\Delta t_0}{\Delta t} = \gamma \quad \Rightarrow \quad \Delta t = \gamma \Delta t_0 = \frac{\Delta t_0}{\sqrt{1 - \frac{v^2}{c^2}}}
 \end{equation}
 
-\paragraph{Resultat:} Die Periodendauer erscheint für den bewegten Beobachter verlängert. Bewegte Uhren gehen langsamer. Dies ist die \textbf{Zeitdilatation}.
+\paragraph{Result:} The period appears lengthened for the moving observer. Moving clocks run slower. This is \textbf{time dilation}.
 
-\subsection{Herleitung der Längenkontraktion}
-Ein Stab der \textbf{Ruhelänge} $L_0$ liege in seinem Ruhesystem. Ein Beobachter, der sich mit der Geschwindigkeit $v$ parallel zum Stab bewegt, muss seine Länge $L$ durch eine \textbf{gleichzeitige}
-Messung der Position seiner Endpunkte in \textit{seinem} Bezugssystem bestimmen.
+\subsection{Derivation of Length Contraction}
+A rod of \textbf{rest length} $L_0$ lies in its rest frame. An observer moving with velocity $v$ parallel to the rod must determine its length $L$ by a \textbf{simultaneous} measurement of the positions of its endpoints in \textit{his} reference frame.
 
-Aufgrund der \textbf{Zeitdilatation} laufen die Uhren, die im System des Stabs synchronisiert sind, im System des Beobachters \textbf{nicht synchron}. Die Berechnung der Messvorschrift unter
-Berücksichtigung dieses Effekts führt zum Ergebnis:
+Due to \textbf{time dilation}, the clocks synchronized in the rod's frame are \textbf{not synchronized} in the observer's frame. Calculating the measurement procedure considering this effect leads to the result:
 
 \begin{equation}
     \label{eq:längenkontraktion}
     L = \frac{L_0}{\gamma} = L_0 \sqrt{1 - \frac{v^2}{c^2}}
 \end{equation}
 
-\paragraph{Resultat:} Die Länge des Stabs erscheint in Bewegungsrichtung verkürzt. Dies ist die \textbf{Längenkontraktion}.
+\paragraph{Result:} The length of the rod appears shortened in the direction of motion. This is \textbf{length contraction}.
 
-\subsection{Herleitung der relativistischen Dynamik}
-Die Bewegungsgleichung eines Teilchens under dem Einfluss einer Kraft $\vec{F}$ wird in der \gls{wdbt} durch die zeitliche Änderung des \textbf{relativistischen Impulses} beschrieben:
+\subsection{Derivation of Relativistic Dynamics}
+The equation of motion of a particle under the influence of a force $\vec{F}$ is described in \gls{wdbt} by the time derivative of the \textbf{relativistic momentum}:
 
 \begin{equation}
     \label{eq:relativistischer_impuls}
     \vec{F} = \frac{d\vec{p}}{dt} = \frac{d}{dt} (\gamma m \vec{v})
 \end{equation}
 
-Diese Gleichung ersetzt das Newton'sche Gesetz $\vec{F} = m\vec{a}$. Sie beschreibt korrekt die Zunahme der Trägheit bei hohen Geschwindigkeiten ($\gamma \to \infty$ für $v \to c$) und ist konsistent
-mit der Energie-Impuls-Beziehung.
+This equation replaces Newton's law $\vec{F} = m\vec{a}$. It correctly describes the increase of inertia at high velocities ($\gamma \to \infty$ for $v \to c$) and is consistent with the energy-momentum relation.
 
-\subsection{Zusammenfassung der hergeleiteten Effekte}
-Aus der Energie-Impuls-Beziehung $E^2 = (pc)^2 + (mc^2)^2$, die selbst aus der Weber-Kraft folgt, wurden die operationalen Kernphänomene der \gls{srt} hergeleitet:
+\subsection{Summary of Derived Effects}
+From the energy-momentum relation $E^2 = (pc)^2 + (mc^2)^2$, which itself follows from the Weber force, the operational core phenomena of \gls{srt} were derived:
 
 \begin{align*}
-\textbf{Zeitdilatation:} \quad & \Delta t = \gamma \Delta t_0 \\
-\textbf{Längenkontraktion:} \quad & L = \frac{L_0}{\gamma} \\
-\textbf{Relativistische Dynamik:} \quad & \vec{F} = \frac{d}{dt}(\gamma m \vec{v})
+\textbf{Time dilation:} \quad & \Delta t = \gamma \Delta t_0 \\
+\textbf{Length contraction:} \quad & L = \frac{L_0}{\gamma} \\
+\textbf{Relativistic dynamics:} \quad & \vec{F} = \frac{d}{dt}(\gamma m \vec{v})
 \end{align*}
 
-\subsection{Schlussfolgerung: Emergenz ohne Reduktion}
-Die \gls{wdbt} leitet die erfolgreichen Vorhersagen der \gls{srt} aus ihren ersten Prinzipien her. Gleichzeitig vermeidet sie die konzeptionellen Probleme der \gls{srt}:
+\subsection{Conclusion: Emergence without Reduction}
+\gls{wdbt} derives the successful predictions of \gls{srt} from its first principles. At the same time, it avoids the conceptual problems of \gls{srt}:
 
 \begin{itemize}
-    \item Die \textbf{Lorentz-Invarianz} wird nicht als fundamentale Eigenschaft der Raumzeit postuliert. Sie erscheint lediglich als eine nützliche Beschreibungsebene für die beobachteten Phänomene.
-    \item Die Lichtgeschwindigkeit $c$ ist keine universelle Konstante der Raumzeit, sondern die \textbf{charakteristische Grenzgeschwindigkeit der Weber-Wechselwirkung}. Dies eröffnet die Möglichkeit energieabhängiger Variationen, die in der \gls{srt} und der \gls{artn} ausgeschlossen sind.
+    \item \textbf{Lorentz invariance} is not postulated as a fundamental property of spacetime. It merely appears as a useful level of description for the observed phenomena.
+    \item The speed of light $c$ is not a universal constant of spacetime, but the \textbf{characteristic limit velocity of the Weber interaction}. This opens the possibility of energy-dependent variations, which are excluded in \gls{srt} and \gls{artn}.
 \end{itemize}
 
-\section{Die wahre Universalität der Lichtgeschwindigkeit}
+\section{The True Universality of the Speed of Light}
 
-Die \textbf{Universalität der Lichtgeschwindigkeit} wird in der modernen Physik unterschiedlich begründet:
+The \textbf{universality of the speed of light} is justified differently in modern physics:
 
-\subsection{Postulierte Universalität in SRT/ART}
-In der speziellen und allgemeinen Relativitätstheorie ist $c$ eine \textit{postulierte, metaphysische Universalität}:
+\subsection{Postulated Universality in SRT/GR}
+In special and general relativity, $c$ is a \textit{postulated, metaphysical universality}:
 \begin{itemize}
-    \item $c$ wird als fundamentale Konstante der \textbf{leeren Raumzeit} definiert
-    \item Unabhängig von Materie und Wechselwirkungen
-    \item Abstraktes, letztlich unerklärtes Konzept
-    \item Verletzt das Mach'sche Prinzip
+    \item $c$ is defined as a fundamental constant of \textbf{empty spacetime}
+    \item Independent of matter and interactions
+    \item Abstract, ultimately unexplained concept
+    \item Violates Mach's principle
 \end{itemize}
 
-\subsection{Physikalische Universalität in WG/WED (WDBT)}
-In der Weber-Gravitation und Weber-Elektrodynamik ist $c$ eine \textit{physikalische, mechanistische Universalität}:
+\subsection{Physical Universality in WG/WED (WDBT)}
+In Weber Gravitation and Weber Electrodynamics, $c$ is a \textit{physical, mechanistic universality}:
 \begin{itemize}
-    \item $c$ ist die charakteristische Grenzgeschwindigkeit der \textbf{Weber-Wechselwirkung}
-    \item Entsteht durch instantane Kopplung aller Massen/Ladungen im Universum
-    \item Physikalische Konsequenz globaler Kopplung
-    \item Erfüllt das Mach'sche Prinzip vollständig
+    \item $c$ is the characteristic limit velocity of the \textbf{Weber interaction}
+    \item Arises from instantaneous coupling of all masses/charges in the universe
+    \item Physical consequence of global coupling
+    \item Fulfills Mach's principle completely
 \end{itemize}
 
-Die \gls{wdbt} begründet damit eine \textbf{tiefere und konsistentere Form der Universalität}, die in der physikalischen Realität der Wechselwirkungen verankert ist - nicht in mathematischer Abstraktion.
+\gls{wdbt} thus establishes a \textbf{deeper and more consistent form of universality}, anchored in the physical reality of interactions - not in mathematical abstraction.
 
-\section{Begründung der Trägheit in der WDBT}
+\section{Justification of Inertia in WDBT}
 
-Die Trägheit wird in der \gls{wdbt} nicht als inherente Eigenschaft eines Teilchens aufgefasst, sondern als \textbf{emergente Konsequenz seiner instantanen Wechselwirkung mit allen anderen Massen und Ladungen im Universum}.
+In \gls{wdbt}, inertia is not considered an inherent property of a particle, but as an \textbf{emergent consequence of its instantaneous interaction with all other masses and charges in the universe}.
 
-\subsection{Trägheit als Widerstand gegen Beschleunigung}
-Die Trägheit äußert sich als Widerstand gegen Beschleunigung. In der \gls{wdbt} wird dies durch die \textbf{Weber-Kraft} erklärt, die auf ein beschleunigtes Teilchen wirkt:
+\subsection{Inertia as Resistance to Acceleration}
+Inertia manifests as resistance to acceleration. In \gls{wdbt}, this is explained by the \textbf{Weber force} acting on an accelerated particle:
 
 \[
 \vec{F}_{\text{WG}} = -\frac{G M m}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r \ddot{r}}{c^2} \right] \hat{r}
 \]
 
-Der Term $\beta \frac{r \ddot{r}}{c^2}$ (mit $\beta = 0.5$ für Massen) ist proportional zur Relativbeschleunigung $\ddot{r}$ und beschreibt die Kraftkomponente, die der Beschleunigung entgegenwirkt.
+The term $\beta \frac{r \ddot{r}}{c^2}$ (with $\beta = 0.5$ for masses) is proportional to the relative acceleration $\ddot{r}$ and describes the force component opposing acceleration.
 
-\subsection{Masse als Kopplungskonstante}
-Die träge Masse $m$ eines Teilchens emergiert als Maß für die Stärke seiner Kopplung an den kosmischen Hintergrund:
+\subsection{Mass as Coupling Constant}
+The inertial mass $m$ of a particle emerges as a measure of the strength of its coupling to the cosmic background:
 
 \[
-m \propto \text{Stärke der Wechselwirkung mit dem Universum}
+m \propto \text{Strength of interaction with the universe}
 \]
 
-Die Ruheenergie $E_0 = m c^2$ quantifiziert die Energie, die in dieser Kopplung gespeichert ist.
+The rest energy $E_0 = m c^2$ quantifies the energy stored in this coupling.
 
-\subsection{Erfüllung des Mach'schen Prinzips}
-Die \gls{wdbt} erfüllt das \textbf{Mach'sche Prinzip} in strenger Form:
+\subsection{Fulfillment of Mach's Principle}
+\gls{wdbt} fulfills \textbf{Mach's principle} in a strict form:
 \begin{itemize}
-    \item Die Trägheit eines Körpers wird durch die Wechselwirkung mit der Gesamtmasse des Universums verursacht.
-    \item In einem leeren Universum hätte ein Teilchen keine Trägheit.
-    \item Trägheit ist keine lokale Eigenschaft, sondern eine globale Relation.
+    \item The inertia of a body is caused by the interaction with the total mass of the universe.
+    \item In an empty universe, a particle would have no inertia.
+    \item Inertia is not a local property, but a global relation.
 \end{itemize}
 
-Damit löst die \gls{wdbt} das Rätsel der Trägheit und verwandelt die Masse von einem Grundbegriff in eine \textbf{messbare Konsequenz der kosmischen Wechselwirkung}.
+Thus, \gls{wdbt} solves the riddle of inertia and transforms mass from a fundamental concept into a \textbf{measurable consequence of cosmic interaction}.
 
-\section{Unterscheidung von Massenträgheit und Ladungsträgheit}
+\section{Distinction Between Mass Inertia and Charge Inertia}
 
-In der \gls{wdbt} ist Trägheit kein einheitliches Phänomen. Sie wird in \textbf{Massenträgheit} und \textbf{Ladungsträgheit} unterteilt, die auf unterschiedlichen Wechselwirkungen beruhen.
+In \gls{wdbt}, inertia is not a unified phenomenon. It is divided into \textbf{mass inertia} and \textbf{charge inertia}, based on different interactions.
 
-\subsection{Massenträgheit}
+\subsection{Mass Inertia}
 \begin{itemize}
-    \item \textbf{Ursache:} Wechselwirkung mit allen Massen im Universum via \textbf{Weber-Gravitation (WG)}.
-    \item \textbf{Kraftgesetz:}
+    \item \textbf{Cause:} Interaction with all masses in the universe via \textbf{Weber Gravitation (WG)}.
+    \item \textbf{Force law:}
         \[
-        \vec{F}_{\text{WG}} = -\frac{G M m}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_m \frac{r \ddot{r}}{c^2} \right] \hat{r}, \quad \text{mit} \quad \beta_m = 0.5
+        \vec{F}_{\text{WG}} = -\frac{G M m}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_m \frac{r \ddot{r}}{c^2} \right] \hat{r}, \quad \text{with} \quad \beta_m = 0.5
         \]
-    \item Die träge Masse $m$ emergiert als Kopplungskonstante an den \textbf{gravitativen Hintergrund}.
+    \item The inertial mass $m$ emerges as a coupling constant to the \textbf{gravitational background}.
 \end{itemize}
 
-\subsection{Ladungsträgheit}
+\subsection{Charge Inertia}
 \begin{itemize}
-    \item \textbf{Ursache:} Wechselwirkung mit allen Ladungen im Universum via\\\textbf{\gls{wed}}.
-    \item \textbf{Kraftgesetz:}
+    \item \textbf{Cause:} Interaction with all charges in the universe via\\\textbf{\gls{wed}}.
+    \item \textbf{Force law:}
         \begin{equation}
-        \vec{F}_{\text{WED}} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_e \frac{r \ddot{r}}{c^2} \right] \hat{\vec{r}}, \quad \text{mit} \quad \beta_e = 2            
+        \vec{F}_{\text{WED}} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_e \frac{r \ddot{r}}{c^2} \right] \hat{\vec{r}}, \quad \text{with} \quad \beta_e = 2            
         \end{equation}
-    \item Die Trägheit einer Ladung $q$ emergiert durch Kopplung an den \textbf{elektromagnetischen Hintergrund}.
+    \item The inertia of a charge $q$ emerges through coupling to the \textbf{electromagnetic background}.
 \end{itemize}
 
-\subsection{Bedeutung}
-Die Unterscheidung zeigt, dass Trägheit eine \textbf{wechselwirkungsspezifische} Größe ist. Die \gls{wdbt} ermöglicht so eine Vereinheitlichung von Gravitation und Elektrodynamik auf Grundlage der
-Weber-Kraft.
+\subsection{Significance}
+The distinction shows that inertia is an \textbf{interaction-specific} quantity. \gls{wdbt} thus enables a unification of gravitation and electrodynamics based on the Weber force.
 
-\section{Behandlung von Beschleunigungen in der effektiven SRT}
+\section{Treatment of Accelerations in the Effective SRT}
 
-Die aus der \gls{wdbt} hergeleitete \enquote{effektive} \gls{srt} kann auch Beschleunigungen konsistent behandeln. Dies wird durch die in der \gls{wdbt} begründete \textbf{relativistische Dynamik} ermöglicht,
-die durch die Gleichung
+The \enquote{effective} \gls{srt} derived from \gls{wdbt} can also treat accelerations consistently. This is made possible by the \textbf{relativistic dynamics} founded in \gls{wdbt}, described by the equation
 \[
 \vec{F} = \frac{d}{dt}(\gamma m \vec{v})
 \]
-beschrieben wird. Diese Gleichung ersetzt das Newtonsche Kraftgesetz $\vec{F} = m \vec{a}$ und ist für beliebige Geschwindigkeiten und Beschleunigungen gültig.
+This equation replaces Newton's force law $\vec{F} = m \vec{a}$ and is valid for arbitrary velocities and accelerations.
 
-\subsection{Gründe für die Konsistenz mit Beschleunigungen}
+\subsection{Reasons for Consistency with Accelerations}
 
 \begin{enumerate}
-    \item \textbf{Relativistische Kraftgleichung}: Die Gleichung $\vec{F} = \frac{d}{dt}(\gamma m \vec{v})$ berücksichtigt die Zunahme der trägen Masse bei hohen Geschwindigkeiten ($\gamma \to \infty$ für $v \to c$) und beschreibt beschleunigte Bewegungen auch im relativistischen Bereich korrekt.
-    \item \textbf{Weber-Kraft als Ursprung}: Die Weber-Kraft (Gl. 1.1) enthält Beschleunigungsterme ($\ddot{r}$), die direkt in die Bewegungsgleichungen eingehen. Dadurch ist die \gls{wdbt} fundamental in der Lage, beschleunigte Systeme zu behandeln.
-    \item \textbf{Emergenz der Trägheit}: Die Trägheit wird in der \gls{wdbt} als Folge der Wechselwirkung mit dem kosmischen Hintergrund erklärt (Mach'sches Prinzip). Dadurch wird auch die Trägheit bei Beschleunigungen physikalisch begründet -- nicht als intrinsische Eigenschaft, sondern als emergentes Phänomen.    
-    \item \textbf{Konsistenz mit bekannten Ergebnissen}: Die aus der \gls{wdbt} hergeleitete Dynamik ist mathematisch äquivalent zur relativistischen Dynamik der konventionellen \gls{srt}. Daher können auch beschleunigte Bewegungen (wie in Teilchenbeschleunigern oder gravitativen Systemen) konsistent beschrieben werden.
+    \item \textbf{Relativistic force equation}: The equation $\vec{F} = \frac{d}{dt}(\gamma m \vec{v})$ accounts for the increase of inertial mass at high velocities ($\gamma \to \infty$ for $v \to c$) and correctly describes accelerated motions even in the relativistic regime.
+    \item \textbf{Weber force as origin}: The Weber force (Eq. 1.1) contains acceleration terms ($\ddot{r}$) that directly enter the equations of motion. This makes \gls{wdbt} fundamentally capable of treating accelerated systems.
+    \item \textbf{Emergence of inertia}: In \gls{wdbt}, inertia is explained as a consequence of interaction with the cosmic background (Mach's principle). Thus, inertia during accelerations is also physically justified – not as an intrinsic property, but as an emergent phenomenon.    
+    \item \textbf{Consistency with known results}: The dynamics derived from \gls{wdbt} is mathematically equivalent to the relativistic dynamics of conventional \gls{srt}. Therefore, accelerated motions (as in particle accelerators or gravitational systems) can also be described consistently.
 \end{enumerate}
 
-\subsection{Fazit}
-Die effektive \gls{srt}, wie sie aus der \gls{wdbt} emergiert, ist \textbf{nicht auf unbeschleunigte Systeme beschränkt}. Sie enthält eine vollständige relativistische Dynamik, die Beschleunigungen miteinbezieht und damit für realistische physikalische Szenarien anwendbar ist.
+\subsection{Conclusion}
+The effective \gls{srt}, as it emerges from \gls{wdbt}, is \textbf{not limited to unaccelerated systems}. It contains a complete relativistic dynamics that includes accelerations and is thus applicable to realistic physical scenarios.
 
-\section{Zur Bedeutung von Inertialsystemen in der WDBT}
+\section{On the Significance of Inertial Frames in WDBT}
 
-In der \gls{wdbt} erfährt der Begriff des \textbf{Inertialsystems} eine fundamentale Neubewertung und verliert seinen privilegierten Status als ausgezeichneter Bezugsrahmen.
+In \gls{wdbt}, the concept of \textbf{inertial frames} undergoes a fundamental re-evaluation and loses its privileged status as a distinguished reference frame.
 
-\subsection{Die Relativität der Trägheit}
-
-\begin{itemize}
-    \item \textbf{Trägheit als Wechselwirkungseffekt}: In der \gls{wdbt} ist Trägheit keine intrinsische Eigenschaft von Massen, sondern emergiert aus der instantanen Wechselwirkung mit allen anderen Massen im Universum (Mach'sches Prinzip \cite{Assis1999}).
-    \item \textbf{Abschaffung des absoluten Raums}: Da es keinen leeren, strukturlosen Raum gibt, der als absolutes Bezugssystem dienen könnte, verlieren Inertialsysteme ihren fundamentalen Charakter.
-\end{itemize}
-
-\subsection{Operationale versus fundamentale Bedeutung}
+\subsection{The Relativity of Inertia}
 
 \begin{itemize}
-    \item \textbf{Operationale Nützlichkeit}: Inertialsysteme behalten ihre \emph{operative} Bedeutung als Bezugssysteme, in denen die Newtonsche Mechanik näherungsweise gültig bleibt bei Geschwindigkeiten viel kleiner als $c$.
-    \item \textbf{Fundamentaler Status entfällt}: In der \gls{wdbt} sind Inertialsysteme keine fundamentalen Entitäten der Physik, sondern lediglich \emph{nützliche Approximationen} in bestimmten Grenzfällen.
+    \item \textbf{Inertia as an interaction effect}: In \gls{wdbt}, inertia is not an intrinsic property of masses but emerges from the instantaneous interaction with all other masses in the universe (Mach's principle \cite{Assis1999}).
+    \item \textbf{Abolition of absolute space}: Since there is no empty, structureless space that could serve as an absolute reference system, inertial frames lose their fundamental character.
 \end{itemize}
 
-\subsection{Beschleunigte Bezugssysteme als gleichberechtigt}
+\subsection{Operational versus Fundamental Significance}
 
 \begin{itemize}
-    \item \textbf{Universelle Gültigkeit der Bewegungsgleichungen}: Die Grundgleichungen der \gls{wdbt} gelten in \emph{allen} Bezugssystemen gleichermaßen, da die Trägheitskräfte physikalisch durch die Wechselwirkung mit dem kosmischen Hintergrund erklärt werden.
-    \item \textbf{Keine Auszeichnung von Inertialsystemen}: Während in der klassischen \gls{srt} Inertialsysteme ausgezeichnet sind, behandelt die \gls{wdbt} alle Bezugssysteme - beschleunigte und unbeschleunigte - als physikalisch gleichwertig.
+    \item \textbf{Operational usefulness}: Inertial frames retain their \emph{operative} significance as reference frames in which Newtonian mechanics remains approximately valid at velocities much smaller than $c$.
+    \item \textbf{Fundamental status eliminated}: In \gls{wdbt}, inertial frames are not fundamental entities of physics, but merely \emph{useful approximations} in certain limiting cases.
 \end{itemize}
 
-\subsection{Konsequenzen für das Raumzeit-Verständnis}
+\subsection{Accelerated Reference Frames as Equally Valid}
 
 \begin{itemize}
-    \item \textbf{Emergenz der Lorentz-Invarianz}: Die beobachtete Lorentz-Invarianz erscheint als emergentes Phänomen aus der zugrundeliegenden Weber-Wechselwirkung, nicht als fundamentale Eigenschaft der Raumzeit.
-    \item \textbf{Relationale Raumzeit}: Die \gls{wdbt} impliziert eine relationale Auffassung von Raum und Zeit, in der physikalische Effekte stets durch konkrete Wechselwirkungen zwischen Materie erklärt werden.
+    \item \textbf{Universal validity of equations of motion}: The fundamental equations of \gls{wdbt} hold equally in \emph{all} reference frames, since inertial forces are physically explained by interaction with the cosmic background.
+    \item \textbf{No privileging of inertial frames}: While in classical \gls{srt} inertial frames are privileged, \gls{wdbt} treats all reference frames - accelerated and unaccelerated - as physically equivalent.
 \end{itemize}
 
-\subsection{Fazit}
+\subsection{Consequences for the Understanding of Spacetime}
 
-In der \gls{wdbt} verlieren Inertialsysteme ihren \textbf{fundamentalen Status} als ausgezeichnete Bezugssysteme. Während sie ihre \emph{operative Nützlichkeit} in bestimmten Grenzfällen behalten, sind sie in der fundamentalen Beschreibung der Physik durch die \gls{wdbt} nicht mehr als privilegierte Bezugsrahmen notwendig. Die Theorie bietet damit eine konsequente Implementierung des Mach'schen Prinzips und eine relationale Auffassung von Raum, Zeit und Trägheit.
+\begin{itemize}
+    \item \textbf{Emergence of Lorentz invariance}: The observed Lorentz invariance appears as an emergent phenomenon from the underlying Weber interaction, not as a fundamental property of spacetime.
+    \item \textbf{Relational spacetime}: \gls{wdbt} implies a relational conception of space and time, in which physical effects are always explained by concrete interactions between matter.
+\end{itemize}
 
+\subsection{Conclusion}
+
+In \gls{wdbt}, inertial frames lose their \textbf{fundamental status} as privileged reference systems. While they retain their \emph{operative usefulness} in certain limiting cases, they are no longer necessary as privileged reference frames in the fundamental description of physics by \gls{wdbt}. The theory thus offers a consistent implementation of Mach's principle and a relational conception of space, time, and inertia.

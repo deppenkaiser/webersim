@@ -1,150 +1,145 @@
-\chapter{Die Emergenz der Quantenmechanik}
-\section{Die fundamentale Bewegungsgleichung der WDBT}
-Die analoge \gls{wdbt} postuliert für ein Teilchen der Masse $m$ die folgende vollständige Kraftgleichung. Für ein neutrales Teilchen, auf das nur ein konservatives Potential $V(\vec{x})$ und das
-Quantenpotential $Q$ wirken, vereinfacht sich diese zu:
+\chapter{The Emergence of Quantum Mechanics}
+\section{The Fundamental Equation of Motion of WDBT}
+The analogous \gls{wdbt} postulates the following complete force equation for a particle of mass $m$. For a neutral particle acted upon only by a conservative potential $V(\vec{x})$ and the quantum potential $Q$, this simplifies to:
 
 \begin{equation}
     \label{eq:deterministische_bewegungsgleichung}
     m \frac{d^2\vec{x}}{dt^2} = -\vec{\nabla} V - \vec{\nabla} Q
 \end{equation}
 
-wobei das Bohm'sche Quantenpotential $Q$ definiert ist als:
+where the Bohmian quantum potential $Q$ is defined as:
 
 \begin{equation}
     \label{eq:quantenpotential}
     Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 R}{R}
 \end{equation}
 
-Hier ist $R = R(\vec{x},t)$ die Amplitude der sogenannten \enquote{Führungswelle} oder \enquote{pilot wave}, und $\rho = R^2$ ist die Wahrscheinlichkeitsdichte des Teilchensensembles. Gleichung
-(\refeq{eq:deterministische_bewegungsgleichung}) ist die \textbf{deterministische Bewegungsgleichung} eines Teilchens in der \gls{wdbt}.
+Here, $R = R(\vec{x},t)$ is the amplitude of the so-called \enquote{guiding wave} or \enquote{pilot wave}, and $\rho = R^2$ is the probability density of the particle ensemble. Equation (\refeq{eq:deterministische_bewegungsgleichung}) is the \textbf{deterministic equation of motion} of a particle in \gls{wdbt}.
 
-\section{Die Madelung-Transformation: Von der Teilchentrajektorie zur Feldbeschreibung}
+\section{The Madelung Transformation: From Particle Trajectory to Field Description}
 \label{sec:madelung}
-Um von der Beschreibung einzelner Teilchentrajektorien zur Beschreibung eines Ensembles (einem \enquote{Fluid}) überzugehen, führen wir die Madelung-Transformation durch. Wir formulieren eine komplexe
-Wellenfunktion $\psi(\vec{x}, t)$, deren Phase $S$ mit dem Impuls des Teilchens und deren Betragsquadrat mit der Dichte verbunden ist:
+To transition from the description of individual particle trajectories to the description of an ensemble (a \enquote{fluid}), we perform the Madelung transformation. We formulate a complex wave function $\psi(\vec{x}, t)$, whose phase $S$ is connected to the particle's momentum and whose squared magnitude is connected to the density:
 
 \begin{equation}
     \psi(\vec{x}, t) = R(\vec{x}, t)  e^{i S(\vec{x}, t) / \hbar}
 \end{equation}
 
-Dabei ist:
+Here:
 
 \begin{itemize}
-    \item $R(\vec{x},t)$: Reelle Amplitude ($\rho = R^2$ ist die Wahrscheinlichkeitsdichte).
-    \item $S(\vec{x},t)$: Reelle Phasenfunktion (entspricht der Wirkung bzw. dem Impulspotential).
+    \item $R(\vec{x},t)$: Real amplitude ($\rho = R^2$ is the probability density).
+    \item $S(\vec{x},t)$: Real phase function (corresponds to the action or momentum potential).
 \end{itemize}
 
-Unser Ziel ist es nun zu zeigen, dass die Bewegungsgleichung (\refeq{eq:deterministische_bewegungsgleichung}) und die Annahme einer Kontinuitätsgleichung für die Dichte $\rho$ äquivalent zur
-Schrödinger-Gleichung für $\psi$ sind.
+Our goal is now to show that the equation of motion (\refeq{eq:deterministische_bewegungsgleichung}) and the assumption of a continuity equation for the density $\rho$ are equivalent to the Schrödinger equation for $\psi$.
 
-\section{Herleitung der Kontinuitätsgleichung}
+\section{Derivation of the Continuity Equation}
 \label{sec:kontinuitätsgleichung}
-Der Impuls $\vec{p}$ eines Teilchens auf seiner Trajektorie ist in der \gls{wdbt} durch den Gradienten der Phasenfunktion $S$ gegeben:
+The momentum $\vec{p}$ of a particle on its trajectory is given in \gls{wdbt} by the gradient of the phase function $S$:
 
 \begin{equation}
     \label{eq:impuls}
     \vec{p} = m \vec{v} = \vec{\nabla} S
 \end{equation}
 
-Die Erhaltung der Wahrscheinlichkeit (Teilchen können nicht einfach verschwinden oder erzeugt werden) führt auf eine Kontinuitätsgleichung für die Dichte $\rho$:
+The conservation of probability (particles cannot simply vanish or be created) leads to a continuity equation for the density $\rho$:
 
 \begin{equation}
     \frac{\partial \rho}{\partial t} + \vec{\nabla} \cdot (\rho \vec{v}) = 0
 \end{equation}
 
-Setzen wir $\rho = R^2$ und $\vec{v} = \frac{\vec{\nabla} S}{m}$ ein, erhalten wir:
+Substituting $\rho = R^2$ and $\vec{v} = \frac{\vec{\nabla} S}{m}$, we obtain:
 
 \begin{equation}
     \label{eq:kontinuitätsgleichung}
     \frac{\partial (R^2)}{\partial t} + \vec{\nabla} \cdot \left( R^2 \frac{\vec{\nabla} S}{m} \right) = 0
 \end{equation}
 
-Diese Gleichung beschreibt die zeitliche Entwicklung der Dichteverteilung des Ensembles.
+This equation describes the temporal evolution of the density distribution of the ensemble.
 
-\section{Herleitung der Hamilton-Jacobi-Gleichung}
+\section{Derivation of the Hamilton-Jacobi Equation}
 \label{sec:hamilton_jakobi_gleichung}
-Wir beginnen nun mit der Newtonschen Bewegungsgleichung der \gls{wdbt} (Gl. \refeq{eq:deterministische_bewegungsgleichung}) und formen sie schrittweise um.
+We now start with Newton's equation of motion of \gls{wdbt} (Eq. \refeq{eq:deterministische_bewegungsgleichung}) and transform it step by step.
 
 \begin{equation}
     m \frac{d^2\vec{x}}{dt^2} = -\vec{\nabla} V - \vec{\nabla} Q \tag{3.1}
 \end{equation}
 
-Die substantielle Zeitableitung der Geschwindigkeit $\vec{v} = \frac{d \vec{x}}{dt}$ ist:
+The substantial time derivative of the velocity $\vec{v} = \frac{d \vec{x}}{dt}$ is:
 
 \begin{equation}
     \frac{d\vec{v}}{dt} = \frac{\partial \vec{v}}{\partial t} + (\vec{v} \cdot \vec{\nabla}) \vec{v}
 \end{equation}
 
-Mit $\vec{v} = \frac{\vec{\nabla} S}{m}$ (aus Gl. \refeq{eq:impuls}) wird der Beschleunigungsterm ($\vec{v} \cdot \vec{\nabla})$ zu:
+With $\vec{v} = \frac{\vec{\nabla} S}{m}$ (from Eq. \refeq{eq:impuls}), the acceleration term ($\vec{v} \cdot \vec{\nabla})$ becomes:
 
 \begin{equation}
     (\vec{v} \cdot \vec{\nabla}) \vec{v} = \frac{1}{m^2} \left[ (\vec{\nabla} S \cdot \vec{\nabla}) \vec{\nabla} S \right]
 \end{equation}
 
-Eine nützliche Vektoridentität hilft uns, diesen Term umzuschreiben:
+A useful vector identity helps us rewrite this term:
 
 \begin{equation}
     (\vec{\nabla} S \cdot \vec{\nabla}) \vec{\nabla} S = \frac{1}{2} \vec{\nabla} (\vec{\nabla} S \cdot \vec{\nabla} S) = \frac{1}{2} \vec{\nabla} (\left|\vec{\nabla} S \right|^2)
 \end{equation}
 
-Somit wird die linke Seite der Bewegungsgleichung zu:
+Thus, the left side of the equation of motion becomes:
 
 \begin{equation}
     m \frac{d\vec{v}}{dt} = m \left( \frac{\partial \vec{v}}{\partial t} \right) + \frac{1}{2m} \vec{\nabla} (\left| \vec{\nabla} S \right|^2)
 \end{equation}
 
-Nun setzen wir $\vec{v} = \frac{\vec{\nabla} S}{m}$ ein und setzen dies gleich der rechten Seite von (\refeq{eq:deterministische_bewegungsgleichung}):
+Now we substitute $\vec{v} = \frac{\vec{\nabla} S}{m}$ and set this equal to the right side of (\refeq{eq:deterministische_bewegungsgleichung}):
 
 \begin{equation}
     m \frac{\partial}{\partial t}\left( \frac{\vec{\nabla} S}{m} \right) + \frac{1}{2m} \vec{\nabla} (\left| \vec{\nabla} S \right|^2) = -\vec{\nabla} V - \vec{\nabla} Q
 \end{equation}
 
-Durch Vertauschung ($\frac{\partial}{\partial t} \vec{\nabla} S = \vec{\nabla} \frac{\partial S}{\partial t}$), vereinfacht sich dies zu:
+By swapping ($\frac{\partial}{\partial t} \vec{\nabla} S = \vec{\nabla} \frac{\partial S}{\partial t}$), this simplifies to:
 
 \begin{equation}
     \vec{\nabla} \left( \frac{\partial S}{\partial t} \right) + \frac{1}{2m} \vec{\nabla} (\left| \vec{\nabla} S \right|^2) = -\vec{\nabla} V - \vec{\nabla} Q
 \end{equation}
 
-Wir können nun den Gradientenoperator $\vec{\nabla}$ auf alle Terme anwenden:
+We can now apply the gradient operator $\vec{\nabla}$ to all terms:
 
 \begin{equation}
     \label{eq:zwischenstand}
     \vec{\nabla} \left( \frac{\partial S}{\partial t} + \frac{1}{2m} \left| \vec{\nabla} S \right|^2 + V + Q \right) = 0
 \end{equation}
 
-Gleichung (\refeq{eq:zwischenstand}) besagt, dass der Ausdruck in der Klammer räumlich konstant ist. Dies führt uns zur modifizierten Hamilton-Jacobi-Gleichung:
+Equation (\refeq{eq:zwischenstand}) states that the expression in parentheses is spatially constant. This leads us to the modified Hamilton-Jacobi equation:
 
 \begin{equation}
     \frac{\partial S}{\partial t} + \frac{1}{2m} \left| \vec{\nabla} S \right|^2 + V + Q = 0
 \end{equation}
 
-Setzen wir nun die Definition des Quantenpotentials (\refeq{eq:quantenpotential}) ein, erhalten wir die zentrale Gleichung:
+Now substituting the definition of the quantum potential (\refeq{eq:quantenpotential}), we obtain the central equation:
 
 \begin{equation}
     \label{eq:modifizierte_hamilton_jacobi}
     \frac{\partial S}{\partial t} + \frac{1}{2m} \left| \vec{\nabla} S \right|^2 + V - \frac{\hbar^2}{2m} \frac{\nabla^2 R}{R} = 0
 \end{equation}
 
-\section{Synthese zur Schrödinger-Gleichung}
+\section{Synthesis to the Schrödinger Equation}
 \label{sec:schrödinger_gleichung}
-Wir haben nun die beiden realen Gleichungen, die die Dynamik des Systems beschreiben:
+We now have the two real equations describing the dynamics of the system:
 
 \begin{enumerate}
-    \item Die Kontinuitätsgleichung (\refeq{eq:kontinuitätsgleichung})
-    \item Die modifizierte Hamilton-Jacobi-Gleichung (\refeq{eq:modifizierte_hamilton_jacobi})
+    \item The continuity equation (\refeq{eq:kontinuitätsgleichung})
+    \item The modified Hamilton-Jacobi equation (\refeq{eq:modifizierte_hamilton_jacobi})
 \end{enumerate}
 
-Die geniale Einsicht ist, dass diese beiden Gleichungen äquivalent zur einen komplexen Schrödinger-Gleichung sind. Um dies zu sehen, setzen wir die Wellenfunktion $\psi = R e^{iS/\hbar}$
-in die zeitabhängige Schrödinger-Gleichung ein:
+The ingenious insight is that these two equations are equivalent to the single complex Schrödinger equation. To see this, we substitute the wave function $\psi = R e^{iS/\hbar}$ into the time-dependent Schrödinger equation:
 
 \begin{equation}
     \label{eq:schrödinger_gleichung}
     i\hbar \frac{\partial \psi}{\partial t} = \left( -\frac{\hbar^2}{2m} \nabla^2 + V \right) \psi
 \end{equation}
 
-Wir führen die Ableitungen explizit aus.
+We perform the derivatives explicitly.
 
-\textbf{Linke Seite:}
+\textbf{Left Side:}
 
 \begin{equation}
     \frac{\partial \psi}{\partial t} = \frac{\partial R}{\partial t} e^{iS/\hbar} + R \cdot \frac{i}{\hbar} \frac{\partial S}{\partial t} e^{iS/\hbar}
@@ -154,8 +149,8 @@ Wir führen die Ableitungen explizit aus.
     i\hbar \frac{\partial \psi}{\partial t} = i\hbar \frac{\partial R}{\partial t} e^{iS/\hbar} - R \frac{\partial S}{\partial t} e^{iS/\hbar}
 \end{equation}
 
-\textbf{Rechte Seite:}\\
-Wir berechnen zuerst $\nabla^2 \psi$.
+\textbf{Right Side:}\\
+We first calculate $\nabla^2 \psi$.
 
 \begin{equation}
     \vec{\nabla} \psi = (\vec{\nabla} R) e^{iS/\hbar} + R \frac{i}{\hbar} (\vec{\nabla} S) e^{iS/\hbar}
@@ -165,27 +160,27 @@ Wir berechnen zuerst $\nabla^2 \psi$.
     \nabla^2 \psi = \left[ \nabla^2 R + \frac{2i}{\hbar} (\vec{\nabla} R \cdot \vec{\nabla} S) + \frac{i}{\hbar} R \nabla^2 S - \frac{1}{\hbar^2} R \left| \vec{\nabla} S \right|^2 \right] e^{iS/\hbar}
 \end{equation}
 
-Somit wird die rechte Seite:
+Thus, the right side becomes:
 
 \begin{equation}
     \left( -\frac{\hbar^2}{2m} \nabla^2 + V \right) \psi = -\frac{\hbar^2}{2m} \left[ \nabla^2 R + \frac{2i}{\hbar} (\vec{\nabla} R \cdot \vec{\nabla} S) + \frac{i}{\hbar} R \nabla^2 S - \frac{1}{\hbar^2} R \left| \vec{\nabla} S \right|^2 \right] e^{iS/\hbar} + V R e^{iS/\hbar}
 \end{equation}
 
-Setzen wir nun linke und rechte Seite gleich und teilen durch den gemeinsamen Faktor $e^{iS/\hbar}$:
+Now setting left and right sides equal and dividing by the common factor $e^{iS/\hbar}$:
 
 \begin{equation}
     i\hbar \frac{\partial R}{\partial t} - R \frac{\partial S}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 R - \frac{i\hbar}{m} (\vec{\nabla} R \cdot \vec{\nabla} S) - \frac{i\hbar}{2m} R \nabla^2 S + \frac{1}{2m} R \left| \vec{\nabla} S \right|^2 + V R
 \end{equation}
 
-Wir trennen nun Real- und Imaginärteil.
+We now separate the real and imaginary parts.
 
-\textbf{Imaginärteil:}
+\textbf{Imaginary Part:}
 
 \begin{equation}
     \hbar \frac{\partial R}{\partial t} = -\frac{\hbar}{m} (\vec{\nabla} R \cdot \vec{\nabla} S) - \frac{\hbar}{2m} R \nabla^2 S
 \end{equation}
 
-Multipliziert man beide Seiten mit $2R/\hbar$, erhält man:
+Multiplying both sides by $2R/\hbar$, we get:
 
 \begin{equation}
     2R \frac{\partial R}{\partial t} = -\frac{2}{m} R (\vec{\nabla} R \cdot \vec{\nabla} S) - \frac{1}{m} R^2 \nabla^2 S
@@ -195,15 +190,15 @@ Multipliziert man beide Seiten mit $2R/\hbar$, erhält man:
     \frac{\partial (R^2)}{\partial t} + \vec{\nabla} \cdot \left( R^2 \frac{\vec{\nabla} S}{m} \right) = 0 \tag{\refeq{eq:kontinuitätsgleichung}}
 \end{equation}
 
-Dies ist exakt die \textbf{Kontinuitätsgleichung (\refeq{eq:kontinuitätsgleichung})} aus Abschnitt (\ref{sec:kontinuitätsgleichung}).
+This is exactly the \textbf{continuity equation (\refeq{eq:kontinuitätsgleichung})} from Section (\ref{sec:kontinuitätsgleichung}).
 
-\textbf{Realteil:}
+\textbf{Real Part:}
 
 \begin{equation}
     - R \frac{\partial S}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 R + \frac{1}{2m} R \left| \vec{\nabla} S \right|^2 + V R
 \end{equation}
 
-Teilt man durch $R$:
+Dividing by $R$:
 
 \begin{equation}
     - \frac{\partial S}{\partial t} = -\frac{\hbar^2}{2m} \frac{\nabla^2 R}{R} + \frac{1}{2m} |\nabla S|^2 + V
@@ -213,50 +208,37 @@ Teilt man durch $R$:
     \frac{\partial S}{\partial t} + \frac{1}{2m} \left| \vec{\nabla} S \right|^2 + V - \frac{\hbar^2}{2m} \frac{\nabla^2 R}{R} = 0 \tag{\refeq{eq:modifizierte_hamilton_jacobi}}
 \end{equation}
 
-Dies ist exakt die modifizierte Hamilton-Jacobi-Gleichung (\refeq{eq:modifizierte_hamilton_jacobi}) aus Abschnitt (\ref{sec:schrödinger_gleichung}).
+This is exactly the modified Hamilton-Jacobi equation (\refeq{eq:modifizierte_hamilton_jacobi}) from Section (\ref{sec:schrödinger_gleichung}).
 
-Somit ist gezeigt, dass die beiden Axiome der \gls{wdbt} – die Bewegungsgleichung (\refeq{eq:deterministische_bewegungsgleichung}) mit Quantenpotential und die Kontinuitätsgleichung
-(\refeq{eq:kontinuitätsgleichung}) – mathematisch äquivalent zur postulierten Schrödinger-Gleichung (\refeq{eq:schrödinger_gleichung}) sind.
+Thus, it is shown that the two axioms of \gls{wdbt} – the equation of motion (\refeq{eq:deterministische_bewegungsgleichung}) with quantum potential and the continuity equation (\refeq{eq:kontinuitätsgleichung}) – are mathematically equivalent to the postulated Schrödinger equation (\refeq{eq:schrödinger_gleichung}).
 
-\section{Fazit: Quantenmechanik als emergente Beschreibung}
-Die Schrödinger-Gleichung emergiert somit nicht als fundamentales Postulat, sondern als eine effektive Feldbeschreibung für die Dynamik eines Ensembles von Teilchen, deren individuelle Trajektorien
-durch die deterministische Gleichung (\refeq{eq:deterministische_bewegungsgleichung}) der \gls{wdbt} gelenkt werden. Die \gls{wdbt} löst die interpretatorischen Probleme der konventionellen
-Quantenmechanik, indem sie eine realistische, kausale und nicht-lokale Theorie bietet, aus der die statistischen Vorhersagen der Quantenmechanik hervorgehen.
+\section{Conclusion: Quantum Mechanics as an Emergent Description}
+The Schrödinger equation thus emerges not as a fundamental postulate, but as an effective field description for the dynamics of an ensemble of particles, whose individual trajectories are guided by the deterministic equation (\refeq{eq:deterministische_bewegungsgleichung}) of \gls{wdbt}. \gls{wdbt} resolves the interpretational problems of conventional quantum mechanics by providing a realistic, causal, and non-local theory from which the statistical predictions of quantum mechanics arise.
 
-\section{Die WDBT als umfassende Theorie: Jenseits der Quantenmechanik}
-Emergenz bedeutet immer, dass die übergeordnete Theorie, aus welcher die untergeordnete Theorie emergiert, weitreichendere Aussagen tätigen kann (\textbf{empirische Überlegenheit}); sonst wäre es
-nur eine Gleichsetzung.
+\section{WDBT as a Comprehensive Theory: Beyond Quantum Mechanics}
+Emergence always means that the higher-level theory, from which the subordinate theory emerges, can make more far-reaching statements (\textbf{empirical superiority}); otherwise, it would merely be an equivalence.
 
-Die hergeleitete Äquivalenz zur Schrödinger-Gleichung zeigt, dass die \gls{wdbt} alle statistischen Vorhersagen der konventionellen Quantenmechanik reproduziert. Doch die \gls{wdbt} ist mehr als die \gls{qm}.
-Während die \gls{qm} sich mit der Berechnung von Wahrscheinlichkeitsdichten $\rho = \left| \psi \right|^2$ begnügt, bietet die \gls{wdbt} eine \textbf{vollständige kinematische und dynamische Beschreibung}
-der zugrundeliegenden Realität in Form von wohldefinierten Teilchentrajektorien, die durch die Führungswelle $\psi$ geleitet werden.
+The derived equivalence to the Schrödinger equation shows that \gls{wdbt} reproduces all statistical predictions of conventional quantum mechanics. But \gls{wdbt} is more than \gls{qm}. While \gls{qm} contents itself with calculating probability densities $\rho = \left| \psi \right|^2$, \gls{wdbt} provides a \textbf{complete kinematic and dynamic description} of the underlying reality in the form of well-defined particle trajectories guided by the guiding wave $\psi$.
 
-Dieser ontologische Überschuss der \gls{wdbt} macht sie zu einer umfassenderen Theorie und ermöglicht die Erklärung und Modellierung von Phänomenen, die in der orthodoxen \gls{qm} nicht nur unerklärt,
-sondern \textbf{aktiv ausgeblendet} werden, da sie dem Postulat der Vollständigkeit der Wellenfunktion widersprechen.
+This ontological surplus of \gls{wdbt} makes it a more comprehensive theory and enables the explanation and modeling of phenomena that in orthodox \gls{qm} are not only unexplained but \textbf{actively obscured}, as they contradict the postulate of the completeness of the wave function.
 
-Das paradigmatische Beispiel ist das \textbf{Doppelspaltexperiment}:
+The paradigmatic example is the \textbf{double-slit experiment}:
 
 \begin{itemize}
-    \item In der \textbf{konventionellen \gls{qm}} trifft ein \enquote{Teilchen} als delokalisierte Welle auf den Doppelspalt, interferiert mit sich selbst, und die Wahrscheinlichkeit, es hinter dem Spalt an einem bestimmten Ort zu detektieren, wird durch $\left| \psi \right|^2$ gegeben. Der Begriff einer Trajektorie durch einen bestimmten Spalt ist verboten und \enquote{unsinnig}.
-    \item In der \textbf{\gls{wdbt}} durchquert jedes Teilchen auf einer wohlbestimmten Trajektorie genau einen der beiden Spalte. Die Führungswelle $\psi$ jedoch durchläuft beide Spalte, interferiert hinter ihnen und bildet das bekannte Interferenzmuster aus. Das Quantenpotential $Q$, das von der gesamten Führungswelle abhängt, lenkt das Teilchen entlang seiner Trajektorie in die Bereiche konstruktiver Interferenz und weg von den Bereichen destruktiver Interferenz.
+    \item In \textbf{conventional \gls{qm}}, a \enquote{particle} arrives as a delocalized wave at the double slit, interferes with itself, and the probability of detecting it behind the slit at a specific location is given by $\left| \psi \right|^2$. The concept of a trajectory through a specific slit is forbidden and \enquote{nonsensical}.
+    \item In \textbf{\gls{wdbt}}, each particle traverses exactly one of the two slits on a well-defined trajectory. However, the guiding wave $\psi$ passes through both slits, interferes behind them, and forms the familiar interference pattern. The quantum potential $Q$, which depends on the entire guiding wave, guides the particle along its trajectory into regions of constructive interference and away from regions of destructive interference.
 \end{itemize}
 
-\textbf{Die entscheidende Erweiterung der \gls{wdbt}:} Die Führungswelle wird nicht nur am Spalt, sondern auch am Spaltsteg reflektiert. Dies erzeugt komplexe Interferenzmuster und Variationen im
-Quantenpotential in unmittelbarer Nähe des Steges. Teilchen, die sehr nahe am Steg vorbeifliegen, erfahren durch dieses modifizierte Quantenpotential eine abstoßende Kraft (\enquote{kick}), die ihre
-Trajektorie leicht in Richtung des anderen Spalts ablenkt.
+\textbf{The crucial extension of \gls{wdbt}:} The guiding wave is reflected not only at the slit but also at the slit barrier. This creates complex interference patterns and variations in the quantum potential in the immediate vicinity of the barrier. Particles passing very close to the barrier experience a repulsive force (\enquote{kick}) from this modified quantum potential, which slightly deflects their trajectory towards the other slit.
 
-\textbf{Resultat:} Die \gls{wdbt} sagt vorher, dass ein kleiner, aber nicht verschwindender Anteil der Teilchen, die den linken Spalt passieren, aufgrund dieser Wechselwirkung mit dem Steg final auf
-der rechten Seite des Detektorschirms registriert werden, und umgekehrt.
+\textbf{Result:} \gls{wdbt} predicts that a small but non-vanishing fraction of particles passing through the left slit will, due to this interaction with the barrier, finally be registered on the right side of the detector screen, and vice versa.
 
-Dieses Phänomen ist:
+This phenomenon is:
 
 \begin{enumerate}
-    \item \textbf{In der orthodoxen \gls{qm} unsichtbar:} Die Theorie macht keine Aussage über den Weg, nur über das Endergebnis.
-    \item \textbf{In der WDBT berechenbar:} Die Trajektorien können (zumindest prinzipiell) für gegebene Anfangsbedingungen berechnet werden.
-    \item \textbf{Experimentell überprüfbar:} Moderne Experimente mit empfindlichen Sonden in der Nähe der Spalte könnten diese subtilen Abstoßeffekte möglicherweise nachweisen.
+    \item \textbf{Invisible in orthodox \gls{qm}:} The theory makes no statement about the path, only about the final outcome.
+    \item \textbf{Calculable in WDBT:} The trajectories can (at least in principle) be calculated for given initial conditions.
+    \item \textbf{Experimentally verifiable:} Modern experiments with sensitive probes near the slits could potentially detect these subtle repulsion effects.
 \end{enumerate}
 
-Dies unterstreicht den Status der \gls{wdbt} als fundamentale Theorie: Sie bietet nicht nur eine konsistente Interpretation der etablierten Quantenphänomene, sondern erweitert den Horizont für neue,
-testbare Vorhersagen jenseits des Rahmens der konventionellen Quantenmechanik. Die Schrödinger-Gleichung emergiert somit als Teilmenge der \gls{wdbt} – nämlich als die Beschreibung der Dynamik der
-Führungswelle –, während die Teilchendynamik durch die Gleichung (\refeq{eq:deterministische_bewegungsgleichung}) eine tiefere Beschreibungsebene eröffnet.
-
+This underscores the status of \gls{wdbt} as a fundamental theory: It not only provides a consistent interpretation of established quantum phenomena but also expands the horizon for new, testable predictions beyond the framework of conventional quantum mechanics. The Schrödinger equation thus emerges as a subset of \gls{wdbt} – namely, as the description of the dynamics of the guiding wave – while the particle dynamics described by equation (\refeq{eq:deterministische_bewegungsgleichung}) open a deeper level of description.

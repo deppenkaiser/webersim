@@ -1,113 +1,97 @@
-\chapter{Die Emergenz der Quantenelektrodynamik}
-\section{Die Aufgabe der Reduktion}
-Die \gls{qed} beschreibt die Wechselwirkung zwischen Licht und Materie mit unvergleichlicher Präzision. Ihr Herzstück ist das Konzept der Quantenfelder und virtueller Teilchen. Dieses Kapitel zeigt,
-wie die scheinbar abstrakten Konzepte der \gls{qed} – die Feldquantisierung, Feynman-Diagramme und die Renormierung – aus der deterministischen, teilchenbasierten \gls{wdbt} emergieren. Die Strategie
-ist nicht die 1:1-Rekonstruktion, sondern die Herleitung der operationalen Kernaussagen der \gls{qed} aus den ersten Prinzipien der \gls{wdbt}.
+\chapter{The Emergence of Quantum Electrodynamics}
+\section{The Task of Reduction}
+\gls{qed} describes the interaction between light and matter with unparalleled precision. Its core is the concept of quantum fields and virtual particles. This chapter shows how the seemingly abstract concepts of \gls{qed} – field quantization, Feynman diagrams, and renormalization – emerge from the deterministic, particle-based \gls{wdbt}. The strategy is not a 1:1 reconstruction, but the derivation of the operational core statements of \gls{qed} from the first principles of \gls{wdbt}.
 
-\section{Die vollständige Kraftgleichung der WDBT}
-Die fundamentale Gleichung für ein geladenes Teilchen (Masse $m$, Ladung $q$) in der \gls{wdbt} ist die Erweiterung der Lorentz-Kraft um das Quantenpotential $Q$:
+\section{The Complete Force Equation of WDBT}
+The fundamental equation for a charged particle (mass $m$, charge $q$) in \gls{wdbt} is the extension of the Lorentz force by the quantum potential $Q$:
 
 \begin{equation}
     \label{eq:kraft_wdbt_em}
     m \frac{d^2\vec{x}}{dt^2} = q(\vec{E} + \vec{v} \times \vec{B}) - \nabla Q
 \end{equation}
 
-mit:
+with:
 
 \begin{equation}
     \label{eq:quantenpotential_wdbt_em}
     Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}
 \end{equation}
 
-Die Felder $\vec{E}$ und $\vec{B}$ sind dabei effektive Beschreibungen der gemittelten Weber-Wechselwirkung mit allen anderen Ladungen im Universum, wie in Kapitel \ref{ch:maxwell} hergeleitet. Gleichung
-(\refeq{eq:kraft_wdbt_em}) ist \textbf{deterministisch} und beschreibt eine wohldefinierte Trajektorie.
+The fields $\vec{E}$ and $\vec{B}$ are effective descriptions of the averaged Weber interaction with all other charges in the universe, as derived in Chapter \ref{ch:maxwell}. Equation (\refeq{eq:kraft_wdbt_em}) is \textbf{deterministic} and describes a well-defined trajectory.
 
 \newpage
-\section{Die Emergenz der Schrödinger- und Maxwell-Gleichungen}
-Um die Statistik eines Ensembles identischer Systeme (z.B. viele Atome im gleichen Zustand) zu beschreiben, wird die Madelung-Transformation durchgeführt (vgl. Abschnitt \ref{sec:madelung}). Wir führen
-eine komplexe Wellenfunktion $\psi(\vec{x},t)=R(\vec{x},t)e^{iS(\vec{x},t)/\hbar}$ ein, für die gilt:
+\section{The Emergence of the Schrödinger and Maxwell Equations}
+To describe the statistics of an ensemble of identical systems (e.g., many atoms in the same state), the Madelung transformation is performed (cf. Section \ref{sec:madelung}). We introduce a complex wave function $\psi(\vec{x},t)=R(\vec{x},t)e^{iS(\vec{x},t)/\hbar}$, for which:
 
 \begin{enumerate}
-    \item $\rho=\left| \psi \right|^2$ (Wahrscheinlichkeitsdichte)
-    \item $\vec{v} = \frac{1}{m}\vec{\nabla}S$ (Teilchengeschwindigkeit)
+    \item $\rho=\left| \psi \right|^2$ (probability density)
+    \item $\vec{v} = \frac{1}{m}\vec{\nabla}S$ (particle velocity)
 \end{enumerate}
 
-Wie in Abschnitt \ref{sec:schrödinger_gleichung} gezeigt, ist die Bewegungsgleichung (\refeq{eq:kraft_wdbt_em}) äquivalent zur zeitabhängigen Schrödinger-Gleichung für $\psi$:
+As shown in Section \ref{sec:schrödinger_gleichung}, the equation of motion (\refeq{eq:kraft_wdbt_em}) is equivalent to the time-dependent Schrödinger equation for $\psi$:
 
 \begin{equation}
     i\hbar \frac{\partial \psi}{\partial t} = \left( -\frac{\hbar^2}{2m} \nabla^2 + V + q\phi \right) \psi
 \end{equation}
 
-wobei das Vektorpotential $\vec{A}$ über $\vec{B} = \vec{\nabla} \times \vec{A}$ in die minimale Kopplung eingeht. Parallel dazu emergieren aus der Weber-Elektrodynamik durch Kontinuumslimes die
-klassischen Maxwell-Gleichungen (Abschnitt \ref{sec:kontinuumslimes}). Damit ist die \textbf{nicht-relativistische Quantenmechanik} und die \textbf{klassische Elektrodynamik} bereits als effektive
-Beschreibungsebenen aus der \gls{wdbt} hergeleitet.
+where the vector potential $\vec{A}$ enters via $\vec{B} = \vec{\nabla} \times \vec{A}$ into the minimal coupling. In parallel, the classical Maxwell equations emerge from Weber electrodynamics through the continuum limit (Section \ref{sec:kontinuumslimes}). Thus, \textbf{non-relativistic quantum mechanics} and \textbf{classical electrodynamics} are already derived as effective levels of description from \gls{wdbt}.
 
-\section{Photonen als Anregungen des Quanten-Vakuums}
-Die konventionelle \gls{qed} postuliert die Quantisierung des elektromagnetischen Feldes. In der \gls{wdbt} ergibt sich dieser Schritt naturalistisch aus der Berücksichtigung des Quantenpotentials
-des Vakuums.
+\section{Photons as Excitations of the Quantum Vacuum}
+Conventional \gls{qed} postulates the quantization of the electromagnetic field. In \gls{wdbt}, this step arises naturally from considering the quantum potential of the vacuum.
 
-Das Vakuum ist in der \gls{wdbt} kein leerer Raum, sondern ein \textbf{Quantenmedium} mit einer Grundfluktuation, beschrieben durch eine Vakuum-Wellenfunktion $\psi_\text{Vak}$. Deren zugehöriges Quantenpotential
-$Q_\text{Vak}$ wirkt auf alle Teilchen. Die Anregungen dieses Mediums – beschrieben durch stehende Wellen in einer Box mit bestimmten Frequenzen – entsprechen den Photonen.
+The vacuum in \gls{wdbt} is not empty space but a \textbf{quantum medium} with a ground fluctuation, described by a vacuum wave function $\psi_\text{Vak}$. Its associated quantum potential $Q_\text{Vak}$ acts on all particles. The excitations of this medium – described by standing waves in a box with specific frequencies – correspond to photons.
 
-Die Energie einer Anregung der Frequenz $\omega$ ist:
+The energy of an excitation of frequency $\omega$ is:
 
 \begin{equation}
     E = \hbar \omega
 \end{equation}
 
-Diese Relation emergiert aus der Skalierung des Quantenpotentials $Q$ mit $\hbar^2$ und der Dispensionsrelation der \gls{wed}. Die \textbf{Feldoperatoren} der \gls{qed} (Erzeuger/Vernichter) sind deshalb
-mathematische Hilfsgrößen zur Beschreibung dieser angeregten Moden des Quanten-Vakuums, nicht fundamentale Entitäten.
+This relation emerges from the scaling of the quantum potential $Q$ with $\hbar^2$ and the dispersion relation of \gls{wed}. The \textbf{field operators} of \gls{qed} (creation/annihilation operators) are therefore mathematical auxiliary quantities for describing these excited modes of the quantum vacuum, not fundamental entities.
 
-\section{Herleitung der Feynman-Regeln aus der nicht-lokalen Weber-Wechselwirkung}
-Die Stärke der \gls{qed} liegt in der Störungstheorie und den \textbf{Feynman-Diagrammen}. Diese emergieren in der \gls{wdbt} aus der \textbf{Mittelung über alle möglichen nicht-lokalen Wechselwirkungspfade}.
+\section{Derivation of Feynman Rules from Non-Local Weber Interaction}
+The strength of \gls{qed} lies in perturbation theory and \textbf{Feynman diagrams}. These emerge in \gls{wdbt} from \textbf{averaging over all possible non-local interaction paths}.
 
-In der \gls{wed} wirkt die Kraft zwischen zwei Ladungen instantan und hängt von Geschwindigkeit und Beschleunigung ab. Die Wahrscheinlichkeitsamplitude dafür, dass ein Teilchen von $A$ nach $B$ gelangt,
-muss über alle möglichen Trajektorien summiert werden, die alle durch ihre eigene Führungswelle und ihr Quantenpotential beeinflusst werden.
+In \gls{wed}, the force between two charges acts instantaneously and depends on velocity and acceleration. The probability amplitude for a particle to go from $A$ to $B$ must sum over all possible trajectories, each influenced by its own guiding wave and its quantum potential.
 
-\subsubsection{Herleitungsschritte:}
+\subsubsection{Derivation Steps:}
 \begin{enumerate}
-    \item Die \textbf{Wirkung} $S$ für einen Weber-Wechselwirkungspfad wird definiert.
-    \item Die \textbf{Amplitude} für einen Pfad ist proportional zu $e^{iS/\hbar}$.
-    \item Das \textbf{Pfadintegral} (Summe über alle Pfade) wird eingeführt.
-    \item Die \textbf{Weber-Kraft} wird in eine Störungsreihe entwickelt. Jeder Term dieser Reihe entspricht einem \textbf{elementaren Weber-Wechselwirkungsvertex}.
-    \item Die \textbf{Propagatoren} (z.B. $\frac{i}{p^2 - m^2 + i\epsilon}$ für ein Elektron) beschreiben die Ausbreitung zwischen zwei Wechselwirkungen unter dem Einfluss des freien Quantenpotentials.
-    \item Die \textbf{Feynman-Regeln} emergieren als effiziente Buchhaltungsmethode für die Berechnung der Gesamtamplitude unter Berücksichtigung aller möglichen Pfade und Vertices.
+    \item The \textbf{action} $S$ for a Weber interaction path is defined.
+    \item The \textbf{amplitude} for a path is proportional to $e^{iS/\hbar}$.
+    \item The \textbf{path integral} (sum over all paths) is introduced.
+    \item The \textbf{Weber force} is expanded into a perturbation series. Each term in this series corresponds to an \textbf{elementary Weber interaction vertex}.
+    \item The \textbf{propagators} (e.g., $\frac{i}{p^2 - m^2 + i\epsilon}$ for an electron) describe the propagation between two interactions under the influence of the free quantum potential.
+    \item The \textbf{Feynman rules} emerge as an efficient bookkeeping method for calculating the total amplitude, considering all possible paths and vertices.
 \end{enumerate}
 
-Ein Feynman-Diagramm ist somit keine Darstellung virtueller Teilchen, sondern eine \textbf{graphische Darstellung der Mittelung über nicht-lokale Weber-Wechselwirkungsterme} in der Störungsreihe.
+A Feynman diagram is thus not a representation of virtual particles, but a \textbf{graphical representation of the averaging over non-local Weber interaction terms} in the perturbation series.
 
-\section{Regularisierung durch das Quantenpotential}
-Die konventionelle \gls{qed} leidet unter divergierenden Integralen (Unendlichkeiten). Die Renormierung entfernt diese durch eine Neudefinition von Masse und Ladung. In der \gls{wdbt} sind diese
-Divergenzen artefaktisch und werden von vornherein vermieden.
+\section{Regularization by the Quantum Potential}
+Conventional \gls{qed} suffers from divergent integrals (infinities). Renormalization removes these by redefining mass and charge. In \gls{wdbt}, these divergences are artifactual and are avoided from the outset.
 
-Der Grund ist das \textbf{Quantenpotential} $Q$. Da es von der Dichte $\rho$ abhängt und diese für ein Teilchen nie punktförmig wird (die Führungswelle hat immer eine endliche Ausdehnung), sind alle
-Wechselwirkungen \textbf{regularisiert}. Die \enquote{nackte} Ladung und Masse sind endlich, da die Selbstenergie eines Teilchens durch die Wechselwirkung mit seiner eigenen, ausgedehnten Führungswelle
-begrenzt ist. Die Renormierung emergiert somit als der effektive Kalkül, um die endlichen, beobachtbaren Größen aus der zugrundeliegenden regularisierten \gls{wdbt}-Dynamik zu extrahieren.
+The reason is the \textbf{quantum potential} $Q$. Since it depends on the density $\rho$ and this never becomes point-like for a particle (the guiding wave always has a finite extent), all interactions are \textbf{regularized}. The \enquote{bare} charge and mass are finite because the self-energy of a particle is limited by the interaction with its own, extended guiding wave. Renormalization thus emerges as the effective calculus to extract the finite, observable quantities from the underlying regularized \gls{wdbt} dynamics.
 
-\section{Lamb-Shift und g-Faktor}
-Die Erfolge der \gls{qed} müssen von der \gls{wdbt} reproduziert werden. Die Berechnung der Lamb-Verschiebung und des anomalen magnetischen Moments des Elektrons folgt in der \gls{wdbt} einem
-modifizierten, aber konzeptionell klaren Pfad.
+\section{Lamb Shift and g-Factor}
+The successes of \gls{qed} must be reproduced by \gls{wdbt}. The calculation of the Lamb shift and the anomalous magnetic moment of the electron follows a modified but conceptually clear path in \gls{wdbt}.
 
 \begin{itemize}
-    \item \textbf{Lamb-Shift:} Sie ergibt sich aus der Wechselwirkung des Elektrons mit dem fluktuierenden Quantenpotential des Vakuums ($Q_\text{Vak}$). Die \gls{wdbt}-Vorhersage enthält einen Zusatzterm zur \gls{qed}:
+    \item \textbf{Lamb Shift:} It results from the interaction of the electron with the fluctuating quantum potential of the vacuum ($Q_\text{Vak}$). The \gls{wdbt} prediction contains an additional term compared to \gls{qed}:
     \begin{equation}
         \label{eq:lamb_shift}
         \Delta E_{\text{Lamb}}^{\text{WDBT}} = \Delta E_{\text{QED}} + \frac{e^2 \hbar}{4\pi \epsilon_0 m_e^2 c^3} \langle r \rangle
     \end{equation}
-    Dieser term ist klein, aber prinzipiell messbar und stellt eine verfalsifizierbare Abweichung von der \gls{qed} dar. Anhang \ref{att:lamb_shift} zeigt mehr Details.
-    \item \textbf{g-Faktor:} Der anomaler g-Faktor emergiert aus der nicht-lokalen Kopplung des Elektronenspins (modelliert als Zitterbewegung in der \gls{wdbt}) an den kosmischen elektromagnetischen Hintergrund. Die Vorhersage stimmt mit der der \gls{qed} überein, da beide auf der gleichen effektiven Algebra der Spinwechselwirkung führen.
+    This term is small but in principle measurable and represents a falsifiable deviation from \gls{qed}. Appendix \ref{att:lamb_shift} shows more details.
+    \item \textbf{g-Factor:} The anomalous g-factor emerges from the non-local coupling of the electron spin (modeled as Zitterbewegung in \gls{wdbt}) to the cosmic electromagnetic background. The prediction agrees with that of \gls{qed}, as both lead to the same effective algebra of spin interaction.
 \end{itemize}
 
-\section{QED als triumphierende effektive Feldtheorie}
-Die Quantenelektrodynamik emergiert vollständig aus der Weber-De Broglie-Bohm-Theorie als deren effektive, statistische Beschreibung im Kontinuumslimes.
+\section{QED as a Triumphant Effective Field Theory}
+Quantum electrodynamics emerges completely from the Weber-De Broglie-Bohm theory as its effective, statistical description in the continuum limit.
 
 \begin{itemize}
-    \item \textbf{Felder} emergieren aus der Mittelung instantaner Weber-Wechselwirkungen.
-    \item \textbf{Feldquantisierung} emergiert aus den Anregungen des Quanten-Vakuummediums.
-    \item \textbf{Feynman-Diagramme} emergieren aus der Störungsentwicklung der nicht-lokalen Wechselwirkung.
-    \item \textbf{Renormierung} emergiert als Verfahren zur Extraktion beobachtbarer Größen aus der regularisierten \gls{wdbt}.
+    \item \textbf{Fields} emerge from the averaging of instantaneous Weber interactions.
+    \item \textbf{Field quantization} emerges from the excitations of the quantum vacuum medium.
+    \item \textbf{Feynman diagrams} emerge from the perturbation expansion of the non-local interaction.
+    \item \textbf{Renormalization} emerges as a procedure to extract observable quantities from the regularized \gls{wdbt}.
 \end{itemize}
 
-Die \gls{wdbt} löst damit die konzeptionellen Probleme der \gls{qed} (Unendlichkeiten, Virtualität, Ontologie) und bewahrt gleichzeitig deren gesamten empirischen Erfolg. Sie stellt die \gls{qed} auf
-ein solides, ontologisch klares Fundament direkter Teilchenwechselwirkungen und deterministischer Dynamik. Die \gls{qed} ist nicht falsch, sondern eine unvollständige Beschreibung einer tieferliegenden,
-nicht-lokalen Realität.
+\gls{wdbt} thus resolves the conceptual problems of \gls{qed} (infinities, virtuality, ontology) while preserving all its empirical success. It places \gls{qed} on a solid, ontologically clear foundation of direct particle interactions and deterministic dynamics. \gls{qed} is not wrong, but an incomplete description of a deeper, non-local reality.
