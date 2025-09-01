@@ -1,0 +1,200 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{fancyhdr}
+
+\title{Entwurf eines WED-Antriebs \\ (Weber-Elektrodynamik-Antrieb)}
+\author{Dipl.-Ing. (FH) Michael Czybor}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Prinzip des WED-Antriebs}
+
+Der WED-Antrieb basiert auf der \textbf{Weber-Elektrodynamik (WED)}, die eine direkte, geschwindigkeits- und beschleunigungsabhängige Wechselwirkung zwischen Ladungen
+postuliert. Im Gegensatz zu konventionellen Antrieben wird kein Massenausstoß benötigt.
+
+\subsection{Grundprinzip}
+
+\begin{itemize}
+    \item Im Raum existiert eine \textbf{externe Ladungsanomalie} $q_2$ (z.B. Elektron)
+    \item Im Raumschiff wird eine \textbf{Antriebsladung} $q_1$ durch ein unsymmetrisches HF-Feld (Sägezahnform) beschleunigt
+    \item Die \textbf{asymmetrische Beschleunigung} $\vec{a}_1(t)$ erzeugt eine Nettokraft auf die externe Ladung
+    \item Durch Actio=Reactio entsteht eine \textbf{Schubkraft} auf das Raumschiff
+\end{itemize}
+
+\section{Herleitung der Schubkraft}
+
+\subsection{Weber-Kraft zwischen zwei Ladungen}
+
+Die vektorielle Weber-Kraft zwischen zwei Ladungen $q_1$ und $q_2$ lautet:
+
+\begin{equation}
+\vec{F}_{12} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} 
+\left\{ 
+\left[1 - \frac{v^2}{c^2} + \frac{2r(\hat{r} \cdot \vec{a}_1)}{c^2}\right] \hat{r} 
++ \frac{2(\hat{r} \cdot \vec{v})}{c^2} \vec{v} 
+\right\}
+\end{equation}
+
+\subsection{Beschleunigungsabhängiger Term}
+
+Für den Antrieb relevant ist der beschleunigungsabhängige Term:
+
+\begin{equation}
+\vec{F}_{\text{acc}} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \cdot \frac{2r (\hat{r} \cdot \vec{a}_1)}{c^2} \hat{r}
+= \frac{q_1 q_2}{2\pi\epsilon_0 c^2 r} (\hat{r} \cdot \vec{a}_1) \hat{r}
+\end{equation}
+
+\subsection{Rückwirkung auf Raumschiff}
+
+Die Kraft auf das Raumschiff ist gleich der negativen Kraft auf die externe Ladung:
+
+\begin{equation}
+\vec{F}_{\text{Schub}} = -\vec{F}_{12} = -\frac{q_1 q_2}{2\pi\epsilon_0 c^2 r} (\hat{r} \cdot \vec{a}_1) \hat{r}
+\end{equation}
+
+\subsection{Zeitliche Mittelung}
+
+Für ein periodisches Sägezahnsignal mit Periodendauer $T$:
+
+\begin{equation}
+\langle \vec{F}_{\text{Schub}} \rangle = -\frac{q_1 q_2}{2\pi\epsilon_0 c^2 r} \langle \hat{r} \cdot \vec{a}_1 \rangle \hat{r}
+\end{equation}
+
+\subsection{Nettobeschleunigung}
+
+Für einen Sägezahn mit:
+\begin{itemize}
+    \item Steilrampe: $T_+$, $a_+$
+    \item Flachrampe: $T_-$, $a_-$
+\end{itemize}
+
+ergibt sich die Nettobeschleunigung:
+
+\begin{equation}
+a_{\text{netto}} = \frac{1}{T} (a_+ T_+ + a_- T_-)
+\end{equation}
+
+\section{Finale Schubgleichung}
+
+\begin{equation}
+\boxed{
+\langle \vec{F}_{\text{Schub}} \rangle = -\frac{q_1 q_2}{2\pi\epsilon_0 c^2 r} a_{\text{netto}} \cos\theta \cdot \hat{r}
+}
+\end{equation}
+
+wobei $\theta$ der Winkel zwischen $\hat{r}$ und $\vec{a}_{\text{netto}}$ ist.
+
+\section{Beispielrechnung}
+
+\subsection{Pessimistische Abschätzung}
+
+\begin{align*}
+q_1 &= -1\,\mu\text{C} = -10^{-6}\,\text{C} \\
+q_2 &= -e = -1.6 \times 10^{-19}\,\text{C} \\
+r &= 1\,\text{m} \\
+a_{\text{netto}} &= 10^6\,\text{m/s}^2 \\
+\cos\theta &= 1
+\end{align*}
+
+\begin{align*}
+F &= \frac{(10^{-6})(1.6 \times 10^{-19})}{2\pi (8.85 \times 10^{-12})(9 \times 10^{16}) \cdot 1} \cdot 10^6 \\
+&\approx 10^{-15}\,\text{N}
+\end{align*}
+
+\subsection{Optimierte Abschätzung}
+
+\begin{align*}
+q_1 &= -1\,\text{mC} = -10^{-3}\,\text{C} \\
+q_2 &= -1.6 \times 10^{-19}\,\text{C} \\
+M &= 10^{16} \\
+r &= 0.1\,\text{mm} = 10^{-4}\,\text{m} \\
+a_{\text{netto}} &= 10^{12}\,\text{m/s}^2 \\
+\cos\theta &= 1
+\end{align*}
+
+\begin{align*}
+F &= \frac{(10^{-3})(1.6 \times 10^{-19})(10^{16})}{2\pi (8.85 \times 10^{-12})(9 \times 10^{16}) \cdot 10^{-4}} \cdot 10^{12} \\
+&\approx 3200\,\text{N}
+\end{align*}
+
+\section{Regelprinzip}
+
+Die Schubrichtung wird durch die Richtung der Nettobeschleunigung $\vec{a}_{\text{netto}}$ gesteuert:
+
+\begin{equation}
+\vec{F}_{\text{Schub}} \propto (\hat{r} \cdot \vec{a}_{\text{netto}}) \hat{r}
+\end{equation}
+
+\subsection{Steuerungsgrößen}
+
+\begin{itemize}
+    \item \textbf{Amplitude}: Steuert die Schubstärke
+    \item \textbf{Phase}: Steuert die Richtung der Beschleunigung
+    \item \textbf{Tastverhältnis}: Steuert die Asymmetrie
+    \item \textbf{Frequenz}: Optimierung der Resonanz
+\end{itemize}
+
+\subsection{Regelkreis}
+
+\begin{enumerate}
+    \item Sollwert: Gewünschte Flugrichtung
+    \item Messung: Trägheitsnavigationssystem
+    \item Regelung: Anpassung der HF-Parameter
+    \item Wirkung: Schub in gewünschter Richtung
+\end{enumerate}
+
+\section{Konstruktionsprinzip}
+
+\subsection{Komponenten}
+
+\begin{itemize}
+    \item HF-Generator mit Sägezahnform
+    \item 3-Phasen-Elektrodenanordnung
+    \item Supraleitende Kavität für Ladungswolke
+    \item Regelungselektronik
+    \item Trägheitsnavigationssystem
+\end{itemize}
+
+\subsection{Betriebsparameter}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Parameter & Symbol & Wert \\
+\midrule
+HF-Frequenz & $f$ & \SI{1}{\mega\hertz} - \SI{1}{\giga\hertz} \\
+HF-Spannung & $U$ & \SI{1}{\kilo\volt} - \SI{10}{\kilo\volt} \\
+Ladungsmenge & $q_1$ & \SI{-1}{\milli\coulomb} \\
+Anzahl externer Ladungen & $M$ & $10^{16}$ \\
+Minimalabstand & $r_{\text{min}}$ & \SI{0.1}{\milli\meter} \\
+\bottomrule
+\end{tabular}
+\caption{Typische Betriebsparameter}
+\end{table}
+
+\section{Vorteile}
+
+\begin{itemize}
+    \item Kein Treibstoffverbrauch
+    \item Keine beweglichen Teile
+    \item Elektronische Steuerung
+    \item Sofortige Schubumkehr
+    \item Theoretisch unbegrenzte Betriebsdauer
+\end{itemize}
+
+\textcopyright{} \the\year{} Dipl.-Ing. (FH) Michael Czybor. Alle Rechte vorbehalten.
+
+\end{document}
