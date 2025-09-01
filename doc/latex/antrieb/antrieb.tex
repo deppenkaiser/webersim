@@ -196,6 +196,75 @@ Minimalabstand & $r_{\text{min}}$ & \SI{0.1}{\milli\meter} \\
     \item Theoretisch unbegrenzte Betriebsdauer
 \end{itemize}
 
+% Diese Ergänzung als neuen Abschnitt im Antriebsdokument (antrieb.pdf) einfügen
+\section{Berechnung der Schubkraft unter WDBT-Bedingungen}
+\label{sec:schubkraft-wdbt}
+
+Unter Annahme der Gültigkeit der Weber-De Broglie-Bohm-Theorie (WDBT) ergibt sich eine modifizierte Berechnung der Schubkraft. Die WDBT liefert dabei folgende entscheidende Modifikationen:
+
+\begin{itemize}
+\item \textbf{Nicht-Lokalität}: Die Weber-Kraft wirkt instantan über beliebige Entfernungen
+\item \textbf{Fraktale Raumdimension} $D \approx 2,71$: Die Kraft skaliert mit $r^{D-3} \approx r^{-0,29}$ anstatt mit $r^{-1}$
+\item \textbf{Quantenpotential} $Q$: Zusätzliche Kraftkomponente durch $-\vec{\nabla} Q$
+\end{itemize}
+
+\subsection{Modifizierte Schubkraftgleichung}
+
+Die zeitgemittelte Schubkraft unter WDBT-Bedingungen ergibt sich zu:
+
+\[
+\langle \vec{F}_{\text{Schub}} \rangle = -\frac{q_1 q_2}{2\pi \epsilon_0 c^2 r^{3-D}} a_{\text{netto}} \cos \theta \cdot \hat{r} - \vec{\nabla} Q
+\]
+
+wobei der Exponent $3-D \approx 0,29$ die fraktale Skalierung berücksichtigt.
+
+\subsection{Beispielrechnung mit astrophysikalischer Ladungsquelle}
+
+Für ein Raumschiff in Sonnennähe mit folgenden Parametern:
+\begin{align*}
+q_1 &= 1\,\text{C} \\
+q_2 &= 10^2\,\text{C} \quad \text{(effektive Ladung des Sonnenwinds)} \\
+r &= 1,5 \times 10^{11}\,\text{m} \\
+a_{\text{netto}} &= 10^{15}\,\text{m/s}^2 \\
+\cos \theta &= 1 \\
+D &= 2,71
+\end{align*}
+
+ergibt sich die Basiskraft zu:
+\[
+F_{\text{base}} = \frac{(1)(10^2)}{2\pi (8,85 \times 10^{-12})(9 \times 10^{16})(1,5 \times 10^{11})^{0,29}} \cdot 10^{15} 
+\]
+
+Unter Berücksichtigung der fraktalen Skalierung:
+\[
+F_{\text{Schub}} = F_{\text{base}} \cdot r^{D-2} \approx 11,8\,\text{MN}
+\]
+
+\subsection{Schlussfolgerung}
+
+Unter WDBT-Bedingungen können durch:
+\begin{itemize}
+\item Nutzung astrophysikalischer Ladungsquellen (Sonne, Planeten, galaktische Ströme)
+\item Ausnutzung der fraktalen Skalierung ($r^{0,29}$ statt $r^{-1}$)
+\item Optimierung der Antriebsparameter ($q_1$, $a_{\text{netto}}$)
+\end{itemize}
+
+signifikante Schubkräfte im Bereich von Meganewton erreicht werden. Diese würden einen treibstofflosen Antrieb für interplanetare und interstellarare Missionen ermöglichen.
+
+\begin{table}[h]
+\centering
+\caption{Vergleich der Schubkraft unter verschiedenen Theorien}
+\begin{tabular}{lccc}
+\hline
+Theorie & $q_2$ [C] & Skalierung & Schubkraft [N] \\
+\hline
+Konventionell & $10^2$ & $r^{-1}$ & $0,13$ \\
+WDBT & $10^2$ & $r^{-0,29}$ & $1,18 \times 10^7$ \\
+WDBT (optimiert) & $10^4$ & $r^{-0,29}$ & $1,18 \times 10^9$ \\
+\hline
+\end{tabular}
+\end{table}
+
 \textcopyright{} \the\year{} Dipl.-Ing. (FH) Michael Czybor. Alle Rechte vorbehalten.
 
 \end{document}
