@@ -196,6 +196,172 @@ Minimalabstand & $r_{\text{min}}$ & \SI{0.1}{\milli\meter} \\
     \item Theoretisch unbegrenzte Betriebsdauer
 \end{itemize}
 
+% !TEX encoding = UTF-8 Unicode
+\section{Optimierung des Prinzips: Der Closed-Loop WED-Antrieb}
+
+Die ursprüngliche Konzeption des WED-Antriebs basiert auf der Wechselwirkung mit einer externen, distanten Ladung (z.B. eines Elektrons im kosmischen Plasma). Diese
+Konfiguration liefert aufgrund der großen Abstände $r$ nur vernachlässigbare Schubkräfte. Die entscheidende Optimierung besteht daher darin, das Konzept der \textit{externen}
+Ladung $q_2$ zu reinterpretieren und sie als integralen, mitgeführten Bestandteil des Antriebssystems zu etablieren.
+
+\subsection{Konzept des Closed-Loop Systems}
+
+Im \textbf{Closed-Loop}- oder \textbf{Local-Source}-Ansatz wird die externe Ladung $q_2$ nicht im Kosmos gesucht, sondern ist eine zweite, isolierte und fest mit der Raumfahrzeugstruktur verbundene Elektrode. Das Antriebssystem besteht somit aus drei Kernkomponenten:
+\begin{itemize}
+    \item einer \textbf{Antriebselektrode}, die die Ladung $q_1$ trägt und von einem HF-Generator mit Sägezahnspannung asymmetrisch beschleunigt wird,
+    \item einer \textbf{externen Elektrode}, die die Ladung $q_2$ trägt und als Interaktionspartner für die Weber-Kraft dient, und
+    \item einer \textbf{Hochspannungs- und Steuerelektronik} zur Aufrechterhaltung der Ladungen und Ansteuerung des Generators.
+\end{itemize}
+
+Die Weber-Kraft $\vec{F}_{12}$ wirkt zwischen $q_1$ und der lokal mitgeführten Ladung $q_2$. Da $q_2$ starr mit dem Gehäuse verbunden ist, wirkt die Kraft $\vec{F}_{12}$ direkt als Schubkraft auf das Raumfahrzeug. Die reactio-Kraft $-\vec{F}_{12}$ auf $q_1$ wird vom Halterahmen des HF-Generators aufgefangen, der seinerseits am Gehäuse befestigt ist. Der Nettoschub auf das Gesamtsystem bleibt erhalten.
+
+\subsection{Vorteile und Praktikabilität}
+
+Dieser Ansatz umgeht die fundamentalen praktischen Limitationen des Open-Loop-Prinzips:
+\begin{itemize}
+    \item \textbf{Kontrolle:} Die Eigenschaften der externen Ladung $q_2$ (Größe, Vorzeichen, Position) sind vollständig kontrollierbar.
+    \item \textbf{Abstand:} Der Abstand $r$ zwischen $q_1$ und $q_2$ kann mechanisch auf ein Minimum (Millimeter- oder Mikrometerbereich) reduziert werden, was die Schubkraft gemäß $F_{\text{Schub}} \propto 1/r$ massiv verstärkt.
+    \item \textbf{Unabhängigkeit:} Der Antrieb ist nicht von unkontrollierbaren Umweltbedingungen abhängig und funktioniert in jedem beliebigen Raum.
+\end{itemize}
+
+\subsection{Berechnung der Schubkraft}
+
+Unter Verwendung der finalen Schubgleichung (6) und der Annahme $\cos\theta = 1$ ergibt sich die skalare Schubkraft zu:
+\[
+F_{\text{Schub}} = \frac{|q_1 q_2|}{2\pi\epsilon_0 c^2 r} a_{\text{netto}}
+\]
+Eine optimierte Abschätzung mit praktisch machbaren Parametern demonstriert das Potential:
+\begin{align*}
+q_1 = -q_2 &= 1\,\mathrm{mC} = 10^{-3}\,\mathrm{C} \\
+r &= 1\,\mathrm{mm} = 10^{-3}\,\mathrm{m} \\
+a_{\text{netto}} &= 10^{12}\,\mathrm{m/s}^2
+\end{align*}
+\[
+F_{\text{Schub}} = \frac{(10^{-3})^2}{2\pi (8.85 \times 10^{-12}) (9 \times 10^{16}) \cdot (10^{-3})} \cdot 10^{12} \approx 200\,\mathrm{N}
+\]
+Dies stellt eine substantiale Schubkraft dar, die mit derjenigen konventioneller chemischer oder elektrischer Triebwerke vergleichbar ist.
+
+\subsection{Herausforderungen}
+
+Die verbleibenden Herausforderungen sind nun primär praktischer Natur:
+\begin{itemize}
+    \item \textbf{Mechanische Stabilität:} Der Halterahmen für $q_1$ muss die reactio-Kraft $-\vec{F}_{12}$ aufnehmen, ohne sie an das Gehäuse weiterzuleiten.
+    \item \textbf{Ladungserhaltung:} Die Isolation der Ladungen $q_1$ und $q_2$ muss perfekt sein; jeglicher Ladungsverlust muss kompensiert werden.
+    \item \textbf{Energieeffizienz:} Der Wirkungsgrad der gesamten Energieumwandlungskette (von der Stromversorgung zum Nettoschub) muss analysiert und optimiert werden.
+\end{itemize}
+
+Diese Optimierung transformiert das WED-Antriebskonzept von einer theoretischen Kuriosität in eine potenziell realisierbare Antriebstechnologie, die die nicht-lokalen und
+beschleunigungsabhängigen Eigenschaften der Weber-Elektrodynamik innerhalb eines geschlossenen Systems ausnutzt.
+
+
+% !TEX encoding = UTF-8 Unicode
+\subsection{Aufnahme der Reaktionskraft: Aktive elektrodynamische Lagerung}
+
+Die von der Antriebsladung $q_1$ auf den Halterahmen des HF-Generators ausgeübte Reaktionskraft $-\vec{F}_{12}$ muss isoliert vom Raumfahrzeuggehäuse aufgefangen werden. Eine passive mechanische Lagerung (z.B. Federn, Stoßdämpfer) wäre für die erforderlichen hohen Frequenzen und Kräfte ungeeignet, da sie resonante Schwingungen des Gesamtsystems anregen und Energie dissipieren würde.
+
+Das Prinzip der Lösung ist eine \textbf{aktive, berührungsfreie elektrodynamische Lagerung} des gesamten Aktor- und Ladungsträgermoduls (im Folgenden „Schwungmasse“ genannt).
+
+\subsubsection*{Funktionsprinzip}
+
+\begin{itemize}
+    \item Die Schwungmasse (enthält $q_1$, Elektrode, ggf. Teile des Generators) ist mechanisch \textbf{völlig entkoppelt} im Gehäuse aufgehängt.
+    \item Ihre Position und Orientierung relativ zum Gehäuse wird permanent durch einen optischen oder kapazitiven Sensor überwacht.
+    \item Ein unterlagerter Regelkreis (z.B. ein PID-Regler) berechnet in Echtzeit die nötige Gegenkraft, um die Schwungmasse in ihrer Soll-Position (Mitte) zu halten.
+    \item Diese Gegenkraft wird durch \textbf{Lorentz-Kraft-Aktoren} erzeugt: Starke, supraleitende Spulen (am Gehäuse) erzeugen ein magnetisches Feld, in dem sich Spulen an der Schwungmasse befinden. Durch Ansteuerung der Spulen an der Schwungmasse mit einem geregelten Strom wird exakt die Kraft erzeugt, die nötig ist, um die Reaktionskraft $-\vec{F}_{12}$ auszugleichen.
+\end{itemize}
+
+\subsubsection*{Energiefluss}
+
+Der Energie- und Kraftfluss im Gesamtsystem sieht wie folgt aus:
+
+\begin{enumerate}
+    \item Der \textbf{HF-Generator} beschleunigt $q_1$ und erzeugt so die Weber-Kraft $\vec{F}_{12}$ auf $q_2$ (Schub).
+    \item Die Reaktionskraft $-\vec{F}_{12}$ versucht, die Schwungmasse zu beschleunigen.
+    \item Der \textbf{Positionssensor} detektiert die beginnende Auslenkung der Schwungmasse.
+    \item Der \textbf{Lagerungsregler} berechnet den benötigten Strom $I$ für die Lorentz-Aktoren.
+    \item Die \textbf{Lorentz-Aktoren} erzeugen die Kraft $\vec{F}_\text{Lorentz} = + \vec{F}_{12}$, um die Schwungmasse in Position zu halten.
+    \item Die Kraft $\vec{F}_\text{Lorentz}$ wirkt auf die Aktorspulen (an der Schwungmasse) und damit nach Newton's third law auch als $-\vec{F}_\text{Lorentz}$ auf die Gehäusespulen. Da diese starr am Gehäuse befestigt sind, wird diese Kraft vom Gehäuse \textbf{aufgenommen und dissipiert}. Entscheidend ist, dass diese Kraft \textit{intern} ist und keinen Nettoschub auf das Raumfahrzeug erzeugt.
+\end{enumerate}
+
+\subsubsection*{Zusammenfassung der Kräfte}
+
+\begin{align*}
+\textbf{Auf das Raumfahrzeug:} &\quad \vec{F}_{\text{Schub}} = \vec{F}_{12}(q_1 \rightarrow q_2) \\
+\textbf{Auf die Schwungmasse:} &\quad \vec{F}_{\text{res}} = -\vec{F}_{12} + \vec{F}_\text{Lorentz} = \vec{0} \\
+\textbf{Auf das Gehäuse:} &\quad \vec{F}_{\text{res}} = +\vec{F}_{12} (\text{von } q_2) - \vec{F}_\text{Lorentz} (\text{von Aktor}) = \vec{0}
+\end{align*}
+
+Der Nettoeffekt ist, dass die Reaktionskraft $-\vec{F}_{12}$ von der aktiven Lagerung „abgefangen“ und in Wärme umgewandelt wird, während die Schubkraft $\vec{F}_{12}$
+vollständig auf das Raumfahrzeug wirkt.
+
+Diese aktive Lagerungstechnologie ist anspruchsvoll, jedoch in ähnlicher Form bereits von \textbf{ruhmlosen Lagern} in Flywheels für Satelliten oder von
+\textbf{Präzisions-Vakuumplatformen} bekannt.
+
+% !TEX encoding = UTF-8 Unicode
+\section{Bauplan des WED-Antriebs: Relativistischer Closed-Loop}
+
+Die praktische Realisierung des WED-Antriebs erfordert die Überwindung der gigantischen Coulomb-Anziehung zwischen den mitgeführten Ladungen $q_1$ und $q_2$. Die Lösung liegt in der Ausnutzung der geschwindigkeitsabhängigen Terme der Weber-Kraft, um einen „relativistischen Käfig“ zu erzeugen, in dem die Anziehungskraft kompensiert ist. Dieser Abschnitt beschreibt den Bauplan für einen solchen Antrieb.
+
+\subsection{Komponenten und Aufbau}
+
+Das Antriebssystem besteht aus folgenden Kernkomponenten:
+
+\begin{itemize}
+    \item \textbf{Zentrale Elektrode („Anker“):} Trägt die Ladung $q_1$ und ist starr mit der Struktur des Raumfahrzeugs verbunden.
+    \item \textbf{Radialer Beschleunigungsring:} Ein supraleitender Ring, der die Ladung $q_2$ trägt und diese auf einer Kreisbahn um $q_1$ hält. Der Ring ist über eine \textbf{aktive elektrodynamische Lagerung} berührungsfrei im Gehäuse gelagert.
+    \item \textbf{Umlaufaktorsystem:} Ein System aus supraleitenden Spulen, das ein magnetisches Feld erzeugt, um die Ladung $q_2$ auf ihrer Bahn zu halten und ihre Geschwindigkeit nahe der Lichtgeschwindigkeit ($v \approx c$) zu stabilisieren.
+    \item \textbf{HF-Generator („Stimulator“):} Ein Hochfrequenz-Generator, der phasengenau zum Umlauf von $q_2$ eine Sägezahnspannung an den Radialring anlegt, um eine zusätzliche \textbf{radiale Beschleunigungskomponente} $a_{\text{HF}}$ zu erzeugen.
+    \item \textbf{Regelungselektronik:} Überwacht kontinuierlich die Position von $q_2$ und regelt die Umlaufgeschwindigkeit, die aktive Lagerung und die HF-Stimulation in Echtzeit.
+\end{itemize}
+
+\subsection{Funktionsprinzip und Betriebsregime}
+
+Der Antrieb durchläuft zwei distincte Betriebsphasen:
+
+\subsubsection*{1. Initialisierungsphase (Hochfahren)}
+
+In dieser Phase wird die Ladung $q_2$ from Ruhe auf ihre Betriebsgeschwindigkeit beschleunigt. 
+\begin{enumerate}
+    \item Durch allmähliches Hochregeln des Magnetfelds im Umlaufaktorsystem wird $q_2$ auf eine Kreisbahn gezwungen und auf $v \approx c$ beschleunigt.
+    \item Während dieses Prozesses kompensiert der Term $-\frac{v^2}{c^2}$ in der Weber-Kraft zunehmend die Coulomb-Anziehung $+1$.
+    \item Im Zielzustand heben sich Anziehung und Kompensation nahezu vollständig auf. Die Umlaufbahn ist stabil und kraftfrei bis auf die zur Aufrechterhaltung der Kreisbahn notwendige Zentripetalkraft, die vom Magnetfeld geliefert wird.
+\end{enumerate}
+
+\subsubsection*{2. Betriebsphase (Schuberzeugung)}
+
+Im kompensierten Zustand wird der HF-Generator aktiviert:
+\begin{enumerate}
+    \item Die Regelungselektronik detektiert die aktuelle Position von $q_2$ auf ihrer Umlaufbahn.
+    \item Zum exakt berechneten Zeitpunkt (Phase), wenn $q_2$ in die gewünschte Schubrichtung zeigt, legt der HF-Generator einen Spannungspuls an den Radialring an.
+    \item Dieser Puls beschleunigt $q_2$ für extrem kurze Zeit \textbf{radial} – typischerweise \textit{von} $q_1$ weg für Schub in die entgegengesetzte Richtung.
+    \item Während dieser Beschleunigungsphase $(\hat{r} \cdot \vec{a} \neq 0)$ ist der beschleunigungsabhängige Term in der Weber-Kraft aktiv:
+    \[
+    \vec{F}_{12} \approx \frac{q_{1}q_{2}}{2\pi\epsilon_{0} c^{2} r}  a_{\text{HF}}  \hat{r}
+    \]
+    \item Diese Kraft wirkt auf $q_1$ (den „Anker“) und damit auf das Raumfahrzeug. Die Reaktionskraft auf $q_2$ wird von der aktiven Lagerung des Radialrings aufgefangen.
+    \item Nach dem Puls relaxiert das System zurück in den kompensierten Grundzustand, bereit für den nächsten Zyklus.
+\end{enumerate}
+
+\subsection{Schubsteuerung}
+
+Die Steuerung von Schubrichtung und -stärke erfolgt durch:
+\begin{itemize}
+    \item \textbf{Richtung:} Variation der \textbf{Phase} der HF-Stimulation relativ zur Umlaufposition von $q_2$. Durch Verschiebung des Stimulationszeitpunkts kann die radiale Beschleunigung in jede beliebige Richtung in der Bahnebene appliziert werden.
+    \item \textbf{Stärke:} Variation der \textbf{Amplitude} des HF-Signals, welche die Stärke der radialen Beschleunigung $a_{\text{HF}}$ direkt kontrolliert.
+\end{itemize}
+
+\subsection{Technische Herausforderungen}
+
+Die Realisierung dieses Bauplans stellt extreme Anforderungen:
+\begin{itemize}
+    \item \textbf{Supraleitung:} Notwendig, um die gewaltigen Ströme für das Umlaufaktorsystem und die Lagerung zu führen und ohmsche Verluste zu vermeiden.
+    \item \textbf{Energiebedarf:} Die Initialisierungsphase erfordert eine immense Energiezufuhr, um $q_2$ auf relativistische Geschwindigkeit zu bringen. Der Dauerbetrieb benötigt Leistung für Umlauf, Lagerung und Stimulation.
+    \item \textbf{Präzisionsregelung:} Die Synchronisation von Umlauffrequenz, HF-Phase und Lagerungskräften erfordert eine Echtzeitregelung auf Nano- bis Pikosekunden-Niveau.
+    \item \textbf{Stabilität:} Das System must against externe Störungen und interne Instabilitäten (z.B. Strahlungsverluste) stabilisiert werden.
+\end{itemize}
+
+Dieser Bauplan transformiert das theoretische Konzept der Weber-Kraft in ein technisches Antriebsprinzip, das, obwohl extrem anspruchsvoll, innerhalb der Postulate der WDBT
+konsistent und funktional erscheint. \newline
+
 \textcopyright{} \the\year{} Dipl.-Ing. (FH) Michael Czybor. Alle Rechte vorbehalten.
 
 \end{document}
