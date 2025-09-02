@@ -21,3 +21,26 @@
 \contentsline {subsection}{\numberline {1.4.2}Nicht-lokale Kopplung zwischen Galaxien}{4}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Emergenz der Raumzeit}{4}{subsection.1.4.3}%
 \contentsline {subsection}{\numberline {1.4.4}Kosmologische Evolution}{4}{subsection.1.4.4}%
+\contentsline {chapter}{\numberline {2}Das Sonnenmodell im WBFM-Rahmen}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Die Sonne als aktiver Quantenfilter}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Energie-Materie-Transformation im solaren Kern}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Phasenstruktur und Zonierung}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Transferfunktion des solaren Filters}{6}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Numerische Implementierung}{6}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Testbare Vorhersagen}{6}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Konkretes Sonnenmodell im WBFM}{6}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Parameterisierung des solaren Filterknotens}{6}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Wellenfunktions-Parameter}{7}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Quantenpotential und Temperatur}{7}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.4}Materieerzeugungsrate}{7}{subsection.2.7.4}%
+\contentsline {subsection}{\numberline {2.7.5}Heliosphären-Randbedingung}{7}{subsection.2.7.5}%
+\contentsline {subsection}{\numberline {2.7.6}Transferfunktion des solaren Filters}{7}{subsection.2.7.6}%
+\contentsline {subsection}{\numberline {2.7.7}Vorhersagen und Verifikation}{7}{subsection.2.7.7}%
+\contentsline {section}{\numberline {2.8}Wellenwiderstand im WBFM: Die Impedanz des Quantenvakuums}{8}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Definition der kosmischen Impedanz}{8}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Impedanzanpassung im solaren Filter}{8}{subsection.2.8.2}%
+\contentsline {subsection}{\numberline {2.8.3}Wellenwiderstand und Quantenpotential}{8}{subsection.2.8.3}%
+\contentsline {subsection}{\numberline {2.8.4}Impedanzsprünge an Phasengrenzen}{8}{subsection.2.8.4}%
+\contentsline {subsection}{\numberline {2.8.5}Energieübertragung und Wirkungsgrad}{9}{subsection.2.8.5}%
+\contentsline {subsection}{\numberline {2.8.6}Messbare Konsequenzen}{9}{subsection.2.8.6}%
+\contentsline {subsection}{\numberline {2.8.7}Vergleich mit elektromagnetischer Impedanz}{9}{subsection.2.8.7}%
