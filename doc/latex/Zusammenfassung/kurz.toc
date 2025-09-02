@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {2.1}Weber-Elektrodynamik (WED)}{2}{subsection.2.1}%
 \contentsline {paragraph}{Skalare Form (Zentralkraftnäherung):}{2}{section*.2}%
 \contentsline {paragraph}{Vektorielle Form (allgemeiner Kraftvektor):}{2}{section*.3}%
-\contentsline {subsection}{\numberline {2.2}Weber-Gravitation (WG)}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Weber-Gravitation (WG)}{2}{subsection.2.2}%
 \contentsline {paragraph}{Gravitationskraft:}{3}{section*.4}%
 \contentsline {subsection}{\numberline {2.3}De-Broglie-Bohm-Theorie (DBT) und Quantenpotential}{3}{subsection.2.3}%
 \contentsline {paragraph}{Quantenpotential:}{3}{section*.5}%
