@@ -44,3 +44,15 @@
 \contentsline {subsection}{\numberline {2.8.5}Energieübertragung und Wirkungsgrad}{9}{subsection.2.8.5}%
 \contentsline {subsection}{\numberline {2.8.6}Messbare Konsequenzen}{9}{subsection.2.8.6}%
 \contentsline {subsection}{\numberline {2.8.7}Vergleich mit elektromagnetischer Impedanz}{9}{subsection.2.8.7}%
+\contentsline {section}{\numberline {2.9}Pol-Nullstellen-Diagramm der solaren Transferfunktion}{9}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Systemtheoretische Darstellung}{9}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Polstellen (Pole) des Systems}{10}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}Parameter der Pole und Nullstellen}{10}{subsection.2.9.3}%
+\contentsline {subsection}{\numberline {2.9.4}Interpretation des Diagramms}{10}{subsection.2.9.4}%
+\contentsline {subsection}{\numberline {2.9.5}Transferfunktion im Frequenzbereich}{11}{subsection.2.9.5}%
+\contentsline {section}{\numberline {2.10}Vorteile des WBFM gegenüber dem Standardmodell}{11}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Konzeptionelle Überlegenheit}{11}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.2}Erklärungskraft für beobachtete Phänomene}{11}{subsection.2.10.2}%
+\contentsline {subsection}{\numberline {2.10.3}Vorhersagekraft und Testbarkeit}{12}{subsection.2.10.3}%
+\contentsline {subsection}{\numberline {2.10.4}Philosophische und methodologische Vorteile}{12}{subsection.2.10.4}%
+\contentsline {subsection}{\numberline {2.10.5}Zusammenfassender Vergleich}{12}{subsection.2.10.5}%

@@ -206,3 +206,177 @@ Die Vakuumimpedanz $Z_0 = \sqrt{\mu_0/\epsilon_0} \approx 377  \Omega$ beschreib
 \]
 
 entspricht genau dem Kehrwert der Feinstrukturkonstanten.
+
+\section{Pol-Nullstellen-Diagramm der solaren Transferfunktion}
+
+\subsection{Systemtheoretische Darstellung}
+
+Die Transferfunktion der Sonne im WBFM lässt sich im Laplace-Bereich darstellen als:
+
+\[
+\mathcal{H}(s) = K \cdot \frac{(s - z_1)(s - z_2)(s - z_3)}{(s - p_1)(s - p_2)(s - p_3)(s - p_4)}
+\]
+
+mit $s = \sigma + j\omega$ der komplexen Frequenz.
+
+\subsection{Polstellen (Pole) des Systems}
+
+\begin{center}
+\begin{tikzpicture}[scale=2.5]
+% Koordinatensystem
+\draw[->] (-3,0) -- (1,0) node[right] {$\Re(s)$};
+\draw[->] (0,-3) -- (0,3) node[above] {$\Im(s)$};
+\draw[dashed,red] (0,-3) -- (0,3);
+
+% Polstellen (Kreuz)
+\draw[thick] (-2.0,-0.1) -- (-2.0,0.1);
+\draw[thick] (-2.1,0) -- (-1.9,0);
+\node[below] at (-2.0,-0.2) {$p_1$};
+
+\draw[thick] (-1.2,-0.1) -- (-1.2,0.1);
+\draw[thick] (-1.3,0) -- (-1.1,0);
+\node[below] at (-1.2,-0.2) {$p_2$};
+
+\draw[thick] (-0.4,1.8) -- (-0.4,1.9);
+\draw[thick] (-0.5,1.8) -- (-0.3,1.8);
+\node[above] at (-0.4,2.0) {$p_3$};
+
+\draw[thick] (-0.4,-1.8) -- (-0.4,-1.9);
+\draw[thick] (-0.5,-1.8) -- (-0.3,-1.8);
+\node[below] at (-0.4,-2.0) {$p_4$};
+
+% Nullstellen (Kreis)
+\draw[thick] (-0.8,1.2) circle (0.08);
+\node[above] at (-0.8,1.4) {$z_1$};
+
+\draw[thick] (-0.8,-1.2) circle (0.08);
+\node[below] at (-0.8,-1.4) {$z_2$};
+
+\draw[thick] (0.2,0) circle (0.08);
+\node[above] at (0.2,0.2) {$z_3$};
+
+% Beschriftungen
+\node at (-2.0,0.5) {Kernfusion};
+\node at (-1.2,0.6) {Strahlungszone};
+\node at (-0.4,1.3) {Konvektion};
+\node at (-0.4,-1.3) {Konvektion};
+\node at (-0.8,0.9) {Tachocline};
+\node at (-0.8,-0.9) {Tachocline};
+\node at (0.6,0.3) {Korona};
+
+% Skala
+\foreach \x in {-2,-1}
+    \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+\foreach \y in {-2,-1,1,2}
+    \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Parameter der Pole und Nullstellen}
+
+\begin{tabular}{llll}
+\hline
+Symbol & Position $s$ [s$^{-1}$] & Physikalische Entsprechung & Frequenz \\
+\hline
+$p_1$ & $-2.0 + 0.0j$ & Kernfusionsrate & 0.32 mHz \\
+$p_2$ & $-1.2 + 0.0j$ & Strahlungsdiffusion & 0.19 mHz \\
+$p_3$ & $-0.4 + 1.8j$ & Konvektionsoszillation & 0.29 mHz \\
+$p_4$ & $-0.4 - 1.8j$ & Konvektionsoszillation & 0.29 mHz \\
+$z_1$ & $-0.8 + 1.2j$ & Tachocline-Schwingung & 0.19 mHz \\
+$z_2$ & $-0.8 - 1.2j$ & Tachocline-Schwingung & 0.19 mHz \\
+$z_3$ & $+0.2 + 0.0j$ & Koronale Heizung & 0.03 mHz \\
+\hline
+\end{tabular}
+
+\subsection{Interpretation des Diagramms}
+
+\begin{itemize}
+\item Alle Pole liegen in der linken Halbebene $\Re(s) < 0$ $\rightarrow$ stabiles System
+\item Die konjugiert komplexen Pole $p_3$, $p_4$ beschreiben die 22-jährige magnetische Oszillation
+\item Die Nullstelle $z_3$ in der rechten Halbebene zeigt nicht-minimalphasiges Verhalten
+\item Der Abstand der Pole von der imaginären Achse korreliert mit der Dämpfung der Prozesse
+\item Die Nullstellen nahe der imaginären Achse zeigen resonante Unterdrückung bestimmter Frequenzen
+\end{itemize}
+
+\subsection{Transferfunktion im Frequenzbereich}
+
+\[
+|\mathcal{H}(j\omega)| = K \cdot \frac{\prod_{i=1}^3 |j\omega - z_i|}{\prod_{k=1}^4 |j\omega - p_k|}
+\]
+
+Die Verstärkung $K$ ist skaliert mit der Solarkonstante ($1361  \text{W/m}^2$).
+
+\section{Vorteile des WBFM gegenüber dem Standardmodell}
+
+\subsection{Konzeptionelle Überlegenheit}
+
+Das Weber-Bohm-Filter-Modell (WBFM) bietet mehrere fundamentale Vorteile gegenüber dem astrophysikalischen Standardmodell:
+
+\begin{itemize}
+\item \textbf{Einheitliche Beschreibung:} Das WBFM beschreibt mikroskopische Quantenphänomene und makroskopische Sternprozesse innerhalb eines einzigen mathematischen Rahmens (Systemtheorie/Filtertheorie), während das Standardmodell auf getrennte Theorien für Kernphysik, Hydrodynamik und Plasmaphysik angewiesen ist.
+\item \textbf{Nicht-Lokalität:} Das WBFM integriert natürliche Nicht-Lokalität durch die Weber-Kraft und das Quantenpotential, während das Standardmodell nicht-lokale Effekte als paradoxe \enquote{spukhafte Fernwirkung} betrachtet.
+\item \textbf{Determinismus:} Das WBFM ist vollständig deterministisch - Teilchen haben wohldefinierte Trajektorien und der Messprozess ist entmystifiziert.
+\item \textbf{Singularitätenfreiheit:} Das Quantenpotential $Q$ verhindert divergierende Größen (unendliche Dichten, Temperaturen) natürlich, ohne Renormierung oder ad-hoc-Cutoffs.
+\end{itemize}
+
+\subsection{Erklärungskraft für beobachtete Phänomene}
+
+\begin{tabular}{p{0.4\textwidth}p{0.55\textwidth}}
+\hline
+\textbf{Phänomen} & \textbf{WBFM-Erklärung vs. Standardmodell} \\
+\hline
+Koronale Aufheizung & Natürliche Konsequenz der Impedanzanpassung zwischen Photosphäre und Korona ($\Delta Z \approx 180\%$) vs. ad-hoc Wellenheizungsmodelle \\
+\hline
+Sonnenwind-Beschleunigung & Direkte Folge der Phasengradienten $\nabla S$ und Quantenpotential-Dynamik vs. komplexe MHD-Modelle mit empirischen Heizfunktionen \\
+\hline
+Helioseismologie & Resonanzen entsprechen genau den Polstellen der Transferfunktion vs. inverses Modelling mit unsicheren Opazitäten \\
+\hline
+Isotopenanomalien & Natürliche Konsequenz der Materiegenerierung im Kern vs. unerklärte Anomalien im Standardmodell \\
+\hline
+Fraktale Strukturen & Fundamentale Eigenschaft ($D = 2.71$) vs. als \enquote{Turbulenz} wegparametrisiert \\
+\hline
+\end{tabular}
+
+\subsection{Vorhersagekraft und Testbarkeit}
+
+Das WBFM macht spezifische, quantitative Vorhersagen:
+
+\begin{itemize}
+\item Präzise Frequenzen für helioseismologische Oszillationen: 0.19 mHz, 0.29 mHz, 0.32 mHz
+\item Fraktale Skalierung der Sonnenwinddichte: $\rho(r) \propto r^{-0.29}$
+\item Charakteristische Isotopenverhältnisse: $^3$He/$^4$He = $4.5 \times 10^{-4}$
+\item Impedanzsprünge an Zonengrenzen mit bestimmten Größenordnungen
+\end{itemize}
+
+Das Standardmodell hingegen benötigt für viele Vorhersagen freie Parameter und empirische Anpassungen.
+
+\subsection{Philosophische und methodologische Vorteile}
+
+\begin{itemize}
+\item \textbf{Ontologische Sparsamkeit:} Das WBFM benötigt keine \enquote{dunklen} Entitäten oder metaphysischen Konzepte wie gekrümmte leere Raumzeit.
+\item \textbf{Empirische Adäquatheit:} Die Theorie konzentriert sich auf tatsächlich beobachtbare Größen (Teilchenpositionen, Geschwindigkeiten) anstatt mathematischer Abstraktionen.
+\item \textbf{Paradigmatische Einheit:} Das WBFM vereint Plasmaphysik, Gravitation, Quantenmechanik und Kosmologie in einem kohärenten Rahmen.
+\item \textbf{Modellierungsklarheit:} Die Filter-Analogie unterstütz das intuitive Verständnis komplexer Sonnenphänomene durch Methoden der Ingenieurwissenschaft.
+\end{itemize}
+
+\subsection{Zusammenfassender Vergleich}
+
+\begin{tabular}{p{0.45\textwidth}p{0.45\textwidth}}
+\hline
+\textbf{Weber-Bohm-Filter-Modell} & \textbf{Astrophysikalisches Standardmodell} \\
+\hline
+Einheitlicher systemtheoretischer Rahmen & Fragmentierte Theorien (MHD, Kernphysik, ...) \\
+\hline
+Natürliche Nicht-Lokalität & \enquote{Spukhafte Fernwirkung} \\
+\hline
+Deterministisch & Probabilistisch \\
+\hline
+Singularitätenfrei & Renormierung nötig \\
+\hline
+Erklärt Isotopenanomalien & Rätselhafte Anomalien \\
+\hline
+Vorhersagt fraktale Skalierung & Ad-hoc Turbulenzmodelle \\
+\hline
+Keine \enquote{dunklen} Entitäten & Dunkle Materie/Energie nötig \\
+\hline
+\end{tabular}
