@@ -1,130 +1,3 @@
-\chapter{Anwendung des WBFM auf die solare Korona}
-
-\section{Das Koronaproblem im Standardmodell}
-Die solare Korona stellt eines der persistentesten Rätsel der Astrophysik dar. Während die Photosphäre eine effektive Temperatur von circa 5800\,K aufweist, erreicht die
-Korona Temperaturen von $1-2\times 10^6$\,K. Dieser extreme Temperaturgradient verletzt die intuitive Erwartung thermodynamischen Gleichgewichts. Konventionelle Modelle
-versuchen dies durch magnetische Wellenheizung (Alfvén-Wellen) oder Nanoflare-Reconnection zu erklären, bleiben jedoch letztlich ad-hoc und quantitativ unbefriedigend.
-
-\section{Die Korona im Weber-Bohm-Filter-Modell}
-Im WBFM wird die Korona nicht als passiv geheizte Region, sondern als aktive \textit{Auskopplungszone} interpretiert, deren Eigenschaften durch einen fundamentalen
-Impedanzsprung entstehen.
-
-\subsection{Impedanzsprung an der Photosphären-Korona-Grenzschicht}
-Die solare Impedanz $Z_S(r)$ erfährt an der Übergangsregion einen charakteristischen Sprung:
-\[
-\Delta Z = \frac{Z_{\text{Korona}} - Z_{\text{Photosphäre}}}{Z_{\text{Photosphäre}}} \approx +180\%
-\]
-Dieser extreme Mismatch resultiert aus der radialen Impedanzverteilung:
-\[
-Z_S(r) = Z_Q \left( \frac{r}{R_\odot} \right)^{D-2}
-\]
-mit der Vakuumimpedanz $Z_Q \approx 4.8\times 10^3\,\Omega$ und der fraktalen Dimension $D \approx 2.71$.
-
-\subsection{Entstehung stehender Wellen und Aufheizung}
-Der Impedanzsprung führt zur Reflexion eines Teils der aus dem Sonneninneren kommenden Energiewelle (beschrieben durch den Phasengradienten $\nabla S$). Die Überlagerung von einfallender und reflektierter Welle erzeugt stehende Wellen:
-\[
-\eta(r) = 1 - \left| \frac{Z_S(r) - Z_Q}{Z_S(r) + Z_Q} \right|^2
-\]
-wobei $\eta(r)$ den Transmissionseffizienz angibt. Die Dissipation der stehenden Wellenenergie im koronalen Plasma manifestiert sich als thermische Aufheizung.
-
-\subsection{Beschleunigung des Sonnenwinds}
-Der Strahlungsdruck der stehenden Wellen übt eine nach außen gerichtete Kraft auf das Plasma aus und beschleunigt den Sonnenwind:
-\[
-\nabla S_S|_{r=R_H} = m_p v_{\text{wind}} \left(1 + \beta \ln\frac{r}{R_\odot}\right)
-\]
-mit $\beta \approx 0.1$ für die beobachtete Beschleunigung.
-
-\section{Testbare Vorhersagen und Verifikation}
-Das WBFM macht spezifische Vorhersagen für die Korona:
-\begin{itemize}
-    \item \textbf{Stehwellenresonanzen}: Charakteristische Frequenzen bei 0.03\,mHz (koronale Heizung) und 0.29\,mHz (Konvektionsoszillation)
-    \item \textbf{Reflektierte Leistung}: $P_{\text{refl}} \approx 0.02L_\odot$ an der Heliopause
-    \item \textbf{Stehwellenverhältnis}: SWR $\approx$ 1.5--2.0 im solaren Wind
-    \item \textbf{Temperaturgradient}: $k_B T(r) \approx 100\text{eV} \left( \frac{R_\odot}{r} \right)^{0.4}$
-\end{itemize}
-
-\section{Zusammenfassung}
-Die WBFM-Interpretation der Korona als Impedanz-Schnittstelle bietet eine elegante, einheitliche Erklärung für Heizung und Beschleunigungsphänomene. Sie ersetzt ad-hoc
-Heizmechanismen durch einen systemischen Ansatz basierend auf Wellenausbreitung und Impedanzanpassung, und liefert dabei konkrete quantitative Vorhersagen zur experimentellen
-Überprüfung.
-
-\chapter{Analyse galaktischer Übertragungsfunktionen im WBFM}
-
-\section{Galaxien als makroskopische Filterknoten}
-Im Weber-Bohm-Filter-Modell repräsentiert eine Galaxie keinen passiven Sternhaufen, sondern einen kohärenten \textbf{Makro-Filter} höherer Ordnung. Deren
-Gesamt-Übertragungsfunktion $\mathcal{T}_G(s)$ emergiert aus der nicht-lokalen Verschaltung stellarer und interstellarer Subsysteme.
-
-\section{Strukturmerkmale als Pol-Nullstellen-Konfiguration}
-
-\subsection{Spiralarme als Resonanzphänomene}
-Die spiralarme Struktur von Galaxien wie M51 oder NGC 5194 entspricht stehenden Wellen in der galaktischen Wellenfunktion $\Psi_G$. Die Armzahl korreliert mit der Anzahl
-dominierender Polpaare in der Übertragungsfunktion:
-\[
-\mathcal{T}_G(s) = K \frac{\prod_{k=1}^{N_{\text{Arme}}}(s - z_k)}{\prod_{m=1}^{M}(s - p_m)}
-\]
-wobei $N_{\text{Arme}}$ typischerweise 2--4 beträgt.
-
-\subsection{Zentrale Verdickungen und Balken}
-Zentrale Bulges und Balkenstrukturen entsprechen reellen Polen niedriger Frequenz ($\sigma < 0$, $\omega \approx 0$), die für gravitative Bindung und Materiekondensation
-verantwortlich sind.
-
-\section{Rotationsdynamik und Filtercharakteristik}
-
-\subsection{Flache Rotationskurven}
-Die beobachteten flachen Rotationskurven $v_{\text{rot}} \approx \text{const}$ emergieren natürlich aus der fraktalen Skalierung der Impedanz:
-\[
-v_{\text{rot}}(r) \propto r^{D-3} \quad \text{mit} \quad D \approx 2.71
-\]
-Dies ersetzt die ad-hoc-Annahme Dunkler Materie im Standardmodell.
-
-\subsection{Tully-Fisher-Relation}
-Die Tully-Fisher-Relation $L \propto v_{\text{rot}}^4$ findet ihre Entsprechung in der Leistungsskalierung des Filters:
-\[
-P_{\text{emit}} \propto |\mathcal{T}_G(j\omega_c)|^2 \propto \omega_c^{2(3-D)}
-\]
-wobei $\omega_c$ die charakteristische Rotationsfrequenz bezeichnet.
-
-\section{Spektroskopische Signaturen}
-
-\subsection{Emissionslinien als Nullstellen}
-Charakteristische Emissionslinien (H$\alpha$, [N II], [S II]) entsprechen komplexen Nullstellen $z_k = \sigma_k + j\omega_k$ in der Übertragungsfunktion. Deren 
-Frequenzpositionen geben Aufschluss über die Phasenbeziehungen im galaktischen Filter.
-
-\subsection{Breitbandkontinuum}
-Das kontinuierliche Spektrum entspricht der Amplitudenantwort $|\mathcal{T}_G(j\omega)|$ über einen weiten Frequenzbereich, moduliert durch die Pol-Nullstellen-Verteilung.
-
-\section{Vergleich verschiedener Galaxientypen}
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{lccc}
-\hline
-Galaxientyp & Dominante Pole & Filtercharakteristik & Impedanzprofil \\
-\hline
-Spiralgalaxie & Komplexe Polpaare & Bandpass & $Z_G(r) \propto r^{-0.29}$ \\
-Elliptische Galaxie & Reelle Pole & Tiefpass & Flaches Profil \\
-Irreguläre Galaxie & Chaos & Nichtlinear & Stochasticch \\
-\hline
-\end{tabular}
-\caption{Filtereigenschaften verschiedener Galaxientypen im WBFM}
-\end{table}
-
-\section{Testbare Vorhersagen}
-
-Das WBFM sagt für Galaxien folgende Phänomene vorher:
-
-\begin{itemize}
-\item \textbf{Fraktale Skalierung}: Dichteverteilung $\rho(r) \propto r^{-(3-D)}$ mit $D \approx 2.71$
-\item \textbf{Resonanzfrequenzen}: Charakteristische Oszillationen in Gasdynamik bei $\omega = \text{Im}(p_k)$
-\item \textbf{Kohärente Strukturen}: Spiralarme als stehende Wellen mit bestimmter Modeanzahl
-\item \textbf{Quantenkorrelationen}: Nicht-lokale Korrelationen in Scheibengalaxien ohne kausale Verbindung
-\end{itemize}
-
-\section{Zusammenfassung}
-Die Analyse galaktischer Systeme durch die Brille der Filtertheorie offenbart eine tiefe Verbindung zwischen mikroskopischer Quantendynamik und makroskopischer
-Strukturbildung. Die Übertragungsfunktion $\mathcal{T}_G(s)$ kodiert die essentielle Information über Morphologie, Dynamik und Entwicklung einer Galaxie und bietet eine
-elegante Alternative zu dunklen Komponenten und ad-hoc-Annahmen.
-
 \chapter{Atome als quantenmechanische Filter im WBFM}
 
 \section{Das atomare System als nichtlinearer Resonator}
@@ -216,6 +89,56 @@ Die Filterdarstellung des Atoms bietet eine alternative Perspektive auf quantenm
 \end{itemize}
 
 Die atomare Filtertheorie bildet damit die mikroskopische Grundlage für die hierarchische Struktur des WBFM, die von subatomaren Skalen bis zur Kosmologie reicht.
+
+\chapter{Anwendung des WBFM auf die solare Korona}
+
+\section{Das Koronaproblem im Standardmodell}
+Die solare Korona stellt eines der persistentesten Rätsel der Astrophysik dar. Während die Photosphäre eine effektive Temperatur von circa 5800\,K aufweist, erreicht die
+Korona Temperaturen von $1-2\times 10^6$\,K. Dieser extreme Temperaturgradient verletzt die intuitive Erwartung thermodynamischen Gleichgewichts. Konventionelle Modelle
+versuchen dies durch magnetische Wellenheizung (Alfvén-Wellen) oder Nanoflare-Reconnection zu erklären, bleiben jedoch letztlich ad-hoc und quantitativ unbefriedigend.
+
+\section{Die Korona im Weber-Bohm-Filter-Modell}
+Im WBFM wird die Korona nicht als passiv geheizte Region, sondern als aktive \textit{Auskopplungszone} interpretiert, deren Eigenschaften durch einen fundamentalen
+Impedanzsprung entstehen.
+
+\subsection{Impedanzsprung an der Photosphären-Korona-Grenzschicht}
+Die solare Impedanz $Z_S(r)$ erfährt an der Übergangsregion einen charakteristischen Sprung:
+\[
+\Delta Z = \frac{Z_{\text{Korona}} - Z_{\text{Photosphäre}}}{Z_{\text{Photosphäre}}} \approx +180\%
+\]
+Dieser extreme Mismatch resultiert aus der radialen Impedanzverteilung:
+\[
+Z_S(r) = Z_Q \left( \frac{r}{R_\odot} \right)^{D-2}
+\]
+mit der Vakuumimpedanz $Z_Q \approx 4.8\times 10^3\,\Omega$ und der fraktalen Dimension $D \approx 2.71$.
+
+\subsection{Entstehung stehender Wellen und Aufheizung}
+Der Impedanzsprung führt zur Reflexion eines Teils der aus dem Sonneninneren kommenden Energiewelle (beschrieben durch den Phasengradienten $\nabla S$). Die Überlagerung von einfallender und reflektierter Welle erzeugt stehende Wellen:
+\[
+\eta(r) = 1 - \left| \frac{Z_S(r) - Z_Q}{Z_S(r) + Z_Q} \right|^2
+\]
+wobei $\eta(r)$ den Transmissionseffizienz angibt. Die Dissipation der stehenden Wellenenergie im koronalen Plasma manifestiert sich als thermische Aufheizung.
+
+\subsection{Beschleunigung des Sonnenwinds}
+Der Strahlungsdruck der stehenden Wellen übt eine nach außen gerichtete Kraft auf das Plasma aus und beschleunigt den Sonnenwind:
+\[
+\nabla S_S|_{r=R_H} = m_p v_{\text{wind}} \left(1 + \beta \ln\frac{r}{R_\odot}\right)
+\]
+mit $\beta \approx 0.1$ für die beobachtete Beschleunigung.
+
+\section{Testbare Vorhersagen und Verifikation}
+Das WBFM macht spezifische Vorhersagen für die Korona:
+\begin{itemize}
+    \item \textbf{Stehwellenresonanzen}: Charakteristische Frequenzen bei 0.03\,mHz (koronale Heizung) und 0.29\,mHz (Konvektionsoszillation)
+    \item \textbf{Reflektierte Leistung}: $P_{\text{refl}} \approx 0.02L_\odot$ an der Heliopause
+    \item \textbf{Stehwellenverhältnis}: SWR $\approx$ 1.5--2.0 im solaren Wind
+    \item \textbf{Temperaturgradient}: $k_B T(r) \approx 100\text{eV} \left( \frac{R_\odot}{r} \right)^{0.4}$
+\end{itemize}
+
+\section{Zusammenfassung}
+Die WBFM-Interpretation der Korona als Impedanz-Schnittstelle bietet eine elegante, einheitliche Erklärung für Heizung und Beschleunigungsphänomene. Sie ersetzt ad-hoc
+Heizmechanismen durch einen systemischen Ansatz basierend auf Wellenausbreitung und Impedanzanpassung, und liefert dabei konkrete quantitative Vorhersagen zur experimentellen
+Überprüfung.
 
 \chapter{Sternklassen als Filtertypen im WBFM}
 
@@ -346,3 +269,80 @@ Die Filterdarstellung stellarer Objekte ermöglicht:
 \end{itemize}
 
 Jede Sternklasse repräsentiert damit eine charakteristische Implementierung des universellen Filterprinzips auf unterschiedlichen Massen- und Längenskalen.
+
+\chapter{Analyse galaktischer Übertragungsfunktionen im WBFM}
+
+\section{Galaxien als makroskopische Filterknoten}
+Im Weber-Bohm-Filter-Modell repräsentiert eine Galaxie keinen passiven Sternhaufen, sondern einen kohärenten \textbf{Makro-Filter} höherer Ordnung. Deren
+Gesamt-Übertragungsfunktion $\mathcal{T}_G(s)$ emergiert aus der nicht-lokalen Verschaltung stellarer und interstellarer Subsysteme.
+
+\section{Strukturmerkmale als Pol-Nullstellen-Konfiguration}
+
+\subsection{Spiralarme als Resonanzphänomene}
+Die spiralarme Struktur von Galaxien wie M51 oder NGC 5194 entspricht stehenden Wellen in der galaktischen Wellenfunktion $\Psi_G$. Die Armzahl korreliert mit der Anzahl
+dominierender Polpaare in der Übertragungsfunktion:
+\[
+\mathcal{T}_G(s) = K \frac{\prod_{k=1}^{N_{\text{Arme}}}(s - z_k)}{\prod_{m=1}^{M}(s - p_m)}
+\]
+wobei $N_{\text{Arme}}$ typischerweise 2--4 beträgt.
+
+\subsection{Zentrale Verdickungen und Balken}
+Zentrale Bulges und Balkenstrukturen entsprechen reellen Polen niedriger Frequenz ($\sigma < 0$, $\omega \approx 0$), die für gravitative Bindung und Materiekondensation
+verantwortlich sind.
+
+\section{Rotationsdynamik und Filtercharakteristik}
+
+\subsection{Flache Rotationskurven}
+Die beobachteten flachen Rotationskurven $v_{\text{rot}} \approx \text{const}$ emergieren natürlich aus der fraktalen Skalierung der Impedanz:
+\[
+v_{\text{rot}}(r) \propto r^{D-3} \quad \text{mit} \quad D \approx 2.71
+\]
+Dies ersetzt die ad-hoc-Annahme Dunkler Materie im Standardmodell.
+
+\subsection{Tully-Fisher-Relation}
+Die Tully-Fisher-Relation $L \propto v_{\text{rot}}^4$ findet ihre Entsprechung in der Leistungsskalierung des Filters:
+\[
+P_{\text{emit}} \propto |\mathcal{T}_G(j\omega_c)|^2 \propto \omega_c^{2(3-D)}
+\]
+wobei $\omega_c$ die charakteristische Rotationsfrequenz bezeichnet.
+
+\section{Spektroskopische Signaturen}
+
+\subsection{Emissionslinien als Nullstellen}
+Charakteristische Emissionslinien (H$\alpha$, [N II], [S II]) entsprechen komplexen Nullstellen $z_k = \sigma_k + j\omega_k$ in der Übertragungsfunktion. Deren 
+Frequenzpositionen geben Aufschluss über die Phasenbeziehungen im galaktischen Filter.
+
+\subsection{Breitbandkontinuum}
+Das kontinuierliche Spektrum entspricht der Amplitudenantwort $|\mathcal{T}_G(j\omega)|$ über einen weiten Frequenzbereich, moduliert durch die Pol-Nullstellen-Verteilung.
+
+\section{Vergleich verschiedener Galaxientypen}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lccc}
+\hline
+Galaxientyp & Dominante Pole & Filtercharakteristik & Impedanzprofil \\
+\hline
+Spiralgalaxie & Komplexe Polpaare & Bandpass & $Z_G(r) \propto r^{-0.29}$ \\
+Elliptische Galaxie & Reelle Pole & Tiefpass & Flaches Profil \\
+Irreguläre Galaxie & Chaos & Nichtlinear & Stochasticch \\
+\hline
+\end{tabular}
+\caption{Filtereigenschaften verschiedener Galaxientypen im WBFM}
+\end{table}
+
+\section{Testbare Vorhersagen}
+
+Das WBFM sagt für Galaxien folgende Phänomene vorher:
+
+\begin{itemize}
+\item \textbf{Fraktale Skalierung}: Dichteverteilung $\rho(r) \propto r^{-(3-D)}$ mit $D \approx 2.71$
+\item \textbf{Resonanzfrequenzen}: Charakteristische Oszillationen in Gasdynamik bei $\omega = \text{Im}(p_k)$
+\item \textbf{Kohärente Strukturen}: Spiralarme als stehende Wellen mit bestimmter Modeanzahl
+\item \textbf{Quantenkorrelationen}: Nicht-lokale Korrelationen in Scheibengalaxien ohne kausale Verbindung
+\end{itemize}
+
+\section{Zusammenfassung}
+Die Analyse galaktischer Systeme durch die Brille der Filtertheorie offenbart eine tiefe Verbindung zwischen mikroskopischer Quantendynamik und makroskopischer
+Strukturbildung. Die Übertragungsfunktion $\mathcal{T}_G(s)$ kodiert die essentielle Information über Morphologie, Dynamik und Entwicklung einer Galaxie und bietet eine
+elegante Alternative zu dunklen Komponenten und ad-hoc-Annahmen.
