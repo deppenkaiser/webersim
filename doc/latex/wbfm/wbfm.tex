@@ -1,0 +1,131 @@
+\documentclass[11pt, a5paper, twoside, openright]{book}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage{verbatim}  % Im Kopf des Dokuments einfügen
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath, amssymb, amsthm}  % Mathe
+\usepackage{mathtools}                 % \coloneqq, \xrightarrow
+\usepackage{bm}                        % Fette Symbole (\bm{B} für Magnetfeld)
+\usepackage{siunitx}                   % \SI{1.23}{\meter\per\second}
+\usepackage{graphicx}                  % \includegraphics
+\usepackage{subcaption}                % Unterabbildungen
+\usepackage{booktabs}                  % Professionelle Tabellen
+\usepackage{tikz}                      % Für Diagramme
+\usepackage{xcolor}                    % Farbige Tabellenzellen
+\usepackage[
+    backend=biber,
+    style=phys,         % APS-Zitierstil (für Physik)
+    sorting=nyt,        % Sortierung: Name, Jahr, Titel
+]{biblatex}
+\usepackage[acronym, toc]{glossaries}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{pgfplots}
+\usepackage{glossaries}
+\makeglossaries
+\input{styles}
+\input{glossar}
+
+\begin{document}
+
+\frontmatter
+\begin{tikzpicture}[remember picture, overlay]
+
+  % Hintergrund (Dunkel mit fraktalem Gitter)
+  \fill[hintergrund] (current page.south west) rectangle (current page.north east);
+  \foreach \i in {0,10,...,360} {
+    \draw[quantenblau!10, line width=0.1pt] 
+      (current page.center) -- +(\i:5cm);
+  }
+
+  % Dodekaeder (abstrahiert)
+  \node[rotate=25, scale=2, quantenblau!50] at (current page.center) {
+    \begin{tikzpicture}[scale=0.3]
+      \draw[quantenblau] (0:1) \foreach \a in {72,144,...,360} { -- (\a:1) } -- cycle;
+      \foreach \a in {36,108,...,324} { \draw[quantenblau] (0,0) -- (\a:1.6); }
+    \end{tikzpicture}
+  };
+
+  % Titeltext (mit Schatten-Effekt)
+  \node[align=center, text=white, font=\sffamily\bfseries\Huge] 
+    at ($(current page.center)+(0,3cm)$) {
+    \textbf{WBFM}
+  };
+  \node[align=center, text=quantenblau!80, font=\sffamily\Large] 
+    at ($(current page.center)+(0,1.8cm)$)
+    {
+        Filter als Modell
+    };
+
+  % Kernformeln (rechts unten)
+  \node[align=left, anchor=south east, text=weberrot!70, font=\small] 
+    at ($(current page.south east)+(-1cm,1cm)$) {
+    $\displaystyle \vec{F}_{\text{WG}} = -\frac{GMm}{r^2}\left(1-\frac{\dot{r}^2}{c^2}+\beta\frac{r\ddot{r}}{c^2}\right)$
+  };
+  \node[align=left, anchor=north east, text=quantenblau!70, font=\small] 
+    at ($(current page.south east)+(-1cm,3cm)$) {
+    $\displaystyle Q = -\frac{\hbar^2}{2m}\frac{\nabla^2\sqrt{\rho}}{\sqrt{\rho}}$
+  };
+
+  % Autor (unten mittig)
+  \node[align=center, text=white, font=\sffamily\large] 
+    at ($(current page.south)+(0,1cm)$) {
+    \textbf{Michael Czybor}
+  };
+
+  % Fraktale Dimension (links oben)
+  \node[align=right, text=quantenblau!50, font=\small] 
+    at ($(current page.north west)+(2cm,-1cm)$) {
+    $D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71$
+  };
+
+\end{tikzpicture}
+
+\title{WBFM\\Filter als Modell}
+\author{Michael Czybor}
+\date{\today}
+\maketitle
+
+\chapter*{Vorwort}
+
+Die tiefe Verbindung zwischen Quantenmechanik und Signalverarbeitung stellt sich nicht als bloße Analogie, sondern als fundamentale Entsprechung heraus. Die Mathematik der
+Wellenfunktionen, Fourier-Transformationen und nicht-lokalen Korrelationen bildet die gemeinsame Sprache beider Disziplinen. In dieser Arbeit wird aufgezeigt, wie die
+\gls{wdbt} diese Verbindung zur Grundlage einer neuen Kosmologie macht.
+
+Das Weber-Bohm-Filter-Modell (WBFM) interpretiert das Universum als ein dynamisches Netzwerk von Filteroperationen, bei dem Sterne und Galaxien als aktive Verarbeitungsknoten
+fungieren. Quantenpotentiale wirken als nicht-lokale Übertragungsfunktionen, während die Weber-Kräfte die Rückkopplungsschleifen des Systems bilden. Diese Sichtweise erlaubt
+es, scheinbar disparate Phänomene – von der Teilchenphysik bis zur Kosmologie – unter einem einheitlichen systemtheoretischen Rahmen zu beschreiben.
+
+Die hier vorgestellte Modellbildung folgt dem Prinzip der Abstraktion komplexer Zusammenhänge durch filtertheoretische Konzepte. Pol- und Nullstellen-Diagramme ersetzen dabei
+traditionelle Feldgleichungen, nicht-lokale Verschaltungen treten an die Stelle von Raumzeit-Krümmung. Diese Herangehensweise ermöglicht nicht nur eine neue Perspektive auf
+bestehende Probleme der theoretischen Physik, sondern führt auch zu konkreten, überprüfbaren Vorhersagen.
+
+Die Arbeit verbindet damit zwei scheinbar getrennte Welten: Die mikroskopische Strange der Quantenprozesse mit der makroskopischen Organisation des Kosmos – vereint durch die
+Sprache der Systemtheorie und Signalverarbeitung.
+
+\begin{flushright}
+    Michael Czybor \\
+    \emph{Langenstein/AT, August 2025}
+\end{flushright}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+\include{einleitung/einleitung}
+\appendix
+\include{anhang/anhang}
+
+\backmatter
+\printbibliography[title=Literaturverzeichnis]
+\glswritefiles
+\printglossary[title=Glossar]
+\printglossary[type=acronym, title=Abkürzungen]
+
+\end{document}

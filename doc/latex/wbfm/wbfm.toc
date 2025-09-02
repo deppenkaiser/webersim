@@ -1,0 +1,23 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Das Weber-Bohm-Filter-Modell (WBFM): Grundlagen und Konzept}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Kernidee des WBFM}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Mathematische Grundlagen}{1}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Kosmologische Implikationen}{1}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Anwendung des WBFM auf stellare Objekte: Das Sonnenmodell}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Die Sonne als aktiver Filterknoten}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Korrespondenz zwischen thermischen und quantenmechanischen Größen}{2}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Sonnenzonen als Phasensprünge im Filter}{2}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Materieerzeugung und Energiebilanz}{2}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Testbare Vorhersagen}{3}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}Verknüpfung auf Galaktischer Ebene: Das Kosmische Filternetzwerk}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Galaxien als Makro-Filter}{3}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Sterntypen als Filterklassen}{3}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Instantane nicht-lokale Verschaltung}{3}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Emergenz der Dunklen Materie}{3}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Testbare Vorhersagen auf Galaxienebene}{4}{subsection.1.3.5}%
+\contentsline {section}{\numberline {1.4}Das Universum als Verschaltung von Galaxien: Die kosmische Netzwerktopologie}{4}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Die fraktale Struktur des Kosmos}{4}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Nicht-lokale Kopplung zwischen Galaxien}{4}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Emergenz der Raumzeit}{4}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Kosmologische Evolution}{4}{subsection.1.4.4}%
