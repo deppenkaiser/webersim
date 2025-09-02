@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {1.4.2}Nicht-lokale Kopplung zwischen Galaxien}{4}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Emergenz der Raumzeit}{4}{subsection.1.4.3}%
 \contentsline {subsection}{\numberline {1.4.4}Kosmologische Evolution}{4}{subsection.1.4.4}%
-\contentsline {chapter}{\numberline {2}Das Sonnenmodell im WBFM-Rahmen}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Das Sonnenmodell im Rahmen des WBFM}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Die Sonne als aktiver Quantenfilter}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Energie-Materie-Transformation im solaren Kern}{5}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Phasenstruktur und Zonierung}{5}{section.2.3}%
@@ -56,3 +56,19 @@
 \contentsline {subsection}{\numberline {2.10.3}Vorhersagekraft und Testbarkeit}{12}{subsection.2.10.3}%
 \contentsline {subsection}{\numberline {2.10.4}Philosophische und methodologische Vorteile}{12}{subsection.2.10.4}%
 \contentsline {subsection}{\numberline {2.10.5}Zusammenfassender Vergleich}{12}{subsection.2.10.5}%
+\contentsline {chapter}{\numberline {3}Quantenfeldtheoretische Erweiterung und kosmologische Konsistenz des WBFM}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Von der Ein-Teilchen- zur Vielteilchen-Wellenfunktion}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Quantenfeldtheorie des Weber-Bohm-Vakuums}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Kosmologische Wellenfunktion und Strukturbildung}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Dunkle Energie als Impedanzmismatch im Kosmos}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Quantengravitation ohne Singularitäten}{14}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Testbare Vorhersagen auf kosmologischen Skalen}{14}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Numerische Implementierung und Simulation}{14}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Philosophische und methodologische Konsequenzen}{14}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Vereinheitlichte Bewegungsgleichung im WBFM}{15}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Hierarchische Skalenentkopplung im WBFM}{16}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Kosmische Skala: Bewegung einer Galaxie}{16}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}Galaktische Skala: Bewegung eines Sterns}{16}{subsection.3.10.2}%
+\contentsline {subsection}{\numberline {3.10.3}Stellare Skala: Bewegung eines Planeten}{16}{subsection.3.10.3}%
+\contentsline {subsection}{\numberline {3.10.4}Planetare Skala: Bewegung eines Atoms}{17}{subsection.3.10.4}%
+\contentsline {subsection}{\numberline {3.10.5}Zusammenhang zwischen den Skalen}{17}{subsection.3.10.5}%
