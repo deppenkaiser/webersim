@@ -72,3 +72,55 @@
 \contentsline {subsection}{\numberline {3.10.3}Stellare Skala: Bewegung eines Planeten}{16}{subsection.3.10.3}%
 \contentsline {subsection}{\numberline {3.10.4}Planetare Skala: Bewegung eines Atoms}{17}{subsection.3.10.4}%
 \contentsline {subsection}{\numberline {3.10.5}Zusammenhang zwischen den Skalen}{17}{subsection.3.10.5}%
+\contentsline {chapter}{\numberline {A}Anwendung des WBFM auf die solare Korona}{19}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Das Koronaproblem im Standardmodell}{19}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Die Korona im Weber-Bohm-Filter-Modell}{19}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Impedanzsprung an der Photosphären-Korona-Grenzschicht}{19}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Entstehung stehender Wellen und Aufheizung}{19}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Beschleunigung des Sonnenwinds}{20}{subsection.A.2.3}%
+\contentsline {section}{\numberline {A.3}Testbare Vorhersagen und Verifikation}{20}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Zusammenfassung}{20}{section.A.4}%
+\contentsline {chapter}{\numberline {B}Analyse galaktischer Übertragungsfunktionen im WBFM}{21}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Galaxien als makroskopische Filterknoten}{21}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Strukturmerkmale als Pol-Nullstellen-Konfiguration}{21}{section.B.2}%
+\contentsline {subsection}{\numberline {B.2.1}Spiralarme als Resonanzphänomene}{21}{subsection.B.2.1}%
+\contentsline {subsection}{\numberline {B.2.2}Zentrale Verdickungen und Balken}{21}{subsection.B.2.2}%
+\contentsline {section}{\numberline {B.3}Rotationsdynamik und Filtercharakteristik}{21}{section.B.3}%
+\contentsline {subsection}{\numberline {B.3.1}Flache Rotationskurven}{21}{subsection.B.3.1}%
+\contentsline {subsection}{\numberline {B.3.2}Tully-Fisher-Relation}{22}{subsection.B.3.2}%
+\contentsline {section}{\numberline {B.4}Spektroskopische Signaturen}{22}{section.B.4}%
+\contentsline {subsection}{\numberline {B.4.1}Emissionslinien als Nullstellen}{22}{subsection.B.4.1}%
+\contentsline {subsection}{\numberline {B.4.2}Breitbandkontinuum}{22}{subsection.B.4.2}%
+\contentsline {section}{\numberline {B.5}Vergleich verschiedener Galaxientypen}{22}{section.B.5}%
+\contentsline {section}{\numberline {B.6}Testbare Vorhersagen}{22}{section.B.6}%
+\contentsline {section}{\numberline {B.7}Zusammenfassung}{22}{section.B.7}%
+\contentsline {chapter}{\numberline {C}Atome als quantenmechanische Filter im WBFM}{23}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Das atomare System als nichtlinearer Resonator}{23}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Quantenpotential als Filterkern}{23}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Spektrale Signaturen als Pol-Nullstellen-Verteilung}{23}{section.C.3}%
+\contentsline {subsection}{\numberline {C.3.1}Bohrsche Orbitale als Resonanzmoden}{23}{subsection.C.3.1}%
+\contentsline {subsection}{\numberline {C.3.2}Energieniveaus und Polpositionen}{23}{subsection.C.3.2}%
+\contentsline {section}{\numberline {C.4}Weber-Elektrodynamik als Kopplungsmechanismus}{24}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Charakteristische Filtereigenschaften}{24}{section.C.5}%
+\contentsline {section}{\numberline {C.6}Wasserstoffatom als Prototyp}{24}{section.C.6}%
+\contentsline {section}{\numberline {C.7}Experimentelle Konsequenzen}{24}{section.C.7}%
+\contentsline {section}{\numberline {C.8}Zusammenfassung}{25}{section.C.8}%
+\contentsline {chapter}{\numberline {D}Sternklassen als Filtertypen im WBFM}{27}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Klassifikation stellarer Filter}{27}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Hauptreihensterne: Bandpassfilter}{27}{section.D.2}%
+\contentsline {subsection}{\numberline {D.2.1}G-Typ (Sonne)}{27}{subsection.D.2.1}%
+\contentsline {subsection}{\numberline {D.2.2}M-Typ (Rote Zwerge)}{27}{subsection.D.2.2}%
+\contentsline {section}{\numberline {D.3}Rote Riesen: Tiefpassfilter}{27}{section.D.3}%
+\contentsline {subsection}{\numberline {D.3.1}Filtercharakteristik}{27}{subsection.D.3.1}%
+\contentsline {subsection}{\numberline {D.3.2}Massenverlust als Filterleckage}{28}{subsection.D.3.2}%
+\contentsline {section}{\numberline {D.4}Weiße Zwerge: Hochpassfilter}{28}{section.D.4}%
+\contentsline {subsection}{\numberline {D.4.1}Entartete Filterresponse}{28}{subsection.D.4.1}%
+\contentsline {section}{\numberline {D.5}Neutronensterne: Resonanzfilter}{28}{section.D.5}%
+\contentsline {subsection}{\numberline {D.5.1}Präzise Periodizität}{28}{subsection.D.5.1}%
+\contentsline {section}{\numberline {D.6}Schwarze Löcher: Nichtlineare Verzerrer}{28}{section.D.6}%
+\contentsline {subsection}{\numberline {D.6.1}Chaotische Response}{28}{subsection.D.6.1}%
+\contentsline {section}{\numberline {D.7}Vergleichstabelle stellarer Filter}{29}{section.D.7}%
+\contentsline {section}{\numberline {D.8}Experimentelle Konsequenzen}{29}{section.D.8}%
+\contentsline {subsection}{\numberline {D.8.1}Spektrale Signaturen}{29}{subsection.D.8.1}%
+\contentsline {subsection}{\numberline {D.8.2}Zeitliche Response}{29}{subsection.D.8.2}%
+\contentsline {section}{\numberline {D.9}Zusammenfassung}{29}{section.D.9}%
