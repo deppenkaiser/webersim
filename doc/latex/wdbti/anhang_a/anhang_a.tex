@@ -1,0 +1,71 @@
+\chapter{Mathematische Grundlagen der Informations-Weber-Theorie}
+\label{anhang:mathematik}
+
+\section{Variationsrechnung}
+Die Informations-Weber-Theorie basiert auf einem Lagrange-Funktional
+\[
+    \mathcal{L}_I[\rho_I]
+    =
+    \int \mathcal{F}(\rho_I, \nabla \rho_I, \partial_t \rho_I)\, d^3x.
+\]
+Die Variation eines Funktionals der Form
+\[
+    \mathcal{S}[\rho_I] = \int \mathcal{F}(\rho_I, \partial_\mu \rho_I)\, d^4x
+\]
+ergibt
+\[
+    \delta \mathcal{S}
+    =
+    \int
+    \left(
+        \frac{\partial \mathcal{F}}{\partial \rho_I}
+        -
+        \partial_\mu
+        \frac{\partial \mathcal{F}}{\partial (\partial_\mu \rho_I)}
+    \right)
+    \delta \rho_I
+    \, d^4x.
+\]
+Der Ausdruck in Klammern verschwindet für stationäre Punkte des Funktionals.
+
+\section{Euler-Lagrange-Gleichungen für Informationsfelder}
+Für ein Informationsfeld $\rho_I(\vec{r},t)$ ergibt sich die Euler-Lagrange-Gleichung:
+\[
+    \frac{\partial}{\partial t}
+    \left(
+        \frac{\partial \mathcal{F}}{\partial (\partial_t \rho_I)}
+    \right)
+    +
+    \nabla \cdot
+    \left(
+        \frac{\partial \mathcal{F}}{\partial (\nabla \rho_I)}
+    \right)
+    -
+    \frac{\partial \mathcal{F}}{\partial \rho_I}
+    = 0.
+\]
+Diese Gleichung ist die Grundlage der Informations-Weber-Dynamik.
+
+\section{Noether-Theorem im Informationsraum}
+Symmetrien des Informationsraums erzeugen Erhaltungsgrößen:
+
+\begin{itemize}
+    \item Zeitsymmetrie $\Rightarrow$ Energieerhaltung,
+    \item Translationssymmetrie $\Rightarrow$ Impulserhaltung,
+    \item Rotationssymmetrie $\Rightarrow$ Drehimpulserhaltung,
+    \item Informationsinvarianz $\Rightarrow$ Erhaltung der Gesamtinformation.
+\end{itemize}
+
+\section{Informationsmetriken und fraktale Dimension}
+
+Die informationsbasierte Metrik ergibt sich aus
+\[
+    g_{ij}
+    =
+    \frac{\partial^2 \mathcal{F}}{\partial (\partial_i \rho_I)\, \partial (\partial_j \rho_I)}.
+\]
+Die fraktale Dimension des Informationsraums ist definiert durch
+\[
+    D = \frac{\ln 20}{\ln(2+\phi)}.
+\]
+Sie bestimmt die effektive Geometrie des emergenten Raumes.

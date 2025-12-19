@@ -1,0 +1,43 @@
+\geometry{
+    a4paper,
+    top=25mm,
+    inner=30mm,    % Bundsteg (größerer Rand für Buchbindung)
+    outer=25mm,
+    bottom=30mm,
+    headheight=15pt,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}    % Kapitelname (gerade Seiten)
+\fancyhead[LO]{\rightmark}   % Abschnittname (ungerade Seiten)
+\renewcommand{\headrulewidth}{0.4pt}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{law}{Physikalisches Gesetz}[chapter]
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}{Bemerkung}[chapter]
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=black,
+    urlcolor=black,
+    pdftitle={WDB-Theorie - Eine effektive Quantengravitation},
+    pdfauthor={Dipl.-Ing. (FH) Michael Czybor},
+}
+
+\addbibresource{literatur.bib}  % Ihre .bib-Datei
+\makeglossaries
+
+\setlength{\headheight}{26.76852pt}
+\definecolor{quantenblau}{RGB}{0, 100, 200}
+\definecolor{weberrot}{RGB}{180, 20, 60}
+\definecolor{hintergrund}{RGB}{20, 20, 40}
+\usetikzlibrary{shapes, calc, 3d}
+\pgfplotsset{compat=1.18} % Aktuelle Version verwenden

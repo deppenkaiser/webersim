@@ -1,0 +1,140 @@
+\documentclass[11pt, a5paper, twoside, openright]{book}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage{verbatim}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[
+    backend=biber,
+    style=phys,
+    sorting=nyt,
+]{biblatex}
+\usepackage[acronym, toc]{glossaries}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{pgfplots}
+\usepackage{glossaries}
+\makeglossaries
+\input{styles}
+\input{glossar}
+
+\begin{document}
+
+\frontmatter
+\begin{tikzpicture}[remember picture, overlay]
+
+  % Hintergrund
+  \fill[hintergrund] (current page.south west) rectangle (current page.north east);
+
+  % Informationswirbel – elliptische Kreise
+  \foreach \r in {0.5,1,...,5} {
+    \draw[quantenblau!15, line width=0.2pt]
+      ($(current page.center)$)
+      circle[x radius=\r cm, y radius={0.6*\r cm}];
+  }
+
+  % Radiale Informationslinien
+  \foreach \a in {0,8,...,360} {
+    \draw[quantenblau!10, line width=0.15pt]
+      (current page.center) -- +(\a:5.5cm);
+  }
+
+  % Zentraler Informationskern
+  \node at (current page.center) {
+    \begin{tikzpicture}[scale=0.9]
+      \foreach \i in {0,60,...,300} {
+        \fill[quantenblau!60] (\i:0.6cm) circle (2pt);
+        \draw[quantenblau!40, line width=0.3pt] (0,0) -- (\i:0.6cm);
+      }
+      \fill[quantenblau!80] (0,0) circle (3pt);
+    \end{tikzpicture}
+  };
+
+  % Titel
+  \node[align=center, text=white, font=\sffamily\bfseries\Huge]
+    at ($(current page.center)+(0,3cm)$) {
+      \textbf{Die Informations-Weber-Theorie}
+  };
+
+  % Untertitel
+  \node[align=center, text=quantenblau!80, font=\sffamily\Large]
+    at ($(current page.center)+(0,1.8cm)$) {
+      Eine fundamentale Informations-Urtheorie
+  };
+
+  % Formeln
+  \node[align=left, anchor=south east, text=weberrot!70, font=\small]
+    at ($(current page.south east)+(-1cm,1cm)$) {
+      $\displaystyle I = \text{konstant}$
+  };
+
+  \node[align=left, anchor=north east, text=quantenblau!70, font=\small]
+    at ($(current page.south east)+(-1cm,3cm)$) {
+      $\displaystyle Q = -\frac{\hbar^2}{2m}\frac{\nabla^2\sqrt{\rho}}{\sqrt{\rho}}$
+  };
+
+  % Autor
+  \node[align=center, text=white, font=\sffamily\large]
+    at ($(current page.south)+(0,1cm)$) {
+      \textbf{Michael Czybor}
+  };
+
+  % Fraktale Dimension
+  \node[align=right, text=quantenblau!50, font=\small]
+    at ($(current page.north west)+(2cm,-1cm)$) {
+      $D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71$
+  };
+
+\end{tikzpicture}
+
+\title{Die Informations-Weber-Theorie\\Eine fundamentale Informations-Urtheorie}
+\author{Michael Czybor}
+\date{\today}
+\maketitle
+
+\chapter*{Vorwort}
+Dieses Werk stellt die Weiterentwicklung der Weber-De Broglie-Bohm-Theorie dar und hebt sie auf eine neue Ebene:  
+Die Formulierung der Physik als Informationsdynamik.  
+Information wird als fundamentale Größe verstanden, deren Erhaltung und Transformation die bekannten physikalischen Gesetze hervorbringt.  
+Die Informations-Weber-Theorie verbindet direkte Wechselwirkungen, nicht-lokale Quantenstruktur und fraktale Raumgeometrie zu einer kohärenten Urtheorie.
+
+\begin{flushright}
+    Michael Czybor \\
+    \emph{Langenstein/AT, \today}
+\end{flushright}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+\include{einleitung/einleitung}
+\include{kapitel_2/kapitel_2}
+\include{kapitel_3/kapitel_3}
+\include{kapitel_4/kapitel_4}
+\include{kapitel_5/kapitel_5}
+\appendix
+\include{anhang_a/anhang_a}
+
+
+\backmatter
+\printbibliography[title=Literaturverzeichnis]
+\glswritefiles
+\printglossary[title=Glossar]
+\printglossary[type=acronym, title=Abkürzungen]
+
+\end{document}

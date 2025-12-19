@@ -1,0 +1,69 @@
+\chapter{Herleitungen}
+\label{anhang:herleitungen}
+
+\section{Herleitung der Weber-Kraft}
+Aus dem Weber-Lagrange-Funktional
+\[
+    L
+    =
+    \frac{1}{2} m \dot{r}^2
+    -
+    \frac{q_1 q_2}{4\pi\varepsilon_0 r}
+    \left(
+        1
+        -
+        \frac{\dot{r}^2}{2c^2}
+        +
+        \frac{r \ddot{r}}{c^2}
+    \right)
+\]
+ergibt die Variation die Weber-Kraft
+\[
+    \vec{F}
+    =
+    \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}
+    \left[
+        1
+        -
+        \frac{\dot{r}^2}{c^2}
+        +
+        \frac{2 r \ddot{r}}{c^2}
+    \right]
+    \hat{\vec{r}}.
+\]
+
+\section{Herleitung des Bohm-Potentials}
+Aus dem globalen Informationsfunktional
+\[
+    \mathcal{F}_{\text{global}}
+    =
+    \gamma \frac{(\nabla \rho_I)^2}{\rho_I}
+\]
+ergibt die Variation
+\[
+    Q
+    =
+    -\frac{\hbar^2}{2m}
+    \frac{\nabla^2 \sqrt{\rho_I}}{\sqrt{\rho_I}}.
+\]
+
+\section{Herleitung der Kontinuitätsgleichung}
+Die Variation nach $\partial_t \rho_I$ ergibt
+\[
+    \vec{J}_I
+    =
+    \frac{\partial \mathcal{F}}{\partial (\nabla \rho_I)}.
+\]
+Damit folgt
+\[
+    \partial_t \rho_I + \nabla \cdot \vec{J}_I = 0.
+\]
+
+\section{Herleitung der effektiven Masse}
+
+Die effektive Masse ergibt sich aus
+\[
+    m_{\text{eff}}
+    =
+    2\alpha \int \left(\frac{\partial \rho_I}{\partial v}\right)^2 d^3x.
+\]

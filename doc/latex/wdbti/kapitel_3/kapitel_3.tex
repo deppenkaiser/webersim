@@ -1,0 +1,108 @@
+\chapter{Die klassische Weber-Elektrodynamik}
+\label{chap:weberklassisch}
+
+\section{Motivation}
+Die Weber-Elektrodynamik stellt einen der frühesten Versuche dar, elektrische und magnetische Wechselwirkungen ohne Felder zu beschreiben. Statt Feldern im Raum verwendet
+Weber ein Wirkungsprinzip, bei dem Ladungen direkt aufeinander einwirken. Diese Sichtweise ist besonders relevant für die Informations-Weber-Theorie, da sie zeigt, wie
+lokale Dynamik ohne Feldkonzepte formuliert werden kann.
+
+Die klassische Weber-Kraft ist ein Grenzfall der informationsbasierten Dynamik, der entsteht, wenn globale Informationsstrukturen vernachlässigt werden. Dieses Kapitel
+stellt die klassische Theorie dar, bevor sie in Kapitel~4 in den informationsbasierten Kontext eingeordnet wird.
+
+\section{Historischer Kontext}
+Wilhelm Eduard Weber formulierte 1846 eine elektrodynamische Kraft, die sowohl Coulomb-Wechselwirkung als auch geschwindigkeits- und beschleunigungsabhängige Terme
+enthält. Diese Theorie war lange Zeit eine Alternative zu Maxwells Feldtheorie und wurde später von Assis und anderen rekonstruiert.
+
+Die Weber-Kraft ist bemerkenswert, weil sie:
+
+\begin{itemize}
+    \item direkt zwischen Ladungen wirkt,
+    \item keine Felder oder Wellen benötigt,
+    \item retardierte Effekte teilweise berücksichtigt,
+    \item Energie- und Impulserhaltung strikt respektiert.
+\end{itemize}
+
+Diese Eigenschaften machen sie zu einem idealen lokalen Grenzfall der Informations-Weber-Theorie.
+
+\section{Der Weber-Lagrange-Ansatz}
+Die Weber-Kraft lässt sich aus einem Lagrange-Funktional herleiten. Für zwei Ladungen $q_1$ und $q_2$ mit Abstand $r$ lautet der Lagrange-Ansatz:
+
+\begin{equation}
+    L
+    =
+    \frac{1}{2} m_1 \dot{\vec{r}}_1^{\,2}
+    +
+    \frac{1}{2} m_2 \dot{\vec{r}}_2^{\,2}
+    -
+    \frac{q_1 q_2}{4\pi\varepsilon_0 r}
+    \left(
+        1
+        -
+        \frac{\dot{r}^2}{2c^2}
+        +
+        \frac{r \ddot{r}}{c^2}
+    \right).
+    \label{eq:weber_lagrange}
+\end{equation}
+
+Dieser Ausdruck enthält:
+
+\begin{itemize}
+    \item den Coulomb-Term,
+    \item einen geschwindigkeitsabhängigen Term,
+    \item einen beschleunigungsabhängigen Term.
+\end{itemize}
+
+Die letzten beiden Terme sind die charakteristischen Merkmale der Weber-Theorie.
+
+\section{Herleitung der Weber-Kraft}
+Durch Variation des Lagrange-Funktionals \eqref{eq:weber_lagrange} erhält man die Weber-Kraft:
+
+\begin{equation}
+    \vec{F}
+    =
+    \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}
+    \left[
+        1
+        -
+        \frac{\dot{r}^2}{c^2}
+        +
+        \frac{2 r \ddot{r}}{c^2}
+    \right]
+    \hat{\vec{r}}.
+    \label{eq:weber_kraft}
+\end{equation}
+
+Diese Gleichung beschreibt:
+
+\begin{enumerate}
+    \item den statischen Coulomb-Term,
+    \item einen geschwindigkeitsabhängigen Term (magnetische Effekte),
+    \item einen beschleunigungsabhängigen Term (Strahlungswiderstand).
+\end{enumerate}
+
+Die Weber-Kraft ist damit eine vollständig mechanische Beschreibung elektromagnetischer Wechselwirkungen.
+
+\section{Interpretation der Terme}
+Die drei Terme der Weber-Kraft haben klare physikalische Bedeutungen:
+
+\begin{itemize}
+    \item \textbf{Coulomb-Term:}  
+    beschreibt die statische Fernwirkung zwischen Ladungen.
+
+    \item \textbf{Geschwindigkeits-Term:}  
+    erzeugt magnetische Effekte und ist proportional zu $\dot{r}^2$.
+
+    \item \textbf{Beschleunigungs-Term:}  
+    beschreibt die Reaktion des Systems auf zeitliche Änderungen der Bewegung
+    und ist verantwortlich für Strahlungswiderstand.
+\end{itemize}
+
+Diese Struktur zeigt, dass die Weber-Kraft bereits wesentliche Elemente einer dynamischen Wechselwirkung enthält, die später in der Informations-Weber-Theorie als lokale
+Informationsflüsse interpretiert werden.
+
+\section{Bedeutung für die Informations-Weber-Theorie}
+Die Weber-Kraft ist kein konkurrierendes Modell zur informationsbasierten Theorie, sondern ihr lokaler Grenzfall. In Kapitel~4 wird gezeigt, wie die Weber-Kraft aus dem
+lokalen Anteil des Informations-Lagrange-Funktionals entsteht und wie das Bohm-Potential als globaler Anteil hinzukommt.
+
+Damit bildet die klassische Weber-Elektrodynamik die Brücke zwischen historischer Mechanik und moderner informationsbasierter Physik.

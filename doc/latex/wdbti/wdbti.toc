@@ -1,0 +1,108 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Information als fundamentale Größe der Physik}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Motivation}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Dogmatismus und blinde Flecken der modernen Physik}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Spekulation statt Fortschritt}{2}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Alternative Theorien}{2}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Abweichende Perspektiven in der Physik: Licht, Relativität und alternative Modelle}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Feynmans Teilchenmodell des Lichts}{3}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Widersprüche in der QED: Überlichtschnelle Photonen und Pfadintegrale}{3}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Energieabhängige Lichtgeschwindigkeit? Experimentelle Hinweise}{4}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Die Entwicklung des Wellenkonzepts in der Physik}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Wellenphänomene: Die Dualität von instantaner Ganzheit und lokaler Ausbreitung}{4}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Das erweiterte Kausalitätskonzept}{5}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Axiome der Informations-Weber-Theorie}{5}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Aufbau und Zielsetzung dieses Buches}{6}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Zusammenfassung der Einleitung}{6}{section.1.9}%
+\contentsline {chapter}{\numberline {2}Die Informations-Weber-Theorie}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Der Informationszustand}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Informationsdichte und Informationsfluss}{9}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Information als Ursprung physikalischer Größen}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Dynamik als Informationsfluss}{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Lokale Dynamik: Weber-Kraft als Informationsfluss}{10}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Globale Dynamik: Quantenpotential als Informationsoperator}{10}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Die analoge WDBT als Fernwirkungstheorie}{10}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Raum als emergente Informationsgeometrie}{11}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Warum Raum nicht fundamental sein kann}{11}{subsection.2.4.1}%
+\contentsline {paragraph}{(1) Fernwirkung ohne Trägerraum}{11}{section*.10}%
+\contentsline {paragraph}{(2) Raum ist nicht notwendig für Kausalität}{11}{section*.11}%
+\contentsline {paragraph}{(3) Raum kann nicht fundamental sein, wenn er fraktal ist}{12}{section*.12}%
+\contentsline {paragraph}{(4) Kontinuumsmodelle erzeugen Paradoxien}{12}{section*.13}%
+\contentsline {paragraph}{(5) Dynamische Raumzeit setzt ein Informationsnetz voraus}{12}{section*.14}%
+\contentsline {subsection}{\numberline {2.4.2}Emergenz der Zeit}{12}{subsection.2.4.2}%
+\contentsline {paragraph}{(1) Zeit als Ordnungsparameter der Information}{12}{section*.16}%
+\contentsline {paragraph}{(2) Zeit entsteht aus der Sequenz diskreter Informationszustände}{13}{section*.17}%
+\contentsline {paragraph}{(3) Zwei Kausalitätsebenen erzeugen zwei Zeitstrukturen}{13}{section*.18}%
+\contentsline {paragraph}{(4) Zeitdilatation als Informationsgeometrie}{13}{section*.19}%
+\contentsline {paragraph}{(5) Keine fundamentale Zeitrichtung}{13}{section*.20}%
+\contentsline {subsection}{\numberline {2.4.3}Diskrete Informationsstruktur als Ursprung des Raumes}{13}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Emergenz von Gravitationswellen}{14}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}CMB-Struktur als fossilierte Informationsgeometrie}{14}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Herleitung von Naturkonstanten}{14}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Zusammenfassung}{14}{subsection.2.4.7}%
+\contentsline {section}{\numberline {2.5}Informations-Lagrange-Funktional}{14}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Definition des Funktionals}{15}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Variation und Euler-Lagrange-Gleichungen}{15}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Lokale und globale Beiträge}{15}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Informationsfluss als Bewegungsgleichung}{15}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Emergenz klassischer Gleichungen}{16}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Weber-Kraft als Grenzfall lokaler Informationsdynamik}{16}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Bohm-Potential als globaler Informationsoperator}{16}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Energie und Impuls als Informationsfunktionale}{17}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Zusammenführung der Grenzfälle}{17}{subsection.2.6.4}%
+\contentsline {section}{\numberline {2.7}Zusammenfassung von Kapitel 2}{18}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Die klassische Weber-Elektrodynamik}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Motivation}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Historischer Kontext}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Der Weber-Lagrange-Ansatz}{19}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Herleitung der Weber-Kraft}{20}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Interpretation der Terme}{20}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Bedeutung für die Informations-Weber-Theorie}{20}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Emergenz klassischer und quantenmechanischer Phänomene}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Einleitung}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Trägheit als emergente Informationsstruktur}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Gravitation als Informationsfluss}{22}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Wellenphänomene als energetische Informationsorganisation}{22}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Nichtlokalität als systemische Ganzheit}{22}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Zusammenführung der klassischen und quantenmechanischen Emergenz}{23}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Mathematische Vertiefung der Trägheit}{23}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Trägheit aus dem lokalen Informationsfunktional}{23}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Effektive Masse als Informationssteifigkeit}{23}{subsection.4.7.2}%
+\contentsline {section}{\numberline {4.8}Vertiefung der gravitativen Informationsdynamik}{24}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Informationsgradienten und Newton-Potential}{24}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Informationsfluss und Gravitationskraft}{24}{subsection.4.8.2}%
+\contentsline {section}{\numberline {4.9}Vertiefung der Wellenphänomene}{24}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Variation des globalen Funktionals}{24}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Interferenz als Informationsoptimierung}{24}{subsection.4.9.2}%
+\contentsline {section}{\numberline {4.10}Vertiefung der Nichtlokalität}{24}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Systemische Kausalität}{25}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}EPR-Korrelationen}{25}{subsection.4.10.2}%
+\contentsline {section}{\numberline {4.11}Informationsmetriken und fraktale Geometrie}{25}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Fraktale Dimension}{25}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Makroskopische Emergenz}{25}{subsection.4.11.2}%
+\contentsline {section}{\numberline {4.12}Energetische Interpretation der Informationsdynamik}{25}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Noether-Theorem im Informationsraum}{25}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Energie als Informationsmaß}{25}{subsection.4.12.2}%
+\contentsline {section}{\numberline {4.13}Vergleich zu etablierten Theorien}{26}{section.4.13}%
+\contentsline {chapter}{\numberline {5}Vergleich mit etablierten Theorien}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Einleitung}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Klassische Mechanik als lokaler Grenzfall}{27}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Elektrodynamik: Maxwell, Lorentz und Weber}{28}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Maxwell-Theorie als effektive Feldbeschreibung}{28}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Lorentz-Kraft als phänomenologische Näherung}{28}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Weber-Kraft als lokaler Grenzfall}{28}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Quantenmechanik als globale Informationsdynamik}{29}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Relativitätstheorie als emergente Geometrie}{29}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}SRT als Symmetrie des Informationsflusses}{29}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}ART als effektive Informationsgeometrie}{29}{subsection.5.5.2}%
+\contentsline {section}{\numberline {5.6}Zusammenfassung}{30}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Frequenzabhängige Lichtablenkung als Test der Theorie}{30}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Vorhersage der ART}{30}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Vorhersage der Informations-Weber-Theorie}{30}{subsection.5.7.2}%
+\contentsline {subsection}{\numberline {5.7.3}Experimentelle Tests}{30}{subsection.5.7.3}%
+\contentsline {chapter}{\numberline {A}Mathematische Grundlagen der Informations-Weber-Theorie}{31}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Variationsrechnung}{31}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Euler-Lagrange-Gleichungen für Informationsfelder}{31}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Noether-Theorem im Informationsraum}{31}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Informationsmetriken und fraktale Dimension}{32}{section.A.4}%
