@@ -52,7 +52,7 @@
 \contentsline {subsection}{\numberline {4.6.2}Globaler Anteil}{19}{subsection.4.6.2}%
 \contentsline {section}{\numberline {4.7}Weber-Kraft und Bohm-Potential als Grenzfälle}{19}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Symmetrien und Erhaltungsgrößen}{19}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Zusammenfassung}{20}{section.4.9}%
+\contentsline {section}{\numberline {4.9}Zusammenfassung}{19}{section.4.9}%
 \contentsline {chapter}{\numberline {5}Informationsmetrik und emergente Raumzeit}{21}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Einleitung}{21}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Von der Informationsdynamik zur Geometrie}{21}{section.5.2}%
@@ -80,7 +80,7 @@
 \contentsline {section}{\numberline {6.5}Nichtlokalität als systemische Ganzheit}{26}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Zusammenführung der klassischen und quantenmechanischen Emergenz}{26}{section.6.6}%
 \contentsline {section}{\numberline {6.7}Emergenz der klassischen Mechanik}{27}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Emergenz der Quantenmechanik}{27}{section.6.8}%
+\contentsline {section}{\numberline {6.8}Emergenz der QM}{27}{section.6.8}%
 \contentsline {section}{\numberline {6.9}Emergenz der Relativität}{27}{section.6.9}%
 \contentsline {section}{\numberline {6.10}Zusammenfassung}{27}{section.6.10}%
 \contentsline {chapter}{\numberline {7}Vergleich mit etablierten Theorien}{29}{chapter.7}%
@@ -90,7 +90,7 @@
 \contentsline {subsection}{\numberline {7.3.1}Maxwell-Theorie als effektive Feldbeschreibung}{30}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}Lorentz-Kraft als phänomenologische Näherung}{30}{subsection.7.3.2}%
 \contentsline {subsection}{\numberline {7.3.3}Weber-Kraft als lokaler Grenzfall}{30}{subsection.7.3.3}%
-\contentsline {section}{\numberline {7.4}Quantenmechanik als globale Informationsdynamik}{30}{section.7.4}%
+\contentsline {section}{\numberline {7.4}QM als globale Informationsdynamik}{30}{section.7.4}%
 \contentsline {section}{\numberline {7.5}Relativitätstheorie als emergente Geometrie}{31}{section.7.5}%
 \contentsline {section}{\numberline {7.6}Grenzfälle und Übergänge}{31}{section.7.6}%
 \contentsline {section}{\numberline {7.7}Frequenzabhängige Lichtablenkung als Test der Theorie}{31}{section.7.7}%
