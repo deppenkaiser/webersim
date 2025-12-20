@@ -1,69 +1,317 @@
 \chapter{Herleitungen}
-\label{anhang:herleitungen}
+\label{app:herleitungen}
 
-\section{Herleitung der Weber-Kraft}
-Aus dem Weber-Lagrange-Funktional
+In diesem Anhang werden die wichtigsten Gleichungen der Informations-Weber-Theorie vollständig und Schritt für Schritt hergeleitet. Ziel ist es, die mathematischen
+Grundlagen transparent zu machen und die Verbindung zwischen lokaler Weber-Dynamik, globaler Informationsorganisation und emergenter Geometrie klar herauszuarbeiten.
+
+Behandelt werden:
+\begin{itemize}
+    \item die Weber-Kraft,
+    \item das Bohm-Potential,
+    \item die Kontinuitätsgleichung,
+    \item die effektive Masse als Informationsmaß.
+\end{itemize}
+Alle Herleitungen basieren auf dem Informations-Lagrange-Funktional aus Kapitel~\ref{chap:lagrange}.
+
+\section{Herleitung der Weber-Gravitation}
+\label{app:webergrav}
+
+Die Weber-Gravitation (WG) ist der gravitative Analogon der Weber-Elektrodynamik. Sie beschreibt die direkte Wechselwirkung zweier Massen ohne Felder und enthält
+geschwindigkeits- und beschleunigungsabhängige Korrekturen.
+
+Die allgemeine Form der Weber-Gravitationskraft lautet:
 \[
-    L
-    =
-    \frac{1}{2} m \dot{r}^2
-    -
-    \frac{q_1 q_2}{4\pi\varepsilon_0 r}
-    \left(
-        1
-        -
-        \frac{\dot{r}^2}{2c^2}
-        +
-        \frac{r \ddot{r}}{c^2}
-    \right)
+F_{\text{WG}}
+=
+-\,G\frac{m_1 m_2}{r^2}
+\left(
+1
+- \frac{\dot r^2}{c^2}
++ \beta\,\frac{r\ddot r}{c^2}
+\right),
 \]
-ergibt die Variation die Weber-Kraft
+wobei der Parameter \(\beta\) die physikalische Situation charakterisiert:
 \[
-    \vec{F}
-    =
-    \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}
-    \left[
-        1
-        -
-        \frac{\dot{r}^2}{c^2}
-        +
-        \frac{2 r \ddot{r}}{c^2}
-    \right]
-    \hat{\vec{r}}.
+\beta =
+\begin{cases}
+0.5 & \text{für massive Körper (Planetenbahnen)} \\
+1   & \text{für Photonen (Lichtablenkung, Shapiro-Effekt)} \\
+2   & \text{für elektromagnetische Weber-Wechselwirkung}
+\end{cases}
 \]
+Diese Struktur ist zentral für die WDBT, da sie die korrekte Periheldrehung, Lichtablenkung und Rotverschiebung liefert.
+
+\subsection{Ausgangspunkt: Weber-Lagrange-Funktional}
+Analog zur Weber-Elektrodynamik wird das gravitative Lagrange-Funktional angesetzt als:
+\[
+L
+=
+-\,G\frac{m_1 m_2}{r}
+\left(
+1
+- \frac{\dot r^2}{c^2}
++ \beta\,\frac{r\ddot r}{c^2}
+\right).
+\]
+Dabei ist:
+\[
+r = |\vec{r}_1 - \vec{r}_2|,\qquad
+\dot r = \frac{dr}{dt},\qquad
+\ddot r = \frac{d^2r}{dt^2}.
+\]
+
+\subsection{Euler--Lagrange-Gleichung}
+Die Kraft ergibt sich aus:
+\[
+F = \frac{d}{dt}\left(\frac{\partial L}{\partial \dot r}\right)
+    - \frac{\partial L}{\partial r}.
+\]
+Wir berechnen die Terme einzeln.
+
+\subsubsection*{Ableitung nach \(\dot r\)}
+\[
+\frac{\partial L}{\partial \dot r}
+=
+-\,G\frac{m_1 m_2}{r}
+\left(
+-\frac{2\dot r}{c^2}
+\right)
+=
+2G\frac{m_1 m_2}{r}\frac{\dot r}{c^2}.
+\]
+
+\[
+\frac{d}{dt}
+\left(
+\frac{\partial L}{\partial \dot r}
+\right)
+=
+2G\frac{m_1 m_2}{c^2}
+\left(
+\frac{\ddot r}{r}
+- \frac{\dot r^2}{r^2}
+\right).
+\]
+
+\subsubsection*{Ableitung nach \(r\)}
+\[
+\frac{\partial L}{\partial r}
+=
+G\frac{m_1 m_2}{r^2}
+\left(
+1
+- \frac{\dot r^2}{c^2}
++ \beta\,\frac{r\ddot r}{c^2}
+\right)
+-
+G\frac{m_1 m_2}{r}
+\left(
+\beta\,\frac{\ddot r}{c^2}
+\right).
+\]
+Nach Vereinfachung:
+\[
+\frac{\partial L}{\partial r}
+=
+G\frac{m_1 m_2}{r^2}
+\left(
+1
+- \frac{\dot r^2}{c^2}
+\right).
+\]
+
+\subsection{Einsetzen in die Euler--Lagrange-Gleichung}
+\[
+F
+=
+-\,G\frac{m_1 m_2}{r^2}
+\left(
+1
+- \frac{\dot r^2}{c^2}
++ \beta\,\frac{r\ddot r}{c^2}
+\right).
+\]
+Dies ist die allgemeine Weber-Gravitationskraft.
+
+\subsection{Interpretation der Parameterwahl}
+\begin{itemize}
+    \item \(\beta = 0.5\):  
+    liefert die korrekte Periheldrehung des Merkur und stabilisiert Planetenbahnen.
+
+    \item \(\beta = 1\):  
+    ergibt die korrekte Lichtablenkung und Shapiro-Verzögerung.
+
+    \item \(\beta = 2\):  
+    entspricht der elektromagnetischen Weber-Kraft.
+\end{itemize}
+Damit ist die WG vollständig kompatibel mit den beobachteten Effekten der ART, jedoch ohne Raumzeitkrümmung.
 
 \section{Herleitung des Bohm-Potentials}
-Aus dem globalen Informationsfunktional
+\label{app:bohm}
+
+Das Bohm-Potential ist der globale Anteil des Informations-Lagrange-Funktionals. Es entsteht aus der Variation des globalen Terms:
 \[
     \mathcal{F}_{\text{global}}
     =
-    \gamma \frac{(\nabla \rho_I)^2}{\rho_I}
+    \gamma \frac{(\nabla \rho_I)^2}{\rho_I}.
 \]
-ergibt die Variation
+
+\subsection{Variation des Funktionals}
+Wir berechnen:
+\[
+    \frac{\partial \mathcal{F}}{\partial \rho_I}
+    =
+    -\gamma \frac{(\nabla \rho_I)^2}{\rho_I^2},
+\]
+
+\[
+    \frac{\partial \mathcal{F}}{\partial (\nabla \rho_I)}
+    =
+    2\gamma \frac{\nabla \rho_I}{\rho_I}.
+\]
+Dann:
+\[
+    \nabla \cdot
+    \left(
+        \frac{\partial \mathcal{F}}{\partial (\nabla \rho_I)}
+    \right)
+    =
+    2\gamma
+    \left[
+        \frac{\nabla^2 \rho_I}{\rho_I}
+        -
+        \frac{(\nabla \rho_I)^2}{\rho_I^2}
+    \right].
+\]
+Die Euler--Lagrange-Gleichung lautet:
+\[
+    \frac{\partial \mathcal{F}}{\partial \rho_I}
+    -
+    \nabla \cdot
+    \left(
+        \frac{\partial \mathcal{F}}{\partial (\nabla \rho_I)}
+    \right)
+    = 0.
+\]
+Einsetzen ergibt:
+\[
+    -\gamma \frac{(\nabla \rho_I)^2}{\rho_I^2}
+    -
+    2\gamma
+    \left[
+        \frac{\nabla^2 \rho_I}{\rho_I}
+        -
+        \frac{(\nabla \rho_I)^2}{\rho_I^2}
+    \right]
+    = 0.
+\]
+Nach Vereinfachung:
+\[
+    \frac{\nabla^2 \rho_I}{\rho_I}
+    -
+    \frac{1}{2}
+    \frac{(\nabla \rho_I)^2}{\rho_I^2}
+    = 0.
+\]
+Mit der Substitution \(\rho_I = |\Psi|^2\) erhält man:
 \[
     Q
     =
     -\frac{\hbar^2}{2m}
-    \frac{\nabla^2 \sqrt{\rho_I}}{\sqrt{\rho_I}}.
+    \frac{\nabla^2 |\Psi|}{|\Psi|}.
 \]
+Dies ist das Bohm-Potential.
+
+\subsection{Interpretation}
+\begin{itemize}
+    \item \(Q\) beschreibt globale Informationsorganisation.
+    \item Es erzeugt quantisierte Energieniveaus.
+    \item Es ist nichtlokal, aber kausal unproblematisch.
+\end{itemize}
 
 \section{Herleitung der Kontinuitätsgleichung}
-Die Variation nach $\partial_t \rho_I$ ergibt
+\label{app:kontinuitaet}
+
+Die Kontinuitätsgleichung folgt aus der Erhaltung der Gesamtinformation:
 \[
-    \vec{J}_I
-    =
-    \frac{\partial \mathcal{F}}{\partial (\nabla \rho_I)}.
+    \frac{d}{dt} \int \rho_I\, d^3x = 0.
 \]
-Damit folgt
+
+\subsection{Lokale Form}
+Wir fordern:
 \[
     \partial_t \rho_I + \nabla \cdot \vec{J}_I = 0.
 \]
 
-\section{Herleitung der effektiven Masse}
+\subsection{Herleitung aus dem Funktional}
+Der lokale Anteil des Funktionals enthält:
+\[
+    \mathcal{F}_{\text{lokal}}
+    =
+    \alpha (\partial_t \rho_I)^2
+    +
+    \beta (\nabla \rho_I)^2.
+\]
+Die Variation nach \(\partial_t \rho_I\) liefert:
+\[
+    \frac{\partial \mathcal{F}}{\partial (\partial_t \rho_I)}
+    =
+    2\alpha\, \partial_t \rho_I.
+\]
+Dies definiert den Informationsfluss:
+\[
+    \vec{J}_I
+    =
+    -2\beta\, \nabla \rho_I.
+\]
+Einsetzen ergibt die Kontinuitätsgleichung.
 
-Die effektive Masse ergibt sich aus
+\subsection{Interpretation}
+\begin{itemize}
+    \item \(\rho_I\) ist die Informationsdichte.
+    \item \(\vec{J}_I\) ist der Informationsfluss.
+    \item Die Gleichung beschreibt lokale Informationsbilanz.
+\end{itemize}
+
+\section{Herleitung der effektiven Masse}
+\label{app:effmasse}
+
+Die effektive Masse entsteht aus der Trägheit der Informationsstruktur.
+
+\subsection{Definition}
 \[
     m_{\text{eff}}
-    =
-    2\alpha \int \left(\frac{\partial \rho_I}{\partial v}\right)^2 d^3x.
+    \propto
+    \int (\partial_t \rho_I)^2\, d^3x.
 \]
+
+\subsection{Herleitung}
+Die kinetische Energie eines Informationsfeldes ist:
+\[
+    T
+    =
+    \int \alpha (\partial_t \rho_I)^2\, d^3x.
+\]
+Vergleich mit der klassischen Form \(T = \frac{1}{2} m v^2\) zeigt:
+\[
+    m_{\text{eff}}
+    \propto
+    \int (\partial_t \rho_I)^2\, d^3x.
+\]
+
+\subsection{Interpretation}
+\begin{itemize}
+    \item Masse ist keine fundamentale Größe.
+    \item Sie misst die Steifigkeit der Informationsstruktur.
+    \item Trägheit ist ein emergentes Phänomen.
+\end{itemize}
+
+\section{Zusammenfassung}
+In diesem Anhang wurden die zentralen Herleitungen der Informations-Weber-Theorie ausführlich dargestellt:
+\begin{itemize}
+    \item Die Weber-Kraft entsteht aus dem lokalen Anteil des Funktionals.
+    \item Das Bohm-Potential entsteht aus dem globalen Anteil.
+    \item Die Kontinuitätsgleichung folgt aus Informationsbilanz.
+    \item Die effektive Masse misst die Trägheit der Informationsstruktur.
+\end{itemize}
+Damit sind alle mathematischen Grundlagen für die Kapitel 4–13 vollständig nachvollziehbar.

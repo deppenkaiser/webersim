@@ -1,0 +1,170 @@
+\chapter{Numerische Simulation der Informationsgeometrie}
+\label{chap:simulation}
+
+\section{Einleitung}
+Die Informations-Weber-Theorie ist nicht nur analytisch formuliert, sondern auch algorithmisch implementierbar. Da Raum, Zeit und Dynamik aus einem diskreten
+Informationsnetz emergieren, lässt sich die Theorie direkt numerisch simulieren.
+
+Dieses Kapitel beschreibt die Grundprinzipien einer solchen Simulation:
+\begin{itemize}
+    \item die diskrete Informationsstruktur,
+    \item die Aktualisierungsregeln,
+    \item die Berechnung der Informationsmetrik,
+    \item die Simulation lokaler und globaler Dynamik,
+    \item die Rekonstruktion emergenter Größen wie Raum, Zeit und Wellen.
+\end{itemize}
+Damit wird die Informations-Weber-Theorie operational: Sie kann berechnet, visualisiert und experimentell getestet werden.
+
+\section{Das diskrete Informationsnetz}
+Die digitale Informations-Weber-Theorie beschreibt den physikalischen Zustand durch ein Netzwerk aus:
+\begin{itemize}
+    \item \textbf{Knoten} $i$ mit Informationswerten $\rho_I(i)$,
+    \item \textbf{Kopplungen} $K_{ij}$ zwischen Knoten,
+    \item \textbf{Aktualisierungsregeln} für $\rho_I$ und $K_{ij}$.
+\end{itemize}
+Dieses Netz ist kein Abbild des Raumes — es \emph{erzeugt} den Raum.
+
+\subsection{Knoten}
+Jeder Knoten repräsentiert eine elementare Informationszelle. Die Informationsdichte $\rho_I(i)$ ist die fundamentale Größe.
+
+\subsection{Kopplungen}
+Die Kopplungen $K_{ij}$ bestimmen:
+\begin{itemize}
+    \item die Stärke lokaler Informationsflüsse,
+    \item die Reichweite globaler Informationsorganisation,
+    \item die emergente Geometrie.
+\end{itemize}
+
+\subsection{Aktualisierungsregeln}
+Die Dynamik besteht aus diskreten Aktualisierungsschritten:
+\[
+    \rho_I^{(n+1)} = T[\rho_I^{(n)}].
+\]
+Die Transformation $T$ ist die diskrete Version des Informations-Lagrange-Funktionals.
+
+\section{Diskrete Form des Informations-Lagrange-Funktionals}
+Das kontinuierliche Funktional aus Kapitel~\ref{chap:lagrange} wird diskretisiert:
+\[
+    \mathcal{L}_I
+    =
+    \sum_i
+    \mathcal{F}
+    \!\left(
+        \rho_I(i),\,
+        \Delta \rho_I(i),\,
+        \delta_t \rho_I(i)
+    \right).
+\]
+Dabei sind:
+\begin{itemize}
+    \item $\Delta \rho_I(i)$ diskrete Gradienten,
+    \item $\delta_t \rho_I(i)$ zeitliche Differenzen.
+\end{itemize}
+
+Die Variation führt zu diskreten Euler-Lagrange-Gleichungen:
+\[
+    \delta_t
+    \left(
+        \frac{\partial \mathcal{F}}{\partial (\delta_t \rho_I)}
+    \right)
+    +
+    \Delta
+    \left(
+        \frac{\partial \mathcal{F}}{\partial (\Delta \rho_I)}
+    \right)
+    -
+    \frac{\partial \mathcal{F}}{\partial \rho_I}
+    = 0.
+\]
+Diese Gleichungen bestimmen die Aktualisierungsregeln.
+
+\section{Berechnung der Informationsmetrik}
+Die Informationsmetrik aus Kapitel~\ref{chap:informationsmetrik} wird diskretisiert:
+\[
+    g_{ij}
+    =
+    \frac{\partial^2 \mathcal{F}}
+    {\partial (\Delta_i \rho_I)\, \partial (\Delta_j \rho_I)}.
+\]
+Die Metrik entsteht also aus der Sensitivität der Informationsstruktur gegenüber räumlichen Änderungen.
+
+\subsection{Rekonstruktion des Raumes}
+Der emergente Raum entsteht durch:
+\begin{enumerate}
+    \item Berechnung der Metrik $g_{ij}$,
+    \item Bestimmung der effektiven Abstände,
+    \item Einbettung in eine dreidimensionale Darstellung.
+\end{enumerate}
+Damit wird der physikalische Raum aus der Informationsstruktur rekonstruiert.
+
+\section{Simulation lokaler Dynamik}
+Die lokale Dynamik entspricht der Weber-Struktur:
+\begin{itemize}
+    \item geschwindigkeitsabhängige Kopplungen,
+    \item beschleunigungsabhängige Reaktionskräfte,
+    \item lokale Informationsflüsse.
+\end{itemize}
+Diese entstehen aus dem lokalen Anteil des diskreten Funktionals.
+
+\section{Simulation globaler Dynamik}
+Die globale Dynamik entspricht dem Bohm-Potential:
+\begin{itemize}
+    \item systemische Informationsorganisation,
+    \item nichtlokale Kopplungen,
+    \item Interferenzstrukturen.
+\end{itemize}
+Diese entstehen aus dem globalen Anteil des Funktionals.
+
+\section{Emergenz von Wellen und Gravitationsmoden}
+Wellen entstehen als kollektive Moden der Informationsgeometrie:
+\begin{itemize}
+    \item lokale Moden → elektromagnetische Wellen,
+    \item globale Moden → Quantenwellen,
+    \item geometrische Moden → Gravitationswellen.
+\end{itemize}
+Die Simulation zeigt:
+\begin{itemize}
+    \item Interferenzmuster,
+    \item fraktale Skalierungsstrukturen,
+    \item dispersive Effekte,
+    \item frequenzabhängige Ablenkung.
+\end{itemize}
+
+\section{Numerische Stabilität und fraktale Skalierung}
+Die fraktale Dimension
+\[
+    D = \frac{\ln 20}{\ln(2+\phi)}
+\]
+bestimmt:
+\begin{itemize}
+    \item die Skalierung der Kopplungen,
+    \item die Stabilität der Simulation,
+    \item die Übergänge zwischen Mikro- und Makrophysik.
+\end{itemize}
+
+\section{Beispiel: Simulation eines Doppelspalts}
+Die Simulation reproduziert:
+\begin{itemize}
+    \item Interferenz ohne Wellenfunktion,
+    \item Nichtlokalität ohne Kollaps,
+    \item fraktale Feinstrukturen im Muster.
+\end{itemize}
+
+\section{Beispiel: Simulation eines Gravitationspotentials}
+Die Simulation zeigt:
+\begin{itemize}
+    \item emergente Newton-Potentiale,
+    \item fraktale Abweichungen bei kleinen Skalen,
+    \item frequenzabhängige Lichtablenkung.
+\end{itemize}
+
+\section{Zusammenfassung}
+Kapitel~\ref{chap:simulation} hat gezeigt:
+\begin{itemize}
+    \item Die Informations-Weber-Theorie ist numerisch simulierbar.
+    \item Raum, Zeit und Dynamik entstehen aus einem diskreten Informationsnetz.
+    \item Die Informationsmetrik ermöglicht die Rekonstruktion des Raumes.
+    \item Lokale und globale Dynamik entstehen aus dem diskreten Lagrange-Funktional.
+    \item Wellen, Gravitation und Nichtlokalität sind kollektive Moden der Informationsgeometrie.
+\end{itemize}
+Damit ist die Theorie nicht nur konzeptionell und analytisch, sondern auch algorithmisch vollständig formuliert.

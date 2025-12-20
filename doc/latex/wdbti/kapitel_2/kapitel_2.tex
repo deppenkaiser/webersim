@@ -3,14 +3,14 @@
 
 \section{Der Informationszustand}
 Die Informations-Weber-Theorie geht von der grundlegenden Annahme aus, dass jeder physikalische Zustand durch eine \emph{Informationsverteilung} beschrieben wird. Diese
-Informationsverteilung sei durch eine skalare Dichtefunktion
+wird durch eine skalare Dichtefunktion
 \[
     \rho_I(\vec{r},t)
 \]
-gegeben, die angibt, wie viel strukturierte Information an einem Ort im Raum vorliegt.
+repräsentiert, die angibt, wie viel strukturierte Information an einem Ort vorliegt. 
 
-Im Gegensatz zu klassischen Feldern besitzt $\rho_I$ keine direkte materielle Bedeutung. Sie beschreibt nicht Masse, Ladung oder Energie, sondern die \emph{Organisation}
-des physikalischen Systems. Energie, Impuls und andere Größen ergeben sich als abgeleitete Funktionale dieser Informationsstruktur.
+Im Gegensatz zu klassischen Feldern besitzt $\rho_I$ keine materielle Bedeutung. Sie beschreibt weder Masse noch Ladung oder Energie, sondern die \emph{Organisation} eines
+physikalischen Systems. Energie, Impuls und andere Größen entstehen erst als abgeleitete Funktionale dieser Informationsstruktur.
 
 \subsection{Informationsdichte und Informationsfluss}
 Analog zur Kontinuitätsgleichung der klassischen Physik wird der Informationsfluss durch einen Vektorstrom
@@ -18,560 +18,118 @@ Analog zur Kontinuitätsgleichung der klassischen Physik wird der Informationsfl
     \vec{J}_I(\vec{r},t)
 \]
 beschrieben. Die fundamentale Erhaltungsgleichung lautet:
-
-\begin{equation}
-    \frac{\partial \rho_I}{\partial t}
-    + \nabla \cdot \vec{J}_I = 0.
-    \label{eq:info_kontinuitaet}
-\end{equation}
-
-Diese Gleichung ist das Herzstück der Theorie:
-Sie ersetzt die Energieerhaltung durch eine \emph{Informationserhaltung}, aus der die Energieerhaltung als Spezialfall folgt.
+\[
+    \frac{\partial \rho_I}{\partial t} + \nabla \cdot \vec{J}_I = 0.
+\]
+Diese Gleichung ist das Herzstück der Theorie: Sie ersetzt die Energieerhaltung durch eine \emph{Informationserhaltung}, aus der die Energieerhaltung als Spezialfall folgt. Die gesamte Dynamik ergibt sich aus der Umlagerung von Information.
 
 \section{Information als Ursprung physikalischer Größen}
-Die bekannten physikalischen Größen entstehen als Funktionale der Informationsdichte. Für die Energie gilt:
-\[
-    E[\rho_I] = \int f(\rho_I, \nabla \rho_I, \ldots)\, d^3x,
-\]
-wobei $f$ eine noch zu bestimmende Funktion ist, die die Struktur des Systems beschreibt.
+In der Informations-Weber-Theorie entstehen physikalische Größen als Funktionale der Informationsdichte. Energie, Impuls, Trägheit und sogar die geometrische Struktur des
+Raumes ergeben sich aus Symmetrien und Transformationen der Informationsverteilung.
 
-Impuls, Trägheit und sogar die geometrische Struktur des Raumes ergeben sich aus
-Transformations- und Symmetrieeigenschaften der Informationsverteilung.
+Damit wird die klassische Unterscheidung zwischen Materie, Feldern und Geometrie aufgehoben: Alles entsteht aus einer einzigen fundamentalen Größe – der Information.
 
 \section{Dynamik als Informationsfluss}
-Die Bewegungsgleichungen eines Systems ergeben sich aus der Umlagerung von Information. Die Weber-Kraft beschreibt lokale Informationsflüsse, während das Bohmsche
-Quantenpotential globale, systemische Informationsorganisation repräsentiert.
+Die Bewegungsgleichungen eines Systems ergeben sich aus der Umlagerung von Information. Die Theorie unterscheidet zwei komplementäre Dynamikformen:
+\begin{itemize}
+    \item \textbf{lokale Dynamik}: beschrieben durch die Weber-Kraft,
+    \item \textbf{globale Dynamik}: beschrieben durch das Bohm’sche Quantenpotential.
+\end{itemize}
+Diese beiden Strukturen sind keine konkurrierenden Modelle, sondern zwei Projektionen derselben Informationsdynamik.
 
-\subsection{Lokale Dynamik: Weber-Kraft als Informationsfluss}
-Die Weber-Kraft kann als lokaler Informationsflussoperator interpretiert werden:
-\[
-    \vec{F}_{\text{Weber}}
-    = \mathcal{W}[\rho_I, \vec{J}_I].
-\]
-Die klassische Form der Weber-Kraft wird in Kapitel~\ref{chap:weberklassisch} hergeleitet und in den informationsbasierten Kontext eingeordnet.
+\subsection{Lokale Dynamik: Weber-Kraft}
+Die Weber-Kraft beschreibt lokale Informationsflüsse. Sie ist der lokale Grenzfall der informationsbasierten Dynamik und wird in Kapitel~\ref{chap:weberklassisch}
+hergeleitet.
 
-\subsection{Globale Dynamik: Quantenpotential als Informationsoperator}
-Das Bohmsche Quantenpotential
-\[
-    Q = -\frac{\hbar^2}{2m}
-    \frac{\nabla^2 \sqrt{\rho_I}}{\sqrt{\rho_I}}
-\]
-beschreibt die systemische, nichtlokale Organisation des Informationszustands. In der Informations-Weber-Theorie wird $Q$ als globaler Informationsoperator verstanden,
-der die gesamte Struktur des Systems berücksichtigt.
+\subsection{Globale Dynamik: Quantenpotential}
+Das Bohm’sche Quantenpotential beschreibt die systemische, nichtlokale Organisation des Informationszustands. Es ist der globale Grenzfall der Informationsdynamik und wird
+in Kapitel~4 aus dem Informations-Lagrange-Funktional abgeleitet.
 
 \subsection{Die analoge WDBT als Fernwirkungstheorie}
-Die analoge Form der Weber–De-Broglie-Theorie beschreibt die Gesamtwirkung auf ein
-physikalisches System durch die Überlagerung dreier Fernwirkungsbeiträge:
+Die analoge Weber–De-Broglie–Bohm-Theorie (WDBT) beschreibt die Gesamtwirkung auf ein System durch drei Fernwirkungsbeiträge:
 \[
     F = F_{\text{WED}} + F_{\text{WG}} + F_Q.
 \]
 
 \begin{itemize}
-    \item $F_{\text{WED}}$ ist die Weber-Elektrodynamik als Fernwirkung zwischen Ladungen. Sie kommt ohne elektromagnetische Felder als ontologische Objekte aus
-    und beschreibt die Wechselwirkung direkt über geschwindigkeits- und
-    beschleunigungsabhängige Terme.
-
-    \item $F_{\text{WG}}$ ist die Weber-Gravitationskraft als Fernwirkung zwischen Massen, strukturell analog zur Weber-Elektrodynamik. Die Einführung von $F_{\text{WG}}$
-    war ein entscheidender Meilenstein: Erst dadurch wurde die WDBT zu einer konsistenten Theorie, die elektromagnetische, gravitative und quantenmechanische Effekte im
-    selben formalen Rahmen behandeln kann.
-
-    \item $F_Q$ ist die aus dem De-Broglie–Bohm-Quantenpotential resultierende Kraft. Auch sie ist eine Fernwirkung, jedoch nicht zwischen einzelnen Teilchen, sondern eine
-    systemische, nichtlokale Wirkung auf die gesamte Informationsstruktur des Systems.
+    \item $F_{\text{WED}}$: Weber-Elektrodynamik (Ladungen),
+    \item $F_{\text{WG}}$: Weber-Gravitation (Massen),
+    \item $F_Q$: Bohm’sches Quantenpotential (Informationsstruktur).
 \end{itemize}
-
-Entscheidend ist, dass alle drei Beiträge in dieser analogen Stufe als \emph{Fernwirkungstheorien} formuliert sind. Es werden weder klassische Felder noch eine dynamische
-Raumzeit als Trägerobjekte benötigt. Die Dynamik ergibt sich vollständig aus direkten Wechselwirkungen und globalen Informationsbeziehungen.
-
-Diese fernwirkungsbasierte Struktur hat jedoch eine klare Konsequenz:
-\emph{In der analogen WDBT existiert kein explizites Raummodell.} Ohne ein solches Modell können keine propagierenden Störungen definiert werden. Daher gilt:
-
-\begin{itemize}
-    \item Gravitationswellen setzen ein dynamisches Raummodell voraus.
-    \item Die analoge WDBT besitzt kein solches Modell.
-    \item Daher kann sie Gravitationswellen nicht beschreiben.
-\end{itemize}
-
-Diese Einschränkung ist kein Defizit, sondern eine strukturelle Eigenschaft der analogen Theorie. Erst die digitale WDBT führt ein diskretes Informationsnetz ein, aus dem
-der physikalische Raum als emergente Geometrie entsteht. In dieser digitalen Stufe werden Gravitationswellen zu kollektiven Moden der Informationsgeometrie, und die
-großskalige Struktur der kosmischen Hintergrundstrahlung (CMB) sowie die Herleitung von Naturkonstanten werden möglich.
+Diese analoge Theorie besitzt \emph{kein Raummodell}. Sie arbeitet rein relational und kann daher keine propagierenden Störungen wie Gravitationswellen beschreiben.
 
 \section{Raum als emergente Informationsgeometrie}
-Die analoge WDBT beschreibt physikalische Systeme ausschließlich durch Fernwirkungen:
-\[
-    F = F_{\text{WED}} + F_{\text{WG}} + F_Q.
-\]
-In dieser Stufe der Theorie existiert kein ontologischer physikalischer Raum. Die Dynamik ergibt sich vollständig aus direkten Wechselwirkungen und globalen
-Informationsbeziehungen. Dies erklärt, warum die analoge WDBT keine Gravitationswellen kennt: Ohne ein explizites Raummodell können keine propagierenden Störungen
-definiert werden.
-
-Um Phänomene zu beschreiben, die ein dynamisches Raummodell erfordern – etwa Gravitationswellen, die Struktur der kosmischen Hintergrundstrahlung (CMB) oder die Herleitung
-von Naturkonstanten – muss die Theorie auf eine diskrete, informationsbasierte Ebene erweitert werden. Diese Erweiterung bildet die \emph{digitale WDBT}.
+Die analoge WDBT arbeitet ohne ontologischen Raum. Erst die digitale WDBT führt ein diskretes Informationsnetz ein, aus dem der physikalische Raum als emergente Geometrie
+entsteht.
 
 \subsection{Warum Raum nicht fundamental sein kann}
-Die Informations-Weber-Theorie geht davon aus, dass der physikalische Raum keine ontologische Grundgröße ist, sondern eine abgeleitete Eigenschaft der Informationsstruktur. Diese Sichtweise ergibt sich aus mehreren grundlegenden
-Überlegungen:
-
-\paragraph{(1) Fernwirkung ohne Trägerraum}
-Die analoge WDBT beschreibt die Dynamik vollständig durch Fernwirkungen:
-\[
-    F = F_{\text{WED}} + F_{\text{WG}} + F_Q.
-\]
-Diese drei Beiträge benötigen keinen physikalischen Raum als Trägerobjekt. Die Wechselwirkungen sind relational definiert und beziehen sich ausschließlich auf
-Informationszustände. Damit wird klar: Die Dynamik existiert logisch \emph{vor} dem Raum.
-
-\paragraph{(2) Raum ist nicht notwendig für Kausalität}
-Die Theorie unterscheidet zwei Kausalitätsebenen:
+Mehrere Argumente sprechen gegen einen fundamentalen Raum:
 \begin{itemize}
-    \item lokale Kausalität (Energietransport),
-    \item systemische Kausalität (globale Informationsorganisation).
+    \item Fernwirkungen benötigen keinen Trägerraum.
+    \item Kausalität kann ohne Raum formuliert werden.
+    \item Die fraktale Dimension widerspricht einem glatten Kontinuum.
+    \item Kontinuumsmodelle erzeugen Singularitäten und Paradoxien.
+    \item Eine dynamische Raumzeit setzt ein Informationsnetz voraus.
 \end{itemize}
-Beide Ebenen lassen sich ohne ein ontologisches Raumzeitkontinuum formulieren. Die Existenz eines Raumes ist daher keine Voraussetzung für Kausalität, sondern
-eine Konsequenz der Informationsstruktur.
-
-\paragraph{(3) Raum kann nicht fundamental sein, wenn er fraktal ist}
-Die fraktale Dimension
-\[
-    D = \frac{\ln 20}{\ln(2+\phi)}
-\]
-ist eine Eigenschaft der Kopplungsstruktur des Informationsnetzes. Eine fraktale Dimension ist jedoch unvereinbar mit einem fundamental glatten Kontinuum. Der
-Raum kann daher nicht primitiv sein, sondern muss aus einer diskreten Struktur emergieren.
-
-\paragraph{(4) Kontinuumsmodelle erzeugen Paradoxien}
-Kontinuumsmodelle wie die ART führen zu:
-\begin{itemize}
-    \item Singularitäten,
-    \item Energieerzeugung aus dem Nichts,
-    \item undefinierten Anfangsbedingungen (Urknall),
-    \item unendlichen Selbstenergien.
-\end{itemize}
-Diese Probleme verschwinden, sobald Raum nicht als fundamental, sondern als emergente Größe verstanden wird.
-
-\paragraph{(5) Dynamische Raumzeit setzt ein Informationsnetz voraus}
-Eine dynamische Raumzeit – wie sie in der ART angenommen wird – benötigt ein Trägerobjekt, das sich verändern kann. Ohne ein zugrunde liegendes Informationsnetz ist eine
-solche Dynamik nicht definierbar. Erst die digitale WDBT liefert dieses Netz und damit ein konsistentes Raummodell.
-
-\paragraph{Konsequenz}
-Aus diesen Gründen kann der physikalische Raum nicht fundamental sein. Er ist die effektive Geometrie eines diskreten Informationsnetzes, das erst in der digitalen
-WDBT explizit eingeführt wird. Die analoge WDBT arbeitet bewusst ohne Raum und beschreibt Fernwirkungen; die digitale WDBT lässt den Raum aus der Informationsarchitektur
-emergieren und ermöglicht damit Phänomene wie Gravitationswellen, CMB-Struktur und die Herleitung von Naturkonstanten.
+Die Konsequenz lautet: Raum ist eine abgeleitete Größe, keine fundamentale.
 
 \subsection{Emergenz der Zeit}
-Wenn der physikalische Raum keine fundamentale Größe ist, stellt sich unmittelbar die Frage nach dem Status der Zeit. In der Informations-Weber-Theorie ist auch die Zeit
-keine ontologische Grundgröße, sondern eine emergente Eigenschaft der Transformationen des Informationszustands.
-
-\paragraph{(1) Zeit als Ordnungsparameter der Information}
-Die analoge WDBT beschreibt die Dynamik eines Systems durch eine invertierbare Transformation des Informationszustands:
-\[
-    I(t_2) = T[I(t_1)].
-\]
-Der Parameter $t$ besitzt in dieser Stufe keine physikalische Bedeutung, sondern dient als \emph{Ordnungsparameter}, der die Reihenfolge der Informationszustände festlegt.
-Zeit ist damit keine Substanz, sondern eine Strukturierung der Veränderung.
-
-\paragraph{(2) Zeit entsteht aus der Sequenz diskreter Informationszustände}
-In der digitalen WDBT wird der Informationszustand durch ein diskretes Netzwerk von Knoten und Kopplungen beschrieben. Die Dynamik besteht aus elementaren Aktualisierungen
-dieser Kopplungsstruktur. Die Zeit entsteht als Sequenz solcher Aktualisierungsschritte:
-\[
-    I_0 \rightarrow I_1 \rightarrow I_2 \rightarrow \cdots
-\]
-Die physikalische Zeit ist die effektive Kontinuumsbeschreibung dieser diskreten Sequenz. Damit ist Zeit eine emergente Größe, die aus der Ordnung der
-Informationsveränderungen hervorgeht.
-
-\paragraph{(3) Zwei Kausalitätsebenen erzeugen zwei Zeitstrukturen}
-Die Informations-Weber-Theorie unterscheidet:
+Auch die Zeit ist keine primitive Größe. Sie entsteht aus der Ordnung der Informationszustände und aus der Aktualisierungsdynamik des Informationsnetzes.
 \begin{itemize}
-    \item \textbf{lokale Kausalität}: Energie- und Impulsfluss mit endlicher Geschwindigkeit,
-    \item \textbf{systemische Kausalität}: instantane Organisation des Informationszustands.
+    \item Zeit ist ein Ordnungsparameter der Informationsveränderung.
+    \item In der digitalen WDBT entsteht Zeit aus diskreten Aktualisierungsschritten.
+    \item Zeitdilatation ist eine Eigenschaft der Informationsgeometrie.
+    \item Die Zeitrichtung entsteht aus Informationsentropie.
 \end{itemize}
-Diese beiden Ebenen erzeugen zwei komplementäre Zeitstrukturen:
-\begin{itemize}
-    \item eine \emph{lokale Zeit}, die durch Transportprozesse definiert ist,
-    \item eine \emph{globale Zeit}, die durch die Ordnung der Informationsstruktur bestimmt wird.
-\end{itemize}
-Die beobachtete physikalische Zeit ist die Überlagerung beider Strukturen.
-
-\paragraph{(4) Zeitdilatation als Informationsgeometrie}
-In der digitalen WDBT entsteht die Zeitdilatation nicht aus einer ontologischen Raumzeit, sondern aus der Veränderung der Informationsgeometrie. Eine stärkere
-Kopplungsdichte führt zu einer verlangsamten lokalen Aktualisierungsrate des Informationsnetzes. Damit ergibt sich die Zeitdilatation als emergente Eigenschaft der
-Informationsarchitektur.
-
-\paragraph{(5) Keine fundamentale Zeitrichtung}
-Da die Transformationen des Informationszustands invertierbar sind, besitzt die Theorie keine fundamentale Zeitrichtung. Die beobachtete Zeitrichtung entsteht aus der
-Informationsentropie:
-\[
-    \Delta S_I \ge 0.
-\]
-Die „Richtung der Zeit“ ist damit eine statistische Eigenschaft der Informationsdynamik, nicht ein fundamentales Gesetz.
-
-\paragraph{Konsequenz}
-Die Zeit ist in der Informations-Weber-Theorie keine primitive Größe. Sie entsteht aus der Ordnung der Informationszustände und aus der Aktualisierungsdynamik des diskreten
-Informationsnetzes. Die analoge WDBT beschreibt Zeit als Ordnungsparameter, die digitale WDBT lässt sie als emergente Struktur der Informationsgeometrie entstehen. Damit
-wird die Zeit – ebenso wie der Raum – zu einer abgeleiteten Größe einer tieferen Informationsordnung.
 
 \subsection{Fraktale Dimension als geometrische Signatur}
-Die digitale WDBT beschreibt den physikalischen Raum als emergente Geometrie eines diskreten Informationsnetzes. Eine zentrale Eigenschaft dieser Geometrie ist ihre
-fraktale Dimension. Sie ist keine willkürliche Größe, sondern eine direkte Konsequenz der Kopplungsstruktur des Informationsnetzes.
-
-\paragraph{(1) Fraktale Dimension als Maß der Informationsverteilung}
 Die fraktale Dimension
 \[
     D = \frac{\ln 20}{\ln(2+\phi)}
 \]
-ist ein Maß dafür, wie sich Information über Skalen hinweg organisiert. Sie beschreibt nicht die Anzahl der Raumdimensionen, sondern die Skalierungsstruktur der Kopplungen
-im Informationsnetz. Damit ist $D$ eine \emph{geometrische Signatur} der Informationsarchitektur.
-
-\paragraph{(2) Warum ein fraktaler Raum nicht fundamental sein kann}
-Ein Raum mit fraktaler Dimension kann nicht fundamental sein, da ein fundamentales Kontinuum stets eine ganzzahlige Dimension besitzen müsste. Die fraktale Dimension zeigt,
-dass der beobachtete Raum eine effektive Größe ist, die aus einer diskreten Struktur hervorgeht. Die fraktale Geometrie ist daher ein direkter Hinweis auf die
-Nicht-Fundamentalität des physikalischen Raumes.
-
-\paragraph{(3) Fraktale Geometrie als Ursprung des Skalenverhaltens}
-Die fraktale Dimension bestimmt das Verhalten physikalischer Größen über Skalen hinweg. In der digitalen WDBT ergibt sich das Skalenverhalten aus der Kopplungsarchitektur
-des Informationsnetzes. Dadurch entstehen:
-
-\begin{itemize}
-    \item effektive Kontinuumsmodelle auf großen Skalen,
-    \item Abweichungen vom Kontinuum auf kleinen Skalen,
-    \item natürliche Übergänge zwischen klassischen und quantenmechanischen Regimen.
-\end{itemize}
-
-Die fraktale Dimension ist somit der Schlüssel zur Verbindung von Mikro- und Makrophysik.
-
-\paragraph{(4) Fraktale Signaturen in der CMB-Struktur}
-Die anisotrope Struktur der kosmischen Hintergrundstrahlung (CMB) spiegelt die fraktale Kopplungsstruktur des frühen Informationsnetzes wider. Die beobachteten
-Fluktuationen sind keine thermischen Relikte eines Urknalls, sondern fossilierte Signaturen der fraktalen Informationsgeometrie. Die digitale WDBT liefert damit eine
-natürliche Erklärung für die CMB-Struktur ohne Singularitäten oder inflationäre Zusatzannahmen.
-
-\paragraph{(5) Naturkonstanten als Skalierungsparameter der fraktalen Geometrie}
-In der digitalen WDBT entstehen fundamentale Konstanten wie $c$, $\hbar$ oder $G$ aus Skalierungsrelationen der fraktalen Informationsarchitektur. Die fraktale Dimension
-bestimmt, wie Informationsflüsse über Skalen hinweg transformiert werden. Naturkonstanten sind daher keine unabhängigen Eingabegrößen, sondern emergente Parameter der
-fraktalen Geometrie.
-
-\paragraph{Konsequenz}
-Die fraktale Dimension ist die geometrische Signatur der digitalen WDBT. Sie zeigt, dass der physikalische Raum nicht fundamental sein kann, sondern aus einer diskreten
-Informationsarchitektur emergiert. Die fraktale Geometrie verbindet Mikro- und Makrophysik, erklärt die Struktur der CMB und ermöglicht die Herleitung der Naturkonstanten.
-Damit ist die fraktale Dimension ein zentrales Element der informationsbasierten Raumgeometrie.
+ist eine Eigenschaft der Kopplungsstruktur des Informationsnetzes. Sie beschreibt die Skalierungsstruktur der Informationsarchitektur und ist ein Hinweis darauf, dass der
+Raum nicht fundamental sein kann.
 
 \subsection{Diskrete Informationsstruktur als Ursprung des Raumes}
-Die digitale WDBT geht von einem Netzwerk aus Informationsknoten und Kopplungen aus. Dieses Netzwerk bildet keinen Raum ab, sondern \emph{erzeugt} ihn. Der physikalische
-Raum ist die effektive Metrik der Kopplungsstruktur:
+Die digitale WDBT beschreibt ein Netzwerk aus Informationsknoten und Kopplungen. Der physikalische Raum ist die effektive Metrik dieser Kopplungsstruktur:
 \[
     g_{ij} = g_{ij}[\text{Kopplungen}, \rho_I].
 \]
-Die geometrischen Eigenschaften des Raumes – Dimension, Krümmung, Metrik – sind keine Grundgrößen, sondern emergente Eigenschaften der Informationsarchitektur. Die fraktale
-Dimension 
-\[
-    D = \frac{\ln 20}{\ln(2+\phi)}
-\]
-ist eine Eigenschaft dieser Kopplungsstruktur und bestimmt die effektive Geometrie des Raumes auf verschiedenen Skalen.
 
 \subsection{Emergenz der Dynamik aus der Informationsgeometrie}
-Wenn Raum und Zeit nicht fundamental sind, sondern aus der Struktur des Informationsnetzes emergieren, dann kann auch die physikalische Dynamik nicht fundamental sein.
-Bewegung, Kräfte und Wellen entstehen als Konsequenzen der Geometrie des Informationsraums. Die Dynamik ist damit keine primitive Größe, sondern eine abgeleitete
-Eigenschaft der Informationsgeometrie.
-
-\paragraph{(1) Dynamik als Geometrieänderung}
-In der digitalen WDBT wird der Informationszustand durch ein diskretes Netzwerk von Knoten und Kopplungen beschrieben. Die Dynamik besteht aus Aktualisierungen dieser
-Kopplungsstruktur. Eine Änderung der Informationsgeometrie führt zu einer Änderung der effektiven Metrik $g_{ij}$ und damit zu einer beobachtbaren Bewegung:
-\[
-    \text{Dynamik} = \frac{d}{dt} g_{ij}[\text{Kopplungen}, \rho_I].
-\]
-Bewegung ist somit die Folge einer veränderten Informationsgeometrie, nicht die Ursache.
-
-\paragraph{(2) Lokale Dynamik als metrische Projektion}
-Die klassische Bewegungsgleichung eines Teilchens entsteht als Projektion der Informationsgeometrie auf eine effektive Bahnkurve. Die Weber-Kraft ist der lokale Grenzfall
-dieser Projektion:
-\[
-    F_{\text{lokal}} = F_{\text{WED}} + F_{\text{WG}}.
-\]
-Sie beschreibt, wie sich die lokale Struktur des Informationsnetzes auf die
-Bewegung einzelner Freiheitsgrade auswirkt.
-
-\paragraph{(3) Globale Dynamik als systemische Geometrie}
-Das Bohm’sche Quantenpotential $Q$ ist die globale Komponente der Informationsgeometrie. Es beschreibt die systemische Organisation des gesamten Informationsnetzes:
-\[
-    F_Q = -\nabla Q.
-\]
-Damit ist $Q$ kein zusätzliches physikalisches Feld, sondern die geometrische Signatur der globalen Informationsstruktur.
-
-\paragraph{(4) Einheit von lokaler und globaler Dynamik}
-Die Gesamtbewegung ergibt sich aus der Überlagerung lokaler und globaler Geometrieeffekte:
-\[
-    F = F_{\text{WED}} + F_{\text{WG}} + F_Q.
-\]
-Diese Gleichung ist nicht die Summe unabhängiger Kräfte, sondern die Zerlegung einer einzigen geometrischen Ursache in lokale und globale Anteile. Die Dynamik ist damit
-die emergente Wirkung der Informationsgeometrie.
-
-\paragraph{(5) Wellen als kollektive Moden der Informationsgeometrie}
-In der digitalen WDBT entstehen Wellen – einschließlich Gravitationswellen – als kollektive Moden der Informationsgeometrie. Sie sind keine Schwingungen eines Kontinuums,
-sondern Muster der Kopplungsänderungen im Informationsnetz. Die Ausbreitungsgeschwindigkeit solcher Moden ergibt sich aus der Struktur des Netzes und ist nicht fundamental.
-
-\paragraph{(6) Klassische und relativistische Dynamik als Grenzfälle}
-Die klassische Mechanik, die Quantenmechanik und die Relativitätstheorie erscheinen als Grenzfälle der Informationsgeometrie:
-
+Wenn Raum und Zeit emergent sind, dann ist auch die Dynamik emergent. Bewegung, Kräfte und Wellen entstehen als Konsequenzen der Informationsgeometrie.
 \begin{itemize}
-    \item klassische Mechanik: lokale Projektion bei schwacher Kopplungsvariation,
-    \item Quantenmechanik: globale Projektion der systemischen Informationsstruktur,
-    \item ART/ART+: effektive Kontinuumsgeometrie großer Informationsnetze.
+    \item lokale Dynamik = Projektion der lokalen Informationsstruktur,
+    \item globale Dynamik = Projektion der systemischen Informationsstruktur,
+    \item Wellen = kollektive Moden der Informationsgeometrie.
 \end{itemize}
-
-Damit ist die gesamte bekannte Dynamik eine emergente Eigenschaft der Informationsgeometrie.
-
-\paragraph{Konsequenz}
-Die Dynamik ist in der Informations-Weber-Theorie keine primitive Größe. Sie entsteht aus der Veränderung der Informationsgeometrie und ist die beobachtbare Manifestation
-der Aktualisierungsprozesse im diskreten Informationsnetz. Lokale Weber-Dynamik, globale Bohm-Dynamik und relativistische Geometrie sind verschiedene Projektionen derselben fundamentalen Informationsstruktur.
 
 \subsection{Emergenz von Gravitationswellen}
-In der digitalen WDBT entstehen Gravitationswellen als kollektive Moden der Informationsgeometrie. Sie sind keine Schwingungen eines ontologischen Kontinuums, sondern
-Veränderungen der Kopplungsstruktur des Informationsnetzes. Damit wird klar:
-
-\begin{itemize}
-    \item Die analoge WDBT kann keine Gravitationswellen beschreiben.
-    \item Die digitale WDBT erzeugt Gravitationswellen als emergente Phänomene.
-\end{itemize}
+Die analoge WDBT kann keine Gravitationswellen beschreiben. Die digitale WDBT erzeugt Gravitationswellen als kollektive Moden der Informationsgeometrie.
 
 \subsection{CMB-Struktur als fossilierte Informationsgeometrie}
-Die großskalige Struktur der kosmischen Hintergrundstrahlung (CMB) ergibt sich in der digitalen WDBT aus frühen Zuständen der Informationsgeometrie. Die beobachteten
-Anisotropien spiegeln die fraktale Kopplungsstruktur des Informationsnetzes wider und sind keine Signatur eines thermischen Urknalls.
+Die anisotrope Struktur der kosmischen Hintergrundstrahlung (CMB) spiegelt die fraktale Kopplungsstruktur des frühen Informationsnetzes wider.
 
 \subsection{Herleitung von Naturkonstanten}
-In der digitalen WDBT sind Naturkonstanten keine unabhängigen Eingabegrößen, sondern Konsequenzen der diskreten Informationsarchitektur. Größen wie $c$, $\hbar$ oder $G$
-entstehen aus:
-
-\begin{itemize}
-    \item Kopplungsstärken des Informationsnetzes,
-    \item Skalierungsrelationen der fraktalen Dimension,
-    \item symmetrischen Transformationen des Informationsraums.
-\end{itemize}
-
-Damit wird die digitale WDBT zu einer echten Urtheorie: Sie beschreibt nicht nur Dynamik, sondern auch die Entstehung der fundamentalen Konstanten selbst.
+In der digitalen WDBT entstehen Naturkonstanten wie $c$, $\hbar$ und $G$ aus Skalierungsrelationen der Informationsarchitektur.
 
 \subsection{Einordnung von WDBT, ART und ART+}
-Die analoge WDBT besitzt kein Raummodell, enthält jedoch bereits die vollständige Fernwirkungsstruktur einschließlich des Bohm’schen Quantenpotentials $F_Q$. Die
-Allgemeine Relativitätstheorie (ART) steht in gewisser Weise zwischen der analogen WDBT und der informationsbasierten WDBT+: Sie übernimmt die gravitative Dynamik
-der WDBT (etwa die historische Erklärung der Periheldrehung), erweitert sie jedoch durch ein geometrisches Raummodell und die Möglichkeit von Gravitationswellen.
-Gleichzeitig fehlt der ART die informationsbasierte Quantenstruktur der WDBT. Wird die ART um diese nichtlokale Informationsstruktur ergänzt, entsteht eine erweiterte
-Theorie (ART+), in der der Urknall durch einen Big Bounce ersetzt wird und echte Singularitäten vermieden werden. Erst die digitale WDBT+ übertrifft die ART in ihrer
-Erklärungskraft, da sie Gravitationswellen, Naturkonstanten, Rotationskurven, CMB-Struktur und weitere Phänomene aus der diskreten Informationsarchitektur herleiten kann.
-
-\subsection{Zusammenfassung}
-Die analoge WDBT arbeitet ohne Raum und beschreibt Fernwirkungen. Die digitale WDBT führt ein diskretes Informationsnetz ein, aus dem der physikalische Raum als emergente
-Geometrie entsteht. Erst diese digitale Stufe ermöglicht die Beschreibung von Gravitationswellen, der CMB-Struktur und die Herleitung der Naturkonstanten.
-
-\section{Informations-Lagrange-Funktional}
-Um die Dynamik der Informations-Weber-Theorie formal zu beschreiben, wird ein Lagrange-Funktional eingeführt, das die zeitliche Entwicklung der Informationsdichte
-$\rho_I(\vec{r},t)$ bestimmt. Dieses Funktional ersetzt die klassischen Lagrange-Ansätze der Mechanik und Feldtheorie durch eine informationsbasierte Struktur.
-
-\subsection{Definition des Funktionals}
-Das Informations-Lagrange-Funktional sei gegeben durch
-\begin{equation}
-    \mathcal{L}_I[\rho_I]
-    =
-    \int \mathcal{F}\!\left(
-        \rho_I,\,
-        \nabla \rho_I,\,
-        \partial_t \rho_I
-    \right) d^3x,
-    \label{eq:info_lagrange}
-\end{equation}
-wobei $\mathcal{F}$ eine skalare Dichte ist, die die lokale Struktur des Informationsraums beschreibt. Sie hängt im Allgemeinen von der Informationsdichte, ihren
-räumlichen Gradienten und ihrer zeitlichen Ableitung ab.
-
-Die Form von $\mathcal{F}$ ist nicht a priori festgelegt, sondern ergibt sich aus den Axiomen der Informations-Weber-Theorie und den Symmetrien des Informationsraums.
-
-\subsection{Variation und Euler-Lagrange-Gleichungen}
-Die Dynamik folgt aus dem Variationsprinzip
-\[
-    \delta \mathcal{L}_I = 0.
-\]
-Die Variation nach $\rho_I$ führt zur Euler-Lagrange-Gleichung
-
-\begin{equation}
-    \frac{\partial}{\partial t}
-    \left(
-        \frac{\partial \mathcal{F}}{\partial (\partial_t \rho_I)}
-    \right)
-    +
-    \nabla \cdot
-    \left(
-        \frac{\partial \mathcal{F}}{\partial (\nabla \rho_I)}
-    \right)
-    -
-    \frac{\partial \mathcal{F}}{\partial \rho_I}
-    = 0.
-    \label{eq:euler_lagrange_info}
-\end{equation}
-
-Diese Gleichung ist die fundamentale Bewegungsgleichung der Informations-Weber-Theorie. Sie ersetzt die Newtonsche Bewegungsgleichung, die Maxwell-Gleichungen und die
-Schrödinger-Gleichung durch eine einheitliche informationsbasierte Struktur.
-
-\subsection{Lokale und globale Beiträge}
-Die Struktur von $\mathcal{F}$ erlaubt eine natürliche Zerlegung in lokale und globale Anteile:
-\begin{equation}
-    \mathcal{F}
-    =
-    \mathcal{F}_{\text{lokal}}
-    +
-    \mathcal{F}_{\text{global}}.
-\end{equation}
 
 \begin{itemize}
-    \item $\mathcal{F}_{\text{lokal}}$ beschreibt lokale Informationsflüsse und führt im
-    Grenzfall zu den geschwindigkeits- und beschleunigungsabhängigen Termen der
-    Weber-Kraft.
-
-    \item $\mathcal{F}_{\text{global}}$ beschreibt die systemische Organisation des
-    Informationszustands und führt im Grenzfall zum Bohmschen Quantenpotential.
+    \item \textbf{analoge WDBT}: Fernwirkung, kein Raum, keine Wellen.
+    \item \textbf{ART}: geometrisches Raummodell, aber ohne Informationsstruktur.
+    \item \textbf{ART+}: ART erweitert um Informationsstruktur.
+    \item \textbf{digitale WDBT+}: vollständige informationsbasierte Urtheorie.
 \end{itemize}
 
-Damit ergibt sich eine natürliche Interpretation:
+\section{Zusammenfassung}
+Kapitel~2 hat die konzeptionellen Grundlagen der Informations-Weber-Theorie dargestellt:
 \begin{itemize}
-    \item Die Weber-Kraft ist der lokale Anteil der Informationsdynamik.
-    \item Das Quantenpotential ist der globale Anteil der Informationsdynamik.
+    \item Informationszustand als fundamentale Größe,
+    \item lokale und globale Informationsdynamik,
+    \item analoge WDBT als Fernwirkungstheorie,
+    \item digitale WDBT als informationsbasierte Raumtheorie,
+    \item Emergenz von Raum, Zeit, Dynamik und Naturkonstanten.
 \end{itemize}
 
-Diese Zerlegung ist nicht willkürlich, sondern folgt aus den Axiomen der Theorie:
-lokale Kausalität (Axiom V) erzeugt lokale Terme, systemische Ganzheit erzeugt globale Terme.
-
-\subsection{Informationsfluss als Bewegungsgleichung}
-Aus der Euler-Lagrange-Gleichung \eqref{eq:euler_lagrange_info} ergibt sich eine Gleichung für den Informationsfluss
-\[
-    \vec{J}_I
-    =
-    \frac{\partial \mathcal{F}}{\partial (\nabla \rho_I)}.
-\]
-Damit wird die Kontinuitätsgleichung
-\[
-    \frac{\partial \rho_I}{\partial t}
-    + \nabla \cdot \vec{J}_I = 0
-\]
-zu einer direkten Konsequenz des Variationsprinzips.
-
-Die Informations-Weber-Theorie ist somit eine vollständig variationale Theorie, in der sowohl lokale als auch globale Dynamik aus einem einzigen Funktional hervorgehen.
-
-\section{Emergenz klassischer Gleichungen}
-Die Informations-Weber-Theorie ist so konstruiert, dass sie klassische physikalische Gleichungen als Grenzfälle reproduziert. Dies ist ein wesentliches Kriterium für die
-physikalische Konsistenz der Theorie: Eine neue fundamentale Beschreibung muss die bewährten Modelle in geeigneten Näherungen enthalten. In diesem Abschnitt wird gezeigt,
-wie die Weber-Kraft, das Bohmsche Quantenpotential und klassische Energie- und Impulsgrößen aus der informationsbasierten Struktur hervorgehen.
-
-\subsection{Weber-Kraft als Grenzfall lokaler Informationsdynamik}
-Die Weber-Kraft entsteht aus dem lokalen Anteil des Informations-Lagrange-Funktionals. Wird $\mathcal{F}_{\text{lokal}}$ auf Terme erster und zweiter Ordnung in den
-zeitlichen Änderungen der Informationsdichte beschränkt, ergibt sich im Grenzfall schwacher Informationsgradienten eine Kraftform
-\[
-    \vec{F}_{\text{lokal}}
-    =
-    \mathcal{W}[\rho_I, \vec{J}_I]
-    \;\longrightarrow\;
-    \vec{F}_{\text{Weber}},
-\]
-wobei die klassische Weber-Kraft in Kapitel~\ref{chap:weberklassisch} hergeleitet wird. Die informationsbasierte Interpretation lautet:
-
-\begin{itemize}
-    \item Der Coulomb-Term beschreibt die statische Informationskopplung.
-    \item Der geschwindigkeitsabhängige Term beschreibt lokale Änderungen des
-    Informationsflusses.
-    \item Der beschleunigungsabhängige Term beschreibt die Reaktion des Systems auf
-    zeitliche Änderungen der Informationsstruktur.
-\end{itemize}
-
-Damit erscheint die Weber-Kraft nicht als exotische Modifikation der Elektrodynamik, sondern als \emph{lokale Näherung} einer tieferen informationsbasierten Dynamik.
-
-\subsection{Bohm-Potential als globaler Informationsoperator}
-Der globale Anteil des Informations-Lagrange-Funktionals führt im Grenzfall zu einem Term der Form
-\[
-    \mathcal{F}_{\text{global}}
-    \propto
-    \frac{(\nabla \rho_I)^2}{\rho_I},
-\]
-dessen Variation das Bohmsche Quantenpotential erzeugt:
-\[
-    Q
-    =
-    -\frac{\hbar^2}{2m}
-    \frac{\nabla^2 \sqrt{\rho_I}}{\sqrt{\rho_I}}.
-\]
-Damit ergibt sich eine klare Interpretation:
-
-\begin{itemize}
-    \item $Q$ ist kein mysteriöser Zusatzterm der Quantenmechanik.
-    \item $Q$ ist die systemische, globale Organisationsstruktur der Information.
-    \item $Q$ entsteht aus der Minimierung des globalen Informationsfunktionals.
-\end{itemize}
-
-Die Nichtlokalität des Quantenpotentials ist somit keine Verletzung der Kausalität, sondern Ausdruck der systemischen Ganzheit des Informationsraums (Axiom~V).
-
-\subsection{Energie und Impuls als Informationsfunktionale}
-Die klassischen Größen Energie und Impuls entstehen aus Symmetrien des Informations-Lagrange-Funktionals. Nach dem Noether-Theorem gilt:
-
-\begin{itemize}
-    \item \textbf{Translationssymmetrie} $\Rightarrow$ Impulserhaltung
-    \item \textbf{Zeitsymmetrie} $\Rightarrow$ Energieerhaltung
-\end{itemize}
-
-Die Energie eines Systems ergibt sich aus dem Funktional
-\[
-    E[\rho_I]
-    =
-    \int \mathcal{H}_I(\rho_I, \nabla \rho_I)\, d^3x,
-\]
-wobei $\mathcal{H}_I$ die informationsbasierte Hamilton-Dichte ist.
-
-Der Impuls ergibt sich aus der Variation unter infinitesimalen Translationen:
-\[
-    \vec{p}
-    =
-    \int \rho_I(\vec{r},t)\, \vec{v}_I(\vec{r},t)\, d^3x,
-\]
-wobei $\vec{v}_I$ die effektive Informationsgeschwindigkeit ist, definiert durch
-\[
-    \vec{J}_I = \rho_I \vec{v}_I.
-\]
-Damit erscheinen Energie und Impuls nicht als primitive Größen, sondern als \emph{abgeleitete Eigenschaften der Informationsstruktur}.
-
-\subsection{Zusammenführung der Grenzfälle}
-Die Informations-Weber-Theorie reproduziert folgende klassische Gleichungen:
-
-\begin{itemize}
-    \item Die Weber-Kraft als Grenzfall lokaler Informationsdynamik.
-    \item Das Bohm-Potential als Grenzfall globaler Informationsorganisation.
-    \item Energie- und Impulserhaltung als Konsequenz der Symmetrien des
-    Informationsraums.
-\end{itemize}
-
-Damit zeigt sich, dass die klassische Mechanik, die Weber-Elektrodynamik und die Bohmsche Mechanik nicht konkurrierende Modelle sind, sondern unterschiedliche
-Näherungen einer einheitlichen informationsbasierten Theorie.
-
-\section{Zusammenfassung von Kapitel 2}
-In diesem Kapitel wurde die formale Grundlage der Informations-Weber-Theorie entwickelt. Ausgehend von der Annahme, dass jeder physikalische Zustand durch eine
-Informationsdichte $\rho_I(\vec{r},t)$ beschrieben wird, wurde gezeigt, dass die Dynamik eines Systems aus der Umlagerung dieser Information hervorgeht. Die fundamentale
-Erhaltungsgleichung
-\[
-    \frac{\partial \rho_I}{\partial t} + \nabla \cdot \vec{J}_I = 0
-\]
-ersetzt die klassische Energieerhaltung und bildet das Herzstück der Theorie.
-
-Die physikalischen Größen Energie, Impuls und Trägheit erscheinen nicht als primitive Entitäten, sondern als Funktionale der Informationsstruktur. Ihre Erhaltung ergibt
-sich aus den Symmetrien des Informationsraums, insbesondere aus Translations-, Rotations- und Zeitsymmetrie. Damit wird die klassische Mechanik als Konsequenz eines
-tieferen informationsbasierten Prinzips verstanden.
-
-Durch die Einführung eines informationsbasierten Lagrange-Funktionals
-\[
-    \mathcal{L}_I[\rho_I]
-    =
-    \int \mathcal{F}(\rho_I, \nabla \rho_I, \partial_t \rho_I)\, d^3x
-\]
-konnte gezeigt werden, dass sowohl lokale als auch globale Dynamik aus einem einzigen Variationsprinzip hervorgehen. Die Zerlegung von $\mathcal{F}$ in lokale und globale
-Anteile führt im Grenzfall zu zwei bekannten Strukturen:
-
-\begin{itemize}
-    \item Die \textbf{Weber-Kraft} als Ausdruck lokaler Informationsflüsse.
-    \item Das \textbf{Bohmsche Quantenpotential} als Ausdruck globaler, systemischer
-    Informationsorganisation.
-\end{itemize}
-
-Damit wird deutlich, dass klassische und quantenmechanische Phänomene nicht im Widerspruch stehen, sondern unterschiedliche Näherungen einer einheitlichen
-informationsbasierten Dynamik darstellen. Der physikalische Raum erscheint in dieser Sichtweise als emergente Informationsgeometrie, deren fraktale Struktur eine
-fundamentale Rolle spielt.
-
-Dieses Kapitel bildet die Grundlage für die folgenden Entwicklungen. Kapitel~3 widmet sich der klassischen Weber-Elektrodynamik, die als lokaler Grenzfall der
-Informations-Weber-Theorie verstanden wird. Die dort hergeleiteten Gleichungen dienen als Referenzpunkt für die weiteren Kapitel, in denen gezeigt wird, wie klassische und
-quantenmechanische Phänomene aus den Axiomen der Informationsdynamik hervorgehen.
+Die mathematische Formulierung erfolgt in Kapitel~4 (Informations-Lagrange-Funktional) und Kapitel~5 (Informationsmetrik).
