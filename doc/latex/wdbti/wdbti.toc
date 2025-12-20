@@ -182,3 +182,32 @@
 \contentsline {section}{\numberline {A.2}Euler-Lagrange-Gleichungen für Informationsfelder}{51}{section.A.2}%
 \contentsline {section}{\numberline {A.3}Noether-Theorem im Informationsraum}{51}{section.A.3}%
 \contentsline {section}{\numberline {A.4}Informationsmetriken und fraktale Dimension}{52}{section.A.4}%
+\contentsline {chapter}{\numberline {B}Herleitungen}{53}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Herleitung der Weber-Kraft}{53}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Herleitung des Bohm-Potentials}{53}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Herleitung der Kontinuitätsgleichung}{53}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Herleitung der effektiven Masse}{53}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Beispiele und Anwendungen}{55}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Doppelspalt: vollständige Lösung}{55}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Harmonischer Oszillator}{55}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Kepler-Problem}{55}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Plasmawellen}{55}{section.C.4}%
+\contentsline {chapter}{\numberline {D}Tabellen, Symbole und Definitionen}{57}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Symbolverzeichnis}{57}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Glossar}{57}{section.D.2}%
+\contentsline {section}{\numberline {D.3}Wichtige Gleichungen}{57}{section.D.3}%
+\contentsline {section}{\numberline {D.4}Konsequenzen der Informations-Weber-Theorie}{58}{section.D.4}%
+\contentsline {subsection}{\numberline {D.4.1}Zweistufige Struktur des Universums}{58}{subsection.D.4.1}%
+\contentsline {subsection}{\numberline {D.4.2}Geometrische Konsequenzen}{58}{subsection.D.4.2}%
+\contentsline {subsubsection}{Flachheit und Stabilität}{58}{section*.40}%
+\contentsline {subsubsection}{Keine geometrischen Singularitäten}{58}{section*.41}%
+\contentsline {subsubsection}{Kein geometrischer Big Bounce}{58}{section*.42}%
+\contentsline {subsection}{\numberline {D.4.3}Informationsdynamische Konsequenzen}{58}{subsection.D.4.3}%
+\contentsline {subsubsection}{Informations-Bounce}{58}{section*.43}%
+\contentsline {subsubsection}{Erhalt emergenter Strukturen}{59}{section*.44}%
+\contentsline {subsubsection}{Zyklische Meta-Dynamik}{59}{section*.45}%
+\contentsline {subsection}{\numberline {D.4.4}Kosmologische Konsequenzen}{59}{subsection.D.4.4}%
+\contentsline {subsubsection}{Kein Urknall}{59}{section*.46}%
+\contentsline {subsubsection}{Rotverschiebung ohne Expansion}{59}{section*.47}%
+\contentsline {subsubsection}{CMB als fossilierte Informationsgeometrie}{59}{section*.48}%
+\contentsline {subsection}{\numberline {D.4.5}Zusammenfassung}{59}{subsection.D.4.5}%
