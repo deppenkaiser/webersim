@@ -136,19 +136,19 @@
 \contentsline {section}{\numberline {6.5}Zusammenfassung}{37}{section.6.5}%
 \contentsline {chapter}{\numberline {7}Naturkonstanten aus Informationsarchitektur}{39}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Einleitung: Warum Naturkonstanten nicht fundamental sind}{39}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Die Lichtgeschwindigkeit $c$ als maximale Informationsflussrate}{39}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Die Lichtgeschwindigkeit als maximale Informationsflussrate}{39}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Informationsfluss und Kopplungsdichte}{40}{subsection.7.2.1}%
 \contentsline {subsection}{\numberline {7.2.2}Interpretation}{40}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Das Plancksche Wirkungsquantum $\hbar $ als Maß der Informationsgranularität}{40}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Das Plancksche Wirkungsquantum als Maß der Informationsgranularität}{40}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}Informationsgranularität und globale Organisation}{40}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Interpretation}{41}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Die Gravitationskonstante $G$ als Kopplungsparameter der Informationsgeometrie}{41}{section.7.4}%
+\contentsline {subsection}{\numberline {7.3.2}Interpretation}{40}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Die Gravitationskonstante als Kopplungsparameter der Informationsgeometrie}{41}{section.7.4}%
 \contentsline {subsection}{\numberline {7.4.1}Weber-Gravitation und Informationskopplung}{41}{subsection.7.4.1}%
 \contentsline {subsection}{\numberline {7.4.2}Interpretation}{41}{subsection.7.4.2}%
 \contentsline {section}{\numberline {7.5}Weitere Naturkonstanten}{41}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}Die Feinstrukturkonstante $\alpha $}{41}{subsection.7.5.1}%
-\contentsline {subsection}{\numberline {7.5.2}Die Elementarladung $e$}{42}{subsection.7.5.2}%
-\contentsline {subsection}{\numberline {7.5.3}Die Boltzmann-Konstante $k_B$}{42}{subsection.7.5.3}%
+\contentsline {subsection}{\numberline {7.5.1}Die Feinstrukturkonstante}{41}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Die Elementarladung}{41}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Die Boltzmann-Konstante}{41}{subsection.7.5.3}%
 \contentsline {section}{\numberline {7.6}Zusammenfassung}{42}{section.7.6}%
 \contentsline {chapter}{\numberline {8}Experimentelle Vorhersagen und Tests}{43}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Einleitung: Testbarkeit einer Informations-Urtheorie}{43}{section.8.1}%
@@ -211,3 +211,22 @@
 \contentsline {subsubsection}{Rotverschiebung ohne Expansion}{59}{section*.47}%
 \contentsline {subsubsection}{CMB als fossilierte Informationsgeometrie}{59}{section*.48}%
 \contentsline {subsection}{\numberline {D.4.5}Zusammenfassung}{59}{subsection.D.4.5}%
+\contentsline {section}{\numberline {D.5}Informations-Lagrange-Funktional}{60}{section.D.5}%
+\contentsline {subsection}{\numberline {D.5.1}Grundstruktur}{60}{subsection.D.5.1}%
+\contentsline {subsection}{\numberline {D.5.2}Lokaler Anteil (Weber-Struktur)}{60}{subsection.D.5.2}%
+\contentsline {subsection}{\numberline {D.5.3}Globaler Anteil (Bohm-Struktur)}{60}{subsection.D.5.3}%
+\contentsline {subsection}{\numberline {D.5.4}Gesamtes Funktional}{60}{subsection.D.5.4}%
+\contentsline {section}{\numberline {D.6}Informationsmetrik und emergente Raumzeit}{60}{section.D.6}%
+\contentsline {subsection}{\numberline {D.6.1}Grundidee}{60}{subsection.D.6.1}%
+\contentsline {subsection}{\numberline {D.6.2}Zeit als Informationsparameter}{61}{subsection.D.6.2}%
+\contentsline {subsection}{\numberline {D.6.3}Effektive Raumzeit}{61}{subsection.D.6.3}%
+\contentsline {section}{\numberline {D.7}Kopplungsparameter und Naturkonstanten}{61}{section.D.7}%
+\contentsline {subsection}{\numberline {D.7.1}Lichtgeschwindigkeit}{61}{subsection.D.7.1}%
+\contentsline {subsection}{\numberline {D.7.2}Planck-Konstante}{61}{subsection.D.7.2}%
+\contentsline {subsection}{\numberline {D.7.3}Gravitationskonstante}{61}{subsection.D.7.3}%
+\contentsline {subsection}{\numberline {D.7.4}Feinstrukturkonstante}{61}{subsection.D.7.4}%
+\contentsline {section}{\numberline {D.8}Numerische Simulation eines Informationsnetzes}{61}{section.D.8}%
+\contentsline {subsection}{\numberline {D.8.1}Diskretisierung}{61}{subsection.D.8.1}%
+\contentsline {subsection}{\numberline {D.8.2}Evolutionsgleichung}{62}{subsection.D.8.2}%
+\contentsline {subsection}{\numberline {D.8.3}Algorithmus}{62}{subsection.D.8.3}%
+\contentsline {subsection}{\numberline {D.8.4}Beobachtbare Größen}{62}{subsection.D.8.4}%
