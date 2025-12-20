@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {1.3}Abweichende Perspektiven in der Physik: Licht, Relativität und alternative Modelle}{3}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Feynmans Teilchenmodell des Lichts}{3}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Widersprüche in der QED: Überlichtschnelle Photonen und Pfadintegrale}{3}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Energieabhängige Lichtgeschwindigkeit? Experimentelle Hinweise}{3}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.3}Energieabhängige Lichtgeschwindigkeit? Experimentelle Hinweise}{4}{subsection.1.3.3}%
 \contentsline {section}{\numberline {1.4}Die Entwicklung des Wellenkonzepts in der Physik}{4}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Wellenphänomene: Die Dualität von instantaner Ganzheit und lokaler Ausbreitung}{4}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Das erweiterte Kausalitätskonzept}{5}{section.1.6}%
@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {2.4.5}Emergenz der Dynamik aus der Informationsgeometrie}{11}{subsection.2.4.5}%
 \contentsline {subsection}{\numberline {2.4.6}Emergenz von Gravitationswellen}{11}{subsection.2.4.6}%
 \contentsline {subsection}{\numberline {2.4.7}CMB-Struktur als fossilierte Informationsgeometrie}{11}{subsection.2.4.7}%
-\contentsline {subsection}{\numberline {2.4.8}Herleitung von Naturkonstanten}{11}{subsection.2.4.8}%
+\contentsline {subsection}{\numberline {2.4.8}Herleitung von Naturkonstanten}{12}{subsection.2.4.8}%
 \contentsline {subsection}{\numberline {2.4.9}Einordnung von WDBT, ART und ART+}{12}{subsection.2.4.9}%
 \contentsline {section}{\numberline {2.5}Zusammenfassung}{12}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Die klassische Weber-Elektrodynamik}{13}{chapter.3}%
@@ -44,15 +44,15 @@
 \contentsline {chapter}{\numberline {4}Das Informations-Lagrange-Funktional}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Einleitung}{17}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Grundidee des informationsbasierten Variationsprinzips}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Definition des Informations-Lagrange-Funktionals}{17}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Definition des Informations-Lagrange-Funktionals}{18}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Variation und Euler-Lagrange-Gleichungen}{18}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Informationsfluss als natürliche Konsequenz}{18}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Zerlegung in lokale und globale Beiträge}{18}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Lokaler Anteil}{18}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.1}Lokaler Anteil}{19}{subsection.4.6.1}%
 \contentsline {subsection}{\numberline {4.6.2}Globaler Anteil}{19}{subsection.4.6.2}%
 \contentsline {section}{\numberline {4.7}Weber-Kraft und Bohm-Potential als Grenzfälle}{19}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Symmetrien und Erhaltungsgrößen}{19}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Zusammenfassung}{19}{section.4.9}%
+\contentsline {section}{\numberline {4.9}Zusammenfassung}{20}{section.4.9}%
 \contentsline {chapter}{\numberline {5}Informationsmetrik und emergente Raumzeit}{21}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Einleitung}{21}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Von der Informationsdynamik zur Geometrie}{21}{section.5.2}%
@@ -70,7 +70,7 @@
 \contentsline {section}{\numberline {5.8}Gravitationswellen als Moden der Informationsgeometrie}{23}{section.5.8}%
 \contentsline {section}{\numberline {5.9}Vergleich mit der Allgemeinen Relativitätstheorie}{23}{section.5.9}%
 \contentsline {subsection}{\numberline {5.9.1}Gemeinsamkeiten}{23}{subsection.5.9.1}%
-\contentsline {subsection}{\numberline {5.9.2}Unterschiede}{23}{subsection.5.9.2}%
+\contentsline {subsection}{\numberline {5.9.2}Unterschiede}{24}{subsection.5.9.2}%
 \contentsline {section}{\numberline {5.10}Zusammenfassung}{24}{section.5.10}%
 \contentsline {chapter}{\numberline {6}Emergenz klassischer und quantenmechanischer Phänomene}{25}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Einleitung}{25}{section.6.1}%
