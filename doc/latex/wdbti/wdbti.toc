@@ -117,7 +117,7 @@
 \contentsline {section}{\numberline {9.1}Einleitung: Testbarkeit einer informationsbasierten Urtheorie}{37}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Vorhersagen, die der ART widersprechen}{37}{section.9.2}%
 \contentsline {subsection}{\numberline {9.2.1}Keine echten Singularitäten}{37}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Abweichungen bei extremen Gravitationsfeldern}{38}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.2}Abweichungen bei extremen Gravitationsfeldern}{37}{subsection.9.2.2}%
 \contentsline {subsection}{\numberline {9.2.3}Frequenzabhängige Lichtablenkung}{38}{subsection.9.2.3}%
 \contentsline {section}{\numberline {9.3}Vorhersagen, die der Quantenfeldtheorie widersprechen}{38}{section.9.3}%
 \contentsline {subsection}{\numberline {9.3.1}Keine virtuellen Teilchen}{38}{subsection.9.3.1}%
@@ -149,7 +149,7 @@
 \contentsline {chapter}{\numberline {11}Plasmaphysik und Informationsdynamik}{45}{chapter.11}%
 \contentsline {section}{\numberline {11.1}Einleitung}{45}{section.11.1}%
 \contentsline {section}{\numberline {11.2}Plasma als Informationsmedium}{45}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Weber-Elektrodynamik im Plasma}{46}{section.11.3}%
+\contentsline {section}{\numberline {11.3}WED im Plasma}{46}{section.11.3}%
 \contentsline {section}{\numberline {11.4}Informationsgeometrie in Plasmen}{46}{section.11.4}%
 \contentsline {section}{\numberline {11.5}Plasma-Kosmologie und Informations-Weber-Theorie}{47}{section.11.5}%
 \contentsline {subsection}{\numberline {11.5.1}CMB-Struktur aus Informationsgeometrie}{47}{subsection.11.5.1}%
@@ -219,7 +219,7 @@
 \contentsline {section}{\numberline {B.1}Herleitung der Weber-Gravitation}{65}{section.B.1}%
 \contentsline {subsection}{\numberline {B.1.1}Ausgangspunkt: Weber-Lagrange-Funktional}{66}{subsection.B.1.1}%
 \contentsline {subsection}{\numberline {B.1.2}Euler--Lagrange-Gleichung}{66}{subsection.B.1.2}%
-\contentsline {subsection}{\numberline {B.1.3}Einsetzen in die Euler--Lagrange-Gleichung}{66}{subsection.B.1.3}%
+\contentsline {subsection}{\numberline {B.1.3}Einsetzen in die Euler-Lagrange-Gleichung}{66}{subsection.B.1.3}%
 \contentsline {subsection}{\numberline {B.1.4}Interpretation der Parameterwahl}{66}{subsection.B.1.4}%
 \contentsline {section}{\numberline {B.2}Herleitung des Bohm-Potentials}{67}{section.B.2}%
 \contentsline {subsection}{\numberline {B.2.1}Variation des Funktionals}{67}{subsection.B.2.1}%
