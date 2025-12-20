@@ -125,8 +125,60 @@
 \contentsline {paragraph}{(3) ART+: ART erweitert um die Informationsstruktur der WDBT}{33}{section*.37}%
 \contentsline {paragraph}{(4) WDBT+: Digitale Informations-Weber-Theorie als fundamentale Ebene}{33}{section*.38}%
 \contentsline {paragraph}{Konsequenz}{34}{section*.39}%
-\contentsline {chapter}{\numberline {A}Mathematische Grundlagen der Informations-Weber-Theorie}{35}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Variationsrechnung}{35}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Euler-Lagrange-Gleichungen für Informationsfelder}{35}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Noether-Theorem im Informationsraum}{35}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Informationsmetriken und fraktale Dimension}{36}{section.A.4}%
+\contentsline {chapter}{\numberline {6}Plasmaphysik und Informationsdynamik}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Plasma als Informationsmedium}{35}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Weber-Elektrodynamik im Plasma}{35}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Informationsgeometrie in Plasmen}{36}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Plasma-Kosmologie und Informations-Weber-Theorie}{36}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}CMB-Struktur aus Informationsgeometrie}{36}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Rotverschiebung ohne Expansion}{36}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Galaxienbildung und Rotationskurven}{37}{subsection.6.4.3}%
+\contentsline {section}{\numberline {6.5}Zusammenfassung}{37}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Naturkonstanten aus Informationsarchitektur}{39}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Einleitung: Warum Naturkonstanten nicht fundamental sind}{39}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Die Lichtgeschwindigkeit $c$ als maximale Informationsflussrate}{39}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Informationsfluss und Kopplungsdichte}{40}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Interpretation}{40}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Das Plancksche Wirkungsquantum $\hbar $ als Maß der Informationsgranularität}{40}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Informationsgranularität und globale Organisation}{40}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Interpretation}{41}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Die Gravitationskonstante $G$ als Kopplungsparameter der Informationsgeometrie}{41}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Weber-Gravitation und Informationskopplung}{41}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Interpretation}{41}{subsection.7.4.2}%
+\contentsline {section}{\numberline {7.5}Weitere Naturkonstanten}{41}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Die Feinstrukturkonstante $\alpha $}{41}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Die Elementarladung $e$}{42}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Die Boltzmann-Konstante $k_B$}{42}{subsection.7.5.3}%
+\contentsline {section}{\numberline {7.6}Zusammenfassung}{42}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Experimentelle Vorhersagen und Tests}{43}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Einleitung: Testbarkeit einer Informations-Urtheorie}{43}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Vorhersagen, die der ART widersprechen}{43}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Keine echten Singularitäten}{43}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Abweichungen bei extremen Gravitationsfeldern}{44}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Vorhersagen, die der Quantenfeldtheorie widersprechen}{44}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Keine virtuellen Teilchen}{44}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Nichtlokalität ohne Widerspruch zur Kausalität}{44}{subsection.8.3.2}%
+\contentsline {section}{\numberline {8.4}Kosmologische Tests}{44}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}CMB-Fraktalität}{44}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Rotverschiebung ohne Expansion}{45}{subsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.4.3}Galaktische Rotationskurven ohne Dunkle Materie}{45}{subsection.8.4.3}%
+\contentsline {section}{\numberline {8.5}Labor- und Plasma-Experimente}{45}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Weber-Effekte in Laborplasmen}{45}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}Informationsflüsse in turbulenten Plasmen}{45}{subsection.8.5.2}%
+\contentsline {section}{\numberline {8.6}Zusammenfassung}{45}{section.8.6}%
+\contentsline {chapter}{\numberline {9}Ausblick}{47}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Eine neue Grundlage der Physik}{47}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Offene Fragen und zukünftige Entwicklungen}{47}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Numerische Simulationen der Informationsgeometrie}{47}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Quantitative Herleitung der Naturkonstanten}{48}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Informationsbasierte Kosmologie}{48}{subsection.9.2.3}%
+\contentsline {section}{\numberline {9.3}Konsequenzen für Technologie und Wissenschaft}{48}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Neue Sicht auf Energie und Information}{48}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Informationsbasierte Messtechnik}{48}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Kosmologische Anwendungen}{49}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.4}Schlussbemerkung}{49}{section.9.4}%
+\contentsline {chapter}{\numberline {A}Mathematische Grundlagen der Informations-Weber-Theorie}{51}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Variationsrechnung}{51}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Euler-Lagrange-Gleichungen für Informationsfelder}{51}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Noether-Theorem im Informationsraum}{51}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Informationsmetriken und fraktale Dimension}{52}{section.A.4}%
