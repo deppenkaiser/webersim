@@ -1,8 +1,8 @@
 % ============================================================
 % Anhang 1 – Informations-Lagrange-Funktional
 % ============================================================
-\section{Informations-Lagrange-Funktional}
-\subsection{Grundstruktur}
+\chapter{Informations-Lagrange-Funktional}
+\section{Grundstruktur}
 Das Informations-Lagrange-Funktional $\mathcal{L}_I$ beschreibt die Dynamik eines Informationszustands $I(\mathbf{x},t)$ und setzt sich aus einem lokalen und einem 
 globalen Anteil zusammen:
 \[
@@ -10,7 +10,7 @@ globalen Anteil zusammen:
 \]
 Der lokale Anteil erzeugt Weber-Dynamik, der globale Anteil Bohm-Dynamik.
 
-\subsection{Lokaler Anteil (Weber-Struktur)}
+\section{Lokaler Anteil (Weber-Struktur)}
 Der lokale Informationsfluss wird durch Informationsdichte $\rho_I$ und Informationsgradienten bestimmt. Ein minimaler Ansatz lautet:
 \[
 \mathcal{L}_{\text{lokal}} =
@@ -21,7 +21,7 @@ Der lokale Informationsfluss wird durch Informationsdichte $\rho_I$ und Informat
 \left( \nabla I \right)^2.
 \]
 
-\subsection{Globaler Anteil (Bohm-Struktur)}
+\section{Globaler Anteil (Bohm-Struktur)}
 Der globale Anteil ist ein Funktional der Form:
 \[
 \mathcal{L}_{\text{global}} =
@@ -30,7 +30,7 @@ Der globale Anteil ist ein Funktional der Form:
 \]
 Dies entspricht strukturell dem Bohm-Potential, jedoch als Informationsoperator.
 
-\subsection{Gesamtes Funktional}
+\section{Gesamtes Funktional}
 \[
 \boxed{
 \mathcal{L}_I =
@@ -50,14 +50,14 @@ Dieses Funktional liefert durch Variation die Weber-Kraft, das Bohm-Potential, d
 % Anhang 2 – Informationsmetrik und emergente Raumzeit
 % ============================================================
 
-\section{Informationsmetrik und emergente Raumzeit}
-\subsection{Grundidee}
+\chapter{Informationsmetrik und emergente Raumzeit}
+\section{Grundidee}
 Raum entsteht als effektive Metrik der Kopplungsstruktur eines Informationsnetzes. Die Metrik ergibt sich aus der Kopplungsdichte $C(\mathbf{x})$:
 \[
 g_{ij}(\mathbf{x}) = f\!\left( C(\mathbf{x}) \right)\, \delta_{ij}.
 \]
 
-\subsection*{Fraktale Dimension}
+\section*{Fraktale Dimension}
 Die fraktale Dimension $D_f$ folgt aus der Skalierung der Kopplungsdichte:
 \[
 C(\lambda \mathbf{x}) = \lambda^{D_f - 3} C(\mathbf{x}).
@@ -68,7 +68,7 @@ D_f = 3 \Rightarrow \text{klassischer Raum}, \qquad
 D_f < 3 \Rightarrow \text{fraktale Geometrie}.
 \]
 
-\subsection{Zeit als Informationsparameter}
+\section{Zeit als Informationsparameter}
 Zeit entsteht aus der invertierbaren Transformation des Informationszustands:
 \[
 t \equiv \tau(I), 
@@ -77,7 +77,7 @@ t \equiv \tau(I),
 \]
 Zeit ist somit ein Ordnungsparameter der Informationsentwicklung.
 
-\subsection{Effektive Raumzeit}
+\section{Effektive Raumzeit}
 Die emergente Raumzeit besitzt die Metrik:
 \[
 ds^2 = c_{\text{eff}}^2(I)\, dt^2 - g_{ij}(I)\, dx^i dx^j,
@@ -92,26 +92,26 @@ Damit ist $c$ ein emergenter Parameter der Informationskopplung.
 % Anhang 3 – Kopplungsparameter und Naturkonstanten
 % ============================================================
 
-\section{Kopplungsparameter und Naturkonstanten}
-\subsection{Lichtgeschwindigkeit}
+\chapter{Kopplungsparameter und Naturkonstanten}
+\section{Lichtgeschwindigkeit}
 \[
 c = \sqrt{\frac{\alpha}{\beta}}.
 \]
 Die maximale Informationsflussrate ergibt sich aus dem Verhältnis der lokalen Kopplungsparameter.
 
-\subsection{Planck-Konstante}
+\section{Planck-Konstante}
 \[
 h = k \cdot \gamma,
 \]
 wobei $k$ ein dimensionsloser Skalierungsfaktor der globalen Informationsorganisation ist.
 
-\subsection{Gravitationskonstante}
+\section{Gravitationskonstante}
 \[
 G = \frac{1}{4\pi} \frac{\beta}{C_0},
 \]
 mit $C_0$ als mittlerer Kopplungsdichte des Informationsnetzes.
 
-\subsection{Feinstrukturkonstante}
+\section{Feinstrukturkonstante}
 \[
 \alpha_{\text{fs}} = F(\alpha,\beta,\gamma,C_0),
 \]
@@ -120,8 +120,8 @@ eine reine Funktion der Informationskopplung.
 % ============================================================
 % Anhang 4 – Numerische Simulation eines Informationsnetzes
 % ============================================================
-\section{Numerische Simulation eines Informationsnetzes}
-\subsection{Diskretisierung}
+\chapter{Numerische Simulation eines Informationsnetzes}
+\section{Diskretisierung}
 
 Das Informationsfeld wird auf einem Gitter $I_{i,j,k}(t)$ definiert.  
 Die Kopplungsstruktur ist ein Graph:
@@ -129,7 +129,7 @@ Die Kopplungsstruktur ist ein Graph:
 C_{(i,j,k),(i',j',k')}.
 \]
 
-\subsection{Evolutionsgleichung}
+\section{Evolutionsgleichung}
 Die Variation von $\mathcal{L}_I$ liefert:
 \[
 \alpha \rho_I \frac{\partial^2 I}{\partial t^2}
@@ -143,7 +143,7 @@ Die Variation von $\mathcal{L}_I$ liefert:
 = 0.
 \]
 
-\subsection{Algorithmus}
+\section{Algorithmus}
 
 \begin{enumerate}
     \item Initialisierung von $I(\mathbf{x},0)$ und $\rho_I(\mathbf{x},0)$.
@@ -153,7 +153,7 @@ Die Variation von $\mathcal{L}_I$ liefert:
     \item Wiederholung der Schritte 2–4.
 \end{enumerate}
 
-\subsection{Beobachtbare Größen}
+\section{Beobachtbare Größen}
 \begin{itemize}
     \item emergente Raumzeit,
     \item effektive Lichtgeschwindigkeit,

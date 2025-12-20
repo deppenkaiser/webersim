@@ -196,37 +196,3 @@
 \contentsline {section}{\numberline {D.1}Symbolverzeichnis}{57}{section.D.1}%
 \contentsline {section}{\numberline {D.2}Glossar}{57}{section.D.2}%
 \contentsline {section}{\numberline {D.3}Wichtige Gleichungen}{57}{section.D.3}%
-\contentsline {section}{\numberline {D.4}Konsequenzen der Informations-Weber-Theorie}{58}{section.D.4}%
-\contentsline {subsection}{\numberline {D.4.1}Zweistufige Struktur des Universums}{58}{subsection.D.4.1}%
-\contentsline {subsection}{\numberline {D.4.2}Geometrische Konsequenzen}{58}{subsection.D.4.2}%
-\contentsline {subsubsection}{Flachheit und Stabilität}{58}{section*.40}%
-\contentsline {subsubsection}{Keine geometrischen Singularitäten}{58}{section*.41}%
-\contentsline {subsubsection}{Kein geometrischer Big Bounce}{58}{section*.42}%
-\contentsline {subsection}{\numberline {D.4.3}Informationsdynamische Konsequenzen}{58}{subsection.D.4.3}%
-\contentsline {subsubsection}{Informations-Bounce}{58}{section*.43}%
-\contentsline {subsubsection}{Erhalt emergenter Strukturen}{59}{section*.44}%
-\contentsline {subsubsection}{Zyklische Meta-Dynamik}{59}{section*.45}%
-\contentsline {subsection}{\numberline {D.4.4}Kosmologische Konsequenzen}{59}{subsection.D.4.4}%
-\contentsline {subsubsection}{Kein Urknall}{59}{section*.46}%
-\contentsline {subsubsection}{Rotverschiebung ohne Expansion}{59}{section*.47}%
-\contentsline {subsubsection}{CMB als fossilierte Informationsgeometrie}{59}{section*.48}%
-\contentsline {subsection}{\numberline {D.4.5}Zusammenfassung}{59}{subsection.D.4.5}%
-\contentsline {section}{\numberline {D.5}Informations-Lagrange-Funktional}{60}{section.D.5}%
-\contentsline {subsection}{\numberline {D.5.1}Grundstruktur}{60}{subsection.D.5.1}%
-\contentsline {subsection}{\numberline {D.5.2}Lokaler Anteil (Weber-Struktur)}{60}{subsection.D.5.2}%
-\contentsline {subsection}{\numberline {D.5.3}Globaler Anteil (Bohm-Struktur)}{60}{subsection.D.5.3}%
-\contentsline {subsection}{\numberline {D.5.4}Gesamtes Funktional}{60}{subsection.D.5.4}%
-\contentsline {section}{\numberline {D.6}Informationsmetrik und emergente Raumzeit}{60}{section.D.6}%
-\contentsline {subsection}{\numberline {D.6.1}Grundidee}{60}{subsection.D.6.1}%
-\contentsline {subsection}{\numberline {D.6.2}Zeit als Informationsparameter}{61}{subsection.D.6.2}%
-\contentsline {subsection}{\numberline {D.6.3}Effektive Raumzeit}{61}{subsection.D.6.3}%
-\contentsline {section}{\numberline {D.7}Kopplungsparameter und Naturkonstanten}{61}{section.D.7}%
-\contentsline {subsection}{\numberline {D.7.1}Lichtgeschwindigkeit}{61}{subsection.D.7.1}%
-\contentsline {subsection}{\numberline {D.7.2}Planck-Konstante}{61}{subsection.D.7.2}%
-\contentsline {subsection}{\numberline {D.7.3}Gravitationskonstante}{61}{subsection.D.7.3}%
-\contentsline {subsection}{\numberline {D.7.4}Feinstrukturkonstante}{61}{subsection.D.7.4}%
-\contentsline {section}{\numberline {D.8}Numerische Simulation eines Informationsnetzes}{61}{section.D.8}%
-\contentsline {subsection}{\numberline {D.8.1}Diskretisierung}{61}{subsection.D.8.1}%
-\contentsline {subsection}{\numberline {D.8.2}Evolutionsgleichung}{62}{subsection.D.8.2}%
-\contentsline {subsection}{\numberline {D.8.3}Algorithmus}{62}{subsection.D.8.3}%
-\contentsline {subsection}{\numberline {D.8.4}Beobachtbare Größen}{62}{subsection.D.8.4}%

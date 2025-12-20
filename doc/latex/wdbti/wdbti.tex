@@ -1,4 +1,6 @@
 \documentclass[11pt, a5paper, twoside, openright]{book}
+
+% --- Pakete ---
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -17,6 +19,7 @@
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{xcolor}
+\usepackage{pgfplots}
 \usepackage[
     backend=biber,
     style=phys,
@@ -25,34 +28,30 @@
 \usepackage[acronym, toc]{glossaries}
 \usepackage{hyperref}
 \usepackage{parskip}
-\usepackage{pgfplots}
-\usepackage{glossaries}
+
 \makeglossaries
+
 \input{styles}
 \input{glossar}
 
 \begin{document}
 
+% --- Titelseite ---
 \frontmatter
 \begin{tikzpicture}[remember picture, overlay]
-
-  % Hintergrund
   \fill[hintergrund] (current page.south west) rectangle (current page.north east);
 
-  % Informationswirbel – elliptische Kreise
   \foreach \r in {0.5,1,...,5} {
     \draw[quantenblau!15, line width=0.2pt]
       ($(current page.center)$)
       circle[x radius=\r cm, y radius={0.6*\r cm}];
   }
 
-  % Radiale Informationslinien
   \foreach \a in {0,8,...,360} {
     \draw[quantenblau!10, line width=0.15pt]
       (current page.center) -- +(\a:5.5cm);
   }
 
-  % Zentraler Informationskern
   \node at (current page.center) {
     \begin{tikzpicture}[scale=0.9]
       \foreach \i in {0,60,...,300} {
@@ -63,19 +62,16 @@
     \end{tikzpicture}
   };
 
-  % Titel
   \node[align=center, text=white, font=\sffamily\bfseries\Huge]
     at ($(current page.center)+(0,3cm)$) {
       \textbf{Die Informations-Weber-Theorie}
   };
 
-  % Untertitel
   \node[align=center, text=quantenblau!80, font=\sffamily\Large]
     at ($(current page.center)+(0,1.8cm)$) {
       Eine fundamentale Informations-Urtheorie
   };
 
-  % Formeln
   \node[align=left, anchor=south east, text=weberrot!70, font=\small]
     at ($(current page.south east)+(-1cm,1cm)$) {
       $\displaystyle I = \text{konstant}$
@@ -86,18 +82,15 @@
       $\displaystyle Q = -\frac{\hbar^2}{2m}\frac{\nabla^2\sqrt{\rho}}{\sqrt{\rho}}$
   };
 
-  % Autor
   \node[align=center, text=white, font=\sffamily\large]
     at ($(current page.south)+(0,1cm)$) {
       \textbf{Michael Czybor}
   };
 
-  % Fraktale Dimension
   \node[align=right, text=quantenblau!50, font=\small]
     at ($(current page.north west)+(2cm,-1cm)$) {
       $D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71$
   };
-
 \end{tikzpicture}
 
 \title{Die Informations-Weber-Theorie\\Eine fundamentale Informations-Urtheorie}
@@ -105,74 +98,44 @@
 \date{\today}
 \maketitle
 
+% --- Vorwort ---
 \chapter*{Vorwort}
-
-Dieses Werk stellt die konsequente Weiterentwicklung der Weber--De-Broglie--Bohm-Theorie dar 
-und hebt sie auf eine neue fundamentale Ebene: die Formulierung der Physik als 
-\emph{Informationsdynamik}. Information wird als primäre physikalische Größe verstanden, 
-deren Erhaltung und Transformation die bekannten Gesetze der Mechanik, der Quantenphysik 
-und der Gravitation hervorbringen.
-
-Die klassische Weber-Theorie liefert die lokale Struktur direkter Wechselwirkungen. 
-Die Bohm’sche Mechanik ergänzt diese Struktur um eine globale, nichtlokale 
-Organisationsdynamik. Die analoge WDBT vereinigt beide Ansätze zu einer 
-Fernwirkungstheorie ohne Raummodell, die bereits wesentliche Phänomene wie die 
-Periheldrehung oder die Quantenstruktur korrekt beschreibt. 
-
-Die Allgemeine Relativitätstheorie (ART) steht historisch und logisch zwischen dieser 
-analogen WDBT und der informationsbasierten Theorie: Sie übernimmt die gravitative 
-Dynamik der Weber-Struktur, ersetzt jedoch die Fernwirkung durch eine geometrische 
-Raumzeit und ermöglicht damit Gravitationswellen. Gleichzeitig fehlt der ART die 
-nichtlokale Informationsstruktur des Bohm-Potentials.
-
-Wird die ART um diese informationsbasierte Quantenstruktur ergänzt, entsteht eine 
-erweiterte Theorie -- \emph{ART+} -- in der echte Singularitäten verschwinden und der 
-Urknall durch einen \emph{Big Bounce} ersetzt wird. Die vollständige informationsbasierte 
-Theorie, die in diesem Buch entwickelt wird, geht jedoch über ART und ART+ hinaus: 
-Die digitale Informations-Weber-Theorie (WDBT+) führt ein diskretes Informationsnetz ein, 
-aus dem Raum, Zeit, Dynamik und Naturkonstanten emergieren. In dieser Struktur werden 
-Gravitationswellen, Rotationskurven, die CMB-Anisotropien und die Werte der 
-Naturkonstanten nicht postuliert, sondern als Konsequenzen der Informationsarchitektur 
-verstanden.
-
-Dieses Buch verfolgt daher zwei Ziele: Erstens zeigt es, dass die Weber--De-Broglie--Bohm-Theorie 
-eine konsistente Grundlage für Gravitation und Quantenmechanik bildet. Zweitens entwickelt 
-es eine informationsbasierte Urtheorie, in der Energie, Raum, Zeit und Dynamik als 
-abgeleitete Größen erscheinen. Die Informations-Weber-Theorie verbindet direkte 
-Wechselwirkungen, nichtlokale Quantenstruktur und fraktale Raumgeometrie zu einem 
-kohärenten, widerspruchsfreien Fundament.
-
-\begin{flushright}
-    Michael Czybor \\
-    \emph{Langenstein/AT, \today}
-\end{flushright}
+\input{vorwort/vorwort}
 
 \tableofcontents
 \listoffigures
 \listoftables
 
+% --- Hauptteil ---
 \mainmatter
 
 \include{einleitung/einleitung}
 \include{kapitel_2/kapitel_2}
 \include{kapitel_3/kapitel_3}
+
+% Neue mathematische Grundstruktur
 \include{kapitel_4/kapitel_4}
 \include{kapitel_5/kapitel_5}
+
+% Emergenz und Vergleich
 \include{kapitel_6/kapitel_6}
 \include{kapitel_7/kapitel_7}
+
+% Anwendungen und Konsequenzen
 \include{kapitel_8/kapitel_8}
 \include{kapitel_9/kapitel_9}
+\include{kapitel_10/kapitel_10}
+
+% --- Anhänge ---
 \appendix
 \include{anhang_a/anhang_a}
 \include{anhang_b/anhang_b}
 \include{anhang_c/anhang_c}
 \include{anhang_d/anhang_d}
-\include{anhang_e/anhang_e}
-\include{anhang_f/anhang_f}
 
+% --- Backmatter ---
 \backmatter
 \printbibliography[title=Literaturverzeichnis]
-\glswritefiles
 \printglossary[title=Glossar]
 \printglossary[type=acronym, title=Abkürzungen]
 
