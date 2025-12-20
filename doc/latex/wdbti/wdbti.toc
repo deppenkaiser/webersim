@@ -30,18 +30,21 @@
 \contentsline {paragraph}{(3) Raum kann nicht fundamental sein, wenn er fraktal ist}{12}{section*.12}%
 \contentsline {paragraph}{(4) Kontinuumsmodelle erzeugen Paradoxien}{12}{section*.13}%
 \contentsline {paragraph}{(5) Dynamische Raumzeit setzt ein Informationsnetz voraus}{12}{section*.14}%
+\contentsline {paragraph}{Konsequenz}{12}{section*.15}%
 \contentsline {subsection}{\numberline {2.4.2}Emergenz der Zeit}{12}{subsection.2.4.2}%
 \contentsline {paragraph}{(1) Zeit als Ordnungsparameter der Information}{12}{section*.16}%
 \contentsline {paragraph}{(2) Zeit entsteht aus der Sequenz diskreter Informationszustände}{13}{section*.17}%
 \contentsline {paragraph}{(3) Zwei Kausalitätsebenen erzeugen zwei Zeitstrukturen}{13}{section*.18}%
 \contentsline {paragraph}{(4) Zeitdilatation als Informationsgeometrie}{13}{section*.19}%
 \contentsline {paragraph}{(5) Keine fundamentale Zeitrichtung}{13}{section*.20}%
+\contentsline {paragraph}{Konsequenz}{13}{section*.21}%
 \contentsline {subsection}{\numberline {2.4.3}Fraktale Dimension als geometrische Signatur}{13}{subsection.2.4.3}%
 \contentsline {paragraph}{(1) Fraktale Dimension als Maß der Informationsverteilung}{14}{section*.22}%
 \contentsline {paragraph}{(2) Warum ein fraktaler Raum nicht fundamental sein kann}{14}{section*.23}%
 \contentsline {paragraph}{(3) Fraktale Geometrie als Ursprung des Skalenverhaltens}{14}{section*.24}%
 \contentsline {paragraph}{(4) Fraktale Signaturen in der CMB-Struktur}{14}{section*.25}%
 \contentsline {paragraph}{(5) Naturkonstanten als Skalierungsparameter der fraktalen Geometrie}{14}{section*.26}%
+\contentsline {paragraph}{Konsequenz}{14}{section*.27}%
 \contentsline {subsection}{\numberline {2.4.4}Diskrete Informationsstruktur als Ursprung des Raumes}{14}{subsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.4.5}Emergenz der Dynamik aus der Informationsgeometrie}{15}{subsection.2.4.5}%
 \contentsline {paragraph}{(1) Dynamik als Geometrieänderung}{15}{section*.28}%
@@ -50,14 +53,16 @@
 \contentsline {paragraph}{(4) Einheit von lokaler und globaler Dynamik}{15}{section*.31}%
 \contentsline {paragraph}{(5) Wellen als kollektive Moden der Informationsgeometrie}{16}{section*.32}%
 \contentsline {paragraph}{(6) Klassische und relativistische Dynamik als Grenzfälle}{16}{section*.33}%
+\contentsline {paragraph}{Konsequenz}{16}{section*.34}%
 \contentsline {subsection}{\numberline {2.4.6}Emergenz von Gravitationswellen}{16}{subsection.2.4.6}%
 \contentsline {subsection}{\numberline {2.4.7}CMB-Struktur als fossilierte Informationsgeometrie}{16}{subsection.2.4.7}%
 \contentsline {subsection}{\numberline {2.4.8}Herleitung von Naturkonstanten}{16}{subsection.2.4.8}%
-\contentsline {subsection}{\numberline {2.4.9}Zusammenfassung}{17}{subsection.2.4.9}%
+\contentsline {subsection}{\numberline {2.4.9}Einordnung von WDBT, ART und ART+}{17}{subsection.2.4.9}%
+\contentsline {subsection}{\numberline {2.4.10}Zusammenfassung}{17}{subsection.2.4.10}%
 \contentsline {section}{\numberline {2.5}Informations-Lagrange-Funktional}{17}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Definition des Funktionals}{17}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Variation und Euler-Lagrange-Gleichungen}{17}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Lokale und globale Beiträge}{17}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.3}Lokale und globale Beiträge}{18}{subsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.5.4}Informationsfluss als Bewegungsgleichung}{18}{subsection.2.5.4}%
 \contentsline {section}{\numberline {2.6}Emergenz klassischer Gleichungen}{18}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Weber-Kraft als Grenzfall lokaler Informationsdynamik}{18}{subsection.2.6.1}%
@@ -114,8 +119,14 @@
 \contentsline {subsection}{\numberline {5.7.1}Vorhersage der ART}{32}{subsection.5.7.1}%
 \contentsline {subsection}{\numberline {5.7.2}Vorhersage der Informations-Weber-Theorie}{32}{subsection.5.7.2}%
 \contentsline {subsection}{\numberline {5.7.3}Experimentelle Tests}{32}{subsection.5.7.3}%
-\contentsline {chapter}{\numberline {A}Mathematische Grundlagen der Informations-Weber-Theorie}{33}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Variationsrechnung}{33}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Euler-Lagrange-Gleichungen für Informationsfelder}{33}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Noether-Theorem im Informationsraum}{33}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Informationsmetriken und fraktale Dimension}{34}{section.A.4}%
+\contentsline {subsection}{\numberline {5.7.4}Von WDBT → ART → ART+ → WDBT+}{33}{subsection.5.7.4}%
+\contentsline {paragraph}{(1) WDBT: Fernwirkung ohne Raum, aber mit Quantenstruktur}{33}{section*.35}%
+\contentsline {paragraph}{(2) ART: Geometrische Raumzeit ohne Quantenstruktur}{33}{section*.36}%
+\contentsline {paragraph}{(3) ART+: ART erweitert um die Informationsstruktur der WDBT}{33}{section*.37}%
+\contentsline {paragraph}{(4) WDBT+: Digitale Informations-Weber-Theorie als fundamentale Ebene}{33}{section*.38}%
+\contentsline {paragraph}{Konsequenz}{34}{section*.39}%
+\contentsline {chapter}{\numberline {A}Mathematische Grundlagen der Informations-Weber-Theorie}{35}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Variationsrechnung}{35}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Euler-Lagrange-Gleichungen für Informationsfelder}{35}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Noether-Theorem im Informationsraum}{35}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Informationsmetriken und fraktale Dimension}{36}{section.A.4}%
