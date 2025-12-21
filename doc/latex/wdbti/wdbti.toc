@@ -266,3 +266,13 @@
 \contentsline {section}{\numberline {D.1}Symbolverzeichnis}{77}{section.D.1}%
 \contentsline {section}{\numberline {D.2}Glossar}{77}{section.D.2}%
 \contentsline {section}{\numberline {D.3}Wichtige Gleichungen}{77}{section.D.3}%
+\contentsline {chapter}{\numberline {E}Kosmologie in der Informations-Weber-Theorie}{79}{appendix.E}%
+\contentsline {section}{\numberline {E.1}Einleitung: Kosmologie als Informationsdynamik}{79}{section.E.1}%
+\contentsline {section}{\numberline {E.2}Das Informationsgitter als Fundament der Kosmologie}{79}{section.E.2}%
+\contentsline {section}{\numberline {E.3}Trägheit, Mach--Prinzip und kosmische Skala}{80}{section.E.3}%
+\contentsline {section}{\numberline {E.4}Rotverschiebung als integrierter Weber-Effekt}{80}{section.E.4}%
+\contentsline {section}{\numberline {E.5}Die Hubble--Konstante aus der Informationsarchitektur}{80}{section.E.5}%
+\contentsline {section}{\numberline {E.6}Eliminieren der Dichte: Die Relation $H_0 = \beta (D)\, c/R$}{81}{section.E.6}%
+\contentsline {section}{\numberline {E.7}Entfernung--Rotverschiebungs--Relation}{81}{section.E.7}%
+\contentsline {section}{\numberline {E.8}Konsequenzen für JWST und moderne Kosmologie}{82}{section.E.8}%
+\contentsline {section}{\numberline {E.9}Zusammenfassung}{82}{section.E.9}%
