@@ -154,11 +154,19 @@ Interferenzphänomene wie das Doppelspaltexperiment zeigen, dass Wellen sich glo
 Die \gls{wed} erweitert das Coulombsche Gesetz um geschwindigkeits- und beschleunigungsabhängige Terme:
 \begin{equation}
 \vec{F} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2}
-\left[
-1 - \frac{\dot{r}^2}{c^2} + \frac{2 r \ddot{r}}{c^2}
-\right]
+\left(
+1 - \frac{\dot{r}^2}{c^2} + 2\,\frac{r\,\ddot{r}}{c^2}
+\right)
 \hat{\vec{r}}
 \end{equation}
+
+\paragraph{Bemerkung: Die Weber-Kraft als rekursive Informationsdynamik}
+Obwohl die Weber-Kraft formal als Funktion von $r(t)$, $\dot{r}(t)$ und $\ddot{r}(t)$ geschrieben wird, besitzt sie in der Informations-Weber-Theorie eine tiefere
+Interpretation. Die zeitlichen Ableitungen sind nicht als kontinuierliche Grenzprozesse zu verstehen, sondern als diskrete Differenzen im Informationsnetz. Damit hängt die
+Weber-Kraft explizit von vergangenen Zuständen $r(t-\Delta t)$ und $r(t-2\Delta t)$ ab und besitzt die Struktur eines rekursiven IIR-Filters. Diese rekursive Dynamik
+erklärt die außergewöhnliche numerische Stabilität und Präzision der Weber-Kraft: Sie benötigt keine Felder, keine retardierten Potentiale und keine Wellengleichungen,
+sondern beschreibt die lokale Informationskopplung direkt über vergangene Zustände. Die Weber-Kraft ist damit die einzige bekannte physikalische Kraft, die eine
+rekursive Informationsdynamik implementiert und zugleich in kompakter Formulierung exakt bleibt.
 
 \section{Das erweiterte Kausalitätskonzept}
 Die Physik benötigt einen erweiterten Kausalitätsbegriff, der sowohl lokale Dynamik (Energietransport) als auch systemische Ganzheit (globale Organisation) umfasst.
