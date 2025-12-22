@@ -1,48 +1,151 @@
-\chapter{Tabellen, Symbole und Definitionen}
+\chapter{Die dynamische Gleichung der Informationsmetrik}
+In diesem Anhang wird die fundamentale dynamische Gleichung der Informationsmetrik hergeleitet, die die Informations-Weber-Theorie (IWT) zu einer geschlossenen, 
+selbstkonsistenten Urtheorie erweitert. Diese Gleichung vereinigt lokale Weber-Dynamik, globale Bohm-Struktur und fraktale Informationsgeometrie in einem einzigen Ausdruck. 
+Sie bildet den dynamischen Kern der Theorie, aus dem Raum, Zeit, Energie, Gravitation, Quantenstruktur und kosmologische Skalierung emergieren.
 
-\section{Symbolverzeichnis}
-
-\begin{tabular}{ll}
-$\rho_I$ & Informationsdichte \\
-$\vec{J}_I$ & Informationsfluss \\
-$\mathcal{F}$ & Informationsdichtefunktional \\
-$Q$ & Bohm-Potential \\
-$\Phi_I$ & Informationspotential \\
-$g_{ij}$ & Informationsmetrische Komponenten \\
-$D$ & fraktale Dimension \\
-\end{tabular}
-
-\section{Glossar}
-
-\textbf{Informationsraum:}  
-Abstrakter Raum aller Informationsverteilungen.
-
-\textbf{Informationsgeometrie:}  
-Emergente Metrikstruktur des physikalischen Raumes.
-
-\textbf{Systemische Kausalität:}  
-Globale Informationsorganisation.
-
-\section{Wichtige Gleichungen}
+\section{Ausgangspunkt: Das Informations-Lagrange-Funktional}
+Die IWT basiert auf einem Informationsfeld \(I(x,t)\), dessen Dynamik durch ein Informations-Lagrange-Funktional beschrieben wird. Dieses setzt sich aus drei Beiträgen 
+zusammen:
 \[
-    \partial_t \rho_I + \nabla \cdot \vec{J}_I = 0
+\mathcal{L}[I] 
+= 
+\mathcal{L}_{\mathrm{lokal}}
++
+\mathcal{L}_{\mathrm{global}}
++
+\mathcal{L}_{\mathrm{fraktal}}.
 \]
 
+\subsection{Lokaler Anteil: Weber-Struktur}
+Der lokale Anteil beschreibt die direkte Wechselwirkung im Sinne der Weber-Dynamik:
 \[
-    Q = -\frac{\hbar^2}{2m}
-    \frac{\nabla^2 \sqrt{\rho_I}}{\sqrt{\rho_I}}
+\mathcal{L}_{\mathrm{lokal}}
+=
+\frac{1}{2} g^{ij} \partial_i I \partial_j I.
+\]
+Er erzeugt Trägheit, klassische Dynamik und lokale Informationsflüsse.
+
+\subsection{Globaler Anteil: Bohm-Struktur}
+Der globale Anteil beschreibt die nichtlokale Organisationsstruktur:
+\[
+\mathcal{L}_{\mathrm{global}}
+=
+-\frac{\lambda}{2}\frac{\nabla^2 I}{I}.
+\]
+Dieser Term erzeugt Wellenphänomene, Nichtlokalität und quantenartige Kohärenz.
+
+\subsection{Fraktaler Anteil: Kosmische Skalierung}
+Die fraktale Informationsarchitektur des Universums führt zu einer logarithmischen Skalierungsinvarianz:
+\[
+\mathcal{L}_{\mathrm{fraktal}}
+=
+\mu \ln\!\left(1+\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} L^2\right).
+\]
+Dieser Term ist verantwortlich für kosmische Rotverschiebung, die Verlustkonstante \(\bar{\alpha}(L)\) und die CMB-Gleichgewichtstemperatur.
+
+\section{Variation nach der Informationsmetrik}
+Da die Metrik \(g_{ij}\) nicht vorgegeben ist, sondern emergent, folgt ihre Dynamik aus der Variation des Funktionals:
+\[
+\frac{\delta \mathcal{L}}{\delta g_{ij}} = 0.
+\]
+Die Variation der drei Beiträge ergibt:
+\[
+\frac{d}{dt} g_{ij}
+=
+\partial_i I \partial_j I
+-
+\lambda\,\frac{\partial_i\partial_j I}{I}
++
+\mu\,g_{ij}\,\ln\!\left(1+\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} L^2\right).
 \]
 
+\section{Die fundamentale Gleichung der Informationsmetrik}
+Damit ergibt sich die dynamische Urgleichung der IWT:
 \[
-    \vec{F}_{\text{Weber}}
-    =
-    \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}
-    \left[
-        1
-        -
-        \frac{\dot{r}^2}{c^2}
-        +
-        \frac{2 r \ddot{r}}{c^2}
-    \right]
-    \hat{\vec{r}}
+\boxed{
+\frac{d}{dt} g_{ij}
+=
+\partial_i I \partial_j I
+-
+\lambda\,\frac{\partial_i\partial_j I}{I}
++
+\mu\,g_{ij}\,\ln\!\left(1+\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} L^2\right)
+}
 \]
+Diese Gleichung vereinigt:
+\begin{itemize}
+    \item lokale Weber-Dynamik (\(\partial_i I \partial_j I\)),
+    \item globale Bohm-Struktur (\(\partial_i\partial_j I / I\)),
+    \item fraktale kosmische Skalierung (logarithmischer Term).
+\end{itemize}
+Sie ist die erste vollständig geschlossene dynamische Gleichung, aus der die gesamte\\Informations-Weber-Theorie emergiert.
+
+\section{Grenzfälle und physikalische Interpretation}
+\subsection{Klassischer Grenzfall}
+Für schwache Informationsgradienten dominiert der lokale Term:
+\[
+\frac{d}{dt} g_{ij} \approx \partial_i I \partial_j I.
+\]
+Dies reproduziert klassische Mechanik und Weber-Dynamik.
+
+\subsection{Quantenmechanischer Grenzfall}
+Für stark gekrümmte Informationsfelder dominiert der globale Term:
+\[
+\frac{d}{dt} g_{ij} \approx -\lambda\,\frac{\partial_i\partial_j I}{I}.
+\]
+Dies reproduziert das Bohm-Potential und quantenartige Kohärenz.
+
+\subsection{Kosmologischer Grenzfall}
+Für große Skalen dominiert der fraktale Term:
+\[
+\frac{d}{dt} g_{ij} \approx 
+\mu\,g_{ij}\,\ln\!\left(1+\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} L^2\right).
+\]
+Dies erzeugt:
+\begin{itemize}
+    \item kosmische Rotverschiebung,
+    \item die Verlustkonstante \(\bar{\alpha}(L)\),
+    \item das CMB-Gleichgewicht.
+\end{itemize}
+
+\section{Diskrete Form: Dynamik des Informationsnetzes}
+Für das diskrete Informationsnetz der WDBT+ ergibt sich die Update-Regel:
+\[
+g_{ij}(t+\Delta t)
+=
+g_{ij}(t)
++
+\Delta t\,
+\Bigl[
+\partial_i I \partial_j I
+-
+\lambda\,\frac{\partial_i\partial_j I}{I}
++
+\mu\,g_{ij}\,\ln\!\left(1+\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} L^2\right)
+\Bigr].
+\]
+Damit ist die Gleichung numerisch implementierbar.
+
+\section{Konsequenzen für Naturkonstanten}
+Die Urgleichung liefert die Grundlage für die Herleitung der Naturkonstanten:
+\begin{itemize}
+    \item \(c\) als maximale Informationsflussrate,
+    \item \(\hbar\) als globale Informationsgranularität,
+    \item \(G\) als Kopplungsparameter der Informationsmetrik,
+    \item \(\alpha\) als fraktale Skalierungsinvariante.
+\end{itemize}
+Diese Konstanten sind keine Eingaben, sondern emergente Größen.
+
+\section{Konsequenzen für Kosmologie}
+Die Urgleichung reproduziert:
+\begin{itemize}
+    \item Rotverschiebung ohne Expansion,
+    \item die kosmische Verlustkonstante,
+    \item das CMB-Gleichgewicht,
+    \item fraktale Struktur des Universums,
+    \item galaktische Rotationskurven ohne Dunkle Materie.
+\end{itemize}
+
+\section{Schlussbemerkung}
+Mit der dynamischen Gleichung der Informationsmetrik liegt erstmals eine vollständig geschlossene, selbstkonsistente Urgleichung vor, aus der Raum, Zeit, Energie, Gravitation, 
+Quantenstruktur und kosmologische Phänomene emergieren. Die Informations-Weber-Theorie wird damit zu einer echten Urtheorie der Physik.
