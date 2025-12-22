@@ -1,4 +1,4 @@
-\documentclass[11pt, a4paper, twoside, openright]{book}
+\documentclass[11pt, a5paper, twoside, openright]{book}
 
 % --- Pakete ---
 \usepackage[ngerman]{babel}
@@ -122,18 +122,24 @@
 \include{teil_ii/kapitel_2_1}
 \include{teil_ii/kapitel_2_2}
 
+\setcounter{chapter}{0}
+\part{EXPERIMENTELLE VORHERSAGEN}
+\include{teil_iii/kapitel_3_2}
+\include{teil_iii/kapitel_3_3}
+\include{teil_iii/kapitel_3_4}
 
+\stepcounter{chapter}{0}
+\part{ANHANG}
+\appendix
+\include{anhang/anhang_a}
+\include{anhang/anhang_c}
+\include{anhang/anhang_d}
 
-\include{kapitel_10/kapitel_10}
-\include{kapitel_11/kapitel_11}
-\include{kapitel_12/kapitel_12}
-\include{kapitel_13/kapitel_13}
-\include{kapitel_14/kapitel_14}
 \include{kapitel_15/kapitel_15}
 
 % --- Anhänge ---
 \appendix
-\include{anhang_a/anhang_a}
+%\include{anhang_a/anhang_a}
 \include{anhang_b/anhang_b}
 \include{anhang_c/anhang_c}
 \include{anhang_d/anhang_d}
