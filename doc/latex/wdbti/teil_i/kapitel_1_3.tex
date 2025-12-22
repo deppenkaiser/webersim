@@ -1,0 +1,240 @@
+% Datei: kapitel_1_3.tex
+% Teil I: Fundamentale diskrete Theorie
+% Kapitel 3: Die diskrete Weber-Elektrodynamik
+
+\chapter{Die diskrete Weber-Elektrodynamik}
+\label{chap:weber-diskret}
+
+\section{Motivation: Feldlose diskrete Wechselwirkungen}
+Die diskrete Weber-Elektrodynamik (WED) beschreibt elektrische und magnetische Wechselwirkungen \textbf{direkt zwischen Ladungen} ohne elektromagnetische Felder als
+ontologische Objekte. Statt eines kontinuierlichen Feldes verwendet sie eine \textbf{rekursive Update-Regel}, die auf vergangenen Zuständen basiert.
+
+Diese Sichtweise ist für die Informations-Weber-Theorie fundamental:
+\begin{itemize}
+    \item Sie zeigt, dass lokale Dynamik ohne Feldkonzepte formuliert werden kann.
+    \item Sie demonstriert, wie Kräfte aus relationalen Größen entstehen.
+    \item Die diskrete Weber-Kraft ist der \textbf{lokale Grenzfall} der informationsbasierten Dynamik.
+\end{itemize}
+
+\section{Historischer Kontext: Von Weber zur diskreten Dynamik}
+Wilhelm Eduard Weber formulierte 1846 eine elektrodynamische Kraft mit geschwindigkeits- und beschleunigungsabhängigen Termen. Im 20. Jahrhundert wurde diese Theorie
+rekonstruiert und als Alternative zur Maxwell'schen Feldtheorie erkannt.
+
+Die diskrete Reformulierung der Weber-Kraft ist bemerkenswert, weil sie:
+\begin{itemize}
+    \item \textbf{Direkte Wechselwirkung}: Keine Felder als ontologische Objekte
+    \item \textbf{Rekursive Struktur}: Basierend auf vergangenen Zuständen
+    \item \textbf{Energieerhaltung}: Streng erhalten im diskreten Schema
+    \item \textbf{Magnetische Effekte}: Aus rein mechanischen Prinzipien
+    \item \textbf{Strahlungseffekte}: Durch Beschleunigungsterme beschrieben
+\end{itemize}
+
+\section{Die diskrete Weber-Kraft als fundamentale Update-Regel}
+Die diskrete Weber-Kraft wird als fundamentale rekursive Regel der direkten Teilchenwechselwirkung eingeführt.
+
+\subsection{Diskrete Größen}
+Für zwei Ladungen \( q_1, q_2 \) im diskreten Netz:
+\begin{itemize}
+    \item \( r^{(n)} = |\vec{r}_1^{(n)} - \vec{r}_2^{(n)}| \): Diskret er Abstand zum Zeitindex \( n \)
+    \item \( \Delta r^{(n)} = r^{(n)} - r^{(n-1)} \): Erste zeitliche Differenz
+    \item \( \Delta^2 r^{(n)} = r^{(n+1)} - 2r^{(n)} + r^{(n-1)} \): Zweite zeitliche Differenz
+    \item \( T \): Fundamentaler Zeitschritt (konstant)
+\end{itemize}
+
+\subsection{Diskrete Weber-Kraft (fundamentale Form)}
+\begin{equation}
+\vec{F}^{(n)} = \frac{q_1 q_2}{4\pi\varepsilon_0 \left(r^{(n)}\right)^2}
+\left[
+1 - \frac{1}{c^2} \left( \frac{\Delta r^{(n)}}{T} \right)^2 
++ \frac{2r^{(n)}}{c^2} \cdot \frac{\Delta^2 r^{(n)}}{T^2}
+\right] \hat{\vec{r}}^{\,(n)}
+\label{eq:weber_diskret}
+\end{equation}
+
+Diese Form ist:
+\begin{enumerate}
+    \item \textbf{Explizit rekursiv}: \( \vec{F}^{(n)} \) hängt von \( r^{(n)} \), \( r^{(n-1)} \), \( r^{(n+1)} \) ab
+    \item \textbf{Nicht-zirkulär}: Keine implizite Gleichung \( F = f(\ddot{r}) \) mit \( \ddot{r} = F/m \)
+    \item \textbf{Numerisch stabil}: Gut konditioniert als IIR-Filter
+\end{enumerate}
+
+\subsection{Berechnung des nächsten Zustands}
+Aus Gleichung \eqref{eq:weber_diskret} kann \( r^{(n+1)} \) explizit berechnet werden:
+\[
+r^{(n+1)} = 2r^{(n)} - r^{(n-1)} + \frac{T^2 c^2}{2r^{(n)}} 
+\left[
+\frac{4\pi\varepsilon_0 \left(r^{(n)}\right)^2}{q_1 q_2} \vec{F}^{(n)} \cdot \hat{\vec{r}}^{\,(n)}
+- 1 + \frac{1}{c^2} \left( \frac{\Delta r^{(n)}}{T} \right)^2
+\right]
+\]
+
+\section{Interpretation der diskreten Terme}
+Die drei Terme in Gleichung \eqref{eq:weber_diskret} haben klare physikalische Bedeutungen:
+
+\subsection{Coulomb-Term (1)}
+\begin{itemize}
+    \item Beschreibt die statische Fernwirkung
+    \item Unabhängig von Bewegung
+    \item Analog zum Coulomb-Gesetz
+\end{itemize}
+
+\subsection*{Geschwindigkeits-Term \(-\left(\frac{\Delta r^{(n)}}{T}\right)^2/c^2\)}
+\begin{itemize}
+    \item Erzeugt magnetische Effekte
+    \item Proportional zum Quadrat der Relativgeschwindigkeit
+    \item Führt zu geschwindigkeitsabhängiger Abschirmung
+\end{itemize}
+
+\subsection*{Beschleunigungs-Term \(2r^{(n)}\frac{\Delta^2 r^{(n)}}{T^2}/c^2\)}
+\begin{itemize}
+    \item Beschreibt Reaktion auf Bewegungsänderungen
+    \item Verantwortlich für Strahlungswiderstand
+    \item Implementiert partielle Retardierung
+    \item Stabilisiert die numerische Integration
+\end{itemize}
+
+\section{Struktur der diskreten Wechselwirkung}
+Die charakteristische Struktur der diskreten Weber-Kraft,
+\[
+F^{(n)} \propto \frac{1}{\left(r^{(n)}\right)^2}
+\left[
+1 - \frac{1}{c^2} \left( \frac{\Delta r^{(n)}}{T} \right)^2 
++ \frac{2r^{(n)}}{c^2} \cdot \frac{\Delta^2 r^{(n)}}{T^2}
+\right],
+\]
+zeigt, dass elektromagnetische Phänomene aus rein mechanischen Prinzipien entstehen können. Die Abhängigkeit von \( \left(\Delta r^{(n)}\right)^2 \) und \( r^{(n)}\Delta^2 r^{(n)} \) ist das wesentliche Merkmal.
+
+\section{Energie- und Impulserhaltung im diskreten Schema}
+
+\subsection{Diskrete Energieerhaltung}
+Die Gesamtenergie im Zwei-Körper-System ist:
+\[
+E^{(n)} = \frac{1}{2} m_1 \left(\frac{\Delta \vec{r}_1^{(n)}}{T}\right)^2 
++ \frac{1}{2} m_2 \left(\frac{\Delta \vec{r}_2^{(n)}}{T}\right)^2 
++ \frac{q_1 q_j}{4\pi\varepsilon_0 r^{(n)}}
+\left[ 1 - \frac{1}{2c^2} \left( \frac{\Delta r^{(n)}}{T} \right)^2 \right]
+\]
+
+Es gilt: \( E^{(n+1)} = E^{(n)} \) bis auf Rundungsfehler.
+
+\subsection{Diskrete Impulserhaltung}
+Der Gesamtimpuls ist:
+\[
+\vec{P}^{(n)} = m_1 \frac{\Delta \vec{r}_1^{(n)}}{T} + m_2 \frac{\Delta \vec{r}_2^{(n)}}{T}
+\]
+Es gilt: \( \vec{P}^{(n+1)} = \vec{P}^{(n)} \) exakt.
+
+\section{Implementierung als diskreter Algorithmus}
+
+\subsection{Update-Schritt für zwei Ladungen}
+Der Update-Schritt für zwei Ladungen erfolgt in folgenden Schritten:
+
+\begin{enumerate}
+    \item \textbf{Eingabe}: \( \vec{r}_1^{(n)}, \vec{r}_1^{(n-1)}, \vec{r}_2^{(n)}, \vec{r}_2^{(n-1)} \)
+    \item \textbf{Relative Position}: \( \vec{r}^{(n)} = \vec{r}_1^{(n)} - \vec{r}_2^{(n)} \)
+    \item \textbf{Abstand}: \( r^{(n)} = |\vec{r}^{(n)}| \)
+    \item \textbf{Geschwindigkeitsdifferenz}: \( \Delta r^{(n)} = r^{(n)} - r^{(n-1)} \)
+    \item \textbf{Kraftberechnung}: \( \vec{F}^{(n)} \) nach Gleichung \eqref{eq:weber_diskret}
+    \item \textbf{Geschwindigkeitsupdate (Mittelung)}:
+    \[
+    \vec{v}_1^{(n+1/2)} = \frac{\vec{r}_1^{(n)} - \vec{r}_1^{(n-1)}}{T} + \frac{T}{2m_1} \vec{F}^{(n)}
+    \]
+    \item \textbf{Positionsupdate}:
+    \[
+    \vec{r}_1^{(n+1)} = \vec{r}_1^{(n)} + T \vec{v}_1^{(n+1/2)}
+    \]
+    \item \textbf{Analog für Teilchen 2} mit \( -\vec{F}^{(n)} \)
+\end{enumerate}
+
+\subsection{Erweiterung auf N Ladungen}
+Für \( N \) Ladungen mit Positionen \( \vec{r}_i^{(n)} \):
+\[
+\vec{F}_i^{(n)} = \sum_{j \neq i} \frac{q_i q_j}{4\pi\varepsilon_0 \left(r_{ij}^{(n)}\right)^2}
+\left[
+1 - \frac{1}{c^2} \left( \frac{\Delta r_{ij}^{(n)}}{T} \right)^2 
++ \frac{2r_{ij}^{(n)}}{c^2} \cdot \frac{\Delta^2 r_{ij}^{(n)}}{T^2}
+\right] \hat{\vec{r}}_{ij}^{\,(n)}
+\]
+mit \( r_{ij}^{(n)} = |\vec{r}_i^{(n)} - \vec{r}_j^{(n)}| \).
+
+\section{Vergleich mit der kontinuierlichen Notation}
+
+\subsection{Kontinuierliche Form (emergente Näherung)}
+Für \( T \to 0 \) ergibt sich als Grenzfall:
+\[
+\vec{F}(t) = \frac{q_1 q_2}{4\pi\varepsilon_0 r(t)^2}
+\left[
+1 - \frac{\dot{r}(t)^2}{c^2} + \frac{2r(t)\ddot{r}(t)}{c^2}
+\right] \hat{\vec{r}}(t)
+\]
+Diese Form ist kompakt, aber problematisch:
+\begin{itemize}
+    \item \textbf{Zirkularität}: \( F \) hängt von \( \ddot{r} \) ab, aber \( \ddot{r} = F/m \)
+    \item \textbf{Implizit}: Erfordert iterative Lösung
+    \item \textbf{Instabil}: Bei numerischer Integration
+\end{itemize}
+
+\subsection{Vorteile der diskreten Form}
+\begin{table}[ht]
+\centering
+\begin{tabular}{p{0.45\textwidth}|p{0.45\textwidth}}
+\textbf{Diskrete Form} & \textbf{Kontinuierliche Form} \\
+\hline
+Explizit rekursiv & Implizit zirkulär \\
+Numerisch stabil & Numerisch problematisch \\
+Direkt implementierbar & Erfordert Iteration \\
+Keine Felder benötigt & Felder als Hilfskonstrukte \\
+Natürliche Retardierung & Retardierung künstlich \\
+\end{tabular}
+\caption{Vergleich der Formulierungen}
+\end{table}
+
+\section{Physikalische Interpretation im Informationsnetz}
+In der Informations-Weber-Theorie hat die diskrete Weber-Kraft eine tiefere Bedeutung:
+
+\subsection{Als lokaler Informationsfluss}
+Die Weber-Kraft beschreibt den \textbf{lokalen Informationsfluss} zwischen benachbarten Knoten:
+\[
+\vec{F}^{(n)} \propto \nabla_d I^{(n)}
+\]
+mit diskretem Gradienten \( \nabla_d \).
+
+\subsection{Als rekursive Filterung}
+Die diskrete Form implementiert einen \textbf{IIR-Filter} (Infinite Impulse Response):
+\[
+r^{(n+1)} = a_1 r^{(n)} + a_2 r^{(n-1)} + b_0 F^{(n)}
+\]
+Diese Filterung:
+\begin{itemize}
+    \item Glättet hochfrequente Fluktuationen
+    \item Erhält niederfrequente Signale
+    \item Ist kausal (nur vergangene Zustände)
+\end{itemize}
+
+\subsection{Als fundamentale Update-Regel}
+Jeder Zeitschritt \( n \to n+1 \) entspricht einer \textbf{globalen Synchronisation} des Informationsnetzes. Die Weber-Kraft ist die Projektion dieser globalen Aktualisierung auf die lokale Dynamik zweier Knoten.
+
+\section{Bedeutung für die Informations-Weber-Theorie}
+Die diskrete Weber-Kraft ist kein konkurrierendes Modell zur informationsbasierten Theorie, sondern ihr \textbf{lokaler Grenzfall}:
+\begin{itemize}
+    \item Sie entsteht aus dem lokalen Anteil des diskreten Informationsfunktionals.
+    \item Sie beschreibt Informationsflüsse zwischen benachbarten Knoten.
+    \item Sie benötigt keine globalen Strukturen (Bohm-Potential).
+    \item Sie ist vollständig mit der diskreten Informationserhaltung kompatibel.
+\end{itemize}
+
+\section{Zusammenfassung}
+Kapitel~3 hat die diskrete Weber-Elektrodynamik in ihrer fundamentalen Form entwickelt:
+
+\begin{itemize}
+    \item \textbf{Diskrete Weber-Kraft}: Explizit rekursive Update-Regel \eqref{eq:weber_diskret}
+    \item \textbf{Nicht-zirkulär}: Löst das Problem der kontinuierlichen Notation
+    \item \textbf{Energieerhaltend}: Streng erhalten im diskreten Schema
+    \item \textbf{Feldlos}: Direkte Wechselwirkung ohne elektromagnetische Felder
+    \item \textbf{Algorithmisch}: Direkt als Update-Algorithmus implementierbar
+    \item \textbf{Lokaler Grenzfall}: Der informationsbasierten Dynamik
+\end{itemize}
+
+Die diskrete Formulierung zeigt, dass elektromagnetische Phänomene – einschließlich magnetischer und Strahlungseffekte – aus rein mechanischen, rekursiven Prinzipien entstehen können, ohne auf Feldkonzepte zurückzugreifen.
+
+Im nächsten Kapitel wird diese Struktur in den allgemeineren Rahmen des diskreten Informationsfunktionals eingebettet.
