@@ -24,37 +24,9 @@ Die Weber-Kraft ist bemerkenswert, weil sie:
 \end{itemize}
 Diese Eigenschaften machen sie zu einem idealen lokalen Grenzfall der Informations-Weber-Theorie.
 
-\section{Der Weber-Lagrange-Ansatz}
-Die Weber-Kraft lässt sich aus einem Lagrange-Funktional herleiten. Für zwei Ladungen $q_1$ und $q_2$ mit Abstand $r$ lautet der Lagrange-Ansatz:
-\begin{equation}
-    L
-    =
-    \frac{1}{2} m_1 \dot{\vec{r}}_1^{\,2}
-    +
-    \frac{1}{2} m_2 \dot{\vec{r}}_2^{\,2}
-    -
-    \frac{q_1 q_2}{4\pi\varepsilon_0 r}
-    \left(
-        1
-        -
-        \frac{\dot{r}^2}{2c^2}
-        +
-        \frac{r \ddot{r}}{c^2}
-    \right).
-    \label{eq:weber_lagrange}
-\end{equation}
+\section{Die Weber-Kraft als fundamentale Postulat}
+Die Weber-Kraft wird als grundlegendes Postulat der direkten Teilchenwechselwirkung eingeführt. Für zwei Ladungen $q_1$ und $q_2$ mit Abstand $r = |\vec{r}_1 - \vec{r}_2|$, Relativgeschwindigkeit $\dot{r}$ und Relativbeschleunigung $\ddot{r}$ lautet sie:
 
-Dieser Ausdruck enthält:
-\begin{itemize}
-    \item den Coulomb-Term (statische Fernwirkung),
-    \item einen geschwindigkeitsabhängigen Term (magnetische Effekte),
-    \item einen beschleunigungsabhängigen Term (strahlungsähnliche Reaktionskräfte).
-\end{itemize}
-Die letzten beiden Terme sind die charakteristischen Merkmale der Weber-Theorie und zeigen, dass elektromagnetische Effekte aus rein mechanischen Prinzipien entstehen
-können.
-
-\section{Herleitung der Weber-Kraft}
-Durch Variation des Lagrange-Funktionals \eqref{eq:weber_lagrange} erhält man die Weber-Kraft:
 \begin{equation}
     \vec{F}
     =
@@ -70,30 +42,28 @@ Durch Variation des Lagrange-Funktionals \eqref{eq:weber_lagrange} erhält man d
     \label{eq:weber_kraft}
 \end{equation}
 
-Diese Gleichung beschreibt:
-\begin{enumerate}
-    \item den statischen Coulomb-Term,
-    \item einen geschwindigkeitsabhängigen Term (magnetische Effekte),
-    \item einen beschleunigungsabhängigen Term (Strahlungswiderstand).
-\end{enumerate}
-Die Weber-Kraft ist damit eine vollständig mechanische Beschreibung elektromagnetischer Wechselwirkungen.
-
 \section{Interpretation der Terme}
 Die drei Terme der Weber-Kraft haben klare physikalische Bedeutungen:
 \begin{itemize}
-    \item \textbf{Coulomb-Term:}  
+    \item \textbf{Coulomb-Term ($1$):}  
     beschreibt die statische Fernwirkung zwischen Ladungen.
-
-    \item \textbf{Geschwindigkeits-Term:}  
-    erzeugt magnetische Effekte und ist proportional zu $\dot{r}^2$.
-
-    \item \textbf{Beschleunigungs-Term:}  
+    
+    \item \textbf{Geschwindigkeits-Term ($-\dot{r}^2/c^2$):}  
+    erzeugt magnetische Effekte und ist proportional zum Quadrat der Relativgeschwindigkeit.
+    
+    \item \textbf{Beschleunigungs-Term ($2r\ddot{r}/c^2$):}  
     beschreibt die Reaktion des Systems auf zeitliche Änderungen der Bewegung
-    und ist verantwortlich für strahlungsähnliche Widerstandseffekte.
+    und ist verantwortlich für strahlungsähnliche Widerstandseffekte sowie die partielle Berücksichtigung retardierter Wechselwirkungen.
 \end{itemize}
 
-Diese Struktur zeigt, dass die Weber-Kraft bereits wesentliche Elemente einer dynamischen Wechselwirkung enthält, die später in der Informations-Weber-Theorie als lokale
-Informationsflüsse interpretiert werden.
+Die Weber-Kraft ist damit eine vollständig mechanische Beschreibung elektromagnetischer Wechselwirkungen, die ohne Felder auskommt.
+
+\section{Struktur der Wechselwirkung}
+Die charakteristische Struktur der Weber-Kraft,
+\[
+F \propto \frac{1}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{2r\ddot{r}}{c^2}\right),
+\]
+zeigt, dass elektromagnetische Phänomene aus rein mechanischen Prinzipien entstehen können. Die Abhängigkeit von $\dot{r}^2$ und $r\ddot{r}$ ist das wesentliche Merkmal der Weber-Theorie und unterscheidet sie fundamental von feldtheoretischen Ansätzen.
 
 \section{Bedeutung für die Informations-Weber-Theorie}
 Die Weber-Kraft ist kein konkurrierendes Modell zur informationsbasierten Theorie, sondern ihr \textbf{lokaler Grenzfall}. In Kapitel~4 wird gezeigt, wie die Weber-Kraft

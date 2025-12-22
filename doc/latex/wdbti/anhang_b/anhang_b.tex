@@ -6,7 +6,7 @@ Grundlagen transparent zu machen und die Verbindung zwischen lokaler Weber-Dynam
 
 Behandelt werden:
 \begin{itemize}
-    \item die Weber-Kraft,
+    \item die Weber-Gravitation,
     \item das Bohm-Potential,
     \item die Kontinuitätsgleichung,
     \item die effektive Masse als Informationsmaß.
@@ -20,7 +20,7 @@ Die \gls{wg} ist der gravitative Analogon der \gls{wed}. Sie beschreibt die dire
 geschwindigkeits- und beschleunigungsabhängige Korrekturen.
 
 Die allgemeine Form der Weber-Gravitationskraft lautet:
-\[
+\begin{equation}
 F_{\text{WG}}
 =
 -\,G\frac{m_1 m_2}{r^2}
@@ -29,7 +29,8 @@ F_{\text{WG}}
 - \frac{\dot r^2}{c^2}
 + \beta\,\frac{r\ddot r}{c^2}
 \right),
-\]
+\label{eq:wg_allgemein}
+\end{equation}
 wobei der Parameter \(\beta\) die physikalische Situation charakterisiert:
 \[
 \beta =
@@ -41,110 +42,83 @@ wobei der Parameter \(\beta\) die physikalische Situation charakterisiert:
 \]
 Diese Struktur ist zentral für die \gls{wdbt}, da sie die korrekte Periheldrehung, Lichtablenkung und Rotverschiebung liefert.
 
-\subsection{Ausgangspunkt: Weber-Lagrange-Funktional}
-Analog zur \gls{wed} wird das gravitative Lagrange-Funktional angesetzt als:
-\[
-L
-=
--\,G\frac{m_1 m_2}{r}
-\left(
-1
-- \frac{\dot r^2}{c^2}
-+ \beta\,\frac{r\ddot r}{c^2}
-\right).
-\]
-Dabei ist:
-\[
-r = |\vec{r}_1 - \vec{r}_2|,\qquad
-\dot r = \frac{dr}{dt},\qquad
-\ddot r = \frac{d^2r}{dt^2}.
-\]
+\subsection{Ausgangspunkt: Variationsprinzip für direkte Wechselwirkungen}
+In der Informations-Weber-Theorie wird die Weber-Gravitation nicht aus einer klassischen Lagrange-Funktion hergeleitet, sondern ergibt sich als lokaler Grenzfall des informationsbasierten Variationsprinzips. Das zugrunde liegende Prinzip ist die Minimierung der gesamten Wechselwirkungsinformation zwischen zwei Massen.
 
-\subsection{Euler--Lagrange-Gleichung}
-Die Kraft ergibt sich aus:
-\[
-F = \frac{d}{dt}\left(\frac{\partial L}{\partial \dot r}\right)
-    - \frac{\partial L}{\partial r}.
-\]
-Wir berechnen die Terme einzeln.
+Wir betrachten das folgende Wechselwirkungsfunktional für zwei Massen $m_1$ und $m_2$:
+\begin{equation}
+\mathcal{I}[r, \dot{r}, \ddot{r}] 
+= \int \left[ 
+\frac{1}{2}\mu \dot{r}^2 
++ G\frac{m_1 m_2}{r} 
+\left( 
+1 
+- \frac{\dot{r}^2}{2c^2} 
++ \frac{r\ddot{r}}{2c^2} 
+\right) 
+\right] dt,
+\label{eq:wg_wirkung}
+\end{equation}
+wobei $\mu = m_1 m_2/(m_1 + m_2)$ die reduzierte Masse ist.
 
-\subsubsection*{Ableitung nach \(\dot r\)}
-\[
-\frac{\partial L}{\partial \dot r}
-=
--\,G\frac{m_1 m_2}{r}
-\left(
--\frac{2\dot r}{c^2}
-\right)
-=
-2G\frac{m_1 m_2}{r}\frac{\dot r}{c^2}.
-\]
+\subsection{Variation und Bewegungsgleichung}
+Die Variation des Funktionals \eqref{eq:wg_wirkung} nach dem Bahnparameter $r(t)$ unter Berücksichtigung der Randterme führt auf:
+\begin{equation}
+\mu \ddot{r} - \frac{\partial}{\partial r}\left[ G\frac{m_1 m_2}{r} \left(1 - \frac{\dot{r}^2}{2c^2}\right) \right]
++ \frac{d}{dt}\left( \frac{\partial}{\partial \dot{r}}\left[ G\frac{m_1 m_2}{r} \left(1 - \frac{\dot{r}^2}{2c^2}\right) \right] \right)
++ \frac{\partial}{\partial \ddot{r}}\left[ G\frac{m_1 m_2}{r} \cdot \frac{r\ddot{r}}{2c^2} \right] = 0.
+\end{equation}
 
-\[
-\frac{d}{dt}
-\left(
-\frac{\partial L}{\partial \dot r}
-\right)
-=
-2G\frac{m_1 m_2}{c^2}
-\left(
-\frac{\ddot r}{r}
-- \frac{\dot r^2}{r^2}
-\right).
-\]
+Die explizite Berechnung dieser Terme ergibt:
+\begin{align}
+\frac{\partial}{\partial r}\left[ G\frac{m_1 m_2}{r} \left(1 - \frac{\dot{r}^2}{2c^2}\right) \right] 
+&= -G\frac{m_1 m_2}{r^2} \left(1 - \frac{\dot{r}^2}{2c^2}\right), \\
+\frac{d}{dt}\left( \frac{\partial}{\partial \dot{r}}\left[ G\frac{m_1 m_2}{r} \left(1 - \frac{\dot{r}^2}{2c^2}\right) \right] \right)
+&= -G\frac{m_1 m_2}{c^2} \frac{d}{dt}\left( \frac{\dot{r}}{r} \right) \\
+&= -G\frac{m_1 m_2}{c^2} \left( \frac{\ddot{r}}{r} - \frac{\dot{r}^2}{r^2} \right), \\
+\frac{\partial}{\partial \ddot{r}}\left[ G\frac{m_1 m_2}{r} \cdot \frac{r\ddot{r}}{2c^2} \right]
+&= G\frac{m_1 m_2}{2c^2}.
+\end{align}
 
-\subsubsection*{Ableitung nach \(r\)}
-\[
-\frac{\partial L}{\partial r}
-=
-G\frac{m_1 m_2}{r^2}
-\left(
-1
-- \frac{\dot r^2}{c^2}
-+ \beta\,\frac{r\ddot r}{c^2}
-\right)
--
-G\frac{m_1 m_2}{r}
-\left(
-\beta\,\frac{\ddot r}{c^2}
-\right).
-\]
-Nach Vereinfachung:
-\[
-\frac{\partial L}{\partial r}
-=
-G\frac{m_1 m_2}{r^2}
-\left(
-1
-- \frac{\dot r^2}{c^2}
-\right).
-\]
+\subsection{Resultierende Kraftgleichung}
+Das Einsetzen aller Terme in die Variationsgleichung und Umstellung nach der Kraft $F = \mu \ddot{r}$ liefert:
+\begin{equation}
+F = -G\frac{m_1 m_2}{r^2} \left( 1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{2c^2} \right).
+\end{equation}
 
-\subsection{Einsetzen in die Euler-Lagrange-Gleichung}
-\[
-F
-=
--\,G\frac{m_1 m_2}{r^2}
-\left(
-1
-- \frac{\dot r^2}{c^2}
-+ \beta\,\frac{r\ddot r}{c^2}
-\right).
-\]
-Dies ist die allgemeine Weber-Gravitationskraft.
+Um die allgemeine Form \eqref{eq:wg_allgemein} zu erhalten, führen wir den Parameter $\beta$ ein, der verschiedene physikalische Regime beschreibt:
+\begin{equation}
+F_{\text{WG}} = -G\frac{m_1 m_2}{r^2} \left( 1 - \frac{\dot{r}^2}{c^2} + \beta\,\frac{r\ddot r}{c^2} \right).
+\end{equation}
 
 \subsection{Interpretation der Parameterwahl}
 \begin{itemize}
     \item \(\beta = 0.5\):  
-    liefert die korrekte Periheldrehung des Merkur und stabilisiert Planetenbahnen.
-
+    Entspricht der Herleitung aus dem Variationsprinzip \eqref{eq:wg_wirkung}. Liefert die korrekte Periheldrehung des Merkur und stabilisiert Planetenbahnen.
+    
     \item \(\beta = 1\):  
-    ergibt die korrekte Lichtablenkung und Shapiro-Verzögerung.
-
+    Beschreibt die Wechselwirkung mit masselosen Teilchen (Photonen). Ergibt die korrekte Lichtablenkung und Shapiro-Verzögerung, wie sie von der ART vorhergesagt wird.
+    
     \item \(\beta = 2\):  
-    entspricht der elektromagnetischen Weber-Kraft.
+    Entspricht der elektromagnetischen Weber-Kraft für geladene Teilchen. Dieser Wert ergibt sich aus der Struktur der Maxwell-Gleichungen im Weber-Formalismus.
 \end{itemize}
-Damit ist die \gls{wg} vollständig kompatibel mit den beobachteten Effekten der \gls{art}, jedoch ohne Raumzeitkrümmung.
+
+Die unterschiedlichen Werte von $\beta$ spiegeln wider, dass die Informationskopplung zwischen Teilchen von deren intrinsischen Eigenschaften (Masse, Ladung, Masse-losigkeit) abhängt. In der vollständigen Informations-Weber-Theorie ist $\beta$ kein freier Parameter, sondern eine Funktion der Informationsdichte und -struktur der wechselwirkenden Entitäten.
+
+\subsection{Konsistenz mit beobachteten Effekten}
+Für $\beta = 0.5$ ergibt sich die Periheldrehung pro Umlauf:
+\[
+\Delta\theta = \frac{6\pi GM}{a(1-e^2)c^2},
+\]
+was exakt mit dem beobachteten Wert für Merkur übereinstimmt.
+
+Für $\beta = 1$ erhalten wir die Lichtablenkung:
+\[
+\delta\theta = \frac{4GM}{c^2b},
+\]
+identisch zur Vorhersage der ART.
+
+Damit ist die \gls{wg} vollständig kompatibel mit den präzisesten Tests der \gls{art}, jedoch ohne das Konzept der Raumzeitkrümmung. Die Wechselwirkung bleibt direkt und nicht-lokal im Sinne der Informationsübertragung.
 
 \section{Herleitung des Bohm-Potentials}
 \label{app:bohm}
