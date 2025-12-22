@@ -1,0 +1,179 @@
+\chapter{Tabellen, Symbole und Definitionen}
+
+\section{Symbolverzeichnis}
+\begin{table}[ht]
+\centering
+\begin{tabular}{p{0.2\textwidth}p{0.7\textwidth}}
+\textbf{Symbol} & \textbf{Bedeutung} \\
+\hline
+$I_k^{(n)}$ & Diskretes universelles Informationsfeld am Knoten $k$ zum Zeitindex $n$ \\
+$K_{kl}^{(n)}$ & Kopplungsmatrix zwischen Knoten $k$ und $l$ \\
+$g_{kl}^{(n)}$ & Diskrete Informationsmetrik (emergente Geometrie) \\
+$\Delta_k I^{(n)}$ & Diskreter Informationsgradient am Knoten $k$ \\
+$\Delta_{kl} I^{(n)}$ & Diskretes Informationsdifferenz zwischen Knoten $k$ und $l$ \\
+$\Delta^2 I_k^{(n)}$ & Diskreter Laplace-Operator des Informationsfeldes \\
+$\lambda$ & Stärke der globalen Bohm-Kopplung \\
+$\mu$ & Stärke der fraktalen Skalierungskopplung \\
+$\gamma_{\mathrm{eff}}$ & Effektive fraktale Kopplungskonstante \\
+$\rho_{\mathrm{eff}}$ & Effektive Massendichte des Universums \\
+$L$ & Kosmische Skala (Mach-Radius) \\
+$D$ & Fraktale Dimension des Universums ($D \approx 2.71$) \\
+$K_M(D)$ & Mach-Kopplungsfaktor der fraktalen Struktur \\
+$\bar{\alpha}(L)$ & Kosmische Verlustkonstante \\
+$u_\gamma$ & Energiedichte des Photonengases \\
+$\varepsilon$ & Emissivität des kosmischen Plasmas \\
+$A_{\mathrm{eff}}$ & Effektive Oberfläche pro Volumen \\
+$X$ & Kombinierte Plasmaparametergröße $X = u_\gamma/(\varepsilon A_{\mathrm{eff}})$ \\
+$c$ & Maximale Informationsflussrate (Lichtgeschwindigkeit) \\
+$\hbar$ & Globale Informationsgranularität (Plancksches Wirkungsquantum) \\
+$G$ & Gravitationskonstante (fraktale Kopplungsstärke) \\
+$\alpha$ & Feinstrukturkonstante \\
+$k_B$ & Informations-Temperatur-Skala (Boltzmann-Konstante) \\
+$T_{\mathrm{CMB}}$ & Gleichgewichtstemperatur des kosmischen Plasmas \\
+$z$ & Rotverschiebung \\
+$T$ & Fundamentaler Zeitschritt (diskrete Zeit) \\
+$n$ & Diskreter Zeitindex (Update-Schritt) \\
+$\lambda_0$ & Fundamentale Netzwerklänge \\
+$f_{\max}$ & Maximale Update-Frequenz ($f_{\max} = 1/T$) \\
+$m_{\mathrm{eff},k}$ & Effektive Masse am Knoten $k$ \\
+$E^{(n)}$ & Diskrete Gesamtenergie \\
+$\vec{P}^{(n)}$ & Diskreter Gesamtimpuls \\
+$\vec{L}^{(n)}$ & Diskreter Gesamtdrehimpuls \\
+\hline
+\end{tabular}
+\caption{Symbolverzeichnis der diskreten Informations-Weber-Theorie}
+\end{table}
+
+\section{Glossar}
+\begin{itemize}
+    \item \textbf{Informationsfeld} — Fundamentale Größe der IWT; diskretes Skalarfeld $I_k^{(n)}$, dessen Struktur und Dynamik alle physikalischen Phänomene beschreibt.
+    
+    \item \textbf{Informationsmetrik} — Aus dem Informationsfeld emergente diskrete Geometrie $g_{kl}^{(n)}$; definiert Raum, Zeit und Dynamik im Netzwerk.
+    
+    \item \textbf{Informationsfluss} — Grundlegende Form der Dynamik; Energie ist eine abgeleitete Erhaltungsgröße des Informationsflusses zwischen Knoten.
+    
+    \item \textbf{Weber-Dynamik} — Lokale direkte Wechselwirkung zwischen Informationsknoten; erzeugt Trägheit, klassische Mechanik und elektromagnetische Effekte.
+    
+    \item \textbf{Bohm-Struktur} — Globale Organisationsdynamik des gesamten Netzwerks; erzeugt Wellenphänomene, Nichtlokalität und quantenartige Kohärenz.
+    
+    \item \textbf{Fraktale Informationsgeometrie} — Großskalige selbstähnliche Struktur des Universums mit effektiver Dimension $D \approx 2.71$.
+    
+    \item \textbf{Kosmische Verlustkonstante} — Logarithmische Kopplungsgröße $\bar{\alpha}(L)$, die die Rotverschiebungsheizung bestimmt.
+    
+    \item \textbf{Kombinierte Plasmaparametergröße $X$} — Zusammenfassung der mikrophysikalischen Plasmaeigenschaften: $X = u_\gamma/(\varepsilon A_{\mathrm{eff}})$.
+    
+    \item \textbf{Mach-Radius $L$} — Kosmische Skala, die die fraktale Kopplung bestimmt und mit der effektiven Dichte $\rho_{\mathrm{eff}}$ zusammenhängt.
+    
+    \item \textbf{Informationszeit} — Emergent aus der Dynamik der Informationsmetrik; physikalische Zeit ist Ordnungsstruktur der Informationsänderung ($t \approx nT$).
+    
+    \item \textbf{Diskretes Variationsprinzip} — Grundlage der Dynamik; minimiert das diskrete Informations-Lagrange-Funktional $\mathcal{L}_d[I_k^{(n)}]$.
+    
+    \item \textbf{Emergenz} — Prozess, durch den bekannte physikalische Theorien (klassische Mechanik, QM, ART) als Grenzfälle der diskreten IWT erscheinen.
+\end{itemize}
+
+\section{Wichtige Gleichungen}
+
+\subsection{Dynamische Gleichung der Informationsmetrik (diskret)}
+\[
+\boxed{
+g_{kl}^{(n+1)} = g_{kl}^{(n)} + T \cdot \left[
+\Delta_{k} I^{(n)} \Delta_{l} I^{(n)}
+-
+\lambda\,\frac{\Delta_{kl}^2 I^{(n)}}{I_{kl}^{(n)}}
++
+\mu\,g_{kl}^{(n)}\,\ln\!\left(1+\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} L^2\right)
+\right]
+}
+\]
+
+\subsection{Dynamische Gleichung der Informationsmetrik (kontinuierlich)}
+\[
+\frac{d}{dt} g_{ij}
+=
+\partial_i I \partial_j I
+-
+\lambda\,\frac{\partial_i\partial_j I}{I}
++
+\mu\,g_{ij}\,\ln\!\left(1+\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} L^2\right).
+\]
+
+\subsection{Diskretes Informations-Lagrange-Funktional}
+\[
+\mathcal{L}_d[I_k^{(n)}] 
+= 
+\frac{1}{2} \sum_{k,l} K_{kl}^{(n)} \Delta_{kl} I^{(n)} \Delta_{kl} I^{(n)}
+-
+\frac{\lambda}{2}\sum_k \frac{\Delta^2 I_k^{(n)}}{I_k^{(n)}}
++
+\mu \ln\!\left(1+\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} L^2\right) \sum_k I_k^{(n)}.
+\]
+
+\subsection{Kontinuierliches Informations-Lagrange-Funktional}
+\[
+\mathcal{L}[I] 
+= 
+\frac{1}{2} g^{ij} \partial_i I \partial_j I
+-
+\frac{\lambda}{2}\frac{\nabla^2 I}{I}
++
+\mu \ln\!\left(1+\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} L^2\right).
+\]
+
+\subsection{Kosmische Verlustkonstante}
+\[
+\bar{\alpha}(L)
+=
+\frac{1}{L\,\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}}}
+\ln\!\bigl(1+\gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} L^2\bigr).
+\]
+
+\subsection{CMB-Gleichgewichtstemperatur}
+\[
+T_{\mathrm{CMB}}
+=
+\left(
+\frac{\bar{\alpha}(L)\,u_\gamma}
+{\varepsilon\,A_{\mathrm{eff}}\,\sigma}
+\right)^{1/4}.
+\]
+
+\subsection{Kombinierte Plasmaparametergröße}
+\[
+X = \frac{u_\gamma}{\varepsilon A_{\mathrm{eff}}}.
+\]
+
+\subsection{Diskrete Weber-Kraft (allgemeine Form)}
+\[
+F_{ij}^{(n)} = \frac{q_i q_j}{4\pi\varepsilon_0 (r_{ij}^{(n)})^2} \left[ 1 - \frac{1}{c^2} \left( \frac{\Delta r_{ij}^{(n)}}{T} \right)^2 + \frac{2r_{ij}^{(n)}}{c^2} \cdot \frac{\Delta^2 r_{ij}^{(n)}}{T^2} \right] \hat{r}_{ij}^{(n)}.
+\]
+
+\subsection{Weber-Gravitation (kontinuierlich)}
+\[
+F_{\rm WG} = -G\frac{Mm}{r^{2}}\left(1 - \frac{\dot{r}^{2}}{c^{2}} + \beta\,\frac{r\ddot{r}}{c^{2}}\right),
+\]
+wobei $\beta = 0.5$ für massive Körper, $\beta = 1$ für Photonen und $\beta = 2$ für elektromagnetische Wechselwirkungen.
+
+\subsection{Diskretes Bohm-Potential}
+\[
+Q_k^{(n)} = -\frac{\hbar^2}{2m}\frac{\Delta^2 \sqrt{I_k^{(n)}}}{\sqrt{I_k^{(n)}}}.
+\]
+
+\subsection{Kontinuierliches Bohm-Potential}
+\[
+Q = -\frac{\hbar^2}{2m}\frac{\nabla^2 R}{R}, \quad \text{mit } R = \sqrt{\rho_I}.
+\]
+
+\subsection{Rotverschiebungsrelation (fraktale Kosmologie)}
+\[
+z(d) = \gamma_{\mathrm{eff}} G \rho_{\mathrm{eff}} d^2.
+\]
+
+\subsection{Fraktale Dimension}
+\[
+D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71, \quad \text{mit } \phi = \frac{1+\sqrt{5}}{2} \text{ (Goldener Schnitt)}.
+\]
+
+\section{Schlussbemerkung}
+Dieser Anhang fasst die mathematischen und begrifflichen Grundlagen der Informations-Weber-Theorie in ihrer diskreten Formulierung zusammen. Er dient als Referenz für die
+in den Teilen I–III entwickelten Strukturen und ermöglicht eine konsistente Anwendung der Theorie auf physikalische, kosmologische und mathematische Fragestellungen. Die
+durchgehende Unterscheidung zwischen fundamentaler diskreter und emergenter kontinuierlicher Darstellung entspricht der konzeptionellen Struktur der gesamten Arbeit.
