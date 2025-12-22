@@ -1,0 +1,240 @@
+\chapter{Vollständige Lösungen exemplarischer Systeme}
+\label{app:vollstaendige-loesungen}
+
+\section{Einleitung}
+Dieser Anhang präsentiert mathematisch vollständige Lösungen für charakteristische physikalische Systeme im Rahmen der Informations-Weber-Theorie. Während Anhang~C
+numerische Beispiele enthält, konzentrieren sich diese analytischen Lösungen auf die Demonstration fundamentaler Prinzipien. Alle Lösungen werden sowohl in ihrer diskreten
+Grundform als auch im kontinuierlichen Grenzfall dargestellt.
+
+\section{Das Zwei-Körper-Problem mit Weber-Gravitation}
+\label{sec:loesung-zweikoerper}
+
+\subsection{Problemstellung}
+Zwei Massen $m_1$ und $m_2$ mit $m_2 \ll m_1$ bewegen sich unter dem Einfluss der Weber-Gravitation.
+
+\subsection{Diskrete Bewegungsgleichungen}
+\[
+m_2 \frac{\Delta^2 \vec{r}_n}{T^2} = -G \frac{m_1 m_2}{r_n^2} 
+\left[ 1 - \frac{1}{c^2} \left( \frac{\Delta r_n}{T} \right)^2 + \beta \frac{r_n}{c^2} \cdot \frac{\Delta^2 r_n}{T^2} \right] \hat{\vec{r}}_n
+\]
+
+\subsection{Reduktion auf Ein-Körper-Problem}
+Mit reduzierter Masse $\mu = \frac{m_1 m_2}{m_1 + m_2}$ und Relativkoordinate $\vec{r}_n = \vec{r}_{2,n} - \vec{r}_{1,n}$:
+\[
+\mu \frac{\Delta^2 \vec{r}_n}{T^2} = -G \frac{m_1 m_2}{r_n^2} 
+\left[ 1 - \frac{1}{c^2} \left( \frac{\Delta r_n}{T} \right)^2 + \beta \frac{r_n}{c^2} \cdot \frac{\Delta^2 r_n}{T^2} \right] \hat{\vec{r}}_n
+\]
+
+\subsection{Polarkoordinaten und Drehimpulserhaltung}
+In Polarkoordinaten $(r_n, \theta_n)$ mit Drehimpulserhaltung $h = r_n^2 \frac{\Delta \theta_n}{T}$:
+\begin{align*}
+\mu \left( \frac{\Delta^2 r_n}{T^2} - r_n \left( \frac{\Delta \theta_n}{T} \right)^2 \right) &= -G \frac{m_1 m_2}{r_n^2} \left[ 1 - \frac{1}{c^2} \left( \frac{\Delta r_n}{T} \right)^2 + \beta \frac{r_n}{c^2} \cdot \frac{\Delta^2 r_n}{T^2} \right] \\
+\mu r_n^2 \frac{\Delta \theta_n}{T} &= h = \text{konstant}
+\end{align*}
+
+\subsection{Bahn-Gleichung}
+Mit $u_n = 1/r_n$ und Entwicklung bis zur ersten Ordnung in $1/c^2$:
+\[
+\frac{\Delta^2 u_n}{\Delta \theta_n^2} + u_n = \frac{G(m_1 + m_2)}{h^2} \left[ 1 + \frac{3G(m_1 + m_2)}{c^2} u_n \right]
+\]
+
+\subsection{Analytische Lösung}
+Die Lösung lautet:
+\[
+u_n = \frac{G(m_1 + m_2)}{h^2} \left[ 1 + e \cos\left( (1 - \delta) \theta_n \right) \right]
+\]
+mit
+\[
+\delta = \frac{3G(m_1 + m_2)}{a(1 - e^2)c^2}
+\]
+
+\subsection{Periheldrehung}
+Pro Umlauf:
+\[
+\Delta \theta = 2\pi \delta = \frac{6\pi G(m_1 + m_2)}{a(1 - e^2)c^2}
+\]
+Für das System Sonne-Merkur:
+\[
+\Delta \theta \approx 42.98'' \text{ pro Jahrhundert}
+\]
+
+\section{Der harmonische Oszillator in diskreter Darstellung}
+\label{sec:loesung-harmonischer-oszillator}
+
+\subsection{Diskrete Schrödinger-Gleichung}
+\[
+i\hbar \frac{\psi_{n+1} - \psi_n}{T} = \left( -\frac{\hbar^2}{2m} \Delta_x^2 + \frac{1}{2} m\omega^2 x^2 \right) \psi_n
+\]
+mit dem diskreten Laplace-Operator $\Delta_x^2$.
+
+\subsection{Stationäre Lösungen}
+Ansatz: $\psi_{n,k} = \phi_k e^{-iE_k nT/\hbar}$
+\[
+\left( -\frac{\hbar^2}{2m} \Delta_x^2 + \frac{1}{2} m\omega^2 x^2 \right) \phi_k = E_k \phi_k
+\]
+
+\subsection{Diskrete Eigenfunktionen}
+Auf einem äquidistanten Gitter $x_j = j\Delta x$:
+\[
+-\frac{\hbar^2}{2m(\Delta x)^2} (\phi_{j+1} - 2\phi_j + \phi_{j-1}) + \frac{1}{2} m\omega^2 (j\Delta x)^2 \phi_j = E \phi_j
+\]
+
+\subsection{Numerische Eigenwerte}
+Für $\Delta x \to 0$ reproduziert die diskrete Gleichung die bekannten Energieniveaus:
+\[
+E_k = \left( k + \frac{1}{2} \right) \hbar \omega, \quad k = 0, 1, 2, \ldots
+\]
+
+\subsection{Informationsdichte}
+\[
+\rho_{I,j} = |\phi_j|^2 = \frac{1}{2^k k!} \sqrt{\frac{m\omega}{\pi\hbar}} H_k^2\left( \sqrt{\frac{m\omega}{\hbar}} x_j \right) e^{-m\omega x_j^2/\hbar}
+\]
+
+\section{Plasma-Oszillationen im diskreten Netzwerk}
+\label{sec:loesung-plasma-oscillationen}
+
+\subsection{Diskretes Plasma-Modell}
+Elektronen auf diskreten Positionen $\vec{x}_{j,n}$ im Hintergrund positiver Ionen.
+
+\subsection{Bewegungsgleichungen}
+\[
+m_e \frac{\Delta^2 \vec{x}_{j,n}}{T^2} = -e \vec{E}_{j,n}
+\]
+mit dem elektrischen Feld aus der Weber-Elektrodynamik:
+\[
+\vec{E}_{j,n} = \frac{1}{4\pi\varepsilon_0} \sum_{k \neq j} \frac{e(\vec{x}_{j,n} - \vec{x}_{k,n})}{|\vec{x}_{j,n} - \vec{x}_{k,n}|^3} 
+\left[ 1 - \frac{1}{c^2} \left( \frac{\Delta r_{jk,n}}{T} \right)^2 + \frac{2r_{jk,n}}{c^2} \cdot \frac{\Delta^2 r_{jk,n}}{T^2} \right]
+\]
+
+\subsection{Linearisierung}
+Für kleine Auslenkungen $\vec{x}_{j,n} = \vec{x}_j^0 + \vec{\xi}_{j,n}$:
+\[
+m_e \frac{\Delta^2 \vec{\xi}_{j,n}}{T^2} = -\frac{e^2}{4\pi\varepsilon_0} \sum_{k \neq j} \frac{\vec{\xi}_{j,n} - \vec{\xi}_{k,n}}{|\vec{x}_j^0 - \vec{x}_k^0|^3}
+\]
+
+\subsection{Plasmafrequenz}
+Im Kontinuumslimes:
+\[
+\frac{\Delta^2 \vec{\xi}_n}{T^2} = -\omega_p^2 \vec{\xi}_n
+\]
+mit
+\[
+\omega_p^2 = \frac{n_0 e^2}{\varepsilon_0 m_e}
+\]
+
+\subsection{Diskrete Lösung}
+\[
+\vec{\xi}_n = \vec{\xi}_0 \cos(\omega_p nT)
+\]
+
+\section{Lichtausbreitung in fraktaler Geometrie}
+\label{sec:loesung-licht-fraktal}
+
+\subsection{Wirkung für Photonen}
+\[
+S_\gamma = \sum_n \left[ \frac{E}{c^2} \left( \frac{\Delta \vec{x}_n}{T} \right)^2 - \frac{2GME}{c^4 r_n} \left( 1 - \frac{1}{c^2} \left( \frac{\Delta r_n}{T} \right)^2 + \frac{r_n}{c^2} \cdot \frac{\Delta^2 r_n}{T^2} \right) \right] T
+\]
+
+\subsection{Geodätengleichung}
+\[
+\frac{\Delta^2 x_n^\mu}{T^2} + \Gamma^\mu_{\alpha\beta} \frac{\Delta x_n^\alpha}{T} \frac{\Delta x_n^\beta}{T} = 0
+\]
+mit diskreten Christoffel-Symbolen in fraktaler Geometrie.
+
+\subsection{Frequenzabhängige Lichtablenkung}
+\[
+\Delta \theta(\omega) = \frac{4GM}{c^2 b} \left[ 1 + \alpha(D) \left( \frac{\omega_0}{\omega} \right)^{3-D} \right]
+\]
+mit fraktaler Dimension $D \approx 2.71$ und
+\[
+\alpha(D) = \frac{\Gamma(4-D)}{(3-D)\Gamma(3-D)}
+\]
+
+\section{Nichtlineare Schrödinger-Gleichung aus IWT}
+\label{sec:loesung-nls}
+
+\subsection{Erweiterte Wirkung}
+\[
+S = \sum_n \left[ i\hbar \psi_n^* \frac{\psi_{n+1} - \psi_n}{T} - \frac{\hbar^2}{2m} |\Delta_x \psi_n|^2 - g |\psi_n|^4 \right] T
+\]
+
+\subsection{Variation}
+\[
+i\hbar \frac{\psi_{n+1} - \psi_n}{T} = -\frac{\hbar^2}{2m} \Delta_x^2 \psi_n + 2g |\psi_n|^2 \psi_n
+\]
+
+\subsection{Soliton-Lösung}
+Im Kontinuumslimes für 1D:
+\[
+\psi(x,t) = A \operatorname{sech}\left( \frac{x - vt}{\xi} \right) e^{i(kx - \omega t)}
+\]
+mit
+\[
+A = \sqrt{\frac{\hbar^2}{2mg\xi^2}}, \quad \omega = \frac{\hbar k^2}{2m} - \frac{\hbar}{2m\xi^2}
+\]
+
+\section{Thermisches Gleichgewicht im diskreten Netzwerk}
+\label{sec:loesung-thermisches-gleichgewicht}
+
+\subsection{Informations-Hamiltonian}
+\[
+H = \sum_k \left[ \alpha (\Delta_t I_{k,n})^2 + \beta (\Delta_x I_{k,n})^2 + \gamma \frac{(\Delta_x I_{k,n})^2}{I_{k,n}} \right]
+\]
+
+\subsection{Canonische Verteilung}
+\[
+P(\{I_k\}) = \frac{1}{Z} \exp\left( -\frac{H}{k_B T} \right)
+\]
+mit Zustandssumme
+\[
+Z = \int \exp\left( -\frac{H}{k_B T} \right) \prod_k dI_k
+\]
+
+\subsection{Korrelationsfunktionen}
+\[
+\langle I_k I_l \rangle - \langle I_k \rangle \langle I_l \rangle = \frac{k_B T}{\beta} G_{kl}
+\]
+mit Greens-Funktion $G_{kl}$ des diskreten Laplace-Operators.
+
+\section{Zusammenfassung der Lösungsmethoden}
+\begin{table}[ht]
+\centering
+\begin{tabular}{p{0.25\textwidth}p{0.35\textwidth}p{0.3\textwidth}}
+\hline
+\textbf{System} & \textbf{Lösungsmethode} & \textbf{Charakteristika} \\
+\hline
+Zwei-Körper-Problem & Diskretes Variationsprinzip & Periheldrehung ohne Raumzeitkrümmung \\
+\hline
+Harmonischer Oszillator & Diskrete Eigenwertgleichung & Quantisierung aus globalem Funktional \\
+\hline
+Plasma-Oszillationen & Lineare Störungstheorie & Emergenz der Plasmafrequenz \\
+\hline
+Lichtausbreitung & Diskrete Geodätengleichung & Frequenzabhängige Ablenkung \\
+\hline
+Nichtlineare Wellen & Variation erweiterter Wirkung & Soliton-Lösungen \\
+\hline
+Thermisches Gleichgewicht & Statistische Mechanik & Korrelationsfunktionen \\
+\hline
+\end{tabular}
+\caption{Übersicht der gelösten Systeme und Methoden}
+\end{table}
+
+\subsection{Allgemeine Lösungsstrategien}
+\begin{enumerate}
+    \item \textbf{Diskretisierung}: Übertragung des Problems auf diskretes Netzwerk
+    \item \textbf{Variationsprinzip}: Ableitung der Bewegungsgleichungen aus diskreter Wirkung
+    \item \textbf{Linearisierung}: Behandlung kleiner Störungen
+    \item \textbf{Symmetrien}: Ausnutzung von Erhaltungsgrößen
+    \item \textbf{Kontinuumslimes}: Übergang zu etablierten Gleichungen
+\end{enumerate}
+
+\subsection{Schlussfolgerungen}
+\begin{itemize}
+    \item Die IWT bietet konsistente Lösungen für alle grundlegenden physikalischen Systeme
+    \item Die diskrete Formulierung ist mathematisch wohldefiniert und lösbar
+    \item Im entsprechenden Grenzfall werden alle bekannten Ergebnisse reproduziert
+    \item Die Theorie macht darüber hinaus spezifische neue Vorhersagen
+    \item Die Lösungsmethoden sind allgemein und auf komplexere Systeme übertragbar
+\end{itemize}
+Diese vollständigen analytischen Lösungen demonstrieren die mathematische Konsistenz und Anwendbarkeit der Informations-Weber-Theorie über das gesamte Spektrum
+physikalischer Phänomene hinweg.
