@@ -1,49 +1,101 @@
-\chapter{Tabellen, Symbole und Definitionen}
-\label{anhang:symbole}
+\chapter{Energieerhaltung, Rotverschiebung und die Gleichgewichtstemperatur des kosmischen Plasmas}
+In diesem Anhang wird die energetische Struktur des stationären Universums der Informations-Weber-Theorie untersucht. Die Rotverschiebung kosmischer Photonen,
+der Energiefluss im intergalaktischen Plasma und die thermische Gleichgewichtstemperatur stehen in einem direkten Zusammenhang, der sich aus der fraktalen Geometrie des
+Universums und der Weber-Dynamik ergibt. Die folgenden Abschnitte entwickeln diese Zusammenhänge systematisch und führen zu einer vollständigen Kalibrierung der
+Rotverschiebungsdynamik.
 
-\section{Symbolverzeichnis}
+\section{Kalibrierung der Rotverschiebungsdynamik im fraktalen Universum}
+Die Rotverschiebung eines Photons entlang einer kosmischen Strecke $d$ folgt in der Informations-Weber-Theorie aus der integrierten Wechselwirkung mit der fraktalen
+Massenverteilung des Universums. Die allgemeine Form lautet
+\begin{equation}
+z(d) = \gamma_{\mathrm{eff}}\, G\, \rho_{\mathrm{eff}}\, d^2,
+\end{equation}
+wobei $\gamma_{\mathrm{eff}}$ die effektive Kopplungskonstante ist, die sowohl die fraktale Geometrie als auch die Weber-Dynamik umfasst. Die Größe $\rho_{\mathrm{eff}}$
+ist die mittlere kosmische Dichte, die aus der fraktalen Struktur folgt.
 
-\begin{tabular}{ll}
-$\rho_I$ & Informationsdichte \\
-$\vec{J}_I$ & Informationsfluss \\
-$\mathcal{F}$ & Informationsdichtefunktional \\
-$Q$ & Bohm-Potential \\
-$\Phi_I$ & Informationspotential \\
-$g_{ij}$ & Informationsmetrische Komponenten \\
-$D$ & fraktale Dimension \\
-\end{tabular}
+Die Bestimmung von $\gamma_{\mathrm{eff}}$ ist der zentrale Schritt zur Festlegung der\\Entfernung–Rotverschiebungs-Relation. Dazu werden zunächst die fraktalen
+Normierungen der Mach-Konstante und der Weber-Kopplung hergeleitet.
 
-\section{Glossar}
+\subsection{Fraktale Normierung der Weber-Kopplung}
+Die fraktale Massenverteilung des Universums wird durch
+\begin{equation}
+\rho(r) = \rho_0 \left(\frac{r}{R}\right)^{D-3}
+\end{equation}
+beschrieben, wobei $R$ der Mach-Radius und $D$ die fraktale Dimension ist. Aus dieser Verteilung ergibt sich das Mach-Potential
+\begin{equation}
+\Phi_M = \frac{4\pi}{D-1}\,G\rho_0 R^2.
+\end{equation}
+Vergleich mit der Mach-Relation
+\begin{equation}
+c^2 = 2\kappa_M G\rho_{\mathrm{eff}} R^2
+\end{equation}
+liefert die fraktale Mach-Konstante
+\begin{equation}
+\kappa_M(D) = \frac{2\pi D}{3(D-1)}.
+\end{equation}
+Für die fraktale Dimension $D = 2.71$ ergibt sich numerisch $\kappa_M \approx 3.3$.
 
-\textbf{Informationsraum:}  
-Abstrakter Raum aller Informationsverteilungen.
+Die Weber-Kopplung eines Photons mit der fraktalen Massenverteilung führt auf die dimensionslose Normierung
+\begin{equation}
+\gamma(D)
+= C\,\frac{D}{3(D-2)}\,\frac{\eta^{D-4}}{c^2 R},
+\end{equation}
+wobei $C$ eine Weber-Normierungskonstante und $\eta = L/R$ das Verhältnis der kosmischen Kopplungslänge $L$ zum Mach-Radius ist. Die effektive Rotverschiebungskonstante
+ergibt sich zu
+\begin{equation}
+\gamma_{\mathrm{eff}} = C\,\eta^{D-4}\,\gamma(D).
+\end{equation}
 
-\textbf{Informationsgeometrie:}  
-Emergente Metrikstruktur des physikalischen Raumes.
+\subsection{Konsequenz für die kosmische Rotverschiebungsskala}
+Die beobachtete Rotverschiebung $z\approx 1$ bei einer Entfernung von
+\begin{equation}
+d_0 = 1\,\mathrm{Gpc}
+\end{equation}
+liefert die Bedingung
+\begin{equation}
+1 = \gamma_{\mathrm{eff}}\, G\rho_{\mathrm{eff}}\, d_0^2.
+\end{equation}
+Damit folgt
+\begin{equation}
+\gamma_{\mathrm{eff}} = \frac{1}{G\rho_{\mathrm{eff}} d_0^2}.
+\end{equation}
+Für $\rho_{\mathrm{eff}} = 4\times 10^{-28}\,\mathrm{kg/m^3}$ ergibt sich
+\begin{equation}
+\gamma_{\mathrm{eff}} \approx 4\times 10^{-14}.
+\end{equation}
 
-\textbf{Systemische Kausalität:}  
-Globale Informationsorganisation.
+Die fraktale Struktur verlangt
+\begin{equation}
+C\,\eta^{-1.29} \approx 10^{30},
+\end{equation}
+wobei der Exponent $1.29$ aus $D-4$ für $D=2.71$ resultiert.
 
-\section{Wichtige Gleichungen}
-\[
-    \partial_t \rho_I + \nabla \cdot \vec{J}_I = 0
-\]
+Eine physikalisch sinnvolle Wahl ist eine kosmische Kopplungslänge
+\begin{equation}
+L = 100\,\mathrm{Mpc},
+\end{equation}
+was dem Verhältnis
+\begin{equation}
+\eta = \frac{L}{R} \approx 4\times 10^{-3}
+\end{equation}
+entspricht. Damit ergibt sich
+\begin{equation}
+C \approx 10^{27}.
+\end{equation}
 
-\[
-    Q = -\frac{\hbar^2}{2m}
-    \frac{\nabla^2 \sqrt{\rho_I}}{\sqrt{\rho_I}}
-\]
+Die effektive Rotverschiebungskonstante ist damit vollständig bestimmt:
+\begin{equation}
+\gamma_{\mathrm{eff}} = 4\times 10^{-14}.
+\end{equation}
 
-\[
-    \vec{F}_{\text{Weber}}
-    =
-    \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}
-    \left[
-        1
-        -
-        \frac{\dot{r}^2}{c^2}
-        +
-        \frac{2 r \ddot{r}}{c^2}
-    \right]
-    \hat{\vec{r}}
-\]
+Mit dieser Kalibrierung folgt für alle kosmischen Distanzen
+\begin{equation}
+z(d) = \left(\frac{d}{1\,\mathrm{Gpc}}\right)^2.
+\end{equation}
+Damit ergeben sich für hohe Rotverschiebungen die Entfernungen
+\begin{align}
+z = 10 &\;\Rightarrow\; d \approx 3.2\,\mathrm{Gpc},\\
+z = 20 &\;\Rightarrow\; d \approx 4.5\,\mathrm{Gpc}.
+\end{align}
+Die extremen JWST-Rotverschiebungen liegen somit in einem Bereich von wenigen Gigaparsec und erfordern weder eine kosmische Expansion noch eine thermische Frühzeit. Die
+Rotverschiebung ist eine direkte Konsequenz der fraktalen Weber-Dynamik im stationären Universum der Informations-Weber-Theorie.
