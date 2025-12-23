@@ -2,7 +2,7 @@
 \label{app:mathematische-grundlagen}
 
 \section{Einleitung}
-Dieser Anhang stellt die mathematischen Werkzeuge bereit, auf denen die diskrete Formulierung der Informations-Weber-Theorie basiert. Im Gegensatz zu den kontinuierlichen
+Dieser Anhang stellt die mathematischen Werkzeuge bereit, auf denen die diskrete Formulierung der \gls{iwt} basiert. Im Gegensatz zu den kontinuierlichen
 Approximationen im Haupttext werden hier ausschließlich die fundamentalen diskreten Strukturen entwickelt. Der Fokus liegt auf:
 \begin{enumerate}
     \item Diskrete Variationsrechnung für Informationsnetzwerke
@@ -16,7 +16,8 @@ Approximationen im Haupttext werden hier ausschließlich die fundamentalen diskr
 \label{sec:diskrete-variationsrechnung}
 
 \subsection{Diskretes Funktional}
-Ein diskretes Informationssystem wird beschrieben durch Knoten $k = 1, \ldots, N$ mit Informationswerten $I_k^{(n)}$ zum Zeitschritt $n$. Das fundamentale diskrete Funktional lautet:
+Ein diskretes Informationssystem wird beschrieben durch Knoten $k = 1, \ldots, N$ mit Informationswerten $I_k^{(n)}$ zum Zeitschritt $n$. Das fundamentale diskrete
+Funktional lautet:
 \[
 S_d\left[I_k^{(n)}\right] = \sum_{n=0}^{M-1} \sum_{k=1}^N \mathcal{F}_d\left(I_k^{(n)}, \Delta_t I_k^{(n)}, \Delta_s I_k^{(n)}\right) \cdot T \cdot V_k
 \]
@@ -145,7 +146,7 @@ wobei $N(R)$ die Anzahl der Knoten innerhalb einer Distanz $R$ von einem Referen
 \end{enumerate}
 
 \subsection{Beispiel: Fraktales Netz}
-Für das in der IWT verwendete fraktale Netzwerk gilt:
+Für das in der \gls{iwt} verwendete fraktale Netzwerk gilt:
 \[
 D = \frac{\ln 20}{\ln(2+\phi)} \approx 2.71
 \]
@@ -155,7 +156,7 @@ Dieses Netzwerk zeigt selbstähnliche Struktur auf allen Skalen.
 \label{sec:diskrete-differenzengleichungen}
 
 \subsection{Rekursive Update-Regeln}
-Viele Gleichungen der IWT haben die Form:
+Viele Gleichungen der \gls{iwt} haben die Form:
 \[
 I_k^{(n+1)} = F\left(I_k^{(n)}, I_k^{(n-1)}, \{I_l^{(n)}\}\right)
 \]
@@ -219,11 +220,11 @@ L_{kl} =
 Die Eigenwerte $\lambda_i$ und Eigenvektoren $\vec{v}_i$ von $L$ charakterisieren die kollektiven Moden des Netzwerks.
 
 \section{Zusammenfassung der mathematischen Struktur}
-Die diskrete Informations-Weber-Theorie basiert auf folgenden mathematischen Grundlagen:
+Die diskrete \gls{iwt} basiert auf folgenden mathematischen Grundlagen:
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{p{0.3\textwidth}p{0.65\textwidth}}
+\begin{tabular}{p{0.3\textwidth}p{0.6\textwidth}}
 \hline
 \textbf{Konzept} & \textbf{Mathematische Beschreibung} \\
 \hline
