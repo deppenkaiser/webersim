@@ -1,4 +1,4 @@
-\chapter{Axiomatische Grundstruktur der Dynamischen Schwere--Trägheits-Theorie}
+\chapter{Axiomatische Grundstruktur der Dynamischen Schwere-Trägheits-Theorie}
 In diesem Kapitel wird die Theorie der dynamischen Aufteilung der Schwerewirkung in radiale und tangentiale Trägheitsantworten in axiomatischer Form dargestellt. Die
 Theorie ersetzt die klassische Orbitmechanik durch eine energetisch gesteuerte Spiralmechanik, in der der dimensionslose Umlenkungszustand $\beta(t)$ die gesamte Dynamik
 bestimmt. Die Axiome sind logisch unabhängig und vollständig.
@@ -71,3 +71,206 @@ Aus den Axiomen folgt, dass alle Satelliten spiralförmige Bahnen besitzen. Der 
 Einwärtsbewegung, für $\beta > 1/2$ eine Auswärtsbewegung. Langfristig spiralisieren alle Satelliten nach außen, da $\beta(t)$ monoton wächst. Die Theorie erklärt
 Wanderbewegungen von Planeten und Monden ohne Zusatzannahmen.
 
+\section{Dynamik, Bewegungsgleichungen und Spiralbahnen}
+
+Dieses Kapitel entwickelt die vollständige Dynamik der Theorie aus den Axiomen des vorangegangenen Kapitels. Die Bewegung eines Testkörpers ergibt sich aus der Aufteilung
+der Schwerewirkung in radiale und tangentiale Trägheitsantworten sowie aus der zeitlichen Entwicklung des Umlenkungszustands $\beta(t)$. Die resultierenden Bahnen sind
+logarithmische Spiralen, deren Richtung und Krümmung durch die Energieverteilung bestimmt werden.
+
+\section*{1. Radial- und Tangentialbewegung}
+Aus der Aufteilung der Schwerewirkung folgt unmittelbar
+\[
+m_T a_Z = (1-\beta)F_G, \qquad
+m_T a_B = \beta F_G.
+\]
+Mit den Definitionen
+\[
+a_Z = \ddot r, \qquad
+a_B = r\dot\phi^2,
+\]
+ergeben sich die Bewegungsgleichungen
+\[
+m_T \ddot r = (1-\beta)F_G,
+\]
+
+\[
+m_T r\dot\phi^2 = \beta F_G.
+\]
+Die radiale und die tangentiale Bewegung sind vollständig durch $\beta(t)$ gekoppelt.
+
+\section*{2. Energieformulierung}
+Die kinetischen Energien lauten
+\[
+E_Z = \frac12 m_T \dot r^2, \qquad
+E_B = \frac12 m_T r^2 \dot\phi^2.
+\]
+Die Gesamtenergie ist
+\[
+E = E_Z + E_B.
+\]
+Der Umlenkungszustand ist energetisch definiert durch
+\[
+\beta = \frac{E_B}{E}.
+\]
+Damit gilt
+\[
+E_Z = (1-\beta)E, \qquad
+E_B = \beta E.
+\]
+
+\section*{3. Geschwindigkeiten}
+Aus der Energiezerlegung folgen die Geschwindigkeiten
+\[
+\dot r = \sqrt{\frac{2(1-\beta)E}{m_T}},
+\]
+
+\[
+\dot\phi = \sqrt{\frac{2\beta E}{m_T}}\frac{1}{r}.
+\]
+Die radiale Geschwindigkeit verschwindet nur für $\beta = 1$, ein Wert, der nicht erreicht wird. Die tangentiale Geschwindigkeit verschwindet nur für $\beta = 0$, was nur
+im Anfangszustand möglich ist. Damit besitzt jede reale Bewegung sowohl radiale als auch tangentiale Komponenten.
+
+\section*{4. Dynamik des Umlenkungszustands}
+Die Energieflüsse lauten
+\[
+\dot E_B = F_G v_B, \qquad
+\dot E_Z = -\beta F_G v_Z.
+\]
+Mit $E = E_Z + E_B$ ergibt sich die Evolutionsgleichung
+\[
+\dot\beta = \frac{F_G}{E^2}\left(E_Z v_B + \beta E_B v_Z\right).
+\]
+Da alle Terme positiv sind, folgt
+\[
+\dot\beta > 0.
+\]
+Der Umlenkungszustand wächst monoton und erreicht den Wert $1$ nicht. Damit bleibt stets ein radialer Anteil der Schwerewirkung erhalten.
+
+\section*{5. Eliminierung der Zeit}
+Die Eliminierung der Zeit aus den Bewegungsgleichungen führt zu
+\[
+\frac{dr}{d\phi}
+= \frac{\dot r}{\dot\phi}
+= \frac{r}{B},
+\]
+wobei
+\[
+B = \frac{2E}{F_G}.
+\]
+Die Lösung lautet
+\[
+r(\phi) = K e^{\phi/B}.
+\]
+Die Bahn ist eine logarithmische Spirale. Kreisbahnen und Ellipsen sind ausgeschlossen.
+
+\section*{6. Richtung der Spiralbewegung}
+Das Vorzeichen von $\dot r$ bestimmt die Richtung der Drift. Aus der Energiezerlegung folgt
+\[
+\dot r > 0 \quad \text{für} \quad \beta > \frac12,
+\]
+
+\[
+\dot r < 0 \quad \text{für} \quad \beta < \frac12.
+\]
+Damit gilt:
+\begin{itemize}
+\item Für $\beta < 1/2$ spiralisieren Satelliten nach innen.
+\item Für $\beta > 1/2$ spiralisieren sie nach außen.
+\item Da $\beta(t)$ monoton wächst, spiralisieren alle Satelliten langfristig nach außen.
+\end{itemize}
+
+\section*{7. Wander-Geschwindigkeit}
+Die radiale Driftgeschwindigkeit ergibt sich zu
+\[
+v_{\text{wander}} = \dot r
+= \pm \frac{F_G}{2E}\sqrt{\frac{2\beta E}{m_T}}.
+\]
+Das Vorzeichen bestimmt die Richtung der Spiralbewegung. Die Drift verschwindet nie, da $\beta(t)$ nie den Wert $1$ erreicht.
+
+\section*{8. Konsequenzen}
+Die Theorie sagt voraus, dass alle Satelliten spiralförmige Bahnen besitzen und dass keine Bahn stabil ist. Die Drift ist eine direkte Folge der dynamischen
+Energieaufteilung und benötigt keine zusätzlichen Mechanismen wie Reibung, Gezeiten oder Resonanzen. Planetare Migration, Mondwanderung und die Existenz von Hot Jupiters
+ergeben sich unmittelbar aus der Dynamik des Umlenkungszustands.
+
+\section{Vergleich mit Newtons Mechanik und der Allgemeinen Relativitätstheorie}
+Dieses Kapitel stellt die Dynamische Schwere--Trägheits-Theorie den beiden etablierten Beschreibungen gravitativer Bewegung gegenüber: der newtonschen Mechanik und der
+Allgemeinen Relativitätstheorie. Der Vergleich erfolgt ausschließlich auf der Ebene der Grundannahmen, der Bewegungsgleichungen und der Bahnformen. Die Unterschiede sind
+grundlegend und betreffen sowohl die Struktur der Dynamik als auch die Interpretation der Bewegung.
+
+\section*{1. Vergleich der Grundannahmen}
+Die newtonsche Mechanik basiert auf einer einzigen Kraft, die stets radial wirkt und deren Wirkung vollständig durch die Trägheit des Testkörpers beantwortet wird. Die
+Allgemeine Relativitätstheorie ersetzt die Kraft durch die Geometrie der Raumzeit und beschreibt Bewegung als Geodäten in einer gekrümmten Metrik. Die Dynamische
+Schwere--Trägheits-Theorie unterscheidet sich von beiden Ansätzen durch die Aufteilung der Schwerewirkung in zwei orthogonale Trägheitsantworten und durch die Einführung
+des dynamischen Zustands $\beta(t)$.
+
+Newton:
+\[
+F = m a, \qquad F_G = \frac{GMm}{r^2}.
+\]
+Relativität:
+\[
+\text{Bewegung entlang von Geodäten der Metrik } g_{\mu\nu}.
+\]
+Dynamische Theorie:
+\[
+m_T a_Z = (1-\beta)F_G, \qquad m_T a_B = \beta F_G.
+\]
+Damit besitzt die Dynamische Theorie eine interne Freiheitsvariable, die in den klassischen Theorien nicht existiert.
+
+\section*{2. Vergleich der Energieformulierung}
+In der newtonschen Mechanik ist die Energieaufteilung festgelegt durch
+\[
+E = \frac12 m \dot r^2 + \frac12 m r^2 \dot\phi^2 - \frac{GMm}{r}.
+\]
+Die Relativitätstheorie verwendet keine globale Energieerhaltung in gekrümmten Raumzeiten.
+
+Die Dynamische Theorie führt eine eindeutige Zerlegung ein:
+\[
+E_Z = \frac12 m_T \dot r^2, \qquad
+E_B = \frac12 m_T r^2 \dot\phi^2,
+\]
+
+\[
+E = E_Z + E_B, \qquad
+\beta = \frac{E_B}{E}.
+\]
+Die Energieaufteilung ist dynamisch und bestimmt die Bahnform.
+
+\section*{3. Vergleich der Bahnformen}
+Newton erlaubt geschlossene Bahnen:
+\[
+r(\phi) = \frac{p}{1 + e\cos\phi}.
+\]
+Die Relativitätstheorie erzeugt präzedierende Ellipsen.
+
+Die Dynamische Theorie liefert ausschließlich logarithmische Spiralen:
+\[
+r(\phi) = K e^{\phi/B}.
+\]
+Damit sind Kreisbahnen und Ellipsen ausgeschlossen. Die Bahn ist stets offen und besitzt eine konstante relative Krümmung.
+
+\section*{4. Vergleich der Stabilität}
+In der newtonschen Mechanik existieren stabile Kreisbahnen. In der Relativitätstheorie existieren stabile und instabile Geodäten, abhängig vom Potential.
+
+In der Dynamischen Theorie existiert keine stabile Bahn. Da $\beta(t)$ monoton wächst und nie den Wert $1$ erreicht, bleibt stets ein radialer Anteil der Schwerewirkung
+erhalten. Damit gilt
+\[
+\dot r \neq 0.
+\]
+Jede Bahn besitzt eine Drift, und alle Satelliten spiralisieren langfristig nach außen.
+
+\section*{5. Vergleich der physikalischen Interpretation}
+Newton interpretiert die Bewegung als Resultat einer Kraft. Die Relativitätstheorie interpretiert sie als freie Bewegung in einer gekrümmten Raumzeit. Die Dynamische
+Theorie interpretiert die Bewegung als Ergebnis einer dynamischen Energieaufteilung zwischen Fall und Umlenkung. Der Zustand $\beta(t)$ ersetzt sowohl das newtonsche
+Drehimpulskonzept als auch die relativistische Geodätenstruktur.
+
+\section*{6. Vergleich der beobachtbaren Konsequenzen}
+Die newtonsche Mechanik erklärt keine langfristige planetare Migration ohne Zusatzmechanismen. Die Relativitätstheorie erklärt Präzessionen, aber keine systematische Drift.
+
+Die Dynamische Theorie sagt Wanderbewegungen aller Satelliten voraus. Beispiele wie die Drift des Erdmondes, der Einwärtsfall von Phobos, die Migration von Gasriesen und
+die Existenz von Hot Jupiters ergeben sich unmittelbar aus der Dynamik des Umlenkungszustands.
+
+\section*{7. Zusammenfassung}
+Die Dynamische Schwere-Trägheits-Theorie unterscheidet sich grundlegend von Newton und der Relativität. Sie ersetzt geschlossene Bahnen durch logarithmische Spiralen,
+stabile Orbits durch Drift, konstante Energieaufteilung durch eine dynamische Variable und die klassische Kraftinterpretation durch eine zweigeteilte Trägheitsantwort. Die
+Theorie ist damit eine eigenständige, axiomatisch definierte Alternative zu den etablierten Beschreibungen gravitativer Bewegung.
