@@ -116,7 +116,7 @@ Für numerische Simulation mit $N$ Knoten bei Positionen $x_k$:
 \frac{\psi_k^{(n+1)} - 2\psi_k^{(n)} + \psi_k^{(n-1)}}{T^2} = -\frac{2m}{\hbar^2} \left[E - V(x_k)\right] \psi_k^{(n)}
 \]
 
-\section{Beispiel 3: Kepler-Problem mit WG}
+\section{Beispiel 3: Kepler-Problem mit \gls{wg}}
 \label{sec:beispiel-kepler}
 
 \subsection{Problemstellung}
@@ -124,7 +124,7 @@ Zwei Massen $M$ (Zentralkörper) und $m$ (Testkörper) mit $m \ll M$.
 
 \subsection{Weber-Gravitationskraft}
 \[
-\vec{F}_{\text{WG}} = -G \frac{Mm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right) \hat{r}
+\vec{F}_{\text{\gls{wg}}} = -G \frac{Mm}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2}\right) \hat{r}
 \]
 mit $\beta = 0.5$ für massive Körper.
 
@@ -174,7 +174,7 @@ Elektroneninformationsdichte: $\rho_I(\vec{r}, t) = n_e(\vec{r}, t) \cdot I_{\te
 \[
 m_e \frac{\partial \vec{v}_e}{\partial t} = -e \vec{E} - \frac{1}{n_e} \nabla p_e
 \]
-In IWT-Formulierung:
+In \gls{iwt}-Formulierung:
 \[
 m_e \frac{\Delta^2 \vec{r}_k^{(n)}}{T^2} = -\frac{q_e}{4\pi\varepsilon_0} \sum_{l \neq k} \frac{q_l}{r_{kl}^2} \left[1 - \frac{1}{c^2}\left(\frac{\Delta r_{kl}}{T}\right)^2 + \frac{2r_{kl}}{c^2} \frac{\Delta^2 r_{kl}}{T^2}\right] \hat{r}_{kl}
 \]
@@ -200,7 +200,7 @@ mit
 \subsection{Problemstellung}
 Photon der Frequenz $\nu$ passiert ein Gravitationsfeld der Masse $M$ mit Stoßparameter $b$.
 
-\subsection{WG für Photonen}
+\subsection{\gls{wg} für Photonen}
 Für masselose Teilchen gilt $\beta = 1$:
 \[
 \vec{F}_{\text{WG}}^{(\gamma)} = -G \frac{M E}{r^2 c^2} \left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2}\right) \hat{r}
@@ -272,7 +272,7 @@ Die durchgerechneten Beispiele zeigen:
 \centering
 \begin{tabular}{p{0.25\textwidth}p{0.35\textwidth}p{0.3\textwidth}}
 \hline
-\textbf{Beispiel} & \textbf{IWT-Lösung} & \textbf{Übereinstimmung mit etablierter Physik} \\
+\textbf{Beispiel} & \textbf{\gls{iwt}-Lösung} & \textbf{Übereinstimmung mit etablierter Physik} \\
 \hline
 Doppelspalt & Interferenz aus Informationsoptimierung & Vollständig (inkl. Streifenbreite) \\
 \hline
@@ -280,7 +280,7 @@ Harmonischer Oszillator & Quantisierung aus globalem Funktional & Exakt (Energie
 \hline
 Kepler-Problem & Periheldrehung aus $\beta=0.5$ & $43''$/Jhdt für Merkur \\
 \hline
-Plasmawellen & Dispersionsrelation aus \gls{wed} & Identisch mit Maxwell-Theorie \\
+Plasmawellen & Dispersionsrelation aus \gls{wed} & Identisch mit \gls{mt} \\
 \hline
 Lichtablenkung & $\Delta\theta = \frac{4GM}{c^2b}(1+\alpha(\nu))$ & ART + Frequenzkorrektur \\
 \hline
