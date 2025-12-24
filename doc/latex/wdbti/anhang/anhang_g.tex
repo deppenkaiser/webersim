@@ -558,6 +558,52 @@ Die fraktale Raumstruktur führt zu einem statischen, aber dynamisch organisiert
 
 Die \gls{dstt} liefert die makroskopische Gravitation, während die fraktale Informationsstruktur die großskalige Geometrie bestimmt.
 
+\begin{figure}[h!]
+\centering
+
+% --- Newton ---
+\begin{minipage}{0.32\textwidth}
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[fill=yellow!40] (0,0) circle (0.12); % Zentralmasse
+\draw[thick,blue] (0,0) ellipse (1.8cm and 1.2cm); % Keplerellipse
+\end{tikzpicture}
+\caption*{\textbf{Newton:} geschlossene Ellipse \\ $r(\varphi)=\dfrac{p}{1+e\cos\varphi}$}
+\end{minipage}
+\hfill
+% --- WDBT ---
+\begin{minipage}{0.32\textwidth}
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[fill=yellow!40] (0,0) circle (0.12);
+\foreach \k in {0,0.25,0.5,0.75} {
+  \draw[thick,red,opacity=0.7] (0,0) ellipse ({1.8cm} and {1.2cm});
+  \begin{scope}[rotate around={10*\k:(0,0)}]
+    \draw[thick,red] (0,0) ellipse (1.8cm and 1.2cm);
+  \end{scope}
+}
+\end{tikzpicture}
+\caption*{\textbf{WDBT:} präzedierende, gebundene Bahn \\ 
+$r(\varphi)=\dfrac{p}{1+e\cos(K\varphi)},\; K\neq 1$}
+\end{minipage}
+\hfill
+% --- DSTT ---
+\begin{minipage}{0.32\textwidth}
+\centering
+\begin{tikzpicture}[scale=1.0]
+\draw[fill=yellow!40] (0,0) circle (0.12);
+\draw[thick,green,domain=0:6*pi,samples=300]
+  plot ({0.15*exp(0.08*\x)*cos(\x r)},
+        {0.15*exp(0.08*\x)*sin(\x r)});
+\end{tikzpicture}
+\caption*{\textbf{DSTT:} logarithmische Spirale \\ 
+$r(\varphi)=K\,e^{\varphi/B}$}
+\end{minipage}
+
+\caption{Vergleich der drei fundamentalen Orbit-Typen: 
+Newton (geschlossen), WDBT (präzedierend, gebunden), DSTT (Spirale mit Drift).}
+\end{figure}
+
 \section*{8. Zusammenfassung}
 Die fraktale Raumstruktur der \gls{iwt} ist der Ursprung der makroskopischen Gravitation der \gls{dstt}. Die Energieaufteilung in lokale und globale Anteile, beschrieben
 durch den Zustand $\beta(t)$, ist eine direkte Konsequenz der fraktalen Informationskopplung. Die \gls{dstt} ist damit nicht nur eine emergente Gravitationstheorie, sondern
