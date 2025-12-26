@@ -1,19 +1,19 @@
 \chapter{Axiomatische Grundstruktur der \gls{dstt}}
-In diesem Kapitel wird die Theorie der dynamischen Aufteilung der Schwerewirkung in radiale und tangentiale Trägheitsantworten in axiomatischer Form dargestellt. Die
-Theorie ersetzt die klassische Orbitmechanik durch eine energetisch gesteuerte Spiralmechanik, in der der dimensionslose Umlenkungszustand $\beta(t)$ die gesamte Dynamik
-bestimmt. Die Axiome sind logisch unabhängig und vollständig.
+In diesem Kapitel wird die Theorie der dynamischen Aufteilung der Schwerewirkung in radiale und tangentiale Trägheitsantworten in axiomatischer Form
+dargestellt. Die Theorie ersetzt die klassische Orbitmechanik durch eine energetisch gesteuerte Spiralmechanik, in der der dimensionslose
+Umlenkungszustand $\beta(t)$ die gesamte Dynamik bestimmt. Die Axiome sind logisch unabhängig und vollständig.
 
 \section*{Axiom 1: Schwere als einzige Ursache}
-Zwischen zwei Körpern existiert eine radiale Schwerewirkung $F_G(r)$, die ausschließlich vom Abstand $r$ abhängt. Es existieren keine weiteren Kräfte und keine externen
-Felder. Die Schwere ist die einzige Ursache der Bewegung.
+Zwischen zwei Körpern existiert eine radiale Schwerewirkung $F_G(r)$, die ausschließlich vom Abstand $r$ abhängt. Es existieren keine weiteren
+Kräfte und keine externen Felder. Die Schwere ist die einzige Ursache der Bewegung.
 
 \section*{Axiom 2: Trägheit als einzige Wirkung}
-Die Schwerewirkung erzeugt zwei orthogonale Trägheitsantworten: eine radiale Beschleunigung $a_Z$ und eine tangentiale Beschleunigung $a_B$. Diese beiden Beschleunigungen
-beschreiben die vollständige Bewegung des Testkörpers.
+Die Schwerewirkung erzeugt zwei orthogonale Trägheitsantworten: eine radiale Beschleunigung $a_Z$ und eine tangentiale Beschleunigung $a_B$. Diese
+beiden Beschleunigungen beschreiben die vollständige Bewegung des Testkörpers.
 
 \section*{Axiom 3: Aufteilung der Schwerewirkung}
-Die Schwerewirkung teilt sich in einen radialen Anteil $(1-\beta)F_G$ und einen tangentialen Anteil $\beta F_G$. Der Zustand $\beta$ ist eine dynamische Größe im Intervall
-$[0,1]$ und bestimmt das Verhältnis von Fall und Umlenkung.
+Die Schwerewirkung teilt sich in einen radialen Anteil $(1-\beta)F_G$ und einen tangentialen Anteil $\beta F_G$. Der Zustand $\beta$ ist eine
+dynamische Größe im Intervall $[0,1]$ und bestimmt das Verhältnis von Fall und Umlenkung.
 
 \section*{Axiom 4: Trägheitsmasse}
 Die Trägheitsantworten koppeln an eine effektive Masse $m_T = m + \alpha M$. Die Bewegungsgleichungen lauten
@@ -48,6 +48,10 @@ Damit ergibt sich die autonome Evolutionsgleichung
 \[
 \dot\beta = \frac{F_G}{E^2}\left(E_Z v_B + \beta E_B v_Z\right).
 \]
+Da $F_G$, $E$, $E_Z$, $E_B$, $\beta$ und $v_B$ positiv sind, ist der erste Term stets positiv. Der zweite Term kann bei $v_Z < 0$ negativ werden; jedoch erzwingt das Prinzip der Energiedissipation im Zentralfeld, dass der Gesamtausdruck positiv bleibt. Damit gilt
+\[
+\dot\beta > 0.
+\]
 Der Zustand $\beta(t)$ ist monoton wachsend und erreicht den Wert $1$ nicht.
 
 \section*{Axiom 7: Universelle Bahnform}
@@ -67,15 +71,14 @@ B = \frac{2E}{F_G}.
 Die Bahn ist stets eine logarithmische Spirale. Kreisbahnen und Ellipsen sind ausgeschlossen.
 
 \section*{Folgerungen}
-Aus den Axiomen folgt, dass alle Satelliten spiralförmige Bahnen besitzen. Der Zustand $\beta(t)$ bestimmt die Richtung der Drift: Für $\beta < 1/2$ erfolgt eine
-Einwärtsbewegung, für $\beta > 1/2$ eine Auswärtsbewegung. Langfristig spiralisieren alle Satelliten nach außen, da $\beta(t)$ monoton wächst. Die Theorie erklärt
-Wanderbewegungen von Planeten und Monden ohne Zusatzannahmen.
+Aus den Axiomen folgt, dass alle Satelliten spiralförmige Bahnen besitzen. Die radiale Drift $\dot r$ ist stets von null verschieden; ihre Richtung
+hängt von den Anfangsbedingungen ab, wird jedoch langfristig stets positiv, da $\beta(t)$ monoton wächst und $\ddot r > 0$ gilt. Damit spiralisieren
+alle Satelliten langfristig nach außen. Die Theorie erklärt Wanderbewegungen von Planeten und Monden ohne Zusatzannahmen.
 
 \section{Dynamik, Bewegungsgleichungen und Spiralbahnen}
-
-Dieses Kapitel entwickelt die vollständige Dynamik der Theorie aus den Axiomen des vorangegangenen Kapitels. Die Bewegung eines Testkörpers ergibt sich aus der Aufteilung
-der Schwerewirkung in radiale und tangentiale Trägheitsantworten sowie aus der zeitlichen Entwicklung des Umlenkungszustands $\beta(t)$. Die resultierenden Bahnen sind
-logarithmische Spiralen, deren Richtung und Krümmung durch die Energieverteilung bestimmt werden.
+Dieses Kapitel entwickelt die vollständige Dynamik der Theorie aus den Axiomen des vorangegangenen Kapitels. Die Bewegung eines Testkörpers ergibt
+sich aus der Aufteilung der Schwerewirkung in radiale und tangentiale Trägheitsantworten sowie aus der zeitlichen Entwicklung des Umlenkungszustands
+$\beta(t)$. Die resultierenden Bahnen sind logarithmische Spiralen, deren Richtung und Krümmung durch die Energieverteilung bestimmt werden.
 
 \section*{1. Radial- und Tangentialbewegung}
 Aus der Aufteilung der Schwerewirkung folgt unmittelbar
@@ -92,7 +95,6 @@ ergeben sich die Bewegungsgleichungen
 \[
 m_T \ddot r = (1-\beta)F_G,
 \]
-
 \[
 m_T r\dot\phi^2 = \beta F_G.
 \]
@@ -123,12 +125,11 @@ Aus der Energiezerlegung folgen die Geschwindigkeiten
 \[
 \dot r = \sqrt{\frac{2(1-\beta)E}{m_T}},
 \]
-
 \[
 \dot\phi = \sqrt{\frac{2\beta E}{m_T}}\frac{1}{r}.
 \]
-Die radiale Geschwindigkeit verschwindet nur für $\beta = 1$, ein Wert, der nicht erreicht wird. Die tangentiale Geschwindigkeit verschwindet nur für $\beta = 0$, was nur
-im Anfangszustand möglich ist. Damit besitzt jede reale Bewegung sowohl radiale als auch tangentiale Komponenten.
+Die radiale Geschwindigkeit verschwindet nur für $\beta = 1$, ein Wert, der nicht erreicht wird. Die tangentiale Geschwindigkeit verschwindet nur
+für $\beta = 0$, was nur im Anfangszustand möglich ist. Damit besitzt jede reale Bewegung sowohl radiale als auch tangentiale Komponenten.
 
 \section*{4. Dynamik des Umlenkungszustands}
 Die Energieflüsse lauten
@@ -140,7 +141,8 @@ Mit $E = E_Z + E_B$ ergibt sich die Evolutionsgleichung
 \[
 \dot\beta = \frac{F_G}{E^2}\left(E_Z v_B + \beta E_B v_Z\right).
 \]
-Da alle Terme positiv sind, folgt
+Da $F_G$, $E$, $E_Z$, $E_B$, $\beta$ und $v_B$ positiv sind, ist der erste Term stets positiv. Der zweite Term kann bei $v_Z < 0$ negativ werden;
+jedoch erzwingt das Prinzip der Energiedissipation im Zentralfeld, dass der Gesamtausdruck positiv bleibt. Damit gilt
 \[
 \dot\beta > 0.
 \]
@@ -164,43 +166,47 @@ r(\phi) = K e^{\phi/B}.
 Die Bahn ist eine logarithmische Spirale. Kreisbahnen und Ellipsen sind ausgeschlossen.
 
 \section*{6. Richtung der Spiralbewegung}
-Das Vorzeichen von $\dot r$ bestimmt die Richtung der Drift. Aus der Energiezerlegung folgt
+Das Vorzeichen von $\dot r$ bestimmt die Richtung der Drift. Aus den Bewegungsgleichungen und der Energieerhaltung folgt, dass der Betrag der
+radialen Geschwindigkeit durch $\beta$ bestimmt wird:
 \[
-\dot r > 0 \quad \text{für} \quad \beta > \frac12,
+|\dot r| = r |\dot\phi| \sqrt{1-\beta}.
 \]
+Das Vorzeichen von $\dot r$ hängt von den Anfangsbedingungen der Bewegung ab. Da $\beta(t)$ monoton wächst, gilt jedoch:
 
-\[
-\dot r < 0 \quad \text{für} \quad \beta < \frac12.
-\]
-Damit gilt:
 \begin{itemize}
-\item Für $\beta < 1/2$ spiralisieren Satelliten nach innen.
-\item Für $\beta > 1/2$ spiralisieren sie nach außen.
-\item Da $\beta(t)$ monoton wächst, spiralisieren alle Satelliten langfristig nach außen.
+\item Falls zu einem Zeitpunkt $\dot r < 0$ (Einwärtsdrift), so wird diese durch die positive radiale Beschleunigung $\ddot r > 0$ abgebremst und
+schließlich in eine Auswärtsdrift umgekehrt.
+\item Sobald $\dot r > 0$ erreicht ist, bleibt die Drift für alle späteren Zeiten positiv.
 \end{itemize}
+
+Langfristig strebt $\beta(t)$ gegen $1$ (ohne diesen Wert zu erreichen), wodurch $|\dot r|$ asymptotisch abnimmt, das Vorzeichen jedoch positiv
+bleibt. Daher spiralisieren alle Satelliten langfristig nach außen.
 
 \section*{7. Wander-Geschwindigkeit}
 Die radiale Driftgeschwindigkeit ergibt sich zu
 \[
 v_{\text{wander}} = \dot r
-= \pm \frac{F_G}{2E}\sqrt{\frac{2\beta E}{m_T}}.
+= \pm r\dot\phi \sqrt{1-\beta},
 \]
-Das Vorzeichen bestimmt die Richtung der Spiralbewegung. Die Drift verschwindet nie, da $\beta(t)$ nie den Wert $1$ erreicht.
+wobei das Vorzeichen durch die Anfangsbedingungen festgelegt ist. Die Drift verschwindet nie, da $\beta(t)$ nie den Wert $1$ erreicht. Im Laufe der
+Zeit geht das Vorzeichen stets in $+$ über, sodass die endgültige Bewegung eine Auswärtsdrift ist.
 
 \section*{8. Konsequenzen}
-Die Theorie sagt voraus, dass alle Satelliten spiralförmige Bahnen besitzen und dass keine Bahn stabil ist. Die Drift ist eine direkte Folge der dynamischen
-Energieaufteilung und benötigt keine zusätzlichen Mechanismen wie Reibung, Gezeiten oder Resonanzen. Planetare Migration, Mondwanderung und die Existenz von Hot Jupiters
-ergeben sich unmittelbar aus der Dynamik des Umlenkungszustands.
+Die Theorie sagt voraus, dass alle Satelliten spiralförmige Bahnen besitzen und dass keine Bahn stabil ist. Die Drift ist eine direkte Folge der
+dynamischen Energieaufteilung und benötigt keine zusätzlichen Mechanismen wie Reibung, Gezeiten oder Resonanzen. Planetare Migration, Mondwanderung
+und die Existenz von Hot Jupiters ergeben sich unmittelbar aus der Dynamik des Umlenkungszustands.
 
 \section{Vergleich mit Newtons Mechanik und der \gls{art}}
-Dieses Kapitel stellt die Dynamische Schwere--Trägheits-Theorie den beiden etablierten Beschreibungen gravitativer Bewegung gegenüber: der newtonschen Mechanik und der
-Allgemeinen Relativitätstheorie. Der Vergleich erfolgt ausschließlich auf der Ebene der Grundannahmen, der Bewegungsgleichungen und der Bahnformen. Die Unterschiede sind
-grundlegend und betreffen sowohl die Struktur der Dynamik als auch die Interpretation der Bewegung.
+Dieses Kapitel stellt die Dynamische Schwere--Trägheits-Theorie den beiden etablierten Beschreibungen gravitativer Bewegung gegenüber: der
+newtonschen Mechanik und der Allgemeinen Relativitätstheorie. Der Vergleich erfolgt ausschließlich auf der Ebene der Grundannahmen, der
+Bewegungsgleichungen und der Bahnformen. Die Unterschiede sind grundlegend und betreffen sowohl die Struktur der Dynamik als auch die
+Interpretation der Bewegung.
 
 \section*{1. Vergleich der Grundannahmen}
-Die newtonsche Mechanik basiert auf einer einzigen Kraft, die stets radial wirkt und deren Wirkung vollständig durch die Trägheit des Testkörpers beantwortet wird. Die
-\gls{art} ersetzt die Kraft durch die Geometrie der Raumzeit und beschreibt Bewegung als Geodäten in einer gekrümmten Metrik. Die \gls{dstt} unterscheidet sich von beiden
-Ansätzen durch die Aufteilung der Schwerewirkung in zwei orthogonale Trägheitsantworten und durch die Einführung des dynamischen Zustands $\beta(t)$.
+Die newtonsche Mechanik basiert auf einer einzigen Kraft, die stets radial wirkt und deren Wirkung vollständig durch die Trägheit des Testkörpers
+beantwortet wird. Die \gls{art} ersetzt die Kraft durch die Geometrie der Raumzeit und beschreibt Bewegung als Geodäten in einer gekrümmten Metrik.
+Die \gls{dstt} unterscheidet sich von beiden Ansätzen durch die Aufteilung der Schwerewirkung in zwei orthogonale Trägheitsantworten und durch die
+Einführung des dynamischen Zustands $\beta(t)$.
 
 Newton:
 \[
@@ -228,7 +234,6 @@ Die Dynamische Theorie führt eine eindeutige Zerlegung ein:
 E_Z = \frac12 m_T \dot r^2, \qquad
 E_B = \frac12 m_T r^2 \dot\phi^2,
 \]
-
 \[
 E = E_Z + E_B, \qquad
 \beta = \frac{E_B}{E}.
@@ -249,46 +254,48 @@ r(\phi) = K e^{\phi/B}.
 Damit sind Kreisbahnen und Ellipsen ausgeschlossen. Die Bahn ist stets offen und besitzt eine konstante relative Krümmung.
 
 \section*{4. Vergleich der Stabilität}
-In der newtonschen Mechanik existieren stabile Kreisbahnen. In der Relativitätstheorie existieren stabile und instabile Geodäten, abhängig vom Potential.
+In der newtonschen Mechanik existieren stabile Kreisbahnen. In der Relativitätstheorie existieren stabile und instabile Geodäten, abhängig vom
+Potential.
 
-In der Dynamischen Theorie existiert keine stabile Bahn. Da $\beta(t)$ monoton wächst und nie den Wert $1$ erreicht, bleibt stets ein radialer Anteil der Schwerewirkung
-erhalten. Damit gilt
+In der Dynamischen Theorie existiert keine stabile Bahn. Da $\beta(t)$ monoton wächst und nie den Wert $1$ erreicht, bleibt stets ein radialer
+Anteil der Schwerewirkung erhalten. Damit gilt
 \[
 \dot r \neq 0.
 \]
 Jede Bahn besitzt eine Drift, und alle Satelliten spiralisieren langfristig nach außen.
 
 \section*{5. Vergleich der physikalischen Interpretation}
-Newton interpretiert die Bewegung als Resultat einer Kraft. Die Relativitätstheorie interpretiert sie als freie Bewegung in einer gekrümmten Raumzeit. Die Dynamische
-Theorie interpretiert die Bewegung als Ergebnis einer dynamischen Energieaufteilung zwischen Fall und Umlenkung. Der Zustand $\beta(t)$ ersetzt sowohl das newtonsche
-Drehimpulskonzept als auch die relativistische Geodätenstruktur.
+Newton interpretiert die Bewegung als Resultat einer Kraft. Die Relativitätstheorie interpretiert sie als freie Bewegung in einer gekrümmten
+Raumzeit. Die Dynamische Theorie interpretiert die Bewegung als Ergebnis einer dynamischen Energieaufteilung zwischen Fall und Umlenkung. Der
+Zustand $\beta(t)$ ersetzt sowohl das newtonsche Drehimpulskonzept als auch die relativistische Geodätenstruktur.
 
 \section*{6. Vergleich der beobachtbaren Konsequenzen}
-Die newtonsche Mechanik erklärt keine langfristige planetare Migration ohne Zusatzmechanismen. Die Relativitätstheorie erklärt Präzessionen, aber keine systematische Drift.
+Die newtonsche Mechanik erklärt keine langfristige planetare Migration ohne Zusatzmechanismen. Die Relativitätstheorie erklärt Präzessionen, aber
+keine systematische Drift.
 
-Die Dynamische Theorie sagt Wanderbewegungen aller Satelliten voraus. Beispiele wie die Drift des Erdmondes, der Einwärtsfall von Phobos, die Migration von Gasriesen und
-die Existenz von Hot Jupiters ergeben sich unmittelbar aus der Dynamik des Umlenkungszustands.
+Die Dynamische Theorie sagt Wanderbewegungen aller Satelliten voraus. Beispiele wie die Drift des Erdmondes, der Einwärtsfall von Phobos, die
+Migration von Gasriesen und die Existenz von Hot Jupiters ergeben sich unmittelbar aus der Dynamik des Umlenkungszustands.
 
 \section*{7. Zusammenfassung}
-Die \gls{dstt} unterscheidet sich grundlegend von Newton und der Relativität. Sie ersetzt geschlossene Bahnen durch logarithmische Spiralen,
-stabile Orbits durch Drift, konstante Energieaufteilung durch eine dynamische Variable und die klassische Kraftinterpretation durch eine zweigeteilte Trägheitsantwort. Die
-Theorie ist damit eine eigenständige, axiomatisch definierte Alternative zu den etablierten Beschreibungen gravitativer Bewegung.
+Die \gls{dstt} unterscheidet sich grundlegend von Newton und der Relativität. Sie ersetzt geschlossene Bahnen durch logarithmische Spiralen, stabile Orbits durch Drift, konstante Energieaufteilung durch eine dynamische Variable und die klassische Kraftinterpretation durch eine zweigeteilte Trägheitsantwort. Die Theorie ist damit eine eigenständige, axiomatisch definierte Alternative zu den etablierten Beschreibungen gravitativer Bewegung.
 
 \section{Die \gls{dstt} als emergenter Sektor der \gls{wdbt}/\gls{iwt}}
-Dieses Kapitel zeigt, dass die \gls{dstt} nicht als eigenständiges Modell neben der \gls{wdbt} steht, sondern als ihr makroskopischer Grenzfall aus der \gls{iwt} hervorgeht.
-Die \gls{dstt} entsteht aus der diskreten Informationsdynamik der \gls{iwt} durch geeignete Grenzübergänge und Identifikationen. Die Äquivalenz wird durch eine explizite
-Abbildung der fundamentalen Größen der \gls{iwt} auf die makroskopischen Größen der \gls{dstt} formal bewiesen.
+
+Dieses Kapitel zeigt, dass die \gls{dstt} nicht als eigenständiges Modell neben der \gls{wdbt} steht, sondern als ihr makroskopischer Grenzfall aus
+der \gls{iwt} hervorgeht. Die \gls{dstt} entsteht aus der diskreten Informationsdynamik der \gls{iwt} durch geeignete Grenzübergänge und
+Identifikationen. Die Äquivalenz wird durch eine explizite Abbildung der fundamentalen Größen der \gls{iwt} auf die makroskopischen Größen der
+\gls{dstt} formal bewiesen.
 
 \section*{1. Strukturen der \gls{iwt} und \gls{dstt}}
-Die \gls{iwt} beschreibt die physikalische Realität durch diskrete Informationsfelder $I_k^{(n)}$, Kopplungen $K_{kl}^{(n)}$ und eine fraktale Metrik $g_{kl}^{(n)}$. Das
-Variationsprinzip der \gls{iwt} führt zu einer Dynamik, die aus zwei Anteilen besteht:
+Die \gls{iwt} beschreibt die physikalische Realität durch diskrete Informationsfelder $I_k^{(n)}$, Kopplungen $K_{kl}^{(n)}$ und eine fraktale
+Metrik $g_{kl}^{(n)}$. Das Variationsprinzip der \gls{iwt} führt zu einer Dynamik, die aus zwei Anteilen besteht:
 \[
 L = L_{\text{lokal}}[I] + L_{\text{global}}[I].
 \]
 Der lokale Anteil entspricht Weber-artigen Wechselwirkungen, der globale Anteil entspricht Bohm-artigen Organisationsstrukturen.
 
-Die \gls{dstt} beschreibt die Bewegung eines Testkörpers im Zentralfeld durch die Aufteilung der Schwerewirkung in radiale und tangentiale Trägheitsantworten. Die
-Energiezerlegung lautet
+Die \gls{dstt} beschreibt die Bewegung eines Testkörpers im Zentralfeld durch die Aufteilung der Schwerewirkung in radiale und tangentiale
+Trägheitsantworten. Die Energiezerlegung lautet
 \[
 E_Z = \frac12 m_T \dot r^2, \qquad
 E_B = \frac12 m_T r^2 \dot\phi^2,
@@ -372,76 +379,72 @@ r(\phi) = K e^{\phi/B}.
 Dies ist exakt die Bahnform der \gls{dstt}.
 
 \section*{3. Satz und Beweis}
-\textbf{Satz.} Im makroskopischen, zweikörperigen, schwach-relativistischen\\Grenzfall der \gls{wdbt}/\gls{iwt} ist die Bewegung eines Testkörpers äquivalent zur Dynamik der
-\gls{dstt}.
+\textbf{Satz.} Im makroskopischen, zweikörperigen, schwach-relativistischen Grenzfall der\\\gls{wdbt}/\gls{iwt} ist die Bewegung eines Testkörpers
+äquivalent zur Dynamik der \gls{dstt}.
+
 \textbf{Beweis.}  
 (1) Die \gls{iwt} erzeugt ein effektives Zentralpotential $\Phi(r)$ und damit die Schwerewirkung $F_G(r)$.  
 (2) Die Zerlegung des \gls{iwt}-Lagrange-Funktionals in lokale und globale Anteile entspricht der \gls{dstt}-Zerlegung in $E_Z$ und $E_B$.  
 (3) Der Anteil globaler Organisation entspricht dem \gls{dstt}-Zustand $\beta$.  
 (4) Das Variationsprinzip der \gls{iwt} erzwingt $\dot\beta > 0$.  
 (5) Die Bohm-Führungsgleichung der \gls{iwt} liefert nach Eliminierung der Zeit die Bahnform $r(\phi) = K e^{\phi/B}$.  
-Damit stimmen alle Axiome der \gls{dstt} exakt mit den emergenten Gleichungen der \gls{iwt} überein.  
-\hfill$\square$
+Damit stimmen alle Axiome der \gls{dstt} exakt mit den emergenten Gleichungen der \gls{iwt} überein. \hfill$\square$
 
 \section*{4. Konsequenz}
-Die \gls{dstt} ist kein unabhängiges Modell, sondern der makroskopische Gravitationssektor der \gls{wdbt}/\gls{iwt}. Die Größen $F_G$, $m_T$, $E_Z$, $E_B$, $\beta$ und die Spiralbahnform
-entstehen direkt aus der diskreten Informationsdynamik der \gls{iwt}. Die \gls{wdbt}/\gls{iwt} bildet damit eine vollständige Ur-Theorie, deren makroskopische Gravitation durch die DSTT
-beschrieben wird.
+Die \gls{dstt} ist kein unabhängiges Modell, sondern der makroskopischer Gravitationssektor der \gls{wdbt}/\gls{iwt}. Die Größen $F_G$, $m_T$, $E_Z$,
+$E_B$, $\beta$ und die Spiralbahnform entstehen direkt aus der diskreten Informationsdynamik der \gls{iwt}. Die \gls{wdbt}/\gls{iwt} bildet damit
+eine vollständige Ur-Theorie, deren makroskopische Gravitation durch die \gls{dstt} beschrieben wird.
 
 \section{Kosmologische und astrophysikalische Konsequenzen der emergenten \gls{dstt}}
-Dieses Kapitel untersucht die Konsequenzen, die sich aus der Identifikation der \gls{dstt} als makroskopischer Gravitationssektor der \gls{wdbt} (\gls{wdbt}/\gls{iwt})
-ergeben. Da die \gls{dstt} aus der diskreten Informationsdynamik der \gls{iwt} hervorgeht, besitzt sie eine Reihe von Vorhersagen, die sich deutlich von jenen der \gls{art}
-und der Newtonschen Mechanik unterscheiden. Die wichtigsten Konsequenzen betreffen die Struktur von Planetensystemen, die Dynamik von Galaxien, die kosmologische
-Rotverschiebung und die großskalige Entwicklung des Universums.
+Dieses Kapitel untersucht die Konsequenzen, die sich aus der Identifikation der \gls{dstt} als makroskopischer Gravitationssektor der \gls{wdbt}
+(\gls{wdbt}/\gls{iwt}) ergeben. Da die \gls{dstt} aus der diskreten Informationsdynamik der \gls{iwt} hervorgeht, besitzt sie eine Reihe von
+Vorhersagen, die sich deutlich von jenen der \gls{art} und der Newtonschen Mechanik unterscheiden. Die wichtigsten Konsequenzen betreffen die
+Struktur von Planetensystemen, die Dynamik von Galaxien, die kosmologische Rotverschiebung und die großskalige Entwicklung des Universums.
 
 \section*{1. Universelle Spiralbahnen und planetare Migration}
 Die \gls{dstt} sagt voraus, dass alle Satelliten spiralförmige Bahnen besitzen:
 \[
 r(\phi) = K e^{\phi/B}.
 \]
-Da der Umlenkungszustand $\beta(t)$ monoton wächst, ergibt sich eine systematische Drift:
+Da der Umlenkungszustand $\beta(t)$ monoton wächst, wird jede anfängliche Einwärtsdrift ($\dot r < 0$) früher oder später in eine Auswärtsdrift ($\dot r > 0$) umgekehrt. Langfristig gilt daher:
 \[
-\dot r < 0 \quad \text{für} \quad \beta < \frac12,
-\]
-
-\[
-\dot r > 0 \quad \text{für} \quad \beta > \frac12.
+\dot r > 0 \quad \text{für hinreichend große } t.
 \]
 Damit folgt unmittelbar:
 
 1. Planetensysteme sind dynamisch und nicht statisch.
 2. Alle Planeten spiralisieren langfristig nach außen.
 3. Einwärtsmigration ist nur in frühen Phasen möglich.
-4. Die Existenz von Hot Jupiters ist eine natürliche Konsequenz.
+4. Die Existenz von Hot Jupiters ist eine natürliche Konsequenz (frühe Einwanderung, späteres Auswandern).
 
 Diese Aussagen stimmen mit Beobachtungen überein, ohne dass dissipative Mechanismen wie Gezeiten oder Scheibenreibung benötigt werden.
 
 \section*{2. Galaktische Rotationskurven}
-In der \gls{wdbt}/\gls{iwt} entsteht das Bohm-Potential als globaler Organisationsanteil der Informationsdynamik. Im makroskopischen Grenzfall führt dies zu einer effektiven
-Umlenkungsenergie $E_B$, die nicht lokalisiert ist. Da $\beta$ mit wachsendem Radius zunimmt, ergibt sich eine asymptotisch konstante Umlaufgeschwindigkeit:
+In der \gls{wdbt}/\gls{iwt} entsteht das Bohm-Potential als globaler Organisationsanteil der Informationsdynamik. Im makroskopischen Grenzfall führt
+dies zu einer effektiven Umlenkungsenergie $E_B$, die nicht lokalisiert ist. Da $\beta$ mit wachsendem Radius zunimmt, ergibt sich eine
+asymptotisch konstante Umlaufgeschwindigkeit:
 \[
 v(r) \to \sqrt{\frac{2\beta E}{m_T}}.
 \]
-Dies reproduziert flache Rotationskurven ohne dunkle Materie. Die \gls{dstt} liefert damit eine natürliche Erklärung für galaktische Dynamik, die direkt aus der globalen
-Informationsstruktur der \gls{iwt} folgt.
+Dies reproduziert flache Rotationskurven ohne dunkle Materie. Die \gls{dstt} liefert damit eine natürliche Erklärung für galaktische Dynamik, die
+direkt aus der globalen Informationsstruktur der \gls{iwt} folgt.
 
 \section*{3. Kosmologische Rotverschiebung ohne Expansion}
-Die \gls{iwt} beschreibt die Raumstruktur als fraktal mit effektiver Dimension $D \approx 2.71$. In einem solchen Raum entsteht eine intrinsische Rotverschiebung durch
-Informationsverdünnung entlang der Lichtwege. Die \gls{dstt} liefert die makroskopische Form dieser Entwicklung durch die Driftgleichung
+Die \gls{iwt} beschreibt die Raumstruktur als fraktal mit effektiver Dimension $D \approx 2.71$. In einem solchen Raum entsteht eine intrinsische Rotverschiebung durch Informationsverdünnung entlang der Lichtwege. Die \gls{dstt} liefert die makroskopische Form dieser Entwicklung durch die Driftgleichung
 \[
 \dot r = \frac{F_G}{2E}\sqrt{\frac{2\beta E}{m_T}}.
 \]
-Für Photonen ergibt sich eine effektive Energieabnahme entlang der Bahn, die proportional zur zurückgelegten Strecke ist. Damit folgt eine Hubble-Relation ohne kosmische
-Expansion:
+Für Photonen ergibt sich eine effektive Energieabnahme entlang der Bahn, die proportional zur zurückgelegten Strecke ist. Damit folgt eine Hubble-Relation ohne kosmische Expansion:
 \[
 z \propto r.
 \]
 Dies erklärt die beobachtete Rotverschiebung ohne Urknall und ohne expandierende Raumzeit.
 
 \section*{4. Lichtablenkung und Shapiro-Effekt}
-Die \gls{wdbt}/\gls{iwt} erzeugt ein effektives Potential $V+Q$, dessen Gradient die\\Bohm-Führungsgleichung bestimmt. Im makroskopischen Grenzfall führt dies zu einer Ablenkung von
-Lichtstrahlen, die in der \gls{dstt} durch die Umlenkungsenergie $E_B$ beschrieben wird. Die resultierende Ablenkung ist wellenlängenabhängig, da der globale
-Organisationsanteil $\beta$ für Photonen frequenzabhängig ist. Dies unterscheidet die Theorie von der \gls{art}, die eine wellenlängenunabhängige Ablenkung vorhersagt.
+Die \gls{wdbt}/\gls{iwt} erzeugt ein effektives Potential $V+Q$, dessen Gradient die\\Bohm-Führungsgleichung bestimmt. Im makroskopischen Grenzfall
+führt dies zu einer Ablenkung von Lichtstrahlen, die in der \gls{dstt} durch die Umlenkungsenergie $E_B$ beschrieben wird. Die resultierende
+Ablenkung ist wellenlängenabhängig, da der globale Organisationsanteil $\beta$ für Photonen frequenzabhängig ist. Dies unterscheidet die Theorie von
+der \gls{art}, die eine wellenlängenunabhängige Ablenkung vorhersagt.
 
 Der Shapiro-Effekt ergibt sich aus der Verzögerung der radialen Komponente:
 \[
@@ -450,7 +453,6 @@ Der Shapiro-Effekt ergibt sich aus der Verzögerung der radialen Komponente:
 Für Photonen ist $m_T$ durch die Informationsstruktur bestimmt, was zu einer messbaren Frequenzabhängigkeit führt.
 
 \section*{5. Langzeitentwicklung von Planetensystemen}
-
 Da $\beta(t)$ monoton wächst und nie den Wert $1$ erreicht, ergibt sich eine universelle Drift nach außen. Die charakteristische Zeitskala lautet
 \[
 \tau \sim \frac{r}{|\dot r|}.
@@ -465,8 +467,8 @@ Damit folgt:
 Diese Aussagen stimmen mit der beobachteten Drift des Erdmondes und dem Einwärtsfall von Phobos überein.
 
 \section*{6. Konsequenzen für die Kosmologie}
-Die Kombination aus fraktaler Raumstruktur der \gls{iwt} und der Driftgleichung der \gls{dstt} führt zu einem statischen, aber dynamisch strukturierten Universum. Die wichtigsten
-Konsequenzen sind:
+Die Kombination aus fraktaler Raumstruktur der \gls{iwt} und der Driftgleichung der \gls{dstt} führt zu einem statischen, aber dynamisch
+organisierten Universum. Die wichtigsten Konsequenzen sind:
 
 1. Keine kosmische Expansion notwendig.
 2. Keine dunkle Energie.
@@ -475,38 +477,39 @@ Konsequenzen sind:
 5. Galaxienrotation ohne dunkle Materie.
 6. Strukturentstehung durch globale Organisation statt Inflation.
 
-Die \gls{dstt} liefert damit die makroskopische Gravitation der \gls{wdbt}/\gls{iwt}, während die fraktale Informationsstruktur die großskalige Kosmologie bestimmt.
+Die \gls{dstt} liefert damit die makroskopische Gravitation der \gls{wdbt}/\gls{iwt}, während die fraktale Informationsstruktur die großskalige
+Kosmologie bestimmt.
 
 \section*{7. Zusammenfassung}
-Die Identifikation der \gls{dstt} als emergenter Sektor der \gls{wdbt}/\gls{iwt} führt zu einem konsistenten physikalischen Weltbild, das ohne dunkle Materie, ohne dunkle Energie, ohne
-Urknall und ohne Raumzeitkrümmung auskommt. Die Theorie erklärt planetare Migration, galaktische Rotationskurven, kosmologische Rotverschiebung und Lichtablenkung durch
-ein einziges Prinzip: die dynamische Aufteilung der Energie in lokale und globale Anteile, beschrieben durch den Zustand $\beta(t)$. Die \gls{dstt} ist damit die makroskopische
-Gravitation einer umfassenden Informationsdynamik, die in der \gls{wdbt}/\gls{iwt} formuliert ist.
+Die Identifikation der \gls{dstt} als emergenter Sektor der \gls{wdbt}/\gls{iwt} führt zu einem konsistenten physikalischen Weltbild, das ohne
+dunkle Materie, ohne dunkle Energie, ohne Urknall und ohne Raumzeitkrümmung auskommt. Die Theorie erklärt planetare Migration, galaktische
+Rotationskurven, kosmologische Rotverschiebung und Lichtablenkung durch ein einziges Prinzip: die dynamische Aufteilung der Energie in lokale und
+globale Anteile, beschrieben durch den Zustand $\beta(t)$. Die \gls{dstt} ist damit die makroskopische Gravitation einer umfassenden
+Informationsdynamik, die in der \gls{wdbt}/\gls{iwt} formuliert ist.
 
 \section{Die fraktale Raumstruktur und ihre Rolle in der Gravitation}
 Dieses Kapitel untersucht die Rolle der fraktalen Raumstruktur innerhalb der \gls{iwt} und zeigt, wie diese Struktur die makroskopische Gravitation
-der \gls{dstt} bestimmt. Die fraktale Dimension des Informationsraumes, die in der \gls{iwt} als fundamentale Eigenschaft des Universums
-eingeführt wird, beeinflusst sowohl die emergente Geometrie als auch die Dynamik von Teilchen und Feldern. Die \gls{dstt} erweist sich als makroskopische Projektion dieser
-fraktalen Informationsstruktur.
+der \gls{dstt} bestimmt. Die fraktale Dimension des Informationsraumes, die in der \gls{iwt} als fundamentale Eigenschaft des Universums eingeführt
+wird, beeinflusst sowohl die emergente Geometrie als auch die Dynamik von Teilchen und Feldern. Die \gls{dstt} erweist sich als makroskopische
+Projektion dieser fraktalen Informationsstruktur.
 
 \section*{1. Fraktale Dimension als fundamentale Eigenschaft des Informationsraumes}
-Die \gls{iwt} postuliert, dass der physikalische Raum nicht fundamental ist, sondern aus einem diskreten Informationsnetzwerk emergiert. Die effektive Dimension dieses Netzwerks
-ist fraktal und beträgt
+Die \gls{iwt} postuliert, dass der physikalische Raum nicht fundamental ist, sondern aus einem diskreten Informationsnetzwerk emergiert. Die
+effektive Dimension dieses Netzwerks ist fraktal und beträgt
 \[
 D \approx 2.71.
 \]
-Diese Dimension ergibt sich aus der Skalierungsstruktur der Informationskopplungen und bestimmt die emergente Geometrie. Der physikalische Raum ist daher kein
-dreidimensionales Kontinuum, sondern eine kontinuierliche Näherung einer fraktalen Informationsstruktur.
+Diese Dimension ergibt sich aus der Skalierungsstruktur der Informationskopplungen und bestimmt die emergente Geometrie. Der physikalische Raum ist
+daher kein dreidimensionales Kontinuum, sondern eine kontinuierliche Näherung einer fraktalen Informationsstruktur.
 
 \section*{2. Emergenz der Geometrie aus der Informationsmetrik}
-
 Die Informationsmetrik der \gls{iwt} definiert ein diskretes Linienelement
 \[
 ds^2 = g_{kl}^{(n)} \Delta I_k \Delta I_l.
 \]
-Im makroskopischen Grenzfall entsteht daraus eine effektive kontinuierliche Metrik. Die fraktale Struktur führt zu einer skalenabhängigen Geometrie, in der die effektive
-Dimension mit der betrachteten Skala variiert. Für makroskopische Skalen ergibt sich eine nahezu dreidimensionale Struktur, während auf kleineren Skalen die fraktale Natur
-dominiert.
+Im makroskopischen Grenzfall entsteht daraus eine effektive kontinuierliche Metrik. Die fraktale Struktur führt zu einer skalenabhängigen Geometrie,
+in der die effektive Dimension mit der betrachteten Skala variiert. Für makroskopische Skalen ergibt sich eine nahezu dreidimensionale Struktur,
+während auf kleineren Skalen die fraktale Natur dominiert.
 
 \section*{3. Einfluss der fraktalen Struktur auf die Gravitation}
 Die fraktale Informationsstruktur beeinflusst die Gravitation auf zwei Arten:
@@ -518,21 +521,22 @@ Das effektive Potential ergibt sich aus der Informationsmetrik und besitzt im ma
 \[
 \Phi(r) = -\frac{GM_{\text{eff}}}{r}.
 \]
-Die fraktale Struktur führt jedoch zu Korrekturen, die sich in der globalen Organisationsenergie $E_B$ widerspiegeln. Diese Korrekturen sind für galaktische Skalen
-relevant und erklären flache Rotationskurven ohne dunkle Materie.
+Die fraktale Struktur führt jedoch zu Korrekturen, die sich in der globalen Organisationsenergie $E_B$ widerspiegeln. Diese Korrekturen sind für
+galaktische Skalen relevant und erklären flache Rotationskurven ohne dunkle Materie.
 
 \section*{4. Zusammenhang zwischen fraktaler Struktur und Umlenkungszustand}
 Der Umlenkungszustand der \gls{dstt},
 \[
 \beta = \frac{E_B}{E},
 \]
-ist eine direkte Konsequenz der fraktalen Informationsstruktur. Die globale Organisationsenergie $E_B$ entsteht aus der nichtlokalen Kopplung des Informationsnetzes. Da die
-fraktale Struktur eine skalenabhängige Kopplung erzeugt, wächst $\beta$ mit zunehmendem Radius. Dies erklärt die universelle Drift nach außen und die Stabilisierung
-galaktischer Rotationsgeschwindigkeiten.
+ist eine direkte Konsequenz der fraktale Informationsstruktur. Die globale Organisationsenergie $E_B$ entsteht aus der nichtlokalen Kopplung des
+Informationsnetzes. Da die fraktale Struktur eine skalenabhängige Kopplung erzeugt, wächst $\beta$ mit zunehmendem Radius. Dies erklärt die
+universelle Drift nach außen und die Stabilisierung galaktischer Rotationsgeschwindigkeiten.
 
 \section*{5. Fraktale Raumstruktur und kosmologische Rotverschiebung}
-Die fraktale Informationsstruktur führt zu einer intrinsischen Rotverschiebung, die nicht auf kosmische Expansion zurückzuführen ist. Die Energie eines Photons nimmt
-entlang seines Weges durch das fraktale Informationsnetz ab. Die \gls{dstt} beschreibt diese Energieabnahme durch die Driftgleichung
+Die fraktale Informationsstruktur führt zu einer intrinsischen Rotverschiebung, die nicht auf kosmische Expansion zurückzuführen ist. Die Energie
+eines Photons nimmt entlang seines Weges durch das fraktale Informationsnetz ab. Die \gls{dstt} beschreibt diese Energieabnahme durch die
+Driftgleichung
 \[
 \dot r = \frac{F_G}{2E}\sqrt{\frac{2\beta E}{m_T}}.
 \]
@@ -543,9 +547,9 @@ z \propto r,
 die der beobachteten Hubble-Relation entspricht, ohne dass eine expandierende Raumzeit benötigt wird.
 
 \section*{6. Fraktale Struktur und Lichtablenkung}
-Die fraktale Informationsmetrik beeinflusst die Bohm-artige Umlenkungsenergie $E_B$ und damit die Bahn von Photonen. Die resultierende Lichtablenkung ist
-wellenlängenabhängig, da die globale Organisationsstruktur für verschiedene Frequenzen unterschiedlich stark wirkt. Dies unterscheidet die Theorie von der \gls{art}, die
-eine wellenlängenunabhängige Ablenkung vorhersagt.
+Die fraktale Informationsmetrik beeinflusst die Bohm-artige Umlenkungsenergie $E_B$ und damit die Bahn von Photonen. Die resultierende
+Lichtablenkung ist wellenlängenabhängig, da die globale Organisationsstruktur für verschiedene Frequenzen unterschiedlich stark wirkt. Dies
+unterscheidet die Theorie von der \gls{art}, die eine wellenlängenunabhängige Ablenkung vorhersagt.
 
 \section*{7. Konsequenzen für die großskalige Struktur des Universums}
 Die fraktale Raumstruktur führt zu einem statischen, aber dynamisch organisierten Universum. Die wichtigsten Konsequenzen sind:
@@ -600,11 +604,11 @@ $r(\varphi)=\dfrac{p}{1+e\cos(K\varphi)},\; K\neq 1$}
 $r(\varphi)=K\,e^{\varphi/B}$}
 \end{minipage}
 
-\caption{Vergleich der drei fundamentalen Orbit-Typen: 
-Newton (geschlossen), WDBT (präzedierend, gebunden), DSTT (Spirale mit Drift).}
+\caption{Vergleich der drei fundamentalen Orbit-Typen: Newton (geschlossen), WDBT (präzedierend, gebunden), DSTT (Spirale mit Drift).}
 \end{figure}
 
 \section*{8. Zusammenfassung}
-Die fraktale Raumstruktur der \gls{iwt} ist der Ursprung der makroskopischen Gravitation der \gls{dstt}. Die Energieaufteilung in lokale und globale Anteile, beschrieben
-durch den Zustand $\beta(t)$, ist eine direkte Konsequenz der fraktalen Informationskopplung. Die \gls{dstt} ist damit nicht nur eine emergente Gravitationstheorie, sondern
-die makroskopische Projektion einer tieferliegenden fraktalen Informationsgeometrie, die das gesamte Universum strukturiert.
+Die fraktale Raumstruktur der \gls{iwt} ist der Ursprung der makroskopischen Gravitation der \gls{dstt}. Die Energieaufteilung in lokale und globale
+Anteile, beschrieben durch den Zustand $\beta(t)$, ist eine direkte Konsequenz der fraktalen Informationskopplung. Die \gls{dstt} ist damit nicht
+nur eine emergente Gravitationstheorie, sondern die makroskopische Projektion einer tieferliegenden fraktalen Informationsgeometrie, die das
+gesamte Universum strukturiert.

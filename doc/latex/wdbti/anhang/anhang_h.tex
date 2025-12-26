@@ -1,21 +1,16 @@
 \chapter{Emergente Maxwell-Gravitation}
 
 \section{Einleitung}
-Die \gls{iwt} beschreibt physikalische Realität nicht durch Felder, sondern durch diskrete Informationskopplungen, deren lokale und globale Anteile
-eine organisierte Dynamik erzeugen. Obwohl die fundamentale Theorie keine Felder kennt, können im makroskopischen Grenzfall kontinuierliche Strukturen entstehen, die formal
-den Maxwell-Gleichungen ähneln. Dieses Kapitel zeigt, wie aus der \gls{iwt} und ihrer effektiven Formulierung in der \gls{wdbt} eine Maxwell-ähnliche
-Gravitationsdynamik emergiert, deren makroskopischer Gravitationssektor durch die \gls{dstt} beschrieben wird.
+Die \gls{iwt} beschreibt physikalische Realität nicht durch Felder, sondern durch diskrete Informationskopplungen, deren lokale und globale Anteile eine organisierte Dynamik erzeugen. Obwohl die fundamentale Theorie keine Felder kennt, können im makroskopischen Grenzfall kontinuierliche Strukturen entstehen, die formal den Maxwell-Gleichungen entsprechen. Dieses Kapitel zeigt, wie aus der \gls{iwt} und ihrer effektiven Formulierung in der \gls{wdbt} eine Maxwell-artige Gravitationsdynamik emergiert, deren makroskopischer, rotationssymmetrischer Grenzfall durch die \gls{dstt} beschrieben wird.
 
 \section{Diskrete Informationsdynamik und Kontinuumslimit}
-Die \gls{iwt} basiert auf diskreten Informationsfeldern $I_k$ und Kopplungen $K_{ij}$, die lokale und globale Beiträge besitzen. Im Kontinuumslimit entsteht aus diesen Kopplungen
-eine effektive Geometrie, deren Gradienten- und Wirbelstrukturen den Differentialoperatoren $\nabla \cdot$ und $\nabla \times$ entsprechen. Jede gerichtete Kopplungsstruktur
-erzeugt im Grenzfall Quellen- und Wirbelterme, unabhängig davon, ob die fundamentale Theorie Felder postuliert.
+Die \gls{iwt} basiert auf diskreten Informationsfeldern $I_k$ und Kopplungen $K_{ij}$, die lokale und globale Beiträge besitzen. Im Kontinuumslimit entsteht aus diesen Kopplungen eine effektive Geometrie, deren Gradienten- und Wirbelstrukturen den Differentialoperatoren $\nabla \cdot$ und $\nabla \times$ entsprechen. Jede gerichtete Kopplungsstruktur erzeugt im Grenzfall Quellen- und Wirbelterme, unabhängig davon, ob die fundamentale Theorie Felder postuliert.
 
 Damit folgt:
 \begin{itemize}
 \item lokale Kopplungen $\rightarrow$ divergente Strukturen,
 \item globale Kopplungen $\rightarrow$ rotierende Strukturen,
-\item Energieflüsse $\rightarrow$ Poynting-ähnliche Größen.
+\item Energieflüsse $\rightarrow$ Poynting-artige Größen.
 \end{itemize}
 Diese mathematische Struktur ist universell und unabhängig von der physikalischen Interpretation.
 
@@ -39,86 +34,67 @@ Im makroskopischen Grenzfall entsteht aus der effektiven \gls{iwt}-Metrik ein Po
 \[
 \Phi_{\mathrm{eff}}(r) = -\frac{G M_{\mathrm{eff}}}{r} + Q_{\mathrm{\gls{iwt}}}(r),
 \]
-wobei $Q_{\mathrm{\gls{iwt}}}$ der globale Organisationsanteil ist, der im \gls{wdbt}-Grenzfall als Bohm-Potential erscheint.
-
+wobei $Q_{\mathrm{\gls{iwt}}}$ der globale Organisationsanteil ist, der im \gls{wdbt}-Grenzfall als Bohm-Potential erscheint.  
 Das effektive gravito-elektrische Feld wird definiert durch
 \[
 \mathbf{E}_g = -\nabla \Phi_{\mathrm{eff}}.
 \]
-Die Divergenz dieses Feldes ergibt
+Die Divergenz dieses Feldes ergibt im statischen, rotationssymmetrischen Fall
 \[
 \nabla \cdot \mathbf{E}_g = -4\pi G \rho_{\mathrm{eff}},
 \]
-wobei $\rho_{\mathrm{eff}}$ die effektive Massen- und Organisationsdichte ist. Diese Gleichung ist formal identisch zur elektrischen Poisson-Gleichung, jedoch emergent und
-nicht fundamental.
+wobei $\rho_{\mathrm{eff}}$ die effektive Massen- und Organisationsdichte ist. Diese Gleichung ist formal identisch zur elektrischen Poisson-Gleichung, jedoch emergent und nicht fundamental.
 
 \section{Emergente gravito-magnetische Struktur}
-Die \gls{dstt} beschreibt die Schwerewirkung durch zwei orthogonale Trägheitsantworten:
+Im Kontinuumslimit der \gls{iwt} entspricht die tangentiale Trägheitsantwort einer rotationsartigen Bewegung. Definiert man das Geschwindigkeitsfeld $\mathbf{v} = \dot{r}\hat{r} + r\dot{\phi}\hat{\phi}$, so kann man ein effektives Vektorpotential
 \[
-a_z = (1-\beta)\frac{F_G}{m_T}, \qquad
-a_B = \beta \frac{F_G}{m_T}.
+\mathbf{A}_g = \frac{\beta}{c_g} \mathbf{v}
 \]
-Die tangentiale Umlenkung $a_B$ besitzt Wirbelcharakter. Im Kontinuumslimit entsteht daraus ein effektives gravito-magnetisches Feld
+einführen, wobei $c_g$ eine charakteristische Geschwindigkeit aus der IWT-Metrik ist. Das zugehörige gravito-magnetische Feld ist
 \[
-\mathbf{B}_g = \nabla \times \mathbf{A}_g,
+\mathbf{B}_g = \nabla \times \mathbf{A}_g.
 \]
-wobei das Potential proportional zur Umlenkungsenergie ist:
-\[
-\mathbf{A}_g \propto \beta\, \mathbf{v}.
-\]
-Damit folgt die rot-Gleichung
+Aus der \gls{dstt}-Bewegungsgleichung $m_T r\dot{\phi}^2 = \beta F_G$ folgt, dass im stationären Fall $\mathbf{B}_g$ proportional zur Umlenkungsenergiedichte ist.  
+Für zeitlich veränderliche Felder ergibt sich aus der Struktur der IWT die Induktionsgleichung
 \[
 \nabla \times \mathbf{E}_g = -\frac{\partial \mathbf{B}_g}{\partial t}.
 \]
 
 \section{Energiefluss und Poynting-Analogon}
-Die \gls{dstt} besitzt eine eindeutige Energiezerlegung
+Aus den \gls{dstt}-Energieflüssen $\dot{E}_B = F_G v_B$ und $\dot{E}_Z = -\beta F_G v_Z$ lässt sich im Kontinuumslimit eine Energieerhaltungsgleichung
 \[
-E = E_z + E_B,
+\frac{\partial u_g}{\partial t} + \nabla \cdot \mathbf{S}_g = 0
 \]
-mit
+herleiten, wobei $u_g = \tfrac12 \epsilon_g E_g^2 + \tfrac12 \mu_g^{-1} B_g^2$ die effektive Energiedichte und
 \[
-E_z = (1-\beta)E, \qquad E_B = \beta E.
+\mathbf{S}_g = \frac{1}{\mu_g} \mathbf{E}_g \times \mathbf{B}_g
 \]
-Die Energieflüsse lauten
-\[
-\dot{E}_B = F_G v_B, \qquad \dot{E}_z = -\beta F_G v_z.
-\]
-Daraus entsteht ein effektiver Energieflussvektor
-\[
-\mathbf{S}_g = E_B\, \mathbf{v}_\perp,
-\]
-der formal dem Poynting-Vektor der Elektrodynamik entspricht.
+der gravitative Poynting-Vektor ist. Die Konstanten $\epsilon_g$ und $\mu_g$ sind durch die IWT-Metrik bestimmt und erfüllen $\epsilon_g \mu_g = c_g^{-2}$.  
+Im makroskopischen, stationären Grenzfall reduziert sich dies auf den \gls{dstt}-Ausdruck $\mathbf{S}_g \approx E_B \mathbf{v}_\perp$.
 
 \section{Emergente Maxwell-Gleichungen der Gravitation}
-Aus den vorherigen Abschnitten ergibt sich ein vollständiges Maxwell-Analogon der Gravitation:
+Die Struktur der \gls{iwt} führt im Kontinuumslimit zu effektiven Feldgleichungen, die formal den Maxwell-Gleichungen entsprechen:
 \[
 \begin{aligned}
-\nabla \cdot \mathbf{E}_g &= -4\pi G \rho_{\mathrm{eff}}, \
-\nabla \times \mathbf{E}_g &= -\frac{\partial \mathbf{B}_g}{\partial t}, \
-\nabla \cdot \mathbf{B}_g &= 0, \
-\nabla \times \mathbf{B}_g &= \mu_g \mathbf{J}_g + \epsilon_g \frac{\partial \mathbf{E}_g}{\partial t}.
+\nabla \cdot \mathbf{E}_g &= -4\pi G \rho_{\mathrm{eff}}, \\
+\nabla \times \mathbf{E}_g &= -\frac{\partial \mathbf{B}_g}{\partial t}, \\
+\nabla \cdot \mathbf{B}_g &= 0, \\
+\nabla \times \mathbf{B}_g &= \mu_g \mathbf{J}_g + \epsilon_g \frac{\partial \mathbf{E}_g}{\partial t},
 \end{aligned}
 \]
-Dabei sind
-\[
-\mathbf{J}_g = \rho_{\mathrm{eff}}\, \mathbf{v}
-\]
-der Massenstrom und $\mu_g, \epsilon_g$ emergente Konstanten, die aus der \gls{iwt}-Metrik resultieren.
+wobei $\mathbf{J}_g = \rho_{\mathrm{eff}} \mathbf{v}$ der effektive Massenstrom ist. Diese Gleichungen sind **emergent**; sie beschreiben die makroskopische Gravitation als effektive Feldtheorie, die aus der diskreten Informationsdynamik der \gls{iwt} hervorgeht.
 
 \section{Makroskopischer Grenzfall: Die \gls{dstt}}
-Die \gls{dstt} ist der makroskopische Gravitationssektor der \gls{iwt}. Ihre Bahnform
+Die \gls{dstt} ist der makroskopische, rotationssymmetrische und stationäre Grenzfall der emergenten Maxwell-Gravitation. Im Zentralfeld vereinfachen sich die Feldgleichungen zu den \gls{dstt}-Bewegungsgleichungen
+\[
+m_T \ddot{r} = (1-\beta)F_G, \qquad m_T r\dot{\phi}^2 = \beta F_G.
+\]
+Die zugehörige Bahnform
 \[
 r(\varphi) = K e^{\varphi/B}
 \]
-ist die direkte Projektion des Wirbelprinzips:
-\[
-\dot{\varphi} = \omega, \qquad \dot{r} = \alpha(\beta) r.
-\]
-Damit ist die logarithmische Spirale keine Annahme, sondern die notwendige Konsequenz einer Rotation, die durch einen wachsenden Ordnungszustand beeinflusst wird.
+ist die direkte Lösung dieser Gleichungen und folgt aus dem Wirbelcharakter des gravito-magnetischen Feldes $\mathbf{B}_g$ im stationären Fall.  
+Damit ist die logarithmische Spirale keine separate Annahme, sondern die notwendige Konsequenz einer Rotation, die durch den wachsenden Ordnungszustand $\beta(t)$ gesteuert wird.
 
 \section{Schlussfolgerung}
-Obwohl die \gls{iwt} keine Felder postuliert, entstehen im makroskopischen Grenzfall Maxwell-ähnliche Strukturen der Gravitation. Diese emergenten Felder sind keine
-fundamentalen Entitäten, sondern Kontinuumsnäherungen der diskreten Informationsdynamik. Die \gls{dstt} ist die makroskopische Manifestation dieser Struktur und
-liefert die universelle Spiralform gravitativer Bahnen. Die emergente Maxwell-Gravitation verbindet damit die \gls{iwt}, die \gls{wdbt} und die \gls{dstt} zu einem konsistenten, hierarchisch
-organisierten Gesamtbild der Gravitation.
+Obwohl die \gls{iwt} keine Felder postuliert, entstehen im makroskopischen Grenzfall Maxwell-artige Strukturen der Gravitation. Diese emergenten Felder sind keine fundamentalen Entitäten, sondern Kontinuumsnäherungen der diskreten Informationsdynamik. Die \gls{dstt} ist die makroskopische, rotationssymmetrische Manifestation dieser Struktur und liefert die universelle Spiralform gravitativer Bahnen. Die emergente Maxwell-Gravitation verbindet damit die \gls{iwt}, die \gls{wdbt} und die \gls{dstt} zu einem konsistenten, hierarchisch organisierten Gesamtbild der Gravitation.
