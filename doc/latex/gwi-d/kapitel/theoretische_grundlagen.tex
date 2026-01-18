@@ -1,0 +1,143 @@
+\chapter{Theoretische Grundlagen des GWI-D}
+
+\section{Die Kritik traditioneller Wirtschaftsindikatoren}
+
+Seit der Nachkriegszeit dominieren zwei Kennzahlen die wirtschaftspolitische Debatte und die wirtschaftshistorische Bewertung: das \textbf{Bruttoinlandsprodukt (BIP)} als Maß für die wirtschaftliche Leistung und der \textbf{Verbraucherpreisindex (VPI)} als Maß für die Preisstabilität. Diese Indikatoren haben jedoch fundamentale Schwächen:
+
+\begin{itemize}
+\item \textbf{BIP misst nur Quantität, nicht Qualität}: Ein Autounfall erhöht das BIP durch Reparaturkosten, während gemeinschaftliche Pflegearbeit unberücksichtigt bleibt.
+\item \textbf{Verteilung bleibt unsichtbar}: Ein Land, in dem 1\% der Bevölkerung 99\% des Vermögens besitzt, kann dasselbe BIP pro Kopf haben wie eines mit ausgeglichener Verteilung.
+\item \textbf{Externe Kosten werden ignoriert}: Umweltzerstörung, Ressourcenverbrauch und soziale Folgekosten erscheinen nicht in der Rechnung.
+\item \textbf{Zeithorizont ist kurz}: Investitionen in Bildung, Forschung oder Infrastruktur werden als Kosten verbucht, nicht als Zukunftsinvestition.
+\end{itemize}
+
+Diese Kritik ist nicht neu. Bereits 1968 wies Robert Kennedy in einer berühmten Rede darauf hin: \glqq{}Das BIP misst alles, außer dem, was das Leben lebenswert macht.\grqq{} Dennoch blieben BIP und Inflation die zentralen Steuerungsgrößen der Wirtschaftspolitik.
+
+\section{Vier-Säulen-Modell des Gemeinwohls}
+
+Der Gemeinwohl-Index Deutschland (GWI-D) antwortet auf diese Defizite mit einem multidimensionalen Ansatz. Er basiert auf vier gleichgewichteten Säulen, die zusammen ein umfassendes Bild gesellschaftlicher Entwicklung zeichnen:
+
+\subsection{Säule 1: Wirtschaftliche Leistungsfähigkeit (30\%)}
+
+Diese Säule übernimmt die traditionelle Wachstumsmessung, korrigiert sie jedoch um ökologische und qualitative Aspekte:
+
+\[
+W = \alpha \cdot \text{BIP-Wachstum} + \beta \cdot \text{Produktivitätswachstum} - \gamma \cdot \text{Ökologischer Fußabdruck}
+\]
+
+Wobei $\alpha$, $\beta$, $\gamma$ Gewichtungsfaktoren sind, die die relative Bedeutung der Komponenten widerspiegeln.
+
+\subsection{Säule 2: Verteilungsgerechtigkeit (30\%)}
+
+Hier wird gemessen, wie die Früchte des Wirtschaftswachstums verteilt werden:
+
+\begin{align*}
+G &= \delta_1 \cdot (1 - \text{Gini-Koeffizient}) \\
+  &+ \delta_2 \cdot \text{Reallohnwachstum der unteren 40\%} \\
+  &- \delta_3 \cdot \text{Armutsquote}
+\end{align*}
+
+Der Gini-Koeffizient misst die Einkommensungleichheit (0 = vollkommene Gleichheit, 1 = vollkommene Ungleichheit). Die Inversion $(1 - \text{Gini})$ sorgt dafür, dass höhere Werte mehr Gleichheit bedeuten.
+
+\subsection{Säule 3: Staatliche Zukunftsvorsorge (25\%)}
+
+Diese Säule bewertet die langfristige Orientierung staatlichen Handelns:
+
+\[
+Z = \epsilon_1 \cdot \text{Öffentliche Investitionsquote} + \epsilon_2 \cdot \text{Bildungsausgaben} + \epsilon_3 \cdot \text{Forschungsausgaben}
+\]
+
+Alle Komponenten werden als Anteil am BIP gemessen, um unabhängig von der absoluten Wirtschaftsgröße vergleichbar zu sein.
+
+\subsection{Säule 4: Sozialer Zusammenhalt (15\%)}
+
+Die weichere, aber nicht weniger wichtige Dimension des gesellschaftlichen Miteinanders:
+
+\[
+S = \zeta_1 \cdot \text{Vertrauen in Institutionen} + \zeta_2 \cdot \text{Soziale Mobilität} + \zeta_3 \cdot \text{Subjektive Lebenszufriedenheit}
+\]
+
+\section{Mathematische Formulierung des GWI-D}
+
+Der Gesamtindex ergibt sich als gewichtete Summe der vier Säulen:
+
+\[
+\text{GWI-D}_t = 0.30 \cdot W_t + 0.30 \cdot G_t + 0.25 \cdot Z_t + 0.15 \cdot S_t
+\]
+
+wobei $t$ das Jahr bezeichnet und alle Komponenten auf eine einheitliche Skala von 0 bis 100 normiert sind.
+
+\section{Methodologische Grundsätze}
+
+\subsection{Normalisierung}
+
+Jede Komponente wird mittels Min-Max-Normalisierung auf das Intervall [0, 100] transformiert:
+
+\[
+X_{\text{norm}} = 100 \cdot \frac{X - X_{\min}}{X_{\max} - X_{\min}}
+\]
+
+wobei $X_{\min}$ und $X_{\max}$ die historischen Minimal- und Maximalwerte im Zeitraum 1960--2023 sind.
+
+\subsection{Datenkonsistenz}
+
+\begin{itemize}
+\item Für alle Jahre sind konsistente Datenreihen verfügbar
+\item Methodenbrüche (z.B. Wiedervereinigung 1990) werden durch Anpassungsfaktoren berücksichtigt
+\item Lücken in Zeitreihen werden durch lineare Interpolation geschlossen
+\end{itemize}
+
+\subsection{Vergleichbarkeit}
+
+Der GWI-D ermöglicht drei Arten von Vergleichen:
+\begin{enumerate}
+\item \textbf{Zeitlicher Vergleich}: Entwicklung Deutschlands über die Zeit
+\item \textbf{Interne Vergleich}: Relative Stärken und Schwächen der vier Säulen
+\item \textbf{Theoretischer Vergleich}: Gegenüberstellung mit idealtypischen Entwicklungspfaden
+\end{enumerate}
+
+\section{Abgrenzung zu bestehenden Alternativindikatoren}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Index} & \textbf{Fokus} & \textbf{Deutschland 2023} & \textbf{Limitation} \\
+\midrule
+BIP pro Kopf & Wirtschaftsleistung & 48.000€ & Keine Verteilung \\
+Human Development Index & Lebensstandard & 0,95 & Zu grob \\
+Gini-Koeffizient & Ungleichheit & 0,29 & Einzeldimension \\
+Better Life Index & Multidimensional & 6,8/10 & Subjektiv \\
+\textbf{GWI-D} & \textbf{Ganzheitlich} & \textbf{48/100} & \textbf{Vollständig} \\
+\bottomrule
+\end{tabular}
+\caption{Vergleich des GWI-D mit anderen Indikatoren}
+\label{tab:vergleich-indikatoren}
+\end{table}
+
+\section{Philosophische Grundlagen}
+
+Der GWI-D steht in der Tradition der \textbf{Kritischen Theorie} und des \textbf{ordoliberalen Denkens} der Freiburger Schule. Er verbindet:
+
+\begin{itemize}
+\item \textbf{Empirische Strenge} der quantitativen Wirtschaftsforschung
+\item \textbf{Normative Klarheit} über die Ziele gesellschaftlicher Entwicklung
+\item \textbf{Methodologische Transparenz} in der Indexkonstruktion
+\end{itemize}
+
+\section{Anwendungsbereiche}
+
+Der GWI-D dient nicht nur der retrospektiven Analyse, sondern auch:
+
+\begin{enumerate}
+\item \textbf{Politische Entscheidungsgrundlage}: Bewertung von Reformpaketen
+\item \textbf{Gesellschaftliche Diskussion}: Versachlichung der Debatte über Wirtschaftspolitik
+\item \textbf{Internationaler Vergleich}: Entwicklung eines europäischen Gemeinwohl-Index
+\item \textbf{Zukunftsplanung}: Identifikation von Handlungsfeldern
+\end{enumerate}
+
+\section{Zusammenfassung}
+
+Der GWI-D stellt einen Paradigmenwechsel in der wirtschaftshistorischen Analyse dar. Er ersetzt nicht die traditionellen Indikatoren, sondern ergänzt sie um die Dimensionen, die für das Gemeinwohl entscheidend sind: Verteilungsgerechtigkeit, Zukunftsvorsorge und sozialer Zusammenhalt.
+
+Die folgende empirische Analyse wird zeigen, wie sich Deutschland unter diesem neuen Blickwinkel darstellt -- und welche überraschenden Erkenntnisse sich aus dieser Perspektive ergeben.

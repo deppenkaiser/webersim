@@ -9,7 +9,6 @@
 \usepackage{csquotes}
 \usepackage{verbatim}
 \usepackage{geometry}
-\geometry{a5paper, left=20mm, right=15mm, top=25mm, bottom=25mm}
 \usepackage{fancyhdr}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{mathtools}
@@ -19,169 +18,96 @@
 \usepackage{subcaption}
 \usepackage{booktabs}
 \usepackage{tikz}
-\usetikzlibrary{calc}  % WICHTIG: Für Koordinatenberechnungen
 \usepackage{xcolor}
 \usepackage{pgfplots}
 \usepackage[
     backend=biber,
-    style=authoryear,
+    style=phys,
     sorting=nyt,
 ]{biblatex}
 \usepackage[acronym, toc]{glossaries}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 \usepackage{parskip}
 
-% --- Farbdefinitionen für GWI-D Analyse ---
-\definecolor{gwiblue}{RGB}{0, 82, 147}
-\definecolor{gwired}{RGB}{198, 40, 40}
-\definecolor{gwigreen}{RGB}{0, 115, 77}
-\definecolor{gwilight}{RGB}{240, 240, 245}
-\definecolor{gwidark}{RGB}{30, 30, 40}
-
-% --- Seitenlayout ---
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[LE]{\leftmark}
-\fancyhead[RO]{\rightmark}
-\fancyfoot[LE,RO]{\thepage}
-\renewcommand{\headrulewidth}{0.5pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% --- Glossar-Einträge ---
 \makeglossaries
 
-\newglossaryentry{GWI-D}{
-    name=GWI-D,
-    description={Gemeinwohl-Index Deutschland: Ein multidimensionaler Index zur Messung der ganzheitlichen Entwicklung eines Landes}
-}
-
-\newglossaryentry{Stagflation}{
-    name=Stagflation,
-    description={Wirtschaftliche Situation mit stagnierendem Wachstum und gleichzeitig hoher Inflation}
-}
-
-\newglossaryentry{Angebotsschock}{
-    name=Angebotsschock,
-    description={Exogene Störung der Produktionskosten oder -möglichkeiten, die zu gegenläufiger Bewegung von BIP und Inflation führt}
-}
-
-\newacronym{BIP}{BIP}{Bruttoinlandsprodukt}
-\newacronym{VPI}{VPI}{Verbraucherpreisindex}
-\newacronym{SOEP}{SOEP}{Sozio-oekonomisches Panel}
-\newacronym{OECD}{OECD}{Organisation für wirtschaftliche Zusammenarbeit und Entwicklung}
+\input{styles}
+\input{glossar}
 
 \begin{document}
 
 % --- Titelseite ---
-\begin{titlepage}
+\frontmatter
 \begin{tikzpicture}[remember picture, overlay]
-  % Hintergrundfarbe
-  \fill[gwilight] (current page.south west) rectangle (current page.north east);
+  % Einfacher weißer Hintergrund
+  \fill[white] (current page.south west) rectangle (current page.north east);
   
-  % Dekoratives Gitter (subtiler)
-  \foreach \x in {0,1,...,20} {
-    \draw[gwigreen!5, line width=0.05pt] (\x,0) -- (\x,28);
-  }
-  \foreach \y in {0,1,...,28} {
-    \draw[gwiblue!5, line width=0.05pt] (0,\y) -- (20,\y);
+  % Sehr dezente horizontale Linien für Struktur
+  \foreach \y in {2,4,...,10} {
+    \draw[gray!10, line width=0.1pt] (1,\y) -- (14,\y);
   }
   
-  % Zentrale grafische Darstellung (oben)
-  \node at ($(current page.center)+(0,4cm)$) {
-    \begin{tikzpicture}[scale=0.8]
-      % Vier Säulen des GWI-D
-      \foreach \i/\h/\c/\t in {1/3.0/gwiblue/Wirtschaft, 
-                               2/3.0/gwired/Gerechtigkeit, 
-                               3/2.5/gwigreen/Zukunft, 
-                               4/1.5/gwiblue!60/Zusammenhalt} {
-        \fill[\c] (\i*1.5-0.5,0) rectangle (\i*1.5+0.5,\h);
-        \node[rotate=90, font=\scriptsize\sffamily, text=gwidark, anchor=east] 
-          at (\i*1.5, -0.2) {\t};
-      }
-      \draw[->, thick, gwidark!60] (0,0) -- (7,0);
-      \draw[->, thick, gwidark!60] (0,0) -- (0,4);
-    \end{tikzpicture}
-  };
-  
-  % Haupttitel
-  \node[align=center, text=gwidark, font=\sffamily\bfseries\LARGE] 
-    at ($(current page.center)+(0,1.5cm)$) {
-      \textbf{GWI-D ANALYSE}
+  % Haupttitel oben zentriert
+  \node[align=center, text=black, font=\sffamily\bfseries\Huge, yshift=3cm] 
+    at (current page.center) {
+      GWI-D ANALYSE
   };
   
   % Untertitel
-  \node[align=center, text=gwiblue, font=\sffamily\Large] 
-    at ($(current page.center)+(0,0.5cm)$) {
+  \node[align=center, text=black!70, font=\sffamily\Large, yshift=1.5cm] 
+    at (current page.center) {
       Gemeinwohl-Index Deutschland
   };
   
-  % Beschreibung - mit manueller Zeilenumbrüchen für Zeilenhöhe
-  \node[align=center, text=gwidark!80, font=\sffamily\normalsize, inner sep=0pt] 
-    at ($(current page.center)+(0,-0.5cm)$) {
-      Eine kritische Neubewertung der\\[2pt]
-      BRD-Wirtschaftsgeschichte\\[2pt]
+  % Zeitraum
+  \node[align=center, text=black!60, font=\sffamily\large, yshift=0.5cm] 
+    at (current page.center) {
       1960–2023
   };
   
-  % Formel (zentriert)
-  \node[align=center, text=gwired!80, font=\sffamily\large] 
-    at ($(current page.center)+(0,-2.5cm)$) {
-      $\displaystyle \text{GWI-D} = \sum_{i=1}^{4} w_i \cdot S_i$
+  % Einfache Darstellung der vier Säulen
+  \node[yshift=-1.5cm] at (current page.center) {
+    \begin{tikzpicture}
+      % Vier Balken für die Säulen
+      \foreach \i/\h/\l in {1/3.0/W, 2/3.0/G, 3/2.5/Z, 4/1.5/S} {
+        \fill[black!30] (\i*1.8-0.7,0) rectangle (\i*1.8-0.3,\h);
+        \node[font=\small] at (\i*1.8-0.5, -0.3) {\l};
+      }
+      % Beschriftung
+      \node[font=\footnotesize, rotate=90, anchor=east] at (0.2, 1.5) {Wirtschaft};
+      \node[font=\footnotesize, rotate=90, anchor=east] at (2.0, 1.5) {Gerechtigkeit};
+      \node[font=\footnotesize, rotate=90, anchor=east] at (3.8, 1.5) {Zukunft};
+      \node[font=\footnotesize, rotate=90, anchor=east] at (5.6, 1.5) {Zusammenhalt};
+    \end{tikzpicture}
   };
   
-  % Erklärung der Formel - mit manuellen Zeilenabständen
-  \node[align=center, text=gwidark!70, font=\footnotesize\sffamily, inner sep=0pt] 
-    at ($(current page.center)+(0,-3.5cm)$) {
-      mit $w_1=0.30$ (Wirtschaft), $w_2=0.30$ (Gerechtigkeit)\\[2pt]
-      $w_3=0.25$ (Zukunft), $w_4=0.15$ (Zusammenhalt)
+  % Formel unter den Säulen
+  \node[align=center, text=black, font=\normalsize, yshift=-4.5cm] 
+    at (current page.center) {
+      $\displaystyle \text{GWI-D} = 0.30\cdot W + 0.30\cdot G + 0.25\cdot Z + 0.15\cdot S$
   };
   
-  % Trennlinie
-  \draw[gwigreen!40, line width=0.5pt] 
-    ($(current page.center)+(0,-4.5cm)$) -- ++(8cm,0);
-  \draw[gwigreen!40, line width=0.5pt] 
-    ($(current page.center)+(0,-4.5cm)$) -- ++(-8cm,0);
-  
-  % Metainformationen
-  \node[align=center, text=gwidark!60, font=\small\sffamily, inner sep=0pt] 
-    at ($(current page.center)+(0,-5.5cm)$) {
-      Analyse basierend auf historischen Daten\\[2pt]
-      und sozioökonomischen Indikatoren
+  % Autor unten
+  \node[align=center, text=black!80, font=\sffamily\large, yshift=-6cm] 
+    at (current page.center) {
+      Michael Czybor
   };
   
-  % Datum (unten)
-  \node[align=center, text=gwidark, font=\normalsize\sffamily\bfseries] 
-    at ($(current page.center)+(0,-7cm)$) {
+  % Datum
+  \node[align=center, text=black!60, font=\sffamily, yshift=-6.8cm] 
+    at (current page.center) {
       \today
   };
-  
-  % Dekorative Elemente in den Ecken
-  \node[align=right, text=gwiblue!20, font=\tiny] 
-    at ($(current page.north west)+(0.8cm,-0.8cm)$) {
-      $\triangleright$ BIP/Inflation $\triangleleft$
-  };
-  
-  \node[align=left, text=gwigreen!20, font=\tiny] 
-    at ($(current page.north east)+(-0.8cm,-0.8cm)$) {
-      $\triangleright$ Verteilung $\triangleleft$
-  };
-  
-  \node[align=right, text=gwired!20, font=\tiny] 
-    at ($(current page.south west)+(0.8cm,0.8cm)$) {
-      $\triangleright$ Gemeinwohl $\triangleleft$
-  };
-  
-  \node[align=left, text=gwiblue!20, font=\tiny] 
-    at ($(current page.south east)+(-0.8cm,0.8cm)$) {
-      $\triangleright$ Entwicklung $\triangleleft$
-  };
 \end{tikzpicture}
-\end{titlepage}
+
+\title{GWI-D Analyse\\Gemeinwohl-Index Deutschland}
+\author{Michael Czybor}
+\date{\today}
+\maketitle
 
 % --- Vorwort ---
-\frontmatter
 \chapter*{Vorwort}
-% \input{vorwort/vorwort}
+\input{vorwort/vorwort}
 
 \tableofcontents
 \listoffigures
@@ -191,36 +117,36 @@
 \mainmatter
 
 \part{THEORETISCHE GRUNDLAGEN}
-% \include{kapitel/theoretische_grundlagen}
-% \include{kapitel/methodik_gwi_d}
-% \include{kapitel/historischer_kontext}
+\include{kapitel/theoretische_grundlagen}
+\include{kapitel/methodik_gwi_d}
+\include{kapitel/historischer_kontext}
 
 \part{EMPIRISCHE ANALYSE 1960-2023}
-% \include{kapitel/datenbasis_quellen}
-% \include{kapitel/zeitreihen_analyse}
-% \include{kapitel/korrelationen_schocks}
-% \include{kapitel/verteilungsanalyse}
+\include{kapitel/datenbasis_quellen}
+\include{kapitel/zeitreihen_analyse}
+\include{kapitel/korrelationen_schocks}
+%\include{kapitel/verteilungsanalyse}
 
 \part{GWI-D BEWERTUNG NACH EPOCHE}
-% \include{kapitel/wirtschaftswunder_1960_1973}
-% \include{kapitel/stagflation_1974_1982}
-% \include{kapitel/konsolidierung_1983_1998}
-% \include{kapitel/agenda_jahre_1999_2008}
-% \include{kapitel/krisenbewaeltigung_2009_2020}
-% \include{kapitel/multikrise_2021_2023}
+%\include{kapitel/wirtschaftswunder_1960_1973}
+%\include{kapitel/stagflation_1974_1982}
+%\include{kapitel/konsolidierung_1983_1998}
+%\include{kapitel/agenda_jahre_1999_2008}
+%\include{kapitel/krisenbewaeltigung_2009_2020}
+%\include{kapitel/multikrise_2021_2023}
 
 \part{VERGLEICHENDE ANALYSE}
-% \include{kapitel/gwi_d_vs_traditionelle_indikatoren}
-% \include{kapitel/soziale_implikationen}
-% \include{kapitel/politische_schlussfolgerungen}
+%\include{kapitel/gwi_d_vs_traditionelle_indikatoren}
+%\include{kapitel/soziale_implikationen}
+%\include{kapitel/politische_schlussfolgerungen}
 
 \part{ANHANG}
 \appendix
-% \include{anhang/anhang_a_datenquellen}
-% \include{anhang/anhang_b_methodik}
-% \include{anhang/anhang_c_statistische_analyse}
-% \include{anhang/anhang_d_historische_tabellen}
-% \include{anhang/anhang_e_glossar}
+%\include{anhang/anhang_a_datenquellen}
+%\include{anhang/anhang_b_methodik}
+%\include{anhang/anhang_c_statistische_analyse}
+%\include{anhang/anhang_d_historische_tabellen}
+%\include{anhang/anhang_e_glossar}
 
 % --- Backmatter ---
 \backmatter
