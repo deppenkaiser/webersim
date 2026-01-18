@@ -85,16 +85,18 @@ Strukturschock & Trendbruch ohne Zyklus & Agenda 2003 \\
     legend style={at={(0.5,-0.3)},anchor=north},
     grid=major,
     title={Entwicklung der Korrelation Wirtschaft $\leftrightarrow$ Gerechtigkeit},
+    /pgf/number format/.cd,
+    use comma,
+    1000 sep={}
 ]
-\addplot[blue, thick, mark=*] table {
-Jahr Korrelation
-1960 0.68
-1970 0.52
-1980 0.32
-1990 0.25
-2000 0.18
-2010 0.15
-2020 0.12
+\addplot[blue, thick, mark=*] coordinates {
+(1960, 0.68)
+(1970, 0.52)
+(1980, 0.32)
+(1990, 0.25)
+(2000, 0.18)
+(2010, 0.15)
+(2020, 0.12)
 };
 \end{axis}
 \end{tikzpicture}
@@ -212,45 +214,46 @@ Transferleistungen Ost (Mrd. DM) & 0 & 150 & +150 Mrd. DM \\
     ylabel={Indexwert},
     xmin=2000, xmax=2008,
     ymin=50, ymax=80,
-    xtick={2000,2002,2004,2006,2008},
+    xtick={2000,2001,2002,2003,2004,2005,2006,2007,2008},
+    xticklabels={2000,2001,2002,2003,2004,2005,2006,2007,2008},
     legend style={at={(0.5,-0.3)},anchor=north},
     title={Agenda 2010: Divergenz der Säulen 2003--2005},
+    /pgf/number format/.cd,
+    use comma,
+    1000 sep={}
 ]
-\addplot[blue, thick] table {
-Jahr Wirtschaft
-2000 68
-2001 67
-2002 66
-2003 65
-2004 66
-2005 67
-2006 70
-2007 73
-2008 75
+\addplot[blue, thick] coordinates {
+(2000, 68)
+(2001, 67)
+(2002, 66)
+(2003, 65)
+(2004, 66)
+(2005, 67)
+(2006, 70)
+(2007, 73)
+(2008, 75)
 };
-\addplot[red, thick] table {
-Jahr Gerechtigkeit
-2000 55
-2001 54
-2002 53
-2003 52
-2004 51
-2005 50
-2006 52
-2007 54
-2008 56
+\addplot[red, thick] coordinates {
+(2000, 55)
+(2001, 54)
+(2002, 53)
+(2003, 52)
+(2004, 51)
+(2005, 50)
+(2006, 52)
+(2007, 54)
+(2008, 56)
 };
-\addplot[green, thick] table {
-Jahr Zukunft
-2000 45
-2001 44
-2002 43
-2003 42
-2004 41
-2005 40
-2006 42
-2007 45
-2008 48
+\addplot[green, thick] coordinates {
+(2000, 45)
+(2001, 44)
+(2002, 43)
+(2003, 42)
+(2004, 41)
+(2005, 40)
+(2006, 42)
+(2007, 45)
+(2008, 48)
 };
 \legend{Wirtschaft, Gerechtigkeit, Zukunft}
 \end{axis}
