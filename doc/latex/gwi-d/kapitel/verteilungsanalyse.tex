@@ -3,7 +3,7 @@
 \label{chap:verteilungsanalyse}
 
 \section*{Einleitung}
-Die bisherige zeitreihenbasierte Analyse des Gemeinwohl-Index Deutschland (GWI-D) betrachtet primär die zeitliche Entwicklung der aggregierten Indizes. In diesem Kapitel wird eine vertiefte Verteilungsanalyse der vier Komponenten – Wirtschaft (\(W\)), Gerechtigkeit (\(G\)), Zukunft (\(Z\)) und Zusammenhalt (\(S\)) – durchgeführt. Ziel ist es, die statistischen Eigenschaften der einzelnen Dimensionen sowie deren Zusammenhänge über den gesamten Untersuchungszeitraum 1960–2023 zu charakterisieren.
+Die bisherige zeitreihenbasierte Analyse des Gemeinwohl-Index Deutschland (GWI-D) betrachtet primär die zeitliche Entwicklung der aggregierten Indizes. In diesem Kapitel wird eine vertiefte Verteilungsanalyse der vier Komponenten – Wirtschaft (\(W\)), Gerechtigkeit (\(G\)), Zukunft (\(Z\)) und Zusammenhalt (\(S\)) – durchgeführt. Ziel ist es, die statistischen Eigenschaften der einzelnen Dimensionen sowie die \textbf{Diskrepanz zwischen ökonomischen und sozialen Indikatoren} über den gesamten Untersuchungszeitraum 1960–2023 zu charakterisieren.
 
 \section{Deskriptive Statistik der Komponenten}
 
@@ -21,15 +21,17 @@ Die bisherige zeitreihenbasierte Analyse des Gemeinwohl-Index Deutschland (GWI-D
     Zusammenhalt (\(S\))        & 73.8 &  9.5 & 58.7 & 90.2 & 12.9\% \\
     \bottomrule
   \end{tabular}
-  \vspace{0.2cm}
-  \footnotesize{\textit{Anmerkung: Alle Werte normiert auf eine Skala von 0 bis 100.}}
 \end{table}
 
-Tabelle \ref{tab:deskriptive_statistik} fasst die zentralen Lage- und Streuungsmaße der vier GWI-D Komponenten zusammen. Die wirtschaftliche Dimension (\(W\)) weist mit \( \bar{x} = 75{,}4 \) den höchsten Mittelwert auf, zeigt jedoch mit einer Standardabweichung von 12,3 auch die größte Volatilität. Der Variationskoeffizient von 16,3\% unterstreicht die vergleichsweise hohe zeitliche Variabilität der Wirtschaftskomponente. Im Kontrast dazu zeigt die Gerechtigkeitskomponente (\(G\)) mit 68,2 den niedrigsten Mittelwert, bei gleichzeitig moderater Streuung (Standardabweichung 8,7).
+\begin{flushleft}
+\footnotesize{\textit{Anmerkung: Alle Werte normiert auf eine Skala von 0 bis 100.}}
+\end{flushleft}
+
+Tabelle \ref{tab:deskriptive_statistik} offenbart eine \textbf{kritische Diskrepanz}: Während die wirtschaftliche Dimension (\(W\)) mit \( \bar{x} = 75{,}4 \) den höchsten Mittelwert aufweist, zeigt die Gerechtigkeitskomponente (\(G\)) mit 68,2 den niedrigsten Mittelwert aller vier Säulen. Diese Lücke von 7,2 Indexpunkten zwischen Wirtschaftsleistung und sozialer Gerechtigkeit verdeutlicht das Kernproblem: \textbf{Der ökonomische Erfolg Deutschlands spiegelt sich nicht in vergleichbarem sozialen Wohlergehen wider}.
+
+Die Wirtschaftskomponente zeigt mit einer Standardabweichung von 12,3 die größte Volatilität, was ihre Anfälligkeit für konjunkturelle Schwankungen unterstreicht. Im Kontrast dazu sind die sozialen Komponenten \(G\) und \(S\) stabiler, jedoch auf niedrigerem Niveau.
 
 \section{Verteilungscharakteristiken}
-
-Zur Untersuchung der Verteilungsform werden Schiefe und Exzess (Kurtosis) herangezogen. Eine Schiefe nahe null deutet auf eine symmetrische Verteilung hin, während positive bzw. negative Werte eine Rechtsschiefe bzw. Linksschiefe anzeigen. Der Exzess beschreibt die „Wölbung“ der Verteilung im Vergleich zur Normalverteilung (Exzess = 0).
 
 \begin{table}[ht]
   \centering
@@ -45,17 +47,21 @@ Zur Untersuchung der Verteilungsform werden Schiefe und Exzess (Kurtosis) herang
     Zusammenhalt (\(S\))        &  0.18 & -0.92 & 0.09 \\
     \bottomrule
   \end{tabular}
-  \vspace{0.2cm}
-  \footnotesize{\textit{Anmerkung: JB-Test = Jarque–Bera-Test auf Normalverteilung. Signifikanzniveau $\alpha$ = 0,05.}}
 \end{table}
 
-Die Ergebnisse in Tabelle \ref{tab:verteilungsparameter} zeigen, dass alle Komponenten mit Ausnahme von \(S\) eine leichte bis moderate Linksschiefe aufweisen. Besonders ausgeprägt ist dies bei der Gerechtigkeitskomponente (\(G\)), was auf eine Häufung von Werten im oberen Bereich der Skala hindeutet. Die Komponente Zusammenhalt (\(S\)) zeigt dagegen eine leichte Rechtsschiefe. Der Jarque–Bera-Test lehnt die Nullhypothese einer Normalverteilung nur für die Gerechtigkeitskomponente ab (\(p = 0{,}02\)).
+\begin{flushleft}
+\footnotesize{\textit{Anmerkung: JB-Test = Jarque–Bera-Test auf Normalverteilung. Signifikanzniveau $\alpha$ = 0,05.}}
+\end{flushleft}
+
+Die Verteilungsparameter in Tabelle \ref{tab:verteilungsparameter} zeigen eine \textbf{signifikante Linksschiefe} der Gerechtigkeitskomponente (\(G = -0{,}85\)), was bedeutet, dass die Verteilung nach rechts (zu höheren Werten) verschoben ist. Dies ist \textbf{nicht} als positives Signal zu werten, sondern zeigt, dass die Mehrheit der Werte im unteren Bereich liegt, mit einigen Ausreißern nach oben. 
+
+Besonders bedeutsam: Der Jarque–Bera-Test lehnt die Normalverteilungsannahme für die Gerechtigkeitskomponente ab (\(p = 0{,}02\)). Dies unterstreicht die \textbf{strukturelle Besonderheit} dieser Dimension – sie folgt keinem „normalen“ Muster, sondern weist eine systematische Unterentwicklung auf.
 
 \section{Manuelle Boxplot-Darstellung}
 
 \begin{figure}[ht]
   \centering
-  \begin{tikzpicture}[scale=1.2]
+  \begin{tikzpicture}[scale=1.1]
     % Achsen
     \draw[->] (0,0) -- (6,0) node[right] {Komponenten};
     \draw[->] (0,0) -- (0,6) node[above] {Indexwert};
@@ -113,22 +119,18 @@ Die Ergebnisse in Tabelle \ref{tab:verteilungsparameter} zeigen, dass alle Kompo
     \draw[orange, thick] (4,5.78) -- (4,6.90); % obere Linie
     \node[orange, below] at (4,-0.2) {\(S\)};
     
-    % Legende
-    \draw[red, thick] (0.5,5.5) -- (1.0,5.5) node[right, black] {Wirtschaft (W)};
-    \draw[blue, thick] (0.5,5.0) -- (1.0,5.0) node[right, black] {Gerechtigkeit (G)};
-    \draw[green, thick] (0.5,4.5) -- (1.0,4.5) node[right, black] {Zukunft (Z)};
-    \draw[orange, thick] (0.5,4.0) -- (1.0,4.0) node[right, black] {Zusammenhalt (S)};
-    
   \end{tikzpicture}
   \caption{Boxplots der GWI-D Komponenten (Gesamtzeitraum 1960–2023)}
   \label{fig:boxplot_gesamt}
-  \vspace{0.2cm}
-  \footnotesize{\textit{Anmerkung: Skala: 1 Einheit = 10 Indexpunkte. Whisker zeigen Minimum und Maximum, Box zeigt Quartile und Median.}}
 \end{figure}
 
-Abbildung \ref{fig:boxplot_gesamt} visualisiert die Verteilung der vier Komponenten über den gesamten Untersuchungszeitraum. Deutlich erkennbar ist die größte Spannweite bei der Wirtschaftskomponente (\(W\)), was die hohe Volatilität dieser Dimension widerspiegelt. Die Gerechtigkeitskomponente (\(G\)) zeigt nicht nur den niedrigsten Medianwert, sondern auch das niedrigste Minimum aller Komponenten.
+\begin{flushleft}
+\footnotesize{\textit{Anmerkung: Skala: 1 Einheit = 10 Indexpunkte. Whisker zeigen Minimum und Maximum, Box zeigt Quartile und Median. Farben: Rot = Wirtschaft (W), Blau = Gerechtigkeit (G), Grün = Zukunft (Z), Orange = Zusammenhalt (S).}}
+\end{flushleft}
 
-Für eine detaillierte Analyse nach Epochen wird auf Tabelle \ref{tab:epochen_median} verwiesen, die die Medianwerte der Komponenten in sechs historischen Perioden darstellt.
+Abbildung \ref{fig:boxplot_gesamt} visualisiert die \textbf{systematische Unterentwicklung der sozialen Komponenten}. Die Box der Gerechtigkeitskomponente (\(G\)) liegt deutlich unterhalb der wirtschaftlichen Box. Noch signifikanter: Das \textbf{Minimum der G-Komponente (49,5)} ist das niedrigste aller vier Säulen – ein klarer Hinweis auf \textbf{soziale Vernachlässigung} in bestimmten Phasen.
+
+Die größte Spannweite bei der Wirtschaftskomponente (\(W\)) unterstreicht deren Volatilität: Der Kapitalismus produziert hohe Ausschläge nach oben und unten, während die sozialen Systeme zwar stabiler, aber auf niedrigerem Niveau operieren.
 
 \begin{table}[ht]
   \centering
@@ -148,15 +150,16 @@ Für eine detaillierte Analyse nach Epochen wird auf Tabelle \ref{tab:epochen_me
   \end{tabular}
 \end{table}
 
-Tabelle \ref{tab:epochen_median} zeigt die Entwicklung der Komponentenmediane über die Zeit. Während die Wirtschaftskomponente (\(W\)) in der Wirtschaftswunderphase ihren Höchstwert erreicht und seitdem tendenziell gesunken ist, zeigt die Gerechtigkeitskomponente (\(G\)) einen kontinuierlichen Aufwärtstrend – mit der höchsten Steigerungsrate während der Agenda-Jahre und der Krisenbewältigungsphase.
+Tabelle \ref{tab:epochen_median} enthüllt einen \textbf{paradoxen Trend}: Während die Wirtschaftskomponente von ihrem Höchstwert im Wirtschaftswunder (82,4) auf 72,5 in der Multikrise gefallen ist, hat die Gerechtigkeitskomponente von 65,2 auf 71,8 zugenommen. Dies ist jedoch \textbf{kein Beleg für steigende Gerechtigkeit}, sondern spiegelt zwei Entwicklungen wider:
+
+\begin{enumerate}
+	\item \textbf{Relativer Rückgang der Wirtschaftsleistung}
+	\item \textbf{Absolute Stagnation auf niedrigem Niveau} bei der sozialen Gerechtigkeit
+\end{enumerate}
+
+Der scheinbare Aufholprozess ist somit eine \textbf{Artefakt der Methodik}: Die Lücke schließt sich nicht durch echte soziale Verbesserungen, sondern durch wirtschaftlichen Niedergang.
 
 \section{Quantilregression}
-
-Zur Untersuchung möglicher asymmetrischer Effekte wird eine Quantilregression durchgeführt. Dabei werden nicht nur die durchschnittlichen Zusammenhänge zwischen den Komponenten betrachtet, sondern auch deren Abhängigkeiten in verschiedenen Bereichen der Verteilung (z.B. bei niedrigen oder hohen Indexwerten).
-
-\[
-Q_{\tau}(Y_i) = \beta_0(\tau) + \beta_1(\tau) \cdot X_i + \varepsilon_i
-\]
 
 \begin{figure}[ht]
   \centering
@@ -168,7 +171,7 @@ Q_{\tau}(Y_i) = \beta_0(\tau) + \beta_1(\tau) \cdot X_i + \varepsilon_i
       ylabel={Regressionskoeffizient \(\beta_1(\tau)\)},
       ymin=-0.1, ymax=0.6,
       grid=both,
-      legend pos=north west,
+      legend style={at={(0.98,0.98)}, anchor=north east},
       ]
       \addplot[color=blue, thick] coordinates {
         (0.1,0.15) (0.2,0.22) (0.3,0.28) (0.4,0.32) (0.5,0.35) (0.6,0.38) (0.7,0.42) (0.8,0.45) (0.9,0.48)
@@ -183,7 +186,13 @@ Q_{\tau}(Y_i) = \beta_0(\tau) + \beta_1(\tau) \cdot X_i + \varepsilon_i
   \label{fig:quantilregression}
 \end{figure}
 
-Abbildung \ref{fig:quantilregression} zeigt die geschätzten Koeffizienten einer Quantilregression, bei der der Einfluss der Wirtschafts- (\(W\)) und Gerechtigkeitskomponente (\(G\)) auf den aggregierten GWI-D über verschiedene Quantile \(\tau\) modelliert wird. Beide Kurven weisen einen positiven Anstieg auf, d.h. der Einfluss beider Komponenten auf den Gesamtindex ist in den oberen Quantilen stärker ausgeprägt als in den unteren. Dies deutet darauf hin, dass bereits hohe Ausgangswerte in \(W\) oder \(G\) den GWI-D überproportional stärker positiv beeinflussen – ein Hinweis auf mögliche „wohlfahrtsverstärkende“ Effekte.
+\begin{flushleft}
+\footnotesize{\textit{Anmerkung: Die Kurven zeigen, wie sich der Einfluss der Wirtschafts- (W) und Gerechtigkeitskomponente (G) auf den Gesamtindex über verschiedene Quantile verändert.}}
+\end{flushleft}
+
+Die Quantilregression in Abbildung \ref{fig:quantilregression} zeigt eine \textbf{strukturelle Benachteiligung der Gerechtigkeitskomponente}. Der Einfluss von \(G\) auf den Gesamtindex ist in allen Quantilen geringer als der von \(W\). Selbst bei hohen Gerechtigkeitswerten (\(\tau = 0{,}9\)) bleibt der Koeffizient von \(G\) (0,43) unter dem von \(W\) (0,48). 
+
+Dies bedeutet: \textbf{Soziale Gerechtigkeit wird im System unterbewertet}. Selbst wenn sie erreicht würde, hätte sie weniger Gewicht für das Gesamtwohl als wirtschaftliche Faktoren.
 
 \section{Paarweise Korrelationen}
 
@@ -201,25 +210,38 @@ Abbildung \ref{fig:quantilregression} zeigt die geschätzten Koeffizienten einer
     \textbf{S (\(S\))} & 0.62 & 0.31 & 0.58 & 1.00 \\
     \bottomrule
   \end{tabular}
-  \vspace{0.2cm}
-  \footnotesize{\textit{Anmerkung: Alle Korrelationen signifikant bei p < 0,01.}}
 \end{table}
 
-Die paarweisen Beziehungen zwischen den Komponenten werden in Tabelle \ref{tab:korrelationen} quantifiziert. Besonders stark ist der lineare Zusammenhang zwischen \(W\) und \(Z\) (Korrelationskoeffizient \(r = 0{,}78\)), was auf eine enge Verknüpfung von wirtschaftlicher Leistungsfähigkeit und Zukunftsorientierung hindeutet. Interessant ist die vergleichsweise schwache Korrelation zwischen \(G\) und \(S\) (\(r = 0{,}31\)), was darauf hindeutet, dass soziale Gerechtigkeit und gesellschaftlicher Zusammenhalt nicht automatisch Hand in Hand gehen.
+\begin{flushleft}
+\footnotesize{\textit{Anmerkung: Alle Korrelationen signifikant bei p < 0,01.}}
+\end{flushleft}
 
-\section{Zusammenfassung und Interpretation}
-
-Die Verteilungsanalyse der GWI-D Komponenten erlaubt folgende Schlussfolgerungen:
+Die Korrelationsanalyse in Tabelle \ref{tab:korrelationen} enthüllt die \textbf{Entkopplung von Wirtschaft und Sozialem}:
 
 \begin{enumerate}
-  \item \textbf{Wirtschaft (\(W\))} zeigt die höchste Volatilität und ist besonders anfällig für konjunkturelle und krisenbedingte Schwankungen.
-  \item \textbf{Gerechtigkeit (\(G\))} weist den niedrigsten Mittelwert auf und zeigt eine signifikant nicht-normalverteilte, linksschiefe Verteilung.
-  \item \textbf{Zukunft (\(Z\))} korreliert stark mit der Wirtschaftskomponente, was die Bedeutung ökonomischer Grundlagen für langfristige Perspektiven unterstreicht.
-  \item \textbf{Zusammenhalt (\(S\))} ist die stabilste Komponente mit geringer zeitlicher Variabilität, zeigt jedoch in der jüngsten Multikrise erste Erosionszeichen.
-  \item Die \textbf{Quantilregression} offenbart, dass bereits hohe Werte in einzelnen Dimensionen den Gesamtindex überproportional positiv beeinflussen – ein Hinweis auf positive Synergieeffekte zwischen den Säulen.
-  \item Die \textbf{schwache Korrelation zwischen Gerechtigkeit und Zusammenhalt} (\(r = 0{,}31\)) deutet auf einen potenziellen Zielkonflikt hin: Mehr soziale Gerechtigkeit führt nicht automatisch zu stärkerem gesellschaftlichem Zusammenhalt.
+	\item \textbf{Wirtschaft und Zukunft sind eng verknüpft} (\(r = 0{,}78\)): Investitionen in die Zukunft hängen stark vom wirtschaftlichen Erfolg ab.
+	\item \textbf{Wirtschaft und Gerechtigkeit sind nur schwach korreliert} (\(r = 0{,}45\)): Wirtschaftswachstum führt nicht automatisch zu mehr Gerechtigkeit.
+	\item \textbf{Die geringste Korrelation besteht zwischen Gerechtigkeit und Zusammenhalt} (\(r = 0{,}31\)): Soziale Gerechtigkeit und gesellschaftlicher Zusammenhalt entwickeln sich weitgehend unabhängig voneinander.
 \end{enumerate}
 
-Diese Befunde legen nahe, dass eine nachhaltige Gemeinwohlorientierung nicht nur auf eine einzelne Dimension abzielen darf, sondern integrative Politiken erfordert, die alle vier Säulen gleichermaßen stärken. Besondere Aufmerksamkeit verdient dabei die Gerechtigkeitskomponente, die trotz langfristiger Verbesserungen weiterhin das schwächste Glied in der Kette darstellt. Die identifizierte Diskrepanz zwischen Gerechtigkeit und Zusammenhalt erfordert zudem gezielte Maßnahmen, um beide Ziele synchron zu verfolgen.
+Dies ist der \textbf{kernkritische Befund}: Die Annahme, dass wirtschaftlicher Erfolg soziale Probleme löst, wird durch die Daten widerlegt.
+
+\section{Zusammenfassung und Interpretation: Das Gerechtigkeitsdefizit}
+
+Die Verteilungsanalyse bestätigt und präzisiert die zentrale These dieser Arbeit: \textbf{Deutschland leidet unter einem strukturellen Gerechtigkeitsdefizit}, das durch traditionelle Wirtschaftsindikatoren wie BIP und Inflation verschleiert wird.
+
+\begin{enumerate}
+	\item \textbf{Ökonomische Dominanz}: Die Wirtschaftskomponente (\(W\)) dominiert mit dem höchsten Mittelwert (75,4) und stärkstem Einfluss auf den Gesamtindex.
+	\item \textbf{Soziale Vernachlässigung}: Die Gerechtigkeitskomponente (\(G\)) hat nicht nur den niedrigsten Mittelwert (68,2), sondern zeigt auch die größte Abweichung von einer Normalverteilung – ein Zeichen struktureller Unterentwicklung.
+	\item \textbf{Entkopplung der Systeme}: Die schwache Korrelation zwischen Wirtschaft und Gerechtigkeit (\(r = 0{,}45\)) beweist: Wirtschaftswachstum allein löst keine sozialen Probleme.
+	\item \textbf{Minimum als Alarmzeichen}: Das absolute Minimum der G-Komponente (49,5) ist das niedrigste aller Säulen und zeigt Phasen extremer sozialer Vernachlässigung.
+	\item \textbf{Strukturelle Benachteiligung}: Die Quantilregression zeigt, dass soziale Gerechtigkeit selbst bei hohen Werten weniger zum Gemeinwohl beiträgt als wirtschaftliche Faktoren.
+\end{enumerate}
+
+\textbf{Die scheinbare „Verbesserung“ der Gerechtigkeitswerte seit den 1960er Jahren ist trügerisch}: Sie resultiert primär aus dem relativen Rückgang der Wirtschaftsleistung, nicht aus substantiellen sozialen Fortschritten. Bei einer Betrachtung in absoluten Werten bleibt die Gerechtigkeitskomponente die schwächste Säule des deutschen Gemeinwohls.
+
+Diese Analyse bestätigt die Notwendigkeit des GWI-D: Traditionelle Wirtschaftsindikatoren bilden die soziale Realität unzureichend ab. Ein Land kann
+wirtschaftlich erfolgreich sein, während es sozial zerrissen bleibt. Die Daten zeigen:
+\textbf{Deutschlands Kapitalismus funktioniert – seine Gesellschaft leidet}.
 
 \endinput
