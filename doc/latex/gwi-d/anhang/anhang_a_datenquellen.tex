@@ -1,0 +1,290 @@
+% anhang_a_datenquellen.tex
+\chapter{Datenquellen und Methodik}
+\label{chap:anhang_a}
+
+\section*{Einleitung}
+Dieser Anhang dokumentiert die Datenquellen, Berechnungsmethoden und statistischen Verfahren, die der Konstruktion des Gemeinwohl-Index Deutschland (GWI-D) für den Zeitraum 1960–2023 zugrunde liegen. Ziel ist maximale Transparenz und Reproduzierbarkeit der Analysen.
+
+\section{Übersicht der verwendeten Datenquellen}
+
+\subsection{Offizielle Statistik}
+
+\begin{table}[ht]
+    \centering
+    \caption{Primäre Datenquellen für GWI-D-Komponenten}
+    \label{tab:datenquellen_gwi}
+    \begin{tabular}{lllp{6cm}l}
+        \toprule
+        \textbf{Komponente} & \textbf{Hauptindikatoren} & \textbf{Quelle} & \textbf{Zeitreihe} & \textbf{Frequenz} \\
+        \midrule
+        \textbf{Wirtschaft (W)} & BIP-Wachstum, Produktivität, Investitionen, Exporte & Statistisches Bundesamt, Bundesbank, OECD & 1960–2023 & Jährlich \\
+        \textbf{Gerechtigkeit (G)} & Einkommensverteilung, Armutsquote, Bildungsbeteiligung, Gender Gap & SOEP, Mikrozensus, IAB, WSI & 1960–2023 & Jährlich \\
+        \textbf{Zukunft (Z)} & Bildungsausgaben, Forschungsquote, CO2-Emissionen, Erneuerbare Energien & BMBF, UBA, Eurostat, UNESCO & 1960–2023 & Jährlich \\
+        \textbf{Zusammenhalt (S)} & Vertrauensindikatoren, Wahlbeteiligung, Vereinsdichte, Integration & ALLBUS, ESS, Eurobarometer, BBSR & 1970–2023 & 2–5 Jahre \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Ergänzende Datenquellen}
+
+\begin{itemize}
+    \item \textbf{Historische Reihen}: Daten vor 1990 aus wissenschaftlichen Rekonstruktionen
+    \item \textbf{Lückenfüllung}: Interpolation bei fehlenden Jahreswerten (max. 3 Jahre)
+    \item \textbf{Konsistenzprüfung}: Kreuzvalidierung mit alternativen Quellen
+    \item \textbf{Deutsche Einheit}: Ost-West-Angleichung der Reihen ab 1991
+\end{itemize}
+
+\section{Konstruktion der GWI-D-Komponenten}
+
+\subsection{Normalisierung und Skalierung}
+
+Alle Indikatoren werden auf eine einheitliche Skala von 0–100 transformiert:
+
+\[
+x_{norm} = \frac{x - x_{min}}{x_{max} - x_{min}} \times 100
+\]
+
+\begin{itemize}
+    \item \textbf{Minimum-Maximum}: Basierend auf deutschen Werten 1960–2023
+    \item \textbf{Richtung}: Höhere Werte = bessere Performance
+    \item \textbf{Ausreißerbehandlung}: Winsorizing bei 1. und 99. Perzentil
+\end{itemize}
+
+\subsection{Aggregationsverfahren}
+
+\subsubsection{Schritt 1: Indikatorebene}
+
+\[
+I_{ijt} = \text{Normalisierter Wert von Indikator } i \text{ in Komponente } j \text{ zum Zeitpunkt } t
+\]
+
+\subsubsection{Schritt 2: Komponentenebene}
+
+\[
+C_{jt} = \frac{1}{n_j} \sum_{i=1}^{n_j} w_{ij} \cdot I_{ijt}
+\]
+
+\begin{itemize}
+    \item \(n_j\): Anzahl Indikatoren in Komponente \(j\)
+    \item \(w_{ij}\): Gewichtung des Indikators \(i\) (meist gleichgewichtet)
+\end{itemize}
+
+\subsubsection{Schritt 3: Gesamtindex}
+
+\[
+GWI-D_t = 0.30 \cdot W_t + 0.30 \cdot G_t + 0.25 \cdot Z_t + 0.15 \cdot S_t
+\]
+
+\section{Detaillierte Indikatorliste}
+
+\subsection{Wirtschaftskomponente (\(W\))}
+
+\begin{table}[ht]
+    \centering
+    \caption{Indikatoren der Wirtschaftskomponente}
+    \label{tab:indikatoren_wirtschaft}
+    \begin{tabular}{llll}
+        \toprule
+        \textbf{Indikator} & \textbf{Quelle} & \textbf{Gewichtung} & \textbf{Bemerkungen} \\
+        \midrule
+        Reales BIP-Wachstum (\%) & Statistisches Bundesamt & 25\% & Kettenindex, preisbereinigt \\
+        Arbeitsproduktivität & IAB, Statistisches Bundesamt & 20\% & BIP je Erwerbstätigenstunde \\
+        Investitionsquote (\%) & Volkswirtschaftliche Gesamtrechnungen & 20\% | Bruttoanlageinvestitionen/BIP \\
+        Exportquote (\%) & Außenhandelsstatistik & 15\% | Warenexporte/BIP \\
+        Innovationsausgaben (\%) & BMBF, OECD & 10\% | Forschung \& Entwicklung/BIP \\
+        Unternehmensgründungen & KfW-Gründungsmonitor & 10\% | Gründungen je 10.000 Einwohner \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Gerechtigkeitskomponente (\(G\))}
+
+\begin{table}[ht]
+    \centering
+    \caption{Indikatoren der Gerechtigkeitskomponente}
+    \label{tab:indikatoren_gerechtigkeit}
+    \begin{tabular}{llll}
+        \toprule
+        \textbf{Indikator} & \textbf{Quelle} & \textbf{Gewichtung} & \textbf{Bemerkungen} \\
+        \midrule
+        Gini-Koeffizient (Einkommen) & SOEP, EVS & 20\% | Äquivalenzeinkommen, netto \\
+        Armutsquote (\%) & Statistisches Bundesamt & 20\% | 60\% des Medianeinkommens \\
+        Bildungsbeteiligung (20–24 J.) & Mikrozensus, OECD & 15\% | Höhere Bildungsabschlüsse \\
+        Gender Pay Gap (\%) & Statistisches Bundesamt & 15\% | Bruttostundenverdienst \\
+        Vermögensungleichheit & Bundesbank, SOEP & 10\% | Gini-Koeffizient Vermögen \\
+        Gesundheitszugang & GKV, PKV, SOEP & 10\% | Versicherung, Zugang, Wartezeiten \\
+        Wohnkostenbelastung & Mikrozensus, BBSR & 10\% | Miete/Einkommen < 40\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Zukunftskomponente (\(Z\))}
+
+\begin{table}[ht]
+    \centering
+    \caption{Indikatoren der Zukunftskomponente}
+    \label{tab:indikatoren_zukunft}
+    \begin{tabular}{llll}
+        \toprule
+        \textbf{Indikator} & \textbf{Quelle} & \textbf{Gewichtung} & \textbf{Bemerkungen} \\
+        \midrule
+        Bildungsausgaben (\% BIP) & BMBF, Statistisches Bundesamt & 25\% | Alle Bildungsbereiche \\
+        Forschungsquote (\% BIP) & BMBF, OECD & 25\% | Öffentliche und private Ausgaben \\
+        CO2-Emissionen (t/Kopf) & UBA, IEA & 20\% | Energie, Verkehr, Industrie \\
+        Erneuerbare Energien (\%) & AGEB, BMWK & 15\% | Anteil am Primärenergieverbrauch \\
+        Patentanmeldungen & DPMA, EPO & 10\% | Pro Million Einwohner \\
+        ÖPNV-Nutzung & BMVI, Statistisches Bundesamt & 5\% | Anteil am Personenverkehr \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Zusammenhalt-Komponente (\(S\))}
+
+\begin{table}[ht]
+    \centering
+    \caption{Indikatoren der Zusammenhalt-Komponente}
+    \label{tab:indikatoren_zusammenhalt}
+    \begin{tabular}{llll}
+        \toprule
+        \textbf{Indikator} & \textbf{Quelle} & \textbf{Gewichtung} & \textbf{Bemerkungen} \\
+        \midrule
+        Soziales Vertrauen & ALLBUS, ESS & 25\% | \enquote{Kann man Menschen vertrauen?} \\
+        Wahlbeteiligung (\%) & Bundeswahlleiter & 20\% | Bundestags- und Europawahlen \\
+        Vereinsmitgliedschaften & Freiwilligensurvey & 15\% | Anteil aktiver Mitglieder \\
+        Einkommensmobilität & SOEP, IAB & 15\% | Intergenerationelle Mobilität \\
+        Integrationsindikatoren & BAMF, Mikrozensus & 15\% | Sprache, Bildung, Arbeitsmarkt \\
+        Kriminalitätsrate & BKA, PKS & 10\% | Aufklärungsquote, Gewaltdelikte \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Statistische Verfahren}
+
+\subsection{Zeitreihenanalyse}
+
+\begin{itemize}
+    \item \textbf{Saisonbereinigung}: X-13-ARIMA-SEATS für Quartalsdaten
+    \item \textbf{Trend-Komponente}: HP-Filter (\(\lambda = 100\) für Jahresdaten)
+    \item \textbf{Zyklische Komponente}: Bandpass-Filter (2–8 Jahre)
+    \item \textbf{Strukturbruchanalyse}: Bai-Perron-Tests für Regimewechsel
+\end{itemize}
+
+\subsection{Korrelationen und Regressionen}
+
+\begin{itemize}
+    \item \textbf{Pearson-Korrelation}: Für lineare Zusammenhänge
+    \item \textbf{Spearman-Rangkorrelation}: Bei nicht-normalverteilten Daten
+    \item \textbf{Quantilregression}: Für verteilungsspezifische Effekte
+    \item \textbf{VAR-Modelle}: Für dynamische Interdependenzen
+\end{itemize}
+
+\subsection{Robustheitschecks}
+
+\begin{enumerate}
+    \item \textbf{Alternativen Gewichtungen}: Gleichgewichtung vs. Expertengewichtung
+    \item \textbf{Alternative Skalierungen}: z-Standardisierung vs. Min-Max
+    \item \textbf{Sensitivitätsanalysen}: Ausschluss einzelner Indikatoren
+    \item \textbf{Vergleich mit alternativen Indizes}: HDI, BLI, SDG-Index
+\end{enumerate}
+
+\section{Datenlücken und Imputation}
+
+\subsection{Lücken im Zeitverlauf}
+
+\begin{table}[ht]
+    \centering
+    \caption{Behandlung von Datenlücken}
+    \label{tab:datenluecken}
+    \begin{tabular}{llp{8cm}}
+        \toprule
+        \textbf{Problem} & \textbf{Betroffener Zeitraum} & \textbf{Lösungsansatz} \\
+        \midrule
+        Deutsche Teilung & 1960–1990 (Ost) & Separate Reihen, Angleichung ab 1991 \\
+        SOEP-Start & Vor 1984 & Wissenschaftliche Rekonstruktionen \\
+        ALLBUS-Start & Vor 1980 & ESS-Daten (ab 2002), Interpolation \\
+        Pandemie-Effekte & 2020–2022 & Sondererhebungen, Hochrechnungen \\
+        Frühzeitige Indikatoren & Vor 1970 & Historische Statistiken, Archive \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Imputationsverfahren}
+
+\[
+x_{t}^{imp} = \alpha \cdot x_{t-1} + (1-\alpha) \cdot \hat{x}_{t}
+\]
+
+\begin{itemize}
+    \item \textbf{Lineare Interpolation}: Bei kurzen Lücken (<3 Jahre)
+    \item \textbf{ARIMA-Prognose}: Bei systematischen Zeitreihenmustern
+    \item \textbf{Regressionsimputation}: Bei korrelierten Variablen
+    \item \textbf{Multiple Imputation}: Für robuste Schätzungen
+\end{itemize}
+
+\section{Qualitätssicherung}
+
+\subsection{Datenqualitätskriterien}
+
+\begin{enumerate}
+    \item \textbf{Vollständigkeit}: >90\% Abdeckung des Zeitraums 1960–2023
+    \item \textbf{Konsistenz}: Vergleichbarkeit über Zeit und Regionen
+    \item \textbf{Aktualität}: Maximal 2 Jahre Verzögerung (Stand: 2023)
+    \item \textbf{Methodenstabilität}: Keine brüsken Methodenwechsel
+    \item \textbf{Transparenz}: Öffentlich zugängliche Dokumentation
+\end{enumerate}
+
+\subsection{Validierung}
+
+\begin{itemize}
+    \item \textbf{Cross-Validation}: Hold-out-Samples, Rolling Windows
+    \item \textbf{Expert Review}: Begutachtung durch unabhängige Wissenschaftler
+    \item \textbf{Policy-Relevanz-Test}: Diskussion mit Praktikern
+    \item \textbf{Publikation}: Wissenschaftliche Veröffentlichung der Methodik
+\end{itemize}
+
+\section{Zugang zu den Daten}
+
+\subsection{Öffentliche Verfügbarkeit}
+
+\begin{itemize}
+    \item \textbf{Rohdaten}: Über statistische Ämter und Forschungsdatenzentren
+    \item \textbf{Verarbeitete Daten}: Wissenschaftliche Use Files
+    \item \textbf{GWI-D-Datenbank}: Online-Zugang über Projektwebsite
+    \item \textbf{Reproduktionspaket}: Code und Daten auf GitHub
+\end{itemize}
+
+\subsection{Nutzungsbedingungen}
+
+\begin{itemize}
+    \item \textbf{Wissenschaftliche Nutzung}: Frei für Forschungszwecke
+    \item \textbf{Politische Nutzung}: Mit Quellenangabe gestattet
+    \item \textbf{Kommerzielle Nutzung}: Auf Anfrage, ggf. Lizenzierung
+    \item \textbf{Zitierweise}: Standardisierte Zitation des GWI-D
+\end{itemize}
+
+\section{Limitationen und Weiterentwicklungen}
+
+\subsection{Aktuelle Limitationen}
+
+\begin{enumerate}
+    \item \textbf{Regionale Tiefe}: Bundesländerebene, nicht kommunal
+    \item \textbf{Subjektive Indikatoren}: Begrenzte Zeitreihenlänge
+    \item \textbf{Internationaler Vergleich}: Noch nicht vollständig harmonisiert
+    \item \textbf{Dynamische Gewichtung}: Aktuell statisch, könnte adaptiv sein
+\end{enumerate}
+
+\subsection{Geplante Weiterentwicklungen}
+
+\begin{itemize}
+    \item \textbf{GWI-D 2.0}: Integration von Echtzeitindikatoren
+    \item \textbf{Regionalisierung}: Kommunale und städtische Indizes
+    \item \textbf{Europäische Erweiterung}: GWI-EU für EU-Mitgliedstaaten
+    \item \textbf{Partizipative Elemente}: Bürgerbeteiligung bei Indikatorenauswahl
+    \item \textbf{Machine Learning}: Vorhersagemodelle für GWI-D-Entwicklung
+\end{itemize}
+
+\section*{Schlussbemerkung}
+
+Diese Dokumentation gewährleistet die wissenschaftliche Nachvollziehbarkeit des Gemeinwohl-Index Deutschland. Regelmäßige Updates und methodische Verbesserungen werden auf der Projektwebsite kommuniziert. Für Fragen und Anregungen zur Methodik steht das Forschungsteam zur Verfügung.
+
+\endinput
