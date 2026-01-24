@@ -1,0 +1,111 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = de_DE
+% Datei: 02_theoreme.tex
+% Diese Datei enthält NUR den Kapitelinhalt und wird via \input in main.tex eingebunden.
+
+\chapter{Theoretische Ableitungen und Theoreme}
+\label{chap:theoreme}
+
+\section{Einleitung}
+Aus dem axiomatischen System $\mathcal{S}$ (Definiert in Abschnitt~\ref{sec:synthese}) lassen sich zwingende logische und strukturelle Konsequenzen für jede Gesellschaft $G$ ableiten, die $\mathcal{S}$ instanziiert. Diese Konsequenzen werden hier als Theoreme formalisiert. Sie beschreiben die notwendige Beschaffenheit einer $\mathcal{S}$-Gesellschaft jenseits der Grundpostulate und bilden die Brücke zur angewandten Institutionsgestaltung und Stabilitätsanalyse.
+
+\section{Grundlegende Definitionen}
+Zur präzisen Formulierung der Theoreme werden folgende Begriffe definiert:
+
+\begin{definition}[Demokratische Infrastruktur]
+    Die demokratische Infrastruktur $\mathit{DI}(G)$ einer Gesellschaft $G$ ist die Gesamtheit aller Einrichtungen und Verfahren, die der Informationsbeschaffung, Deliberation und Entscheidungsfindung gemäß Axiom~\ref{ax:4} dienen. Formal ist $\mathit{DI}(G)$ ein Tupel aus Bildungs-, Medien-, Beratungs- und Entscheidungssystemen.
+\end{definition}
+
+\begin{definition}[Ökonomisches Gleichgewichtsintervall]
+    Sei $\varepsilon$ die Reichtumsgrenze aus Axiom~\ref{ax:3}. Das ökonomische Gleichgewichtsintervall $I_{\mathit{eq}} \subseteq \mathbb{R}^+$ ist dasjenige Intervall um $\varepsilon$, innerhalb dessen die Stabilität von $\mathcal{S}$ gewahrt bleibt. Seine Existenz und Eigenschaften sind Gegenstand der Variationsrechnung (Kapitel~\ref{chap:variation}).
+\end{definition}
+
+\section{Die Haupttheoreme der $\mathcal{S}$-Gesellschaft}
+
+\subsection{Theorem 1: Die Auflösung des Repräsentationsparadigmas}
+
+\begin{theorem}[Struktur der Entscheidungsfindung]
+    In einer $\mathcal{S}$-Gesellschaft $G$ existiert keine stabile politische Repräsentation im klassischen Sinne. Die Entscheidungsfindung folgt notwendig einem von zwei Modi:
+    \begin{enumerate}
+        \item \textbf{Direkte Entscheidung:} Für Angelegenheiten von überschaubarer Komplexität und Reichweite.
+        \item \textbf{Strikt delegierte Entscheidung:} Für komplexe oder großskalige Angelegenheiten, wobei die Delegierten (\glqq Beauftragte\grqq) ein imperatives Mandat haben und jederzeit ohne Verfahrenshürden abberufbar sind.
+    \end{enumerate}
+\end{theorem}
+
+\begin{proof}
+    Direkt aus Axiom~\ref{ax:2} ($P(G)=\varnothing$) folgt, dass keine dauerhaften Repräsentationskörper mit eigenem Entscheidungsspielraum (freiem Mandat) existieren können. Die einzig verbleibenden, mit Axiom~\ref{ax:1} und \ref{ax:2} kompatiblen Organisationsformen sind die genannten: unmittelbare Partizipation oder extrem kontrollierte, reversible Delegation.
+\end{proof}
+
+\subsection{Theorem 2: Die Notwendigkeit der Bildungsgesellschaft}
+
+\begin{theorem}[Bildung als zentrale Ressource]
+    Sei $B(G) \in \mathbb{R}^+$ das Maß für die in das Bildungssystem von $G$ investierten Ressourcen (pro Kopf). Sei $\sigma(G)$ das Maß für die Informationsasymmetrie in $G$. Dann gilt für eine stabile $\mathcal{S}$-Gesellschaft:
+    \[
+    \boxed{\exists\, B_{\min} > 0: \quad B(G) < B_{\min} \quad \Rightarrow \quad \sigma(G) \text{ wächst, was} \quad \mathcal{D}(G) \to 0 \quad \text{bewirkt}.}
+    \]
+    Mit anderen Worten: Ein Unterschreiten einer kritischen Bildungsinvestition destabilisiert das System fundamental.
+\end{theorem}
+
+\begin{proof}
+    Axiom~\ref{ax:4} fordert, dass Entscheidungen auf wissenschaftlichen Fakten basieren und von der Gemeinschaft verstanden und genehmigt werden. Eine ungenügende Bildung $B(G) < B_{\min}$ führt zu:
+    \begin{enumerate}
+        \item Einem Anstieg von $\sigma(G)$ (Wissenskluft).
+        \item Der Unfähigkeit der Gemeinschaft, $E$ (den evidenzbasierten Maßnahmenkatalog) zu bewerten.
+        \item Dadurch wird der Prozess $E \to Z(G)$ hinfällig oder degeneriert zu einem bloßen Akklamationsritual. Dies verletzt den Geist von Axiom~\ref{ax:4} und untergräbt letztlich die rationale Grundlage von $\mathcal{D}(G)$.
+    \end{enumerate}
+    Aus der Stabilitätsanalyse (Kapitel~\ref{chap:variation}, Modul Informationsasymmetrie) folgt die Existenz der unteren Schranke $B_{\min}$.
+\end{proof}
+
+\subsection{Theorem 3: Die strukturelle Verhinderung von Kapitaloligarchien}
+
+\begin{theorem}[Zerfall der Kapitalmacht]
+    In einer $\mathcal{S}$-Gesellschaft kann sich keine dauerhafte, machtausübende Elite auf der Basis von ökonomischem Kapital bilden. Die Konversionsrate $c$ von ökonomischer Potenz $V_i$ in politischen Einfluss ist strukturell auf Null gesetzt.
+    \[
+    \boxed{\forall i \in I: V_i \leq \varepsilon \quad \Rightarrow \quad c = 0.}
+    \]
+\end{theorem}
+
+\begin{proof}
+    Die absolute und durchsetzbare Obergrenze $\varepsilon$ (Axiom~\ref{ax:3}) verhindert die Akkumulation von massivem, anderweitig überwältigendem Privatvermögen. Da politischer Einfluss durch Medienkontrolle, Lobbyismus oder Bestechung typischerweise mit Ressourceneinsatz verbunden ist, wird diese Möglichkeit durch die Begrenzung von $V_i$ ausgeschlossen. Die Verfassung (Axiom~\ref{ax:5}) garantiert die Dauerhaftigkeit dieser Schranke.
+\end{proof}
+
+\subsection{Theorem 4: Wissenschaft als öffentliche und kontrollierte Infrastruktur}
+
+\begin{theorem}[Organisation der Wissensproduktion]
+    Die wissenschaftlichen Einrichtungen in einer $\mathcal{S}$-Gesellschaft $G$ können nicht privatwirtschaftlich oder autokratisch organisiert sein. Sie müssen als transparente, öffentlich kontrollierte und pluralistisch besetzte Infrastruktur $\mathit{FI} \subset \mathit{DI}(G)$ (Forschungsinfrastruktur) ausgestaltet sein.
+\end{theorem}
+
+\begin{proof}
+    Folgt aus Axiom~\ref{ax:4} und Theorem 3.
+    \begin{enumerate}
+        \item \textbf{Öffentliche Kontrolle:} Private Kontrolle über die Wissensproduktion (z.B. durch Konzerne) würde eine indirekte Macht über den Input $E$ des Entscheidungsprozesses bedeuten, was Theorem 3 widerspricht und $\mathcal{D}(G)$ verringert.
+        \item \textbf{Transparenz und Pluralismus:} Da Wissenschaft fehlbar ist (explizit in Axiom~\ref{ax:4} anerkannt), muss die Erstellung von $E$ vor Gruppendenken und Paradigmenblindheit geschützt werden. Dies erfordert institutionell gesicherten methodischen und theoretischen Pluralismus sowie vollständige Transparenz der Daten und Modelle.
+    \end{enumerate}
+\end{proof}
+
+\subsection{Theorem 5: Beschränkte Souveränität}
+
+\begin{theorem}[Grenzen der demokratischen Entscheidung]
+    In einer $\mathcal{S}$-Gesellschaft $G$ ist die Souveränität der demokratischen Entscheidung $Z(G)$ absolut, aber \emph{inhaltlich beschränkt} durch die Verfassung $C$.
+    \[
+    \boxed{\forall \text{ Entscheidungen } d: \quad Z(G) \text{ kann } d \text{ nur dann legitimieren, wenn } d \text{ mit } C \text{ vereinbar ist}.}
+    \]
+    Insbesondere kann $Z(G)$ nicht legitim über die Abschaffung oder Aufweichung von Axiom~\ref{ax:1}, \ref{ax:2}, \ref{ax:3} oder der demokratischen Verfahren von \ref{ax:4} entscheiden.
+\end{theorem}
+
+\begin{proof}
+    Direkte Folge aus Axiom~\ref{ax:5} (Unveränderlichkeit der Verfassung $C$). Die Verfassung operationalisiert die Axiome 1-4. Jede Entscheidung $d$, die diesen widerspricht, wäre ein impliziter Verfassungsbruch, der im System $\mathcal{S}$ keine legale Form haben kann. Die demokratische Souveränität wirkt somit ausschließlich \emph{innerhalb} des durch $C$ vorgegebenen Rahmens.
+\end{proof}
+
+\section{Synthese: Die $\mathcal{S}$-Gesellschaft als kohärentes System}
+
+Die fünf Theoreme zeigen, dass aus den knappen Axiomen ein dichtes Netz von strukturellen Vorgaben erwächst:
+\begin{itemize}
+    \item Theorem 1 und 3 zerstören die klassischen Säulen der Macht: politische Repräsentation und ökonomische Oligarchie.
+    \item Theorem 2 und 4 errichten die neuen Säulen der $\mathcal{S}$-Gesellschaft: ein allumfassendes Bildungssystem und eine demokratisch eingebettete Wissenschaft.
+    \item Theorem 5 sichert das gesamte Gefüge vor seiner eigenen Auflösung durch demokratischen Beschluss.
+\end{itemize}
+
+Damit ist das Bild einer $\mathcal{S}$-Gesellschaft bereits deutlich konturierter: Es handelt sich um eine hochgebildete, wissenschaftsbasierte, direkt-deliberative Gemeinschaft mit strikter ökonomischer Gleichheitsgrenze, deren Grundregeln für alle Ewigkeit festgeschrieben sind.
+
+Die folgenden Kapitel werden untersuchen, ob und unter welchen Bedingungen ein solches System stabil existieren kann (Variationsrechnung) und mit welchen praktischen und philosophischen Herausforderungen es konfrontiert ist (Diskussion).

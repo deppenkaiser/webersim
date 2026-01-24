@@ -1,0 +1,165 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = de_DE
+% Datei: 05_anhang.tex
+% Anhänge: Glossar, Theoremliste, Literatur
+
+\chapter*{Anhang}
+\addcontentsline{toc}{chapter}{Anhang}
+\label{chap:anhang}
+
+\section*{Anhang A: Formales Glossar der Grundbegriffe}
+\addcontentsline{toc}{section}{Anhang A: Formales Glossar der Grundbegriffe}
+\label{anhang:glossar}
+
+\begin{description}
+    \item[Gesellschaft $G$:] Ein Tupel $G = (I, S, R, V)$, wobei:
+        \begin{itemize}
+            \item $I$ die Menge der Individuen ist,
+            \item $S$ die Entscheidungsstruktur,
+            \item $R$ das System der Rechte und Pflichten,
+            \item $V$ die Verteilung von Ressourcen (Vermögen) bezeichnet.
+        \end{itemize}
+    
+    \item[Demokratiegrad $\mathcal{D}(G)$:] Ein Maß $\mathcal{D}: G \rightarrow [0,1]$, das den Grad der Verwirklichung von Volkssouveränität und politischer Gleichheit in $G$ angibt. $\mathcal{D}(G)=1$ entspricht idealer Demokratie.
+    
+    \item[Axiomatisches System $\mathcal{S}$:] Die Konjunktion der fünf Axiome A1–A5. $\mathcal{S} := \text{A1} \land \text{A2} \land \text{A3} \land \text{A4} \land \text{A5}$.
+    
+    \item[$\mathcal{S}$-Gesellschaft:] Eine Gesellschaft $G$, die das System $\mathcal{S}$ instanziiert, d.h. alle Axiome erfüllt.
+    
+    \item[Demokratizitäts-Funktional $\mathfrak{D}$:] Die Abbildung gesellschaftlicher Parameter $\theta$ auf den Demokratiegrad: $\mathfrak{D}: \Theta \rightarrow [0,1], \theta \mapsto \mathcal{D}(G_\theta)$.
+    
+    \item[Reichtumsgrenze $\varepsilon$:] Die absolute Obergrenze für individuelles Vermögen $V_i$ gemäß Axiom~\ref{ax:3}. Es gilt: $\forall i \in I: V_i \leq \varepsilon$.
+    
+    \item[Ökonomisches Gleichgewichtsintervall $I_{\text{eq}}$:] Das Intervall um den optimalen Wert $\varepsilon^*$, innerhalb dessen das System $\mathcal{S}$ stabil bleibt: $I_{\text{eq}} = [\varepsilon^* - \delta, \varepsilon^* + \delta]$.
+    
+    \item[Informationsasymmetrie $\sigma(G)$:] Die Standardabweichung des Informationsniveaus $I_i$ in der Bevölkerung: $\sigma(G) = \sqrt{\frac{1}{|I|} \sum_{i \in I} (I_i - \bar{I})^2}$.
+    
+    \item[Bildungsinvestition $B(G)$:] Die pro Kopf investierten Ressourcen in das Bildungssystem von $G$.
+    
+    \item[Kritische Bildungsinvestition $B_{\min}$:] Die minimale Bildungsinvestition, die benötigt wird, um ein Anwachsen von $\sigma(G)$ zu verhindern.
+    
+    \item[Kritische Bevölkerungsgröße $N_c$:] Die maximale Bevölkerungszahl, bei der reine direkte Deliberation noch möglich ist.
+    
+    \item[Delegationsdistanz $d_{\text{max}}$:] Die maximale Anzahl von Delegationsstufen zwischen einem Individuum und der finalen Entscheidungsebene.
+    
+    \item[Kritische Delegationsdistanz $d_{\text{krit}}$:] Die maximale Delegationsdistanz, bei der das System noch stabil bleibt ohne in Hierarchie zu kollabieren.
+\end{description}
+
+\section*{Anhang B: Vollständige Liste der Axiome und Theoreme}
+\addcontentsline{toc}{section}{Anhang B: Vollständige Liste der Axiome und Theoreme}
+\label{anhang:axiome_theoreme}
+
+\subsection*{Die fünf Axiome des Systems $\mathcal{S}$}
+
+\begin{enumerate}
+    \item \textbf{Axiom 1 (Normativer Kern):} Die Gesellschaft soll \emph{wirklich} demokratisch sein. Formal: $\forall G: G \text{ soll so beschaffen sein, dass } \mathcal{D}(G) = 1$.
+    
+    \item \textbf{Axiom 2 (Anti-Parteien-Prinzip):} Echte Demokratie verlangt individuelle Mitbestimmung, keine konzentrierte Macht in Parteien. Formal: $\mathcal{D}(G) = 1 \Rightarrow P(G) = \varnothing$.
+    
+    \item \textbf{Axiom 3 (Materielle Gleichheit):} Es gibt eine Verfassung, die allen gleiche Rechte/Pflichten zuteilt und unvermeidbare Ungleichheit begrenzt („Wohlstand ja, Reichtum nein“). Formal: $\forall i \in I: V_i \leq \varepsilon$.
+    
+    \item \textbf{Axiom 4 (Epistokratisch-Demokratische Dualität):} Entscheidungsvorschläge basieren auf wissenschaftlichen Fakten, benötigen aber demokratische Zustimmung. Erfordert eine Wissensgesellschaft. Formal: Entscheidungsprozess = $E \longrightarrow Z(G)$.
+    
+    \item \textbf{Axiom 5 (Unveränderliche Verfassung):} Die diese Prinzipien operationalisierende Verfassung ist einfach und unveränderlich.
+\end{enumerate}
+
+\subsection*{Die fünf Haupttheoreme}
+
+\begin{enumerate}
+    \item \textbf{Theorem 1 (Auflösung des Repräsentationsparadigmas):} In einer $\mathcal{S}$-Gesellschaft gibt es nur direkte Entscheidung oder strikt delegierte Entscheidung mit imperativem Mandat.
+    
+    \item \textbf{Theorem 2 (Notwendigkeit der Bildungsgesellschaft):} Es existiert eine kritische Bildungsinvestition $B_{\min}$. Unterschreitet $B(G)$ diese, wird das System instabil.
+    
+    \item \textbf{Theorem 3 (Verhinderung von Kapitaloligarchien):} Die Reichtumsgrenze $\varepsilon$ setzt die Konversionsrate von ökonomischer in politische Macht strukturell auf Null: $\forall i: V_i \leq \varepsilon \Rightarrow c = 0$.
+    
+    \item \textbf{Theorem 4 (Wissenschaft als öffentliche Infrastruktur):} Wissenschaftliche Einrichtungen müssen transparent, öffentlich kontrolliert und pluralistisch sein.
+    
+    \item \textbf{Theorem 5 (Beschränkte Souveränität):} Die demokratische Entscheidung $Z(G)$ ist absolut, aber inhaltlich durch die Verfassung $C$ beschränkt.
+\end{enumerate}
+
+\subsection*{Stabilitätstheoreme aus der Variationsrechnung}
+
+\begin{enumerate}
+    \item \textbf{Theorem S1 (Instabilität bei extremem $\varepsilon$):} 
+        \begin{itemize}
+            \item Für $\varepsilon \to \infty$: $\lim \mathfrak{D}(\varepsilon) = 0$ (Oligarchie)
+            \item Für $\varepsilon \to \varepsilon_{\text{sub}}$: $\lim \mathfrak{D}(\varepsilon) = \delta \ll 1$ (Stagnation/Kleptokratie)
+        \end{itemize}
+    
+    \item \textbf{Theorem S2 (Existenz eines stabilen Intervalls):} Es existiert ein Intervall $I_{\text{eq}} = [\varepsilon^* - \delta, \varepsilon^* + \delta]$, in dem $\mathfrak{D}(\varepsilon)$ maximal und stabil ist.
+    
+    \item \textbf{Theorem S3 (Kritische Bevölkerungsgröße):} Für $N > N_c = \frac{T_{\text{verfügbar}}}{t_{\text{delib}} \cdot n_q}$ ist reine direkte Demokratie unmöglich.
+    
+    \item \textbf{Theorem S4 (Stabilität von Delegationsnetzwerken):} Ein Delegationsnetzwerk bleibt nur stabil, wenn $d_{\text{max}} \leq d_{\text{krit}} \approx -\frac{\ln(1 - \alpha)}{\ln(k)}$.
+    
+    \item \textbf{Theorem S5 (Bildung als Stabilisator):} Für Stabilität muss gelten: $B(G) \geq B_{\min} = \frac{\gamma_{\text{nat}}}{\beta}$.
+\end{enumerate}
+
+\section*{Anhang C: Mathematische Notation und Konventionen}
+\addcontentsline{toc}{section}{Anhang C: Mathematische Notation und Konventionen}
+\label{anhang:notation}
+
+\begin{itemize}
+    \item Mengen werden mit Großbuchstaben bezeichnet: $I, G, P(G)$
+    \item Indizes bezeichnen Individuen oder Elemente: $i \in I, V_i$
+    \item Funktionen und Maße: $\mathcal{D}(G), \mathfrak{D}(\theta), f(x)$
+    \item Griechische Buchstaben für Parameter: $\varepsilon, \sigma, \theta, \delta, \gamma, \beta, \alpha$
+    \item Operatoren: $\forall$ (für alle), $\exists$ (es existiert), $\in$ (Element von), $\to$ (konvergiert gegen/abbildet auf)
+    \item Logische Verknüpfungen: $\land$ (und), $\Rightarrow$ (impliziert)
+    \item Spezielle Symbole: $\varnothing$ (leere Menge), $\mathbb{R}^+$ (positive reelle Zahlen)
+\end{itemize}
+
+\section*{Anhang D: Literaturverzeichnis}
+\addcontentsline{toc}{section}{Anhang D: Literaturverzeichnis}
+\label{anhang:literatur}
+
+\begin{thebibliography}{99}
+    \bibitem{aristoteles} Aristoteles. \emph{Politik}. Übersetzt und herausgegeben von Olof Gigon. Artemis Verlag, 1971.
+    
+    \bibitem{rousseau} Rousseau, Jean-Jacques. \emph{Vom Gesellschaftsvertrag oder Prinzipien des Staatsrechts}. Reclam, 1762/2003.
+    
+    \bibitem{habermas1} Habermas, Jürgen. \emph{Faktizität und Geltung: Beiträge zur Diskurstheorie des Rechts und des demokratischen Rechtsstaats}. Suhrkamp, 1992.
+    
+    \bibitem{habermas2} Habermas, Jürgen. \emph{Die Einbeziehung des Anderen: Studien zur politischen Theorie}. Suhrkamp, 1996.
+    
+    \bibitem{rawls} Rawls, John. \emph{Eine Theorie der Gerechtigkeit}. Suhrkamp, 1975.
+    
+    \bibitem{piketty} Piketty, Thomas. \emph{Das Kapital im 21. Jahrhundert}. C.H. Beck, 2014.
+    
+    \bibitem{mouffe} Mouffe, Chantal. \emph{Über das Politische: Wider die kosmopolitische Illusion}. Suhrkamp, 2007.
+    
+    \bibitem{luhmann} Luhmann, Niklas. \emph{Die Gesellschaft der Gesellschaft}. 2 Bände. Suhrkamp, 1997.
+    
+    \bibitem{weber} Weber, Max. \emph{Wirtschaft und Gesellschaft: Grundriß der verstehenden Soziologie}. 5. Auflage. Mohr Siebeck, 1972.
+    
+    \bibitem{fishkin} Fishkin, James S. \emph{When the People Speak: Deliberative Democracy and Public Consultation}. Oxford University Press, 2009.
+    
+    \bibitem{landemore} Landemore, Hélène. \emph{Democratic Reason: Politics, Collective Intelligence, and the Rule of the Many}. Princeton University Press, 2013.
+    
+    \bibitem{brennan} Brennan, Jason. \emph{Against Democracy}. Princeton University Press, 2016.
+    
+    \bibitem{osterhammel} Osterhammel, Jürgen. \emph{Die Verwandlung der Welt: Eine Geschichte des 19. Jahrhunderts}. C.H. Beck, 2009.
+    
+    \bibitem{milanovic} Milanović, Branko. \emph{Die ungleiche Welt: Migration, das Eine Prozent und die Zukunft der Mittelschicht}. Suhrkamp, 2016.
+    
+    \bibitem{sen} Sen, Amartya. \emph{Die Idee der Gerechtigkeit}. C.H. Beck, 2010.
+    
+    \bibitem{gaus} Gaus, Gerald F. \emph{The Order of Public Reason: A Theory of Freedom and Morality in a Diverse and Bounded World}. Cambridge University Press, 2011.
+    
+    \bibitem{christiano} Christiano, Thomas. \emph{The Constitution of Equality: Democratic Authority and Its Limits}. Oxford University Press, 2008.
+    
+    \bibitem{epstein} Epstein, Joshua M. und Robert Axtell. \emph{Growing Artificial Societies: Social Science from the Bottom Up}. Brookings Institution Press, 1996.
+    
+    \bibitem{schelling} Schelling, Thomas C. \emph{Micromotives and Macrobehavior}. W. W. Norton \& Company, 1978.
+\end{thebibliography}
+
+\section*{Anhang E: Danksagung (optional)}
+\addcontentsline{toc}{section}{Anhang E: Danksagung}
+\label{anhang:danksagung}
+
+Diese Arbeit entstand im Zuge eines intensiven Gedankenaustauschs zwischen Mensch und künstlicher Intelligenz. Besonderer Dank gilt der konstruktiven Spannung zwischen normativem Idealismus und mathematischer Strenge, die diese Theorie erst hervorgebracht hat. Jede Gesellschaftstheorie ist ein kollektives Produkt – auch wenn sie in der Form eines individuellen Entwurfs erscheint.
+
+„Die Wahrheit ist konkret.“ – Dieser Satz von Hegel begleitete die Entwicklung der Axiome und ihrer praktischen Konsequenzen durch die Variationsrechnung. Möge diese Arbeit dazu beitragen, das Nachdenken über die Grundlagen unseres Zusammenlebens zu vertiefen.
+
+\vspace{1cm}
+\noindent\textit{Verfasst im Geiste demokratischer Radikalität und wissenschaftlicher Bescheidenheit.}
