@@ -1,4 +1,4 @@
-\documentclass[11pt, a4paper]{report}
+\documentclass[11pt, a4paper]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
@@ -15,9 +15,13 @@
 
 \begin{document}
 \maketitle
+
+\frontmatter
+\input{kapitel/00_vorwort}
+
 \tableofcontents
 
-\input{kapitel/00_vorwort}
+\mainmatter
 \input{kapitel/01_axiome}
 \input{kapitel/02_theoreme}
 \input{kapitel/03_variationsrechnung}

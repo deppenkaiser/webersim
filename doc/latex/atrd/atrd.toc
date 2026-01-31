@@ -1,67 +1,67 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{Vorwort}{3}{}%
-\contentsline {chapter}{\numberline {1}Die Axiomatische Grundlegung}{5}{}%
-\contentsline {section}{\numberline {1.1}Einleitung und Ziel der Theorie}{5}{}%
-\contentsline {section}{\numberline {1.2}Das Axiomensystem $\mathcal {S}$}{5}{}%
-\contentsline {subsection}{\numberline {1.2.1}Axiom 1: Der normative Kern -- Wirkliche Demokratie}{5}{}%
-\contentsline {subsection}{\numberline {1.2.2}Axiom 2: Die strukturelle Implikation -- Anti-Parteien-Prinzip}{5}{}%
-\contentsline {subsection}{\numberline {1.2.3}Axiom 3: Die materielle Bedingung -- Begrenzte Ungleichheit}{6}{}%
-\contentsline {subsection}{\numberline {1.2.4}Axiom 4: Das Verfahren -- Epistokratisch-Demokratische Dualität}{6}{}%
-\contentsline {subsection}{\numberline {1.2.5}Axiom 5: Die Meta-Ebene -- Die Unveränderliche Verfassung}{6}{}%
-\contentsline {section}{\numberline {1.3}Synthese: Das axiomatische System $\mathcal {S}$}{7}{}%
-\contentsline {chapter}{\numberline {2}Theoretische Ableitungen und Theoreme}{8}{}%
-\contentsline {section}{\numberline {2.1}Einleitung}{8}{}%
-\contentsline {section}{\numberline {2.2}Grundlegende Definitionen}{8}{}%
-\contentsline {section}{\numberline {2.3}Die Haupttheoreme der $\mathcal {S}$-Gesellschaft}{8}{}%
-\contentsline {subsection}{\numberline {2.3.1}Theorem 1: Die Auflösung des Repräsentationsparadigmas}{8}{}%
-\contentsline {subsection}{\numberline {2.3.2}Theorem 2: Die Notwendigkeit der Bildungsgesellschaft}{9}{}%
-\contentsline {subsection}{\numberline {2.3.3}Theorem 3: Die strukturelle Verhinderung von Kapitaloligarchien}{9}{}%
-\contentsline {subsection}{\numberline {2.3.4}Theorem 4: Wissenschaft als öffentliche und kontrollierte Infrastruktur}{9}{}%
-\contentsline {subsection}{\numberline {2.3.5}Theorem 5: Beschränkte Souveränität}{10}{}%
-\contentsline {section}{\numberline {2.4}Synthese: Die $\mathcal {S}$-Gesellschaft als kohärentes System}{10}{}%
-\contentsline {chapter}{\numberline {3}Die Soziale Variationsrechnung -- Stabilitätsanalyse}{11}{}%
-\contentsline {section}{\numberline {3.1}Einleitung: Methodentransfer von der Physik}{11}{}%
-\contentsline {section}{\numberline {3.2}Formale Grundlagen: Das Demokratizitäts-Funktional}{11}{}%
-\contentsline {section}{\numberline {3.3}Modul 1: Analyse des Parameters $\varepsilon $ (Reichtumsgrenze)}{11}{}%
-\contentsline {subsection}{\numberline {3.3.1}Modellannahmen und Randbedingungen}{11}{}%
-\contentsline {subsection}{\numberline {3.3.2}Variation und Instabilitätsszenarien}{12}{}%
-\contentsline {subsection}{\numberline {3.3.3}Das Theorem des stabilen Intervalls}{12}{}%
-\contentsline {subsection}{\numberline {3.3.4}Praktische Implikationen}{13}{}%
-\contentsline {section}{\numberline {3.4}Modul 2: Analyse des Parameters $N$ (Bevölkerungsgröße)}{13}{}%
-\contentsline {subsection}{\numberline {3.4.1}Das Skalierungsproblem direkter Demokratie}{13}{}%
-\contentsline {subsection}{\numberline {3.4.2}Stabilität durch Netzwerk-Delegation}{13}{}%
-\contentsline {section}{\numberline {3.5}Modul 3: Analyse des Parameters $\sigma $ (Informationsasymmetrie)}{13}{}%
-\contentsline {section}{\numberline {3.6}Synthese: Vulnerabilitäten und Vorhersagen des Systems $\mathcal {S}$}{14}{}%
-\contentsline {section}{\numberline {3.7}Schlussfolgerung}{14}{}%
-\contentsline {chapter}{\numberline {4}Diskussion – Kritik und Verteidigung}{15}{}%
-\contentsline {section}{\numberline {4.1}Einleitung: Die Prüfung der Theorie}{15}{}%
-\contentsline {section}{\numberline {4.2}Kritik 1: Der Utopie-Vorwurf}{15}{}%
-\contentsline {subsection}{\numberline {4.2.1}Die These}{15}{}%
-\contentsline {subsection}{\numberline {4.2.2}Replik: Der konstruktive Charakter der Axiome}{15}{}%
-\contentsline {subsection}{\numberline {4.2.3}Fazit}{16}{}%
-\contentsline {section}{\numberline {4.3}Kritik 2: Das Problem des historischen Wandels (Axiom 5)}{16}{}%
-\contentsline {subsection}{\numberline {4.3.1}Die These}{16}{}%
-\contentsline {subsection}{\numberline {4.3.2}Replik: Flexibilität innerhalb des Rahmens}{16}{}%
-\contentsline {subsection}{\numberline {4.3.3}Fazit}{16}{}%
-\contentsline {section}{\numberline {4.4}Kritik 3: Das Technokratie-Dilemma (Axiom 4)}{16}{}%
-\contentsline {subsection}{\numberline {4.4.1}Die These}{16}{}%
-\contentsline {subsection}{\numberline {4.4.2}Replik: Die Dialektik von Expertise und Demokratie}{17}{}%
-\contentsline {subsection}{\numberline {4.4.3}Fazit}{17}{}%
-\contentsline {section}{\numberline {4.5}Kritik 4: Implementierungs- und Übergangsprobleme}{17}{}%
-\contentsline {subsection}{\numberline {4.5.1}Die These}{17}{}%
-\contentsline {subsection}{\numberline {4.5.2}Replik: Theorie und Praxis}{17}{}%
-\contentsline {subsection}{\numberline {4.5.3}Fazit}{18}{}%
-\contentsline {section}{\numberline {4.6}Vergleich mit bestehenden Demokratietheorien}{18}{}%
-\contentsline {subsection}{\numberline {4.6.1}Habermas' deliberative Demokratie}{18}{}%
-\contentsline {subsection}{\numberline {4.6.2}Rousseaus volonté générale}{18}{}%
-\contentsline {subsection}{\numberline {4.6.3}Moderner Radikaldemokratie (z.B. Mouffe)}{18}{}%
-\contentsline {section}{\numberline {4.7}Synthese: Stärken und Grenzen von $\mathcal {S}$}{18}{}%
-\contentsline {subsection}{\numberline {4.7.1}Die Stärken}{18}{}%
-\contentsline {subsection}{\numberline {4.7.2}Die Grenzen}{18}{}%
-\contentsline {section}{\numberline {4.8}Schlussfolgerung und Ausblick}{19}{}%
-\contentsline {chapter}{Anhang}{20}{}%
-\contentsline {section}{Anhang A: Formales Glossar der Grundbegriffe}{20}{}%
-\contentsline {section}{Anhang B: Vollständige Liste der Axiome und Theoreme}{21}{}%
-\contentsline {section}{Anhang C: Mathematische Notation und Konventionen}{22}{}%
-\contentsline {section}{Anhang D: Literaturverzeichnis}{22}{}%
+\contentsline {chapter}{Vorwort}{i}{}%
+\contentsline {chapter}{\numberline {1}Die Axiomatische Grundlegung}{1}{}%
+\contentsline {section}{\numberline {1.1}Einleitung und Ziel der Theorie}{1}{}%
+\contentsline {section}{\numberline {1.2}Das Axiomensystem $\mathcal {S}$}{1}{}%
+\contentsline {subsection}{\numberline {1.2.1}Axiom 1: Der normative Kern -- Wirkliche Demokratie}{1}{}%
+\contentsline {subsection}{\numberline {1.2.2}Axiom 2: Die strukturelle Implikation -- Anti-Parteien-Prinzip}{1}{}%
+\contentsline {subsection}{\numberline {1.2.3}Axiom 3: Die materielle Bedingung -- Begrenzte Ungleichheit}{2}{}%
+\contentsline {subsection}{\numberline {1.2.4}Axiom 4: Das Verfahren -- Epistokratisch-Demokratische Dualität}{2}{}%
+\contentsline {subsection}{\numberline {1.2.5}Axiom 5: Die Meta-Ebene -- Die Unveränderliche Verfassung}{2}{}%
+\contentsline {section}{\numberline {1.3}Synthese: Das axiomatische System $\mathcal {S}$}{3}{}%
+\contentsline {chapter}{\numberline {2}Theoretische Ableitungen und Theoreme}{5}{}%
+\contentsline {section}{\numberline {2.1}Einleitung}{5}{}%
+\contentsline {section}{\numberline {2.2}Grundlegende Definitionen}{5}{}%
+\contentsline {section}{\numberline {2.3}Die Haupttheoreme der $\mathcal {S}$-Gesellschaft}{5}{}%
+\contentsline {subsection}{\numberline {2.3.1}Theorem 1: Die Auflösung des Repräsentationsparadigmas}{5}{}%
+\contentsline {subsection}{\numberline {2.3.2}Theorem 2: Die Notwendigkeit der Bildungsgesellschaft}{6}{}%
+\contentsline {subsection}{\numberline {2.3.3}Theorem 3: Die strukturelle Verhinderung von Kapitaloligarchien}{6}{}%
+\contentsline {subsection}{\numberline {2.3.4}Theorem 4: Wissenschaft als öffentliche und kontrollierte Infrastruktur}{6}{}%
+\contentsline {subsection}{\numberline {2.3.5}Theorem 5: Beschränkte Souveränität}{7}{}%
+\contentsline {section}{\numberline {2.4}Synthese: Die $\mathcal {S}$-Gesellschaft als kohärentes System}{7}{}%
+\contentsline {chapter}{\numberline {3}Die Soziale Variationsrechnung -- Stabilitätsanalyse}{9}{}%
+\contentsline {section}{\numberline {3.1}Einleitung: Methodentransfer von der Physik}{9}{}%
+\contentsline {section}{\numberline {3.2}Formale Grundlagen: Das Demokratizitäts-Funktional}{9}{}%
+\contentsline {section}{\numberline {3.3}Modul 1: Analyse des Parameters $\varepsilon $ (Reichtumsgrenze)}{9}{}%
+\contentsline {subsection}{\numberline {3.3.1}Modellannahmen und Randbedingungen}{9}{}%
+\contentsline {subsection}{\numberline {3.3.2}Variation und Instabilitätsszenarien}{10}{}%
+\contentsline {subsection}{\numberline {3.3.3}Das Theorem des stabilen Intervalls}{10}{}%
+\contentsline {subsection}{\numberline {3.3.4}Praktische Implikationen}{11}{}%
+\contentsline {section}{\numberline {3.4}Modul 2: Analyse des Parameters $N$ (Bevölkerungsgröße)}{11}{}%
+\contentsline {subsection}{\numberline {3.4.1}Das Skalierungsproblem direkter Demokratie}{11}{}%
+\contentsline {subsection}{\numberline {3.4.2}Stabilität durch Netzwerk-Delegation}{11}{}%
+\contentsline {section}{\numberline {3.5}Modul 3: Analyse des Parameters $\sigma $ (Informationsasymmetrie)}{11}{}%
+\contentsline {section}{\numberline {3.6}Synthese: Vulnerabilitäten und Vorhersagen des Systems $\mathcal {S}$}{12}{}%
+\contentsline {section}{\numberline {3.7}Schlussfolgerung}{12}{}%
+\contentsline {chapter}{\numberline {4}Diskussion – Kritik und Verteidigung}{13}{}%
+\contentsline {section}{\numberline {4.1}Einleitung: Die Prüfung der Theorie}{13}{}%
+\contentsline {section}{\numberline {4.2}Kritik 1: Der Utopie-Vorwurf}{13}{}%
+\contentsline {subsection}{\numberline {4.2.1}Die These}{13}{}%
+\contentsline {subsection}{\numberline {4.2.2}Replik: Der konstruktive Charakter der Axiome}{13}{}%
+\contentsline {subsection}{\numberline {4.2.3}Fazit}{14}{}%
+\contentsline {section}{\numberline {4.3}Kritik 2: Das Problem des historischen Wandels (Axiom 5)}{14}{}%
+\contentsline {subsection}{\numberline {4.3.1}Die These}{14}{}%
+\contentsline {subsection}{\numberline {4.3.2}Replik: Flexibilität innerhalb des Rahmens}{14}{}%
+\contentsline {subsection}{\numberline {4.3.3}Fazit}{14}{}%
+\contentsline {section}{\numberline {4.4}Kritik 3: Das Technokratie-Dilemma (Axiom 4)}{14}{}%
+\contentsline {subsection}{\numberline {4.4.1}Die These}{14}{}%
+\contentsline {subsection}{\numberline {4.4.2}Replik: Die Dialektik von Expertise und Demokratie}{15}{}%
+\contentsline {subsection}{\numberline {4.4.3}Fazit}{15}{}%
+\contentsline {section}{\numberline {4.5}Kritik 4: Implementierungs- und Übergangsprobleme}{15}{}%
+\contentsline {subsection}{\numberline {4.5.1}Die These}{15}{}%
+\contentsline {subsection}{\numberline {4.5.2}Replik: Theorie und Praxis}{15}{}%
+\contentsline {subsection}{\numberline {4.5.3}Fazit}{16}{}%
+\contentsline {section}{\numberline {4.6}Vergleich mit bestehenden Demokratietheorien}{16}{}%
+\contentsline {subsection}{\numberline {4.6.1}Habermas' deliberative Demokratie}{16}{}%
+\contentsline {subsection}{\numberline {4.6.2}Rousseaus volonté générale}{16}{}%
+\contentsline {subsection}{\numberline {4.6.3}Moderner Radikaldemokratie (z.B. Mouffe)}{16}{}%
+\contentsline {section}{\numberline {4.7}Synthese: Stärken und Grenzen von $\mathcal {S}$}{16}{}%
+\contentsline {subsection}{\numberline {4.7.1}Die Stärken}{16}{}%
+\contentsline {subsection}{\numberline {4.7.2}Die Grenzen}{16}{}%
+\contentsline {section}{\numberline {4.8}Schlussfolgerung und Ausblick}{17}{}%
+\contentsline {chapter}{Anhang}{19}{}%
+\contentsline {section}{Anhang A: Formales Glossar der Grundbegriffe}{19}{}%
+\contentsline {section}{Anhang B: Vollständige Liste der Axiome und Theoreme}{20}{}%
+\contentsline {section}{Anhang C: Mathematische Notation und Konventionen}{21}{}%
+\contentsline {section}{Anhang D: Literaturverzeichnis}{21}{}%
 \contentsline {section}{Anhang E: Danksagung}{24}{}%
