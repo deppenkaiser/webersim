@@ -1,21 +1,21 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}%
-\contentsline {section}{\numberline {2}Die Wirbelstruktur der WG}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Der geschwindigkeitsabhängige Term}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Die Wirbeldichte der WG}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Kontinuitätsgleichung für die Wirbeldichte}{4}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Von der WG zur Maxwell-Gravitation}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Identifikation des Vektorpotentials}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Das gravito-magnetische Feld}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Vergleich mit der Wirbeldichte}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Das gravito-elektrische Feld}{5}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Die Maxwell-Gleichungen der Gravitation}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Gaußsches Gesetz für \(\vec {B}_g\)}{5}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Gaußsches Gesetz für \(\vec {E}_g\)}{6}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Faradaysches Gesetz}{6}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Ampèresches Gesetz}{6}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Die vollständigen Maxwell-Gleichungen der Gravitation}{6}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Die Rolle der DSTT als Vermittler}{6}{section.5}%
-\contentsline {section}{\numberline {6}Zusammenfassung der Zusammenhänge}{7}{section.6}%
-\contentsline {section}{\numberline {7}Diskussion und Ausblick}{7}{section.7}%
-\contentsline {section}{\numberline {8}Fazit}{8}{section.8}%
+\contentsline {section}{\numberline {1}Einleitung}{3}{}%
+\contentsline {section}{\numberline {2}Die Wirbelstruktur der WG}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Der geschwindigkeitsabhängige Term}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Die Wirbeldichte der WG}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Kontinuitätsgleichung für die Wirbeldichte}{4}{}%
+\contentsline {section}{\numberline {3}Von der WG zur Maxwell-Gravitation}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Identifikation des Vektorpotentials}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Das gravito-magnetische Feld}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Vergleich mit der Wirbeldichte}{5}{}%
+\contentsline {subsection}{\numberline {3.4}Das gravito-elektrische Feld}{5}{}%
+\contentsline {section}{\numberline {4}Die Maxwell-Gleichungen der Gravitation}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Gaußsches Gesetz für \(\vec {B}_g\)}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Gaußsches Gesetz für \(\vec {E}_g\)}{6}{}%
+\contentsline {subsection}{\numberline {4.3}Faradaysches Gesetz}{6}{}%
+\contentsline {subsection}{\numberline {4.4}Ampèresches Gesetz}{6}{}%
+\contentsline {subsection}{\numberline {4.5}Die vollständigen Maxwell-Gleichungen der Gravitation}{6}{}%
+\contentsline {section}{\numberline {5}Die Rolle der DSTT als Vermittler}{6}{}%
+\contentsline {section}{\numberline {6}Zusammenfassung der Zusammenhänge}{7}{}%
+\contentsline {section}{\numberline {7}Diskussion und Ausblick}{7}{}%
+\contentsline {section}{\numberline {8}Fazit}{8}{}%
