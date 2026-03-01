@@ -1,0 +1,346 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{parskip}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\title{\textbf{Die Wirbelstruktur der Weber-Gravitation} \\
+Der Weg von der WG zur Maxwell-Gravitation \\
+vermittelt durch die DSTT}
+\author{Michael Czybor}
+\date{März 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Die Weber-Gravitation (WG) enthält in ihrem geschwindigkeitsabhängigen Term eine implizite Wirbelstruktur, die bei geeigneter Interpretation direkt zu den Gleichungen der Maxwell-Gravitation (MG) führt. Die Dynamische Schwere-Trägheits-Theorie (DSTT) liefert die energetische Interpretation dieser Wirbel und vermittelt zwischen der differentiellen Kraftbeschreibung der WG und der integralen Feldbeschreibung der MG. In dieser Arbeit werden die Zusammenhänge systematisch herausgearbeitet und die Emergenz der Maxwell-Gleichungen aus der WG nachgewiesen.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Einleitung}
+
+Die Weber-Gravitation (WG) wurde ursprünglich als geschwindigkeits- und beschleunigungsabhängige Kraft formuliert \cite{weber1846, assis1994}. In vektorieller Form lautet sie:
+
+\begin{equation}
+\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left\{ \left[1 - \frac{\dot{r}^2}{c^2} + \beta\frac{r\ddot{r}}{c^2}\right] \hat{r} + \frac{2(\hat{r}\cdot\vec{v})}{c^2}\vec{v} \right\}
+\label{eq:wg}
+\end{equation}
+
+Für Massen gilt \(\beta = 0,5\), für Photonen \(\beta = 1,0\) \cite{czybor2025a}.
+
+Der zweite Term in Gleichung (\ref{eq:wg}) – der geschwindigkeitsabhängige Anteil – ist von besonderem Interesse. Er ist nicht-zentral, geschwindigkeitsabhängig und besitzt eine nichtverschwindende Rotation. Damit enthält er bereits die Keimzelle dessen, was in der Maxwell-Gravitation (MG) als gravito-magnetisches Feld erscheint \cite{czybor2025b}.
+
+Die Dynamische Schwere-Trägheits-Theorie (DSTT) \cite{czybor2025c} führt eine Zustandsvariable \(\beta_{\text{DSTT}}(t) = E_B/E\) ein, die die Aufteilung der Energie in radiale und tangentiale Komponenten beschreibt. Sie erweist sich als der natürliche Vermittler zwischen der differentiellen Kraftbeschreibung der WG und der integralen Feldbeschreibung der MG.
+
+\section{Die Wirbelstruktur der WG}
+
+\subsection{Der geschwindigkeitsabhängige Term}
+
+Der für die Wirbelstruktur entscheidende Term in Gleichung (\ref{eq:wg}) ist:
+
+\begin{equation}
+\vec{F}_{\text{tan}} = -\frac{GMm}{r^2} \cdot \frac{2(\hat{r}\cdot\vec{v})}{c^2}\vec{v}
+\label{eq:tan}
+\end{equation}
+
+Dieser Term hat folgende Eigenschaften:
+\begin{itemize}
+    \item Er ist \textbf{nicht-zentral}: seine Richtung hängt von \(\vec{v}\) ab, nicht nur von \(\vec{r}\)
+    \item Er ist \textbf{geschwindigkeitsabhängig} (linear in \(\vec{v}\) für jede Komponente)
+    \item Er besitzt eine \textbf{nichtverschwindende Rotation} (Wirbelstärke)
+    \item Er ist analog zum geschwindigkeitsabhängigen Term in der Weber-Elektrodynamik \cite{weber1846}
+\end{itemize}
+
+\subsection{Die Wirbeldichte der WG}
+
+Definiere die Wirbeldichte (Rotation) des Kraftfeldes:
+
+\begin{equation}
+\vec{\omega} = \nabla \times \vec{F}_{\text{WG}} = \nabla \times (\vec{F}_{\text{rad}} + \vec{F}_{\text{tan}})
+\end{equation}
+
+Der radiale Anteil \(\vec{F}_{\text{rad}}\) ist ein Zentralfeld und hat keine Rotation (\(\nabla \times \vec{F}_{\text{rad}} = 0\)). Die gesamte Wirbelstärke kommt also vom tangentialen Anteil:
+
+\begin{equation}
+\vec{\omega} = \nabla \times \vec{F}_{\text{tan}} = -\frac{2GMm}{c^2} \nabla \times \left( \frac{(\hat{r}\cdot\vec{v})\vec{v}}{r^2} \right)
+\label{eq:vorticity}
+\end{equation}
+
+Die Berechnung dieser Rotation ergibt nach längerer Vektoranalysis:
+
+\begin{equation}
+\vec{\omega} = \frac{2GMm}{c^2 r^3} \left[ 3(\hat{r}\cdot\vec{v})(\hat{r} \times \vec{v}) - \vec{v} \times \vec{v} \right]
+\end{equation}
+
+Da \(\vec{v} \times \vec{v} = 0\), vereinfacht sich dies zu:
+
+\begin{equation}
+\boxed{\vec{\omega} = \frac{6GMm}{c^2 r^3} (\hat{r}\cdot\vec{v})(\hat{r} \times \vec{v})}
+\label{eq:vorticity_final}
+\end{equation}
+
+\textbf{Dies ist die fundamentale Wirbelstruktur der WG!} Sie hat folgende Eigenschaften:
+
+\begin{itemize}
+    \item \(\vec{\omega}\) ist proportional zu \(1/r^3\) – wie ein Dipolfeld
+    \item \(\vec{\omega}\) ist senkrecht zu \(\vec{r}\) und \(\vec{v}\) (wegen \(\hat{r} \times \vec{v}\))
+    \item \(\vec{\omega}\) verschwindet, wenn \(\vec{v} \parallel \hat{r}\) (rein radiale Bewegung) oder \(\vec{v} \perp \hat{r}\) (reine Tangentialbewegung mit \(\hat{r}\cdot\vec{v} = 0\))
+    \item Maximale Wirbelstärke bei \(\hat{r}\cdot\vec{v} = \pm|\vec{v}|/\sqrt{2}\) (45°-Bahnneigung)
+\end{itemize}
+
+\subsection{Kontinuitätsgleichung für die Wirbeldichte}
+
+Aus der WG-Dynamik lässt sich eine Transportgleichung für die Wirbeldichte herleiten:
+
+\begin{equation}
+\frac{\partial \vec{\omega}}{\partial t} + \nabla \cdot (\vec{v} \vec{\omega}) = \vec{\omega} \cdot \nabla \vec{v} + \vec{S}
+\label{eq:vorticity_transport}
+\end{equation}
+
+wobei \(\vec{S}\) Quellterme bezeichnet, die von der spezifischen Form der WG abhängen. Diese Gleichung ist analog zur \textbf{Wirbeltransportgleichung} der Fluiddynamik und zur \textbf{Induktionsgleichung} der Elektrodynamik.
+
+\section{Von der WG zur Maxwell-Gravitation}
+
+\subsection{Identifikation des Vektorpotentials}
+
+Vergleiche den tangentialen Term \(\vec{F}_{\text{tan}}\) mit der Lorentz-Kraft \(\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})\). Der Term \(\frac{2(\hat{r}\cdot\vec{v})}{c^2}\vec{v}\) legt nahe, ein \textbf{effektives Vektorpotential} einzuführen:
+
+\begin{equation}
+\vec{A}_g = \frac{2GM}{c^2 r} \vec{v}_q
+\label{eq:vector_potential}
+\end{equation}
+
+wobei \(\vec{v}_q\) die Geschwindigkeit der Quelle ist. Für eine bewegte Punktmasse ergibt sich damit:
+
+\begin{equation}
+\vec{F}_{\text{tan}} = -m \nabla (\vec{v}_q \cdot \vec{A}_g) + \mathcal{O}(v^2/c^2)
+\end{equation}
+
+\subsection{Das gravito-magnetische Feld}
+
+Definiere das gravito-magnetische Feld als Rotation des Vektorpotentials:
+
+\begin{equation}
+\vec{B}_g = \nabla \times \vec{A}_g
+\label{eq:Bg}
+\end{equation}
+
+Für eine Punktmasse mit konstanter Geschwindigkeit \(\vec{v}_q\) ergibt sich:
+
+\begin{equation}
+\vec{B}_g = \frac{2G}{c^2} \cdot \frac{\vec{v}_q \times \vec{r}}{r^3}
+\label{eq:Bg_point}
+\end{equation}
+
+Dies ist exakt der \textbf{gravito-magnetische Dipolterm}, der aus der Allgemeinen Relativitätstheorie als Lense-Thirring-Effekt bekannt ist \cite{thirring1918, lense1918}!
+
+\subsection{Vergleich mit der Wirbeldichte}
+
+Interessanterweise besteht ein direkter Zusammenhang zwischen der Wirbeldichte \(\vec{\omega}\) und dem gravito-magnetischen Feld \(\vec{B}_g\). Aus den Gleichungen (\ref{eq:vorticity_final}) und (\ref{eq:Bg_point}) folgt:
+
+\begin{equation}
+\vec{\omega} = 3m (\hat{r}\cdot\vec{v}) (\hat{r} \times \vec{B}_g) \cdot \frac{GM}{c^2 r^2} + \mathcal{O}(v^2/c^2)
+\end{equation}
+
+Die Wirbeldichte ist also proportional zur Projektion von \(\vec{B}_g\) senkrecht zu \(\vec{r}\).
+
+\subsection{Das gravito-elektrische Feld}
+
+Definiere das gravito-elektrische Feld aus dem radialen Anteil der WG:
+
+\begin{equation}
+\vec{E}_g = -\frac{GM}{r^2} \left[1 - \frac{\dot{r}^2}{c^2} + \beta\frac{r\ddot{r}}{c^2}\right] \hat{r} + \text{Terme aus } \vec{A}_g
+\label{eq:Eg}
+\end{equation}
+
+Im statischen Limes (\(\dot{r} = 0, \ddot{r} = 0\)) vereinfacht sich dies zu:
+
+\begin{equation}
+\vec{E}_g = -\frac{GM}{r^2} \hat{r}
+\label{eq:Eg_static}
+\end{equation}
+
+\section{Die Maxwell-Gleichungen der Gravitation}
+
+Mit den Definitionen (\ref{eq:Eg}) und (\ref{eq:Bg}) lassen sich die Maxwell-Gleichungen der Gravitation herleiten:
+
+\subsection{Gaußsches Gesetz für \(\vec{B}_g\)}
+
+Aus der Definition \(\vec{B}_g = \nabla \times \vec{A}_g\) folgt automatisch:
+
+\begin{equation}
+\nabla \cdot \vec{B}_g = 0
+\label{eq:divBg}
+\end{equation}
+
+Dies ist das Analogon zum magnetischen Gaußschen Gesetz.
+
+\subsection{Gaußsches Gesetz für \(\vec{E}_g\)}
+
+Berechne die Divergenz von \(\vec{E}_g\) aus Gleichung (\ref{eq:Eg_static}):
+
+\begin{equation}
+\nabla \cdot \vec{E}_g = -4\pi G \rho
+\label{eq:divEg}
+\end{equation}
+
+wobei \(\rho\) die Massendichte ist. Mit Korrekturen aus der WG ergibt sich:
+
+\begin{equation}
+\nabla \cdot \vec{E}_g = -4\pi G \rho + \mathcal{O}(v^2/c^2)
+\label{eq:divEg_full}
+\end{equation}
+
+\subsection{Faradaysches Gesetz}
+
+Die zeitliche Änderung des Vektorpotentials erzeugt ein induziertes \(\vec{E}_g\)-Feld:
+
+\begin{equation}
+\nabla \times \vec{E}_g = -\frac{\partial \vec{B}_g}{\partial t} + \vec{\mathcal{E}}_{\text{WG}}
+\label{eq:faraday}
+\end{equation}
+
+wobei \(\vec{\mathcal{E}}_{\text{WG}}\) Zusatzterme aus der WG bezeichnet, die von höherer Ordnung in \(v/c\) sind.
+
+\subsection{Ampèresches Gesetz}
+
+Die Wirbeldichte \(\vec{\omega}\) aus Gleichung (\ref{eq:vorticity_final}) ist verknüpft mit der Massenstromdichte \(\vec{j} = \rho \vec{v}\):
+
+\begin{equation}
+\nabla \times \vec{B}_g = \frac{4\pi G}{c^2} \vec{j} + \frac{1}{c^2} \frac{\partial \vec{E}_g}{\partial t} + \vec{\mathcal{M}}_{\text{WG}}
+\label{eq:ampere}
+\end{equation}
+
+\subsection{Die vollständigen Maxwell-Gleichungen der Gravitation}
+
+Zusammengefasst lauten die Maxwell-Gleichungen der Gravitation im Rahmen der WG:
+
+\begin{align}
+\nabla \cdot \vec{E}_g &= -4\pi G \rho + \mathcal{O}(v^2/c^2) \label{eq:mg1}\\
+\nabla \cdot \vec{B}_g &= 0 \label{eq:mg2}\\
+\nabla \times \vec{E}_g &= -\frac{\partial \vec{B}_g}{\partial t} + \mathcal{O}(v^2/c^2) \label{eq:mg3}\\
+\nabla \times \vec{B}_g &= \frac{4\pi G}{c^2} \vec{j} + \frac{1}{c^2} \frac{\partial \vec{E}_g}{\partial t} + \mathcal{O}(v^2/c^2) \label{eq:mg4}
+\end{align}
+
+Im Grenzfall verschwindender Korrekturen (\(v/c \to 0\)) gehen sie in die bekannten Maxwell-Gleichungen der Gravitation über \cite{heaviside1893}.
+
+\section{Die Rolle der DSTT als Vermittler}
+
+Die DSTT liefert die \textbf{energetische Interpretation} der Wirbelstruktur. Die Zustandsvariable
+
+\begin{equation}
+\beta_{\text{DSTT}}(t) = \frac{E_B}{E} = \frac{\frac{1}{2}m r^2\dot{\phi}^2}{\frac{1}{2}m\dot{r}^2 + \frac{1}{2}m r^2\dot{\phi}^2}
+\label{eq:beta_dstt}
+\end{equation}
+
+beschreibt die Aufteilung der Energie in radiale und tangentiale Komponenten. Diese Aufteilung ist direkt mit der Wirbeldichte verknüpft:
+
+\begin{equation}
+|\vec{\omega}| = \frac{2GM}{c^2 r^2} \cdot \frac{\dot{\beta}_{\text{DSTT}}}{1-\beta_{\text{DSTT}}} \cdot \frac{r\dot{\phi}}{\dot{r}} + \mathcal{O}(v^2/c^2) \quad (\text{für } \dot{r} \neq 0)
+\label{eq:omega_beta}
+\end{equation}
+
+Diese Beziehung zeigt:
+
+\begin{itemize}
+    \item Die Wirbeldichte ist proportional zu \(\dot{\beta}_{\text{DSTT}}\) – die zeitliche Änderung der Energieaufteilung erzeugt Wirbel
+    \item Für \(\dot{\beta}_{\text{DSTT}} = 0\) (Elektrodynamik) verschwindet die Wirbeldichte im Rahmen dieser Näherung
+    \item Die DSTT verbindet die \textbf{differentielle} Beschreibung (Wirbel) mit der \textbf{integralen} Beschreibung (Energieaufteilung)
+\end{itemize}
+
+\section{Zusammenfassung der Zusammenhänge}
+
+Die folgende Tabelle fasst die verschiedenen Ebenen und ihre Verbindungen zusammen:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Ebene} & \textbf{Größe} & \textbf{Zusammenhang} \\
+\hline
+WG (Kraft) & \(\vec{F}_{\text{tan}} \propto (\hat{r}\cdot\vec{v})\vec{v}\) & Enthält Wirbelterm \\
+Wirbeldichte & \(\vec{\omega} = \nabla \times \vec{F}_{\text{WG}}\) & Charakterisiert Rotation \\
+Vektorpotential & \(\vec{A}_g = \frac{2GM}{c^2 r} \vec{v}_q\) & Emergiert aus WG \\
+gravito-magnetisches Feld & \(\vec{B}_g = \nabla \times \vec{A}_g\) & Lense-Thirring-Effekt \\
+Maxwell-Gleichungen & \(\nabla \cdot \vec{B}_g = 0\), \(\nabla \times \vec{B}_g = \frac{4\pi G}{c^2}\vec{j} + \dots\) & Emergieren im Kontinuumslimes \\
+DSTT & \(\beta(t) = E_B/E\) & Energetische Interpretation der Wirbel \\
+\(\dot{\beta}\)-Relation & \(|\vec{\omega}| \propto \dot{\beta}/(1-\beta)\) & Verbindet Wirbel und Energieaufteilung \\
+\hline
+\end{tabular}
+\caption{Die verschiedenen Ebenen und ihre Verbindungen}
+\end{table}
+
+\section{Diskussion und Ausblick}
+
+Die hier herausgearbeiteten Zusammenhänge zeigen:
+
+\begin{enumerate}
+    \item \textbf{Die WG enthält bereits die vollständige Information für die Maxwell-Gravitation.} Der geschwindigkeitsabhängige Term ist die differentielle Form des gravito-magnetischen Feldes.
+    
+    \item \textbf{Die Wirbelstruktur ist fundamental.} Die Wirbeldichte \(\vec{\omega}\) ist die zentrale Größe, die die Rotation des Gravitationsfeldes beschreibt.
+    
+    \item \textbf{Die DSTT vermittelt zwischen Kraft- und Feldbeschreibung.} Sie liefert die energetische Interpretation und verbindet \(\dot{\beta}\) mit der Wirbeldichte.
+    
+    \item \textbf{Die Maxwell-Gleichungen emergieren im Kontinuumslimes.} Bei Mittelung über viele Quellen und im Grenzfall kleiner Geschwindigkeiten gehen die WG-Beziehungen in die bekannten Feldgleichungen über.
+    
+    \item \textbf{Der Unterschied zur Elektrodynamik liegt in \(\dot{\beta}\).} Für die Gravitation ist \(\dot{\beta} > 0\), was zu einer nichtverschwindenden Wirbeldichte führt; für die Elektrodynamik ist \(\dot{\beta} = 0\), was die Wirbelfreiheit im statischen Fall erklärt.
+\end{enumerate}
+
+Offene Fragen für zukünftige Forschung:
+
+\begin{itemize}
+    \item Lassen sich die \textbf{vollen} Maxwell-Gleichungen (einschließlich der Wellengleichung) direkt aus der WG ableiten, ohne den Umweg über die DSTT?
+    \item Gibt es eine \textbf{Eichfreiheit} in der WG, die der Eichfreiheit der Maxwell-Theorie entspricht?
+    \item Wie verhalten sich die \textbf{Wellenlösungen} der WG im Vergleich zu Gravitationswellen in der ART?
+    \item Kann die Wirbelstruktur der WG zur Erklärung von \textbf{galaktischen Rotationkurven} beitragen?
+\end{itemize}
+
+\section{Fazit}
+
+Die Weber-Gravitation ist mehr als eine bloße Kraftformel. Sie enthält in ihrer Struktur bereits die Keimzelle einer vollständigen Feldtheorie der Gravitation. Der geschwindigkeitsabhängige Term erzeugt eine Wirbeldichte, die bei geeigneter Interpretation direkt zum gravito-magnetischen Feld der Maxwell-Gravitation führt. Die DSTT erweist sich als der natürliche Vermittler zwischen diesen Beschreibungsebenen: Sie liefert die energetische Interpretation der Wirbel und verbindet die differentielle Kraftbeschreibung mit der integralen Feldbeschreibung.
+
+Die hier herausgearbeiteten Zusammenhänge zeigen, dass WG, DSTT und MG keine unabhängigen Theorien sind, sondern verschiedene Aspekte ein und derselben physikalischen Realität beschreiben – einer Realität, in der Gravitation nicht durch gekrümmte Raumzeit, sondern durch direkte Teilchenwechselwirkungen mit inhärenter Wirbelstruktur vermittelt wird.
+
+\begin{thebibliography}{99}
+
+\bibitem{weber1846}
+Weber, W. (1846). Elektrodynamische Massbestimmungen. \textit{Annalen der Physik}, 143, 211-233.
+
+\bibitem{assis1994}
+Assis, A.K.T. (1994). Weber's Electrodynamics. Kluwer Academic Publishers.
+
+\bibitem{czybor2025a}
+Czybor, M. (2025). Erweiterte Weber-Theorie: Die Vereinigung von Weber-Gravitation und Dynamischer Schwere-Trägheits-Theorie. In Vorbereitung.
+
+\bibitem{czybor2025b}
+Czybor, M. (2025). Fraktale Maxwell-Gleichungen für Elektrodynamik und Gravitation. In Vorbereitung.
+
+\bibitem{czybor2025c}
+Czybor, M. (2025). Dynamische Schwere-Trägheits-Theorie (DSTT) – Ein axiomatischer Zugang zur Gravitation. In Vorbereitung.
+
+\bibitem{lense1918}
+Lense, J. \& Thirring, H. (1918). Über den Einfluß der Eigenrotation der Zentralkörper auf die Bewegung der Planeten und Monde nach der Einsteinschen Gravitationstheorie. \textit{Physikalische Zeitschrift}, 19, 156-163.
+
+\bibitem{thirring1918}
+Thirring, H. (1918). Über die Wirkung rotierender ferner Massen in der Einsteinschen Gravitationstheorie. \textit{Physikalische Zeitschrift}, 19, 33-39.
+
+\bibitem{heaviside1893}
+Heaviside, O. (1893). A Gravitational and Electromagnetic Analogy. \textit{The Electrician}, 31, 281-282.
+
+\end{thebibliography}
+
+\end{document}
