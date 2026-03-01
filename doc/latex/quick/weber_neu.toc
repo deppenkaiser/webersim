@@ -1,0 +1,11 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{2}{}%
+\contentsline {section}{\numberline {2}Das Problem: Zwei verschiedene \(\beta \)}{2}{}%
+\contentsline {section}{\numberline {3}Die Identitätsbeziehung}{3}{}%
+\contentsline {section}{\numberline {4}Analytische Herleitung der Beziehung zwischen \(\beta _{\text {WG}}\) und \(\dot {\beta }_{\text {DSTT}}\)}{3}{}%
+\contentsline {section}{\numberline {5}Die Kopplungsgleichung}{4}{}%
+\contentsline {section}{\numberline {6}Numerische Verifikation}{4}{}%
+\contentsline {section}{\numberline {7}Übertragung auf die Elektrodynamik}{4}{}%
+\contentsline {section}{\numberline {8}Die Erweiterte Weber-Theorie}{5}{}%
+\contentsline {section}{\numberline {9}Konsequenzen und Ausblick}{6}{}%
+\contentsline {section}{\numberline {10}Zusammenfassung}{6}{}%

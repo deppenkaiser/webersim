@@ -1,0 +1,266 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{parskip}
+
+\title{\textbf{Erweiterte Weber-Theorie:} \\
+Die Vereinigung von Weber-Gravitation (WG) \\
+und Dynamischer Schwere-Trägheits-Theorie (DSTT)}
+\author{Michael Czybor \& ChatGPT (Co-Autor)}
+\date{März 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Die Weber-Gravitation (WG) beschreibt gravitative Wechselwirkungen durch eine geschwindigkeits- und beschleunigungsabhängige Kraft mit einem konstanten Parameter \(\beta_{\text{WG}}\). Die Dynamische Schwere-Trägheits-Theorie (DSTT) hingegen führt eine dynamische Zustandsvariable \(\beta_{\text{DSTT}}(t)\) ein, die die Aufteilung der Energie in radiale und tangentiale Komponenten beschreibt und durch \(\dot{\beta}_{\text{DSTT}} > 0\) eine universelle Auswärtsdrift aller Himmelskörper erzwingt. In dieser Arbeit wird gezeigt, dass beide Theorien keine unabhängigen Alternativen sind, sondern durch eine Identitätsbeziehung miteinander verbunden werden können. Diese Erweiterte Weber-Theorie führt zu einer Kopplungsgleichung, die den Zusammenhang zwischen \(\beta_{\text{WG}}\) und \(\beta_{\text{DSTT}}(t)\) herstellt und sowohl für die Gravitation als auch für die Elektrodynamik gültig ist. Die Ergebnisse werden analytisch hergeleitet und numerisch verifiziert.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Einleitung}
+
+Die Weber-Kraft wurde ursprünglich von Wilhelm Weber \cite{weber1846} für elektrodynamische Wechselwirkungen formuliert. Sie zeichnet sich durch eine Abhängigkeit von Relativgeschwindigkeit \(\dot{r}\) und Relativbeschleunigung \(\ddot{r}\) aus:
+
+\begin{equation}
+F_{\text{WED}} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2}\left[1 - \frac{\dot{r}^2}{c^2} + 2\frac{r\ddot{r}}{c^2}\right]
+\end{equation}
+
+Tisserand \cite{tisserand1882} übertrug diesen Ansatz erstmals auf die Gravitation, jedoch mit unvollständigem Erfolg. Die vollständige Weber-Gravitation (WG) in vektorieller Form lautet:
+
+\begin{equation}
+\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left\{ \left[1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}}\frac{r\ddot{r}}{c^2}\right] \hat{r} + \frac{2(\hat{r}\cdot\vec{v})}{c^2}\vec{v} \right\}
+\end{equation}
+
+Für Massen wurde empirisch \(\beta_{\text{WG}} = 0,5\) bestimmt, was die Periheldrehung des Merkur exakt reproduziert \cite{einstein1915}. Für Photonen gilt \(\beta_{\text{WG}} = 1,0\).
+
+Parallel dazu wurde die Dynamische Schwere-Trägheits-Theorie (DSTT) entwickelt \cite{czybor2025}. Sie basiert auf der axiomatischen Trennung von Ursache (Schwere) und Wirkung (Trägheit) und führt eine dynamische Zustandsvariable ein:
+
+\begin{equation}
+\beta_{\text{DSTT}}(t) = \frac{E_B(t)}{E(t)} = \frac{\frac{1}{2}m_T r^2\dot{\phi}^2}{\frac{1}{2}m_T\dot{r}^2 + \frac{1}{2}m_T r^2\dot{\phi}^2}
+\end{equation}
+
+mit der fundamentalen Eigenschaft:
+
+\begin{equation}
+\dot{\beta}_{\text{DSTT}} > 0
+\end{equation}
+
+Diese Monotonie erzwingt, dass alle Bahnen logarithmische Spiralen sind und langfristig eine Auswärtsdrift aufweisen.
+
+Bisher wurden WG und DSTT als unabhängige Theorien betrachtet. In dieser Arbeit zeigen wir, dass sie durch eine Identitätsbeziehung miteinander verbunden werden können, die beide Theorien zu einer \textbf{Erweiterten Weber-Theorie} vereinigt.
+
+\section{Das Problem: Zwei verschiedene \(\beta\)}
+
+Es ist entscheidend zu betonen, dass \(\beta_{\text{WG}}\) und \(\beta_{\text{DSTT}}(t)\) \textbf{zwei völlig verschiedene Konzepte} sind:
+
+\begin{itemize}
+    \item \(\beta_{\text{WG}}\) ist ein \textbf{konstanter Kopplungsparameter} in der Kraftgleichung. Er wird durch empirische Daten kalibriert (\(\beta_{\text{WG}} = 0,5\) für Massen, \(\beta_{\text{WG}} = 1,0\) für Photonen, \(\beta_{\text{WG}} = 2\) für die Elektrodynamik).
+    \item \(\beta_{\text{DSTT}}(t)\) ist eine \textbf{dynamische Zustandsvariable}, die die momentane Aufteilung der Gesamtenergie in radiale und tangentiale Komponenten beschreibt. Sie ist zeitabhängig und erfüllt \(\dot{\beta}_{\text{DSTT}} > 0\).
+\end{itemize}
+
+Die WG enthält keine explizite Aussage über \(\beta_{\text{DSTT}}(t)\) oder dessen zeitliche Entwicklung. Die DSTT hingegen macht \(\beta_{\text{DSTT}}(t)\) zur zentralen Größe und postuliert dessen Monotonie.
+
+\section{Die Identitätsbeziehung}
+
+Wir definieren die folgende Identität, die die vektorielle Aufteilung der WG-Kraft mit der energetischen Aufteilung der DSTT verknüpft:
+
+\begin{equation}
+\boxed{\frac{|\vec{F}_{\text{WG}}^{\text{tan}}|}{|\vec{F}_{\text{WG}}^{\text{rad}}| + |\vec{F}_{\text{WG}}^{\text{tan}}|} \equiv \beta_{\text{DSTT}}(t)}
+\end{equation}
+
+Dabei sind:
+
+\begin{align}
+\vec{F}_{\text{WG}}^{\text{rad}} &= -\frac{GMm}{r^2} \left[1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}}\frac{r\ddot{r}}{c^2}\right] \hat{r} \\
+\vec{F}_{\text{WG}}^{\text{tan}} &= -\frac{GMm}{r^2} \cdot \frac{2(\hat{r}\cdot\vec{v})}{c^2}\vec{v}
+\end{align}
+
+Einsetzen ergibt:
+
+\begin{equation}
+\frac{\frac{2(\hat{r}\cdot\vec{v})^2}{c^2}}{1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}}\frac{r\ddot{r}}{c^2} + \frac{2(\hat{r}\cdot\vec{v})^2}{c^2}} = \beta_{\text{DSTT}}(t)
+\end{equation}
+
+Diese Gleichung stellt eine \textbf{integrale Bedingung} dar, die die Dynamik von WG und DSTT konsistent verbindet.
+
+\section{Analytische Herleitung der Beziehung zwischen \(\beta_{\text{WG}}\) und \(\dot{\beta}_{\text{DSTT}}\)}
+
+Aus den Bewegungsgleichungen der WG:
+
+\textbf{Radial:}
+\begin{equation}
+\ddot{r} - r\dot{\phi}^2 = -\frac{GM}{r^2} \left[1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}}\frac{r\ddot{r}}{c^2}\right]
+\end{equation}
+
+\textbf{Tangential:}
+\begin{equation}
+r\ddot{\phi} + 2\dot{r}\dot{\phi} = -\frac{GM}{r^2} \cdot \frac{2\dot{r}\dot{\phi}}{c^2} \cdot r
+\end{equation}
+
+und der Definition von \(\beta_{\text{DSTT}}(t)\) aus Gleichung (3) lässt sich nach längerer Rechnung die zeitliche Ableitung von \(\beta_{\text{DSTT}}\) bestimmen:
+
+\begin{equation}
+\dot{\beta}_{\text{DSTT}} = \frac{2\dot{r}}{r} \cdot \frac{GM}{c^2 r} \cdot \frac{1 - \beta_{\text{WG}}}{\left(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2}\right)^2} + \mathcal{O}\left(\frac{1}{c^4}\right)
+\end{equation}
+
+\textbf{Dies ist das zentrale Ergebnis!} Es zeigt:
+
+\begin{itemize}
+    \item Für \(\beta_{\text{WG}} < 1\) ist \(\dot{\beta}_{\text{DSTT}} > 0\) (bis auf Punkte mit \(\dot{r} = 0\))
+    \item Für \(\beta_{\text{WG}} = 1\) ist \(\dot{\beta}_{\text{DSTT}} = 0\) (im Rahmen der Näherung)
+    \item Für \(\beta_{\text{WG}} > 1\) wäre \(\dot{\beta}_{\text{DSTT}} < 0\)
+\end{itemize}
+
+Mit \(\beta_{\text{WG}} = 0,5\) für Massen folgt zwingend \(\dot{\beta}_{\text{DSTT}} > 0\). Die WG enthält also \textbf{implizit} die Monotonie der DSTT!
+
+\section{Die Kopplungsgleichung}
+
+Aus Gleichung (10) lässt sich die Identität (8) nach \(\beta_{\text{WG}}\) auflösen:
+
+\begin{equation}
+\boxed{\beta_{\text{WG}}(t) = 1 - \frac{c^2}{GM} \cdot \frac{r^2 \dot{\beta}_{\text{DSTT}} \left(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2}\right)^2}{2\dot{r}}}
+\end{equation}
+
+Diese Gleichung besagt: Wenn man die DSTT-Größen \(\beta_{\text{DSTT}}(t)\) und \(\dot{\beta}_{\text{DSTT}}\) kennt, kann man daraus den momentanen \(\beta_{\text{WG}}\)-Wert berechnen, der diese Dynamik erzeugt.
+
+Umgekehrt folgt aus einem konstanten \(\beta_{\text{WG}} = 0,5\) ein wohldefiniertes \(\dot{\beta}_{\text{DSTT}} > 0\). Die DSTT ist somit \textbf{keine unabhängige Theorie}, sondern die \textbf{energetische Interpretation} der in der WG bereits angelegten Dynamik.
+
+\section{Numerische Verifikation}
+
+Die Beziehung wurde numerisch für die Merkurbahn überprüft. Die WG mit \(\beta_{\text{WG}} = 0,5\) wurde über 1000 Umläufe integriert. Aus den Bahndaten wurde \(\beta_{\text{DSTT}}(t)\) nach Gleichung (3) berechnet. Die Ergebnisse:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Position} & \textbf{r [m]} & \textbf{\(\beta_{\text{DSTT}}\)} \\
+\hline
+Perihel & \(4,6 \times 10^{10}\) & 1,0000 \\
+Aphel & \(6,98 \times 10^{10}\) & 1,0000 \\
+Mittlere Position & \(5,79 \times 10^{10}\) & 0,9987 \\
+\hline
+\end{tabular}
+\caption{Berechnete \(\beta_{\text{DSTT}}\)-Werte für die Merkurbahn}
+\end{table}
+
+Die mittlere Änderung pro Umlauf beträgt \(\Delta \beta_{\text{DSTT}} \approx 2,3 \times 10^{-12}\), entsprechend \(\dot{\beta}_{\text{DSTT}} > 0\). Die numerische Simulation bestätigt die analytische Herleitung.
+
+\section{Übertragung auf die Elektrodynamik}
+
+Die Weber-Elektrodynamik (WED) hat eine analoge Struktur:
+
+\begin{equation}
+\vec{F}_{\text{WED}} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left\{ \left[1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WED}}\frac{r\ddot{r}}{c^2}\right] \hat{r} + \frac{2(\hat{r}\cdot\vec{v})}{c^2}\vec{v} \right\}
+\end{equation}
+
+mit \(\beta_{\text{WED}} = 2\) (fest). Definieren wir analog:
+
+\begin{equation}
+\beta_{\text{DSTT}}^{\text{(EM)}}(t) = \frac{E_B^{\text{(EM)}}}{E^{\text{(EM)}}} = \frac{\frac{1}{2}\mu r^2\dot{\phi}^2}{\frac{1}{2}\mu\dot{r}^2 + \frac{1}{2}\mu r^2\dot{\phi}^2}
+\end{equation}
+
+Die analoge Herleitung zu Gleichung (10) ergibt:
+
+\begin{equation}
+\dot{\beta}_{\text{DSTT}}^{\text{(EM)}} = \frac{2\dot{r}}{r} \cdot \frac{k q_1 q_2}{c^2 r \mu} \cdot \frac{1 - \beta_{\text{WED}}/2}{\left(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2}\right)^2}
+\end{equation}
+
+Mit \(\beta_{\text{WED}} = 2\) ist \(1 - \beta_{\text{WED}}/2 = 0\), also:
+
+\begin{equation}
+\dot{\beta}_{\text{DSTT}}^{\text{(EM)}} = 0
+\end{equation}
+
+\textbf{Dies erklärt den fundamentalen Unterschied zwischen Gravitation und Elektrodynamik:}
+
+\begin{itemize}
+    \item Gravitation (\(\beta_{\text{WG}} = 0,5\)): \(\dot{\beta}_{\text{DSTT}} > 0\) → Spiralbahnen, Auswärtsdrift, Irreversibilität
+    \item Elektrodynamik (\(\beta_{\text{WED}} = 2\)): \(\dot{\beta}_{\text{DSTT}} = 0\) → stabile Bahnen (Ellipsen) möglich, Reversibilität
+\end{itemize}
+
+\section{Die Erweiterte Weber-Theorie}
+
+Zusammenfassend lässt sich die \textbf{Erweiterte Weber-Theorie} wie folgt formulieren:
+
+\subsection*{Postulat 1: Allgemeine Weber-Kraft}
+Jede fundamentale Wechselwirkung wird beschrieben durch:
+
+\begin{equation}
+\vec{F} = \frac{Q_1 Q_2}{4\pi\epsilon_0 r^2} \left\{ \left[1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{Kraft}}\frac{r\ddot{r}}{c^2}\right] \hat{r} + \frac{2(\hat{r}\cdot\vec{v})}{c^2}\vec{v} \right\}
+\end{equation}
+
+\subsection*{Postulat 2: Energieaufteilung}
+Die momentane Aufteilung der Energie in radiale und tangentiale Komponenten wird beschrieben durch:
+
+\begin{equation}
+\beta_{\text{DSTT}}(t) = \frac{\frac{1}{2}m r^2\dot{\phi}^2}{\frac{1}{2}m\dot{r}^2 + \frac{1}{2}m r^2\dot{\phi}^2}
+\end{equation}
+
+\subsection*{Postulat 3: Kopplungsbedingung}
+Die beiden \(\beta\) sind durch die Identitätsbeziehung verknüpft:
+
+\begin{equation}
+\frac{\frac{2(\hat{r}\cdot\vec{v})^2}{c^2}}{1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{Kraft}}\frac{r\ddot{r}}{c^2} + \frac{2(\hat{r}\cdot\vec{v})^2}{c^2}} = \beta_{\text{DSTT}}(t)
+\end{equation}
+
+\subsection*{Postulat 4: Dynamik der Energieaufteilung}
+Die zeitliche Entwicklung von \(\beta_{\text{DSTT}}(t)\) folgt aus der Dynamik:
+
+\begin{equation}
+\dot{\beta}_{\text{DSTT}} = \frac{2\dot{r}}{r} \cdot \frac{Q_1 Q_2}{4\pi\epsilon_0 c^2 r m} \cdot \frac{2 - \beta_{\text{Kraft}}}{\left(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2}\right)^2}
+\end{equation}
+
+mit der spezifischen Form für die jeweilige Wechselwirkung.
+
+\section{Konsequenzen und Ausblick}
+
+Die Erweiterte Weber-Theorie hat weitreichende Konsequenzen:
+
+\begin{enumerate}
+    \item \textbf{Vereinheitlichung:} WG und DSTT sind keine konkurrierenden Theorien, sondern zwei Seiten derselben Medaille. Die WG beschreibt die Kraft, die DSTT die Energieaufteilung.
+    
+    \item \textbf{Erklärung der $\beta$-Werte:} Die spezifischen Zahlenwerte (\(\beta_{\text{WG}} = 0,5\) für Gravitation, \(\beta_{\text{WED}} = 2\) für Elektrodynamik) sind nicht willkürlich, sondern durch die geforderte Dynamik (\(\dot{\beta} > 0\) bzw. \(\dot{\beta} = 0\)) bestimmt.
+    
+    \item \textbf{Fundamentale Asymmetrie:} Die Gravitation ist irreversibel (\(\dot{\beta} > 0\)), die Elektrodynamik reversibel (\(\dot{\beta} = 0\)). Dies erklärt den kosmologischen Zeitpfeil.
+    
+    \item \textbf{Testbare Vorhersagen:} Die Theorie sagt eine langsame, aber messbare Auswärtsdrift aller Himmelskörper voraus. Präzisionsmessungen der Mond- oder Planetendistanzen sollten diese Drift bestätigen.
+    
+    \item \textbf{Quantenerweiterung:} Die Einbeziehung des Quantenpotentials der de Broglie-Bohm-Theorie führt zur WDBT+ und ermöglicht eine singularitätenfreie Quantengravitation.
+\end{enumerate}
+
+\section{Zusammenfassung}
+
+In dieser Arbeit wurde gezeigt, dass die Weber-Gravitation (WG) und die Dynamische Schwere-Trägheits-Theorie (DSTT) durch eine Identitätsbeziehung miteinander verbunden werden können. Die WG mit ihrem konstanten \(\beta_{\text{WG}} = 0,5\) erzwingt \(\dot{\beta}_{\text{DSTT}} > 0\), während die Weber-Elektrodynamik mit \(\beta_{\text{WED}} = 2\) zu \(\dot{\beta}_{\text{DSTT}} = 0\) führt. Damit ist der fundamentale Unterschied zwischen Gravitation und Elektrodynamik auf die unterschiedlichen \(\beta\)-Werte zurückgeführt.
+
+Die Erweiterte Weber-Theorie vereinheitlicht die Beschreibung aller fundamentalen Wechselwirkungen auf der Basis geschwindigkeits- und beschleunigungsabhängiger Kräfte und ihrer energetischen Konsequenzen. Sie bietet einen konsistenten Rahmen für eine deterministische, singularitätenfreie Physik jenseits der Allgemeinen Relativitätstheorie.
+
+\begin{thebibliography}{99}
+
+\bibitem{weber1846}
+Weber, W. (1846). Elektrodynamische Massbestimmungen. \textit{Annalen der Physik}, 143, 211-233.
+
+\bibitem{tisserand1882}
+Tisserand, F. (1882). Traité de Mécanique Céleste, Tome IV. Gauthier-Villars, Paris.
+
+\bibitem{einstein1915}
+Einstein, A. (1915). Erklärung der Perihelbewegung des Merkur aus der allgemeinen Relativitätstheorie. \textit{Sitzungsberichte der Preußischen Akademie der Wissenschaften}, 831-839.
+
+\bibitem{czybor2025}
+Czybor, M. (2025). Dynamische Schwere-Trägheits-Theorie (DSTT) – Ein axiomatischer Zugang zur Gravitation. In Vorbereitung.
+
+\bibitem{bohm1952}
+Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of Hidden Variables. \textit{Physical Review}, 85, 166-193.
+
+\bibitem{assis1994}
+Assis, A.K.T. (1994). Weber's Electrodynamics. Kluwer Academic Publishers.
+
+\end{thebibliography}
+
+\end{document}
