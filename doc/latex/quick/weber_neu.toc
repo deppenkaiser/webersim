@@ -1,11 +1,15 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{2}{}%
-\contentsline {section}{\numberline {2}Das Problem: Zwei verschiedene \(\beta \)}{2}{}%
-\contentsline {section}{\numberline {3}Die Identitätsbeziehung}{3}{}%
-\contentsline {section}{\numberline {4}Analytische Herleitung der Beziehung zwischen \(\beta _{\text {WG}}\) und \(\dot {\beta }_{\text {DSTT}}\)}{3}{}%
-\contentsline {section}{\numberline {5}Die Kopplungsgleichung}{4}{}%
-\contentsline {section}{\numberline {6}Numerische Verifikation}{4}{}%
-\contentsline {section}{\numberline {7}Übertragung auf die Elektrodynamik}{4}{}%
-\contentsline {section}{\numberline {8}Die Erweiterte Weber-Theorie}{5}{}%
-\contentsline {section}{\numberline {9}Konsequenzen und Ausblick}{6}{}%
-\contentsline {section}{\numberline {10}Zusammenfassung}{6}{}%
+\contentsline {section}{\numberline {1}Einleitung}{3}{}%
+\contentsline {section}{\numberline {2}Das Problem: Zwei verschiedene \(\beta \)}{3}{}%
+\contentsline {section}{\numberline {3}Die Identitätsbeziehung}{4}{}%
+\contentsline {section}{\numberline {4}Analytische Herleitung der Beziehung zwischen \(\beta _{\text {WG}}\) und \(\dot {\beta }_{\text {DSTT}}\)}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Mittelung über einen Umlauf}{5}{}%
+\contentsline {section}{\numberline {5}Die Kopplungsgleichung}{5}{}%
+\contentsline {section}{\numberline {6}Numerische Verifikation}{5}{}%
+\contentsline {section}{\numberline {7}Die Änderung der Exzentrizität}{6}{}%
+\contentsline {section}{\numberline {8}Perfekte Kreisbahnen sind unmöglich}{6}{}%
+\contentsline {section}{\numberline {9}Entropie der Gravitation}{7}{}%
+\contentsline {section}{\numberline {10}Übertragung auf die Elektrodynamik}{7}{}%
+\contentsline {section}{\numberline {11}Die Erweiterte Weber-Theorie}{8}{}%
+\contentsline {section}{\numberline {12}Konsequenzen und Ausblick}{8}{}%
+\contentsline {section}{\numberline {13}Zusammenfassung}{9}{}%
