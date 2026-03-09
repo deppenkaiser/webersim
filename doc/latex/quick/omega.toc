@@ -6,5 +6,13 @@
 \contentsline {section}{\numberline {4}Die Bewegungsgleichung}{5}{}%
 \contentsline {section}{\numberline {5}Die DSTT-Variable $\beta $}{5}{}%
 \contentsline {section}{\numberline {6}Zentralfeld-Lösung und Spiralbahnen}{5}{}%
-\contentsline {section}{\numberline {7}Kosmologische Konsequenzen}{6}{}%
-\contentsline {section}{\numberline {8}Zusammenfassung: Die $\vec {\Omega }$-Theorie im Kontext}{6}{}%
+\contentsline {section}{\numberline {7}Omega-Wellen: Gravitationswellen in der $\vec {\Omega }$-Theorie}{6}{}%
+\contentsline {subsection}{\numberline {7.1}Die fundamentale Natur der Omega-Wellen}{6}{}%
+\contentsline {subsection}{\numberline {7.2}Die emergente Retardierung im fraktalen Raum}{7}{}%
+\contentsline {subsection}{\numberline {7.3}Die effektive Wellengleichung}{7}{}%
+\contentsline {subsection}{\numberline {7.4}Unterschiede zu ART-Wellen}{7}{}%
+\contentsline {subsection}{\numberline {7.5}Testable Vorhersagen}{7}{}%
+\contentsline {subsection}{\numberline {7.6}Interpretation der LIGO/Virgo-Daten}{8}{}%
+\contentsline {subsection}{\numberline {7.7}Fazit}{8}{}%
+\contentsline {section}{\numberline {8}Kosmologische Konsequenzen}{9}{}%
+\contentsline {section}{\numberline {9}Zusammenfassung: Die $\vec {\Omega }$-Theorie im Kontext}{9}{}%
