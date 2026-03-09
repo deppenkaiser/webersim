@@ -1,0 +1,165 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+
+\title{\textbf{Die $\vec{\Omega}$-Theorie der Gravitation} \\ \large Eine rotationsbasierte, nicht-lokale Feldtheorie, emergiert aus der WDBT+}
+\author{Michael Czybor}
+\date{März 2026}
+
+\newtheorem{axiom}{Axiom}
+\newtheorem{definition}{Definition}
+\newtheorem{satz}{Satz}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Die $\vec{\Omega}$-Theorie ist eine nicht-lokale, instantane Feldtheorie der Gravitation. Sie basiert auf der fundamentalen Idee, dass Gravitation nicht durch Krümmung der Raumzeit, sondern durch ein fundamentales Rotationsfeld $\vec{\Omega}$ vermittelt wird. Die Theorie emergiert aus der feldlosen WDBT+ (Weber-de Broglie-Bohm-Theorie mit fraktalem Raum) und der DSTT (Dynamischen Schwere-Trägheits-Theorie). Sie stellt die Rotationsanalogie zur Allgemeinen Relativitätstheorie dar, unterscheidet sich jedoch fundamental durch ihre Nicht-Lokalität, Instantaneität und die intrinsische Irreversibilität ($\dot{\beta} > 0$), die zur Nicht-Erhaltung des Drehimpulses führt.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Einleitung: Vom Teilchen zum Feld}
+
+Die WDBT+ beschreibt die Gravitation als direkte, instantane Teilchen-Teilchen-Wechselwirkung nach dem Weber-Gesetz, gesteuert durch das Bohmsche Quantenpotential. Sie ist fundamental \textit{feldlos}. Die DSTT übersetzt diese Dynamik in die Sprache der Energieaufteilung zwischen radialer und tangentialer Komponente, eingefangen in der Zustandsvariablen $\beta(t)$ mit der fundamentalen Eigenschaft $\dot{\beta} > 0$.
+
+Die $\vec{\Omega}$-Theorie ist der nächste Schritt der Emergenz. Sie ist der \textit{Kontinuumslimes} der DSTT und damit die effektive Feldtheorie für makroskopische Systeme. An die Stelle der direkten Teilchen-Wechselwirkung treten Felder, die die kollektive Wirkung vieler Massenpunkte beschreiben. Das zentrale neue Element ist das Vektorfeld $\vec{\Omega}$, das die lokale Rotation des Raumes selbst repräsentiert. Die $\vec{\Omega}$-Theorie verhält sich zur ART wie die Maxwell-Theorie zur Newton-Mechanik, mit dem entscheidenden Unterschied, dass sie die Nicht-Lokalität und Irreversibilität ihrer fundamentalen Basis bewahrt.
+
+\section{Axiome der $\vec{\Omega}$-Theorie}
+
+\begin{axiom}[Nicht-Lokalität und Instantaneität]
+Die Gravitationswirkung ist nicht-lokal und instantan. Es gibt keine Ausbreitung mit endlicher Geschwindigkeit; die Wechselwirkung ist simultan. Dieser Axiom ist direkte Konsequenz der feldlosen Weber-Wechselwirkung der WDBT+.
+\end{axiom}
+
+\begin{axiom}[Das Rotationsfeld]
+Die Gravitation wird durch ein fundamentales, axiales Vektorfeld $\vec{\Omega}(\vec{r}, t)$ beschrieben. Dieses Feld kodiert die lokale Rotationsdichte des Raumes und ist die Ursache für alle geschwindigkeitsabhängigen (tangentialen) Trägheitseffekte.
+\end{axiom}
+
+\begin{axiom}[Aufspaltung von Ursache und Wirkung]
+Die Schwere (Ursache) und die Trägheit (Wirkung) sind fundamental verschieden. Die radiale Anziehung wird durch ein skalares Potential $\Phi(\vec{r}, t)$ beschrieben, die tangentialen Trägheitskräfte durch das Rotationsfeld $\vec{\Omega}(\vec{r}, t)$.
+\end{axiom}
+
+\begin{axiom}[DSTT-Kompatibilität]
+Die Theorie ist so konstruiert, dass aus ihr die Existenz einer Zustandsvariablen $\beta(\vec{r}, t)$ folgt, die das lokale Verhältnis von tangentialer zu gesamter Trägheit angibt, und für die $\dot{\beta} > 0$ gilt. Dies verleiht der Gravitation einen intrinsischen Zeitpfeil.
+\end{axiom}
+
+\section{Die Feldgleichungen}
+
+Die Felder werden nicht-lokal und instantan aus den Quellen erzeugt.
+
+\subsection{Definition der Felder}
+
+\begin{definition}[Skalares Potential]
+Das Potential der radialen Anziehung (gravito-elektrisches Potential) ist durch die Massendichte $\rho$ bestimmt:
+\begin{equation}
+\boxed{ \Phi(\vec{r}, t) = -G \int_{\vec{r}' \neq \vec{r}} d^3r' \, \frac{\rho(\vec{r}', t)}{|\vec{r} - \vec{r}'|} }
+\end{equation}
+Der Ausschluss der Selbstwechselwirkung ($\vec{r}' \neq \vec{r}$) ist essentiell für die Konsistenz der Theorie und vermeidet Divergenzen.
+\end{definition}
+
+\begin{definition}[Vektorpotential]
+Das Vektorpotential, aus dem die Rotation abgeleitet wird, wird durch die Massenstromdichte $\vec{j}(\vec{r}, t) = \rho(\vec{r}, t) \vec{v}(\vec{r}, t)$ erzeugt:
+\begin{equation}
+\boxed{ \vec{A}(\vec{r}, t) = \frac{G}{c^2} \int_{\vec{r}' \neq \vec{r}} d^3r' \, \frac{\vec{j}(\vec{r}', t)}{|\vec{r} - \vec{r}'|} }
+\end{equation}
+\end{definition}
+
+\begin{definition}[Rotationsfeld]
+Das fundamentale Rotationsfeld $\vec{\Omega}$ ist die Wirbelstärke des Vektorpotentials:
+\begin{equation}
+\boxed{ \vec{\Omega}(\vec{r}, t) = \nabla \times \vec{A}(\vec{r}, t) }
+\end{equation}
+\end{definition}
+
+\begin{definition}[Induziertes Feld]
+Bei zeitabhängigen Strömen entsteht ein induziertes radiales Feld:
+\begin{equation}
+\boxed{ \vec{E}_{\text{ind}}(\vec{r}, t) = -\frac{\partial \vec{A}(\vec{r}, t)}{\partial t} }
+\end{equation}
+\end{definition}
+
+\subsection{Die Maxwell-Form der Feldgleichungen}
+
+Die so definierten Felder gehorchen im Vakuum (außerhalb der Quellen) Gleichungen, die formal den Maxwell-Gleichungen der Elektrodynamik entsprechen:
+
+\begin{align}
+\nabla \cdot \vec{\Omega} &= 0 \label{eq:max1} \\
+\nabla \times \vec{\Omega} &= \frac{4\pi G}{c^2} \, \vec{j} + \frac{1}{c^2} \frac{\partial}{\partial t} (-\nabla \Phi) \label{eq:max2} \\
+\nabla \cdot (-\nabla \Phi) &= -4\pi G \rho \label{eq:max3} \\
+\nabla \times (-\nabla \Phi) &= -\frac{\partial \vec{\Omega}}{\partial t} \label{eq:max4}
+\end{align}
+
+Es ist jedoch entscheidend zu betonen, dass diese Differentialgleichungen hier nicht fundamental sind, sondern eine alternative Schreibweise der nicht-lokalen Integralgleichungen (1) und (2) darstellen. Die wahre Natur der Theorie ist die der instantanen, integralen Wechselwirkung.
+
+\section{Die Bewegungsgleichung}
+
+Eine Probemasse $m$ am Ort $\vec{r}$ mit der Geschwindigkeit $\vec{v}$ erfährt die Kraft:
+\begin{equation}
+\boxed{ \vec{F} = m \left( -\nabla \Phi + 2 \, \vec{v} \times \vec{\Omega} - \frac{\partial \vec{A}}{\partial t} \right) }
+\end{equation}
+Dies ist die Lorentz-Kraft der Gravitation. Der Term $-\nabla \Phi$ repräsentiert die radiale Newtonsche Anziehung. Der Term $2\vec{v} \times \vec{\Omega}$ ist die geschwindigkeitsabhängige Coriolis-artige Kraft, die für die tangentialen Trägheitseffekte verantwortlich ist. Der Term $-\partial \vec{A}/\partial t$ beschreibt induzierte Effekte durch instationäre Massenströme.
+
+\section{Die DSTT-Variable $\beta$}
+
+In der $\vec{\Omega}$-Theorie lässt sich die DSTT-Zustandsvariable $\beta$ direkt als lokales Verhältnis der Kraftkomponenten definieren:
+\begin{equation}
+\boxed{ \beta(\vec{r}, t) = \frac{ |\vec{v} \times \vec{\Omega}| }{ |\nabla \Phi| + |\vec{v} \times \vec{\Omega}| } }
+\end{equation}
+
+Aus den Feldgleichungen und der Bewegungsgleichung folgt die für die DSTT fundamentale Eigenschaft:
+\begin{equation}
+\boxed{ \dot{\beta} > 0 }
+\end{equation}
+Dies ist keine zusätzliche Annahme, sondern eine Konsequenz der nicht-lokalen, instantanen Rückkopplungsdynamik der Theorie. Die zeitliche Änderung von $\vec{\Omega}$ und $\vec{v}$ führt zu einer monotonen Zunahme des tangentialen Anteils der Bewegung, was die Bahnen zu offenen Spiralen macht.
+
+\section{Zentralfeld-Lösung und Spiralbahnen}
+
+Für das Zweikörperproblem (Zentralmasse $M$, Testmasse $m$) liefert die $\vec{\Omega}$-Theorie eine Bewegungsgleichung, die auf eine logarithmische Spirale führt. Mit dem Ansatz $\Omega_\theta = k/r^2$ (der sich aus den Feldgleichungen ergibt) folgt aus den Gleichungen in Polarkoordinaten:
+\begin{align}
+\ddot{r} - r\dot{\phi}^2 &= -\frac{GM}{r^2} + 2 r\dot{\phi} \, \Omega_\theta \\
+r\ddot{\phi} + 2\dot{r}\dot{\phi} &= -2\dot{r} \Omega_\theta
+\end{align}
+Die Lösung dieser Gleichungen ist:
+\begin{equation}
+\boxed{ r(\phi) = K e^{\phi / B} }
+\end{equation}
+wobei $K$ und $B$ Konstanten sind, die von den Anfangsbedingungen und der Stärke des $\vec{\Omega}$-Feldes abhängen. Es gibt keine geschlossenen Bahnen (Ellipsen) – ein direktes Observatorium der DSTT und der Nicht-Erhaltung des Drehimpulses.
+
+\section{Kosmologische Konsequenzen}
+
+Die $\vec{\Omega}$-Theorie führt zu einem stationären, nicht-expandierenden Universum.
+\begin{itemize}
+    \item \textbf{Rotverschiebung:} Sie ist keine Doppler-Folge der Expansion, sondern eine kumulative gravitative Wirkung auf Photonen während ihrer Reise durch das $\vec{\Omega}$-Feld.
+    \item \textbf{Galaxienrotation:} Flache Rotationskurven werden ohne Dunkle Materie durch das $\vec{\Omega}$-Feld erklärt.
+    \item \textbf{CMB-Dipol:} Der beobachtete Dipol im Mikrowellenhintergrund ist eine Superposition aus der lokalen Bewegung des Sonnensystems und einem intrinsischen Anteil, der von einem kosmologischen $\vec{\Omega}_{\text{kosmisch}}$-Feld herrührt.
+    \item \textbf{Zeitpfeil:} Die Bedingung $\dot{\beta} > 0$ liefert einen intrinsischen kosmologischen Zeitpfeil, der nicht aus der Thermodynamik abgeleitet werden muss.
+\end{itemize}
+
+\section{Zusammenfassung: Die $\vec{\Omega}$-Theorie im Kontext}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Eigenschaft} & \textbf{ART} & \textbf{$\vec{\Omega}$-Theorie} \\
+\hline
+Fundament & Raumzeit-Krümmung & Rotationsfeld $\vec{\Omega}$ \\
+Lokalität & Ja (Differentialgleichungen) & \textbf{Nein} (Integralgleichungen) \\
+Ausbreitung & Mit Lichtgeschwindigkeit & \textbf{Instantan} \\
+Drehimpuls & Erhalten & \textbf{Nicht erhalten} ($\dot{L} \neq 0$) \\
+Intrinsischer Zeitpfeil & Nein & \textbf{Ja} ($\dot{\beta} > 0$) \\
+DSTT-Kompatibel & Nein & \textbf{Ja} \\
+Fundamentalität & Fundamental & \textbf{Emergent} (aus WDBT+) \\
+\hline
+\end{tabular}
+\caption{Vergleich zwischen der Allgemeinen Relativitätstheorie und der $\vec{\Omega}$-Theorie.}
+\end{table}
+
+Die $\vec{\Omega}$-Theorie ist die natürliche Feldtheorie der Gravitation, die aus der feldlosen, teilchenbasierten WDBT+ emergiert. Sie stellt eine vollwertige, rotationsbasierte Alternative zur ART dar und erweitert diese um die essentiellen Konzepte der Nicht-Lokalität, Instantaneität und Irreversibilität, die zur Erklärung kosmologischer Phänomene ohne Dunkle Materie oder Dunkle Energie notwendig sind.
+
+\end{document}

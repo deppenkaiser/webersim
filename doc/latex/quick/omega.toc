@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Einleitung: Vom Teilchen zum Feld}{3}{}%
+\contentsline {section}{\numberline {2}Axiome der $\vec {\Omega }$-Theorie}{3}{}%
+\contentsline {section}{\numberline {3}Die Feldgleichungen}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Definition der Felder}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Die Maxwell-Form der Feldgleichungen}{4}{}%
+\contentsline {section}{\numberline {4}Die Bewegungsgleichung}{5}{}%
+\contentsline {section}{\numberline {5}Die DSTT-Variable $\beta $}{5}{}%
+\contentsline {section}{\numberline {6}Zentralfeld-Lösung und Spiralbahnen}{5}{}%
+\contentsline {section}{\numberline {7}Kosmologische Konsequenzen}{6}{}%
+\contentsline {section}{\numberline {8}Zusammenfassung: Die $\vec {\Omega }$-Theorie im Kontext}{6}{}%
