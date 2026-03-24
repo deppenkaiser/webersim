@@ -1,0 +1,267 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Schwarze Löcher und die Sonne als Quellen der Materie\\ 
+\large{Eine konsistente Beschreibung aus der WDBT+}}
+\author{Autor}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Die Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+) liefert ein konsistentes, singularitätenfreies Modell der Gravitation. In diesem Rahmen werden kompakte Objekte – in der Allgemeinen Relativitätstheorie als Schwarze Löcher bezeichnet – nicht als Materiesenken, sondern als Quellen kontinuierlicher Materieentstehung interpretiert. Die Dynamische Schwere-Trägheits-Theorie (DSTT) erzwingt mit $\dot{\beta}>0$ eine universelle Auswärtsdrift, die zur Bildung von Galaxien führt. Wir zeigen, dass dieses Modell auch auf die Sonne und den Sonnenwind anwendbar ist und beobachtbare Konsequenzen hat. Insbesondere ergibt sich eine natürliche Erklärung für das Verhältnis von Galaxienmasse zu zentraler Objektmasse ($M_{\text{Gal}}/M_{\text{Zentrum}} \approx 1000$) sowie für die Existenz des Sonnenwinds ohne signifikanten Masseverlust der Sonne. Zudem folgt aus der Theorie eine \textbf{maximale Masse} für kompakte Objekte, die mit den beobachteten Massen supermassereicher Zentren übereinstimmt. Das Modell kommt ohne Dunkle Materie, Dunkle Energie oder Urknall aus und basiert ausschließlich auf den Grundlagen der Weber-Gravitation, des Quantenpotentials und der fraktalen Raumdimension $D\approx2{,}71$.
+\end{abstract}
+
+\section{Einleitung}
+
+Die Allgemeine Relativitätstheorie (ART) beschreibt Gravitation als Krümmung der Raumzeit. Sie hat sich in vielen Experimenten bewährt, führt jedoch zu konzeptionellen Problemen: Singularitäten im Zentrum Schwarzer Löcher und am Urknall, die Notwendigkeit von Dunkler Materie und Dunkler Energie sowie das Informationsverlustparadoxon. Die WDBT+ bietet eine alternative, fundamentalere Beschreibung, aus der die ART als emergenter Grenzfall hervorgeht.
+
+\subsection{Grundlagen der WDBT+}
+
+Die WDBT+ basiert auf drei Säulen:
+
+\begin{enumerate}
+\item \textbf{Weber-Gravitation (WG)}: Eine geschwindigkeits- und beschleunigungsabhängige Kraft
+\[
+\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}} \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\hat{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
+\]
+mit $\beta_{\text{WG}}=0{,}5$ für Massen.
+
+\item \textbf{de Broglie-Bohm-Quantenpotential (DBT)}:
+\[
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 R}{R}
+\]
+Dieses Potential verhindert Singularitäten und ermöglicht Materieentstehung aus dem Vakuum.
+
+\item \textbf{Fraktale Raumdimension}:
+\[
+D = \frac{\ln 20}{\ln(2 + \phi)} \approx 2{,}71, \quad \phi = \frac{1+\sqrt{5}}{2}
+\]
+Sie liefert natürliche Cutoffs und erklärt die Feinstrukturkonstante.
+\end{enumerate}
+
+\subsection{Dynamische Schwere-Trägheits-Theorie (DSTT)}
+
+Die DSTT trennt Ursache (Schwere) und Wirkung (Trägheit). Die Zustandsvariable
+\[
+\beta_{\text{DSTT}}(t) = \frac{\frac{1}{2}m r^2 \dot{\phi}^2}{\frac{1}{2}m \dot{r}^2 + \frac{1}{2}m r^2 \dot{\phi}^2}
+\]
+erfüllt $\dot{\beta}_{\text{DSTT}} > 0$ und erzwingt damit logarithmische Spiralbahnen
+\[
+r(\phi) = Ke^{\phi/B}
+\]
+und eine universelle Auswärtsdrift.
+
+\section{Schwarze Löcher als Materiequellen}
+
+\subsection{Keine Singularitäten}
+
+Das Quantenpotential verhindert den Kollaps zur Singularität. Für ein kompaktes Objekt der Masse $M$ ergibt sich ein minimaler Radius
+\[
+R \sim \frac{\hbar^2}{G M m_p^2}.
+\]
+Für $M = 10^9 M_\odot$ ist $R \sim 3 \times 10^{-44}$ m – die Planck-Skala. Es gibt weder einen Ereignishorizont noch eine Singularität.
+
+\subsection{Kontinuierliche Materieentstehung}
+
+Das Quantenpotential ist im Vakuum nicht null und kann Arbeit verrichten. Die Materieerzeugungsrate ist proportional zu $Q$:
+\[
+\dot{\rho}_{\text{cre}}(r) \propto Q(r) \propto \frac{1}{r^2}.
+\]
+Im fraktalen Raum mit $D \approx 2{,}71$ modifiziert sich die radiale Verteilung:
+\[
+\frac{d\dot{M}_{\text{cre}}}{d\ln r} \propto r^{3-D} = r^{0{,}29}.
+\]
+
+\subsection{Einfang und Drift}
+
+Die DSTT liefert die Driftgeschwindigkeit
+\[
+v_{\text{drift}}(r) = B \sqrt{\frac{GM}{r^3}},
+\]
+die Fluchtgeschwindigkeit ist
+\[
+v_{\text{esc}}(r) = \sqrt{\frac{2GM}{r}}.
+\]
+Der kritische Radius $r_c$, bei dem beide gleich sind, folgt aus
+\[
+B \sqrt{\frac{GM}{r_c^3}} = \sqrt{\frac{2GM}{r_c}} \quad\Rightarrow\quad r_c = \frac{B}{\sqrt{2}}.
+\]
+Mit $B \sim r_{\text{cre}}$ (dem typischen Entstehungsradius) ergibt sich $r_c = r_{\text{cre}}/\sqrt{2}$.
+
+\subsection{Einfangwahrscheinlichkeit}
+
+Im fraktalen Raum ist die Einfangwahrscheinlichkeit
+\[
+\alpha_{\text{in}} = \frac{\int_{r_{\text{min}}}^{r_c} r^{3-D} \, d\ln r}{\int_{r_{\text{min}}}^{r_{\text{max}}} r^{3-D} \, d\ln r}
+\approx \left( \frac{r_c}{r_{\text{max}}} \right)^{3-D},
+\]
+wobei $r_{\text{max}} \sim \sqrt[3]{GM/\rho_{\text{vac}}}$ der Einflussbereich ist ($\rho_{\text{vac}}$ ist die Vakuumenergiedichte). Mit $D \approx 2{,}71$ ist $3-D = 0{,}29$.
+
+\subsection{Ergebnis für supermassereiche Objekte}
+
+Für $M = 10^9 M_\odot$ ergeben sich:
+\[
+r_{\text{max}} \sim 5 \times 10^{12}\,\text{m},\qquad
+r_c \sim 200\,\text{m},\qquad
+\alpha_{\text{in}} \approx 0{,}001.
+\]
+Daraus folgt das Verhältnis von Galaxienmasse zu Zentralmasse:
+\[
+\frac{M_{\text{Gal}}}{M_{\text{Zentrum}}} = \frac{1 - \alpha_{\text{in}}}{\alpha_{\text{in}}} \approx 1000.
+\]
+Dies stimmt mit Beobachtungen überein und erklärt, warum Galaxien typischerweise etwa tausendmal schwerer sind als das zentrale Objekt.
+
+\subsection{Die Galaxie als Spur der Drift}
+
+Die neu entstehende Materie driftet nach außen und bildet die Galaxie. Die logarithmische Spirale der DSTT erklärt die Spiralstruktur; die flachen Rotationskurven folgen aus der DSTT-Dynamik ohne Dunkle Materie.
+
+\subsection{Maximale Masse durch Strahlungsverluste}
+
+Ein entscheidendes Ergebnis der WDBT+ ist die Existenz einer \textbf{maximalen Masse} für kompakte Objekte. Diese folgt aus der extrem steilen Skalierung der Strahlungsverluste mit der Masse.
+
+\subsubsection{Strahlungsverluste}
+
+Das zentrale Objekt verliert Energie und Masse durch zwei Prozesse:
+
+\begin{enumerate}
+\item \textbf{Elektromagnetische Strahlung}: Die neu entstehende Materie ist extrem heiß und strahlt wie ein Schwarzkörper. Mit $T \propto Q/k \propto 1/R^2$ und $R \propto 1/M$ folgt $T \propto M^2$. Die Strahlungsleistung
+\[
+P_{\text{EM}} \sim \sigma T^4 \cdot 4\pi R^2 \propto M^6
+\]
+skaliert mit der \textbf{sechsten Potenz} der Masse.
+
+\item \textbf{Omega-Wellen (Gravitationswellen)}: Die Oszillationen des $\vec{\Omega}$-Feldes führen ebenfalls zu Energieabstrahlung. Im fraktalen Raum ergibt sich
+\[
+P_{\Omega} \propto M^2 R^4 \omega^6 \cdot \left(\frac{\omega}{\omega_0}\right)^{D-3} \propto M^{2} \cdot M^{-4} \cdot M^3 \propto M
+\]
+(wobei $\omega \propto 1/R \propto M$). Für große Massen dominiert daher die elektromagnetische Strahlung.
+\end{enumerate}
+
+\subsubsection{Bilanzgleichung}
+
+Die Massenänderung eines zentralen Objekts setzt sich zusammen aus:
+\[
+\frac{dM}{dt} = (2\alpha_{\text{in}} - 1) \cdot \dot{M}_{\text{creation}} - \frac{1}{c^2} \left( P_{\text{EM}} + P_{\Omega} \right)
+\]
+
+Für kleine Massen ($M \ll M^*$) ist $\alpha_{\text{in}} > 0{,}5$ (Einfang dominiert) und die Strahlungsverluste sind vernachlässigbar – das Objekt wächst. Für große Massen ($M \gg M^*$) wird $\alpha_{\text{in}} < 0{,}5$ und die extrem steilen $M^6$-Verluste dominieren – das Objekt schrumpft.
+
+\subsubsection{Gleichgewichtsmasse $M^*$}
+
+Aus der Bedingung $dM/dt = 0$ folgt ein stabiler Gleichgewichtspunkt $M^*$. Die steile Skalierung der Verluste führt zu einer \textbf{scharfen Begrenzung}: Objekte können $M^*$ nicht wesentlich überschreiten. Für supermassereiche Objekte ergibt sich
+\[
+M^* \sim 10^9 M_\odot,
+\]
+in ausgezeichneter Übereinstimmung mit den beobachteten Massen der größten zentralen Objekte in Galaxien.
+
+\subsubsection{Beobachtbare Konsequenz}
+
+Die Theorie sagt voraus:
+\begin{itemize}
+\item Es gibt eine \textbf{obere Grenze} für die Masse kompakter Objekte
+\item Diese Grenze liegt bei etwa $10^9$ bis $10^{10} M_\odot$
+\item Objekte oberhalb dieser Grenze würden sofort durch Strahlung schrumpfen
+\item Dies erklärt, warum keine beliebig großen supermassereichen Objekte beobachtet werden
+\end{itemize}
+
+Im Standardmodell gibt es keine solche natürliche Grenze – dort könnten Schwarze Löcher im Prinzip beliebig groß werden.
+
+\section{Die Sonne als Mikrokosmos}
+
+Das Modell ist skalierbar und lässt sich direkt auf die Sonne anwenden. Für $M = M_\odot$:
+\[
+r_{\text{max}} \sim 1{,}5 \times 10^{13}\,\text{m},\qquad
+r_c \sim 1{,}4 \times 10^{-11}\,\text{m},\qquad
+\alpha_{\text{in}} \approx 1{,}2 \times 10^{-7}.
+\]
+
+\subsection{Interpretation des Sonnenwinds}
+
+Im Standardmodell wird der Sonnenwind als Materieausstoß aus der Sonnenkorona gesehen. In der WDBT+ hingegen:
+
+\begin{itemize}
+\item Materie entsteht in der Nähe der Sonne (bei $r \sim 10^{-11}$ m)
+\item Die DSTT-Drift treibt sie nach außen
+\item Nur ein winziger Bruchteil ($\sim 10^{-7}$) wird von der Sonne eingefangen
+\item Die Sonne verliert daher keine signifikante Masse
+\end{itemize}
+
+Der beobachtete Sonnenwind-Massestrom von $\sim 10^{-14} M_\odot/\text{Jahr}$ ist konsistent mit dieser Interpretation.
+
+\subsection{Testbare Vorhersagen für die Sonne}
+
+\begin{enumerate}
+\item \textbf{Konstanz der Sonnenmasse}: Präzise Messungen (z.B. mit Raumsonde BepiColombo) sollten zeigen, dass die Sonne keinen messbaren Masseverlust durch den Sonnenwind erfährt.
+\item \textbf{Isotopenanomalien}: Neu entstehende Materie könnte leichte Isotope bevorzugen; solche Anomalien im Sonnenwind wären ein Fingerabdruck der Materieentstehung.
+\item \textbf{Fraktale Skalierung}: Die Fluktuationen des Sonnenwinds sollten ein Skalierungsverhalten mit Exponent $0{,}29$ zeigen, das im Standardmodell nicht vorkommt.
+\end{enumerate}
+
+\section{Vergleich mit dem Standardmodell}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Phänomen} & \textbf{Standardmodell} & \textbf{WDBT+} \\
+\hline
+Zentrale Objekte & Senken (verschlingen Materie) & Quellen (erzeugen Materie) \\
+Materiefluss & Einwärts (Akkretion) & Auswärts (Drift) \\
+Galaxien & Kollaps + Dunkle Materie & Wachstum von innen nach außen \\
+Universum & Expandierend, Urknall & Stationär, ewig \\
+Schwarze Löcher & Singularität + Horizont & Kompaktes Objekt, kein Horizont \\
+Maximale Masse & Keine natürliche Grenze & $M^* \sim 10^9 M_\odot$ \\
+Sonnenwind & Ausstoß aus der Korona & Neu entstehende Materie \\
+Dunkle Materie & Benötigt & Nicht benötigt \\
+Dunkle Energie & Benötigt & Nicht benötigt \\
+\hline
+\end{tabular}
+\caption{Gegenüberstellung der Standardkosmologie und der WDBT+.}
+\end{table}
+
+\section{Kosmologische Konsequenzen}
+
+Die WDBT+ führt zu einem stationären, nicht-expandierenden Universum (Steady State). Die beobachtete Rotverschiebung ist keine Folge der Expansion, sondern kumulative Gravitation. Das Quantenpotential ermöglicht kontinuierliche Materieentstehung, die im stationären Universum die beobachtete Struktur erhält.
+
+Die JWST-Daten, die im Standardmodell als "zu frühe Galaxien" erscheinen, sind im Rahmen der WDBT+ keine Überraschung: Sie zeigen alte Galaxien in einem ewigen Universum.
+
+\section{Zusammenfassung}
+
+Die WDBT+ liefert ein konsistentes, singularitätenfreies Bild der Gravitation:
+
+\begin{itemize}
+\item Zentrale Objekte sind keine Schwarzen Löcher im ART-Sinn, sondern kompakte, horizontefreie Materiequellen.
+\item Das Quantenpotential erzeugt kontinuierlich neue Materie, bevorzugt in der Nähe existierender Masse.
+\item Die DSTT erzwingt eine universelle Auswärtsdrift ($\dot{\beta}>0$), die zur Bildung von Galaxien führt.
+\item Das Verhältnis $M_{\text{Gal}}/M_{\text{Zentrum}} \approx 1000$ folgt aus der fraktalen Raumdimension $D\approx2{,}71$.
+\item Die Strahlungsverluste ($P_{\text{EM}} \propto M^6$) erzwingen eine \textbf{maximale Masse} $M^* \sim 10^9 M_\odot$, in Übereinstimmung mit Beobachtungen.
+\item Das Modell ist skalierbar und erklärt auch den Sonnenwind ohne Masseverlust der Sonne.
+\item Es kommt ohne Dunkle Materie, Dunkle Energie, Urknall und Singularitäten aus.
+\end{itemize}
+
+Die Theorie macht testbare Vorhersagen, insbesondere eine schwache Frequenzabhängigkeit der Gravitation und fraktale Skalierungen in astrophysikalischen Plasmen. Sollten diese bestätigt werden, stünde ein Paradigmenwechsel in der Kosmologie bevor.
+
+\begin{thebibliography}{99}
+
+\bibitem{weber} Weber, W. (1846). Elektrodynamische Massbestimmungen. \textit{Annalen der Physik}, 143, 211-233.
+
+\bibitem{bohm} Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of Hidden Variables. \textit{Physical Review}, 85, 166-193.
+
+\bibitem{dstt} Czybor, M. (2025). Dynamische Schwere-Trägheits-Theorie (DSTT).
+
+\bibitem{omega} Czybor, M. (2026). Die $\Omega$-Theorie der Gravitation.
+
+\bibitem{fraktal} Czybor, M. (2025). Fraktale Maxwell-Gleichungen für Elektrodynamik und Gravitation.
+
+\end{thebibliography}
+
+\end{document}
