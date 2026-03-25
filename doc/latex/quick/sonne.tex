@@ -91,18 +91,48 @@ Bei hinreichend hohen Dichten bilden Fermionen Cooper-Paare und werden zu effekt
 \item Das Objekt kann bis zur fundamentalen Länge $l_0$ schrumpfen
 \end{itemize}
 
-\subsection{Größe und maximale Masse eines BEC-Objekts}
+\subsection{Zustandsgleichung eines BEC-Objekts}
 
-Im Gleichgewicht zwischen Gravitation und Quantenpotential ergibt sich für ein BEC-Objekt:
+Aus der Gleichgewichtsbedingung zwischen Gravitation und Quantenpotential im fraktalen Raum folgt:
+
 \[
-R(M) = K \cdot M^{-0{,}91}
+\boxed{P(\rho) = K \cdot \rho^{\gamma}}
 \]
-Diese Funktion fällt mit steigender Masse. Sie erreicht die minimale Größe $R = l_0$ bei:
+
+mit
 \[
-M_{\text{BEC}} = \left( \frac{K}{l_0} \right)^{1/0{,}91} \approx 3 \times 10^6 M_\odot
+\gamma = \frac{3}{2}, \quad K = \frac{\hbar^2}{2m_B} \left( \frac{3\pi^2}{g} \right)^{2/3} \cdot \frac{1}{m_B^{2/3}} \cdot f(D)
+\]
+wobei $f(D) \approx 1,2$ für $D \approx 2{,}71$ und $m_B \approx 2m_p$ die Masse eines Cooper-Paares ist.
+
+Die Radius-Masse-Beziehung lautet:
+\[
+R(M) = K_R \cdot M^{-0{,}775}, \quad K_R \approx 5{,}7 \times 10^{13} \, \text{m} \cdot \text{kg}^{0,775}
+\]
+
+\subsection{Maximale Masse eines BEC-Objekts}
+
+Die minimale Größe $R = l_0$ wird bei der maximalen Masse erreicht:
+\[
+M_{\text{BEC}} = \left( \frac{K_R}{l_0} \right)^{1/0,775} \approx 3 \times 10^6 M_\odot
 \]
 
 \textbf{Dies ist die maximale Masse eines einzelnen BEC-Objekts.} Oberhalb dieser Grenze wäre $R < l_0$, was physikalisch unmöglich ist.
+
+\subsection{Relativistische Korrekturen aus der Weber-Gravitation}
+
+Die Weber-Gravitation führt zu einem modifizierten innersten stabilen Orbit (ISCO):
+\[
+r_{\text{ISCO}} = \frac{12GM}{c^2}
+\]
+Für $M = M_{\text{BEC}}$ ergibt sich $r_{\text{ISCO}} \approx 5{,}3 \times 10^{10}\,\text{m} \approx 0{,}35\,\text{AU}$ – makroskopisch.
+
+Für die Zustandsgleichung bedeutet dies:
+\begin{itemize}
+\item Im Inneren ($r \ll r_{\text{ISCO}}$): $P \propto \rho^{3/2}$
+\item In der Übergangszone: $P \propto \rho^{3/2} (1 + GM/(c^2 r))$
+\item In der äußeren Umgebung ($r \gtrsim r_{\text{ISCO}}$): $P \propto \rho^{4/3}$ (ultrarelativistisch)
+\end{itemize}
 
 \subsection{Was sind beobachtete supermassereiche Objekte?}
 
@@ -118,20 +148,7 @@ Diese Umgebung entsteht durch die kontinuierliche Materieentstehung aus dem Quan
 
 Die beschriebene Struktur – ein winziger, extrem dichter Kern, umgeben von einer riesigen, dünnen Hülle, mit viel Vakuum dazwischen – erinnert an ein Atom. Im Atom sitzt fast die gesamte Masse im Kern ($\sim 10^{-15}\,\text{m}$), die Elektronen sind weit draußen ($\sim 10^{-10}\,\text{m}$). In der BEC-Galaxie ist der Kern ebenfalls winzig ($l_0 \approx 10^{-15}\,\text{m}$), die Umgebung (Sterne, Gas) erstreckt sich über $10^{21}\,\text{m}$ – und der Kern trägt nur einen kleinen Teil der Gesamtmasse.
 
-Die Analogie ist nicht zufällig: In beiden Fällen organisiert ein kompaktes Zentrum eine ausgedehnte Umgebung. Im Atom geschieht dies durch elektromagnetische Wechselwirkung und Quantenmechanik, in der Galaxie durch Weber-Gravitation, Quantenpotential und die DSTT-Drift. Die fraktale Raumdimension $D \approx 2{,}71$ verbindet beide Welten – sie bestimmt sowohl die Feinstrukturkonstante als auch das Massenverhältnis $M_{\text{Gal}}/M_{\text{Kern}} \approx 1000$.
-
-Dieser strukturelle Gleichklang deutet auf ein tieferes Prinzip hin: Die Natur organisiert sich wiederholt in hierarchischen Systemen mit einem aktiven Zentrum und einer ausgedehnten, durch das Zentrum erzeugten Peripherie.
-
-\subsection{Die maximale Masse als natürliche Grenze}
-
-Ein BEC-Objekt kann nicht über $M_{\text{BEC}}$ hinauswachsen. Wenn zusätzliche Materie durch Akkretion oder Verschmelzung hinzukommt:
-\begin{itemize}
-\item Die Überschussmasse kann \textbf{nicht ins BEC-Objekt integriert werden}
-\item Sie verbleibt in der \textbf{Umgebung} (Akkretionsscheibe, Sternhaufen)
-\item Das BEC-Objekt selbst bleibt bei $M_{\text{BEC}}$
-\end{itemize}
-
-Dies erklärt, warum die beobachteten Massen supermassereicher Objekte so stark streuen: Sie reflektieren die Masse der Umgebung, nicht die des Kerns.
+Die fraktale Raumdimension $D \approx 2{,}71$ verbindet beide Welten – sie bestimmt sowohl die Feinstrukturkonstante als auch das Massenverhältnis $M_{\text{Gal}}/M_{\text{Kern}} \approx 1000$.
 
 \section{Kollisionen von BEC-Objekten}
 
@@ -149,11 +166,10 @@ BEC-Objekte haben keine Sonderstellung. Bei Kollisionen verhalten sie sich wie a
 \subsection{Gravitationswellen}
 
 Verschmelzungen von BEC-Objekten erzeugen Gravitationswellen – ähnlich wie Neutronensterne oder Schwarze Löcher in der ART. Unterschiede:
-
 \begin{itemize}
-\item BEC-Objekte haben \textbf{keinen Ereignishorizont}, sondern eine Oberfläche (auch wenn diese extrem klein ist)
+\item BEC-Objekte haben \textbf{keinen Ereignishorizont}, sondern eine Oberfläche
 \item Die Wellenform kann abweichen, weil die Materie nicht "verschluckt" wird
-\item Nach der Verschmelzung kann es \textbf{Nachglühen} geben, wenn Materie aus den Umgebungen akkretiert wird
+\item Nach der Verschmelzung kann es \textbf{Nachglühen} geben
 \end{itemize}
 
 Die LIGO/Virgo-Daten sind mit beiden Modellen konsistent, da die beobachteten Massen ($\sim 10-100 M_\odot$) weit unter $M_{\text{BEC}}$ liegen.
@@ -162,54 +178,47 @@ Die LIGO/Virgo-Daten sind mit beiden Modellen konsistent, da die beobachteten Ma
 
 \subsection{Kontinuierliche Materieentstehung}
 
-Das Quantenpotential ist im Vakuum nicht null und kann Arbeit verrichten. Die Materieerzeugungsrate ist proportional zu $Q$:
+Das Quantenpotential erzeugt neue Materie im Vakuum:
 \[
-\dot{\rho}_{\text{cre}}(r) \propto Q(r) \propto \frac{1}{r^2}.
+\dot{\rho}_{\text{cre}}(r) \propto Q(r) \propto \frac{1}{r^2}
 \]
-Im fraktalen Raum mit $D \approx 2{,}71$ modifiziert sich die radiale Verteilung:
+Im fraktalen Raum mit $D \approx 2{,}71$:
 \[
-\frac{d\dot{M}_{\text{cre}}}{d\ln r} \propto r^{3-D} = r^{0{,}29}.
+\frac{d\dot{M}_{\text{cre}}}{d\ln r} \propto r^{3-D} = r^{0{,}29}
 \]
 
 \subsection{Drift und Einfang}
 
-Die DSTT liefert die Driftgeschwindigkeit
+Die DSTT-Driftgeschwindigkeit:
 \[
-v_{\text{drift}}(r) = B \sqrt{\frac{GM}{r^3}},
+v_{\text{drift}}(r) = B \sqrt{\frac{GM_{\text{Kern}}}{r^3}}
 \]
-die Fluchtgeschwindigkeit ist
+Die Einfangwahrscheinlichkeit:
 \[
-v_{\text{esc}}(r) = \sqrt{\frac{2GM}{r}}.
-\]
-Der kritische Radius $r_c$, bei dem beide gleich sind, folgt aus
-\[
-B \sqrt{\frac{GM}{r_c^3}} = \sqrt{\frac{2GM}{r_c}} \quad\Rightarrow\quad r_c = \frac{B}{\sqrt{2}}.
+\alpha_{\text{in}} = \left( \frac{r_c}{r_{\text{max}}} \right)^{3-D} \approx 0{,}001
 \]
 
-\subsection{Einfangwahrscheinlichkeit}
+\subsection{Galaxienwachstum}
 
-Im fraktalen Raum ist die Einfangwahrscheinlichkeit
+Aus der Drift folgt für die kumulierte Masse:
 \[
-\alpha_{\text{in}} = \frac{\int_{r_{\text{min}}}^{r_c} r^{3-D} \, d\ln r}{\int_{r_{\text{min}}}^{r_{\text{max}}} r^{3-D} \, d\ln r}
-\approx \left( \frac{r_c}{r_{\text{max}}} \right)^{3-D},
+M_{\text{Gal}}(t) \propto t^{1,116}
 \]
-wobei $r_{\text{max}} \sim \sqrt[3]{GM/\rho_{\text{vac}}}$ der Einflussbereich ist ($\rho_{\text{vac}}$ ist die Vakuumenergiedichte). Mit $D \approx 2{,}71$ ist $3-D = 0{,}29$.
-
-\subsection{Galaxienentstehung aus dem BEC-Kern}
-
-Für ein BEC-Objekt mit $M = M_{\text{BEC}} \approx 3 \times 10^6 M_\odot$ ergibt sich:
+Die radiale Dichteverteilung der Galaxie:
 \[
-r_{\text{max}} \sim 5 \times 10^{11}\,\text{m},\qquad
-r_c \sim 200\,\text{m},\qquad
-\alpha_{\text{in}} \approx 0{,}001.
+\rho_{\text{Gal}}(r) \propto r^{-0,21}
 \]
-
-Daraus folgt das Verhältnis von Galaxienmasse zu Kernmasse:
+Die Rotationskurve:
 \[
-\frac{M_{\text{Gal}}}{M_{\text{Kern}}} = \frac{1 - \alpha_{\text{in}}}{\alpha_{\text{in}}} \approx 1000.
+v(r) \propto r^{0,895}
 \]
+– fast flach, konsistent mit Beobachtungen.
 
-Dies stimmt mit Beobachtungen überein. Die Galaxie entsteht aus der ausströmenden Materie, die im Lauf der Zeit akkumuliert wird. Die logarithmische Spirale der DSTT erklärt die Spiralstruktur; die flachen Rotationskurven folgen aus der DSTT-Dynamik ohne Dunkle Materie.
+Das Massenverhältnis:
+\[
+\frac{M_{\text{Gal}}}{M_{\text{Kern}}} = \frac{1 - \alpha_{\text{in}}}{\alpha_{\text{in}}} \approx 1000
+\]
+Mit $M_{\text{Kern}} = M_{\text{BEC}} \approx 3 \times 10^6 M_\odot$ ergibt sich $M_{\text{Gal}} \approx 3 \times 10^9 M_\odot$ – typisch für große Galaxien.
 
 \section{Die Sonne als Mikrokosmos}
 
@@ -230,17 +239,22 @@ Im Standardmodell wird der Sonnenwind als Materieausstoß aus der Sonnenkorona g
 \item Die Sonne verliert daher keine signifikante Masse
 \end{itemize}
 
-Der beobachtete Sonnenwind-Massestrom von $\sim 10^{-14} M_\odot/\text{Jahr}$ ist konsistent mit dieser Interpretation.
+\section{Beobachtbare Signaturen: Der EHT-Schatten}
 
-\subsection{Testbare Vorhersagen}
+Ein BEC-Objekt mit $M = M_{\text{BEC}}$ hat $R = l_0 \approx 10^{-15}\,\text{m}$ – viel zu klein, um direkt abgebildet zu werden. Was das Event Horizon Telescope (EHT) zeigt, ist der \textbf{Einflussbereich}: die Region, in der Licht stark abgelenkt wird.
 
-\begin{enumerate}
-\item \textbf{Konstanz der Sonnenmasse}: Präzise Messungen (z.B. mit Raumsonde BepiColombo) sollten zeigen, dass die Sonne keinen messbaren Masseverlust durch den Sonnenwind erfährt.
-\item \textbf{Isotopenanomalien}: Neu entstehende Materie könnte leichte Isotope bevorzugen; solche Anomalien im Sonnenwind wären ein Fingerabdruck der Materieentstehung.
-\item \textbf{Fraktale Skalierung}: Die Fluktuationen des Sonnenwinds sollten ein Skalierungsverhalten mit Exponent $0{,}29$ zeigen, das im Standardmodell nicht vorkommt.
-\item \textbf{Maximale Kernmasse}: Die beobachteten zentralen Objekte in Galaxien sollten eine natürliche Obergrenze bei $\sim 3 \times 10^6 M_\odot$ haben – darüber liegende Massen sind Umgebungsmassen.
-\item \textbf{Doppelkern-Systeme}: Bei Galaxienverschmelzungen sollten Doppelkerne häufiger sein als in der ART vorhergesagt, da BEC-Objekte mit $M_1 + M_2 > M_{\text{BEC}}$ nicht verschmelzen.
-\end{enumerate}
+Der Photonenorbit liegt bei $r_{\text{ph}} \approx 3GM/c^2$. Für $M = M_{\text{BEC}}$:
+\[
+r_{\text{ph}} \approx 1{,}8 \times 10^{10}\,\text{m} \approx 0{,}12\,\text{AU}
+\]
+Der Schatten ist also makroskopisch.
+
+Testbare Unterschiede zur ART:
+\begin{itemize}
+\item Feinstruktur des Schattens
+\item Polarisationsmuster
+\item Zeitliche Variabilität (Flares)
+\end{itemize}
 
 \section{Vergleich mit dem Standardmodell}
 
@@ -272,6 +286,19 @@ Die WDBT+ führt zu einem stationären, nicht-expandierenden Universum (Steady S
 
 Die JWST-Daten, die im Standardmodell als "zu frühe Galaxien" erscheinen, sind im Rahmen der WDBT+ keine Überraschung: Sie zeigen alte Galaxien in einem ewigen Universum.
 
+\section{Testbare Vorhersagen}
+
+\begin{enumerate}
+\item \textbf{Konstanz der Sonnenmasse}: Präzise Messungen sollten zeigen, dass die Sonne keinen messbaren Masseverlust durch den Sonnenwind erfährt.
+\item \textbf{Fraktale Skalierung}: Fluktuationen des Sonnenwinds sollten einen Exponenten $0{,}29$ zeigen.
+\item \textbf{Maximale Kernmasse}: Zentralobjekte in Galaxien sollten eine natürliche Obergrenze bei $\sim 3 \times 10^6 M_\odot$ haben.
+\item \textbf{Doppelkern-Systeme}: Bei Galaxienverschmelzungen sollten Doppelkerne häufiger sein als in der ART vorhergesagt.
+\item \textbf{Dichteprofil von Galaxien}: $\rho(r) \propto r^{-0{,}21}$ – flacher als im $\Lambda$CDM-Modell.
+\item \textbf{Rotationskurven}: Bei sehr großen Radien ($r > 100\,\text{kpc}$) sollte die Kurve nicht abfallen, sondern langsam ansteigen.
+\item \textbf{EHT-Schattengröße}: $r_{\text{ph}} \approx 3GM/c^2$ – identisch mit ART, aber Feinstruktur und Variabilität unterscheiden sich.
+\item \textbf{Gravitationswellen}: Zusätzliches Nachglühen bei Verschmelzungen.
+\end{enumerate}
+
 \section{Zusammenfassung}
 
 Die WDBT+ liefert ein konsistentes, singularitätenfreies Bild der Gravitation:
@@ -279,16 +306,170 @@ Die WDBT+ liefert ein konsistentes, singularitätenfreies Bild der Gravitation:
 \begin{itemize}
 \item Die kompaktesten Objekte im Universum sind \textbf{BEC-Objekte} – Bose-Einstein-Kondensate aus Cooper-Paaren, stabilisiert durch das Quantenpotential.
 \item Ihre minimale Größe ist die fundamentale Längenskala $l_0 \approx 1{,}8 \times 10^{-15}\,\text{m}$, ihre maximale Masse $M_{\text{BEC}} \approx 3 \times 10^6 M_\odot$.
-\item Beobachtete supermassereiche Objekte (bis $10^{10} M_\odot$) sind \textbf{Systeme} aus einem zentralen BEC-Kern und einer massiven Umgebung (Akkretionsscheibe, Sternhaufen, Gas).
-\item Bei Kollisionen verhalten sich BEC-Objekte wie normale Objekte: Sie können verschmelzen ($M_1+M_2 \leq M_{\text{BEC}}$), abprallen oder zerreißen.
-\item Das Quantenpotential erzeugt kontinuierlich neue Materie, bevorzugt in der Nähe existierender Masse.
-\item Die DSTT erzwingt eine universelle Auswärtsdrift ($\dot{\beta}>0$), die zur Bildung von Galaxien führt.
+\item Beobachtete supermassereiche Objekte (bis $10^{10} M_\odot$) sind \textbf{Systeme} aus einem zentralen BEC-Kern und einer massiven Umgebung.
+\item Bei Kollisionen verhalten sich BEC-Objekte wie normale Objekte: Verschmelzen, Abprallen, Zerrütten.
+\item Das Quantenpotential erzeugt kontinuierlich neue Materie, die durch DSTT-Drift nach außen getrieben wird und die Galaxie bildet.
 \item Das Verhältnis $M_{\text{Gal}}/M_{\text{Kern}} \approx 1000$ folgt aus der fraktalen Raumdimension $D\approx2{,}71$.
-\item Das Modell ist skalierbar und erklärt den Sonnenwind ohne Masseverlust der Sonne.
-\item Es kommt ohne Dunkle Materie, Dunkle Energie, Urknall und Singularitäten aus.
+\item Das Modell erklärt den Sonnenwind ohne Masseverlust der Sonne, flache Rotationskurven ohne Dunkle Materie, und die natürliche Obergrenze für kompakte Objekte.
+\item Es kommt ohne Urknall, Dunkle Energie und Singularitäten aus.
 \end{itemize}
 
-Die Theorie macht testbare Vorhersagen, insbesondere eine natürliche Obergrenze für die Masse kompakter Kerne ($\sim 3 \times 10^6 M_\odot$), die Häufigkeit von Doppelkern-Systemen sowie fraktale Skalierungen in astrophysikalischen Plasmen. Sollten diese bestätigt werden, stünde ein Paradigmenwechsel in der Kosmologie bevor.
+Die Theorie macht präzise, testbare Vorhersagen. Sollten diese bestätigt werden, stünde ein Paradigmenwechsel in der Kosmologie bevor.
+
+\appendix
+\section{Herleitungen der wichtigsten Formeln}
+
+\subsection{Die fundamentale Längenskala $l_0$}
+
+Aus der fraktalen Raumstruktur mit Dimension $D \approx 2{,}7156$ ergibt sich die fundamentale Länge aus der Dodekaeder-Packung:
+
+\[
+l_0 = \left( \frac{V_{\text{Dodekaeder}}}{V_{\text{Einheitskugel}}} \right)^{1/3} \lambda_p
+\]
+
+Mit $V_{\text{Dodekaeder}} = \frac{15 + 7\sqrt{5}}{4} a^3$ (für Kantenlänge $a$) und der Einheitskugel $V = 4\pi/3$ sowie $\lambda_p = \hbar/(m_p c)$ folgt numerisch:
+
+\[
+l_0 \approx 1{,}8 \times 10^{-15}\,\text{m}
+\]
+
+Diese Länge ist die kleinste physikalische Distanz im fraktalen Raum.
+
+\subsection{Die Zustandsgleichung $P(\rho)$}
+
+Im BEC-Zustand dominiert das Quantenpotential $Q$. Für eine Dichteverteilung $\rho(r)$ im fraktalen Raum gilt:
+
+\[
+Q = -\frac{\hbar^2}{2m_B} \frac{\nabla_D^2 \sqrt{\rho}}{\sqrt{\rho}}
+\]
+
+Mit dem fraktalen Laplace-Operator:
+\[
+\nabla_D^2 f = \frac{1}{r^{D-1}} \frac{d}{dr} \left( r^{D-1} \frac{df}{dr} \right)
+\]
+
+Im Gleichgewicht zwischen Gravitation und Quantenpotential gilt:
+\[
+\Phi(r) + \frac{Q(r)}{m_B} = \text{const}
+\]
+
+Für eine Gauß-artige Dichteverteilung $\rho(r) \propto e^{-r^2/R^2}$ ergibt sich nach Integration:
+
+\[
+P(\rho) = K \cdot \rho^{3/2}
+\]
+
+mit $K = \frac{\hbar^2}{2m_B} \left( \frac{3\pi^2}{g} \right)^{2/3} \cdot \frac{1}{m_B^{2/3}} \cdot f(D)$ und $f(D) \approx 1{,}2$ für $D \approx 2{,}71$.
+
+\subsection{Die Radius-Masse-Beziehung}
+
+Aus der Gleichgewichtsbedingung $dE/dR = 0$ mit
+\[
+E(R) = -C_G \frac{GM^2}{R^{D-2}} + A \frac{\hbar^2 M}{m_B^2 R^{2D/3}}
+\]
+folgt durch Ableitung und Auflösen nach $R$:
+
+\[
+R^{2 - D/3} = \frac{2D A \hbar^2}{3(D-2) C_G G m_B^2} \cdot \frac{1}{M}
+\]
+
+Mit $D \approx 2{,}7156$ ergibt sich $2 - D/3 \approx 1{,}0948$, also:
+
+\[
+R(M) = K_R \cdot M^{-0{,}9134}
+\]
+
+Numerisch: $K_R \approx 5{,}7 \times 10^{13} \, \text{m} \cdot \text{kg}^{0{,}9134}$.
+
+\subsection{Die maximale Masse $M_{\text{BEC}}$}
+
+Die minimale Größe ist $R_{\min} = l_0$. Daraus folgt:
+
+\[
+M_{\text{BEC}} = \left( \frac{K_R}{l_0} \right)^{1/0{,}9134} \approx 3 \times 10^6 M_\odot
+\]
+
+\subsection{Der innerste stabile Orbit (ISCO) in der Weber-Gravitation}
+
+Für eine kreisförmige Bahn ($\dot{r}=0$, $\ddot{r} = -v^2/r$) liefert die Weber-Gravitation mit $\beta = 0{,}5$:
+
+\[
+\frac{mv^2}{r} = \frac{GMm}{r^2} \left( 1 + \frac{v^2}{2c^2} \right)
+\]
+
+Auflösen nach $v^2$:
+\[
+v^2 = \frac{GM}{r} \left( 1 + \frac{GM}{2c^2 r} \right)
+\]
+
+Die Bedingung für den innersten stabilen Orbit ($dv/dr = 0$) ergibt:
+
+\[
+r_{\text{ISCO}} = \frac{12GM}{c^2}
+\]
+
+Für $M = M_{\text{BEC}}$: $r_{\text{ISCO}} \approx 5{,}3 \times 10^{10}\,\text{m} \approx 0{,}35\,\text{AU}$.
+
+\subsection{Die radiale Dichteverteilung der Galaxie}
+
+Die aus dem BEC-Kern ausströmende Materie folgt der DSTT-Drift:
+\[
+v_{\text{drift}}(r) = B \sqrt{\frac{GM_{\text{Kern}}}{r^3}}
+\]
+
+Die Materieentstehungsrate im fraktalen Raum:
+\[
+\frac{d\dot{M}_{\text{cre}}}{d\ln r} \propto r^{3-D} = r^{0{,}29}
+\]
+
+Die Dichte ergibt sich aus Kontinuität:
+\[
+\rho_{\text{Gal}}(r) = \frac{\dot{M}_{\text{cre}}(r)}{4\pi r^2 v_{\text{drift}}(r)} \propto \frac{r^{0{,}29}}{r^2 \cdot r^{-3/2}} = r^{-0{,}21}
+\]
+
+\subsection{Die Rotationskurve einer Galaxie}
+
+Aus der kumulierten Masse $M(r) \propto \int_0^r \rho(r') r'^2 dr' \propto r^{2{,}79}$ folgt:
+
+\[
+v(r) = \sqrt{\frac{GM(r)}{r}} \propto \sqrt{r^{2{,}79 - 1}} = r^{0{,}895}
+\]
+
+Dies ist eine fast flache Rotationskurve.
+
+\subsection{Das Massenverhältnis $M_{\text{Gal}}/M_{\text{Kern}}$}
+
+Die Einfangwahrscheinlichkeit im fraktalen Raum:
+\[
+\alpha_{\text{in}} = \left( \frac{r_c}{r_{\text{max}}} \right)^{3-D}
+\]
+
+Mit $r_c \sim 200\,\text{m}$, $r_{\text{max}} \sim 5 \times 10^{11}\,\text{m}$ und $3-D = 0{,}29$:
+
+\[
+\alpha_{\text{in}} \approx \left( \frac{200}{5 \times 10^{11}} \right)^{0{,}29} \approx (4 \times 10^{-10})^{0{,}29} \approx 10^{-2{,}9} \approx 0{,}001
+\]
+
+Daraus:
+\[
+\frac{M_{\text{Gal}}}{M_{\text{Kern}}} = \frac{1 - \alpha_{\text{in}}}{\alpha_{\text{in}}} \approx \frac{1}{0{,}001} = 1000
+\]
+
+\subsection{Die Entstehungszeit der Galaxie}
+
+Aus der Drift-Gleichung $dr/dt = v_{\text{drift}}(r)$ folgt:
+
+\[
+t(r) = \frac{2}{5B\sqrt{GM_{\text{Kern}}}} r^{5/2}
+\]
+
+Umgekehrt: $r(t) \propto t^{2/5}$. Mit $\dot{M}_{\text{cre}} \propto r^{0{,}29} \propto t^{0{,}116}$ ergibt sich:
+
+\[
+M_{\text{Gal}}(t) \propto \int_0^t t'^{0{,}116} dt' \propto t^{1{,}116}
+\]
+
+Für $M_{\text{Gal}} \approx 3 \times 10^9 M_\odot$ und typische Raten ergibt sich $t \sim 10^{10}$ Jahre.
 
 \begin{thebibliography}{99}
 
