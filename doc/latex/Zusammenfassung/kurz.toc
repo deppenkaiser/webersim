@@ -1,44 +1,76 @@
-\babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung und Überblick}{2}{section.1}%
-\contentsline {section}{\numberline {2}Grundlegende Gleichungen und Konzepte}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Weber-Elektrodynamik (WED)}{2}{subsection.2.1}%
-\contentsline {paragraph}{Skalare Form (Zentralkraftnäherung):}{2}{section*.2}%
-\contentsline {paragraph}{Vektorielle Form (allgemeiner Kraftvektor):}{2}{section*.3}%
-\contentsline {subsection}{\numberline {2.2}Weber-Gravitation (WG)}{2}{subsection.2.2}%
-\contentsline {paragraph}{Gravitationskraft:}{3}{section*.4}%
-\contentsline {subsection}{\numberline {2.3}De-Broglie-Bohm-Theorie (DBT) und Quantenpotential}{3}{subsection.2.3}%
-\contentsline {paragraph}{Quantenpotential:}{3}{section*.5}%
-\contentsline {paragraph}{Führungsgleichung (Guidance Equation):}{3}{section*.6}%
-\contentsline {paragraph}{Fundamentale Bewegungsgleichung:}{3}{section*.7}%
-\contentsline {subsection}{\numberline {2.4}Kraftdichte in kontinuierlichen Medien}{3}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Fraktale Raumdimension}{3}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Emergenz der etablierten Physik}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Emergenz der Speziellen Relativitätstheorie (SRT)}{4}{subsection.3.1}%
-\contentsline {paragraph}{Grundpostulat:}{4}{section*.8}%
-\contentsline {paragraph}{Systematische Herleitung:}{4}{section*.9}%
-\contentsline {subsection}{\numberline {3.2}Emergenz der Maxwell-Gleichungen}{4}{subsection.3.2}%
-\contentsline {paragraph}{Grundpostulat:}{4}{section*.10}%
-\contentsline {paragraph}{Systematische Herleitung:}{4}{section*.11}%
-\contentsline {subsection}{\numberline {3.3}Emergenz der Quantenmechanik (Schrödinger-Gleichung)}{5}{subsection.3.3}%
-\contentsline {paragraph}{Grundpostulat:}{5}{section*.12}%
-\contentsline {paragraph}{Systematische Herleitung (Madelung-Transformation):}{5}{section*.13}%
-\contentsline {subsection}{\numberline {3.4}Konvergente Emergenz der Allgemeinen Relativitätstheorie (ART)}{6}{subsection.3.4}%
-\contentsline {paragraph}{Kernargument:}{6}{section*.14}%
-\contentsline {paragraph}{Systematischer Vergleich:}{6}{section*.15}%
-\contentsline {subsection}{\numberline {3.5}Emergenz der Quantenelektrodynamik (QED)}{6}{subsection.3.5}%
-\contentsline {paragraph}{Kernargument:}{6}{section*.16}%
-\contentsline {paragraph}{Systematische Emergenzbeziehungen:}{6}{section*.17}%
-\contentsline {section}{\numberline {4}Anwendungen in der Plasmaphysik und Astrophysik}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Modifizierte Plasmatheorie}{7}{subsection.4.1}%
-\contentsline {paragraph}{Dispersionsrelation im Plasma:}{7}{section*.18}%
-\contentsline {paragraph}{Modifizierte Ampère-Gleichung:}{7}{section*.19}%
-\contentsline {subsection}{\numberline {4.2}Anwendungen in der Fusionsforschung}{7}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Anwendungen in der Astrophysik}{7}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Raumfahrtantrieb}{7}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Kernaussagen, Kritik und philosophische Implikationen}{8}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Zentrale Kernaussagen der WDBT}{8}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Kritik an etablierten Theorien}{8}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Philosophische Implikationen}{8}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Experimentelle Vorhersagen}{8}{section.6}%
-\contentsline {section}{\numberline {7}Zusammenfassung und Ausblick}{9}{section.7}%
-\contentsline {section}{Anhang}{9}{section*.20}%
+\contentsline {section}{\numberline {1}Einleitung: Vom Teilchen zum Feld}{4}{}%
+\contentsline {section}{\numberline {2}Grundlagen der WDBT+}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Die Weber-Elektrodynamik (WED)}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Die Weber-Gravitation (WG)}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Die Wirbelstruktur der WG}{5}{}%
+\contentsline {subsection}{\numberline {2.4}Das de Broglie-Bohm-Quantenpotential (DBT)}{5}{}%
+\contentsline {subsection}{\numberline {2.5}Die fraktale Raumdimension}{6}{}%
+\contentsline {section}{\numberline {3}Dynamische Schwere-Trägheits-Theorie (DSTT)}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Axiome der DSTT}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Bahnformen und Spiralbahnen}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Die Zustandsvariable $\beta $ in der DSTT}{7}{}%
+\contentsline {subsection}{\numberline {3.4}Exzentrizitätsänderung}{7}{}%
+\contentsline {subsection}{\numberline {3.5}Perfekte Kreisbahnen sind unmöglich}{8}{}%
+\contentsline {subsection}{\numberline {3.6}Gravitationsentropie und intrinsischer Zeitpfeil}{8}{}%
+\contentsline {subsection}{\numberline {3.7}Langfristige Drift}{9}{}%
+\contentsline {section}{\numberline {4}Die $\Omega $-Theorie der Gravitation}{9}{}%
+\contentsline {subsection}{\numberline {4.1}Axiome der $\Omega $-Theorie}{9}{}%
+\contentsline {subsection}{\numberline {4.2}Definition der Felder}{9}{}%
+\contentsline {subsection}{\numberline {4.3}Die Maxwell-Form der Feldgleichungen}{10}{}%
+\contentsline {subsection}{\numberline {4.4}Die Bewegungsgleichung}{10}{}%
+\contentsline {subsection}{\numberline {4.5}Herleitung der Maxwell-Gravitation aus der WG}{10}{}%
+\contentsline {subsection}{\numberline {4.6}Die vollständigen Maxwell-Gleichungen der Gravitation}{11}{}%
+\contentsline {subsection}{\numberline {4.7}Omega-Wellen: Gravitationswellen in der $\Omega $-Theorie}{11}{}%
+\contentsline {subsubsection}{\numberline {4.7.1}Die fundamentale Natur der Omega-Wellen}{11}{}%
+\contentsline {subsubsection}{\numberline {4.7.2}Die emergente Retardierung im fraktalen Raum}{12}{}%
+\contentsline {subsubsection}{\numberline {4.7.3}Die effektive Wellengleichung}{12}{}%
+\contentsline {subsubsection}{\numberline {4.7.4}Unterschiede zu ART-Wellen}{12}{}%
+\contentsline {subsubsection}{\numberline {4.7.5}Testable Vorhersagen}{12}{}%
+\contentsline {subsubsection}{\numberline {4.7.6}Interpretation der LIGO/Virgo-Daten}{13}{}%
+\contentsline {section}{\numberline {5}Bose-Einstein-Kondensat (BEC)-Objekte}{13}{}%
+\contentsline {subsection}{\numberline {5.1}Paarbildung und Bose-Einstein-Kondensation}{13}{}%
+\contentsline {subsection}{\numberline {5.2}Zustandsgleichung eines BEC-Objekts}{13}{}%
+\contentsline {subsection}{\numberline {5.3}Radius-Masse-Beziehung}{14}{}%
+\contentsline {subsection}{\numberline {5.4}Maximale Masse eines BEC-Objekts}{14}{}%
+\contentsline {subsection}{\numberline {5.5}Relativistische Korrekturen aus der Weber-Gravitation}{14}{}%
+\contentsline {subsection}{\numberline {5.6}Was sind beobachtete supermassereiche Objekte?}{15}{}%
+\contentsline {subsection}{\numberline {5.7}Strukturelle Analogie zum Atom}{15}{}%
+\contentsline {subsection}{\numberline {5.8}Kollisionen von BEC-Objekten}{15}{}%
+\contentsline {subsection}{\numberline {5.9}Gravitationswellen von BEC-Objekten}{15}{}%
+\contentsline {section}{\numberline {6}Fraktale Maxwell-Gleichungen}{16}{}%
+\contentsline {subsection}{\numberline {6.1}Der fraktale Nabla-Operator $\nabla _D$}{16}{}%
+\contentsline {subsection}{\numberline {6.2}Die fraktalen Maxwell-Gleichungen der Elektrodynamik}{16}{}%
+\contentsline {subsubsection}{\numberline {6.2.1}Gaußsches Gesetz (elektrisch)}{16}{}%
+\contentsline {subsubsection}{\numberline {6.2.2}Gaußsches Gesetz (magnetisch)}{16}{}%
+\contentsline {subsubsection}{\numberline {6.2.3}Faradaysches Induktionsgesetz}{16}{}%
+\contentsline {subsubsection}{\numberline {6.2.4}Ampèresches Gesetz (mit Maxwell-Ergänzung)}{17}{}%
+\contentsline {subsection}{\numberline {6.3}Alternative Formulierung mit fraktaler Metrik}{17}{}%
+\contentsline {subsection}{\numberline {6.4}Die fraktalen Maxwell-Gleichungen der Gravitation}{17}{}%
+\contentsline {subsection}{\numberline {6.5}Die Wellengleichung im fraktalen Raum}{18}{}%
+\contentsline {subsection}{\numberline {6.6}Dispersionsrelation}{18}{}%
+\contentsline {subsection}{\numberline {6.7}Konsequenzen und Erklärungen}{18}{}%
+\contentsline {subsubsection}{\numberline {6.7.1}Erklärung der Feinstrukturkonstante}{18}{}%
+\contentsline {subsubsection}{\numberline {6.7.2}Keine Unendlichkeiten – keine Renormierung nötig}{19}{}%
+\contentsline {subsubsection}{\numberline {6.7.3}Skalierungsgesetze in Plasmen}{19}{}%
+\contentsline {subsubsection}{\numberline {6.7.4}Einheit von Elektrodynamik und Gravitation}{19}{}%
+\contentsline {section}{\numberline {7}Kosmologie: Stationäres Universum ohne Urknall}{19}{}%
+\contentsline {subsection}{\numberline {7.1}Rotverschiebung}{19}{}%
+\contentsline {subsection}{\numberline {7.2}Galaxienrotation}{19}{}%
+\contentsline {subsection}{\numberline {7.3}CMB-Dipol}{20}{}%
+\contentsline {subsection}{\numberline {7.4}Zeitpfeil}{20}{}%
+\contentsline {subsection}{\numberline {7.5}Materieentstehung und Galaxienwachstum}{20}{}%
+\contentsline {subsection}{\numberline {7.6}Die Sonne als Mikrokosmos}{21}{}%
+\contentsline {subsection}{\numberline {7.7}Beobachtbare Signaturen: Der EHT-Schatten}{21}{}%
+\contentsline {section}{\numberline {8}Vergleich mit dem Standardmodell}{21}{}%
+\contentsline {section}{\numberline {9}Zusammenhang zwischen WG, DSTT und Maxwell-Gravitation}{21}{}%
+\contentsline {subsection}{\numberline {9.1}Die Identitätsbeziehung}{21}{}%
+\contentsline {subsection}{\numberline {9.2}Die Kopplungsgleichung}{22}{}%
+\contentsline {subsection}{\numberline {9.3}Übertragung auf die Elektrodynamik}{22}{}%
+\contentsline {subsection}{\numberline {9.4}Die Erweiterte Weber-Theorie}{23}{}%
+\contentsline {section}{\numberline {10}Zusammenfassung der Zusammenhänge}{23}{}%
+\contentsline {section}{\numberline {11}Testbare Vorhersagen}{24}{}%
+\contentsline {section}{\numberline {12}Diskussion und Ausblick}{25}{}%
+\contentsline {subsection}{\numberline {12.1}Warum die ART prinzipiell unvollständig sein muss}{25}{}%
+\contentsline {subsection}{\numberline {12.2}Die ART als emergenter Grenzfall}{25}{}%
+\contentsline {subsection}{\numberline {12.3}Die entscheidende Frage}{25}{}%
+\contentsline {section}{\numberline {13}Fazit}{26}{}%
