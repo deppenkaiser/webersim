@@ -1,76 +1,85 @@
-\contentsline {section}{\numberline {1}Einleitung: Vom Teilchen zum Feld}{4}{}%
-\contentsline {section}{\numberline {2}Grundlagen der WDBT+}{4}{}%
-\contentsline {subsection}{\numberline {2.1}Die Weber-Elektrodynamik (WED)}{4}{}%
-\contentsline {subsection}{\numberline {2.2}Die Weber-Gravitation (WG)}{4}{}%
-\contentsline {subsection}{\numberline {2.3}Die Wirbelstruktur der WG}{5}{}%
-\contentsline {subsection}{\numberline {2.4}Das de Broglie-Bohm-Quantenpotential (DBT)}{5}{}%
-\contentsline {subsection}{\numberline {2.5}Die fraktale Raumdimension}{6}{}%
-\contentsline {section}{\numberline {3}Dynamische Schwere-Trägheits-Theorie (DSTT)}{6}{}%
-\contentsline {subsection}{\numberline {3.1}Axiome der DSTT}{6}{}%
-\contentsline {subsection}{\numberline {3.2}Bahnformen und Spiralbahnen}{7}{}%
-\contentsline {subsection}{\numberline {3.3}Die Zustandsvariable $\beta $ in der DSTT}{7}{}%
-\contentsline {subsection}{\numberline {3.4}Exzentrizitätsänderung}{7}{}%
-\contentsline {subsection}{\numberline {3.5}Perfekte Kreisbahnen sind unmöglich}{8}{}%
-\contentsline {subsection}{\numberline {3.6}Gravitationsentropie und intrinsischer Zeitpfeil}{8}{}%
-\contentsline {subsection}{\numberline {3.7}Langfristige Drift}{9}{}%
-\contentsline {section}{\numberline {4}Die $\Omega $-Theorie der Gravitation}{9}{}%
-\contentsline {subsection}{\numberline {4.1}Axiome der $\Omega $-Theorie}{9}{}%
-\contentsline {subsection}{\numberline {4.2}Definition der Felder}{9}{}%
-\contentsline {subsection}{\numberline {4.3}Die Maxwell-Form der Feldgleichungen}{10}{}%
-\contentsline {subsection}{\numberline {4.4}Die Bewegungsgleichung}{10}{}%
-\contentsline {subsection}{\numberline {4.5}Herleitung der Maxwell-Gravitation aus der WG}{10}{}%
-\contentsline {subsection}{\numberline {4.6}Die vollständigen Maxwell-Gleichungen der Gravitation}{11}{}%
-\contentsline {subsection}{\numberline {4.7}Omega-Wellen: Gravitationswellen in der $\Omega $-Theorie}{11}{}%
-\contentsline {subsubsection}{\numberline {4.7.1}Die fundamentale Natur der Omega-Wellen}{11}{}%
-\contentsline {subsubsection}{\numberline {4.7.2}Die emergente Retardierung im fraktalen Raum}{12}{}%
-\contentsline {subsubsection}{\numberline {4.7.3}Die effektive Wellengleichung}{12}{}%
-\contentsline {subsubsection}{\numberline {4.7.4}Unterschiede zu ART-Wellen}{12}{}%
-\contentsline {subsubsection}{\numberline {4.7.5}Testable Vorhersagen}{12}{}%
-\contentsline {subsubsection}{\numberline {4.7.6}Interpretation der LIGO/Virgo-Daten}{13}{}%
-\contentsline {section}{\numberline {5}Bose-Einstein-Kondensat (BEC)-Objekte}{13}{}%
-\contentsline {subsection}{\numberline {5.1}Paarbildung und Bose-Einstein-Kondensation}{13}{}%
-\contentsline {subsection}{\numberline {5.2}Zustandsgleichung eines BEC-Objekts}{13}{}%
-\contentsline {subsection}{\numberline {5.3}Radius-Masse-Beziehung}{14}{}%
-\contentsline {subsection}{\numberline {5.4}Maximale Masse eines BEC-Objekts}{14}{}%
-\contentsline {subsection}{\numberline {5.5}Relativistische Korrekturen aus der Weber-Gravitation}{14}{}%
-\contentsline {subsection}{\numberline {5.6}Was sind beobachtete supermassereiche Objekte?}{15}{}%
-\contentsline {subsection}{\numberline {5.7}Strukturelle Analogie zum Atom}{15}{}%
-\contentsline {subsection}{\numberline {5.8}Kollisionen von BEC-Objekten}{15}{}%
-\contentsline {subsection}{\numberline {5.9}Gravitationswellen von BEC-Objekten}{15}{}%
-\contentsline {section}{\numberline {6}Fraktale Maxwell-Gleichungen}{16}{}%
-\contentsline {subsection}{\numberline {6.1}Der fraktale Nabla-Operator $\nabla _D$}{16}{}%
-\contentsline {subsection}{\numberline {6.2}Die fraktalen Maxwell-Gleichungen der Elektrodynamik}{16}{}%
-\contentsline {subsubsection}{\numberline {6.2.1}Gaußsches Gesetz (elektrisch)}{16}{}%
-\contentsline {subsubsection}{\numberline {6.2.2}Gaußsches Gesetz (magnetisch)}{16}{}%
-\contentsline {subsubsection}{\numberline {6.2.3}Faradaysches Induktionsgesetz}{16}{}%
-\contentsline {subsubsection}{\numberline {6.2.4}Ampèresches Gesetz (mit Maxwell-Ergänzung)}{17}{}%
-\contentsline {subsection}{\numberline {6.3}Alternative Formulierung mit fraktaler Metrik}{17}{}%
-\contentsline {subsection}{\numberline {6.4}Die fraktalen Maxwell-Gleichungen der Gravitation}{17}{}%
-\contentsline {subsection}{\numberline {6.5}Die Wellengleichung im fraktalen Raum}{18}{}%
-\contentsline {subsection}{\numberline {6.6}Dispersionsrelation}{18}{}%
-\contentsline {subsection}{\numberline {6.7}Konsequenzen und Erklärungen}{18}{}%
-\contentsline {subsubsection}{\numberline {6.7.1}Erklärung der Feinstrukturkonstante}{18}{}%
-\contentsline {subsubsection}{\numberline {6.7.2}Keine Unendlichkeiten – keine Renormierung nötig}{19}{}%
-\contentsline {subsubsection}{\numberline {6.7.3}Skalierungsgesetze in Plasmen}{19}{}%
-\contentsline {subsubsection}{\numberline {6.7.4}Einheit von Elektrodynamik und Gravitation}{19}{}%
-\contentsline {section}{\numberline {7}Kosmologie: Stationäres Universum ohne Urknall}{19}{}%
-\contentsline {subsection}{\numberline {7.1}Rotverschiebung}{19}{}%
-\contentsline {subsection}{\numberline {7.2}Galaxienrotation}{19}{}%
-\contentsline {subsection}{\numberline {7.3}CMB-Dipol}{20}{}%
-\contentsline {subsection}{\numberline {7.4}Zeitpfeil}{20}{}%
-\contentsline {subsection}{\numberline {7.5}Materieentstehung und Galaxienwachstum}{20}{}%
-\contentsline {subsection}{\numberline {7.6}Die Sonne als Mikrokosmos}{21}{}%
-\contentsline {subsection}{\numberline {7.7}Beobachtbare Signaturen: Der EHT-Schatten}{21}{}%
-\contentsline {section}{\numberline {8}Vergleich mit dem Standardmodell}{21}{}%
-\contentsline {section}{\numberline {9}Zusammenhang zwischen WG, DSTT und Maxwell-Gravitation}{21}{}%
-\contentsline {subsection}{\numberline {9.1}Die Identitätsbeziehung}{21}{}%
-\contentsline {subsection}{\numberline {9.2}Die Kopplungsgleichung}{22}{}%
-\contentsline {subsection}{\numberline {9.3}Übertragung auf die Elektrodynamik}{22}{}%
-\contentsline {subsection}{\numberline {9.4}Die Erweiterte Weber-Theorie}{23}{}%
-\contentsline {section}{\numberline {10}Zusammenfassung der Zusammenhänge}{23}{}%
-\contentsline {section}{\numberline {11}Testbare Vorhersagen}{24}{}%
-\contentsline {section}{\numberline {12}Diskussion und Ausblick}{25}{}%
-\contentsline {subsection}{\numberline {12.1}Warum die ART prinzipiell unvollständig sein muss}{25}{}%
-\contentsline {subsection}{\numberline {12.2}Die ART als emergenter Grenzfall}{25}{}%
-\contentsline {subsection}{\numberline {12.3}Die entscheidende Frage}{25}{}%
-\contentsline {section}{\numberline {13}Fazit}{26}{}%
+\contentsline {section}{\numberline {1}Einleitung: Vom Teilchen zum Feld}{6}{}%
+\contentsline {section}{\numberline {2}Grundlagen der WDBT+}{6}{}%
+\contentsline {subsection}{\numberline {2.1}Die Weber-Elektrodynamik (WED)}{6}{}%
+\contentsline {subsection}{\numberline {2.2}Die Weber-Gravitation (WG)}{6}{}%
+\contentsline {subsection}{\numberline {2.3}Die Wirbelstruktur der WG}{7}{}%
+\contentsline {subsection}{\numberline {2.4}Das de Broglie-Bohm-Quantenpotential (DBT)}{7}{}%
+\contentsline {subsection}{\numberline {2.5}Die fraktale Raumdimension}{8}{}%
+\contentsline {section}{\numberline {3}Dynamische Schwere-Trägheits-Theorie (DSTT)}{8}{}%
+\contentsline {subsection}{\numberline {3.1}Axiome der DSTT}{8}{}%
+\contentsline {subsection}{\numberline {3.2}Bahnformen und Spiralbahnen}{9}{}%
+\contentsline {subsection}{\numberline {3.3}Die Zustandsvariable $\beta $ in der DSTT}{9}{}%
+\contentsline {subsection}{\numberline {3.4}Exzentrizitätsänderung}{9}{}%
+\contentsline {subsection}{\numberline {3.5}Perfekte Kreisbahnen sind unmöglich}{10}{}%
+\contentsline {subsection}{\numberline {3.6}Gravitationsentropie und intrinsischer Zeitpfeil}{10}{}%
+\contentsline {subsection}{\numberline {3.7}Langfristige Drift}{11}{}%
+\contentsline {section}{\numberline {4}Die $\Omega $-Theorie der Gravitation}{11}{}%
+\contentsline {subsection}{\numberline {4.1}Axiome der $\Omega $-Theorie}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Definition der Felder}{11}{}%
+\contentsline {subsection}{\numberline {4.3}Die Maxwell-Form der Feldgleichungen}{12}{}%
+\contentsline {subsection}{\numberline {4.4}Die Bewegungsgleichung}{12}{}%
+\contentsline {subsection}{\numberline {4.5}Herleitung der Maxwell-Gravitation aus der WG}{12}{}%
+\contentsline {subsection}{\numberline {4.6}Die vollständigen Maxwell-Gleichungen der Gravitation}{13}{}%
+\contentsline {subsection}{\numberline {4.7}Omega-Wellen: Gravitationswellen in der $\Omega $-Theorie}{13}{}%
+\contentsline {subsubsection}{\numberline {4.7.1}Die fundamentale Natur der Omega-Wellen}{13}{}%
+\contentsline {subsubsection}{\numberline {4.7.2}Die emergente Retardierung im fraktalen Raum}{14}{}%
+\contentsline {subsubsection}{\numberline {4.7.3}Die effektive Wellengleichung}{14}{}%
+\contentsline {subsubsection}{\numberline {4.7.4}Unterschiede zu ART-Wellen}{14}{}%
+\contentsline {subsubsection}{\numberline {4.7.5}Testable Vorhersagen}{14}{}%
+\contentsline {subsubsection}{\numberline {4.7.6}Interpretation der LIGO/Virgo-Daten}{15}{}%
+\contentsline {section}{\numberline {5}Bose-Einstein-Kondensat (BEC)-Objekte}{15}{}%
+\contentsline {subsection}{\numberline {5.1}Paarbildung und Bose-Einstein-Kondensation}{15}{}%
+\contentsline {subsection}{\numberline {5.2}Zustandsgleichung eines BEC-Objekts}{15}{}%
+\contentsline {subsection}{\numberline {5.3}Radius-Masse-Beziehung}{16}{}%
+\contentsline {subsection}{\numberline {5.4}Maximale Masse eines BEC-Objekts}{16}{}%
+\contentsline {subsection}{\numberline {5.5}Relativistische Korrekturen aus der Weber-Gravitation}{16}{}%
+\contentsline {subsection}{\numberline {5.6}Was sind beobachtete supermassereiche Objekte?}{17}{}%
+\contentsline {subsection}{\numberline {5.7}Strukturelle Analogie zum Atom}{17}{}%
+\contentsline {subsection}{\numberline {5.8}Kollisionen von BEC-Objekten}{17}{}%
+\contentsline {subsection}{\numberline {5.9}Gravitationswellen von BEC-Objekten}{17}{}%
+\contentsline {section}{\numberline {6}Das Neutrino als Q-Teilchen}{18}{}%
+\contentsline {subsection}{\numberline {6.1}Die Rolle des Neutrinos in der WDBT+}{18}{}%
+\contentsline {subsection}{\numberline {6.2}Das Quantenpotential als Ursache der Nichtlokalität}{18}{}%
+\contentsline {subsection}{\numberline {6.3}Herleitung der Neutrinomasse}{18}{}%
+\contentsline {subsection}{\numberline {6.4}Das Neutrino als Vermittler der Nichtlokalität}{19}{}%
+\contentsline {subsection}{\numberline {6.5}Drei Neutrino-Generationen}{19}{}%
+\contentsline {subsection}{\numberline {6.6}Konsequenzen für die Dunkle Materie}{19}{}%
+\contentsline {subsection}{\numberline {6.7}Das Neutrino in der Taxonomie der WDBT+}{20}{}%
+\contentsline {subsection}{\numberline {6.8}Zusammenfassung}{20}{}%
+\contentsline {section}{\numberline {7}Fraktale Maxwell-Gleichungen}{20}{}%
+\contentsline {subsection}{\numberline {7.1}Der fraktale Nabla-Operator $\nabla _D$}{20}{}%
+\contentsline {subsection}{\numberline {7.2}Die fraktalen Maxwell-Gleichungen der Elektrodynamik}{20}{}%
+\contentsline {subsubsection}{\numberline {7.2.1}Gaußsches Gesetz (elektrisch)}{20}{}%
+\contentsline {subsubsection}{\numberline {7.2.2}Gaußsches Gesetz (magnetisch)}{21}{}%
+\contentsline {subsubsection}{\numberline {7.2.3}Faradaysches Induktionsgesetz}{21}{}%
+\contentsline {subsubsection}{\numberline {7.2.4}Ampèresches Gesetz (mit Maxwell-Ergänzung)}{21}{}%
+\contentsline {subsection}{\numberline {7.3}Alternative Formulierung mit fraktaler Metrik}{21}{}%
+\contentsline {subsection}{\numberline {7.4}Die fraktalen Maxwell-Gleichungen der Gravitation}{21}{}%
+\contentsline {subsection}{\numberline {7.5}Die Wellengleichung im fraktalen Raum}{22}{}%
+\contentsline {subsection}{\numberline {7.6}Dispersionsrelation}{22}{}%
+\contentsline {subsection}{\numberline {7.7}Konsequenzen und Erklärungen}{23}{}%
+\contentsline {subsubsection}{\numberline {7.7.1}Erklärung der Feinstrukturkonstante}{23}{}%
+\contentsline {subsubsection}{\numberline {7.7.2}Keine Unendlichkeiten – keine Renormierung nötig}{23}{}%
+\contentsline {subsubsection}{\numberline {7.7.3}Skalierungsgesetze in Plasmen}{23}{}%
+\contentsline {subsubsection}{\numberline {7.7.4}Einheit von Elektrodynamik und Gravitation}{23}{}%
+\contentsline {section}{\numberline {8}Kosmologie: Stationäres Universum ohne Urknall}{23}{}%
+\contentsline {subsection}{\numberline {8.1}Rotverschiebung}{23}{}%
+\contentsline {subsection}{\numberline {8.2}Galaxienrotation}{24}{}%
+\contentsline {subsection}{\numberline {8.3}CMB-Dipol}{24}{}%
+\contentsline {subsection}{\numberline {8.4}Zeitpfeil}{24}{}%
+\contentsline {subsection}{\numberline {8.5}Materieentstehung und Galaxienwachstum}{24}{}%
+\contentsline {subsection}{\numberline {8.6}Die Sonne als Mikrokosmos}{25}{}%
+\contentsline {subsection}{\numberline {8.7}Beobachtbare Signaturen: Der EHT-Schatten}{25}{}%
+\contentsline {section}{\numberline {9}Vergleich mit dem Standardmodell}{25}{}%
+\contentsline {section}{\numberline {10}Zusammenhang zwischen WG, DSTT und Maxwell-Gravitation}{25}{}%
+\contentsline {subsection}{\numberline {10.1}Die Identitätsbeziehung}{25}{}%
+\contentsline {subsection}{\numberline {10.2}Die Kopplungsgleichung}{26}{}%
+\contentsline {subsection}{\numberline {10.3}Übertragung auf die Elektrodynamik}{27}{}%
+\contentsline {subsection}{\numberline {10.4}Die Erweiterte Weber-Theorie}{27}{}%
+\contentsline {section}{\numberline {11}Zusammenfassung der Zusammenhänge}{28}{}%
+\contentsline {section}{\numberline {12}Testbare Vorhersagen}{28}{}%
+\contentsline {section}{\numberline {13}Diskussion und Ausblick}{29}{}%
+\contentsline {subsection}{\numberline {13.1}Warum die ART prinzipiell unvollständig sein muss}{29}{}%
+\contentsline {subsection}{\numberline {13.2}Die ART als emergenter Grenzfall}{29}{}%
+\contentsline {subsection}{\numberline {13.3}Die entscheidende Frage}{30}{}%
+\contentsline {section}{\numberline {14}Fazit}{30}{}%
