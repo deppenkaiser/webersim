@@ -1,0 +1,693 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{csquotes}
+\geometry{margin=2.5cm}
+
+\newtheorem{axiom}{Axiom}
+\newtheorem{definition}{Definition}
+\newtheorem{satz}{Satz}
+\newtheorem{theorem}{Theorem}
+\newtheorem{korollar}{Korollar}
+\newtheorem{bemerkung}{Bemerkung}
+\newtheorem{diskussion}{Diskussion}
+\renewcommand{\proofname}{Beweis}
+
+\title{Die Theorie der fraktalen Entropie\\
+\Large Eine konsistente Thermodynamik ohne Wärmetod\\
+\Large Mit einer Diskussion der topologischen Optionen}
+\author{Michael Czybor}
+\date{März 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Die Theorie der fraktalen Entropie ist eine fundamentale Erweiterung der 
+Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+). Sie basiert auf 
+sieben Axiomen, die einen geschlossenen, stationären Kreislauf der 
+fraktalen Entropie beschreiben. Die Gravitation erzeugt durch die 
+DSTT-Drift ($\dot{\beta}>0$) irreversible Prozesse und einen intrinsischen 
+Zeitpfeil, während die Elektrodynamik ($\dot{\beta}=0$) stabile 
+Strukturen bewahrt. Die fraktale Raumdimension $D\approx2,71$ verhindert 
+ein globales Entropiemaximum und damit den Wärmetod. Energie, Masse und 
+Dichte bleiben konstant; die fraktale Entropie zirkuliert zwischen 
+Vakuum, Materie und $\Omega$-Feld. Die Theorie wird für beide 
+topologischen Möglichkeiten (geschlossenes oder offenes Universum) 
+diskutiert. In beiden Fällen expandiert der Raum nicht; lediglich 
+Strukturen und Bahnen dehnen sich durch die DSTT-Drift aus, kompensiert 
+durch kontinuierliche Materieentstehung.
+\end{abstract}
+
+\tableofcontents
+
+\section{Einleitung}
+
+Die Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+) beschreibt 
+die Gravitation als direkte, instantane Teilchen-Teilchen-Wechselwirkung 
+nach dem Weber-Gesetz, gesteuert durch das Bohmsche Quantenpotential, in 
+einem Raum mit fraktaler Dimension $D\approx2,71$. Die vorliegende 
+Theorie der fraktalen Entropie ergänzt dieses Bild durch eine 
+konsistente thermodynamische Fundierung. Ihr zentrales Ergebnis ist, 
+dass trotz permanenter irreversibler Prozesse und eines intrinsischen 
+Zeitpfeils kein Wärmetod eintritt – sowohl in einem topologisch 
+geschlossenen als auch in einem topologisch offenen Universum.
+
+\section{Die Axiome der Theorie}
+
+\subsection{Axiom 1: Fraktale Raumstruktur}
+
+\begin{axiom}[Fraktale Raumstruktur]
+Der fundamentale Raum ist eine fraktale Menge $\mathcal{M}$ mit Hausdorff-Dimension $D$, wobei
+\begin{equation}
+\boxed{D = \frac{\ln 20}{\ln(2 + \phi)} \approx 2,71}, \qquad \phi = \frac{1+\sqrt{5}}{2}
+\end{equation}
+Die fundamentale Längenskala ist
+\begin{equation}
+\boxed{l_0 = \left( \frac{V_{\text{Dodekaeder}}}{V_{\text{Einheitskugel}}} \right)^{1/3} \lambda_p \approx 1,8 \times 10^{-15} \, \text{m}}
+\end{equation}
+mit $\lambda_p$ der Compton-Wellenlänge des Protons. $l_0$ ist die kleinste physikalisch mögliche Distanz – eine natürliche untere, aber keine obere Grenze.
+\end{axiom}
+
+\begin{bemerkung}
+Die fraktale Dimension $D<3$ ist entscheidend für die gesamte Theorie. Sie bewirkt, dass die fraktale Entropie subextensiv ist und kein globales Maximum besitzt.
+\end{bemerkung}
+
+\subsection{Axiom 2: Fraktale Entropie}
+
+\begin{axiom}[Fraktale Entropie]
+Für eine Wahrscheinlichkeitsdichte $\rho: \mathcal{M} \to \mathbb{R}^+$ mit $\int_{\mathcal{M}} \rho \, d^D r = 1$ ist die fraktale Entropie definiert als
+\begin{equation}
+\boxed{S_D[\rho] = -k_B \int_{\mathcal{M}} d^D r \, \rho(\vec{r}) \ln \rho(\vec{r}) \cdot \left( \frac{|\vec{r}|}{l_0} \right)^{D-3}}
+\end{equation}
+\end{axiom}
+
+\begin{bemerkung}
+Für $D=3$ ergibt sich die Boltzmann-Entropie. Für $D<3$ ist $S_D$ subextensiv: Sie wächst langsamer als das Volumen. Dies ist eine direkte Konsequenz der fraktalen Geometrie.
+\end{bemerkung}
+
+\subsection{Axiom 3: Globaler Entropieerhaltungssatz}
+
+\begin{axiom}[Globaler Entropieerhaltungssatz]
+Die Gesamt-fraktale Entropie des Universums ist konstant:
+\begin{equation}
+\boxed{\frac{dS_D^{\text{ges}}}{dt} = 0}
+\end{equation}
+\end{axiom}
+
+\begin{bemerkung}
+Die fraktale Entropie zirkuliert zwischen den Phasen (Vakuum, Materie, $\Omega$-Feld), aber ihr Gesamtwert ist zeitlich konstant. Dies ist das fundamentale Stationaritätsaxiom.
+\end{bemerkung}
+
+\subsection{Axiom 4: Lokale Entropieproduktion}
+
+\begin{axiom}[Lokale Entropieproduktion]
+In jeder einzelnen Phase gilt der zweite Hauptsatz in erweiterter Form:
+\begin{equation}
+\boxed{\frac{dS_D^{(i)}}{dt} \geq 0}
+\end{equation}
+Die Entropie wächst lokal, aber durch Zirkulation ist der globale Zuwachs null.
+\end{axiom}
+
+\subsection{Axiom 5: Gravitation als Quelle der Irreversibilität}
+
+\begin{axiom}[Gravitation]
+Die Weber-Gravitation mit $\beta_{\text{WG}} = 0,5$ führt zu einer monotonen Zunahme des tangentialen Energieanteils:
+\begin{equation}
+\boxed{\dot{\beta}_{\text{DSTT}} > 0 \quad \text{für alle } t}
+\end{equation}
+Dies erzeugt eine permanente Auswärtsdrift, irreversible Prozesse und einen intrinsischen Zeitpfeil.
+\end{axiom}
+
+\subsection{Axiom 6: Elektrodynamik als Stabilisator}
+
+\begin{axiom}[Elektrodynamik]
+Die Weber-Elektrodynamik mit $\beta_{\text{WED}} = 2$ führt zu keiner Änderung der Energieaufteilung:
+\begin{equation}
+\boxed{\dot{\beta}_{\text{DSTT}} = 0 \quad \text{für alle } t}
+\end{equation}
+Sie ermöglicht reversible Prozesse, stabile Bahnen (Ellipsen) und bewahrt Strukturen.
+\end{axiom}
+
+\subsection{Axiom 7: Beschränktheit aller physikalischen Größen}
+
+\begin{axiom}[Beschränktheit]
+Für jede physikalische Größe $X$ (Energie, Masse, Dichte, Temperatur, Volumen, Komplexität) gilt:
+\begin{equation}
+\boxed{\limsup_{t \to \infty} |X(t)| < \infty}
+\end{equation}
+Keine physikalische Größe divergiert oder wächst unbegrenzt. Das Universum bleibt in allen messbaren Aspekten stationär.
+\end{axiom}
+
+\section{Die Struktur der fraktalen Entropie}
+
+\subsection{Die drei Phasen}
+
+Das Universum besteht aus drei Phasen, zwischen denen die fraktale Entropie zirkuliert:
+
+\begin{definition}[Phasen]
+\begin{itemize}
+    \item \textbf{Vakuum (Nullpunkt):} $S_D^{\text{vac}}$ – die fraktale Struktur des Raums selbst
+    \item \textbf{Materie (kinetisch):} $S_D^{\text{kin}}$ – Bewegung der Teilchen, unterteilt in:
+    \begin{itemize}
+        \item $S_D^{\text{kin,grav}}$ – durch Gravitation gebundene Materie
+        \item $S_D^{\text{kin,em}}$ – durch Elektrodynamik gebundene Materie
+    \end{itemize}
+    \item \textbf{$\Omega$-Feld:} $S_D^{\Omega}$ – das Gravitationsfeld als Rotationsfeld
+\end{itemize}
+\end{definition}
+
+Der Erhaltungssatz lautet:
+\begin{equation}
+S_D^{\text{vac}}(t) + S_D^{\text{kin,grav}}(t) + S_D^{\text{kin,em}}(t) + S_D^{\Omega}(t) = S_D^{\text{ges}} = \text{const}
+\end{equation}
+
+\subsection{Die Entropieflüsse}
+
+Aus den Bewegungsgleichungen der WDBT+ folgt:
+
+\begin{definition}[Entropieflussraten]
+\begin{align}
+\frac{dS_D^{\text{vac}}}{dt} &= -\sigma_{\text{cre}} + \sigma_{\text{back}} \\
+\frac{dS_D^{\text{kin,grav}}}{dt} &= +\sigma_{\text{cre}} - \sigma_{\text{drift}} \\
+\frac{dS_D^{\text{kin,em}}}{dt} &= 0 \quad \text{(elektromagnetische Prozesse sind reversibel)} \\
+\frac{dS_D^{\Omega}}{dt} &= +\sigma_{\text{drift}} - \sigma_{\text{back}}
+\end{align}
+mit
+\begin{itemize}
+    \item $\sigma_{\text{cre}} > 0$: Entropiefluss von Vakuum zu gravitativer Materie (Materieentstehung durch Quantenpotential)
+    \item $\sigma_{\text{drift}} > 0$: Entropiefluss von gravitativer Materie zum $\Omega$-Feld (DSTT-Drift)
+    \item $\sigma_{\text{back}} > 0$: Entropiefluss vom $\Omega$-Feld zum Vakuum (Rückkopplung)
+\end{itemize}
+\end{definition}
+
+\begin{satz}[Stationärer Zustand]
+Im stationären Zustand gilt:
+\begin{equation}
+\boxed{\sigma_{\text{cre}} = \sigma_{\text{drift}} = \sigma_{\text{back}} \equiv \sigma}
+\end{equation}
+Damit sind die Entropien jeder Phase konstant:
+\begin{equation}
+\frac{dS_D^{\text{vac}}}{dt} = \frac{dS_D^{\text{kin,grav}}}{dt} = \frac{dS_D^{\text{kin,em}}}{dt} = \frac{dS_D^{\Omega}}{dt} = 0
+\end{equation}
+Es zirkuliert nur der Fluss, nicht die Menge.
+\end{satz}
+
+\begin{figure}[ht]
+\centering
+\framebox{\parbox{0.9\textwidth}{\centering
+\vspace{0.5cm}
+\textbf{Der geschlossene Entropiekreislauf:} \\
+Vakuum $S_D^{\text{vac}}$ $\xrightarrow{\sigma_{\text{cre}}}$ Materie (grav.) $S_D^{\text{kin,grav}}$ $\xrightarrow{\sigma_{\text{drift}}}$ $\Omega$-Feld $S_D^{\Omega}$ $\xrightarrow{\sigma_{\text{back}}}$ Vakuum \\
+Elektromagnetische Materie $S_D^{\text{kin,em}}$ ist vom Kreislauf entkoppelt (reversibel) \\
+Gesamt: $S_D^{\text{ges}} = \text{const}$
+\vspace{0.5cm}
+}}
+\caption{Der geschlossene Kreislauf der fraktalen Entropie.}
+\end{figure}
+
+\section{Die duale Dynamik: Gravitation vs. Elektrodynamik}
+
+\subsection{Herleitung aus der erweiterten Weber-Theorie}
+
+Die allgemeine Weber-Kraft lautet:
+\begin{equation}
+\vec{F} = \frac{Q_1Q_2}{4\pi\epsilon_0 r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{Kraft}} \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
+\end{equation}
+
+Für die zeitliche Änderung der Energieaufteilung folgt:
+\begin{equation}
+\dot{\beta}_{\text{DSTT}} = \frac{2\dot{r}}{r} \cdot \frac{Q_1Q_2}{4\pi\epsilon_0 c^2 r m} \cdot \frac{2 - \beta_{\text{Kraft}}}{\left(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2}\right)^2} + \mathcal{O}\left(\frac{1}{c^4}\right)
+\end{equation}
+
+\begin{satz}[Dualität der Wechselwirkungen]
+Der Faktor $(2 - \beta_{\text{Kraft}})$ bestimmt das Verhalten:
+\begin{equation}
+\boxed{\dot{\beta}_{\text{DSTT}} \begin{cases}
+> 0, & \text{falls } \beta_{\text{Kraft}} < 2 \\
+= 0, & \text{falls } \beta_{\text{Kraft}} = 2
+\end{cases}}
+\end{equation}
+Daraus folgt:
+\begin{itemize}
+    \item \textbf{Gravitation:} $\beta_{\text{WG}} = 0,5 \;\Rightarrow\; \dot{\beta}_{\text{DSTT}} > 0$ (Drift, Irreversibilität)
+    \item \textbf{Elektrodynamik:} $\beta_{\text{WED}} = 2 \;\Rightarrow\; \dot{\beta}_{\text{DSTT}} = 0$ (keine Drift, Reversibilität)
+\end{itemize}
+\end{satz}
+
+\begin{table}[ht]
+\centering
+\caption{Die duale Natur der Wechselwirkungen}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Wechselwirkung} & $\beta_{\text{Kraft}}$ & $\dot{\beta}_{\text{DSTT}}$ & \textbf{Rolle} \\ \hline
+Gravitation & $0,5$ & $> 0$ & Motor der Zeit, Irreversibilität, Drift \\ \hline
+Elektrodynamik & $2$ & $= 0$ & Stabilisator, Reversibilität, Strukturerhalt \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{bemerkung}
+Die Gravitation erzeugt permanente irreversible Flüsse und damit den Zeitpfeil. Die Elektrodynamik ermöglicht stabile, reversible Strukturen (Atome, Moleküle, Sterne) und verhindert, dass die irreversible Dynamik in Chaos umschlägt.
+\end{bemerkung}
+
+\section{Der Nachweis: Warum kein Wärmetod eintritt}
+
+\subsection{Bedingungen für einen Wärmetod}
+
+Ein Wärmetod tritt ein, wenn:
+\begin{enumerate}
+    \item Die Entropie ein globales Maximum erreicht
+    \item Alle Energiegradienten verschwinden
+    \item Keine irreversiblen Prozesse mehr stattfinden
+    \item Das System in einen Gleichgewichtszustand übergeht
+\end{enumerate}
+
+\subsection{Die Verhinderung des Wärmetods}
+
+\begin{satz}[Kein globales Entropiemaximum]
+Die fraktale Entropie $S_D$ hat bei fester Gesamtenergie kein globales Maximum.
+\end{satz}
+
+\begin{proof}
+Die Zustandsdichte im fraktalen Raum skaliert mit $E^{D/3}$. Für $D<3$ ist die Funktion
+\begin{equation}
+S_D(E) = \frac{D}{3} k_B \ln E + \text{const}
+\end{equation}
+monoton wachsend und konkav, besitzt aber kein endliches Maximum. Jeder Zustand kann durch Umverteilung der Energie zwischen den Phasen in einen Zustand gleicher oder höherer Entropie überführt werden.
+\end{proof}
+
+\begin{satz}[Permanente Gradienten]
+Die DSTT-Drift ($\dot{\beta}>0$) erzeugt permanent radiale Energiegradienten:
+\begin{equation}
+\nabla E_{\text{kin,grav}} \neq 0 \quad \text{für alle } t
+\end{equation}
+Diese Gradienten verschwinden nie, weil $\dot{\beta}>0$ eine ständige Umverteilung erzwingt.
+\end{satz}
+
+\begin{satz}[Permanente irreversible Prozesse]
+Die Raten $\sigma_{\text{cre}}, \sigma_{\text{drift}}, \sigma_{\text{back}}$ sind immer positiv:
+\begin{equation}
+\sigma_{\text{cre}} > 0,\quad \sigma_{\text{drift}} > 0,\quad \sigma_{\text{back}} > 0 \quad \text{für alle } t
+\end{equation}
+Es gibt keinen stationären Zustand, in dem diese Raten verschwinden.
+\end{satz}
+
+\begin{satz}[Kein Gleichgewichtspunkt]
+Das System hat keinen attraktiven Fixpunkt im Phasenraum. Stattdessen existiert ein attraktiver Grenzzyklus:
+\begin{equation}
+\lim_{t \to \infty} (E_{\text{vac}}(t), E_{\text{kin,grav}}(t), E_{\Omega}(t)) = \text{Zyklus}
+\end{equation}
+\end{satz}
+
+\begin{theorem}[Hauptsatz der fraktalen Thermodynamik]
+Unter den Axiomen 1--7 gilt:
+\begin{enumerate}
+    \item \textbf{Lokale Entropieproduktion:} $\displaystyle \frac{dS_D^{(i)}}{dt} \geq 0$ für jede Phase
+    \item \textbf{Globale Entropieerhaltung:} $\displaystyle \frac{dS_D^{\text{ges}}}{dt} = 0$
+    \item \textbf{Permanente Dynamik:} $\sigma_{\text{cre}}, \sigma_{\text{drift}}, \sigma_{\text{back}} > 0$ für alle $t$
+    \item \textbf{Kein Entropiemaximum:} Es existiert kein endlicher Zustand maximaler Gesamtentropie
+    \item \textbf{Kein Wärmetod:} Das System erreicht nie einen Gleichgewichtszustand mit verschwindenden Gradienten und Prozessen
+\end{enumerate}
+\end{theorem}
+
+\section{Topologische Optionen: Geschlossenes vs. offenes Universum}
+
+\subsection{Begriffsklärung}
+
+In der Kosmologie gibt es zwei Bedeutungen von \enquote{offen}:
+
+\begin{table}[h]
+\centering
+\caption{Bedeutungen von \enquote{offen} in der Kosmologie}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Bedeutung} & \textbf{Definition} & \textbf{Beispiel} \\ \hline
+Topologisch offen & Unendliche Ausdehnung, kein Rand & Euklidischer Raum $\mathbb{R}^3$ \\ \hline
+Dynamisch offen & Expansion ohne Umkehr, $k \leq 0$ & Friedmann-Modelle mit $\Omega \leq 1$ \\ \hline
+\end{tabular}
+\end{table}
+
+In der WDBT+ ist das Universum \textbf{stationär} – es expandiert nicht. Daher entfällt die dynamische Bedeutung von \enquote{offen}. Es bleibt die topologische Frage: Ist der Raum endlich (geschlossen) oder unendlich (offen)?
+
+\subsection{Die beiden topologischen Optionen}
+
+\begin{diskussion}[Topologische Optionen]
+Die Theorie ist mit beiden Möglichkeiten konsistent:
+
+\begin{itemize}
+    \item \textbf{Geschlossenes Universum ($\mathcal{M}$ kompakt):} Der Raum ist endlich, hat kein Ende, aber ein endliches fraktales Volumen $V_D < \infty$.
+    \item \textbf{Offenes Universum ($\mathcal{M}$ nicht kompakt):} Der Raum ist unendlich ausgedehnt, das fraktale Volumen divergiert ($V_D \to \infty$).
+\end{itemize}
+
+In beiden Fällen gelten die Axiome 1--7. Die fraktale Dimension $D \approx 2,71$ ist unabhängig von der Topologie.
+\end{diskussion}
+
+\subsection{Was sich ausdehnt – und was nicht}
+
+\begin{satz}[Keine Expansion des Raums]
+In beiden topologischen Optionen expandiert der Raum \textbf{nicht}. Das Universum ist stationär.
+\end{satz}
+
+\begin{diskussion}[Ausdehnung von Strukturen]
+Obwohl der Raum nicht expandiert, gibt es Größen, die sich ausdehnen:
+
+\begin{enumerate}
+    \item \textbf{Umlaufbahnen:} Die DSTT-Drift ($\dot{\beta}>0$) führt zu einer permanenten Vergrößerung der Bahnradien:
+    \begin{equation}
+    \frac{dr}{dt} > 0 \quad \text{(im Mittel)}
+    \end{equation}
+    Planeten, Sterne und Galaxien driften langsam nach außen.
+    
+    \item \textbf{Strukturen:} Galaxien, Galaxienhaufen und Filamente wachsen mit der Zeit:
+    \begin{equation}
+    R_{\text{Struktur}}(t) \sim R_0 \cdot t^{\alpha}, \quad \alpha > 0
+    \end{equation}
+    
+    \item \textbf{Informationsbereich:} In einem offenen Universum kann der kausale Horizont mit der Zeit wachsen.
+\end{enumerate}
+\end{diskussion}
+
+\subsection{Kompensation durch Materieentstehung}
+
+\begin{satz}[Konstante Dichte]
+Trotz der Ausdehnung von Strukturen bleibt die mittlere Dichte konstant:
+\begin{equation}
+\langle \rho \rangle = \frac{M_{\text{ges}}}{V_D} = \text{const}
+\end{equation}
+Dies wird ermöglicht durch:
+\begin{enumerate}
+    \item \textbf{Kontinuierliche Materieentstehung} durch das Quantenpotential:
+    \begin{equation}
+    \dot{\rho}_{\text{cre}} \propto Q \propto \frac{1}{r^2}
+    \end{equation}
+    \item \textbf{Drift nach außen:} Die neu entstehende Materie ersetzt die nach außen driftende Materie.
+\end{enumerate}
+\end{satz}
+
+\subsection{Vergleich: Geschlossen vs. Offen}
+
+\begin{table}[h]
+\centering
+\caption{Vergleich der topologischen Optionen}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Eigenschaft} & \textbf{Geschlossen (endlich)} & \textbf{Offen (unendlich)} \\ \hline
+Fraktales Volumen $V_D$ & Endlich & Unendlich \\ \hline
+Gesamtmasse $M_{\text{ges}}$ & Endlich & Unendlich \\ \hline
+Mittlere Dichte $\langle \rho \rangle$ & Endlich & Endlich (durch Grenzwert) \\ \hline
+Ausdehnung von Strukturen & Ja & Ja \\ \hline
+Expansion des Raums & Nein & Nein \\ \hline
+Wärmetod & Tritt nicht ein & Tritt nicht ein \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{bemerkung}
+In einem offenen Universum mit unendlicher Masse ist die mittlere Dichte als Grenzwert definiert:
+\begin{equation}
+\langle \rho \rangle = \lim_{R \to \infty} \frac{M(R)}{V_D(R)}
+\end{equation}
+Dieser Grenzwert existiert und ist konstant, wenn die Materieentstehung und Drift entsprechend skaliert.
+\end{bemerkung}
+
+\subsection{Ausdehnung vs. Expansion: Ein zentraler Unterschied}
+
+\begin{diskussion}
+Es ist entscheidend, zwischen \textbf{Ausdehnung von Strukturen} und \textbf{Expansion des Raums} zu unterscheiden:
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+& \textbf{Expansion ($\Lambda$CDM)} & \textbf{Ausdehnung (WDBT+)} \\ \hline
+Raum & Dehnt sich aus & Konstant \\ \hline
+Strukturen & Wachsen relativ & Dehnen sich absolut aus \\ \hline
+Dichte & Nimmt ab & Konstant \\ \hline
+Ursache & Dunkle Energie & DSTT-Drift + Materieentstehung \\ \hline
+\end{tabular}
+\end{center}
+
+In der WDBT+ dehnen sich Strukturen aus, weil die DSTT-Drift Materie von innen nach außen transportiert. Der Raum selbst bleibt unverändert.
+\end{diskussion}
+
+\section{Kosmologische Konsequenzen}
+
+\subsection{Rotverschiebung ohne Expansion}
+
+Die beobachtete Rotverschiebung ist in der WDBT+ \textbf{keine Doppler-Verschiebung durch Expansion}, sondern eine kumulative gravitative Wirkung auf Photonen während ihrer Reise durch das $\Omega$-Feld:
+\begin{equation}
+\frac{\Delta \omega}{\omega} = \frac{1}{c^2} \int \Phi_{\text{eff}}(r) \, dr + \text{(fraktale Korrekturen)}
+\end{equation}
+
+\subsection{Galaxienrotation ohne Dunkle Materie}
+
+Flache Rotationskurven werden durch das $\Omega$-Feld und die anisotrope Trägheit der DSTT erklärt:
+\begin{equation}
+v(r) \propto r^{0,895} \quad \text{(fast flach)}
+\end{equation}
+
+\subsection{Wachstum von Galaxien}
+
+Galaxien wachsen von innen nach außen durch Materieentstehung und Drift:
+\begin{equation}
+M_{\text{Gal}}(t) \propto t^{1,116}
+\end{equation}
+Das Massenverhältnis Galaxie/Kern beträgt:
+\begin{equation}
+\frac{M_{\text{Gal}}}{M_{\text{Kern}}} \approx 1000
+\end{equation}
+
+\subsection{Das stationäre Universum}
+
+Zusammenfassend ergibt sich folgendes Bild:
+
+\begin{itemize}
+    \item \textbf{Raum:} Fraktal mit $D \approx 2,71$, topologisch geschlossen oder offen
+    \item \textbf{Expansion:} Keine
+    \item \textbf{Ausdehnung:} Strukturen und Bahnen dehnen sich durch DSTT-Drift aus
+    \item \textbf{Dichte:} Konstant (durch Materieentstehung kompensiert)
+    \item \textbf{Entropie:} Zirkuliert, Gesamtwert konstant
+    \item \textbf{Zeitpfeil:} Vorhanden ($\dot{\beta}>0$)
+    \item \textbf{Wärmetod:} Tritt nicht ein
+\end{itemize}
+
+\subsection{Die fundamentalen Größen im Überblick}
+
+\begin{table}[ht]
+\centering
+\caption{Die fundamentalen Größen der Theorie (Teil 1)}
+\begin{tabular}{|l|c|c|p{3cm}|}
+\hline
+\textbf{Größe} & \textbf{Symbol} & \textbf{Verhalten} & \textbf{Grenze} \\ \hline
+Energie & $E$ & konstant & endlich \\ \hline
+Masse & $M$ & konstant (Mittel) & endlich oder unendlich* \\ \hline
+Fraktale Entropie (gesamt) & $S_D^{\text{ges}}$ & konstant & endlich \\ \hline
+Fraktale Entropie (Phasen) & $S_D^{(i)}$ & oszillierend (Mittel konstant) & endlich \\ \hline
+Entropieflussraten & $\sigma$ & konstant im Mittel & endlich \\ \hline
+\end{tabular}
+\caption*{*Im offenen Fall ist die Gesamtmasse unendlich, aber die Dichte bleibt endlich.}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Die fundamentalen Größen der Theorie (Teil 2)}
+\begin{tabular}{|l|c|c|p{3cm}|}
+\hline
+\textbf{Größe} & \textbf{Symbol} & \textbf{Verhalten} & \textbf{Grenze} \\ \hline
+$\beta$-Parameter (Grav.) & $\beta_{\text{DSTT}}$ & monoton wachsend & $\beta \to 1$ asymptotisch \\ \hline
+$\beta$-Parameter (EM) & $\beta_{\text{DSTT}}$ & konstant & $\beta = 0$ \\ \hline
+Strukturgrößen & $R_{\text{Struktur}}$ & wachsend ($\sim t^{\alpha}$) & unbegrenzt \\ \hline
+Bahnradien & $r(t)$ & monoton wachsend & unbegrenzt \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Philosophische Implikationen: $\pi$, Entropie und die Unendlichkeit im Endlichen}
+
+Die Theorie der fraktalen Entropie führt zu einer Reihe von tiefgreifenden philosophischen Einsichten, die über die reine Physik hinausweisen.
+
+\subsection{Die Unendlichkeit im Endlichen}
+
+Die Kreiszahl $\pi$ ist transzendent und besitzt eine unendliche, nicht-periodische Ziffernfolge. Sie ist in einem endlichen Kreis – endlicher Umfang, endlicher Durchmesser – enthalten. Dies ist die klassische \enquote{Unendlichkeit im Endlichen}.
+
+In der WDBT+ erhält diese Struktur eine dynamische Dimension:
+
+\begin{itemize}
+    \item In der \textbf{Elektrodynamik} ($\dot{\beta}=0$) sind perfekte Kreisbahnen möglich. $\pi$ ist hier \textbf{exakt realisiert} – die unendliche Information liegt vollständig vor.
+    \item In der \textbf{Gravitation} ($\dot{\beta}>0$) gibt es keine perfekten Kreisbahnen, nur asymptotische Annäherung. $\pi$ wird \textbf{prozessual}: Mit jedem Umlauf wird die Bahn kreisförmiger, die Annäherung an $\pi$ genauer.
+\end{itemize}
+
+Damit wird $\pi$ nicht als statische Konstante vorausgesetzt, sondern als \textbf{asymptotischer Informationsgehalt eines irreversiblen Prozesses}. Die unendliche Information von $\pi$ wird in unendlich vielen Umläufen sukzessive realisiert – ein \textbf{unendlicher Informationsgewinn bei konstanter Energie}.
+
+\subsection{Entropie und Information}
+
+Die fraktale Entropie $S_D$ zirkuliert in einem geschlossenen Kreislauf. Ihr Gesamtwert ist konstant. Dennoch findet ein \textbf{Wachstum} statt:
+
+\begin{itemize}
+    \item Die \textbf{Genauigkeit} der Annäherung an $\pi$ wächst mit jedem Umlauf.
+    \item Die \textbf{Strukturgrößen} (Bahnradien, Galaxien) dehnen sich aus.
+    \item Die \textbf{Information} über die Bahnform nimmt zu.
+\end{itemize}
+
+Dies ist möglich, weil die Information nicht in der Gesamtenergie steckt, sondern in der \textbf{Geometrie der Verteilung}. Die fraktale Geometrie ($D<3$) verhindert ein globales Entropiemaximum und erlaubt so ein asymptotisches Wachstum ohne Ende.
+
+\subsection{Der Grenzcharakter des Perfekten}
+
+Perfekte Kreisbahnen ($\beta=1$, $e=0$, exaktes $\pi$) sind in der Gravitation \textbf{unerreichbar}. Sie sind ein idealer Grenzfall, der in unendlicher Zeit asymptotisch angenähert wird, aber nie erreicht wird.
+
+Dieser Grenzcharakter hat eine entscheidende Funktion: \textbf{Das Unerreichbare treibt die Dynamik an.}
+
+\begin{quote}
+\enquote{Das Streben nach dem perfekten Kreis – nach $\pi$ – ist der Motor, der den Kreislauf der Entropie und das Wachstum der Strukturen antreibt.}
+\end{quote}
+
+Wäre der Grenzzustand erreichbar, würde die Dynamik zum Stillstand kommen. Die \enquote{Unperfektheit} der Gravitation ist daher keine Schwäche, sondern die Bedingung ihrer ewigen Dauer.
+
+\subsection{Ewigkeit ohne Wärmetod}
+
+Die klassische Thermodynamik prognostiziert einen Wärmetod: das Universum strebt einem Zustand maximaler Entropie zu, in dem alle Prozesse erlöschen.
+
+In der fraktalen Thermodynamik wird dieser Schluss durchbrochen:
+
+\begin{enumerate}
+    \item Die fraktale Dimension $D<3$ verhindert ein globales Entropiemaximum.
+    \item Die permanente DSTT-Drift ($\dot{\beta}>0$) erzeugt nie versiegende Gradienten.
+    \item Die Entropieflüsse $\sigma_{\text{cre}}, \sigma_{\text{drift}}, \sigma_{\text{back}}$ sind immer positiv.
+\end{enumerate}
+
+Das Universum befindet sich in einem \textbf{stationären Zustand} mit permanenter Dynamik. Es gibt keinen Endzustand, keine Erschöpfung, keinen Wärmetod. Die Zeit hat einen Pfeil, aber kein Ende.
+
+\subsection{Die Dualität von Gravitation und Elektrodynamik}
+
+Die Theorie führt eine fundamentale Dualität ein:
+
+\begin{itemize}
+    \item \textbf{Gravitation} ($\dot{\beta}>0$): irreversibel, entropieproduzierend, treibend, zeitpfeilgebend.
+    \item \textbf{Elektrodynamik} ($\dot{\beta}=0$): reversibel, strukturerhaltend, stabilisierend.
+\end{itemize}
+
+Diese Dualität ist kein Zufall, sondern eine Konsequenz der unterschiedlichen $\beta$-Werte in der Weber-Kraft. Sie verhindert, dass die irreversible Dynamik in Chaos umschlägt: Die Elektrodynamik bewahrt die stabilen Strukturen (Atome, Moleküle, Sterne), während die Gravitation für Bewegung, Wachstum und Zeitpfeil sorgt.
+
+\subsection{Das Verhältnis von Endlichkeit und Unendlichkeit}
+
+Zusammenfassend ergibt sich folgendes Bild:
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Endlich} & \textbf{Unendlich} \\ \hline
+Energie (konstant) & Informationsgehalt von $\pi$ \\ \hline
+Masse (konstant im Mittel) & Anzahl der Umläufe \\ \hline
+Fraktale Entropie (konstant) & Genauigkeit der Annäherung \\ \hline
+Raumvolumen (endlich oder unendlich) & Asymptotik des Grenzprozesses \\ \hline
+\end{tabular}
+\end{center}
+
+Das Endliche und das Unendliche stehen nicht im Gegensatz, sondern sind durch den \textbf{asymptotischen Prozess} vermittelt. Die Unendlichkeit ist nicht jenseits der Physik, sondern wirkt in ihr als \textbf{Grenze, die nie erreicht wird, aber die Bewegung bestimmt}.
+
+\subsection{Ausblick: $\pi$ als kosmologische Konstante?}
+
+In der Standardkosmologie ist die kosmologische Konstante $\Lambda$ ein freier Parameter, der die Expansion beschleunigt. In der WDBT+ könnte $\pi$ – verstanden als asymptotischer Grenzwert der Annäherung an den perfekten Kreis – eine ähnliche Rolle spielen: Sie ist der \textbf{Fluchtpunkt}, der die Dynamik organisiert, ohne selbst als Energieform aufzutreten.
+
+Diese Perspektive öffnet den Blick auf eine Physik, die nicht auf der Vorstellung ruhender Konstanten beruht, sondern auf \textbf{prozessualen Grenzwerten}, die in der Zeit wirksam sind, ohne jemals vollständig realisiert zu werden.
+
+\begin{quote}
+\emph{$\pi$ ist nicht, $\pi$ wird.}
+\end{quote}
+
+\section{Zusammenfassung der drei Hauptsätze der fraktalen Thermodynamik}
+
+\begin{description}
+    \item[0. Hauptsatz (Stationarität):] Die Gesamtenergie und die Gesamt-fraktale Entropie sind konstant.
+    \item[1. Hauptsatz (Energieerhaltung):] Die Energie zirkuliert zwischen den Phasen ohne Verlust.
+    \item[2. Hauptsatz (Entropie und Dualität):] 
+        \begin{itemize}
+            \item Lokal: $\displaystyle \frac{dS_D^{(i)}}{dt} \geq 0$ (Entropie wächst)
+            \item Global: $\displaystyle \frac{dS_D^{\text{ges}}}{dt} = 0$ (Entropie ist konstant)
+            \item Gravitation: $\displaystyle \dot{\beta}_{\text{DSTT}} > 0$ (Irreversibilität, Zeitpfeil)
+            \item Elektrodynamik: $\displaystyle \dot{\beta}_{\text{DSTT}} = 0$ (Reversibilität, Stabilität)
+        \end{itemize}
+\end{description}
+
+\section{Diskussion: Warum die Theorie ohne zusätzliche Größen auskommt}
+
+Die Theorie der fraktalen Entropie benötigt keine zusätzliche Größe wie "Wissen" oder "freie Information". Die vollständige Dynamik wird durch folgende Elemente beschrieben:
+
+\begin{enumerate}
+    \item \textbf{Fraktale Geometrie} ($D \approx 2,71$) – verhindert globales Entropiemaximum
+    \item \textbf{Fraktale Entropie} $S_D$ – thermodynamische Zustandsgröße
+    \item \textbf{Entropieflüsse} $\sigma$ – beschreiben die Zirkulation
+    \item \textbf{DSTT-Drift} ($\dot{\beta}>0$) – erzeugt Irreversibilität und Zeitpfeil
+    \item \textbf{Duale Wechselwirkungen} – Gravitation (irreversibel) vs. Elektrodynamik (reversibel)
+\end{enumerate}
+
+Die zentrale Erkenntnis ist, dass der Wärmetod bereits durch die fraktale Geometrie und die permanente irreversible Dynamik verhindert wird – ohne dass es einer zusätzlichen wachsenden Größe bedarf.
+
+\section{Ausblick und offene Fragen}
+
+Die Theorie der fraktalen Entropie wirft eine Reihe weiterführender Fragen auf:
+
+\begin{enumerate}
+    \item \textbf{Explizite Herleitung der Entropieflüsse:} Wie folgen $\sigma_{\text{cre}}, \sigma_{\text{drift}}, \sigma_{\text{back}}$ präzise aus den Bewegungsgleichungen?
+    
+    \item \textbf{Stabilität des Grenzzyklus:} Kann gezeigt werden, dass der Grenzzyklus global attraktiv ist?
+    
+    \item \textbf{Beobachtbare Signaturen:} Lassen sich die fraktale Skalierung oder die permanenten Flüsse experimentell nachweisen?
+    
+    \item \textbf{Quantisierung:} Ist die fraktale Entropie gequantelt? Gibt es eine Beziehung zu $\hbar$?
+    
+    \item \textbf{Topologische Präferenz:} Lässt sich aus der Theorie ableiten, ob das Universum geschlossen oder offen ist?
+    
+    \item \textbf{Kosmologische Tests:} Wie unterscheiden sich die Vorhersagen der WDBT+ von denen des $\Lambda$CDM-Modells bei zukünftigen Präzisionsmessungen?
+\end{enumerate}
+
+\section{Fazit}
+
+Die Theorie der fraktalen Entropie liefert ein konsistentes, logisch geschlossenes Bild:
+
+\begin{itemize}
+    \item Der \textbf{Raum} ist fraktal mit $D \approx 2,71$ und besitzt eine fundamentale Länge $l_0$. Die Topologie kann geschlossen oder offen sein.
+    \item Die \textbf{fraktale Entropie} $S_D$ ist subextensiv und zirkuliert in einem geschlossenen Kreislauf zwischen Vakuum, Materie und $\Omega$-Feld.
+    \item Die \textbf{Gravitation} ($\beta_{\text{WG}} = 0,5$) erzeugt durch $\dot{\beta}>0$ irreversible Prozesse, eine permanente Auswärtsdrift und den intrinsischen Zeitpfeil.
+    \item Die \textbf{Elektrodynamik} ($\beta_{\text{WED}} = 2$) mit $\dot{\beta}=0$ ermöglicht reversible Prozesse und bewahrt stabile Strukturen.
+    \item Der \textbf{Raum expandiert nicht}, aber Strukturen und Bahnen dehnen sich durch die DSTT-Drift aus, kompensiert durch kontinuierliche Materieentstehung.
+    \item Der \textbf{Wärmetod} wird durch die fraktale Geometrie (kein globales Entropiemaximum) und die permanenten irreversiblen Flüsse verhindert.
+    \item Das Universum ist \textbf{stationär}: Energie, Masse und Dichte bleiben konstant; die Dynamik zirkuliert ewig.
+    \item Die Unendlichkeit von $\pi$ ist in der asymptotischen Annäherung wirksam – ein Prozess, der nie endet und das Universum ewig in Bewegung hält.
+\end{itemize}
+
+\begin{center}
+\framebox{\parbox{0.8\textwidth}{\centering
+\vspace{0.3cm}
+\textbf{Die fraktale Entropie zirkuliert.} \\
+Die Gravitation treibt die Zeit an. \\
+Die Elektrodynamik bewahrt die Struktur. \\
+Strukturen dehnen sich aus – der Raum nicht. \\
+Der Wärmetod tritt nicht ein. \\
+$\pi$ wird, ist nicht. \\
+Mehr braucht es nicht.
+\vspace{0.3cm}
+}}
+\end{center}
+
+\section*{Danksagung}
+Die Autoren danken DeepSeek für die intensive Zusammenarbeit bei der logischen Präzisierung der Theorie, der Klärung der begrifflichen Grundlagen und der Diskussion der topologischen Optionen.
+
+\begin{thebibliography}{99}
+\bibitem{weber} Weber, W. (1846). Elektrodynamische Maßbestimmungen. \emph{Annalen der Physik}, 143, 211-233.
+\bibitem{assis} Assis, A.K.T. (1994). \emph{Weber's Electrodynamics}. Kluwer Academic Publishers.
+\bibitem{tisserand} Tisserand, F. (1882). \emph{Traité de Mécanique Céleste}, Tome IV. Gauthier-Villars, Paris.
+\bibitem{bohm} Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of Hidden Variables. \emph{Physical Review}, 85, 166-193.
+\bibitem{einstein} Einstein, A. (1915). Erklärung der Perihelbewegung des Merkur aus der allgemeinen Relativitätstheorie. \emph{Sitzungsberichte der Preußischen Akademie der Wissenschaften}, 831-839.
+\bibitem{lense} Lense, J. \& Thirring, H. (1918). Über den Einfluß der Eigenrotation der Zentralkörper auf die Bewegung der Planeten und Monde nach der Einsteinschen Gravitationstheorie. \emph{Physikalische Zeitschrift}, 19, 156-163.
+\bibitem{heaviside} Heaviside, O. (1893). A Gravitational and Electromagnetic Analogy. \emph{The Electrician}, 31, 281-282.
+\bibitem{czbyor1} Czybor, M. (2025). Die Informations-Weber-Theorie (IWT): Eine fundamentale, diskrete Urtheorie der Physik.
+\bibitem{czbyor2} Czybor, M. (2025). Dynamische Schwere-Trägheits-Theorie (DSTT).
+\bibitem{czbyor3} Czybor, M. (2026). Die $\Omega$-Theorie der Gravitation.
+\bibitem{czbyor4} Czybor, M. (2025). Fraktale Maxwell-Gleichungen für Elektrodynamik und Gravitation.
+\bibitem{czbyor5} Czybor, M., DeepSeek (2026). Erweiterte Weber-Theorie: Die Vereinigung von Weber-Gravitation und Dynamischer Schwere-Trägheits-Theorie.
+\bibitem{czbyor6} Czybor, M. (2026). BEC-Objekte: Die kompaktesten Objekte im Universum.
+\bibitem{czbyor7} Czybor, M. (2026). Das Neutrino als Q-Teilchen: Masse, Nichtlokalität und fraktale Struktur.
+\end{thebibliography}
+
+\end{document}

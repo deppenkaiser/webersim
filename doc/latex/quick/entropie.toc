@@ -1,0 +1,43 @@
+\babel@toc {german}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{2}{}%
+\contentsline {section}{\numberline {2}Die Axiome der Theorie}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Axiom 1: Fraktale Raumstruktur}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Axiom 2: Fraktale Entropie}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Axiom 3: Globaler Entropieerhaltungssatz}{3}{}%
+\contentsline {subsection}{\numberline {2.4}Axiom 4: Lokale Entropieproduktion}{3}{}%
+\contentsline {subsection}{\numberline {2.5}Axiom 5: Gravitation als Quelle der Irreversibilität}{4}{}%
+\contentsline {subsection}{\numberline {2.6}Axiom 6: Elektrodynamik als Stabilisator}{4}{}%
+\contentsline {subsection}{\numberline {2.7}Axiom 7: Beschränktheit aller physikalischen Größen}{4}{}%
+\contentsline {section}{\numberline {3}Die Struktur der fraktalen Entropie}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Die drei Phasen}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Die Entropieflüsse}{5}{}%
+\contentsline {section}{\numberline {4}Die duale Dynamik: Gravitation vs. Elektrodynamik}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Herleitung aus der erweiterten Weber-Theorie}{5}{}%
+\contentsline {section}{\numberline {5}Der Nachweis: Warum kein Wärmetod eintritt}{6}{}%
+\contentsline {subsection}{\numberline {5.1}Bedingungen für einen Wärmetod}{6}{}%
+\contentsline {subsection}{\numberline {5.2}Die Verhinderung des Wärmetods}{6}{}%
+\contentsline {section}{\numberline {6}Topologische Optionen: Geschlossenes vs. offenes Universum}{7}{}%
+\contentsline {subsection}{\numberline {6.1}Begriffsklärung}{7}{}%
+\contentsline {subsection}{\numberline {6.2}Die beiden topologischen Optionen}{8}{}%
+\contentsline {subsection}{\numberline {6.3}Was sich ausdehnt – und was nicht}{8}{}%
+\contentsline {subsection}{\numberline {6.4}Kompensation durch Materieentstehung}{8}{}%
+\contentsline {subsection}{\numberline {6.5}Vergleich: Geschlossen vs. Offen}{9}{}%
+\contentsline {subsection}{\numberline {6.6}Ausdehnung vs. Expansion: Ein zentraler Unterschied}{9}{}%
+\contentsline {section}{\numberline {7}Kosmologische Konsequenzen}{9}{}%
+\contentsline {subsection}{\numberline {7.1}Rotverschiebung ohne Expansion}{9}{}%
+\contentsline {subsection}{\numberline {7.2}Galaxienrotation ohne Dunkle Materie}{9}{}%
+\contentsline {subsection}{\numberline {7.3}Wachstum von Galaxien}{10}{}%
+\contentsline {subsection}{\numberline {7.4}Das stationäre Universum}{10}{}%
+\contentsline {subsection}{\numberline {7.5}Die fundamentalen Größen im Überblick}{10}{}%
+\contentsline {section}{\numberline {8}Philosophische Implikationen: $\pi $, Entropie und die Unendlichkeit im Endlichen}{10}{}%
+\contentsline {subsection}{\numberline {8.1}Die Unendlichkeit im Endlichen}{11}{}%
+\contentsline {subsection}{\numberline {8.2}Entropie und Information}{11}{}%
+\contentsline {subsection}{\numberline {8.3}Der Grenzcharakter des Perfekten}{11}{}%
+\contentsline {subsection}{\numberline {8.4}Ewigkeit ohne Wärmetod}{12}{}%
+\contentsline {subsection}{\numberline {8.5}Die Dualität von Gravitation und Elektrodynamik}{12}{}%
+\contentsline {subsection}{\numberline {8.6}Das Verhältnis von Endlichkeit und Unendlichkeit}{12}{}%
+\contentsline {subsection}{\numberline {8.7}Ausblick: $\pi $ als kosmologische Konstante?}{13}{}%
+\contentsline {section}{\numberline {9}Zusammenfassung der drei Hauptsätze der fraktalen Thermodynamik}{13}{}%
+\contentsline {section}{\numberline {10}Diskussion: Warum die Theorie ohne zusätzliche Größen auskommt}{13}{}%
+\contentsline {section}{\numberline {11}Ausblick und offene Fragen}{14}{}%
+\contentsline {section}{\numberline {12}Fazit}{14}{}%
