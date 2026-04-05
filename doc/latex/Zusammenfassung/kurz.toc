@@ -95,4 +95,10 @@
 \contentsline {subsection}{\numberline {14.1}Warum die ART unvollständig ist}{31}{}%
 \contentsline {subsection}{\numberline {14.2}Die ART als emergenter Grenzfall}{31}{}%
 \contentsline {subsection}{\numberline {14.3}Die entscheidende Frage}{32}{}%
-\contentsline {section}{\numberline {15}Fazit}{32}{}%
+\contentsline {section}{\numberline {15}Antwort auf häufige Einwände}{32}{}%
+\contentsline {subsection}{\numberline {15.1}Einwand 1: Die fraktalen Differentialoperatoren sind nicht rigoros definiert}{32}{}%
+\contentsline {subsection}{\numberline {15.2}Einwand 2: Die Vorhersagen müssen gegen Daten getestet werden}{32}{}%
+\contentsline {subsection}{\numberline {15.3}Einwand 3: Der spezifische Wert $D = \ln 20 / \ln (2+\phi )$ ist postuliert, nicht hergeleitet}{33}{}%
+\contentsline {subsection}{\numberline {15.4}Einwand 4: GW170817 zeigt, dass Gravitationswellen mit Lichtgeschwindigkeit kommen -- Widerspruch zur instantanen Theorie}{34}{}%
+\contentsline {subsection}{\numberline {15.5}Zusammenfassung der Antworten}{34}{}%
+\contentsline {section}{\numberline {16}Fazit}{34}{}%
