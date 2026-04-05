@@ -1,0 +1,24 @@
+\babel@toc {german}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung: Die drei Säulen der WDBT+ auf Feldebene}{3}{}%
+\contentsline {section}{\numberline {2}Grundlagen: Der fraktale Raum}{3}{}%
+\contentsline {section}{\numberline {3}Die fraktalen Q-Feldgleichungen}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Quellen des Q-Feldes}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Quellenfreiheit des Neutrino-Wirbelfeldes}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Faradaysches Induktionsgesetz für Q}{4}{}%
+\contentsline {subsection}{\numberline {3.4}Ampèresches Gesetz für Q}{4}{}%
+\contentsline {subsection}{\numberline {3.5}Die Ausbreitungsgeschwindigkeit \(c_Q\)}{5}{}%
+\contentsline {section}{\numberline {4}Die vollständigen Bewegungsgleichungen auf Feldebene}{5}{}%
+\contentsline {section}{\numberline {5}Die Wellengleichung im fraktalen Raum für Q-Felder}{6}{}%
+\contentsline {subsection}{\numberline {5.1}Dispersionsrelation}{6}{}%
+\contentsline {section}{\numberline {6}Die Neutrinomasse aus der fundamentalen Länge}{6}{}%
+\contentsline {section}{\numberline {7}Neutrino-Oszillationen aus fraktaler Dispersion}{7}{}%
+\contentsline {subsection}{\numberline {7.1}Drei Neutrino-Generationen}{7}{}%
+\contentsline {section}{\numberline {8}Das Neutrino als Vermittler der Nichtlokalität}{8}{}%
+\contentsline {section}{\numberline {9}Konsequenzen für die Dunkle Materie}{8}{}%
+\contentsline {section}{\numberline {10}Zusammenführung: Die drei Säulen der fraktalen Maxwell-Theorie}{8}{}%
+\contentsline {section}{\numberline {11}Die Einheit der Physik im fraktalen Raum}{9}{}%
+\contentsline {section}{\numberline {12}Testbare Vorhersagen}{10}{}%
+\contentsline {section}{\numberline {13}Diskussion und Ausblick}{10}{}%
+\contentsline {section}{\numberline {14}Fazit}{11}{}%
+\contentsline {section}{\numberline {A}Herleitung der fraktalen Q-Feldgleichungen aus der Teilchenebene}{11}{}%
+\contentsline {section}{\numberline {B}Numerische Werte der Konstanten}{12}{}%
