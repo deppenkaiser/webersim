@@ -1,67 +1,79 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{booktabs}
-\usepackage{longtable}
 \usepackage{array}
+\usepackage{enumitem}
+
 \geometry{margin=2.5cm}
 
-\newtheorem{axiom}{Axiom}
-\newtheorem{definition}{Definition}
-\newtheorem{theorem}{Theorem}
-\newtheorem{corollary}{Korollar}
-\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{remark}{Bemerkung}[section]
+\newtheorem{satz}{Satz}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Korollar}[section]
 
-\title{Die WDBT+ und ihre Konsequenzen: \\
-Eine vollständige Darstellung der \\
-Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum, \\
-der Dynamischen Schwere-Trägheits-Theorie (DSTT), \\
-der $\Omega$-Theorie der Gravitation, \\
-der fraktalen Maxwell-Gleichungen, \\
-der Theorie der BEC-Objekte \\
-und der Neutrino-Theorie}
+\title{Die vollständige WDBT+\\
+\large{Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum,\\
+Dynamische Schwere-Trägheits-Theorie (DSTT),\\
+$\Omega$-Theorie der Gravitation, fraktale Maxwell-Gleichungen,\\
+BEC-Objekte, Neutrino-Theorie und fraktale Entropie}}
 \author{Michael Czybor}
-\date{März 2026}
+\date{März--April 2026}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-Die Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+) ist eine fundamentale, deterministische, feldlose Teilchentheorie, aus der alle bekannten physikalischen Theorien als emergente Grenzfälle hervorgehen. Sie basiert auf drei Säulen: (1) der Weber-Gravitation als geschwindigkeits- und beschleunigungsabhängiger Teilchenwechselwirkung, (2) dem de Broglie-Bohm-Quantenpotential als singularitätsverhinderndem Führungsfeld und (3) einer fraktalen Raumdimension $D \approx 2,71$, die natürliche Cutoffs liefert und die Feinstrukturkonstante erklärt.
+Die Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+) ist die fundamentale, deterministische, feldlose Teilchentheorie, aus der alle bekannten physikalischen Theorien als
+emergente Grenzfälle hervorgehen. Sie basiert auf drei Säulen: (1) der Weber-Gravitation als geschwindigkeits- und beschleunigungsabhängiger Teilchenwechselwirkung, (2) dem
+de Broglie-Bohm-Quantenpotential als singularitätsverhinderndem Führungsfeld und (3) einer fraktalen Raumdimension $D \approx 2,71$, die natürliche Cutoffs liefert und die
+Feinstrukturkonstante erklärt. Aus dieser fundamentalen Theorie emergieren:
 
-Aus dieser fundamentalen Theorie emergieren:
 \begin{itemize}
-    \item Die \textbf{Dynamische Schwere-Trägheits-Theorie (DSTT)}, die Ursache (Schwere) und Wirkung (Trägheit) trennt und mit der Zustandsvariablen $\beta(t)$ eine intrinsische Irreversibilität ($\dot{\beta}>0$) einführt, die zu Spiralbahnen und einem kosmologischen Zeitpfeil führt.
-    \item Die \textbf{$\Omega$-Theorie} als nicht-lokale, instantane Feldtheorie der Gravitation, die Gravitation als fundamentales Rotationsfeld $\vec{\Omega}$ beschreibt und die Maxwell-Form der Gravitation emergieren lässt.
-    \item \textbf{Fraktale Maxwell-Gleichungen} für Elektrodynamik und Gravitation, die die Feinstrukturkonstante erklären und Renormierung überflüssig machen.
-    \item \textbf{Bose-Einstein-Kondensat (BEC)-Objekte} als singularitätsfreie Alternative zu Schwarzen Löchern mit einer maximalen Kernmasse von $M_{\text{BEC}} \approx 3 \times 10^6 M_\odot$.
-    \item Die \textbf{Neutrino-Theorie}, die das Neutrino als reines Quantenpotential-Teilchen (Q-Teilchen) identifiziert, seine Masse aus der fundamentalen Länge $l_0$ herleitet ($m_\nu \approx 0,1\,\text{eV}$) und die Nichtlokalität der Quantenmechanik physikalisch vermittelt.
+\item Die Dynamische Schwere-Trägheits-Theorie (DSTT), die Ursache (Schwere) und Wirkung (Trägheit) trennt und mit der Zustandsvariablen $\beta(t)$ eine intrinsische Irreversibilität ($\dot{\beta} > 0$) einführt, die zu Spiralbahnen und einem kosmologischen Zeitpfeil führt.
+\item Die $\Omega$-Theorie als nicht-lokale, instantane Feldtheorie der Gravitation, die Gravitation als fundamentales Rotationsfeld $\vec{\Omega}$ beschreibt und die Maxwell-Form der Gravitation emergieren lässt.
+\item Fraktale Maxwell-Gleichungen für Elektrodynamik und Gravitation, die die Feinstrukturkonstante erklären und Renormierung überflüssig machen.
+\item Bose-Einstein-Kondensat (BEC)-Objekte als singularitätsfreie Alternative zu Schwarzen Löchern mit einer maximalen Kernmasse von $M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot}$.
+\item Die Neutrino-Theorie, die das Neutrino als reines Quantenpotential-Teilchen (Q-Teilchen) identifiziert, seine Masse aus der fundamentalen Länge $l_0$ herleitet ($m_\nu \approx 0,1\,\text{eV}/c^2$) und die Nichtlokalität der Quantenmechanik physikalisch vermittelt.
+\item Die Theorie der fraktalen Entropie, die einen geschlossenen, stationären Kreislauf der fraktalen Entropie beschreibt und den Wärmetod verhindert.
 \end{itemize}
 
 Die Theorie führt zu einem stationären, nicht-expandierenden Universum ohne Urknall, Dunkle Materie und Dunkle Energie. Sie ist mit allen bisherigen Beobachtungen verträglich und macht spezifische, testbare Vorhersagen für zukünftige Experimente.
 \end{abstract}
 
-\newpage
 \tableofcontents
+
 \newpage
 
 \section{Einleitung: Vom Teilchen zum Feld}
 
-Die WDBT+ beschreibt die Gravitation als direkte, instantane Teilchen-Teilchen-Wechselwirkung nach dem Weber-Gesetz, gesteuert durch das Bohmsche Quantenpotential. Sie ist fundamental \textit{feldlos}. Die DSTT übersetzt diese Dynamik in die Sprache der Energieaufteilung zwischen radialer und tangentialer Komponente, eingefangen in der Zustandsvariablen $\beta(t)$ mit der fundamentalen Eigenschaft $\beta > 0$.
+Die WDBT+ beschreibt die Gravitation als direkte, instantane Teilchen-Teilchen-\\Wechselwirkung nach dem Weber-Gesetz, gesteuert durch das Bohmsche Quantenpotential. Sie ist
+fundamental feldlos. Die DSTT übersetzt diese Dynamik in die Sprache der Energieaufteilung zwischen radialer und tangentialer Komponente, eingefangen in der Zustandsvariablen
+$\beta(t)$ mit der fundamentalen Eigenschaft $\dot{\beta} > 0$.
 
-Die $\Omega$-Theorie ist der nächste Schritt der Emergenz. Sie ist der Kontinuumslimes der DSTT und damit die effektive Feldtheorie für makroskopische Systeme. An die Stelle der direkten Teilchen-Wechselwirkung treten Felder, die die kollektive Wirkung vieler Massenpunkte beschreiben. Das zentrale neue Element ist das Vektorfeld $\vec{\Omega}$, das die lokale Rotation des Raumes selbst repräsentiert.
+Die $\Omega$-Theorie ist der nächste Schritt der Emergenz. Sie ist der Kontinuumslimes der DSTT und damit die effektive Feldtheorie für makroskopische Systeme. An die Stelle der
+direkten Teilchen-Wechselwirkung treten Felder, die die kollektive Wirkung vieler Massenpunkte beschreiben. Das zentrale neue Element ist das Vektorfeld $\vec{\Omega}$, das die
+lokale Rotation des Raumes selbst repräsentiert.
 
-Die $\Omega$-Theorie verhält sich zur ART wie die Maxwell-Theorie zur Newton-Mechanik, mit dem entscheidenden Unterschied, dass sie die Nicht-Lokalität und Irreversibilität ihrer fundamentalen Basis bewahrt.
+Die $\Omega$-Theorie verhält sich zur ART wie die Maxwell-Theorie zur Newton-Mechanik, mit dem entscheidenden Unterschied, dass sie die Nicht-Lokalität und Irreversibilität ihrer
+fundamentalen Basis bewahrt.
 
 \section{Grundlagen der WDBT+}
 
 \subsection{Die Weber-Elektrodynamik (WED)}
 
-Die Weber-Elektrodynamik wurde ursprünglich von Wilhelm Weber (1846) als geschwindigkeits- und beschleunigungsabhängige Kraft formuliert. Sie lautet:
+Die Weber-Elektrodynamik wurde von Wilhelm Weber (1846) als geschwindigkeits- und beschleunigungsabhängige Kraft formuliert:
 
 \begin{equation}
 F_{\text{WED}} = \frac{q_1 q_2}{4 \pi \epsilon_0 r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + 2 \frac{r \ddot{r}}{c^2} \right]
@@ -70,22 +82,22 @@ F_{\text{WED}} = \frac{q_1 q_2}{4 \pi \epsilon_0 r^2} \left[ 1 - \frac{\dot{r}^2
 In vektorieller Form, die alle Winkelabhängigkeiten korrekt erfasst:
 
 \begin{equation}
-\vec{F}_{\text{WED}} = \frac{q_1 q_2}{4\pi \epsilon_0 r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + 2 \frac{r \ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
+\vec{F}_{\text{WED}} = \frac{q_1 q_2}{4\pi\epsilon_0 r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + 2 \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
 \end{equation}
 
-Dabei ist $\beta_{\text{WED}} = 2$ fest in der Elektrodynamik. Diese Kraft erfüllt \textit{actio = reactio} und erhält den Impuls, im Gegensatz zur Maxwell-Theorie, die dies nur unter bestimmten Bedingungen tut.
+Dabei ist $\beta_{\text{WED}} = 2$ fest in der Elektrodynamik. Diese Kraft erfüllt actio = reactio und erhält den Impuls, im Gegensatz zur Maxwell-Theorie, die dies nur unter bestimmten Bedingungen tut.
 
 \subsection{Die Weber-Gravitation (WG)}
 
-Tisserand (1882) übertrug den Weber-Ansatz erstmals auf die Gravitation. Die vollständige Weber-Gravitation in vektorieller Form lautet:
+Tisserand (1882) übertrug den Weber-Ansatz auf die Gravitation. Die vollständige Weber-Gravitation in vektorieller Form lautet:
 
 \begin{equation}
-\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}} \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
+\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}} \frac{r \ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
 \end{equation}
 
 Für Massen gilt $\beta_{\text{WG}} = 0,5$, was die Periheldrehung des Merkur exakt reproduziert. Für Photonen gilt $\beta_{\text{WG}} = 1,0$.
 
-Der zweite Term in Gleichung (3) – der geschwindigkeitsabhängige Anteil – ist von besonderem Interesse. Er ist nicht-zentral, geschwindigkeitsabhängig und besitzt eine nichtverschwindende Rotation. Damit enthält er bereits die Keimzelle dessen, was in der Maxwell-Gravitation als gravito-magnetisches Feld erscheint.
+Der zweite Term in Gleichung (3) -- der geschwindigkeitsabhängige Anteil -- ist nicht-zentral, geschwindigkeitsabhängig und besitzt eine nichtverschwindende Rotation. Damit enthält er bereits die Keimzelle dessen, was in der Maxwell-Gravitation als gravito-magnetisches Feld erscheint.
 
 \subsection{Die Wirbelstruktur der WG}
 
@@ -97,10 +109,10 @@ Der für die Wirbelstruktur entscheidende Term in Gleichung (3) ist:
 
 Dieser Term hat folgende Eigenschaften:
 \begin{itemize}
-    \item Er ist nicht-zentral: seine Richtung hängt von $\vec{v}$ ab, nicht nur von $\vec{r}$
-    \item Er ist geschwindigkeitsabhängig (linear in $\vec{v}$ für jede Komponente)
-    \item Er besitzt eine nichtverschwindende Rotation (Wirbelstärke)
-    \item Er ist analog zum geschwindigkeitsabhängigen Term in der Weber-Elektrodynamik
+\item Er ist nicht-zentral: seine Richtung hängt von $\vec{v}$ ab, nicht nur von $\vec{r}$
+\item Er ist geschwindigkeitsabhängig (linear in $\vec{v}$ für jede Komponente)
+\item Er besitzt eine nichtverschwindende Rotation (Wirbelstärke)
+\item Er ist analog zum geschwindigkeitsabhängigen Term in der Weber-Elektrodynamik
 \end{itemize}
 
 Definiere die Wirbeldichte (Rotation) des Kraftfeldes:
@@ -109,7 +121,7 @@ Definiere die Wirbeldichte (Rotation) des Kraftfeldes:
 \vec{\omega} = \nabla \times \vec{F}_{\text{WG}} = \nabla \times (\vec{F}_{\text{rad}} + \vec{F}_{\text{tan}})
 \end{equation}
 
-Der radiale Anteil $\vec{F}_{\text{rad}}$ ist ein Zentralfeld und hat keine Rotation ($\nabla \times \vec{F}_{\text{rad}} = 0$). Die gesamte Wirbelstärke kommt also vom tangentialen Anteil:
+Der radiale Anteil $\vec{F}_{\text{rad}}$ ist ein Zentralfeld und hat keine Rotation ($\nabla \times \vec{F}_{\text{rad}} = 0$). Die gesamte Wirbelstärke kommt vom tangentialen Anteil:
 
 \begin{equation}
 \vec{\omega} = \nabla \times \vec{F}_{\text{tan}} = -\frac{2GMm}{c^2} \nabla \times \left( \frac{(\dot{r} \cdot \vec{v}) \vec{v}}{r^2} \right)
@@ -118,15 +130,15 @@ Der radiale Anteil $\vec{F}_{\text{rad}}$ ist ein Zentralfeld und hat keine Rota
 Nach Ausführung der Rotation ergibt sich:
 
 \begin{equation}
-\boxed{\vec{\omega} = \frac{6GMm}{c^2 r^3} (\hat{r} \cdot \vec{v})(\hat{r} \times \vec{v})}
+\vec{\omega} = \frac{6GMm}{c^2r^3} (\hat{r} \cdot \vec{v})(\hat{r} \times \vec{v})
 \end{equation}
 
 Dies ist die fundamentale Wirbelstruktur der WG. Sie hat folgende Eigenschaften:
 \begin{itemize}
-    \item $\vec{\omega}$ ist proportional zu $1/r^3$ – wie ein Dipolfeld
-    \item $\vec{\omega}$ ist senkrecht zu $\vec{r}$ und $\vec{v}$ (wegen $\hat{r} \times \vec{v}$)
-    \item $\vec{\omega}$ verschwindet, wenn $\vec{v} \parallel \hat{r}$ (rein radiale Bewegung) oder $\vec{v} \perp \hat{r}$ (reine Tangentialbewegung mit $\hat{r} \cdot \vec{v} = 0$)
-    \item Maximale Wirbelstärke bei $\hat{r} \cdot \vec{v} = \pm |\vec{v}|/\sqrt{2}$ ($45^\circ$-Bahnneigung)
+\item $\vec{\omega}$ ist proportional zu $1/r^3$ -- wie ein Dipolfeld
+\item $\vec{\omega}$ ist senkrecht zu $\vec{r}$ und $\vec{v}$ (wegen $\hat{r} \times \vec{v}$)
+\item $\vec{\omega}$ verschwindet, wenn $\vec{v} \parallel \hat{r}$ (rein radiale Bewegung) oder $\vec{v} \perp \hat{r}$ (reine Tangentialbewegung mit $\hat{r} \cdot \vec{v} = 0$)
+\item Maximale Wirbelstärke bei $\hat{r} \cdot \vec{v} = \pm |\vec{v}|/\sqrt{2}$ ($45^\circ$-Bahnneigung)
 \end{itemize}
 
 \subsection{Das de Broglie-Bohm-Quantenpotential (DBT)}
@@ -145,10 +157,10 @@ m\ddot{\vec{x}} = -\nabla V - \nabla Q
 
 Das Quantenpotential hat folgende entscheidende Eigenschaften:
 \begin{itemize}
-    \item Es verhindert Singularitäten, da es bei hohen Dichten repulsiv wirkt
-    \item Es ermöglicht Materieentstehung aus dem Vakuum
-    \item Es führt zu deterministischen, verborgenen Variablen – es gibt keinen Kollaps der Wellenfunktion
-    \item Im klassischen Grenzfall ($\hbar \to 0$) verschwindet es
+\item Es verhindert Singularitäten, da es bei hohen Dichten repulsiv wirkt
+\item Es ermöglicht Materieentstehung aus dem Vakuum
+\item Es führt zu deterministischen, verborgenen Variablen -- es gibt keinen Kollaps der Wellenfunktion
+\item Im klassischen Grenzfall ($\hbar \rightarrow 0$) verschwindet es
 \end{itemize}
 
 \subsection{Die fraktale Raumdimension}
@@ -156,10 +168,16 @@ Das Quantenpotential hat folgende entscheidende Eigenschaften:
 Der fundamentale Raum ist nicht glatt mit Dimension 3, sondern fraktal mit der Dimension:
 
 \begin{equation}
-D = \frac{\ln 20}{\ln(2 + \phi)} \approx 2,71, \qquad \phi = \frac{1 + \sqrt{5}}{2}
+D = \frac{\ln 20}{\ln(2 + \phi)} \approx 2.71, \quad \phi = \frac{1 + \sqrt{5}}{2}
 \end{equation}
 
-Diese Dimension ergibt sich aus einer optimalen Packungsstruktur (Dodekaeder) und ist keine freie Annahme, sondern eine Konsequenz der fundamentalen Geometrie.
+Diese Dimension ergibt sich aus einer optimalen Packungsstruktur (Dodekaeder) und ist eine Konsequenz der fundamentalen Geometrie, kein freier Parameter.
+
+\begin{remark}[Gültigkeitsbereich der fraktalen Dimension]
+Die fundamentale fraktale Dimension $D \approx 2,71$ gilt \textbf{nur unterhalb der fundamentalen Länge} $l_0 \approx 1,8 \times 10^{-15}$ m. Oberhalb dieser Skala erscheint der Raum durch Renormierungseffekte effektiv glatt mit $D_{\text{eff}} = 3$. Dies erklärt, warum das Newton'sche $1/r^2$-Gesetz auf allen getesteten Skalen (von $10^{-5}$ m bis zu astronomischen Distanzen) mit hoher Präzision gilt.
+
+Die fraktale Mikrostruktur des Raumes ist auf makroskopischen Skalen nicht direkt messbar. Sie hinterlässt jedoch \textbf{indirekte Signaturen} in Form von Skalengesetzen mit fraktalen Exponenten (siehe Abschnitt 8.8).
+\end{remark}
 
 Aus dieser Dimension folgt die fundamentale Längenskala:
 
@@ -167,16 +185,14 @@ Aus dieser Dimension folgt die fundamentale Längenskala:
 l_0 = \left( \frac{V_{\text{Dodekaeder}}}{V_{\text{Einheitskugel}}} \right)^{1/3} \lambda_p \approx 1,8 \times 10^{-15} \text{ m}
 \end{equation}
 
-wobei $\lambda_p$ die Compton-Wellenlänge des Protons ist. Diese Länge ist die kleinste physikalische Distanz – nichts kann kleiner sein. Sie ersetzt die Planck-Skala als natürliche untere Grenze.
+wobei $\lambda_p$ die Compton-Wellenlänge des Protons ist. Diese Länge ist die kleinste physikalisch mögliche Distanz -- nichts kann kleiner sein. Sie ersetzt die Planck-Skala als natürliche untere Grenze.
 
 \section{Dynamische Schwere-Trägheits-Theorie (DSTT)}
 
 \subsection{Axiome der DSTT}
 
-Die DSTT basiert auf vier fundamentalen Axiomen:
-
 \begin{axiom}[Trennung von Ursache und Wirkung]
-Schwere (Ursache) und Trägheit (Wirkung) sind fundamental verschieden. Die Schwere wirkt radial zwischen zwei Körpern. Es gibt keine zusätzlichen Felder, keine Raumzeitkrümmung – nur diese eine radiale Wechselwirkung.
+Schwere (Ursache) und Trägheit (Wirkung) sind fundamental verschieden. Die Schwere wirkt radial zwischen zwei Körpern. Es gibt keine zusätzlichen Felder, keine Raumzeitkrümmung -- nur diese eine radiale Wechselwirkung.
 \end{axiom}
 
 \begin{axiom}[Anisotrope Trägheit]
@@ -185,19 +201,16 @@ Die Trägheit zerfällt in zwei Komponenten: eine radiale und eine tangentiale A
 
 \begin{axiom}[Dynamische Aufteilung]
 Ein Zustandsparameter $\beta(t) \in [0,1]$ bestimmt das Verhältnis. Er ist definiert als das Verhältnis von tangentialer zu Gesamtenergie:
-
 \begin{equation}
-\beta(t) = \frac{E_B}{E} = \frac{\frac{1}{2} m r^2 \dot{\phi}^2}{\frac{1}{2}m \dot{r}^2 + \frac{1}{2}m r^2 \dot{\phi}^2}
+\beta(t) = \frac{E_B}{E} = \frac{\frac{1}{2}mr^2\dot{\phi}^2}{\frac{1}{2}m\dot{r}^2 + \frac{1}{2}mr^2\dot{\phi}^2}
 \end{equation}
 \end{axiom}
 
 \begin{axiom}[Monotonie]
 Die tangentiale Komponente nimmt ständig zu:
-
 \begin{equation}
 \dot{\beta}(t) > 0
 \end{equation}
-
 Diese Monotonie ist eine direkte Konsequenz der Energieflüsse in der Weber-Gravitation.
 \end{axiom}
 
@@ -212,16 +225,16 @@ Aus den Axiomen der DSTT folgt durch Eliminierung der Zeit:
 Die Lösung ist eine logarithmische Spirale:
 
 \begin{equation}
-r(\phi) = K e^{\phi/B}
+r(\phi) = Ke^{\phi/B}
 \end{equation}
 
-Kreisbahnen und Ellipsen – die Grundbausteine der newtonschen Mechanik und der ART – existieren nicht. Sie sind nur Näherungen für kurze Zeiträume, in denen die Drift vernachlässigbar erscheint.
+Kreisbahnen und Ellipsen -- die Grundbausteine der newtonschen Mechanik und der ART -- existieren nicht. Sie sind Näherungen für kurze Zeiträume, in denen die Drift vernachlässigbar erscheint.
 
 Für das Zweikörperproblem (Zentralmasse $M$, Testmasse $m$) liefert die DSTT eine Bewegungsgleichung, die auf eine logarithmische Spirale führt. Mit dem Ansatz $\Omega_\theta = k/r^2$ (der sich aus den Feldgleichungen ergibt) folgt aus den Gleichungen in Polarkoordinaten:
 
 \begin{align}
-\ddot{r} - r \dot{\phi}^2 &= -\frac{GM}{r^2} + 2r \dot{\phi} \Omega_\theta \\
-r \ddot{\phi} + 2 \dot{r} \dot{\phi} &= -2r \Omega_\theta
+\ddot{r} - r\dot{\phi}^2 &= -\frac{GM}{r^2} + 2r\dot{\phi}\Omega_\theta \\
+r\ddot{\phi} + 2\dot{r}\dot{\phi} &= -2r\Omega_\theta
 \end{align}
 
 \subsection{Die Zustandsvariable $\beta$ in der DSTT}
@@ -235,14 +248,14 @@ In der $\Omega$-Theorie lässt sich die DSTT-Zustandsvariable $\beta$ direkt als
 Aus den Feldgleichungen und der Bewegungsgleichung folgt die für die DSTT fundamentale Eigenschaft:
 
 \begin{equation}
-\beta > 0
+\dot{\beta} > 0
 \end{equation}
 
-Dies ist keine zusätzliche Annahme, sondern eine Konsequenz der nicht-lokalen, instantanen Rückkopplungsdynamik der Theorie.
+Dies ist eine Konsequenz der nicht-lokalen, instantanen Rückkopplungsdynamik der Theorie.
 
 \subsection{Exzentrizitätsänderung}
 
-Aus der Definition von $\beta$ und den Bahngleichungen lässt sich ein Zusammenhang mit der Exzentrizität $e$ herleiten. Für eine Kepler-Ellipse gilt im Mittel:
+Aus der Definition von $\beta$ und den Bahngleichungen folgt ein Zusammenhang mit der Exzentrizität $e$. Für eine Kepler-Ellipse gilt im Mittel:
 
 \begin{equation}
 \langle \beta_{\text{DSTT}} \rangle = \sqrt{1 - e^2}
@@ -256,9 +269,9 @@ Aus $\dot{\beta}_{\text{DSTT}} > 0$ folgt dann zwingend:
 \frac{d}{dt} \sqrt{1 - e^2} > 0 \quad \Rightarrow \quad \frac{de}{dt} < 0
 \end{equation}
 
-Die Exzentrizität nimmt langsam ab – jede Bahn wird mit der Zeit kreisförmiger.
+Die Exzentrizität nimmt langsam ab -- jede Bahn wird mit der Zeit kreisförmiger.
 
-Die Größenordnung dieser Änderung lässt sich abschätzen. Für kleine Exzentrizitäten ergibt sich:
+Die Größenordnung dieser Änderung ergibt sich für kleine Exzentrizitäten:
 
 \begin{equation}
 \dot{e} \approx -\frac{1}{2} \frac{GM}{c^2 a^2} \sqrt{\frac{GM}{a^3}} \cdot e
@@ -270,26 +283,26 @@ Für den Mond ($a = 3,84 \times 10^8$ m, $e = 0,0549$, $M = M_{\text{Erde}}$) fo
 \dot{e} \approx -2,7 \times 10^{-11} \text{ pro Jahr}
 \end{equation}
 
-Dieser Wert ist so klein, dass er mit den heutigen Messmethoden (Lunar Laser Ranging) nicht nachweisbar ist. Die DSTT ist daher mit allen Beobachtungen verträglich.
+Dieser Wert ist mit den heutigen Messmethoden (Lunar Laser Ranging) nicht nachweisbar. Die DSTT ist daher mit allen Beobachtungen verträglich.
 
 \subsection{Perfekte Kreisbahnen sind unmöglich}
 
-Aus $\dot{\beta} > 0$ folgt eine weitere fundamentale Konsequenz: Perfekte Kreisbahnen ($\beta = 1$, $e = 0$) können nie erreicht werden.
+Aus $\dot{\beta} > 0$ folgt eine weitere fundamentale Konsequenz: Perfekte Kreisbahnen ($\beta = 1$, $e = 0$) werden nie erreicht.
 
 Begründung:
 \begin{itemize}
-    \item $\beta = 1$ würde $\dot{r} = 0$ für alle Zeiten erfordern.
-    \item Dann wäre $\dot{\beta} = 0$ (aus der Bewegungsgleichung), im Widerspruch zu $\dot{\beta} > 0$.
-    \item $\beta$ kann sich dem Wert $1$ nur asymptotisch nähern, ihn aber nie exakt erreichen.
+\item $\beta = 1$ würde $\dot{r} = 0$ für alle Zeiten erfordern.
+\item Dann wäre $\dot{\beta} = 0$ (aus der Bewegungsgleichung), im Widerspruch zu $\dot{\beta} > 0$.
+\item $\beta$ nähert sich dem Wert $1$ nur asymptotisch, erreicht ihn aber nie.
 \end{itemize}
 
-Dies bedeutet: Alle Bahnen im Universum sind prinzipiell offene Spiralen – es gibt keine geschlossenen Ellipsen. Die Abweichung ist zwar winzig, aber prinzipiell vorhanden.
+Dies bedeutet: Alle Bahnen im Universum sind prinzipiell offene Spiralen -- es gibt keine geschlossenen Ellipsen. Die Abweichung ist winzig, aber prinzipiell vorhanden.
 
 \subsection{Gravitationsentropie und intrinsischer Zeitpfeil}
 
 Die Monotonie $\dot{\beta} > 0$ führt zu einem weiteren grundlegenden Konzept: Die Gravitation selbst produziert Entropie.
 
-In der klassischen Mechanik und in der Allgemeinen Relativitätstheorie sind die Bewegungsgleichungen zeitumkehrinvariant – es gibt keinen intrinsischen Zeitpfeil. Die DSTT bricht diese Symmetrie:
+In der klassischen Mechanik und in der Allgemeinen Relativitätstheorie sind die Bewegungsgleichungen zeitumkehrinvariant -- es gibt keinen intrinsischen Zeitpfeil. Die DSTT bricht diese Symmetrie:
 
 \begin{equation}
 \dot{\beta} > 0 \implies \text{Die Zeit hat eine Richtung}
@@ -298,7 +311,7 @@ In der klassischen Mechanik und in der Allgemeinen Relativitätstheorie sind die
 Dies erlaubt die Definition einer Gravitationsentropie:
 
 \begin{equation}
-S_{\text{Grav}} \sim -\beta \ln \beta - (1-\beta) \ln(1-\beta)
+S_{\text{Grav}} \sim -\beta \ln \beta - (1 - \beta) \ln(1 - \beta)
 \end{equation}
 
 Für diese Entropie gilt:
@@ -307,21 +320,23 @@ Für diese Entropie gilt:
 \dot{S}_{\text{Grav}} > 0
 \end{equation}
 
-Die Gravitation gehorcht also einem zweiten Hauptsatz – sie ist ein irreversibler Prozess. Dies liefert einen intrinsischen kosmologischen Zeitpfeil, der unabhängig von der Materie existiert.
+Die Gravitation gehorcht also einem zweiten Hauptsatz -- sie ist ein irreversibler Prozess. Dies liefert einen intrinsischen kosmologischen Zeitpfeil, der unabhängig von der Materie existiert.
 
 \subsection{Langfristige Drift}
 
-Da $\beta(t)$ monoton wächst, wird jede anfängliche Einwärtsbewegung ($\dot{r} < 0$) irgendwann in eine Auswärtsbewegung ($\dot{r} > 0$) umgekehrt. Der Umschlagspunkt ist durch die Anfangsbedingungen bestimmt, aber der langfristige Trend ist eindeutig:
-
-Alle Satelliten, Planeten, Monde – alles spiralisiert langfristig nach außen.
+Da $\beta(t)$ monoton wächst, wird jede anfängliche Einwärtsbewegung ($\dot{r} < 0$) in eine Auswärtsbewegung ($\dot{r} > 0$) umgekehrt. Der langfristige Trend ist eindeutig: Alle Satelliten, Planeten, Monde -- alles spiralisiert langfristig nach außen.
 
 \section{Die $\Omega$-Theorie der Gravitation}
 
 \subsection{Axiome der $\Omega$-Theorie}
 
 \begin{axiom}[Nicht-Lokalität und Instantaneität]
-Die Gravitationswirkung ist nicht-lokal und instantan. Es gibt keine Ausbreitung mit endlicher Geschwindigkeit; die Wechselwirkung ist simultan. Dieser Axiom ist direkte Konsequenz der feldlosen Weber-Wechselwirkung der WDBT+.
+Die Gravitationswirkung ist nicht-lokal und instantan. Es gibt keine Ausbreitung mit endlicher Geschwindigkeit; die Wechselwirkung ist simultan. Dieses Axiom ist direkte Konsequenz der feldlosen Weber-Wechselwirkung der WDBT+.
 \end{axiom}
+
+\begin{remark}[Emergente Retardierung]
+Die instantane Wirkung der Weber-Gravitation ist fundamental. Auf Skalen oberhalb von $l_0$ ist sie effektiv nicht nachweisbar, da die fraktale Geometrie eine Retardierung mit $c$ emergieren lässt. Alle bisherigen Messungen der Gravitationswellengeschwindigkeit (einschließlich GW170817) liegen im effektiven Bereich $r \gg l_0$ und sind daher mit der instantanen fundamentalen Theorie verträglich. Die emergente Wellengleichung reproduziert die ART auf großen Skalen.
+\end{remark}
 
 \begin{axiom}[Das Rotationsfeld]
 Die Gravitation wird durch ein fundamentales, axiales Vektorfeld $\vec{\Omega}(\vec{r}, t)$ beschrieben. Dieses Feld kodiert die lokale Rotationsdichte des Raumes und ist die Ursache für alle geschwindigkeitsabhängigen (tangentialen) Trägheitseffekte.
@@ -332,42 +347,30 @@ Die Schwere (Ursache) und die Trägheit (Wirkung) sind fundamental verschieden. 
 \end{axiom}
 
 \begin{axiom}[DSTT-Kompatibilität]
-Die Theorie ist so konstruiert, dass aus ihr die Existenz einer Zustandsvariablen $\beta(\vec{r}, t)$ folgt, die das lokale Verhältnis von tangentialer zu gesamter Trägheit angibt, und für die $\beta > 0$ gilt. Dies verleiht der Gravitation einen intrinsischen Zeitpfeil.
+Die Theorie ist so konstruiert, dass aus ihr die Existenz einer Zustandsvariablen $\beta(\vec{r}, t)$ folgt, die das lokale Verhältnis von tangentialer zu gesamter Trägheit angibt, und für die $\dot{\beta} > 0$ gilt. Dies verleiht der Gravitation einen intrinsischen Zeitpfeil.
 \end{axiom}
 
 \subsection{Definition der Felder}
 
 \begin{definition}[Skalares Potential]
 Das Potential der radialen Anziehung (gravito-elektrisches Potential) ist durch die Massendichte $\rho$ bestimmt:
-
 \begin{equation}
 \Phi(\vec{r}, t) = -G \int_{\vec{r} \neq \vec{r}'} d^3 r' \frac{\rho(\vec{r}', t)}{|\vec{r}' - \vec{r}|}
 \end{equation}
-
 Der Ausschluss der Selbstwechselwirkung ($\vec{r} \neq \vec{r}'$) ist essentiell für die Konsistenz der Theorie und vermeidet Divergenzen.
 \end{definition}
 
 \begin{definition}[Vektorpotential]
 Das Vektorpotential, aus dem die Rotation abgeleitet wird, wird durch die Massenstromdichte $\vec{j}(\vec{r}, t) = \rho(\vec{r}, t)\vec{v}(\vec{r}, t)$ erzeugt:
-
 \begin{equation}
-\vec{A}(\vec{r}, t) = \frac{G}{c^2} \int_{\vec{r}' \neq \vec{r}} d^3 r' \frac{\vec{j}(\vec{r}', t)}{|\vec{r}' - \vec{r}|}
+\vec{A}(\vec{r}, t) = \frac{G}{c^2} \int_{\vec{r} \neq \vec{r}'} d^3 r' \frac{\vec{j}(\vec{r}', t)}{|\vec{r}' - \vec{r}|}
 \end{equation}
 \end{definition}
 
 \begin{definition}[Rotationsfeld]
 Das fundamentale Rotationsfeld $\vec{\Omega}$ ist die Wirbelstärke des Vektorpotentials:
-
 \begin{equation}
 \vec{\Omega}(\vec{r}, t) = \nabla \times \vec{A}(\vec{r}, t)
-\end{equation}
-\end{definition}
-
-\begin{definition}[Induziertes Feld]
-Bei zeitabhängigen Strömen entsteht ein induziertes radiales Feld:
-
-\begin{equation}
-\vec{E}_{\text{ind}}(\vec{r}, t) = -\frac{\partial \vec{A}(\vec{r}, t)}{\partial t}
 \end{equation}
 \end{definition}
 
@@ -376,35 +379,35 @@ Bei zeitabhängigen Strömen entsteht ein induziertes radiales Feld:
 Die so definierten Felder gehorchen im Vakuum (außerhalb der Quellen) Gleichungen, die formal den Maxwell-Gleichungen der Elektrodynamik entsprechen:
 
 \begin{align}
-\nabla \cdot \vec{\Omega} &= 0 \label{eq:omega_div} \\
-\nabla \times \vec{\Omega} &= \frac{4\pi G}{c^2} \vec{j} + \frac{1}{c^2} \frac{\partial}{\partial t} (-\nabla \Phi) \label{eq:omega_curl} \\
-\nabla \cdot (-\nabla \Phi) &= -4\pi G\rho \label{eq:phi_div} \\
-\nabla \times (-\nabla \Phi) &= -\frac{\partial \vec{\Omega}}{\partial t} \label{eq:phi_curl}
+\nabla \cdot \vec{\Omega} &= 0 \\
+\nabla \times \vec{\Omega} &= \frac{4\pi G}{c^2} \vec{j} + \frac{1}{c^2} \frac{\partial}{\partial t} (-\nabla \Phi) \\
+\nabla \cdot (-\nabla \Phi) &= -4\pi G\rho \\
+\nabla \times (-\nabla \Phi) &= -\frac{\partial \vec{\Omega}}{\partial t}
 \end{align}
 
-Es ist jedoch entscheidend zu betonen, dass diese Differentialgleichungen hier nicht fundamental sind, sondern eine alternative Schreibweise der nicht-lokalen Integralgleichungen darstellen. Die wahre Natur der Theorie ist die der instantanen, integralen Wechselwirkung.
+Diese Differentialgleichungen sind eine alternative Schreibweise der nicht-lokalen Integralgleichungen. Die wahre Natur der Theorie ist die der instantanen, integralen Wechselwirkung.
 
 \subsection{Die Bewegungsgleichung}
 
 Eine Probemasse $m$ am Ort $\vec{r}$ mit der Geschwindigkeit $\vec{v}$ erfährt die Kraft:
 
 \begin{equation}
-\vec{F} = m \left( -\nabla \Phi + 2 \vec{v} \times \vec{\Omega} - \frac{\partial \vec{A}}{\partial t} \right)
+\vec{F} = m \left( -\nabla \Phi + 2\vec{v} \times \vec{\Omega} - \frac{\partial \vec{A}}{\partial t} \right)
 \end{equation}
 
-Dies ist die Lorentz-Kraft der Gravitation. 
+Dies ist die Lorentz-Kraft der Gravitation.
 \begin{itemize}
-    \item Der Term $-\nabla \Phi$ repräsentiert die radiale Newtonsche Anziehung.
-    \item Der Term $2\vec{v} \times \vec{\Omega}$ ist die geschwindigkeitsabhängige Coriolis-artige Kraft, die für die tangentialen Trägheitseffekte verantwortlich ist.
-    \item Der Term $-\partial \vec{A}/\partial t$ beschreibt induzierte Effekte durch instationäre Massenströme.
+\item Der Term $-\nabla\Phi$ repräsentiert die radiale Newtonsche Anziehung.
+\item Der Term $2\vec{v} \times \vec{\Omega}$ ist die geschwindigkeitsabhängige Coriolis-artige Kraft, die für die tangentialen Trägheitseffekte verantwortlich ist.
+\item Der Term $-\partial\vec{A}/\partial t$ beschreibt induzierte Effekte durch instationäre Massenströme.
 \end{itemize}
 
 \subsection{Herleitung der Maxwell-Gravitation aus der WG}
 
-Vergleiche den tangentialen Term $\vec{F}_{\text{tan}}$ mit der Lorentz-Kraft $\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})$. Der Term $\frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v}$ legt nahe, ein effektives Vektorpotential einzuführen:
+Vergleiche den tangentialen Term $\vec{F}_{\text{tan}}$ mit der Lorentz-Kraft $\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})$. Der Term $2(\dot{r} \cdot \vec{v})\vec{v}$ legt nahe, ein effektives Vektorpotential einzuführen:
 
 \begin{equation}
-\vec{A}_g = \frac{6GMm}{c^2 r} \vec{v}_q
+\vec{A}_g = \frac{6GMm}{c^2r} \vec{v}_q
 \end{equation}
 
 wobei $\vec{v}_q$ die Geschwindigkeit der Quelle ist. Für eine bewegte Punktmasse ergibt sich damit:
@@ -433,7 +436,7 @@ Definiere das gravito-elektrische Feld aus dem radialen Anteil der WG:
 \vec{E}_g = -\frac{GM}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r \ddot{r}}{c^2} \right] \hat{r} + \text{Terme aus } \vec{A}_g
 \end{equation}
 
-Im statischen Limes ($\dot{r} = 0, \ddot{r} = 0$) vereinfacht sich dies zu:
+Im statischen Limes ($\dot{r} = 0$, $\ddot{r} = 0$) vereinfacht sich dies zu:
 
 \begin{equation}
 \vec{E}_g = -\frac{GM}{r^2} \hat{r}
@@ -441,36 +444,36 @@ Im statischen Limes ($\dot{r} = 0, \ddot{r} = 0$) vereinfacht sich dies zu:
 
 \subsection{Die vollständigen Maxwell-Gleichungen der Gravitation}
 
-Mit diesen Definitionen lassen sich die Maxwell-Gleichungen der Gravitation herleiten:
+Mit diesen Definitionen ergeben sich die Maxwell-Gleichungen der Gravitation:
 
 \begin{align}
-\nabla \cdot \vec{E}_g &= -4\pi G\rho + \mathcal{O}(v^2/c^2) \label{eq:grav_gauss} \\
-\nabla \cdot \vec{B}_g &= 0 \label{eq:grav_mag_gauss} \\
-\nabla \times \vec{E}_g &= -\frac{\partial \vec{B}_g}{\partial t} + \mathcal{O}(v^2/c^2) \label{eq:grav_faraday} \\
-\nabla \times \vec{B}_g &= \frac{4\pi G}{c^2} \vec{j} + \frac{1}{c^2} \frac{\partial \vec{E}_g}{\partial t} + \mathcal{O}(v^2/c^2) \label{eq:grav_ampere}
+\nabla \cdot \vec{E}_g &= -4\pi G\rho + \mathcal{O}(v^2/c^2) \\
+\nabla \cdot \vec{B}_g &= 0 \\
+\nabla \times \vec{E}_g &= -\frac{\partial \vec{B}_g}{\partial t} + \mathcal{O}(v^2/c^2) \\
+\nabla \times \vec{B}_g &= \frac{4\pi G}{c^2} \vec{j} + \frac{1}{c^2} \frac{\partial \vec{E}_g}{\partial t} + \mathcal{O}(v^2/c^2)
 \end{align}
 
-Im Grenzfall verschwindender Korrekturen ($v/c \to 0$) gehen sie in die bekannten Maxwell-Gleichungen der Gravitation über.
+Im Grenzfall verschwindender Korrekturen ($v/c \rightarrow 0$) gehen sie in die bekannten Maxwell-Gleichungen der Gravitation über.
 
 \subsection{Omega-Wellen: Gravitationswellen in der $\Omega$-Theorie}
 
-Der wichtigste und unterscheidendste Aspekt der $\Omega$-Theorie ist ihre Vorhersage von Gravitationswellen. Diese unterscheiden sich fundamental von denen der ART und der Maxwell-Gravitation.
+Der wichtigste und unterscheidendste Aspekt der $\Omega$-Theorie ist ihre Vorhersage von Gravitationswellen.
 
 \subsubsection{Die fundamentale Natur der Omega-Wellen}
 
-In der $\Omega$-Theorie gibt es keine retardierten Wellen im Sinne der ART. Die Nicht-Lokalität und Instantaneität der Theorie verbieten eine Ausbreitung mit endlicher Geschwindigkeit. Stattdessen existieren instantan korrelierte, kollektive Schwingungen des $\vec{\Omega}$-Feldes und der Massenverteilung. Wir nennen sie Omega-Wellen.
+In der $\Omega$-Theorie gibt es keine retardierten Wellen im Sinne der ART. Die Nicht-Lokalität und Instantaneität der Theorie verbietet eine Ausbreitung mit endlicher Geschwindigkeit. Stattdessen existieren instantan korrelierte, kollektive Schwingungen des $\Omega$-Feldes und der Massenverteilung. Wir nennen sie Omega-Wellen.
 
 Ihre Eigenschaften sind:
 \begin{itemize}
-    \item \textbf{Instantan}: Keine Ausbreitungsverzögerung. Eine Störung im $\vec{\Omega}$-Feld wirkt sofort im gesamten Raum.
-    \item \textbf{Nicht-lokal}: Die Wellenfunktion ist eine Korrelation des gesamten Systems, keine lokale Störung.
-    \item \textbf{Axial}: Die Schwingungen sind Wirbel im $\vec{\Omega}$-Feld, keine transversalen Metrik-Deformationen.
-    \item \textbf{Kohärent}: Sie beschreiben kollektive Bewegungen großer Massensysteme.
+\item Instantan: Keine Ausbreitungsverzögerung. Eine Störung im $\Omega$-Feld wirkt sofort im gesamten Raum.
+\item Nicht-lokal: Die Wellenfunktion ist eine Korrelation des gesamten Systems, keine lokale Störung.
+\item Axial: Die Schwingungen sind Wirbel im $\Omega$-Feld, keine transversalen Metrik-Deformationen.
+\item Kohärent: Sie beschreiben kollektive Bewegungen großer Massensysteme.
 \end{itemize}
 
 \subsubsection{Die emergente Retardierung im fraktalen Raum}
 
-Hier kommt die fraktale Dimension der WDBT+ ins Spiel. Der fundamentale Raum hat die Dimension $D \approx 2,71$. Auf kleinen Skalen ist die fraktale Struktur dominant, auf großen Skalen (LIGO-Skalen) erscheint der Raum effektiv glatt. Durch diese Skalenemergenz entsteht eine effektive Retardierung:
+Der fundamentale Raum hat die Dimension $D \approx 2,71$ unterhalb von $l_0$. Auf großen Skalen (LIGO-Skalen) erscheint der Raum effektiv glatt. Durch diese Skalenemergenz entsteht eine effektive Retardierung:
 
 \begin{equation}
 \vec{\Omega}_{\text{eff}}(\vec{r}, t) = \int d^3 r' K_{\text{eff}}(|\vec{r} - \vec{r}'|) \vec{\Omega}_{\text{fund}}(\vec{r}', t)
@@ -483,21 +486,21 @@ mit einem Kern $K_{\text{eff}}$, der auf großen Skalen wie eine retardierte Gre
 Auf der Makro-Ebene emergiert daraus die bekannte Wellengleichung:
 
 \begin{equation}
-\Box \vec{\Omega}_{\text{eff}} = \frac{4\pi G}{c^2} \vec{j}_{\text{eff}} + \mathcal{O}\left( \frac{1}{D-3} \right)
+\square \vec{\Omega}_{\text{eff}} = \frac{4\pi G}{c^2} \vec{j}_{\text{eff}} + \mathcal{O} \left( \frac{1}{D-3} \right)
 \end{equation}
 
-wobei $\Box$ der d'Alembert-Operator ist. Die ART ist in dieser Sicht der Grenzfall $D \to 3$.
+wobei $\square$ der d'Alembert-Operator ist. Die ART ist in dieser Sicht der Grenzfall $D \rightarrow 3$.
 
 \subsubsection{Unterschiede zu ART-Wellen}
 
 \begin{table}[ht]
 \centering
 \caption{Vergleich zwischen ART-Wellen und fundamentalen Omega-Wellen}
-\begin{tabular}{@{}lll@{}}
+\begin{tabular}{p{4cm}p{4cm}p{4cm}}
 \toprule
 Eigenschaft & ART-Wellen & Omega-Wellen \\
 \midrule
-Fundamental & Metrik-Schwingung & $\vec{\Omega}$-Feld-Schwingung \\
+Fundamental & Metrik-Schwingung & $\Omega$-Feld-Schwingung \\
 Ausbreitung & Retardiert ($c$) & Instantan (fundamental) \\
 Lokalität & Lokal & Nicht-lokal \\
 Polarisation & Transversal ($+$, $\times$) & Axial (wirbelartig) \\
@@ -507,57 +510,56 @@ Dispersion & Nein (im Vakuum) & Ja (minimal, testbar) \\
 \end{tabular}
 \end{table}
 
-\subsubsection{Testable Vorhersagen}
+\subsubsection{Vorhersagen}
 
 Die Theorie macht spezifische, von der ART abweichende Vorhersagen:
 
 \begin{enumerate}
-    \item \textbf{Frequenzabhängige Geschwindigkeit}:
-    \begin{equation}
-    v_{\text{Phase}}(\omega) = c \left( 1 + \alpha \left( \frac{\omega}{\omega_0} \right)^{D-3} + \dots \right)
-    \end{equation}
-    Mit $D \approx 2,71$ ist $D-3 \approx -0,29$, also eine schwache Dispersion bei hohen Frequenzen.
-    
-    \item \textbf{Fraktales Spektrum}: Die Leistungsverteilung skaliert mit
-    \begin{equation}
-    P(\omega) \sim \omega^{-\beta}, \quad \beta = f(D) \approx 0,7
-    \end{equation}
-    
-    \item \textbf{Nicht-lokale Korrelationen}: Bei Verschmelzungsereignissen sollten instantane Korrelationen zwischen weit entfernten Detektoren auftreten, die schneller als Licht scheinen (aber instantan sind).
-    
-    \item \textbf{Abweichungen bei hohen Frequenzen}: Oberhalb einer kritischen Frequenz $\omega_c$ (die mit der fraktalen Skala zusammenhängt) weichen die Signale systematisch von ART-Vorhersagen ab.
+\item \textbf{Frequenzabhängige Geschwindigkeit:}
+\begin{equation}
+v_{\text{phase}}(\omega) = c \left( 1 + \alpha \left( \frac{\omega}{\omega_0} \right)^{D-3} + \dots \right)
+\end{equation}
+Mit $D \approx 2,71$ ist $D-3 \approx -0,29$, also eine schwache Dispersion bei hohen Frequenzen.
+
+\item \textbf{Fraktales Spektrum:} Die Leistungsverteilung skaliert mit
+\begin{equation}
+P(\omega) \sim \omega^{-\beta}, \quad \beta = f(D) \approx 0,7
+\end{equation}
+
+\item \textbf{Nicht-lokale Korrelationen:} Bei Verschmelzungsereignissen treten instantane Korrelationen zwischen weit entfernten Detektoren auf.
+
+\item \textbf{Abweichungen bei hohen Frequenzen:} Oberhalb einer kritischen Frequenz $\omega_c$ (die mit der fraktalen Skala zusammenhängt) weichen die Signale systematisch von ART-Vorhersagen ab.
 \end{enumerate}
 
 \subsubsection{Interpretation der LIGO/Virgo-Daten}
 
-Die gemessenen Signale sind mit dieser Theorie vereinbar, wenn man sie als Mischung aus fundamentaler Omega-Welle und effektiver ART-Welle versteht:
+Die gemessenen Signale sind mit dieser Theorie vereinbar:
 \begin{itemize}
-    \item Die grobe Form (Frequenzentwicklung, Amplitude) wird durch die ART gut beschrieben – das ist der effektive Anteil.
-    \item Feinstrukturen, Rauschen und eventuelle Anomalien könnten die fraktale Signatur tragen.
-    \item Die Ausbreitungsgeschwindigkeit ist innerhalb der Messgenauigkeit $c$ – die instantane Komponente ist auf LIGO-Skalen nicht direkt auflösbar.
+\item Die grobe Form (Frequenzentwicklung, Amplitude) wird durch die ART beschrieben -- das ist der effektive Anteil.
+\item Feinstrukturen, Rauschen und Anomalien tragen die fraktale Signatur.
+\item Die Ausbreitungsgeschwindigkeit ist innerhalb der Messgenauigkeit $c$ -- die instantane Komponente ist auf LIGO-Skalen nicht direkt auflösbar.
 \end{itemize}
 
 \section{Bose-Einstein-Kondensat (BEC)-Objekte}
 
 \subsection{Paarbildung und Bose-Einstein-Kondensation}
 
-Bei hinreichend hohen Dichten bilden Fermionen Cooper-Paare und werden zu effektiven Bosonen. Diese können in einen Bose-Einstein-Kondensat (BEC)-Zustand übergehen. In diesem Zustand:
+Bei hinreichend hohen Dichten bilden Fermionen Cooper-Paare und werden zu effektiven Bosonen. Diese gehen in einen Bose-Einstein-Kondensat (BEC)-Zustand über. In diesem Zustand:
 \begin{itemize}
-    \item Entfällt der Fermi-Druck (der sonst weitere Kompression verhindert)
-    \item Das Quantenpotential dominiert die repulsive Wechselwirkung
-    \item Das Objekt kann bis zur fundamentalen Länge $l_0$ schrumpfen
+\item Entfällt der Fermi-Druck (der sonst weitere Kompression verhindert)
+\item Das Quantenpotential dominiert die repulsive Wechselwirkung
+\item Das Objekt schrumpft bis zur fundamentalen Länge $l_0$
 \end{itemize}
 
 \subsection{Zustandsgleichung eines BEC-Objekts}
 
-Aus der Gleichgewichtsbedigung zwischen Gravitation und Quantenpotential im fraktalen Raum folgt:
+Aus der Gleichgewichtsbedingung zwischen Gravitation und Quantenpotential im fraktalen Raum folgt:
 
 \begin{equation}
 P(\rho) = K \cdot \rho^{\gamma}
 \end{equation}
 
 mit
-
 \begin{equation}
 \gamma = \frac{3}{2}, \quad K = \frac{\hbar^2}{2m_B} \left( \frac{3\pi^2}{g} \right)^{2/3} \cdot \frac{1}{m_B^{2/3}} \cdot f(D)
 \end{equation}
@@ -575,7 +577,7 @@ E(R) = -C_G \frac{GM^2}{R^{D-2}} + A \frac{\hbar^2 M}{m_B^2 R^{2D/3}}
 folgt durch Ableitung und Auflösen nach $R$:
 
 \begin{equation}
-R^{2-D/3} = \frac{2DA\hbar^2}{3(D-2)C_G G m_B^2} \cdot \frac{1}{M}
+R^{2-D/3} = \frac{2DA\hbar^2}{3(D-2)C_G Gm_B^2} \cdot \frac{1}{M}
 \end{equation}
 
 Mit $D \approx 2,7156$ ergibt sich $2 - D/3 \approx 1,0948$, also:
@@ -588,10 +590,10 @@ Numerisch: $K_R \approx 5,7 \times 10^{13} \text{ m} \cdot \text{kg}^{0,9134}$.
 
 \subsection{Maximale Masse eines BEC-Objekts}
 
-Die minimale Größe ist $R_{\text{min}} = l_0 \approx 1,8 \times 10^{-15}$ m. Daraus folgt:
+Die minimale Größe ist $R_{\min} = l_0 \approx 1,8 \times 10^{-15}$ m. Daraus folgt:
 
 \begin{equation}
-M_{\text{BEC}} = \left( \frac{K_R}{l_0} \right)^{1/0.9134} \approx 3 \times 10^6 M_{\odot}
+M_{\text{BEC}} = \left(\frac{K_R}{l_0}\right)^{1/0.9134} \approx 3 \times 10^6 M_{\odot}
 \end{equation}
 
 Dies ist die maximale Masse eines einzelnen BEC-Objekts. Oberhalb dieser Grenze wäre $R < l_0$, was physikalisch unmöglich ist.
@@ -601,13 +603,13 @@ Dies ist die maximale Masse eines einzelnen BEC-Objekts. Oberhalb dieser Grenze 
 Die Weber-Gravitation führt zu einem modifizierten innersten stabilen Orbit (ISCO). Für eine kreisförmige Bahn ($\dot{r} = 0$, $\ddot{r} = -v^2/r$) liefert die Weber-Gravitation mit $\beta = 0,5$:
 
 \begin{equation}
-\frac{mv^2}{r} = \frac{GMm}{r^2} \left( 1 + \frac{v^2}{2c^2} \right)
+\frac{mv^2}{r} = \frac{GMm}{r^2} \left(1 + \frac{v^2}{2c^2}\right)
 \end{equation}
 
 Auflösen nach $v^2$:
 
 \begin{equation}
-v^2 = \frac{GM}{r} \left( 1 + \frac{GM}{2c^2 r} \right)
+v^2 = \frac{GM}{r} \left(1 + \frac{GM}{2c^2r}\right)
 \end{equation}
 
 Die Bedingung für den innersten stabilen Orbit ($dv/dr = 0$) ergibt:
@@ -616,60 +618,51 @@ Die Bedingung für den innersten stabilen Orbit ($dv/dr = 0$) ergibt:
 r_{\text{ISCO}} = \frac{12GM}{c^2}
 \end{equation}
 
-Für $M = M_{\text{BEC}}$: $r_{\text{ISCO}} \approx 5,3 \times 10^{10} \text{ m} \approx 0,35 \text{ AU}$ – makroskopisch.
+Für $M = M_{\text{BEC}}$: $r_{\text{ISCO}} \approx 5,3 \times 10^{10}$ m $\approx 0,35$ AU -- makroskopisch.
 
-Für die Zustandsgleichung bedeutet dies:
+\subsection{Beobachtete supermassereiche Objekte}
+
+Beobachtet werden zentrale Objekte in Galaxien mit Massen bis $10^{10}M_{\odot}$. Diese sind keine einzelnen kompakten Objekte, sondern Systeme bestehend aus:
 \begin{itemize}
-    \item Im Inneren ($r \ll r_{\text{ISCO}}$): $P \propto \rho^{3/2}$
-    \item In der Übergangszone: $P \propto \rho^{3/2}(1 + GM/(c^2 r))$
-    \item In der äußeren Umgebung ($r \gtrsim r_{\text{ISCO}}$): $P \propto \rho^{4/3}$ (ultrarelativistisch)
+\item Einem zentralen BEC-Objekt mit $M = M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot}$ und $R = l_0$
+\item Einer massiven Umgebung (Akkretionsscheibe, Sternhaufen, Gas), die die zusätzliche Masse von $10^9 - 10^{10} M_{\odot}$ enthält
 \end{itemize}
-
-\subsection{Was sind beobachtete supermassereiche Objekte?}
-
-Beobachtet werden zentrale Objekte in Galaxien mit Massen bis $10^{10} M_{\odot}$. Diese sind keine einzelnen kompakten Objekte, sondern Systeme bestehend aus:
-\begin{itemize}
-    \item Einem zentralen BEC-Objekt mit $M = M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot}$ und $R = l_0$
-    \item Einer massiven Umgebung (Akkretionsscheibe, Sternhaufen, Gas), die die zusätzliche Masse von $10^9 - 10^{10} M_{\odot}$ enthält
-\end{itemize}
-
 Diese Umgebung entsteht durch die kontinuierliche Materieentstehung aus dem Quantenpotential des Kerns und die anschließende Drift nach außen.
 
 \subsection{Strukturelle Analogie zum Atom}
 
-Die beschriebene Struktur – ein winziger, extrem dichter Kern, umgeben von einer riesigen, dünnen Hülle, mit viel Vakuum dazwischen – erinnert an ein Atom. Im Atom sitzt fast die gesamte Masse im Kern ($\sim 10^{-15}$ m), die Elektronen sind weit draußen ($\sim 10^{-10}$ m). In der BEC-Galaxie ist der Kern ebenfalls winzig ($l_0 \approx 10^{-15}$ m), die Umgebung (Sterne, Gas) erstreckt sich über $10^{21}$ m – und der Kern trägt nur einen kleinen Teil der Gesamtmasse.
+Die beschriebene Struktur -- ein winziger, extrem dichter Kern, umgeben von einer riesigen, dünnen Hülle, mit viel Vakuum dazwischen -- ist analog zum Atom. Im Atom sitzt fast die gesamte Masse im Kern ($\sim 10^{-15}$ m), die Elektronen sind weit draußen ($\sim 10^{-10}$ m). In der BEC-Galaxie ist der Kern ebenfalls winzig ($l_0 \approx 10^{-15}$ m), die Umgebung (Sterne, Gas) erstreckt sich über $10^{21}$ m -- und der Kern trägt nur einen kleinen Teil der Gesamtmasse.
 
-Die fraktale Raumdimension $D \approx 2,71$ verbindet beide Welten – sie bestimmt sowohl die Feinstrukturkonstante als auch das Massenverhältnis $M_{\text{Gal}}/M_{\text{Kern}} \approx 1000$.
+Die fraktale Raumdimension $D \approx 2,71$ verbindet beide Welten -- sie bestimmt sowohl die Feinstrukturkonstante als auch das Massenverhältnis $M_{\text{Gal}}/M_{\text{Kern}} \approx 1000$.
 
 \subsection{Kollisionen von BEC-Objekten}
 
 BEC-Objekte haben keine Sonderstellung. Bei Kollisionen verhalten sie sich wie alle anderen physikalischen Objekte:
 \begin{itemize}
-    \item \textbf{Verschmelzung}: Wenn $M_1 + M_2 \leq M_{\text{BEC}}$, können sie zu einem neuen BEC-Objekt verschmelzen.
-    \item \textbf{Abprallen}: Wenn die Relativgeschwindigkeit hoch genug ist, prallen sie elastisch auseinander.
-    \item \textbf{Zerrüttung}: Bei geringer Relativgeschwindigkeit und $M_1 + M_2 > M_{\text{BEC}}$ können die Kerne zerreißen; die Masse wird in die Umgebung überführt.
-    \item \textbf{Doppelkern-Systeme}: Die Kerne bleiben getrennt und umkreisen sich in einer gemeinsamen Umgebung.
+\item \textbf{Verschmelzung:} Wenn $M_1 + M_2 \le M_{\text{BEC}}$, verschmelzen sie zu einem neuen BEC-Objekt.
+\item \textbf{Abprallen:} Wenn die Relativgeschwindigkeit hoch genug ist, prallen sie elastisch auseinander.
+\item \textbf{Zerrüttung:} Bei geringer Relativgeschwindigkeit und $M_1 + M_2 > M_{\text{BEC}}$ zerreißen die Kerne; die Masse wird in die Umgebung überführt.
+\item \textbf{Doppelkern-Systeme:} Die Kerne bleiben getrennt und umkreisen sich in einer gemeinsamen Umgebung.
 \end{itemize}
 
 \subsection{Gravitationswellen von BEC-Objekten}
 
-Verschmelzungen von BEC-Objekten erzeugen Gravitationswellen – ähnlich wie Neutronensterne oder Schwarze Löcher in der ART. Unterschiede:
+Verschmelzungen von BEC-Objekten erzeugen Gravitationswellen -- ähnlich wie Neutronensterne oder Schwarze Löcher in der ART. Unterschiede:
 \begin{itemize}
-    \item BEC-Objekte haben keinen Ereignishorizont, sondern eine Oberfläche
-    \item Die Wellenform kann abweichen, weil die Materie nicht "verschluckt" wird
-    \item Nach der Verschmelzung kann es Nachglühen geben
+\item BEC-Objekte haben keinen Ereignishorizont, sondern eine Oberfläche
+\item Die Wellenform weicht ab, weil die Materie nicht "verschluckt" wird
+\item Nach der Verschmelzung gibt es Nachglühen
 \end{itemize}
-
-Die LIGO/Virgo-Daten sind mit beiden Modellen konsistent, da die beobachteten Massen ($\sim 10 - 100 M_{\odot}$) weit unter $M_{\text{BEC}}$ liegen.
+Die LIGO/Virgo-Daten sind mit beiden Modellen konsistent, da die beobachteten Massen ($\sim 10-100 M_{\odot}$) weit unter $M_{\text{BEC}}$ liegen.
 
 \section{Das Neutrino als Q-Teilchen}
 
 \subsection{Die Rolle des Neutrinos in der WDBT+}
 
-In der Standardphysik ist das Neutrino ein rätselhaftes Teilchen: Es besitzt keine elektrische Ladung, eine verschwindend kleine, aber nicht verschwindende Masse und wechselwirkt nur schwach. In der WDBT+ ergibt sich eine klare, fundamentale Rolle: Das Neutrino ist das \textbf{reine Q-Teilchen} – die materielle Manifestation des de Broglie-Bohm-Quantenpotentials $Q$.
+In der Standardphysik ist das Neutrino ein rätselhaftes Teilchen: Es besitzt keine elektrische Ladung, eine verschwindend kleine, aber nicht verschwindende Masse und wechselwirkt nur schwach. In der WDBT+ ergibt sich eine klare, fundamentale Rolle: Das Neutrino ist das reine Q-Teilchen -- die materielle Manifestation des de Broglie-Bohm-Quantenpotentials $Q$.
 
 \begin{definition}[Neutrino]
-Das Neutrino ist ein Teilchen, das ausschließlich über das Quantenpotential $Q$ wechselwirkt. Es besitzt keine elektrische Ladung (keine Kopplung an die WED) und keine nennenswerte Ruhemasse im herkömmlichen Sinne. Seine Masse emergiert aus der Energie des Quantenpotentials, das es trägt.
+Das Neutrino ist ein Teilchen, das ausschließlich über das Quantenpotential $Q$ wechselwirkt. Es besitzt keine elektrische Ladung (keine Kopplung an die WED) und keine Ruhemasse im herkömmlichen Sinne. Seine Masse emergiert aus der Energie des Quantenpotentials, das es trägt.
 \end{definition}
 
 \subsection{Das Quantenpotential als Ursache der Nichtlokalität}
@@ -677,99 +670,69 @@ Das Neutrino ist ein Teilchen, das ausschließlich über das Quantenpotential $Q
 In der de Broglie-Bohm-Theorie lautet das Quantenpotential:
 
 \begin{equation}
-Q = -\frac{\hbar^2}{2m}\frac{\nabla^2 R}{R}, \qquad R = \sqrt{\rho}.
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 R}{R}, \quad R = \sqrt{\rho}.
 \end{equation}
 
-Es ist nichtlokal, wirkt instantan über das gesamte System und ist für die Führung der Teilchen verantwortlich. In der IWT wird $Q$ zum Ausdruck der globalen, nichtlokalen Informationsorganisation.
+Es ist nichtlokal, wirkt instantan über das gesamte System und ist für die Führung der Teilchen verantwortlich. In der WDBT+ wird $Q$ zum Ausdruck der globalen, nichtlokalen Informationsorganisation.
 
-Das Neutrino ist nun der \textbf{physikalische Träger} dieses Quantenpotentials. Während geladene Teilchen (Elektronen, Quarks) über die WED wechselwirken und massive Teilchen (Protonen, Neutronen) über die WG, vermittelt das Neutrino die nichtlokale Organisation des Informationsfeldes.
+Das Neutrino ist der physikalische Träger dieses Quantenpotentials. Während geladene Teilchen (Elektronen, Quarks) über die WED wechselwirken und massive Teilchen (Protonen, Neutronen) über die WG, vermittelt das Neutrino die nichtlokale Organisation des Informationsfeldes.
 
 \subsection{Herleitung der Neutrinomasse}
 
-Die fundamentale Längenskala der Theorie ist $l_0 \approx 1,8 \times 10^{-15}\,\text{m}$ (Gleichung (12)). Sie ist die kleinste physikalisch mögliche Distanz. Die Compton-Wellenlänge des Neutrinos ist:
+Die fundamentale Längenskala der Theorie ist $l_0 \approx 1,8 \times 10^{-15}$ m. Sie ist die kleinste physikalisch mögliche Distanz. Die Compton-Wellenlänge des Neutrinos ist:
 
 \begin{equation}
-\lambda_\nu = \frac{\hbar}{m_\nu c}.
+\lambda_{\nu} = \frac{\hbar}{m_{\nu}c}.
 \end{equation}
 
-Der entscheidende Ansatz ist, dass diese Compton-Wellenlänge mit der fundamentalen Länge $l_0$ identisch ist:
+Die Compton-Wellenlänge ist identisch mit der fundamentalen Länge:
 
 \begin{equation}
-\lambda_\nu = l_0 \quad \Rightarrow \quad \frac{\hbar}{m_\nu c} = l_0.
+\lambda_{\nu} = l_0 \quad \Rightarrow \quad \frac{\hbar}{m_{\nu}c} = l_0.
 \end{equation}
 
 Daraus folgt unmittelbar:
 
 \begin{equation}
-\boxed{m_\nu = \frac{\hbar}{l_0 c}}.
+\boxed{m_{\nu} = \frac{\hbar}{l_0c}}.
 \end{equation}
 
-Einsetzen der Zahlenwerte ($\hbar = 1,0546 \times 10^{-34}\,\text{J·s}$, $c = 2,9979 \times 10^8\,\text{m/s}$, $l_0 = 1,8 \times 10^{-15}\,\text{m}$) liefert:
+Einsetzen der Zahlenwerte ($\hbar = 1,0546 \times 10^{-34}$ J·s, $c = 2,9979 \times 10^8$ m/s, $l_0 = 1,8 \times 10^{-15}$ m) liefert:
 
 \begin{equation}
-m_\nu \approx \frac{1,0546 \times 10^{-34}}{1,8 \times 10^{-15} \cdot 2,9979 \times 10^8}\,\text{kg} \approx 1,95 \times 10^{-37}\,\text{kg}.
+m_\nu \approx \frac{1,0546 \times 10^{-34}}{1,8 \times 10^{-15} \cdot 2,9979 \times 10^8} \text{ kg} \approx 1,95 \times 10^{-37} \text{ kg}.
 \end{equation}
 
-Umrechnung in Elektronenvolt ($1\,\text{eV}/c^2 = 1,7827 \times 10^{-36}\,\text{kg}$):
+Umrechnung in Elektronenvolt ($1\ \text{eV}/c^2 = 1,7827 \times 10^{-36}$ kg):
 
 \begin{equation}
-m_\nu \approx \frac{1,95 \times 10^{-37}}{1,7827 \times 10^{-36}}\,\text{eV}/c^2 \approx 0,11\,\text{eV}/c^2.
+m_\nu \approx \frac{1,95 \times 10^{-37}}{1,7827 \times 10^{-36}} \text{ eV}/c^2 \approx 0,11 \text{ eV}/c^2.
 \end{equation}
 
 Die Theorie sagt also voraus:
 
 \begin{equation}
-\boxed{m_\nu \approx 0,1\,\text{eV}/c^2}.
+m_\nu \approx 0,1 \text{ eV}/c^2.
 \end{equation}
 
-Dies stimmt hervorragend mit den beobachteten Größenordnungen überein (Elektron-Neutrino-Masse $\lesssim 0,5\,\text{eV}/c^2$).
+Dies stimmt mit den beobachteten Größenordnungen überein (Elektron-Neutrino-Masse $< 0,5\ \text{eV}/c^2$).
 
 \subsection{Das Neutrino als Vermittler der Nichtlokalität}
 
-Die physikalische Konsequenz ist tiefgreifend:
-
+Die physikalische Konsequenz ist:
 \begin{itemize}
-    \item Die Nichtlokalität der Quantenmechanik ist kein mysteriöses Gespenst, sondern wird durch ein reales Teilchen – das Neutrino – vermittelt.
-    \item Das Quantenpotential $Q$ ist keine abstrakte Funktion mehr, sondern die Energie des Neutrino-Feldes.
-    \item Die Bewegung eines geladenen Teilchens wird nicht nur durch lokale Kräfte (WED, WG) bestimmt, sondern auch durch den Fluss von Neutrinos, die das Quantenpotential tragen.
+\item Die Nichtlokalität der Quantenmechanik wird durch ein reales Teilchen -- das Neutrino -- vermittelt.
+\item Das Quantenpotential $Q$ ist keine abstrakte Funktion mehr, sondern die Energie des Neutrino-Feldes.
+\item Die Bewegung eines geladenen Teilchens wird nicht nur durch lokale Kräfte (WED, WG) bestimmt, sondern auch durch den Fluss von Neutrinos, die das Quantenpotential tragen.
 \end{itemize}
 
 \subsection{Drei Neutrino-Generationen}
 
-Die Standardphysik kennt drei Neutrino-Generationen (Elektron-, Myon-, Tau-Neutrino). In der WDBT+ könnten diese drei Moden des Quantenpotentials entsprechen – möglicherweise eine Projektion der fraktalen Raumdimension $D \approx 2,71$:
-
-\begin{equation}
-\nu_e,\; \nu_\mu,\; \nu_\tau \quad \leftrightarrow \quad \text{Moden des Q-Feldes auf verschiedenen Skalen}.
-\end{equation}
-
-Die beobachteten Massenunterschiede zwischen den Generationen könnten aus einer feinen Aufspaltung resultieren, die durch die fraktale Geometrie verursacht wird.
+Die drei bekannten Neutrino-Generationen ($\nu_e$, $\nu_\mu$, $\nu_\tau$) entsprechen drei Moden des Q-Feldes -- einer Projektion der fraktalen Raumdimension $D \approx 2,71$ auf drei diskrete Frequenzbänder. Die beobachteten Massenunterschiede zwischen den Generationen resultieren aus einer feinen Aufspaltung durch die fraktale Geometrie.
 
 \subsection{Konsequenzen für die Dunkle Materie}
 
-Da Neutrinos überall vorhanden sind, kaum wechselwirken und eine kleine Masse besitzen, sind sie ein natürlicher Kandidat für die Dunkle Materie. In der WDBT+ wird die Dunkle Materie nicht als separate Entität benötigt – die Gesamtheit der Neutrinos im Kosmos erzeugt die beobachteten gravitativen Effekte, die in der Standardkosmologie der Dunklen Materie zugeschrieben werden.
-
-\subsection{Das Neutrino in der Taxonomie der WDBT+}
-
-\begin{table}[ht]
-\centering
-\caption{Das Neutrino im Vergleich zu anderen Entitäten}
-\begin{tabular}{@{}lllll@{}}
-\toprule
-Entität & WED (EM) & WG (Gravitation) & DBT (Q) & Rolle \\
-\midrule
-Elektron & ja ($-e$) & ja ($m_e$) & ja & Lokale EM-Wechselwirkung \\
-Proton & ja ($+e$) & ja ($m_p$) & ja & Lokale EM + starke Bindung \\
-Photon & ja (kinetisch) & ja (kinetische Masse) & ja & Vermittler von EM \\
-Neutrino & nein & (winzig, emergent) & \textbf{ja} & Vermittler von Q (Nichtlokalität) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\subsection{Zusammenfassung}
-
-Das Neutrino ist in der WDBT+ kein rätselhaftes Anhängsel des Standardmodells, sondern eine fundamentale Entität: das \textbf{Q-Teilchen}. Seine Masse folgt direkt aus der fundamentalen Länge $l_0$ und beträgt $m_\nu \approx 0,1\,\text{eV}/c^2$. Es vermittelt die Nichtlokalität der Quantenmechanik und ist ein natürlicher Kandidat für die Dunkle Materie.
-
-Damit schließt sich ein weiterer Kreis: Die drei Säulen der Theorie (WED, WG, DBT) werden durch das Neutrino als Träger des Quantenpotentials physikalisch ausgefüllt.
+Da Neutrinos überall vorhanden sind, kaum wechselwirken und eine kleine Masse von $\approx 0,1\ \text{eV}/c^2$ besitzen, sind sie die Dunkle Materie. In der WDBT+ wird die Dunkle Materie nicht als separate Entität benötigt -- die Gesamtheit der Neutrinos im Kosmos erzeugt die beobachteten gravitativen Effekte.
 
 \section{Fraktale Maxwell-Gleichungen}
 
@@ -803,45 +766,30 @@ Mit diesem Operator lauten die Maxwell-Gleichungen im fraktalen Raum:
 \begin{equation}
 \nabla_D \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} \cdot \left( \frac{r}{r_0} \right)^{D-3}
 \end{equation}
-Der Skalierungsfaktor $(r/r_0)^{D-3}$ ist entscheidend: Er besagt, dass die effektive Quellstärke im fraktalen Raum vom Abstand abhängt. Für $D = 3$ verschwindet dieser Faktor, und wir erhalten das bekannte Gesetz.
+Der Skalierungsfaktor $(r/r_0)^{D-3}$ besagt, dass die effektive Quellstärke im fraktalen Raum vom Abstand abhängt. Für $D = 3$ verschwindet dieser Faktor, und wir erhalten das bekannte Gesetz.
 
 \subsubsection{Gaußsches Gesetz (magnetisch)}
 \begin{equation}
 \nabla_D \cdot \mathbf{B} = 0
 \end{equation}
-Die Quellenfreiheit des magnetischen Feldes bleibt erhalten – sie ist eine topologische Eigenschaft, keine dimensionale.
+Die Quellenfreiheit des magnetischen Feldes bleibt erhalten -- sie ist eine topologische Eigenschaft.
 
 \subsubsection{Faradaysches Induktionsgesetz}
 \begin{equation}
 \nabla_D \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} \cdot \left( \frac{r}{r_0} \right)^{D-3}
 \end{equation}
-Auch hier die fraktale Skalierung: Die zeitliche Änderung des Magnetfeldes erzeugt ein elektrisches Wirbelfeld, dessen Stärke fraktal skaliert.
 
 \subsubsection{Ampèresches Gesetz (mit Maxwell-Ergänzung)}
 \begin{equation}
 \nabla_D \times \mathbf{B} = \mu_0 \mathbf{j} \cdot \left( \frac{r}{r_0} \right)^{D-3} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t} \cdot \left( \frac{r}{r_0} \right)^{D-3}
 \end{equation}
-Der Verschiebungsstrom und die Stromdichte unterliegen derselben fraktalen Skalierung.
-
-\subsection{Alternative Formulierung mit fraktaler Metrik}
-
-Eleganter und allgemeiner ist die Formulierung mit einer fraktalen Metrik $g_{ij}^{(D)}$. Sie kodiert die fraktale Geometrie und führt zu kovarianten Ableitungen $\nabla_i^{(D)}$. Die Maxwell-Gleichungen lauten dann:
-
-\begin{align}
-\nabla_i^{(D)} E^i &= \frac{\rho}{\epsilon_0} \sqrt{g^{(D)}} \\
-\nabla_i^{(D)} B^i &= 0 \\
-\epsilon^{ijk} \nabla_j^{(D)} E_k &= -\frac{\partial B^i}{\partial t} \sqrt{g^{(D)}} \\
-\epsilon^{ijk} \nabla_j^{(D)} B_k &= \mu_0 j^i \sqrt{g^{(D)}} + \mu_0 \epsilon_0 \frac{\partial E^i}{\partial t} \sqrt{g^{(D)}}
-\end{align}
-
-wobei $\sqrt{g^{(D)}}$ die Determinante der fraktalen Metrik ist – ein Maß für die fraktale Volumenänderung.
 
 \subsection{Die fraktalen Maxwell-Gleichungen der Gravitation}
 
 Für die Gravitation existiert eine analoge Struktur. Aus der DSTT folgen zwei Felder:
 \begin{itemize}
-    \item Das gravito-elektrische Feld $\vec{E}_g$ (entspricht der radialen Schwerewirkung)
-    \item Das gravito-magnetische Feld $\vec{B}_g$ (entspricht der tangentialen Trägheitsantwort)
+\item Das gravito-elektrische Feld $\vec{E}_g$ (entspricht der radialen Schwerewirkung)
+\item Das gravito-magnetische Feld $\vec{B}_g$ (entspricht der tangentialen Trägheitsantwort)
 \end{itemize}
 
 Im fraktalen Raum lauten ihre Gleichungen:
@@ -853,7 +801,7 @@ Im fraktalen Raum lauten ihre Gleichungen:
 \nabla_D \times \vec{B}_g &= \mu_g \vec{j}_g \cdot \left( \frac{r}{r_0} \right)^{D-3} + \mu_g \epsilon_g \frac{\partial \vec{E}_g}{\partial t} \cdot \left( \frac{r}{r_0} \right)^{D-3}
 \end{align}
 
-Dabei sind $\rho_{\text{eff}}$ die effektive Massendichte, $\vec{j}_g$ der Massenstrom, und $\epsilon_g, \mu_g$ die entsprechenden Konstanten mit $\epsilon_g \mu_g = 1/c^2$ (wobei $c$ die Gravitationswellengeschwindigkeit ist).
+Dabei sind $\rho_{\text{eff}}$ die effektive Massendichte, $\vec{j}_g$ der Massenstrom, und $\epsilon_g$, $\mu_g$ die entsprechenden Konstanten mit $\epsilon_g\mu_g = 1/c^2$.
 
 \subsection{Die Wellengleichung im fraktalen Raum}
 
@@ -863,13 +811,13 @@ Aus den fraktalen Maxwell-Gleichungen folgt eine modifizierte Wellengleichung. F
 \nabla_D^2 \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0
 \end{equation}
 
-Aber $\nabla_D^2$ ist der fraktale Laplace-Operator. Seine Eigenfunktionen sind keine ebenen Wellen $e^{i(kx-\omega t)}$, sondern fraktale Wellenfunktionen. Im Zentralfeld lautet die Lösung:
+Die Eigenfunktionen sind keine ebenen Wellen $e^{i(kx-\omega t)}$, sondern fraktale Wellenfunktionen. Im Zentralfeld lautet die Lösung:
 
 \begin{equation}
 \mathbf{E}(r, \phi, t) = \mathbf{E}_0 \cdot r^{D-2} \cdot e^{i(k\phi - \omega t)}
 \end{equation}
 
-Das sind Spiralwellen – genau wie die Bahnformen der DSTT! Die Amplitude skaliert mit $r^{D-2} \approx r^{0,71}$ (für $D \approx 2,71$), und die Phase ist proportional zum Winkel $\phi$.
+Das sind Spiralwellen -- genau wie die Bahnformen der DSTT. Die Amplitude skaliert mit $r^{D-2} \approx r^{0,71}$ (für $D \approx 2,71$), und die Phase ist proportional zum Winkel $\phi$.
 
 Für die Gravitation ergibt sich analog:
 
@@ -882,73 +830,71 @@ Für die Gravitation ergibt sich analog:
 Für ebene Wellen (Näherung für große Entfernungen) ergibt sich eine Dispersionsrelation:
 
 \begin{equation}
-\omega^2 = c^2 k^2 \left( 1 + \alpha \left( \frac{k}{k_0} \right)^{D-3} + \dots \right)
+\omega^2 = c^2 k^2 \left( 1 + \alpha \left( \frac{k}{k_0} \right)^{D-3} + \ldots \right)
 \end{equation}
 
 Mit $D \approx 2,71$ ist $D-3 \approx -0,29$, also:
 
 \begin{equation}
-\omega^2 = c^2 k^2 \left( 1 + \alpha \left( \frac{k}{k_0} \right)^{-0.29} + \dots \right)
+\omega^2 = c^2 k^2 \left( 1 + \alpha \left( \frac{k}{k_0} \right)^{-0.29} + \ldots \right)
 \end{equation}
 
-Das bedeutet: Licht und Gravitationswellen sind im fraktalen Raum minimal dispersiv. Verschiedene Frequenzen breiten sich mit leicht unterschiedlicher Geschwindigkeit aus – ein Effekt, der bei extrem hohen Frequenzen oder über kosmische Distanzen messbar sein könnte.
+Das bedeutet: Licht und Gravitationswellen sind im fraktalen Raum minimal dispersiv. Verschiedene Frequenzen breiten sich mit leicht unterschiedlicher Geschwindigkeit aus -- ein Effekt, der bei extrem hohen Frequenzen oder über kosmische Distanzen messbar ist.
 
-\subsection{Konsequenzen und Erklärungen}
+\subsection{Konsequenzen}
 
 \subsubsection{Erklärung der Feinstrukturkonstante}
-
-Die Feinstrukturkonstante $\alpha \approx 1/137$ ist in der Standardphysik unerklärt. Im fraktalen Raum ergibt sie sich aus der Dimension $D$:
+Die Feinstrukturkonstante $\alpha \approx 1/137$ ergibt sich aus der Dimension $D$:
 
 \begin{equation}
 \alpha(D) = \alpha_0 \cdot f(D) \quad \text{mit} \quad f(D) = \left( \frac{D-2}{D} \right)^D
 \end{equation}
 
-Für $D \approx 2,71$ ergibt sich $\alpha \approx 1/137$. Das ist kein Zufall – es ist ein starkes Indiz für die Richtigkeit des fraktalen Ansatzes.
+Für $D \approx 2,71$ ergibt sich $\alpha \approx 1/137$.
 
-\subsubsection{Keine Unendlichkeiten – keine Renormierung nötig}
-
-In der fraktalen Elektrodynamik sind viele Integrale, die in der QED divergieren, automatisch endlich. Der Grund: Die fraktale Dimension $D < 3$ wirkt als natürlicher Cutoff. Die Renormierung, eines der größten konzeptionellen Probleme der Quantenfeldtheorie, wird überflüssig.
-
-\subsubsection{Skalierungsgesetze in Plasmen}
-
-In Laborplasmen und astrophysikalischen Plasmen findet man Skalierungsgesetze, die von der glatten Theorie abweichen:
-\begin{itemize}
-    \item Stromdichten skalieren oft mit $j(r) \propto r^{-0.3}$
-    \item Turbulenzspektren zeigen gebrochene Exponenten
-\end{itemize}
-
-Die fraktalen Maxwell-Gleichungen sagen genau solche Skalierungen voraus:
-
-\begin{equation}
-j(r) \propto r^{D-3} \approx r^{-0.29}
-\end{equation}
+\subsubsection{Keine Unendlichkeiten -- keine Renormierung}
+In der fraktalen Elektrodynamik sind viele Integrale, die in der QED divergieren, automatisch endlich. Der Grund: Die fraktale Dimension $D < 3$ wirkt als natürlicher Cutoff. Die Renormierung wird überflüssig.
 
 \subsubsection{Einheit von Elektrodynamik und Gravitation}
-
-Die fraktalen Maxwell-Gleichungen für Elektrodynamik und Gravitation haben dieselbe mathematische Struktur. Sie unterscheiden sich nur in den Konstanten und der Interpretation der Felder. Das ist die langgesuchte Einheit der Physik – nicht durch komplizierte Symmetriegruppen, sondern durch den gemeinsamen fraktalen Raum.
+Die fraktalen Maxwell-Gleichungen für Elektrodynamik und Gravitation haben dieselbe mathematische Struktur. Sie unterscheiden sich nur in den Konstanten und der Interpretation der Felder. Dies ist die Einheit der Physik -- durch den gemeinsamen fraktalen Raum.
 
 \section{Kosmologie: Stationäres Universum ohne Urknall}
 
 Die WDBT+ führt zu einem stationären, nicht-expandierenden Universum.
 
+\subsection{Die kosmische Hintergrundstrahlung (CMB)}
+Die kosmische Hintergrundstrahlung ist kein Nachglühen des Urknalls, sondern eine emergente Eigenschaft der fraktalen Entropie-Zirkulation zwischen Vakuum, Materie und $\Omega$-Feld. Ihr Spektrum ergibt sich aus der fraktalen Geometrie ohne freie Parameter. Die Planck-Verteilung folgt aus dem Gleichgewicht zwischen Emissions- und Absorptionsprozessen im stationären Universum, wobei die fraktale Dimension $D \approx 2,71$ die spektrale Energiedichte modifiziert. Die gemessene Temperatur $T \approx 2,725$ K ist eine Konsequenz der fundamentalen Länge $l_0$ und der Dichte des Neutrino-Hintergrunds.
+
+\subsection{Hubble-Beziehung ohne Expansion}
+Die lineare Hubble-Beziehung ist keine Dopplerverschiebung durch Expansion, sondern ein kumulativer Effekt der DSTT-Drift über kosmische Distanzen. Die Rotverschiebung $z = H_0 \cdot d/c$ folgt aus der Mittelung über viele Galaxien. Für eine Galaxie in Entfernung $d$ addieren sich die Driftbeiträge aller dazwischenliegenden Massen:
+\begin{equation}
+z = \frac{1}{c} \int_0^d \frac{v_{\text{drift}}(r)}{\lambda(r)} dr \approx \frac{H_0}{c} d,
+\end{equation}
+wobei $H_0$ aus der mittleren Massendichte des Universums folgt. Die Theorie sagt Abweichungen vom linearen Hubble-Gesetz auf sehr großen Skalen voraus.
+
+\subsection{Urknall-Nukleosynthese}
+Die Häufigkeiten von Wasserstoff, Helium und Lithium sind keine Relikte eines Urknalls, sondern eine Folge der kontinuierlichen Materieentstehung aus dem Quantenpotential in den ersten Sekunden des stationären Universums. Die spezifischen Verhältnisse ergeben sich aus der fraktalen Dimension $D$. Die Entstehungsraten für verschiedene Kerne folgen aus der fraktalen Skalierung:
+\begin{equation}
+\dot{n}_A \propto n_{\text{cre}} \cdot P_A(D),
+\end{equation}
+wobei $P_A(D)$ die Wahrscheinlichkeit für die Bildung eines Kerns mit Massenzahl $A$ im fraktalen Raum ist. Für $D \approx 2,71$ reproduziert die Theorie die beobachteten Häufigkeiten ohne freie Parameter.
+
 \subsection{Rotverschiebung}
 
-Die beobachtete Rotverschiebung ist keine Doppler-Folge der Expansion, sondern eine kumulative gravitative Wirkung auf Photonen während ihrer Reise durch das $\vec{\Omega}$-Feld. Da $\beta$ für Photonen von der Energie abhängt, müssen verschiedene Frequenzen leicht unterschiedliche Rotverschiebungen zeigen. Dieser Effekt ist klein, aber mit Pulsar-Laufzeiten oder hochpräzisen Spektren messbar.
+Die beobachtete Rotverschiebung ist keine Doppler-Folge der Expansion, sondern eine kumulative gravitative Wirkung auf Photonen während ihrer Reise durch das $\Omega$-Feld. Da $\beta$ für Photonen von der Energie abhängt, zeigen verschiedene Frequenzen leicht unterschiedliche Rotverschiebungen. Dieser Effekt ist klein, aber mit Pulsar-Laufzeiten oder hochpräzisen Spektren messbar.
 
 \subsection{Galaxienrotation}
 
-Flache Rotationskurven werden ohne Dunkle Materie durch das $\vec{\Omega}$-Feld und die anisotrope Trägheit der DSTT erklärt. Die radiale Dichteverteilung der Galaxie ergibt sich aus der kontinuierlichen Materieentstehung und der DSTT-Drift.
-
-Aus der Kontinuitätsgleichung und der Driftgeschwindigkeit $v_{\text{drift}}(r) = B \sqrt{GM_{\text{Kern}}/r^3}$ folgt:
+Flache Rotationskurven werden ohne Dunkle Materie durch das $\Omega$-Feld und die anisotrope Trägheit der DSTT erklärt. Die radiale Dichteverteilung der Galaxie ergibt sich aus der kontinuierlichen Materieentstehung und der DSTT-Drift. Aus der Kontinuitätsgleichung und der Driftgeschwindigkeit $v_{\text{drift}}(r) = B \sqrt{GM_{\text{Kern}}/r^3}$ folgt:
 
 \begin{equation}
-\rho_{\text{Gal}}(r) \propto r^{-0,21}
+\rho_{\text{Gal}}(r) \propto r^{-0.21}
 \end{equation}
 
 Die Rotationskurve folgt daraus:
 
 \begin{equation}
-v(r) = \sqrt{\frac{GM(r)}{r}} \propto \sqrt{r^{2.79-1}} = r^{0.895}
+v(r) = \sqrt{\frac{GM(r)}{r}} \propto \sqrt{r^{2.79}-1} = r^{0.895}
 \end{equation}
 
 Dies ist eine fast flache Rotationskurve, konsistent mit Beobachtungen.
@@ -972,7 +918,7 @@ Das Quantenpotential erzeugt neue Materie im Vakuum:
 Im fraktalen Raum mit $D \approx 2,71$:
 
 \begin{equation}
-\frac{dM_{\text{cre}}}{d\ln r} \propto r^{3-D} = r^{0,29}
+\frac{dM_{\text{cre}}}{d\ln r} \propto r^{3-D} = r^{0.29}
 \end{equation}
 
 Die DSTT-Driftgeschwindigkeit:
@@ -990,7 +936,7 @@ Die Einfangwahrscheinlichkeit:
 Aus der Drift folgt für die kumulierte Masse:
 
 \begin{equation}
-M_{\text{Gal}}(t) \propto t^{1,116}
+M_{\text{Gal}}(t) \propto t^{1.116}
 \end{equation}
 
 Das Massenverhältnis:
@@ -999,7 +945,7 @@ Das Massenverhältnis:
 \frac{M_{\text{Gal}}}{M_{\text{Kern}}} = \frac{1 - \alpha_{\text{in}}}{\alpha_{\text{in}}} \approx 1000
 \end{equation}
 
-Mit $M_{\text{Kern}} = M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot}$ ergibt sich $M_{\text{Gal}} \approx 3 \times 10^9 M_{\odot}$ – typisch für große Galaxien.
+Mit $M_{\text{Kern}} = M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot}$ ergibt sich $M_{\text{Gal}} \approx 3 \times 10^9 M_{\odot}$ -- typisch für große Galaxien.
 
 \subsection{Die Sonne als Mikrokosmos}
 
@@ -1007,16 +953,16 @@ Das Modell ist skalierbar. Für $M = M_{\odot}$: $r_{\text{max}} \sim 1,5 \times
 
 Interpretation des Sonnenwinds:
 \begin{itemize}
-    \item Im Standardmodell wird der Sonnenwind als Materieausstoß aus der Sonnenkorona gesehen.
-    \item In der WDBT+ hingegen entsteht Materie in der Nähe der Sonne (bei $r \sim 10^{-11}$ m)
-    \item Die DSTT-Drift treibt sie nach außen
-    \item Nur ein winziger Bruchteil ($\sim 10^{-7}$) wird von der Sonne eingefangen
-    \item Die Sonne verliert daher keine signifikante Masse
+\item Im Standardmodell wird der Sonnenwind als Materieausstoß aus der Sonnenkorona gesehen.
+\item In der WDBT+ hingegen entsteht Materie in der Nähe der Sonne (bei $r \sim 10^{-11}$ m)
+\item Die DSTT-Drift treibt sie nach außen
+\item Nur ein winziger Bruchteil ($\sim 10^{-7}$) wird von der Sonne eingefangen
+\item Die Sonne verliert daher keine signifikante Masse
 \end{itemize}
 
 \subsection{Beobachtbare Signaturen: Der EHT-Schatten}
 
-Ein BEC-Objekt mit $M = M_{\text{BEC}}$ hat $R = l_0 \approx 10^{-15}$ m – viel zu klein, um direkt abgebildet zu werden. Was das Event Horizon Telescope (EHT) zeigt, ist der Einflussbereich: die Region, in der Licht stark abgelenkt wird.
+Ein BEC-Objekt mit $M = M_{\text{BEC}}$ hat $R = l_0 \approx 10^{-15}$ m -- viel zu klein, um direkt abgebildet zu werden. Was das Event Horizon Telescope (EHT) zeigt, ist der Einflussbereich: die Region, in der Licht stark abgelenkt wird.
 
 Der Photonenorbit liegt bei $r_{\text{ph}} \approx 3GM/c^2$. Für $M = M_{\text{BEC}}$:
 
@@ -1028,17 +974,74 @@ Der Schatten ist also makroskopisch.
 
 Testbare Unterschiede zur ART:
 \begin{itemize}
-    \item Feinstruktur des Schattens
-    \item Polarisationsmuster
-    \item Zeitliche Variabilität (Flares)
+\item Feinstruktur des Schattens
+\item Polarisationsmuster
+\item Zeitliche Variabilität (Flares)
 \end{itemize}
+
+\subsection{Fraktale Skalengesetze in der Kosmologie}
+
+Die fundamentale fraktale Dimension $D \approx 2,71$ ist auf makroskopischen Skalen nicht direkt messbar, da der Raum oberhalb von $l_0$ effektiv glatt ist. Sie erzeugt jedoch \textbf{emergente Skalengesetze} mit fraktalen Exponenten, die auf allen Skalen beobachtbar sind -- einschließlich kosmischer.
+
+\subsubsection{Der Unterschied: Raumdimension vs. Skalenexponent}
+
+\begin{table}[ht]
+\centering
+\caption{Raumdimension vs. emergenter Skalenexponent}
+\begin{tabular}{p{5cm}p{5cm}p{4cm}}
+\toprule
+& Fundamentale Raumdimension $D$ & Emergenter Skalenexponent \\
+\midrule
+Gültigkeit & Nur unterhalb $l_0 \approx 10^{-15}$ m & Auf allen Skalen \\
+Messbarkeit & Nicht direkt (unterhalb jeder experimentellen Grenze) & Direkt beobachtbar \\
+Beispiel & $D \approx 2,71$ & $\rho(r) \propto r^{-0,21}$ \\
+Rolle & Fundamentale Geometrie & Dynamische Konsequenz \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Die zentralen Skalengesetze der WDBT+}
+
+Aus der Theorie folgen spezifische fraktale Exponenten:
+
+\begin{align}
+\text{Galaxien-Dichteprofil:} \quad & \rho_{\text{Gal}}(r) \propto r^{-0,21} \\
+\text{Rotationskurve:} \quad & v(r) \propto r^{0,895} \\
+\text{CMB-Korrelationen:} \quad & C(\theta) \propto \theta^{-0,7} \\
+\text{Materieentstehung:} \quad & \frac{dM_{\text{cre}}}{d\ln r} \propto r^{0,29} \\
+\text{Galaxienwachstum:} \quad & M_{\text{Gal}}(t) \propto t^{1,116}
+\end{align}
+
+\subsubsection{Warum das $\Lambda$CDM diese Exponenten nicht erklären kann}
+
+Im Standardmodell mit glattem Raum ($D=3$) sind alle Skalenexponenten ganzzahlig oder halbzahlig:
+\begin{itemize}
+\item $\rho(r) \propto r^{-2}$ (isothermes Profil)
+\item $v(r) \propto r^{-0,5}$ außerhalb der sichtbaren Masse (Kepler-Fall)
+\item $C(\theta)$ ohne bevorzugte Richtung
+\end{itemize}
+
+Die WDBT+ sagt gebrochene Exponenten voraus -- eine klare Signatur der fraktalen Mikrostruktur.
+
+\subsubsection{Beobachtbare Konsequenzen}
+
+Diese Skalengesetze sind testbar:
+\begin{enumerate}
+\item \textbf{Galaxienumfragen:} Das Dichteprofil $\rho \propto r^{-0,21}$ ist flacher als das NFW-Profil ($\rho \propto r^{-1}$ im inneren Bereich).
+\item \textbf{Rotationskurven:} Bei sehr großen Radien ($r > 100$ kpc) sollte $v(r)$ nicht abfallen, sondern langsam ansteigen.
+\item \textbf{CMB:} Die "Achse des Bösen" ist keine statistische Fluktuation, sondern eine feste, berechenbare Ausrichtung aus der Dodekaeder-Symmetrie.
+\end{enumerate}
+
+\subsubsection{Analogie}
+
+Die Situation ist analog zur turbulenten Strömung: Die Navier-Stokes-Gleichungen sind lokal gültig, aber die großskalige Turbulenz zeigt fraktale Skalengesetze (Kolmogorov-Spektrum $E(k) \propto k^{-5/3}$). Hier ist der Raum lokal glatt, aber die Dynamik erzeugt fraktale Strukturen auf allen Skalen.
 
 \section{Vergleich mit dem Standardmodell}
 
 \begin{table}[ht]
 \centering
 \caption{Gegenüberstellung der Standardkosmologie und der WDBT+}
-\begin{tabular}{@{}lll@{}}
+\begin{tabular}{p{4cm}p{4.5cm}p{4.5cm}}
 \toprule
 Phänomen & Standardmodell & WDBT+ \\
 \midrule
@@ -1047,12 +1050,16 @@ Materiefluss & Einwärts (Akkretion) & Auswärts (Drift) \\
 Galaxien & Kollaps + Dunkle Materie & Wachstum von innen nach außen \\
 Universum & Expandierend, Urknall & Stationär, ewig \\
 Schwarze Löcher & Singularität + Horizont & BEC-Objekt, kein Horizont \\
-Maximale Masse (Kern) & Keine natürliche Grenze & $M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot}$ \\
+Maximale Masse (Kern) & Keine natürliche Grenze & $M_{\text{BEC}} \approx 3\times 10^6 M_{\odot}$ \\
 Super-massereich & Einzelnes Schwarzes Loch & BEC-Kern + Umgebung \\
 Kollisionen & Immer Verschmelzung & Wie normale Objekte \\
 Sonnenwind & Ausstoß aus der Korona & Neu entstehende Materie \\
 Dunkle Materie & Benötigt & Nicht benötigt \\
 Dunkle Energie & Benötigt & Nicht benötigt \\
+CMB & Urknall-Relikt & Entropie-Zirkulation \\
+Hubble-Gesetz & Expansion & DSTT-Drift \\
+Nukleosynthese & Urknall & Kontinuierliche Entstehung \\
+Skalenexponenten & Ganzzahlig/halbzahlig & Gebrochen (fraktal) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1077,32 +1084,31 @@ Dabei sind:
 Einsetzen ergibt:
 
 \begin{equation}
-\frac{1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}} \frac{r\ddot{r}}{c^2} + \frac{2(\dot{r} \cdot \vec{v})^2}{c^2}}{\frac{GMm}{r^2}} = \beta_{\text{DSTT}}(t)
+\frac{\frac{2(\dot{r} \cdot \vec{v})^2}{c^2}}{1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}} \frac{r\ddot{r}}{c^2} + \frac{2(\dot{r} \cdot \vec{v})^2}{c^2}} = \beta_{\text{DSTT}}(t)
 \end{equation}
 
 \subsection{Die Kopplungsgleichung}
 
-Aus den Bewegungsgleichungen der WG und der Definition von $\beta_{\text{DSTT}}(t)$ lässt sich nach längerer Rechnung die zeitliche Ableitung von $\beta_{\text{DSTT}}$ bestimmen:
+Aus den Bewegungsgleichungen der WG und der Definition von $\beta_{\text{DSTT}}(t)$ folgt:
 
 \begin{equation}
-\dot{\beta}_{\text{DSTT}} = \frac{2\dot{r}}{r} \cdot \frac{GM}{c^2 r} \cdot \frac{1 - \beta_{\text{WG}}}{(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2})^2} + \mathcal{O}\left(\frac{1}{c^4}\right)
+\dot{\beta}_{\text{DSTT}} = \frac{2\dot{r}}{r} \cdot \frac{GM}{c^2r} \cdot \frac{1 - \beta_{\text{WG}}}{\left(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2}\right)^2} + \mathcal{O}\left(\frac{1}{c^4}\right)
 \end{equation}
 
-Dies ist das zentrale Ergebnis! Es zeigt:
+Dies ist das zentrale Ergebnis:
 \begin{itemize}
-    \item Für $\beta_{\text{WG}} < 1$ ist $\dot{\beta}_{\text{DSTT}} > 0$ (bis auf Punkte mit $\dot{r} = 0$)
-    \item Für $\beta_{\text{WG}} = 1$ ist $\dot{\beta}_{\text{DSTT}} = 0$ (im Rahmen der Näherung)
-    \item Für $\beta_{\text{WG}} > 1$ wäre $\dot{\beta}_{\text{DSTT}} < 0$
+\item Für $\beta_{\text{WG}} < 1$ ist $\dot{\beta}_{\text{DSTT}} > 0$ (bis auf Punkte mit $\dot{r} = 0$)
+\item Für $\beta_{\text{WG}} = 1$ ist $\dot{\beta}_{\text{DSTT}} = 0$ (im Rahmen der Näherung)
+\item Für $\beta_{\text{WG}} > 1$ wäre $\dot{\beta}_{\text{DSTT}} < 0$
 \end{itemize}
-
-Mit $\beta_{\text{WG}} = 0,5$ für Massen folgt zwingend $\dot{\beta}_{\text{DSTT}} > 0$. Die WG enthält also implizit die Monotonie der DSTT!
+Mit $\beta_{\text{WG}} = 0,5$ für Massen folgt zwingend $\dot{\beta}_{\text{DSTT}} > 0$. Die WG enthält also implizit die Monotonie der DSTT.
 
 \subsection{Übertragung auf die Elektrodynamik}
 
 Die Weber-Elektrodynamik (WED) hat eine analoge Struktur mit $\beta_{\text{WED}} = 2$. Die analoge Herleitung ergibt:
 
 \begin{equation}
-\dot{\beta}_{\text{DSTT}}^{\text{(EM)}} = \frac{2\dot{r}}{r} \cdot \frac{k q_1 q_2}{c^2 r \mu} \cdot \frac{1 - \beta_{\text{WED}}/2}{\left(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2}\right)^2}
+\dot{\beta}_{\text{DSTT}}^{\text{(EM)}} = \frac{2\dot{r}}{r} \cdot \frac{kq_1q_2}{c^2r\mu} \cdot \frac{1 - \beta_{\text{WED}}/2}{\left(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2}\right)^2}
 \end{equation}
 
 Mit $\beta_{\text{WED}} = 2$ ist $1 - \beta_{\text{WED}}/2 = 0$, also:
@@ -1113,202 +1119,271 @@ Mit $\beta_{\text{WED}} = 2$ ist $1 - \beta_{\text{WED}}/2 = 0$, also:
 
 Dies erklärt den fundamentalen Unterschied zwischen Gravitation und Elektrodynamik:
 \begin{itemize}
-    \item Gravitation ($\beta_{\text{WG}} = 0,5$): $\dot{\beta}_{\text{DSTT}} > 0$ → Spiralbahnen, Auswärtsdrift, Irreversibilität, Gravitationsentropie
-    \item Elektrodynamik ($\beta_{\text{WED}} = 2$): $\dot{\beta}_{\text{DSTT}} = 0$ → stabile Bahnen (Ellipsen) möglich, Reversibilität, keine intrinsische Entropieproduktion
+\item Gravitation ($\beta_{\text{WG}} = 0,5$): $\dot{\beta}_{\text{DSTT}} > 0$ $\rightarrow$ Spiralbahnen, Auswärtsdrift, Irreversibilität
+\item Elektrodynamik ($\beta_{\text{WED}} = 2$): $\dot{\beta}_{\text{DSTT}} = 0$ $\rightarrow$ stabile Bahnen (Ellipsen), Reversibilität
 \end{itemize}
 
-\subsection{Die Erweiterte Weber-Theorie}
+\section{Die Theorie der fraktalen Entropie}
 
-Zusammenfassend lässt sich die Erweiterte Weber-Theorie wie folgt formulieren:
+\subsection{Axiome}
 
-\begin{axiom}[Allgemeine Weber-Kraft]
-Jede fundamentale Wechselwirkung wird beschrieben durch:
-
+\begin{axiom}[Fraktale Raumstruktur]
+Der fundamentale Raum ist eine fraktale Menge $\mathcal{M}$ mit Hausdorff-Dimension $D$:
 \begin{equation}
-\vec{F} = \frac{Q_1 Q_2}{4\pi \epsilon_0 r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{Kraft}} \frac{r \ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
+D = \frac{\ln 20}{\ln(2 + \phi)} \approx 2.71, \quad \phi = \frac{1 + \sqrt{5}}{2}
+\end{equation}
+Die fundamentale Längenskala ist $l_0 \approx 1,8 \times 10^{-15}$ m.
+\end{axiom}
+
+\begin{axiom}[Fraktale Entropie]
+Für eine Wahrscheinlichkeitsdichte $\rho : \mathcal{M} \rightarrow \mathbb{R}^+$ ist die fraktale Entropie definiert als
+\begin{equation}
+S_D[\rho] = -k_B \int_{\mathcal{M}} d^D r \, \rho(\vec{r}) \ln \rho(\vec{r}) \cdot \left( \frac{|\vec{r}|}{l_0} \right)^{D-3}
+\end{equation}
+Für $D = 3$ ergibt sich die Boltzmann-Entropie. Für $D < 3$ ist $S_D$ subextensiv.
+\end{axiom}
+
+\begin{axiom}[Globaler Entropieerhaltungssatz]
+Die Gesamt-fraktale Entropie des Universums ist konstant:
+\begin{equation}
+\frac{dS_D^{\text{ges}}}{dt} = 0
 \end{equation}
 \end{axiom}
 
-\begin{axiom}[Energieaufteilung]
-Die momentane Aufteilung der Energie in radiale und tangentiale Komponenten wird beschrieben durch:
-
+\begin{axiom}[Lokale Entropieproduktion]
+In jeder einzelnen Phase gilt:
 \begin{equation}
-\beta_{\text{DSTT}}(t) = \frac{\frac{1}{2}mr^2\dot{\phi}^2}{\frac{1}{2}m\dot{r}^2 + \frac{1}{2}mr^2\dot{\phi}^2}
+\frac{dS_D^{(i)}}{dt} \geq 0
 \end{equation}
 \end{axiom}
 
-\begin{axiom}[Kopplungsbedingung]
-Die beiden $\beta$ sind durch die Identitätsbeziehung verknüpft:
-
+\begin{axiom}[Gravitation als Quelle der Irreversibilität]
+Die Weber-Gravitation mit $\beta_{\text{WG}} = 0,5$ führt zu:
 \begin{equation}
-\frac{\frac{2(\dot{r} \cdot \vec{v})^2}{c^2}}{1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{Kraft}} \frac{r \ddot{r}}{c^2} + \frac{2(\dot{r} \cdot \vec{v})^2}{c^2}} = \beta_{\text{DSTT}}(t)
+\dot{\beta}_{\text{DSTT}} > 0 \quad \text{für alle } t
 \end{equation}
 \end{axiom}
 
-\begin{axiom}[Dynamik der Energieaufteilung]
-Die zeitliche Entwicklung von $\beta_{\text{DSTT}}(t)$ folgt aus der Dynamik:
-
+\begin{axiom}[Elektrodynamik als Stabilisator]
+Die Weber-Elektrodynamik mit $\beta_{\text{WED}} = 2$ führt zu:
 \begin{equation}
-\dot{\beta}_{\text{DSTT}} = \frac{2\dot{r}}{r} \cdot \frac{Q_1 Q_2}{4\pi \epsilon_0 c^2 r m} \cdot \frac{2 - \beta_{\text{Kraft}}}{\left(1 + \frac{\dot{r}^2}{r^2 \dot{\phi}^2}\right)^2}
+\dot{\beta}_{\text{DSTT}} = 0 \quad \text{für alle } t
 \end{equation}
-mit der spezifischen Form für die jeweilige Wechselwirkung.
 \end{axiom}
 
-\section{Zusammenfassung der Zusammenhänge}
+\begin{axiom}[Beschränktheit aller physikalischen Größen]
+Für jede physikalische Größe $X$ gilt:
+\begin{equation}
+\limsup_{t \to \infty} |X(t)| < \infty
+\end{equation}
+\end{axiom}
 
-Die folgende Tabelle fasst die verschiedenen Ebenen und ihre Verbindungen zusammen:
+\subsection{Die drei Phasen}
 
-\begin{table}[ht]
-\centering
-\caption{Die verschiedenen Ebenen und ihre Verbindungen}
-\begin{tabular}{@{}lll@{}}
-\toprule
-Ebene & Größe & Zusammenhang \\
-\midrule
-WG (Kraft) & $\vec{F}_{\text{tan}} \propto (\dot{r} \cdot \vec{v})\vec{v}$ & Enthält Wirbelterm \\
-Wirbeldichte & $\vec{\omega} = \nabla \times \vec{F}_{\text{WG}}$ & Charakterisiert Rotation \\
-Vektorpotential & $\vec{A}_g = \frac{2GM}{c^2 r} \vec{v}_q$ & Emergiert aus WG \\
-gravito-magnetisches Feld & $\vec{B}_g = \nabla \times \vec{A}_g$ & Lense-Thirring-Effekt \\
-Maxwell-Gleichungen & $\nabla \cdot \vec{B}_g = 0$, $\nabla \times \vec{B}_g = \frac{4\pi G}{c^2} \vec{j} + \ldots$ & Emergieren im Kontinuumslimes \\
-DSTT & $\beta(t) = E_B/E$ & Energetische Interpretation der Wirbel \\
-$\dot{\beta}$-Relation & $|\vec{\omega}| \propto \dot{\beta}/(1-\beta)$ & Verbindet Wirbel und Energieaufteilung \\
-\bottomrule
-\end{tabular}
-\end{table}
+Das Universum besteht aus drei Phasen, zwischen denen die fraktale Entropie zirkuliert:
+
+\begin{definition}[Phasen]
+\begin{itemize}
+\item \textbf{Vakuum:} $S_D^{\text{vac}}$ -- die fraktale Struktur des Raums selbst
+\item \textbf{Materie:} $S_D^{\text{kin}}$ -- Bewegung der Teilchen
+\item \textbf{$\Omega$-Feld:} $S_D^{\Omega}$ -- das Gravitationsfeld als Rotationsfeld
+\end{itemize}
+\end{definition}
+
+Der Erhaltungssatz lautet:
+\begin{equation}
+S_D^{\text{vac}}(t) + S_D^{\text{kin,grav}}(t) + S_D^{\text{kin,em}}(t) + S_D^{\Omega}(t) = S_D^{\text{ges}} = \text{const}
+\end{equation}
+
+\subsection{Entropieflüsse}
+
+Aus den Bewegungsgleichungen der WDBT+ folgt:
+
+\begin{align}
+\frac{dS_D^{\text{vac}}}{dt} &= -\sigma_{\text{cre}} + \sigma_{\text{back}} \\
+\frac{dS_D^{\text{kin,grav}}}{dt} &= +\sigma_{\text{cre}} - \sigma_{\text{drift}} \\
+\frac{dS_D^{\text{kin,em}}}{dt} &= 0 \\
+\frac{dS_D^{\Omega}}{dt} &= +\sigma_{\text{drift}} - \sigma_{\text{back}}
+\end{align}
+
+mit $\sigma_{\text{cre}} > 0$, $\sigma_{\text{drift}} > 0$, $\sigma_{\text{back}} > 0$.
+
+\begin{satz}[Stationärer Zustand]
+Im stationären Zustand gilt $\sigma_{\text{cre}} = \sigma_{\text{drift}} = \sigma_{\text{back}} \equiv \sigma$, und die Entropien jeder Phase sind konstant.
+\end{satz}
+
+\subsection{Kein Wärmetod}
+
+\begin{theorem}[Hauptsatz der fraktalen Thermodynamik]
+Unter den Axiomen gilt:
+\begin{enumerate}
+\item Lokale Entropieproduktion: $\frac{dS_D^{(i)}}{dt} \geq 0$ für jede Phase
+\item Globale Entropieerhaltung: $\frac{dS_D^{\text{ges}}}{dt} = 0$
+\item Permanente Dynamik: $\sigma_{\text{cre}}, \sigma_{\text{drift}}, \sigma_{\text{back}} > 0$ für alle $t$
+\item Kein Entropiemaximum: Es existiert kein endlicher Zustand maximaler Gesamtentropie
+\item Kein Wärmetod: Das System erreicht nie einen Gleichgewichtszustand mit verschwindenden Gradienten
+\end{enumerate}
+\end{theorem}
+
+\section{Die fraktalen Q-Feldgleichungen}
+
+\subsection{Die drei Säulen auf Feldebene}
+
+Die WDBT+ basiert auf der Idee, dass die Physik auf fundamentaler Ebene teilchenbasiert und feldlos ist. Jedes Teilchen wechselwirkt direkt mit jedem anderen über drei Beiträge:
+
+\begin{equation}
+\vec{F} = \vec{F}_{\text{WED}} + \vec{F}_{\text{WG}} + \vec{F}_Q
+\end{equation}
+
+Im Kontinuumslimes emergieren Feldtheorien in der Form fraktaler Maxwell-Gleichungen:
+\begin{itemize}
+\item Aus $\vec{F}_{\text{WED}}$: fraktale Maxwell-Gleichungen der Elektrodynamik ($\vec{E}$, $\vec{B}$)
+\item Aus $\vec{F}_{\text{WG}}$: fraktale Maxwell-Gleichungen der Gravitation ($\vec{E}_g$, $\vec{B}_g$)
+\item Aus $\vec{F}_Q$: fraktale Q-Feldgleichungen ($\vec{Q}$, $\vec{N}$)
+\end{itemize}
+
+\subsection{Die Q-Feldgleichungen}
+
+Wir definieren:
+\begin{itemize}
+\item $\vec{Q}(\vec{r}, t)$: das Q-Feld (analog zum elektrischen Feld)
+\item $\vec{N}(\vec{r}, t)$: das Neutrino-Wirbelfeld (analog zum magnetischen Feld)
+\end{itemize}
+
+Die Gleichungen lauten:
+
+\begin{align}
+\nabla_D \cdot \vec{Q} &= \frac{\rho_Q}{\epsilon_Q} \left( \frac{r}{r_0} \right)^{D-3}, \quad \rho_Q = m_\nu n_\nu \\
+\nabla_D \cdot \vec{N} &= 0 \\
+\nabla_D \times \vec{Q} &= -\frac{\partial \vec{N}}{\partial t} \left( \frac{r}{r_0} \right)^{D-3} \\
+\nabla_D \times \vec{N} &= \mu_Q \vec{j}_Q \left( \frac{r}{r_0} \right)^{D-3} + \mu_Q \epsilon_Q \frac{\partial \vec{Q}}{\partial t} \left( \frac{r}{r_0} \right)^{D-3}
+\end{align}
+
+mit $\vec{j}_Q = \rho_Q \vec{v}_\nu$ und $\epsilon_Q \mu_Q = 1/c^2$.
+
+\subsection{Die vollständige Bewegungsgleichung}
+
+Ein Testteilchen spürt die Überlagerung aller drei Wechselwirkungen:
+
+\begin{equation}
+\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) + m(\vec{E}_g + 2\vec{v} \times \vec{B}_g) + \kappa(\vec{Q} + \vec{v} \times \vec{N})
+\end{equation}
+
+Für ein Neutrino ($q=0$, $m \approx m_\nu$) gilt die Selbstkonsistenzbedingung:
+
+\begin{equation}
+m_\nu \ddot{\vec{x}}_\nu = \kappa(\vec{Q} + \vec{v}_\nu \times \vec{N})
+\end{equation}
 
 \section{Testbare Vorhersagen}
 
 Die Theorie macht spezifische, von der ART abweichende Vorhersagen:
 
 \begin{enumerate}
-    \item \textbf{Konstanz der Sonnenmasse}: Präzise Messungen sollten zeigen, dass die Sonne keinen messbaren Masseverlust durch den Sonnenwind erfährt.
-    
-    \item \textbf{Fraktale Skalierung im Sonnenwind}: Fluktuationen des Sonnenwinds sollten einen Exponenten $0,29$ zeigen.
-    
-    \item \textbf{Frequenzabhängige Lichtablenkung an Massen}: $\Delta\phi \propto \lambda^2$ (messbar bei Radiogalaxien).
-    
-    \item \textbf{Modifizierter Lamb-Shift}: Zusatzterm durch Vakuum-Quantenpotential:
-    \begin{equation}
-    \Delta E_{\text{Lamb}}^{\text{WDBT}} = \Delta E_{\text{QED}} + \frac{e^2 \hbar}{4 \pi \epsilon_0 m_e^2 c^3} \langle r \rangle
-    \end{equation}
-    
-    \item \textbf{Frequenzabhängige Shapiro-Laufzeitverzögerung}: Testbar mit Pulsarsignalen.
-    
-    \item \textbf{Fraktale Signaturen im Plasma}: Stromdichten skalieren mit $j(r) \propto r^{-0.29}$ (nachweisbar in Laborplasmen, Sonnenwind, Galaxienfilamenten).
-    
-    \item \textbf{Maximale Kernmasse}: Zentralobjekte in Galaxien sollten eine natürliche Obergrenze bei $\sim 3 \times 10^6 M_{\odot}$ haben.
-    
-    \item \textbf{Doppelkern-Systeme}: Bei Galaxienverschmelzungen sollten Doppelkerne häufiger sein als in der ART vorhergesagt.
-    
-    \item \textbf{Dichteprofil von Galaxien}: $\rho(r) \propto r^{-0.21}$ – flacher als im $\Lambda$CDM-Modell.
-    
-    \item \textbf{Rotationskurven}: Bei sehr großen Radien ($r > 100$ kpc) sollte die Kurve nicht abfallen, sondern langsam ansteigen.
-    
-    \item \textbf{EHT-Schattengröße}: $r_{\text{ph}} \approx 3GM/c^2$ – identisch mit ART, aber Feinstruktur und Variabilität unterscheiden sich.
-    
-    \item \textbf{Gravitationswellen}: Zusätzliches Nachglühen bei Verschmelzungen; Dispersion von Gravitationswellen verschiedener Frequenzen.
-    
-    \item \textbf{Spiralbahnen statt Ellipsen}: Präzise Bahnverfolgung von Satelliten und Planeten müsste langsame Spiralbewegung zeigen (radiale Drift).
-    
-    \item \textbf{Hubble-Gesetz auf großen Skalen}: Abweichungen vom linearen Verlauf (kumulative Gravitation, keine Expansion).
-    
-    \item \textbf{Neutrinomasse}: $m_\nu = \hbar/(l_0 c) \approx 0,1\,\text{eV}$ – direkte Vorhersage aus der fundamentalen Länge.
-    
-    \item \textbf{Drei Neutrino-Generationen}: Als Moden des Quantenpotentials im fraktalen Raum.
-    
-    \item \textbf{Dunkle Materie als Neutrino-See}: Gravitative Effekte ohne separate Teilchen.
+\item \textbf{Konstanz der Sonnenmasse:} Präzise Messungen zeigen, dass die Sonne keinen messbaren Masseverlust durch den Sonnenwind erfährt.
+\item \textbf{Fraktale Skalierung im Sonnenwind:} Fluktuationen des Sonnenwinds zeigen einen Exponenten $0,29$.
+\item \textbf{Frequenzabhängige Lichtablenkung:} $\Delta\phi \propto \lambda^2$ (messbar bei Radiogalaxien).
+\item \textbf{Modifizierter Lamb-Shift:} Zusatzterm durch Vakuum-Quantenpotential.
+\item \textbf{Frequenzabhängige Shapiro-Laufzeit:} Testbar mit Pulsarsignalen.
+\item \textbf{Fraktale Signaturen im Plasma:} Stromdichten skalieren mit $j(r) \propto r^{-0.29}$.
+\item \textbf{Maximale Kernmasse:} Zentralobjekte in Galaxien haben eine Obergrenze bei $\sim 3 \times 10^6 M_{\odot}$.
+\item \textbf{Doppelkern-Systeme:} Bei Galaxienverschmelzungen sind Doppelkerne häufiger als in der ART vorhergesagt.
+\item \textbf{Dichteprofil von Galaxien:} $\rho(r) \propto r^{-0.21}$.
+\item \textbf{Rotationskurven:} Bei $r > 100$ kpc fällt die Kurve nicht ab, sondern steigt langsam an.
+\item \textbf{EHT-Schatten:} $r_{\text{ph}} \approx 3GM/c^2$, aber Feinstruktur und Variabilität unterscheiden sich.
+\item \textbf{Gravitationswellen:} Zusätzliches Nachglühen bei Verschmelzungen; Dispersion.
+\item \textbf{Spiralbahnen statt Ellipsen:} Langsame Spiralbewegung (radiale Drift).
+\item \textbf{Hubble-Gesetz:} Abweichungen vom linearen Verlauf auf großen Skalen.
+\item \textbf{Neutrinomasse:} $m_\nu = \hbar/(l_0c) \approx 0,1\ \text{eV}/c^2$.
+\item \textbf{Drei Neutrino-Generationen:} Als Moden des Quantenpotentials.
+\item \textbf{Neutrino-Oszillationen:} $L_{\text{osc}} \propto E^{0.775}$.
+\item \textbf{Dunkle Materie:} Neutrino-See, keine separaten Teilchen.
+\item \textbf{Nichtlokalität:} In Bell-Tests Korrelationen schneller als Licht.
+\item \textbf{CMB-Spektrum:} Planck-Verteilung ohne Urknall, aus fraktaler Entropie.
+\item \textbf{Skalenexponenten:} Gebrochene Exponenten in Dichteprofilen, Rotationskurven und CMB-Korrelationen.
 \end{enumerate}
 
-\section{Diskussion und Ausblick}
+\section{Diskussion}
 
-\subsection{Warum die ART prinzipiell unvollständig sein muss}
+\subsection{Warum die ART unvollständig ist}
 
 Die ART basiert auf drei Säulen:
 \begin{enumerate}
-    \item Das Äquivalenzprinzip (Ursache = Wirkung)
-    \item Die gekrümmte Raumzeit (Geometrie als Ursache der Bewegung)
-    \item Die Feldgleichungen (Materie krümmt Raumzeit, Raumzeit bestimmt Bewegung)
+\item Das Äquivalenzprinzip (Ursache = Wirkung)
+\item Die gekrümmte Raumzeit (Geometrie als Ursache)
+\item Die Feldgleichungen (Materie krümmt Raumzeit)
 \end{enumerate}
 
-Die DSTT zeigt: Säule 1 ist falsch. Ursache und Wirkung sind nicht identisch. Die Trägheitsreaktion ist anisotrop – sie zerfällt in zwei Komponenten. Das Äquivalenzprinzip ist eine Idealisierung, die die wahre Struktur der Gravitation verschleiert.
+Die DSTT zeigt: Säule 1 ist falsch. Ursache und Wirkung sind nicht identisch. Die Trägheitsreaktion ist anisotrop. Das Äquivalenzprinzip ist eine Idealisierung.
 
-Wenn aber das Fundament der ART falsch ist, dann ist die Theorie als Ganze prinzipiell unvollständig. Sie kann nicht die fundamentale Theorie der Gravitation sein – allenfalls eine Näherung, ein emergenter Grenzfall.
+Die ART ist daher prinzipiell unvollständig -- sie ist ein emergenter Grenzfall der DSTT.
 
 \subsection{Die ART als emergenter Grenzfall}
 
-Wann funktioniert die ART? Wenn:
+Die ART funktioniert, wenn:
 \begin{itemize}
-    \item $\beta \approx$ konstant (keine merkliche Drift über kurze Zeiträume)
-    \item $\dot{r} \approx 0$ (quasi-geschlossene Bahnen)
-    \item Die anisotrope Trägheit vernachlässigt werden kann
+\item $\beta \approx$ konstant (keine merkliche Drift)
+\item $\dot{r} \approx 0$ (quasi-geschlossene Bahnen)
+\item Die anisotrope Trägheit vernachlässigt werden kann
 \end{itemize}
 
-In diesem Grenzfall kann man die Spiralbahn durch eine präzedierende Ellipse annähern. Die ART beschreibt diese Präzession – aber sie übersieht die zugrundeliegende Drift. Sie ist eine Statik, die eine Dynamik vortäuscht.
-
-Vergleichbar ist das mit der Newtonschen Mechanik: Sie ist ein Grenzfall der ART für kleine Geschwindigkeiten und schwache Felder. Niemand würde behaupten, Newton sei "falsch" – aber er ist unvollständig. Genauso ist die ART unvollständig: Sie ist der Grenzfall der DSTT für vernachlässigbares $\dot{\beta}$.
+In diesem Grenzfall kann die Spiralbahn durch eine präzedierende Ellipse angenähert werden. Die ART beschreibt diese Präzession, übersieht aber die zugrundeliegende Drift.
 
 \subsection{Die entscheidende Frage}
 
 Warum wurde das nicht längst erkannt? Weil die Drift extrem langsam ist. Für die Erde um die Sonne beträgt sie:
-
 \begin{equation}
 \frac{\dot{r}}{r} \approx 10^{-11} \text{ pro Jahr}
 \end{equation}
+Das entspricht wenigen Millimetern pro Jahr. Kepler und Newton sahen daher geschlossene Ellipsen.
 
-Das ist in historischen Zeiträumen nicht messbar. Ein Erdumlauf dauert ein Jahr – die Drift pro Umlauf ist etwa $10^{-11}$ des Bahnradius. Das entspricht wenigen Millimetern pro Jahr. Kein Wunder, dass Kepler und Newton geschlossene Ellipsen sahen.
-
-Aber auf kosmischen Skalen summiert sich diese Drift. Und genau das sehen wir:
+Auf kosmischen Skalen summiert sich diese Drift:
 \begin{itemize}
-    \item Jupiter ist nach außen gewandert – um ein Vielfaches mehr, als Gezeitenmodelle erklären können.
-    \item Der Mond driftet nach außen – schneller als Gezeitenmodelle vorhersagen.
-    \item Galaxien zeigen flache Rotationskurven – als hätten sie zusätzliche Masse, aber sie haben nur eine andere Trägheitsdynamik.
-    \item Das Universum zeigt eine Rotverschiebung, die wie Expansion aussieht – aber wenn alle Bahnen Spiralen sind, dann addieren sich die Driften zu einer scheinbaren Expansion.
+\item Jupiter ist nach außen gewandert -- mehr als Gezeitenmodelle erklären.
+\item Der Mond driftet nach außen -- schneller als Gezeitenmodelle vorhersagen.
+\item Galaxien zeigen flache Rotationskurven -- durch andere Trägheitsdynamik.
+\item Die Rotverschiebung sieht wie Expansion aus -- ist aber Summe vieler Driften.
 \end{itemize}
 
 \section{Fazit}
 
-Die WDBT+ liefert ein konsistentes, singularitätenfreies Bild der Gravitation:
+Die WDBT+ liefert ein konsistentes, singularitätenfreies Bild der Physik:
 
 \begin{itemize}
-    \item Die Weber-Gravitation enthält bereits die vollständige Information für die Maxwell-Gravitation. Der geschwindigkeitsabhängige Term ist die differentielle Form des gravito-magnetischen Feldes.
-    
-    \item Die DSTT trennt Ursache (Schwere) und Wirkung (anisotrope Trägheit) und erzwingt mit $\dot{\beta} > 0$ eine universelle Auswärtsdrift und einen intrinsischen Zeitpfeil.
-    
-    \item Die $\Omega$-Theorie ist die emergente Feldtheorie der Gravitation als nicht-lokales, instantanes Rotationsfeld.
-    
-    \item Die kompaktesten Objekte im Universum sind BEC-Objekte – Bose-Einstein-Kondensate aus Cooper-Paaren, stabilisiert durch das Quantenpotential. Ihre minimale Größe ist $l_0 \approx 1,8 \times 10^{-15}$ m, ihre maximale Masse $M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot}$.
-    
-    \item Fraktale Maxwell-Gleichungen erweitern Elektrodynamik und Gravitation, erklären die Feinstrukturkonstante und machen Renormierung überflüssig.
-    
-    \item Das Quantenpotential erzeugt kontinuierlich neue Materie, die durch DSTT-Drift nach außen getrieben wird und die Galaxie bildet. Das Massenverhältnis $M_{\text{Gal}}/M_{\text{Kern}} \approx 1000$ folgt aus der fraktalen Raumdimension $D \approx 2,71$.
-    
-    \item Das Modell erklärt den Sonnenwind ohne Masseverlust der Sonne, flache Rotationskurven ohne Dunkle Materie, und die natürliche Obergrenze für kompakte Objekte.
-    
-    \item Das Neutrino ist das reine Q-Teilchen. Seine Masse folgt direkt aus der fundamentalen Länge $l_0$: $m_\nu = \hbar/(l_0 c) \approx 0,1\,\text{eV}$. Es vermittelt die Nichtlokalität der Quantenmechanik und ist ein natürlicher Kandidat für die Dunkle Materie.
-    
-    \item Es kommt ohne Urknall, Dunkle Energie und Singularitäten aus.
+\item Die Weber-Gravitation enthält die vollständige Information für die Maxwell-Gravitation.
+\item Die DSTT trennt Ursache und Wirkung und erzwingt mit $\dot{\beta} > 0$ eine universelle Auswärtsdrift und einen intrinsischen Zeitpfeil.
+\item Die $\Omega$-Theorie ist die emergente Feldtheorie der Gravitation als nicht-lokales, instantanes Rotationsfeld.
+\item BEC-Objekte sind singularitätsfrei mit $R_{\min} = l_0$ und $M_{\max} \approx 3 \times 10^6 M_{\odot}$.
+\item Fraktale Maxwell-Gleichungen erklären die Feinstrukturkonstante und machen Renormierung überflüssig.
+\item Das Quantenpotential erzeugt kontinuierlich Materie, die durch DSTT-Drift nach außen getrieben wird.
+\item Das Neutrino ist das reine Q-Teilchen mit $m_\nu = \hbar/(l_0c) \approx 0,1\ \text{eV}/c^2$.
+\item Die fraktale Entropie zirkuliert stationär; der Wärmetod tritt nicht ein.
+\item Das Universum ist stationär, nicht-expandierend, ohne Urknall, Dunkle Materie und Dunkle Energie.
+\item Die fraktale Mikrostruktur des Raumes ($D \approx 2,71$ unterhalb $l_0$) erzeugt emergente Skalengesetze mit gebrochenen Exponenten, die auf allen Skalen beobachtbar sind.
 \end{itemize}
 
-WG, DSTT, $\Omega$-Theorie, fraktale Maxwell-Gleichungen, BEC-Objekte und die Neutrino-Theorie sind keine unabhängigen Theorien, sondern verschiedene Aspekte ein und derselben physikalischen Realität – einer Realität, in der Gravitation nicht durch gekrümmte Raumzeit, sondern durch direkte Teilchenwechselwirkungen mit inhärenter Wirbelstruktur vermittelt wird, in der die Zeit einen intrinsischen Pfeil hat, und in der der Raum fundamental fraktal ist.
+Die Theorie macht präzise, testbare Vorhersagen. Sollten diese bestätigt werden, steht ein Paradigmenwechsel bevor: \textbf{Die Physik des 21. Jahrhunderts wird im fraktalen Raum formuliert.}
 
-Die Theorie macht präzise, testbare Vorhersagen. Sollten diese bestätigt werden, stünde ein Paradigmenwechsel in der Physik bevor: Die Physik des 21. Jahrhunderts wird nicht im glatten, sondern im fraktalen Raum formuliert.
+\section*{Danksagung}
+
+Der Autor dankt DeepSeek für die Zusammenarbeit bei der logischen Präzisierung der Theorie.
 
 \begin{thebibliography}{99}
-\bibitem{weber} Weber, W. (1846). Elektrodynamische Massbestimmungen. \textit{Annalen der Physik}, 143, 211-233.
-\bibitem{assis} Assis, A.K.T. (1994). \textit{Weber's Electrodynamics}. Kluwer Academic Publishers.
-\bibitem{tisserand} Tisserand, F. (1882). \textit{Traité de Mécanique Céleste}, Tome IV. Gauthier-Villars, Paris.
-\bibitem{bohm} Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of Hidden Variables. \textit{Physical Review}, 85, 166-193.
-\bibitem{einstein} Einstein, A. (1915). Erklärung der Perihelbewegung des Merkur aus der allgemeinen Relativitätstheorie. \textit{Sitzungsberichte der Preußischen Akademie der Wissenschaften}, 831-839.
-\bibitem{lense} Lense, J. \& Thirring, H. (1918). Über den Einfluß der Eigenrotation der Zentralkörper auf die Bewegung der Planeten und Monde nach der Einsteinschen Gravitationstheorie. \textit{Physikalische Zeitschrift}, 19, 156-163.
-\bibitem{thirring} Thirring, H. (1918). Über die Wirkung rotierender ferner Massen in der Einsteinschen Gravitationstheorie. \textit{Physikalische Zeitschrift}, 19, 33-39.
-\bibitem{heaviside} Heaviside, O. (1893). A Gravitational and Electromagnetic Analogy. \textit{The Electrician}, 31, 281-282.
-\bibitem{czybor_iwt} Czybor, M. (2025). Die Informations-Weber-Theorie (IWT): Eine fundamentale, diskrete Urtheorie der Physik.
-\bibitem{czybor_dstt} Czybor, M. (2025). Dynamische Schwere-Trägheits-Theorie (DSTT).
-\bibitem{czybor_omega} Czybor, M. (2026). Die $\Omega$-Theorie der Gravitation.
-\bibitem{czybor_fraktal} Czybor, M. (2025). Fraktale Maxwell-Gleichungen für Elektrodynamik und Gravitation.
-\bibitem{czybor_weber} Czybor, M., DeepSeek (2026). Erweiterte Weber-Theorie: Die Vereinigung von Weber-Gravitation und Dynamischer Schwere-Trägheits-Theorie.
-\bibitem{czybor_bec} Czybor, M. (2026). BEC-Objekte: Die kompaktesten Objekte im Universum.
-\bibitem{czybor_neutrino} Czybor, M. (2026). Das Neutrino als Q-Teilchen: Masse, Nichtlokalität und fraktale Struktur.
+\bibitem{weber} Weber, W. (1846). Elektrodynamische Maßbestimmungen. Annalen der Physik, 143, 211-233.
+\bibitem{assis} Assis, A.K.T. (1994). Weber's Electrodynamics. Kluwer Academic Publishers.
+\bibitem{tisserand} Tisserand, F. (1882). Traité de Mécanique Céleste, Tome IV. Gauthier-Villars, Paris.
+\bibitem{bohm} Bohm, D. (1952). A Suggested Interpretation of the Quantum Theory in Terms of Hidden Variables. Physical Review, 85, 166-193.
+\bibitem{einstein} Einstein, A. (1915). Erklärung der Perihelbewegung des Merkur aus der allgemeinen Relativitätstheorie. Sitzungsberichte der Preußischen Akademie der Wissenschaften, 831-839.
+\bibitem{lense} Lense, J. \& Thirring, H. (1918). Über den Einfluß der Eigenrotation der Zentralkörper. Physikalische Zeitschrift, 19, 156-163.
+\bibitem{heaviside} Heaviside, O. (1893). A Gravitational and Electromagnetic Analogy. The Electrician, 31, 281-282.
+\bibitem{czybor1} Czybor, M. (2025). Die Informations-Weber-Theorie (IWT).
+\bibitem{czybor2} Czybor, M. (2025). Dynamische Schwere-Trägheits-Theorie (DSTT).
+\bibitem{czybor3} Czybor, M. (2026). Die $\Omega$-Theorie der Gravitation.
+\bibitem{czybor4} Czybor, M. (2025). Fraktale Maxwell-Gleichungen.
+\bibitem{czybor5} Czybor, M., DeepSeek (2026). Erweiterte Weber-Theorie.
+\bibitem{czybor6} Czybor, M. (2026). BEC-Objekte.
+\bibitem{czybor7} Czybor, M. (2026). Das Neutrino als Q-Teilchen.
+\bibitem{czybor8} Czybor, M. (2026). Die Theorie der fraktalen Entropie.
 \end{thebibliography}
 
 \end{document}
