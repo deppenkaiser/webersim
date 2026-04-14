@@ -1,0 +1,193 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\begin{document}
+
+\title{Politische Ideologien im komplexen Zahlenraum\\
+\large{Ein mathematisches Modell des gesellschaftlichen Raums}}
+\author{*}
+\date{\today}
+\maketitle
+
+\section*{Definition des komplexen politischen Raums}
+
+Wir definieren eine komplexe Zahl
+\[
+z = a + i b \in \mathbb{C}
+\]
+mit folgender Bedeutung:
+
+\begin{itemize}
+    \item \textbf{Realteil \(a\)}: \emph{Staatlichkeit} (neutrale Ebene der kollektiven Abgrenzung)
+    \[
+    a > 0 \; \leftrightarrow \; \text{starker Staat}, \qquad
+    a < 0 \; \leftrightarrow \; \text{schwacher Staat}
+    \]
+    \item \textbf{Imaginärteil \(b\)}: \emph{Ideologischer Inhalt} (Kommunismus vs. Faschismus)
+    \[
+    b > 0 \; \leftrightarrow \; \text{Kommunismus}, \qquad
+    b < 0 \; \leftrightarrow \; \text{Faschismus}
+    \]
+\end{itemize}
+
+Der Betrag \(|z| = \sqrt{a^2 + b^2}\) kann als \emph{politische Intensität} interpretiert werden, das Argument \(\arg(z) = \arctan(b/a)\) als \emph{Mischungsverhältnis} von Staatlichkeit und Ideologie.
+
+\subsection*{Reine Typen}
+\[
+\begin{array}{lll}
+\text{Internationaler Kommunismus:} & a < 0,\; b > 0 & \Rightarrow z = -1 + i \\[4pt]
+\text{Nationaler Kommunismus:} & a > 0,\; b > 0 & \Rightarrow z = 1 + i \\[4pt]
+\text{Klassischer Faschismus:} & a > 0,\; b < 0 & \Rightarrow z = 1 - i \\[4pt]
+\text{Widersprüchlicher Fall:} & a < 0,\; b < 0 & \Rightarrow z = -1 - i
+\end{array}
+\]
+
+\section*{Kalibrierung des Raums durch Referenzideologien}
+
+Um die Skala zu verankern, werden drei ideologische Referenzpunkte definiert:
+
+\begin{itemize}
+    \item \textbf{Zionismus (politischer Zionismus)}: Nationale Bewegung mit starkem Staat, ethnisch-religiöser Grundlage – ideologisch nahe am Faschismus-Pol.
+    \item \textbf{Evangelikalismus (US-amerikanisch)}: Religiös-fundamentalistische Bewegung mit starkem Nationalismus, autoritären Gesellschaftsvorstellungen und Antikommunismus – ebenfalls im faschistischen Quadranten.
+    \item \textbf{Jainismus}: Indische Religion mit strikter Gewaltfreiheit (Ahimsa), Weltbürgertum, Ablehnung von Staat und Territorialdenken – extrem schwache Staatlichkeit, ideologisch neutral bis leicht kommunismusnah (wegen Gleichheitsethos).
+\end{itemize}
+
+\section*{Einordnung der Parteien der BRD (inkl. BSW) und Referenzpunkte}
+
+Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala von \(-1\) bis \(+1\)).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    title={Parteien und Referenzideologien im komplexen politischen Raum},
+    title style={yshift=1.5em},
+    xlabel={\(a\): Staatlichkeit},
+    ylabel={\(b\): Ideologie},
+    xmin=-1.2, xmax=1.2,
+    ymin=-1.2, ymax=1.2,
+    axis lines=middle,
+    xtick={-1,-0.5,0,0.5,1},
+    ytick={-1,-0.5,0,0.5,1},
+    grid=major,
+    grid style={dashed,gray!50},
+    width=16cm,
+    height=16cm,
+    enlargelimits=0.15,
+    axis line style={-{Stealth[length=3mm]}},
+    xlabel style={anchor=west},
+    ylabel style={anchor=south},
+]
+
+% Farben
+\definecolor{afd}{HTML}{009EE0}
+\definecolor{csu}{HTML}{007649}
+\definecolor{cdu}{HTML}{323232}
+\definecolor{spd}{HTML}{E3000F}
+\definecolor{gruen}{HTML}{46962B}
+\definecolor{fdp}{HTML}{FFED00}
+\definecolor{linke}{HTML}{BE3075}
+\definecolor{bsw}{HTML}{AC1E44}
+\definecolor{zionismus}{HTML}{0038A8}   % Blau für Zionismus
+\definecolor{evangelikal}{HTML}{8B0000} % Dunkelrot für Evangelikalismus
+\definecolor{jainismus}{HTML}{FF8C00}   % Orange für Jainismus
+
+% === BRD-Parteien ===
+\addplot[only marks, mark=*, mark size=5pt, color=afd] coordinates {(0.8,-0.6)};
+\node[color=afd, anchor=west, font=\small] at (axis cs:0.85,-0.6) {AfD};
+
+\addplot[only marks, mark=*, mark size=5pt, color=csu] coordinates {(0.7,-0.4)};
+\node[color=csu, anchor=west, font=\small] at (axis cs:0.75,-0.4) {CSU};
+
+\addplot[only marks, mark=*, mark size=5pt, color=cdu] coordinates {(0.4,-0.1)};
+\node[color=cdu, anchor=west, font=\small] at (axis cs:0.45,-0.1) {CDU};
+
+\addplot[only marks, mark=*, mark size=5pt, color=spd] coordinates {(0.2,0)};
+\node[color=spd, anchor=west, font=\small] at (axis cs:0.25,0) {SPD};
+
+\addplot[only marks, mark=*, mark size=5pt, color=gruen] coordinates {(0,0)};
+\node[color=gruen, anchor=west, font=\small] at (axis cs:0.05,0) {Grüne};
+
+\addplot[only marks, mark=*, mark size=5pt, color=fdp] coordinates {(-0.4,-0.1)};
+\node[color=fdp, anchor=east, font=\small] at (axis cs:-0.45,-0.1) {FDP};
+
+\addplot[only marks, mark=*, mark size=5pt, color=linke] coordinates {(0,0.2)};
+\node[color=linke, anchor=west, font=\small] at (axis cs:0.05,0.2) {Die Linke};
+
+\addplot[only marks, mark=*, mark size=5pt, color=bsw] coordinates {(0.3,0.4)};
+\node[color=bsw, anchor=west, font=\small] at (axis cs:0.35,0.4) {BSW};
+
+% === Referenzpunkte zur Kalibrierung ===
+\addplot[only marks, mark=triangle*, mark size=6pt, color=zionismus] coordinates {(0.7,-0.7)};
+\node[color=zionismus, anchor=west, font=\small] at (axis cs:0.75,-0.7) {Zionismus (polit.)};
+
+\addplot[only marks, mark=square*, mark size=5pt, color=evangelikal] coordinates {(0.85,-0.65)};
+\node[color=evangelikal, anchor=west, font=\small] at (axis cs:0.9,-0.65) {Evangelikalismus (USA)};
+
+\addplot[only marks, mark=diamond*, mark size=5pt, color=jainismus] coordinates {(-0.9,0.2)};
+\node[color=jainismus, anchor=west, font=\small] at (axis cs:-0.85,0.2) {Jainismus};
+
+% Achsenbeschriftungen
+\node[above right, font=\small] at (axis cs:1.1,0) {\textbf{stark}};
+\node[below left, font=\small] at (axis cs:-1.1,0) {\textbf{schwach}};
+\node[above right, font=\small] at (axis cs:0,1.1) {\textbf{Kommunismus}};
+\node[below left, font=\small] at (axis cs:0,-1.1) {\textbf{Faschismus}};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\section*{Legende zur Grafik}
+
+\noindent
+\footnotesize
+\begin{tabular}{lp{3cm}p{5.5cm}}
+\textbf{Partei / Ideologie} & \textbf{Komplexe Zahl} & \textbf{Politische Einordnung} \\
+AfD & \(0{,}8 - 0{,}6i\) & starke Staatlichkeit, starke Tendenz zum Faschismus-Pol \\
+CSU & \(0{,}7 - 0{,}4i\) & starke Staatlichkeit, gemäßigte Tendenz zum Faschismus-Pol \\
+CDU & \(0{,}4 - 0{,}1i\) & moderate Staatlichkeit, fast neutral \\
+SPD & \(0{,}2 + 0i\) & leicht positive Staatlichkeit, ideologisch neutral \\
+Grüne & \(0 + 0i\) & Neutralpunkt (ideologisch und staatlich ausgeglichen) \\
+FDP & \(-0{,}4 - 0{,}1i\) & schwache Staatlichkeit, leichte Tendenz zum Faschismus-Pol \\
+Die Linke & \(0 + 0{,}2i\) & neutrale Staatlichkeit, leichte Tendenz zum Kommunismus-Pol (gedämpft durch Zionismus) \\
+BSW & \(0{,}3 + 0{,}4i\) & moderate Staatlichkeit, deutlichere Tendenz zum Kommunismus-Pol \\
+\textbf{Zionismus (polit.)} & \(0{,}7 - 0{,}7i\) & starker Staat, starke Tendenz zum Faschismus-Pol \\
+\textbf{Evangelikalismus (USA)} & \(0{,}85 - 0{,}65i\) & sehr starker Staat, starke Tendenz zum Faschismus-Pol \\
+\textbf{Jainismus} & \(-0{,}9 + 0{,}2i\) & extrem schwache Staatlichkeit, leichte Tendenz zum Kommunismus-Pol (Gewaltfreiheit, Weltbürgertum) \\
+\end{tabular}
+\normalsize
+
+\section*{Kalibrierungsbemerkungen}
+
+Die drei Referenzpunkte erlauben eine inhaltliche Verankerung der Skala:
+
+\begin{itemize}
+    \item Der \textbf{Zionismus} liegt nahe an der AfD, jedoch mit einem etwas höheren \(b\)-Wert (stärker faschistoid) aufgrund seiner explizit ethnisch-religiösen Grundlage.
+    \item Der \textbf{US-amerikanische Evangelikalismus} liegt noch etwas extremer in beiden Dimensionen: stärkere Staatlichkeit (amerikanischer Nationalismus) und stärkere Nähe zum Faschismus-Pol (Autoritarismus, Antikommunismus).
+    \item Der \textbf{Jainismus} bildet den Gegenpol: extrem schwache Staatlichkeit (keine territoriale Bindung, Ablehnung von Gewaltmonopolen) und eine leichte Tendenz zum Kommunismus-Pol (Gleichheitsethos, Weltbürgertum, Gewaltfreiheit).
+    \item Die \textbf{AfD} bewegt sich in ähnlichen Regionen wie Zionismus und Evangelikalismus, ist jedoch säkularer und weniger religiös motiviert.
+    \item Die \textbf{CSU} ist weniger extrem als die Referenzpunkte, aber im selben Quadranten.
+\end{itemize}
+
+\section*{Mathematische Operationen im politischen Raum}
+
+Das Modell erlaubt formale Operationen:
+
+\begin{itemize}
+    \item \textbf{Addition}: \(z_1 + z_2\) entspricht einer politischen Mittelung (z. B. Koalition).
+    \item \textbf{Skalarmultiplikation}: \(\lambda z\) mit \(\lambda \in \mathbb{R}\) verstärkt oder schwächt eine Position.
+    \item \textbf{Konjugation}: \(\overline{z} = a - ib\) spiegelt die Ideologie (Kommunismus \(\leftrightarrow\) Faschismus) bei gleichbleibender Staatlichkeit.
+\end{itemize}
+
+\section*{Fazit}
+
+Dieses Modell erweitert die übliche eindimensionale Links-Rechts-Skala um eine zweite, unabhängige Dimension (Staatlichkeit). Die Verwendung komplexer Zahlen erlaubt eine kompakte, mathematisch handhabbare Darstellung politischer Positionen im gesellschaftlichen Raum. Die Referenzpunkte Zionismus, Evangelikalismus und Jainismus dienen der Kalibrierung und verdeutlichen die Positionierung der deutschen Parteien im Vergleich zu diesen ideologischen Ankern.
+
+\end{document}
