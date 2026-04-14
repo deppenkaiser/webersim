@@ -7,6 +7,8 @@
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{arrows.meta}
 \usepackage{geometry}
+\usepackage{longtable}
+\usepackage{booktabs}
 \geometry{margin=2.5cm}
 
 \begin{document}
@@ -52,12 +54,13 @@ Der Betrag \(|z| = \sqrt{a^2 + b^2}\) kann als \emph{politische Intensität} int
 
 \section*{Kalibrierung des Raums durch Referenzideologien}
 
-Um die Skala zu verankern, werden drei ideologische Referenzpunkte definiert:
+Um die Skala zu verankern, werden vier ideologische Referenzpunkte definiert:
 
 \begin{itemize}
     \item \textbf{Zionismus (politischer Zionismus)}: Nationale Bewegung mit starkem Staat, ethnisch-religiöser Grundlage – ideologisch nahe am Faschismus-Pol.
     \item \textbf{Evangelikalismus (US-amerikanisch)}: Religiös-fundamentalistische Bewegung mit starkem Nationalismus, autoritären Gesellschaftsvorstellungen und Antikommunismus – ebenfalls im faschistischen Quadranten.
-    \item \textbf{Jainismus}: Indische Religion mit strikter Gewaltfreiheit (Ahimsa), Weltbürgertum, Ablehnung von Staat und Territorialdenken – extrem schwache Staatlichkeit, ideologisch neutral bis leicht kommunismusnah (wegen Gleichheitsethos).
+    \item \textbf{Jainismus}: Indische Religion mit strikter Gewaltfreiheit (Ahimsa), Weltbürgertum, Ablehnung von Staat und Territorialdenken – extrem schwache Staatlichkeit, ideologisch neutral bis leicht kommunismusnah.
+    \item \textbf{Demokratischer Kommunismus}: Basisdemokratische, rätedemokratische Form des Kommunismus – schwache Staatlichkeit, stark kommunistische Ideologie.
 \end{itemize}
 
 \section*{Einordnung der Parteien der BRD (inkl. BSW) und Referenzpunkte}
@@ -95,11 +98,12 @@ Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala
 \definecolor{fdp}{HTML}{FFED00}
 \definecolor{linke}{HTML}{BE3075}
 \definecolor{bsw}{HTML}{AC1E44}
-\definecolor{zionismus}{HTML}{0038A8}   % Blau für Zionismus
-\definecolor{evangelikal}{HTML}{8B0000} % Dunkelrot für Evangelikalismus
-\definecolor{jainismus}{HTML}{FF8C00}   % Orange für Jainismus
+\definecolor{zionismus}{HTML}{0038A8}
+\definecolor{evangelikal}{HTML}{8B0000}
+\definecolor{jainismus}{HTML}{FF8C00}
+\definecolor{demkom}{HTML}{800080}   % Lila für Demokratischen Kommunismus
 
-% === BRD-Parteien ===
+% BRD-Parteien
 \addplot[only marks, mark=*, mark size=5pt, color=afd] coordinates {(0.8,-0.6)};
 \node[color=afd, anchor=west, font=\small] at (axis cs:0.85,-0.6) {AfD};
 
@@ -124,7 +128,7 @@ Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala
 \addplot[only marks, mark=*, mark size=5pt, color=bsw] coordinates {(0.3,0.4)};
 \node[color=bsw, anchor=west, font=\small] at (axis cs:0.35,0.4) {BSW};
 
-% === Referenzpunkte zur Kalibrierung ===
+% Referenzpunkte
 \addplot[only marks, mark=triangle*, mark size=6pt, color=zionismus] coordinates {(0.7,-0.7)};
 \node[color=zionismus, anchor=west, font=\small] at (axis cs:0.75,-0.7) {Zionismus (polit.)};
 
@@ -133,6 +137,9 @@ Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala
 
 \addplot[only marks, mark=diamond*, mark size=5pt, color=jainismus] coordinates {(-0.9,0.2)};
 \node[color=jainismus, anchor=west, font=\small] at (axis cs:-0.85,0.2) {Jainismus};
+
+\addplot[only marks, mark=pentagon*, mark size=5pt, color=demkom] coordinates {(-0.1,0.7)};
+\node[color=demkom, anchor=west, font=\small] at (axis cs:-0.05,0.7) {Demokratischer Kommunismus};
 
 % Achsenbeschriftungen
 \node[above right, font=\small] at (axis cs:1.1,0) {\textbf{stark}};
@@ -144,37 +151,52 @@ Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala
 \end{tikzpicture}
 \end{center}
 
-\section*{Legende zur Grafik}
+\newpage
+\appendix
+\section{Charakterisierung der vier Quadranten (Idealtypen)}
+
+Die komplexe Ebene wird durch die Achsen \(a\) (Staatlichkeit) und \(b\) (Ideologie) in vier Quadranten geteilt. Diese repräsentieren idealtypische politische Konstellationen – reale Strömungen können Mischformen sein.
+
+\noindent
+\begin{tabular}{p{2.5cm}p{3cm}p{8cm}}
+\toprule
+\textbf{Quadrant} & \textbf{Vorzeichen} & \textbf{Idealtypische Charakteristik} \\
+\midrule
+I (oben rechts) & \(a > 0,\; b > 0\) & \textbf{Kommunismus mit starkem Staat}: Der Staat dient dem Klassenkampf und der Planwirtschaft, bleibt aber ideologisch kommunistisch (z. B. frühe Sowjetunion vor Stalin, Titoismus, Kuba). \\
+II (oben links) & \(a < 0,\; b > 0\) & \textbf{Kommunismus mit schwachem Staat}: Internationalismus, Basisdemokratie, Staatskritik (z. B. Anarchokommunismus, Rätekommunismus, Trotzkismus, \textbf{Demokratischer Kommunismus}). \\
+III (unten links) & \(a < 0,\; b < 0\) & \textbf{Faschismus mit schwachem Staat}: Widersprüchliche Konstellation, selten. Libertäre Strömungen mit nationalistischen Elementen. \\
+IV (unten rechts) & \(a > 0,\; b < 0\) & \textbf{Faschismus mit starkem Staat}: Nationalismus, Führerprinzip, ethnische Hierarchie (z. B. Nationalsozialismus, italienischer Faschismus, Zionismus, Evangelikalismus, Stalinismus als entarteter Fall). \\
+\bottomrule
+\end{tabular}
+
+\section*{Legende zur Grafik (vollständige Tabelle)}
 
 \noindent
 \footnotesize
-\begin{tabular}{lp{3cm}p{5.5cm}}
-\textbf{Partei / Ideologie} & \textbf{Komplexe Zahl} & \textbf{Politische Einordnung} \\
-AfD & \(0{,}8 - 0{,}6i\) & starke Staatlichkeit, starke Tendenz zum Faschismus-Pol \\
-CSU & \(0{,}7 - 0{,}4i\) & starke Staatlichkeit, gemäßigte Tendenz zum Faschismus-Pol \\
+\begin{longtable}{lp{3.2cm}p{5.3cm}}
+\toprule
+\textbf{Strömung / Partei} & \textbf{Komplexe Zahl} & \textbf{Politische Einordnung} \\
+\midrule
+Nationalsozialismus & \(0{,}95 - 0{,}9i\) & extrem starke Staatlichkeit, extrem stark faschistoid \\
+Stalinismus & \(0{,}9 - 0{,}3i\) & extrem starke Staatlichkeit, mäßig faschistoid (nationalistisch, autoritär) \\
+Klassischer Faschismus (Ideal) & \(1{,}0 - 1{,}0i\) & maximale Staatlichkeit, maximal faschistoid \\
+Evangelikalismus (USA) & \(0{,}85 - 0{,}65i\) & sehr starke Staatlichkeit, stark faschistoid \\
+Zionismus (politisch) & \(0{,}7 - 0{,}7i\) & starke Staatlichkeit, stark faschistoid \\
+AfD & \(0{,}8 - 0{,}6i\) & starke Staatlichkeit, stark faschistoid \\
+CSU & \(0{,}7 - 0{,}4i\) & starke Staatlichkeit, gemäßigt faschistoid \\
 CDU & \(0{,}4 - 0{,}1i\) & moderate Staatlichkeit, fast neutral \\
 SPD & \(0{,}2 + 0i\) & leicht positive Staatlichkeit, ideologisch neutral \\
-Grüne & \(0 + 0i\) & Neutralpunkt (ideologisch und staatlich ausgeglichen) \\
-FDP & \(-0{,}4 - 0{,}1i\) & schwache Staatlichkeit, leichte Tendenz zum Faschismus-Pol \\
-Die Linke & \(0 + 0{,}2i\) & neutrale Staatlichkeit, leichte Tendenz zum Kommunismus-Pol (gedämpft durch Zionismus) \\
-BSW & \(0{,}3 + 0{,}4i\) & moderate Staatlichkeit, deutlichere Tendenz zum Kommunismus-Pol \\
-\textbf{Zionismus (polit.)} & \(0{,}7 - 0{,}7i\) & starker Staat, starke Tendenz zum Faschismus-Pol \\
-\textbf{Evangelikalismus (USA)} & \(0{,}85 - 0{,}65i\) & sehr starker Staat, starke Tendenz zum Faschismus-Pol \\
-\textbf{Jainismus} & \(-0{,}9 + 0{,}2i\) & extrem schwache Staatlichkeit, leichte Tendenz zum Kommunismus-Pol (Gewaltfreiheit, Weltbürgertum) \\
-\end{tabular}
+Grüne & \(0 + 0i\) & neutraler Punkt (staatlich und ideologisch ausgeglichen) \\
+FDP & \(-0{,}4 - 0{,}1i\) & schwache Staatlichkeit, leicht faschistoid \\
+Die Linke & \(0 + 0{,}2i\) & neutrale Staatlichkeit, leicht kommunistisch (gedämpft durch Zionismus) \\
+BSW & \(0{,}3 + 0{,}4i\) & moderate Staatlichkeit, deutlich kommunistisch \\
+\textbf{Demokratischer Kommunismus} & \(-0{,}1 + 0{,}7i\) & schwache Staatlichkeit, stark kommunistisch (basisdemokratisch, rätedemokratisch) \\
+Internationaler Kommunismus (Ideal) & \(-1 + 1i\) & extrem schwache Staatlichkeit, maximal kommunistisch \\
+Nationaler Kommunismus (Ideal, z. B. Titoismus) & \(1 + 1i\) & extrem starke Staatlichkeit, maximal kommunistisch \\
+Jainismus & \(-0{,}9 + 0{,}2i\) & extrem schwache Staatlichkeit, leicht kommunistisch \\
+\bottomrule
+\end{longtable}
 \normalsize
-
-\section*{Kalibrierungsbemerkungen}
-
-Die drei Referenzpunkte erlauben eine inhaltliche Verankerung der Skala:
-
-\begin{itemize}
-    \item Der \textbf{Zionismus} liegt nahe an der AfD, jedoch mit einem etwas höheren \(b\)-Wert (stärker faschistoid) aufgrund seiner explizit ethnisch-religiösen Grundlage.
-    \item Der \textbf{US-amerikanische Evangelikalismus} liegt noch etwas extremer in beiden Dimensionen: stärkere Staatlichkeit (amerikanischer Nationalismus) und stärkere Nähe zum Faschismus-Pol (Autoritarismus, Antikommunismus).
-    \item Der \textbf{Jainismus} bildet den Gegenpol: extrem schwache Staatlichkeit (keine territoriale Bindung, Ablehnung von Gewaltmonopolen) und eine leichte Tendenz zum Kommunismus-Pol (Gleichheitsethos, Weltbürgertum, Gewaltfreiheit).
-    \item Die \textbf{AfD} bewegt sich in ähnlichen Regionen wie Zionismus und Evangelikalismus, ist jedoch säkularer und weniger religiös motiviert.
-    \item Die \textbf{CSU} ist weniger extrem als die Referenzpunkte, aber im selben Quadranten.
-\end{itemize}
 
 \section*{Mathematische Operationen im politischen Raum}
 
@@ -188,6 +210,6 @@ Das Modell erlaubt formale Operationen:
 
 \section*{Fazit}
 
-Dieses Modell erweitert die übliche eindimensionale Links-Rechts-Skala um eine zweite, unabhängige Dimension (Staatlichkeit). Die Verwendung komplexer Zahlen erlaubt eine kompakte, mathematisch handhabbare Darstellung politischer Positionen im gesellschaftlichen Raum. Die Referenzpunkte Zionismus, Evangelikalismus und Jainismus dienen der Kalibrierung und verdeutlichen die Positionierung der deutschen Parteien im Vergleich zu diesen ideologischen Ankern.
+Dieses Modell erweitert die übliche eindimensionale Links-Rechts-Skala um eine zweite, unabhängige Dimension (Staatlichkeit). Die Verwendung komplexer Zahlen erlaubt eine kompakte, mathematisch handhabbare Darstellung politischer Positionen im gesellschaftlichen Raum. Die Referenzpunkte Zionismus, Evangelikalismus, Jainismus und Demokratischer Kommunismus dienen der Kalibrierung und verdeutlichen die Positionierung der deutschen Parteien im Vergleich zu diesen ideologischen Ankern.
 
 \end{document}
