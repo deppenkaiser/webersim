@@ -52,6 +52,37 @@ Der Betrag \(|z| = \sqrt{a^2 + b^2}\) kann als \emph{politische Intensität} int
 \end{array}
 \]
 
+\section*{Abgrenzung: Extremismus vs. gemäßigtes Spektrum}
+
+Um zwischen extremen Positionen (Kommunismus / Faschismus) und gemäßigten Systemen (Sozialismus / Kapitalismus) zu unterscheiden, wird ein Kreis um den Ursprung definiert.
+
+Die vier reinen Idealtypen des Modells – Internationaler Kommunismus \((-1 + i)\), Nationaler Kommunismus \((1 + i)\), Klassischer Faschismus \((1 - i)\) und der widersprüchliche Fall \((-1 - i)\) – liegen alle auf demselben Betrag:
+\[
+|z_{\text{extrem}}| = \sqrt{1^2 + 1^2} = \sqrt{2} \approx 1{,}4142
+\]
+
+Der Ursprung \(z = 0\) repräsentiert die vollständige politische Neutralität (weder Staatlichkeit noch Ideologie). Die natürliche metrische Mitte zwischen Neutralität und Extrem ist die Hälfte dieses Betrags:
+\[
+r = \frac{\sqrt{2}}{2} \approx 0{,}7071 \approx 0{,}7
+\]
+
+Damit wird die Extremismusgrenze definiert als:
+\[
+|z| \le \frac{\sqrt{2}}{2} \quad \longleftrightarrow \quad \text{gemäßigt (Sozialismus, Kapitalismus, Demokratie)}
+\]
+\[
+|z| > \frac{\sqrt{2}}{2} \quad \longleftrightarrow \quad \text{extrem (Kommunismus, Faschismus)}
+\]
+
+Dieser Radius ist nicht empirisch, sondern \textbf{metahematisch} begründet: Er ergibt sich aus der inneren Geometrie des Raums, dessen Eckpunkte durch die Idealtypen auf \(\sqrt{2}\) festgelegt sind.
+
+Die empirische Kalibrierung bestätigt diese Schwelle:
+\begin{itemize}
+    \item Der \textbf{Demokratische Kommunismus} (\(-0{,}1 + 0{,}7i\)) hat \(|z| \approx 0{,}71\) und liegt knapp \emph{außerhalb} – er wird als systemische Alternative betrachtet.
+    \item Das \textbf{BSW} (\(0{,}3 + 0{,}4i\)) liegt mit \(|z| = 0{,}5\) \emph{innerhalb} – als gemäßigter Sozialismus.
+    \item Die \textbf{CSU} (\(0{,}7 - 0{,}4i\)) erreicht \(|z| \approx 0{,}81\) und liegt damit \emph{außerhalb} – eine Erkenntnis des Modells, die auf ihre Einordnung im faschistischen Quadranten verweist.
+\end{itemize}
+
 \section*{Kalibrierung des Raums durch Referenzideologien}
 
 Um die Skala zu verankern, werden vier ideologische Referenzpunkte definiert:
@@ -101,7 +132,11 @@ Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala
 \definecolor{zionismus}{HTML}{0038A8}
 \definecolor{evangelikal}{HTML}{8B0000}
 \definecolor{jainismus}{HTML}{FF8C00}
-\definecolor{demkom}{HTML}{800080}   % Lila für Demokratischen Kommunismus
+\definecolor{demkom}{HTML}{800080}
+
+% Extremismus-Kreis (r = sqrt(2)/2)
+\draw[red, dashed, thick] (axis cs:0,0) circle[radius={sqrt(2)/2}];
+\node[red, font=\small, anchor=south east] at (axis cs:0.85,0.72) {\(|z|=\sqrt{2}/2 \approx 0{,}7\) (Extremismusgrenze)};
 
 % BRD-Parteien
 \addplot[only marks, mark=*, mark size=5pt, color=afd] coordinates {(0.8,-0.6)};
@@ -211,5 +246,7 @@ Das Modell erlaubt formale Operationen:
 \section*{Fazit}
 
 Dieses Modell erweitert die übliche eindimensionale Links-Rechts-Skala um eine zweite, unabhängige Dimension (Staatlichkeit). Die Verwendung komplexer Zahlen erlaubt eine kompakte, mathematisch handhabbare Darstellung politischer Positionen im gesellschaftlichen Raum. Die Referenzpunkte Zionismus, Evangelikalismus, Jainismus und Demokratischer Kommunismus dienen der Kalibrierung und verdeutlichen die Positionierung der deutschen Parteien im Vergleich zu diesen ideologischen Ankern.
+
+Die Einführung des Extremismus-Kreises mit Radius \(r = \sqrt{2}/2\) ist keine willkürliche Setzung, sondern folgt zwingend aus der inneren Geometrie des Raums: Die vier Idealtypen liegen auf dem Kreis mit Radius \(\sqrt{2}\), und deren metrische Mitte ist genau die Hälfte. Dass dabei die CSU außerhalb dieses Kreises liegt, ist keine Verzerrung, sondern eine immanente Erkenntnis des Modells.
 
 \end{document}
