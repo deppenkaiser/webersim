@@ -5,10 +5,11 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
-\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows.meta, decorations.markings, angles, quotes, backgrounds}
 \usepackage{geometry}
 \usepackage{longtable}
 \usepackage{booktabs}
+\usepackage{xcolor}
 \geometry{margin=2.5cm}
 
 \begin{document}
@@ -112,7 +113,7 @@ Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala
     ytick={-1,-0.5,0,0.5,1},
     grid=major,
     grid style={dashed,gray!50},
-    width=16cm,
+    width=18cm,
     height=16cm,
     enlargelimits=0.15,
     axis line style={-{Stealth[length=3mm]}},
@@ -177,10 +178,10 @@ Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala
 \node[color=demkom, anchor=west, font=\small] at (axis cs:-0.05,0.7) {Demokratischer Kommunismus};
 
 % Achsenbeschriftungen
-\node[above right, font=\small] at (axis cs:1.1,0) {\textbf{stark}};
-\node[below left, font=\small] at (axis cs:-1.1,0) {\textbf{schwach}};
-\node[above right, font=\small] at (axis cs:0,1.1) {\textbf{Kommunismus}};
-\node[below left, font=\small] at (axis cs:0,-1.1) {\textbf{Faschismus}};
+\node[above right, font=\small\bfseries] at (axis cs:1.1,0) {stark};
+\node[below left, font=\small\bfseries] at (axis cs:-1.1,0) {schwach};
+\node[above right, font=\small\bfseries] at (axis cs:0,1.1) {Kommunismus};
+\node[below left, font=\small\bfseries] at (axis cs:0,-1.1) {Faschismus};
 
 \end{axis}
 \end{tikzpicture}
@@ -248,5 +249,162 @@ Das Modell erlaubt formale Operationen:
 Dieses Modell erweitert die übliche eindimensionale Links-Rechts-Skala um eine zweite, unabhängige Dimension (Staatlichkeit). Die Verwendung komplexer Zahlen erlaubt eine kompakte, mathematisch handhabbare Darstellung politischer Positionen im gesellschaftlichen Raum. Die Referenzpunkte Zionismus, Evangelikalismus, Jainismus und Demokratischer Kommunismus dienen der Kalibrierung und verdeutlichen die Positionierung der deutschen Parteien im Vergleich zu diesen ideologischen Ankern.
 
 Die Einführung des Extremismus-Kreises mit Radius \(r = \sqrt{2}/2\) ist keine willkürliche Setzung, sondern folgt zwingend aus der inneren Geometrie des Raums: Die vier Idealtypen liegen auf dem Kreis mit Radius \(\sqrt{2}\), und deren metrische Mitte ist genau die Hälfte. Dass dabei die CSU außerhalb dieses Kreises liegt, ist keine Verzerrung, sondern eine immanente Erkenntnis des Modells.
+
+% ============================================
+% ERWEITERUNG: ONTOLOGISCHES FELD & DYNAMIK
+% ============================================
+
+\newpage
+\section{Der politische Raum als ontologisches Feld}
+
+In der bisherigen Betrachtung wurde der komplexe politische Raum als statische Karte beschrieben. Dieses Kapitel erweitert das Modell zu einem \textbf{dynamischen System}. Politik wird hier nicht als Katalog von Zuständen, sondern als \textbf{ontologisches Feld} begriffen, in dem Kräfte (Operatoren) auf Systeme einwirken.
+
+\subsection{Fundierung der Achsen: Das Primat der K--F-Achse}
+
+Gemäß der ursprünglichen Definition misst der \textbf{Imaginärteil} \(b\) die ideologische Position. Diese Achse ist der Gradient zwischen zwei ontologischen Extrempunkten:
+\begin{itemize}
+    \item \textbf{Kommunismus (K)}: Maximale Gleichheit, Auflösung von Rangordnungen, Egalität (\(b > 0\), Maximum bei \(+i\)).
+    \item \textbf{Faschismus (F)}: Maximale Hierarchie, In-Group/Out-Group-Struktur, Rangordnung (\(b < 0\), Maximum bei \(-i\)).
+\end{itemize}
+Formal gilt die Identität: \(F = -K\) auf der imaginären Achse. Die \textbf{K--F-Achse} (\(\text{Im}(z)\)) ist damit ein \textbf{Gradientenfeld}. 
+
+Die \textbf{Staatlichkeit} \(a = \text{Re}(z)\) bleibt die dazu orthogonale, strukturelle Dimension:
+\begin{itemize}
+    \item \(a > 0\): Starker Staat, Institutionalisierung, Ordnung.
+    \item \(a < 0\): Schwacher Staat, Dezentralität, Anarchie.
+\end{itemize}
+
+Alle anderen politischen Kategorien sind von dieser fundamentalen Spannung auf der imaginären Achse abgeleitet. Ein Zustand ist ein Punkt \(z = a + ib\) mit \(a \in [-1, 1]\) (Staatlichkeit) und \(b \in [-1, 1]\) (K--F-Position).
+
+\subsection{Operatoren: Die Kräfte der Verschiebung}
+
+Ein System verharrt nicht an seinem Ort \(z_t\). Es unterliegt Kräften, die als Operatoren auf den Zustandsvektor wirken.
+
+\paragraph{Definition 1: Egalitarismus-Operator \(E\)}
+Der Operator \(E\) wirkt auf den Imaginärteil und verschiebt das System in Richtung Kommunismus (schwächt Hierarchien, erhöht \(b\)).
+\[
+E(z) = a + i(b + \alpha), \quad \alpha > 0
+\]
+\(E\) modelliert Impulse wie Solidarität, Nächstenliebe oder universelle Rechte. Wiederholte Anwendung: \(E^n(z) = a + i(b + n\alpha)\).
+
+\paragraph{Definition 2: Hierarchie-Operator \(H\)}
+Der Operator \(H\) wirkt auf den Imaginärteil und verschiebt das System in Richtung Faschismus (stärkt Rangordnungen, verringert \(b\)).
+\[
+H(z) = a + i(b - \beta), \quad \beta > 0
+\]
+\(H\) modelliert Impulse wie Autorität, Normsetzung oder Nationalismus. Wiederholte Anwendung: \(H^n(z) = a + i(b - n\beta)\).
+
+\paragraph{Definition 3: Ordnungs-Operator \(O\)}
+Der Operator \(O\) wirkt orthogonal zur K--F-Achse auf den Realteil (Staatlichkeit).
+\[
+O(z) = (a + \gamma) + ib
+\]
+\(O\) modelliert Bürokratie, Institutionenbau und staatliche Stabilisierung (\(\gamma > 0\)) oder Deregulierung/Anarchie (\(\gamma < 0\)).
+
+\subsection{Dynamik im Feld}
+
+Die zeitliche Entwicklung eines politischen Systems ist die Komposition dieser Operatoren. Der Zustand zum Zeitpunkt \(t+1\) ergibt sich aus:
+\[
+z_{t+1} = O^k \circ H^m \circ E^n (z_t)
+\]
+Systeme können entlang der imaginären Achse driften (Radikalisierung in Richtung Faschismus oder Kommunismus) oder horizontal in der Staatlichkeit variieren. Das Modell erlaubt die Beschreibung von Kipppunkten und Oszillationen (z. B. Pendelbewegungen zwischen Reform und Restauration).
+
+\begin{center}
+\begin{tikzpicture}[scale=2.5, >=Stealth]
+    % Achsen
+    \draw[->, thick] (-2.2, 0) -- (2.2, 0) node[right] {\textbf{Staatlichkeit} \(a = \text{Re}(z)\)};
+    \draw[->, thick] (0, -2.2) -- (0, 2.2) node[above] {\textbf{Ideologie} \(b = \text{Im}(z)\)};
+    
+    % Achsenbeschriftungen
+    \node[below left] at (0,0) {\(0\)};
+    \node[below] at (1.5,0) {stark (\(a>0\))};
+    \node[below] at (-1.5,0) {schwach (\(a<0\))};
+    \node[right] at (0,1.5) {Kommunismus (\(b>0\))};
+    \node[right] at (0,-1.5) {Faschismus (\(b<0\))};
+    
+    % Gitter leicht angedeutet
+    \draw[gray!30, thin] (-2,-2) grid (2,2);
+    
+    % Ursprungspunkt z (Beispiel: moderate Staatlichkeit, leicht kommunistisch)
+    \coordinate (Z) at (0.6, 0.4);
+    \filldraw[blue] (Z) circle (2.5pt) node[above right] {\(z_t\)};
+    
+    % Wirkung von E (vertikal nach oben)
+    \draw[->, red!70!black, very thick] (Z) -- (0.6, 1.3);
+    \node[red!70!black, font=\small\bfseries] at (0.9, 0.85) {\(E(z)\)};
+    \node[red!70!black, font=\footnotesize] at (1.1, 0.65) {\(a + i(b+\alpha)\)};
+    \filldraw[red!70!black] (0.6, 1.3) circle (2pt);
+    
+    % Wirkung von H (vertikal nach unten)
+    \draw[->, orange!90!black, very thick] (Z) -- (0.6, -0.8);
+    \node[orange!90!black, font=\small\bfseries] at (0.9, -0.2) {\(H(z)\)};
+    \node[orange!90!black, font=\footnotesize] at (1.1, -0.4) {\(a + i(b-\beta)\)};
+    \filldraw[orange!90!black] (0.6, -0.8) circle (2pt);
+    
+    % Wirkung von O (horizontal nach rechts)
+    \draw[->, teal!70!black, very thick] (Z) -- (1.5, 0.4);
+    \node[teal!70!black, font=\small\bfseries] at (1.05, 0.65) {\(O(z)\)};
+    \node[teal!70!black, font=\footnotesize] at (1.05, 0.45) {\((a+\gamma) + ib\)};
+    \filldraw[teal!70!black] (1.5, 0.4) circle (2pt);
+    
+    % Wirkung von O (horizontal nach links, negativ)
+    \draw[->, teal!50!black, very thick, dashed] (Z) -- (-0.3, 0.4);
+    \node[teal!50!black, font=\footnotesize] at (-0.1, 0.7) {\(O^{-1}(z)\)};
+    \filldraw[teal!50!black] (-0.3, 0.4) circle (2pt);
+    
+    % Legende
+    \node[anchor=north west, font=\bfseries] at (-2.1, 2.0) {\Large Legende:};
+    \draw[->, red!70!black, very thick] (-2.1, 1.7) -- (-1.5, 1.7); 
+    \node[anchor=west, font=\small] at (-1.4, 1.7) {Egalitarismus \(E\) \(\rightarrow\) Kommunismus (\(+b\))};
+    \draw[->, orange!90!black, very thick] (-2.1, 1.3) -- (-1.5, 1.3); 
+    \node[anchor=west, font=\small] at (-1.4, 1.3) {Hierarchie \(H\) \(\rightarrow\) Faschismus (\(-b\))};
+    \draw[->, teal!70!black, very thick] (-2.1, 0.9) -- (-1.5, 0.9); 
+    \node[anchor=west, font=\small] at (-1.4, 0.9) {Ordnung \(O\) \(\rightarrow\) mehr Staatlichkeit (\(+a\))};
+    \draw[->, teal!50!black, very thick, dashed] (-2.1, 0.5) -- (-1.5, 0.5); 
+    \node[anchor=west, font=\small] at (-1.4, 0.5) {Deregulierung \(\rightarrow\) weniger Staatlichkeit (\(-a\))};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Der Kontext-Operator \(C_\varphi\): Rotation der Bedeutung}
+
+Die entscheidende Erweiterung des dynamischen Modells ist die Unterscheidung zwischen \textbf{Zustand} und \textbf{Interpretation}. Der Kontext verändert nicht die Position \(z\), sondern die \textbf{Projektion} des Beobachters auf das Koordinatensystem.
+
+\paragraph{Definition 4: Kontext-Operator (Rotation)}
+\[
+C_\varphi(z) = e^{i\varphi} \cdot z
+\]
+wobei \(\varphi \in [0, 2\pi)\) der Winkel der kontextuellen Verschiebung ist.
+
+\begin{itemize}
+    \item \textbf{Formal}: Der Vektor \(z\) bleibt in Länge und Richtung zur eigenen Basis unverändert. Der Beobachter jedoch hat sein Koordinatenkreuz gedreht.
+    \item \textbf{Politische Bedeutung}: Ein- und dasselbe System erscheint in verschiedenen Kontexten mit unterschiedlichen Koordinaten \((a', b')\). Begriffsverschiebungen, Framing und kulturelle Perspektiven sind formal als Rotationen \(C_\varphi\) beschreibbar.
+\end{itemize}
+
+\paragraph{Formales Beispiel:}
+Gegeben sei ein System \(z = 0{,}2 + 0{,}8i\) (moderate Staatlichkeit, stark kommunistisch). Unter einer Kontext-Rotation mit \(\varphi = -120^\circ\) ergibt sich:
+\[
+C_{-120^\circ}(z) \approx -0{,}79 - 0{,}52i
+\]
+Im rotierten Beobachtersystem erscheint dasselbe System mit \(a' < 0\) (schwache Staatlichkeit) und \(b' < 0\) (faschistisch). Ob diese Rotation eine ,,Verzerrung`` oder eine ,,genauere Beschreibung`` darstellt, ist eine meta-politische Frage, die außerhalb des formalen Modells liegt. Das Modell selbst liefert die Struktur: \textbf{Kontext = Rotation}.
+
+\subsection{Synthese des erweiterten Modells}
+
+Das erweiterte Modell besteht aus:
+\begin{enumerate}
+    \item Dem \textbf{Zustandsraum} \(\mathbb{C}\) mit:
+        \begin{itemize}
+            \item Realteil \(a\): \textbf{Staatlichkeit} (strukturelle Dimension)
+            \item Imaginärteil \(b\): \textbf{K--F-Achse} (ontologische Dimension)
+        \end{itemize}
+    \item Den \textbf{Bewegungsoperatoren}:
+        \begin{itemize}
+            \item \(E\): Egalitarismus \(\rightarrow\) erhöht \(b\) (Richtung Kommunismus)
+            \item \(H\): Hierarchie \(\rightarrow\) senkt \(b\) (Richtung Faschismus)
+            \item \(O\): Ordnung \(\rightarrow\) verändert \(a\) (Staatlichkeit)
+        \end{itemize}
+    \item Dem \textbf{Interpretationsoperator} \(C_\varphi\): Rotation der Beobachterperspektive (Kontext, Framing).
+\end{enumerate}
+
+Damit wird die in Kapitel 1--5 etablierte statische Karte zu einer vollwertigen \textbf{Feldtheorie des Politischen} ausgebaut. Die Welt ist kein Zustand -- sie ist ein Prozess.
 
 \end{document}
