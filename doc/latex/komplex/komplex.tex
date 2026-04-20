@@ -20,6 +20,40 @@
 \date{\today}
 \maketitle
 
+\section*{Vorwort}
+
+Politische Analyse krankt an einer strukturellen Unschärfe. Begriffe wie „links“, „rechts“, „autoritär“ oder „libertär“ werden im Diskurs ständig vermischt, überlagert und je nach Kontext unterschiedlich belegt. Ein und derselbe politische Akteur erscheint verschiedenen Beobachtern an völlig unterschiedlichen Positionen im Meinungsspektrum – nicht notwendigerweise aufgrund unterschiedlicher Faktenkenntnis, sondern aufgrund unterschiedlicher Koordinatensysteme der Bewertung.
+
+Dieser Text unternimmt den Versuch, dieser Unschärfe mit den Mitteln der Mathematik zu begegnen. Er definiert einen zweidimensionalen politischen Raum, aufgespannt durch die Achsen:
+
+\begin{itemize}
+    \item \textbf{Realteil \(a\):} \emph{Staatlichkeit} – von starker Institutionalisierung (\(a > 0\)) bis zu staatsferner Anarchie (\(a < 0\)).
+    \item \textbf{Imaginärteil \(b\):} \emph{Ideologische Position} auf der Achse Kommunismus (\(b > 0\), Egalität) – Faschismus (\(b < 0\), Hierarchie).
+\end{itemize}
+
+Eine politische Position wird damit als komplexe Zahl \(z = a + ib\) notiert. Diese Wahl ist nicht metaphorisch, sondern strukturell: Sie erlaubt es, Betrag (politische Intensität), Argument (Mischungsverhältnis) und vor allem die Operation der \textbf{Kontext-Rotation} \(C_\varphi(z) = e^{i\varphi} z\) mathematisch exakt zu fassen.
+
+\subsection*{Der Erkenntnisgewinn}
+
+Das Modell erhebt nicht den Anspruch, politische Wahrheiten \emph{vorzuschreiben}. Es beansprucht jedoch, eine \textbf{invariante Geometrie} des politischen Raums sichtbar zu machen, die dem tagespolitischen Streit zugrunde liegt. Insbesondere drei Aspekte treten hervor:
+
+\begin{enumerate}
+    \item \textbf{Trennung der Dimensionen:} Staatlichkeit und ideologischer Inhalt werden als orthogonale Größen behandelt. Ein System kann „viel Staat“ und „viel Kommunismus“ sein (z.\,B. \(1+i\)) oder „wenig Staat“ und „viel Faschismus“ (z.\,B. \(-1-i\)). Diese Kombinationen sind in der eindimensionalen Skala nicht abbildbar.
+    \item \textbf{Formalisierung von Perspektive:} Der Operator \(C_\varphi\) modelliert, was im öffentlichen Diskurs „Framing“ heißt. Er verändert nicht den Zustand \(z\), sondern das Koordinatensystem des Beobachters. Die mathematische Struktur erklärt, warum zwei Beobachter dasselbe Objekt strukturell unterschiedlich lokalisieren \emph{müssen} – und warum Debatten oft ohne gemeinsamen Referenzrahmen geführt werden.
+    \item \textbf{Geometrische Definition von Extremismus:} Die Lage der Idealtypen im Raum erzwingt eine natürliche Grenze zwischen gemäßigten und extremen Positionen. Diese Grenze ist kein willkürlicher Schwellwert, sondern eine Folge der inneren Metrik des Raumes selbst.
+\end{enumerate}
+
+\subsection*{Zur Lektüre}
+
+Der erste Teil (Kapitel 1--5) etabliert den statischen Raum und ordnet exemplarisch Parteien der Bundesrepublik Deutschland sowie Referenzideologien ein. Der zweite Teil (Kapitel B) erweitert das Modell zu einer \textbf{Feldtheorie des Politischen}, in der Operatoren für Egalitarismus, Hierarchie und Ordnung die Dynamik von Systemen beschreiben.
+
+Der Text setzt Vertrautheit mit der komplexen Zahlenebene voraus, nicht jedoch mit politikwissenschaftlicher Theoriebildung. Er ist eine Einladung, politische Phänomene mit einer neuen, präziseren Sprache zu beschreiben – nicht um sie zu vereinfachen, sondern um ihrer Komplexität gerecht zu werden.
+
+\vspace{1cm}
+\hfill \textit{Michael Czybor, \today}
+
+\newpage
+
 \section*{Definition des komplexen politischen Raums}
 
 Wir definieren eine komplexe Zahl
@@ -104,8 +138,8 @@ Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala
 \begin{axis}[
     title={Parteien und Referenzideologien im komplexen politischen Raum},
     title style={yshift=1.5em},
-    xlabel={\(a\): Staatlichkeit},
-    ylabel={\(b\): Ideologie},
+    xlabel={\(a\) (Staatlichkeit)},
+    ylabel={\(b\) (Ideologie)},
     xmin=-1.2, xmax=1.2,
     ymin=-1.2, ymax=1.2,
     axis lines=middle,
@@ -113,12 +147,13 @@ Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala
     ytick={-1,-0.5,0,0.5,1},
     grid=major,
     grid style={dashed,gray!50},
-    width=18cm,
-    height=16cm,
+    width=16cm,
+    height=14cm,
     enlargelimits=0.15,
     axis line style={-{Stealth[length=3mm]}},
-    xlabel style={anchor=west},
-    ylabel style={anchor=south},
+    xlabel style={anchor=west, font=\small},
+    ylabel style={anchor=south, font=\small},
+    legend style={at={(0.98,0.02)}, anchor=south east, font=\small, fill=white, fill opacity=0.8}
 ]
 
 % Farben
@@ -177,11 +212,11 @@ Die folgenden Koordinaten wurden aus programmatischen Analysen abgeleitet (Skala
 \addplot[only marks, mark=pentagon*, mark size=5pt, color=demkom] coordinates {(-0.1,0.7)};
 \node[color=demkom, anchor=west, font=\small] at (axis cs:-0.05,0.7) {Demokratischer Kommunismus};
 
-% Achsenbeschriftungen
-\node[above right, font=\small\bfseries] at (axis cs:1.1,0) {stark};
-\node[below left, font=\small\bfseries] at (axis cs:-1.1,0) {schwach};
-\node[above right, font=\small\bfseries] at (axis cs:0,1.1) {Kommunismus};
-\node[below left, font=\small\bfseries] at (axis cs:0,-1.1) {Faschismus};
+% Legende für Achsenrichtungen
+\addlegendimage{empty legend}
+\addlegendentry{\textbf{\(a>0\): starker Staat | \(a<0\): schwacher Staat}}
+\addlegendimage{empty legend}
+\addlegendentry{\textbf{\(b>0\): Kommunismus | \(b<0\): Faschismus}}
 
 \end{axis}
 \end{tikzpicture}
@@ -351,18 +386,23 @@ Systeme können entlang der imaginären Achse driften (Radikalisierung in Richtu
     \draw[->, teal!50!black, very thick, dashed] (Z) -- (-0.3, 0.4);
     \node[teal!50!black, font=\footnotesize] at (-0.1, 0.7) {\(O^{-1}(z)\)};
     \filldraw[teal!50!black] (-0.3, 0.4) circle (2pt);
-    
-    % Legende
-    \node[anchor=north west, font=\bfseries] at (-2.1, 2.0) {\Large Legende:};
-    \draw[->, red!70!black, very thick] (-2.1, 1.7) -- (-1.5, 1.7); 
-    \node[anchor=west, font=\small] at (-1.4, 1.7) {Egalitarismus \(E\) \(\rightarrow\) Kommunismus (\(+b\))};
-    \draw[->, orange!90!black, very thick] (-2.1, 1.3) -- (-1.5, 1.3); 
-    \node[anchor=west, font=\small] at (-1.4, 1.3) {Hierarchie \(H\) \(\rightarrow\) Faschismus (\(-b\))};
-    \draw[->, teal!70!black, very thick] (-2.1, 0.9) -- (-1.5, 0.9); 
-    \node[anchor=west, font=\small] at (-1.4, 0.9) {Ordnung \(O\) \(\rightarrow\) mehr Staatlichkeit (\(+a\))};
-    \draw[->, teal!50!black, very thick, dashed] (-2.1, 0.5) -- (-1.5, 0.5); 
-    \node[anchor=west, font=\small] at (-1.4, 0.5) {Deregulierung \(\rightarrow\) weniger Staatlichkeit (\(-a\))};
 \end{tikzpicture}
+\end{center}
+
+% Legende separat unter der Grafik
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\vspace{0.3cm}
+\textbf{\Large Legende:}
+\vspace{0.3cm}
+\begin{tabular}{ll}
+\textcolor{red!70!black}{\textbf{\(\boldsymbol{\rightarrow}\)}} & Egalitarismus \(E\) \(\rightarrow\) Kommunismus (\(+b\)) \\[6pt]
+\textcolor{orange!90!black}{\textbf{\(\boldsymbol{\rightarrow}\)}} & Hierarchie \(H\) \(\rightarrow\) Faschismus (\(-b\)) \\[6pt]
+\textcolor{teal!70!black}{\textbf{\(\boldsymbol{\rightarrow}\)}} & Ordnung \(O\) \(\rightarrow\) mehr Staatlichkeit (\(+a\)) \\[6pt]
+\textcolor{teal!50!black}{\textbf{\(\boldsymbol{-\!\!-\!\!\rightarrow}\)}} & Deregulierung \(\rightarrow\) weniger Staatlichkeit (\(-a\))
+\end{tabular}
+\vspace{0.3cm}
+\end{minipage}}
 \end{center}
 
 \subsection{Der Kontext-Operator \(C_\varphi\): Rotation der Bedeutung}
