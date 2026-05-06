@@ -1,0 +1,169 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{physics}
+\usepackage{csquotes}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\title{Die Wellennatur der Gravitation: Eine axiomatische Herleitung}
+\author{Michael Czybor}
+\date{Mai 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Aus den fundamentalen Begriffen Welle, Information, Störung und Kraft wird ein konsistentes Modell der Gravitation entwickelt. Die Gravitation wird als stehende Welle zwischen Massen interpretiert, deren Gradient die instantane Kraft liefert. Veränderungen dieser stehenden Welle breiten sich als Gravitationswellen mit endlicher Geschwindigkeit aus. Newtons Gravitationsgesetz und die Keplerschen Gesetze emergieren als stationärer Grenzfall. Die Allgemeine Relativitätstheorie erweist sich als überflüssig.
+\end{abstract}
+
+\section{Grundlegende Axiome}
+
+Wir formulieren fünf Axiome, die jeder physikalischen Wellenbeschreibung zugrunde liegen:
+
+\begin{enumerate}
+    \item \textbf{Welle:} Jede Welle besteht aus einem Träger (Medium oder Feld) und einer Information. Die Information kann den Wert Null annehmen (reine Trägerwelle).
+    \item \textbf{Information:} Information ist eine Störung der Welle – jede zeitliche oder räumliche Abweichung von der reinen, ungestörten Wellenform.
+    \item \textbf{Kraft:} Kraft ist der negative Gradient der Energie über den Ort:
+    \begin{equation}
+        \vec{F} = -\nabla E_{\text{pot}}
+    \end{equation}
+    \item \textbf{Informationsübertragung:} Informationsübertragung erfordert eine Störung, die sich mit endlicher, durch das Medium bestimmter Geschwindigkeit ausbreitet.
+    \item \textbf{Form des Trägers:} Die periodische Funktion, die den Träger beschreibt, kann jede beliebige Gestalt annehmen; die Natur realisiert die energetisch optimale Form.
+\end{enumerate}
+
+\section{Das Gravitationspotential als stehende Welle}
+
+\subsection{Wellengleichung für das Gravitationspotential}
+
+Im leeren Raum (keine Quellen) gehorcht ein skalares Potentialfeld \(\Phi(\vec{r},t)\) der Wellengleichung:
+
+\begin{equation}
+    \Box\, \Phi = 0, \qquad \Box = \frac{1}{c^2}\frac{\partial^2}{\partial t^2} - \nabla^2
+\end{equation}
+
+Eine ebene Welle
+
+\begin{equation}
+    \Phi(z,t) = \Phi_0 \cos(kz - \omega t)
+\end{equation}
+
+ist eine Lösung mit der Dispersionsrelation \(\omega^2 = c^2 k^2\).
+
+\subsection{Stehende Welle zwischen zwei Massen}
+
+Zwei Massen \(M_1\) und \(M_2\) im Abstand \(d\) reflektieren die Wellen; zwischen ihnen entsteht eine stehende Welle durch Überlagerung der Hin- und Rückwelle:
+
+\begin{equation}
+    \Phi(z,t) = \Phi_1 \cos(kz - \omega t) + \Phi_2 \cos(kz + \omega t)
+\end{equation}
+
+Für gleiche Amplituden \(\Phi_1 = \Phi_2 = \Phi_0\) folgt:
+
+\begin{equation}
+    \Phi(z,t) = 2\Phi_0 \cos(kz) \cos(\omega t)
+\end{equation}
+
+Dies ist die \textbf{stehende Welle} – eine reine Trägerwelle ohne Informationsgehalt.
+
+\subsection{Kraft aus dem Gradienten}
+
+Die Kraft auf eine Probemasse \(m\) ergibt sich aus dem Gradienten:
+
+\begin{equation}
+    F_z(z,t) = -m \frac{\partial \Phi}{\partial z} = -m \left( -2\Phi_0 k \sin(kz) \cos(\omega t) \right) = 2m\Phi_0 k \sin(kz) \cos(\omega t)
+\end{equation}
+
+Die Kraft existiert instantan an jedem Ort; die stehende Welle muss nicht erst \enquote{ankommen}.
+
+\section{Übergang zum statischen Newton-Potential}
+
+\subsection{Der langwellige Grenzfall}
+
+Für sehr lange Wellenlängen \(\lambda \gg d\) (also \(k \to 0\)) wird die stehende Welle ortsunabhängig. Energetische Optimierung führt zu einem Potential der Form:
+
+\begin{equation}
+    \Phi_{\text{eff}}(r) = -\frac{GM}{r}
+\end{equation}
+
+Dabei ist \(r\) der Abstand von der Masse, die das Feld dominiert. Dies ist das bekannte Newton-Potential.
+
+\subsection{Herleitung aus dem Gradienten}
+
+Der Gradient des Newton-Potentials liefert das Newtonsche Gravitationsgesetz:
+
+\begin{equation}
+    \vec{F} = -m \nabla \Phi_{\text{eff}} = -m \left( \frac{GM}{r^2} \hat{r} \right) = -\frac{GMm}{r^2} \hat{r}
+\end{equation}
+
+Die Keplerschen Gesetze folgen daraus in der üblichen Weise.
+
+\section{Gravitationswellen als Störungen}
+
+\subsection{Veränderung der stehenden Welle}
+
+Wenn sich die Massen relativ zueinander bewegen (z. B. bei einer Verschmelzung), ändert sich die stehende Welle. Diese \textbf{Änderung} ist eine Störung des vorher stationären Zustands:
+
+\begin{equation}
+    \delta\Phi(\vec{r},t) = \Phi(\vec{r},t) - \Phi_{\text{stat}}(\vec{r})
+\end{equation}
+
+Diese Störung breitet sich als laufende Welle aus mit der endlichen Geschwindigkeit \(c\):
+
+\begin{equation}
+    \Box\, \delta\Phi = 0
+\end{equation}
+
+\subsection{Fundamentaler Unterschied zur ART}
+
+Die Allgemeine Relativitätstheorie behauptet, dass sich die \textbf{Kraft selbst} mit Lichtgeschwindigkeit ausbreitet. Das ist ein Kategorienfehler:
+
+\begin{itemize}
+    \item Die \textbf{Kraft} ist der Gradient einer stehenden Welle und wirkt instantan.
+    \item Nur die \textbf{Störung} dieser Welle (also die Information \enquote{die Quelle bewegt sich}) breitet sich mit \(c\) aus.
+\end{itemize}
+
+Die beobachteten Gravitationswellen (z. B. GW170817) beweisen daher nicht die ART, sondern lediglich die endliche Ausbreitungsgeschwindigkeit von \textit{Veränderungen}.
+
+\section{Periheldrehung des Merkur}
+
+Bereits 1882 zeigte Tisserand, dass eine instantane, geschwindigkeits- und beschleunigungsabhängige Weber-Gravitation die beobachtete Periheldrehung exakt reproduziert:
+
+\begin{equation}
+    \Delta\phi = \frac{6\pi GM}{c^2 a(1-e^2)}
+\end{equation}
+
+Dabei ist \(a\) die große Halbachse, \(e\) die Exzentrizität. Dies geschieht ohne Raumzeitkrümmung, ohne Äquivalenzprinzip und ohne Ausbreitung mit \(c\).
+
+Die Periheldrehung ist also \textbf{kein Privileg der ART}, sondern ein Effekt, der bereits in instantanen Theorien enthalten ist.
+
+\section{Kompatibilität mit Kepler und Newton}
+
+Für stabile Systeme wie das Sonnensystem gilt:
+
+\begin{itemize}
+    \item Die stehende Welle zwischen Sonne und Planet ist stationär.
+    \item Ihr Gradient liefert die Newton-Kraft.
+    \item Die Abweichungen (Periheldrehung) sind klein und durch die Weber-Terme beschrieben.
+    \item Gravitationswellen sind so winzig, dass sie keine messbare Rolle spielen.
+\end{itemize}
+
+Das Modell ist daher mit allen Beobachtungen kompatibel, die Newton und Kepler bestätigen. Die ART wird nicht benötigt.
+
+\section{Zusammenfassung}
+
+Aus den einfachen Axiomen von Welle, Information, Störung und Kraft folgt:
+
+\begin{enumerate}
+    \item Gravitation ist eine stehende Welle zwischen Massen.
+    \item Die Kraft ist der Gradient dieser Welle und wirkt instantan.
+    \item Veränderungen (Gravitationswellen) breiten sich mit \(c\) aus.
+    \item Newtons Gravitationsgesetz emergiert als statischer Grenzfall.
+    \item Die Periheldrehung ist bereits in instantanen Theorien enthalten.
+\end{enumerate}
+
+Die Allgemeine Relativitätstheorie ist daher physikalisch nicht notwendig. Ihre scheinbaren Erfolge beruhen auf einer Verwechslung von Kraft und Informationsübertragung.
+
+\end{document}
