@@ -1,0 +1,14 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{Präambel}{1}{}%
+\contentsline {section}{\numberline {1}Instanz}{2}{}%
+\contentsline {section}{\numberline {2}Eigentum}{2}{}%
+\contentsline {section}{\numberline {3}Größen}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Einnahmen \( E \)}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Kosten mit Gegenwert \( K_G \)}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Deklarierte Investitionen \( I_D \)}{2}{}%
+\contentsline {subsection}{\numberline {3.4}Lebenshaltungskosten \( L \)}{3}{}%
+\contentsline {subsection}{\numberline {3.5}Schädlicher Gewinn \( G_S \)}{3}{}%
+\contentsline {section}{\numberline {4}Steuersatz und Erhebung}{3}{}%
+\contentsline {section}{\numberline {5}Reibung}{3}{}%
+\contentsline {section}{\numberline {6}Der Staat als Instanz}{3}{}%
+\contentsline {section}{\numberline {7}Referenzgröße}{4}{}%

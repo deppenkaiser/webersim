@@ -1,0 +1,185 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Encoding and Language ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+% --- Layout and Font ---
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{
+  left=3cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=2.5cm
+}
+\usepackage{setspace}
+\onehalfspacing
+
+% --- Math ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% --- Headers and Titles ---
+\usepackage{titlesec}
+\titleformat{\section}[hang]{\LARGE\bfseries}{\S~\thesection}{1em}{}
+\titleformat{\subsection}[hang]{\Large\bfseries}{(\arabic{subsection})}{1em}{}
+
+% --- Header / Footer ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Allgemeines Gesetz zur Abschöpfung schädlichen Gewinns (ASG)}
+\fancyhead[R]{\small Version 1.0}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+% --- Title Page ---
+\begin{titlepage}
+\centering
+\vspace*{3cm}
+
+{\Huge\bfseries Allgemeines Gesetz\par}
+\vspace{0.5cm}
+{\Huge\bfseries zur\par}
+\vspace{0.5cm}
+{\Huge\bfseries Abschöpfung schädlichen Gewinns\par}
+\vspace{1cm}
+{\LARGE (ASG)\par}
+
+\vspace{2cm}
+
+{\large Ein Steuergesetz nach physikalischen Prinzipien\par}
+
+\vspace{2cm}
+
+{\Large\textsc{Michael Czybor}\par}
+
+\vfill
+
+{\large \today\par}
+\vspace{1cm}
+\end{titlepage}
+
+% --- Preamble ---
+\section*{Präambel}
+\addcontentsline{toc}{section}{Präambel}
+
+Steuer ist Strafe. Bestraft wird ausschließlich schädigendes Verhalten. Positiver Beitrag zur Gesellschaft -- Arbeit und Produktion -- bleibt straffrei. Alle Instanzen sind vor diesem Gesetz gleich.
+
+\tableofcontents
+\newpage
+
+% --- § 1 ---
+\section{Instanz}
+
+\begin{enumerate}
+  \item[(1)] Instanz ist jedes abgrenzbare System, das ökonomische Flüsse empfängt und abgibt.
+  
+  \item[(2)] Alle Instanzen sind vor diesem Gesetz identisch. Es gibt keine Unterscheidung nach Rechtsform, Herkunft oder sonstigen Merkmalen.
+  
+  \item[(3)] Jede Instanz besitzt genau eine Bilanz. Durchgriff ist jederzeit möglich. Abschirmung durch Subsysteme ist unzulässig.
+\end{enumerate}
+
+% --- § 2 ---
+\section{Eigentum}
+
+\begin{enumerate}
+  \item[(1)] Alles Eigentum ist ursprünglich und grundsätzlich Allgemeinbesitz.
+  
+  \item[(2)] Privatbesitz bedarf demokratischer Legitimation. Er wird einer Instanz durch die Gesellschaft befristet oder an Bedingungen geknüpft zur Nutzung zugewiesen.
+  
+  \item[(3)] Natürliche Ressourcen (Boden, Rohstoffe, Wasser, Luft und vergleichbare) sind unveräußerlicher Allgemeinbesitz. Ihre Nutzung durch eine Instanz erfordert ein Entgelt an die übergeordnete Instanz, das als \textit{Kosten mit Gegenwert} (\S~3) gilt.
+  
+  \item[(4)] Ungenutzter Privatbesitz, der knappe Ressourcen bindet, kann von der Gesellschaft rückgefordert werden.
+\end{enumerate}
+
+% --- § 3 ---
+\section{Größen}
+
+\subsection{Einnahmen \( E \)}
+
+Alle Werte, die der Instanz in der Steuerperiode (ein Sonnenumlauf) von außen zufließen, gleich welcher Art, Herkunft oder Bezeichnung. Erbschaften und Schenkungen sind Einnahmen der empfangenden Instanz.
+
+\subsection{Kosten mit Gegenwert \( K_G \)}
+
+Alle Werte, die die Instanz abgibt und für die sie einen realen, physisch existenten Gegenwert erhält. Darunter fallen insbesondere Arbeitsleistung Dritter, Material, Energie, legitime Dienstleistungen, Kreditzinsen sowie Entgelte für die Nutzung natürlicher Ressourcen.
+
+\subsection{Deklarierte Investitionen \( I_D \)}
+
+Gewinne, die am Periodenende für eine exakt determinierte künftige Investition gebunden werden. Die Deklaration erfolgt vor Periodenende mit Betrag, Zweck und Zeitrahmen.
+
+Wird die Investition getätigt, mindert sie künftige \( G_S \) als dann anfallende \( K_G \). Wird sie nicht oder abweichend getätigt, fällt der Betrag rückwirkend in \( G_S \), zuzüglich Strafzuschlag. Scheitert die Investition ohne Verschulden, gilt dies als Reibung (\S~5) und bleibt straffrei.
+
+\subsection{Lebenshaltungskosten \( L \)}
+
+Der Teil des Gewinns, den eine Instanz zur Deckung ihrer physischen und sozialen Existenz entnimmt. Die zulässige Höhe wird demokratisch durch die Gesellschaft festgelegt und periodisch überprüft. \( L \) ist tolerierte Entnahme und kein schädlicher Gewinn.
+
+\subsection{Schädlicher Gewinn \( G_S \)}
+
+\begin{equation}
+\boxed{G_S = E - K_G - I_D - L}
+\end{equation}
+
+Nur \( G_S > 0 \) ist schädlich. \( G_S \leq 0 \) ist unschädlich und wird nicht erstattet.
+
+% --- § 4 ---
+\section{Steuersatz und Erhebung}
+
+\begin{enumerate}
+  \item[(1)] Der Steuersatz auf schädlichen Gewinn beträgt \( 1{,}0 \) (100\,\%).
+  
+  \item[(2)] Die Steuerschuld entsteht mit Ablauf der Periode und ist sofort fällig.
+  
+  \item[(3)] Steuerhinterziehung (Verschleiern von \( E \), Vortäuschen von \( K_G \) oder \( I_D \)) gilt als schwerwiegender Verstoß. Sanktion: zusätzliche Abschöpfung über \( L \) hinaus bis hin zum temporären Entzug des Entnahmerechts für \( L \).
+\end{enumerate}
+
+% --- § 5 ---
+\section{Reibung}
+
+\begin{enumerate}
+  \item[(1)] Reibung ist der unvermeidbare Verlust von Wert ohne Gegenwert (gescheiterte Investitionen, Materialverlust, Fehlkalkulation).
+  
+  \item[(2)] Reibung wird steuerlich nicht bestraft. Sie geht zu Lasten der Instanz.
+  
+  \item[(3)] Wiederholtes systematisches Ausnutzen des Reibungsprivilegs ohne plausible Bemühung um Gegenwert kann als Scheinverhalten bestraft werden.
+\end{enumerate}
+
+% --- § 6 ---
+\section{Der Staat als Instanz}
+
+\begin{enumerate}
+  \item[(1)] Der Staat ist eine Instanz im Sinne des \S~1 und unterliegt sämtlichen Vorschriften dieses Gesetzes.
+  
+  \item[(2)] Die abgeschöpfte Steuer aller Instanzen bildet seine Einnahmen \( E \).
+  
+  \item[(3)] Der Staat darf ausschließlich \( K_G \) und \( I_D \) tätigen. Für ihn gilt kein \( L \).
+  
+  \item[(4)] Jeglicher Überschuss des Staates (\( E - K_G - I_D > 0 \)) ist schädlicher Gewinn und muss zwingend durch Senkung künftiger Abschöpfungen oder Erhöhung der Investitionen eliminiert werden. Der Staat darf keinen Gewinn thesaurieren.
+  
+  \item[(5)] Der Staat finanziert aus seinen Einnahmen allgemein nützliche Aufgaben. Diese unterliegen denselben Anforderungen an Gegenwert und Wirksamkeit.
+\end{enumerate}
+
+% --- § 7 ---
+\section{Referenzgröße}
+
+\begin{enumerate}
+  \item[(1)] Alle Größen \( E \), \( K_G \), \( I_D \), \( L \) werden in einer einheitlichen, stabilen Referenzgröße gemessen, die reale Ressourcenverfügbarkeit abbildet.
+  
+  \item[(2)] Die Referenzgröße wird demokratisch festgelegt und regelmäßig auf ihre Stabilität überprüft.
+  
+  \item[(3)] Bewertungsarbitrage durch Wechsel zwischen Referenzgrößen ist unzulässig.
+\end{enumerate}
+
+\vspace{1cm}
+\hrule
+\vspace{0.5cm}
+\begin{center}
+\textit{Sieben Paragraphen. Eine Gleichung. Null Ausnahmen.}
+\end{center}
+
+\end{document}
