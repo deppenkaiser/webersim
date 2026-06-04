@@ -1,0 +1,157 @@
+\chapter{Diskrete Informationsdynamik}
+
+\section{Der diskrete Informationszustand}
+
+Die IWT beschreibt jeden physikalischen Zustand durch eine diskrete Informationsverteilung. Diese wird durch eine skalare Dichtesequenz
+
+\[
+I_k^{(n)}
+\]
+
+repräsentiert, die angibt, wie viel strukturierte Information am Netzwerkknoten \( k \) zum Zeitschritt \( n \) vorliegt.
+
+Dabei ist:
+
+\begin{itemize}
+    \item \( k \in \{1, 2, \dots, N\} \) – Index der diskreten Informationszelle (Knoten),
+    \item \( n \in \mathbb{N}_0 \) – diskreter Zeitindex (Zeitschrift),
+    \item \( I_k^{(n)} \in \mathbb{R}^+ \) – Informationswert (skalar, dimensionslos).
+\end{itemize}
+
+Im Gegensatz zu klassischen Feldern besitzt \( I_k^{(n)} \) keine materielle Bedeutung. Sie beschreibt weder Masse noch Ladung oder Energie, sondern die Organisation eines physikalischen Systems. Energie, Impuls und andere Größen entstehen erst als abgeleitete Funktionale dieser Informationsstruktur.
+
+\section{Diskrete Informationserhaltung}
+
+Analog zur Kontinuitätsgleichung der klassischen Physik wird der Informationsfluss durch diskrete Differenzengleichungen beschrieben. Die fundamentale Erhaltungsgleichung im diskreten Netz lautet:
+
+\[
+\sum_{k \in \mathcal{N}(l)} \left( I_k^{(n+1)} - I_k^{(n)} \right) + \sum_{m \in \partial \mathcal{N}(l)} J_{lm}^{(n)} = 0,
+\]
+
+wobei:
+
+\begin{itemize}
+    \item \( \mathcal{N}(l) \) – Menge der Nachbarknoten von \( l \),
+    \item \( \partial \mathcal{N}(l) \) – Rand des Nachbarschaftsbereichs,
+    \item \( J_{lm}^{(n)} \) – Informationsfluss von Knoten \( l \) zu \( m \) in Zeitschritt \( n \).
+\end{itemize}
+
+Diese Gleichung ist das diskrete Herzstück der Theorie: Sie ersetzt die kontinuierliche Energieerhaltung durch eine diskrete Informationserhaltung. Die gesamte Dynamik ergibt sich aus der rekursiven Umlagerung von Information zwischen Netzwerkknoten.
+
+\section{Information als Ursprung physikalischer Größen}
+
+In der diskreten IWT entstehen physikalische Größen als Funktionale der Informationsverteilung \( I_k^{(n)} \).
+
+\subsection{Diskrete Energie}
+
+Die Energie am Knoten \( k \) zum Zeitpunkt \( n \) ist:
+
+\[
+E_k^{(n)} = \alpha \left( I_k^{(n)} - I_k^{(n-1)} \right)^2 + \beta \sum_{l \in \mathcal{N}(k)} \left( I_k^{(n)} - I_l^{(n)} \right)^2,
+\]
+
+mit Kopplungskonstanten \( \alpha, \beta \).
+
+\subsection{Diskreter Impuls}
+
+Der Impulsfluss zwischen Knoten \( k \) und \( l \) ist:
+
+\[
+p_{kl}^{(n)} = \gamma \left( I_k^{(n)} - I_k^{(n-1)} \right) \left( I_l^{(n)} - I_l^{(n-1)} \right),
+\]
+
+mit Kopplungskonstante \( \gamma \).
+
+\subsection{Diskrete Masse (Trägheit)}
+
+Die effektive Masse am Knoten \( k \) ist:
+
+\[
+m_k^{(n)} = \delta \sum_{l \in \mathcal{N}(k)} \left( I_k^{(n)} - I_l^{(n)} \right)^2,
+\]
+
+mit Kopplungskonstante \( \delta \). Sie misst den Widerstand gegen Änderungen der lokalen Informationsstruktur.
+
+Damit wird die klassische Unterscheidung zwischen Materie, Feldern und Geometrie aufgehoben: Alles entsteht aus einer einzigen fundamentalen diskreten Größe – der Information.
+
+\section{Dynamik als diskreter Informationsfluss}
+
+Die Bewegungsgleichungen eines Systems ergeben sich aus der rekursiven Umlagerung von Information. Die Theorie unterscheidet zwei komplementäre diskrete Dynamikformen:
+
+\begin{itemize}
+    \item \textbf{Lokale diskrete Dynamik:} beschrieben durch die diskrete Weber-Kraft,
+    \item \textbf{Globale diskrete Dynamik:} beschrieben durch das diskrete Bohm-Potential.
+\end{itemize}
+
+Diese beiden Strukturen sind keine konkurrierenden Modelle, sondern zwei Projektionen derselben diskreten Informationsdynamik.
+
+\subsection{Lokale diskrete Dynamik: Diskrete Weber-Kraft}
+
+Die diskrete Weber-Kraft beschreibt lokale Informationsflüsse zwischen benachbarten Knoten. Für zwei wechselwirkende Knotengruppen \( A \) und \( B \) lautet sie:
+
+\[
+\vec{F}_{AB}^{(n)} = \frac{q_A q_B}{4\pi\varepsilon_0 (r_{AB}^{(n)})^2} \left[ 1 - \frac{1}{c^2} \left( \frac{r_{AB}^{(n)} - r_{AB}^{(n-1)}}{T} \right)^2 + \frac{2 r_{AB}^{(n)}}{c^2} \cdot \frac{r_{AB}^{(n+1)} - 2r_{AB}^{(n)} + r_{AB}^{(n-1)}}{T^2} \right] \hat{r}_{AB}^{(n)}.
+\]
+
+Eigenschaften:
+
+\begin{enumerate}
+    \item Explizit rekursiv: Berechnet \( r^{(n+1)} \) aus \( r^{(n)} \) und \( r^{(n-1)} \),
+    \item Nicht-zirkulär: Keine implizite Abhängigkeit \( F = f(\vec{r}) \) mit \( \vec{r} = F/m \),
+    \item Lokal: Nur Nachbarkopplungen,
+    \item Feldlos: Benötigt keine kontinuierlichen Felder.
+\end{enumerate}
+
+\subsection{Globale diskrete Dynamik: Diskrete Bohm-Struktur}
+
+Das diskrete Bohm-Potential beschreibt die systemische, nicht-lokale Organisation des Informationszustands. Im diskreten Netz lautet es:
+
+\[
+Q_k^{(n)} = -\frac{\hbar^2}{2m} \frac{\Delta_d^2 \sqrt{I_k^{(n)}}}{\sqrt{I_k^{(n)}}},
+\]
+
+mit dem diskreten Laplace-Operator:
+
+\[
+\Delta_d^2 f_k = \sum_{l \in \mathcal{N}(k)} (f_l - f_k).
+\]
+
+Eigenschaften:
+
+\begin{enumerate}
+    \item Global: Wirkt über das gesamte Netz,
+    \item Instantan: Keine Retardierung,
+    \item Nicht-energetisch: Transportiert keine Energie,
+    \item Organisierend: Optimiert die Gesamtstruktur.
+\end{enumerate}
+
+\subsection{Die digitale WDBT als fundamentales Netzwerk}
+
+Die digitale WDBT beschreibt die Gesamtwirkung auf einen Knoten \( k \) durch drei diskrete Beiträge:
+
+\[
+F_k^{(n)} = F_{\text{WED},k}^{(n)} + F_{\text{WG},k}^{(n)} + F_{Q,k}^{(n)},
+\]
+
+wobei:
+
+\begin{itemize}
+    \item \( F_{\text{WED},k}^{(n)} \) – diskrete Weber-Elektrodynamik (Ladungen),
+    \item \( F_{\text{WG},k}^{(n)} \) – diskrete Weber-Gravitation (Massen),
+    \item \( F_{Q,k}^{(n)} \) – diskrete Bohm-Struktur (globale Organisation).
+\end{itemize}
+
+Diese digitale Theorie besitzt kein vorgegebenes Raummodell. Der Raum emergiert aus der Kopplungsstruktur \( K_{kl}^{(n)} \).
+
+\section{Zusammenfassung}
+
+Die diskrete Informationsdynamik der IWT basiert auf:
+
+\begin{itemize}
+    \item einem diskreten Informationszustand \( I_k^{(n)} \) als Grundgröße,
+    \item einer diskreten Erhaltungsgleichung für Information,
+    \item einer zweistufigen Dynamik: lokal (Weber-Kraft) und global (Bohm-Potential),
+    \item der Emergenz von Raum, Zeit, Energie, Impuls und Masse aus der Informationsstruktur.
+\end{itemize}
+
+Damit ist die fundamentale Dynamik der IWT vollständig definiert, ohne Rückgriff auf kontinuierliche Felder oder eine vorgegebene Raumzeit.

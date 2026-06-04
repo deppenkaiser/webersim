@@ -1,0 +1,253 @@
+\chapter{Wirbelstruktur, Maxwell-Gravitation und \( \Omega \)-Theorie}
+
+\section{Einleitung}
+
+Die Weber-Gravitation (WG) enthält in ihrem geschwindigkeitsabhängigen Term eine implizite Wirbelstruktur, die bei geeigneter Interpretation direkt zu den Gleichungen der Maxwell-Gravitation (MG) führt. Die Dynamische Schwere-Trägheits-Theorie (DSTT) liefert die energetische Interpretation dieser Wirbel und vermittelt zwischen der differentiellen Kraftbeschreibung der WG und der integralen Feldbeschreibung der MG.
+
+Die \( \Omega \)-Theorie ist die natürliche Feldtheorie, die aus dieser Maxwell-Gravitation emergiert. Sie basiert auf der Idee, dass **Rotation elementar ist, nicht Krümmung** – eine Alternative zur Raumzeitkrümmung der Allgemeinen Relativitätstheorie (ART).
+
+\section{Die Wirbelstruktur der Weber-Gravitation}
+
+\subsection{Der geschwindigkeitsabhängige Term}
+
+Der für die Wirbelstruktur entscheidende Term in der WG ist:
+
+\[
+\vec{F}_{\text{tan}} = -\frac{GMm}{r^2} \cdot \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v}
+\]
+
+Dieser Term hat folgende Eigenschaften:
+
+\begin{itemize}
+    \item Er ist nicht-zentral: seine Richtung hängt von \( \vec{v} \) ab, nicht nur von \( \vec{r} \)
+    \item Er ist geschwindigkeitsabhängig (linear in \( \vec{v} \) für jede Komponente)
+    \item Er besitzt eine nichtverschwindende Rotation (Wirbelstärke)
+    \item Er ist analog zum geschwindigkeitsabhängigen Term in der Weber-Elektrodynamik
+\end{itemize}
+
+\subsection{Die Wirbeldichte der WG}
+
+Definiere die Wirbeldichte (Rotation) des Kraftfeldes:
+
+\[
+\vec{\omega} = \nabla \times \vec{F}_{\text{WG}} = \nabla \times (\vec{F}_{\text{rad}} + \vec{F}_{\text{tan}})
+\]
+
+Der radiale Anteil \( \vec{F}_{\text{rad}} \) ist ein Zentralfeld und hat keine Rotation (\( \nabla \times \vec{F}_{\text{rad}} = 0 \)). Die gesamte Wirbelstärke kommt vom tangentialen Anteil:
+
+\[
+\vec{\omega} = \nabla \times \vec{F}_{\text{tan}} = -\frac{2GMm}{c^2} \nabla \times \left( \frac{(\dot{r} \cdot \vec{v}) \vec{v}}{r^2} \right)
+\]
+
+Nach Ausführung der Rotation ergibt sich:
+
+\[
+\boxed{\vec{\omega} = \frac{6GMm}{c^2 r^3} (\hat{r} \cdot \vec{v})(\hat{r} \times \vec{v})}
+\]
+
+Dies ist die fundamentale Wirbelstruktur der WG. Sie hat folgende Eigenschaften:
+
+\begin{itemize}
+    \item \( \vec{\omega} \) ist proportional zu \( 1/r^3 \) – wie ein Dipolfeld
+    \item \( \vec{\omega} \) ist senkrecht zu \( \vec{r} \) und \( \vec{v} \) (wegen \( \hat{r} \times \vec{v} \))
+    \item \( \vec{\omega} \) verschwindet, wenn \( \vec{v} \parallel \hat{r} \) (rein radiale Bewegung) oder \( \vec{v} \perp \hat{r} \) (reine Tangentialbewegung mit \( \hat{r} \cdot \vec{v} = 0 \))
+    \item Maximale Wirbelstärke bei \( \hat{r} \cdot \vec{v} = \pm |\vec{v}|/\sqrt{2} \) (45°-Bahnneigung)
+\end{itemize}
+
+\section{Von der WG zur Maxwell-Gravitation}
+
+\subsection{Identifikation des Vektorpotentials}
+
+Vergleiche den tangentialen Term \( \vec{F}_{\text{tan}} \) mit der Lorentz-Kraft \( \vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) \). Der Term \( 2(\dot{r} \cdot \vec{v}) \vec{v} \) legt nahe, ein effektives Vektorpotential einzuführen:
+
+\[
+\vec{A}_g = \frac{2GM}{c^2 r} \vec{v}_q
+\]
+
+wobei \( \vec{v}_q \) die Geschwindigkeit der Quelle ist.
+
+\subsection{Das gravito-magnetische Feld}
+
+Definiere das gravito-magnetische Feld als Rotation des Vektorpotentials:
+
+\[
+\vec{B}_g = \nabla \times \vec{A}_g
+\]
+
+Für eine Punktmasse mit konstanter Geschwindigkeit \( \vec{v}_q \) ergibt sich:
+
+\[
+\vec{B}_g = \frac{2G}{c^2} \cdot \frac{\vec{v}_q \times \vec{r}}{r^3}
+\]
+
+Dies ist exakt der gravito-magnetische Dipolterm, der aus der ART als Lense-Thirring-Effekt bekannt ist.
+
+\subsection{Das gravito-elektrische Feld}
+
+Definiere das gravito-elektrische Feld aus dem radialen Anteil der WG:
+
+\[
+\vec{E}_g = -\frac{GM}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta \frac{r\ddot{r}}{c^2} \right] \hat{r} + \text{Terme aus } \vec{A}_g
+\]
+
+Im statischen Limes (\( \dot{r} = 0, \ddot{r} = 0 \)) vereinfacht sich dies zu:
+
+\[
+\vec{E}_g = -\frac{GM}{r^2} \hat{r}
+\]
+
+\section{Die Maxwell-Gleichungen der Gravitation}
+
+Mit diesen Definitionen ergeben sich die Maxwell-Gleichungen der Gravitation:
+
+\[
+\begin{aligned}
+\nabla \cdot \vec{E}_g &= -4\pi G\rho + \mathcal{O}(v^2/c^2) \\
+\nabla \cdot \vec{B}_g &= 0 \\
+\nabla \times \vec{E}_g &= -\frac{\partial \vec{B}_g}{\partial t} + \mathcal{O}(v^2/c^2) \\
+\nabla \times \vec{B}_g &= \frac{4\pi G}{c^2} \vec{j} + \frac{1}{c^2} \frac{\partial \vec{E}_g}{\partial t} + \mathcal{O}(v^2/c^2)
+\end{aligned}
+\]
+
+Im Grenzfall verschwindender Korrekturen (\( v/c \to 0 \)) gehen sie in die bekannten Maxwell-Gleichungen der Gravitation über.
+
+\section{Die Rolle der DSTT als Vermittler}
+
+Die DSTT liefert die energetische Interpretation der Wirbelstruktur. Die Zustandsvariable
+
+\[
+\beta_{\text{DSTT}}(t) = \frac{E_B}{E} = \frac{\frac{1}{2}mr^2\dot{\phi}^2}{\frac{1}{2}m\dot{r}^2 + \frac{1}{2}mr^2\dot{\phi}^2}
+\]
+
+beschreibt die Aufteilung der Energie in radiale und tangentiale Komponenten. Diese Aufteilung ist direkt mit der Wirbeldichte verknüpft:
+
+\[
+|\vec{\omega}| = \frac{2GM}{c^2 r^2} \cdot \frac{\dot{\beta}_{\text{DSTT}}}{1 - \dot{\beta}_{\text{DSTT}}} \cdot \frac{r\dot{\phi}}{\dot{r}} + \mathcal{O}(v^2/c^2) \quad (\text{für } \dot{r} \neq 0)
+\]
+
+Diese Beziehung zeigt:
+
+\begin{itemize}
+    \item Die Wirbeldichte ist proportional zu \( \dot{\beta}_{\text{DSTT}} \) – die zeitliche Änderung der Energieaufteilung erzeugt Wirbel
+    \item Für \( \dot{\beta}_{\text{DSTT}} = 0 \) (Elektrodynamik) verschwindet die Wirbeldichte im Rahmen dieser Näherung
+    \item Die DSTT verbindet die **differentielle** Beschreibung (Wirbel) mit der **integralen** Beschreibung (Energieaufteilung)
+\end{itemize}
+
+\section{Die \( \Omega \)-Theorie der Gravitation}
+
+Die \( \Omega \)-Theorie ist die natürliche Feldtheorie, die aus der Maxwell-Gravitation emergiert. Sie basiert auf der Idee, dass **Rotation elementar ist, nicht Krümmung**.
+
+\subsection{Axiome der \( \Omega \)-Theorie}
+
+\subsubsection{Axiom 1: Nicht-Lokalität und Instantaneität}
+
+Die Gravitationswirkung ist nicht-lokal und instantan. Es gibt keine Ausbreitung mit endlicher Geschwindigkeit; die Wechselwirkung ist simultan. Dies ist direkte Konsequenz der feldlosen Weber-Wechselwirkung der WDBT+.
+
+\subsubsection{Axiom 2: Das Rotationsfeld}
+
+Die Gravitation wird durch ein fundamentales, axiales Vektorfeld \( \vec{\Omega}(\vec{r}, t) \) beschrieben. Dieses Feld kodiert die lokale Rotationsdichte des Raumes und ist die Ursache für alle geschwindigkeitsabhängigen (tangentialen) Trägheitseffekte.
+
+\subsubsection{Axiom 3: Aufspaltung von Ursache und Wirkung}
+
+Die Schwere (Ursache) und die Trägheit (Wirkung) sind fundamental verschieden. Die radiale Anziehung wird durch ein skalares Potential \( \Phi(\vec{r}, t) \) beschrieben, die tangentialen Trägheitskräfte durch das Rotationsfeld \( \vec{\Omega}(\vec{r}, t) \).
+
+\subsubsection{Axiom 4: DSTT-Kompatibilität}
+
+Die Theorie ist so konstruiert, dass aus ihr die Existenz einer Zustandsvariablen \( \beta(\vec{r}, t) \) folgt, die das lokale Verhältnis von tangentialer zu gesamter Trägheit angibt, und für die \( \dot{\beta} > 0 \) gilt. Dies verleiht der Gravitation einen intrinsischen Zeitpfeil.
+
+\subsection{Die Feldgleichungen der \( \Omega \)-Theorie}
+
+Die Felder werden nicht-lokal und instantan aus den Quellen erzeugt. Im Vakuum (außerhalb der Quellen) gehorchen sie formal den Maxwell-Gleichungen:
+
+\[
+\begin{aligned}
+\nabla \cdot \vec{\Omega} &= 0 \\
+\nabla \times \vec{\Omega} &= \frac{4\pi G}{c^2} \vec{j} + \frac{1}{c^2} \frac{\partial}{\partial t} (-\nabla \Phi) \\
+\nabla \cdot (-\nabla \Phi) &= -4\pi G\rho \\
+\nabla \times (-\nabla \Phi) &= -\frac{\partial \vec{\Omega}}{\partial t}
+\end{aligned}
+\]
+
+Es ist jedoch entscheidend zu betonen, dass diese Differentialgleichungen hier nicht fundamental sind, sondern eine alternative Schreibweise der nicht-lokalen Integralgleichungen darstellen. Die wahre Natur der Theorie ist die der instantanen, integralen Wechselwirkung.
+
+\subsection{Omega-Wellen: Gravitationswellen in der \( \Omega \)-Theorie}
+
+Die \( \Omega \)-Theorie sagt Gravitationswellen voraus – aber sie unterscheiden sich fundamental von denen der ART:
+
+\begin{itemize}
+    \item **Fundamentale Natur:** Omega-Wellen sind instantan korrelierte, kollektive Schwingungen des \( \vec{\Omega} \)-Feldes und der Massenverteilung.
+    \item **Ausbreitung:** Keine Ausbreitungsverzögerung (fundamental), aber durch die fraktale Raumdimension \( D \) emergiert auf großen Skalen eine effektive Retardierung mit \( c \).
+    \item **Lokalität:** Nicht-lokal (fundamental), aber effektiv lokal auf großen Skalen.
+    \item **Polarisation:** Axial (wirbelartig), nicht transversal wie bei ART-Wellen.
+\end{itemize}
+
+Die effektive Wellengleichung auf makroskopischen Skalen lautet:
+
+\[
+\square \vec{\Omega}_{\text{eff}} = \frac{4\pi G}{c^2} \vec{j}_{\text{eff}} + \mathcal{O}\left(\frac{1}{D-3}\right)
+\]
+
+Die ART ist in dieser Sicht der Grenzfall \( D \to 3 \).
+
+\subsection{Testbare Vorhersagen}
+
+Die Theorie macht spezifische, von der ART abweichende Vorhersagen:
+
+\begin{enumerate}
+    \item **Frequenzabhängige Geschwindigkeit:**
+    \[
+    v_{\text{phase}}(\omega) = c \left( 1 + \alpha \left( \frac{\omega}{\omega_0} \right)^{D-3} + \dots \right)
+    \]
+    Mit \( D \approx 2,704 \) ist \( D-3 \approx -0,296 \), also eine schwache Dispersion.
+
+    \item **Fraktales Spektrum:** Die Leistungsverteilung skaliert mit \( P(\omega) \sim \omega^{-\beta} \), \( \beta \approx 0,7 \).
+
+    \item **Nicht-lokale Korrelationen:** Bei Verschmelzungsereignissen sollten instantane Korrelationen zwischen weit entfernten Detektoren auftreten.
+
+    \item **Abweichungen bei hohen Frequenzen:** Oberhalb einer kritischen Frequenz weichen die Signale systematisch von ART-Vorhersagen ab.
+\end{enumerate}
+
+\section{Zusammenfassung der Zusammenhänge}
+
+Die folgende Tabelle fasst die verschiedenen Ebenen und ihre Verbindungen zusammen:
+
+\[
+\begin{array}{|l|l|l|}
+\hline
+\text{Ebene} & \text{Größe} & \text{Zusammenhang} \\
+\hline
+\text{WG (Kraft)} & F_{\text{tan}} \propto (\dot{r} \cdot \vec{v})\vec{v} & \text{Enthält Wirbelterm} \\
+\text{Wirbeldichte} & \vec{\omega} = \nabla \times \vec{F}_{\text{WG}} & \text{Charakterisiert Rotation} \\
+\text{Vektorpotential} & \vec{A}_g = \frac{2GM}{c^2 r} \vec{v}_q & \text{Emergiert aus WG} \\
+\text{gravito-magnetisches Feld} & \vec{B}_g = \nabla \times \vec{A}_g & \text{Lense-Thirring-Effekt} \\
+\text{Maxwell-Gleichungen} & \nabla \cdot \vec{B}_g = 0,\; \nabla \times \vec{B}_g = \frac{4\pi G}{c^2} \vec{j} + \ldots & \text{Emergieren im Kontinuumslimes} \\
+\text{DSTT} & \beta(t) = E_B/E & \text{Energetische Interpretation der Wirbel} \\
+\dot{\beta}\text{-Relation} & |\vec{\omega}| \propto \dot{\beta}/(1-\beta) & \text{Verbindet Wirbel und Energieaufteilung} \\
+\hline
+\end{array}
+\]
+
+\section{Krümmung der ART wird zur Rotation in der \( \Omega \)-Theorie}
+
+Die ART beschreibt Gravitation als Krümmung der Raumzeit. Die \( \Omega \)-Theorie beschreibt Gravitation als Rotationsfeld \( \vec{\Omega} \). Der Übergang wird durch die DSTT und die Weber-Kräfte vermittelt:
+
+\begin{itemize}
+    \item Die **Krümmung** der ART entspricht in der \( \Omega \)-Theorie der **Wirbelstärke** des Rotationsfeldes.
+    \item Die **Geodätengleichung** der ART wird durch die Bewegungsgleichung \( \vec{F} = m(-\nabla \Phi + 2\vec{v} \times \vec{\Omega} - \partial\vec{A}/\partial t) \) ersetzt.
+    \item Die **Raumzeit-Metrik** der ART ist emergent – sie entsteht aus der fraktalen Informationsstruktur der IWT (Teil I).
+\end{itemize}
+
+Damit ist die \( \Omega \)-Theorie eine vollwertige Alternative zur ART: Sie vermeidet Singularitäten, kommt ohne dunkle Materie und dunkle Energie aus, und sie bewahrt die Nicht-Lokalität und Irreversibilität der fundamentalen WDBT+.
+
+\section{Fazit}
+
+Die Weber-Gravitation ist mehr als eine bloße Kraftformel. Sie enthält in ihrer Struktur bereits die Keimzelle einer vollständigen Feldtheorie der Gravitation:
+
+\begin{itemize}
+    \item Der geschwindigkeitsabhängige Term erzeugt eine Wirbeldichte, die bei geeigneter Interpretation direkt zum gravito-magnetischen Feld der Maxwell-Gravitation führt.
+    \item Die DSTT erweist sich als der natürliche Vermittler zwischen diesen Beschreibungsebenen: Sie liefert die energetische Interpretation der Wirbel und verbindet die differentielle Kraftbeschreibung mit der integralen Feldbeschreibung.
+    \item Die \( \Omega \)-Theorie formuliert Gravitation als Rotationsfeld \( \vec{\Omega} \), nicht als Raumzeitkrümmung.
+    \item Die Krümmung der ART wird zur Wirbelstärke des \( \vec{\Omega} \)-Feldes.
+\end{itemize}
+
+WG, DSTT und MG sind keine unabhängigen Theorien, sondern verschiedene Aspekte ein und derselben physikalischen Realität – einer Realität, in der Gravitation nicht durch gekrümmte Raumzeit, sondern durch direkte Teilchenwechselwirkungen mit inhärenter Wirbelstruktur vermittelt wird.
