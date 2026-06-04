@@ -2,9 +2,19 @@
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{bm}
 \usepackage{geometry}
 \geometry{margin=2.5cm}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{xcolor}
+
+% Eigene Farben
+\definecolor{iwtcolor}{RGB}{0,150,200}
+\definecolor{wdbtcolor}{RGB}{200,50,50}
+\definecolor{darkbg}{RGB}{20,20,40}
 
 \title{Die vereinheitlichte Theorie von Information, Raum und Gravitation}
 \author{Michael Czybor}
@@ -12,10 +22,93 @@
 
 \begin{document}
 
+% ===== Deckblatt =====
+\begin{tikzpicture}[remember picture, overlay]
+
+  % Hintergrund (dunkel)
+  \fill[darkbg] (current page.south west) rectangle (current page.north east);
+  
+  % Fraktales Gitter (dezent)
+  \foreach \i in {0,15,...,345} {
+    \draw[iwtcolor!10, line width=0.1pt] 
+      (current page.center) -- +(\i:14cm);
+  }
+  
+  % Dodekaeder-Symbol (zentral)
+  \node[rotate=25, scale=2.5, iwtcolor!30] at (current page.center) {
+    \begin{tikzpicture}[scale=0.4]
+      \draw[iwtcolor] (0:1) \foreach \a in {72,144,...,360} { -- (\a:1) } -- cycle;
+      \foreach \a in {36,108,...,324} { \draw[iwtcolor] (0,0) -- (\a:1.6); }
+    \end{tikzpicture}
+  };
+  
+  % Haupttitel
+  \node[align=center, text=white, font=\sffamily\bfseries\Huge] 
+    at ($(current page.center)+(0,4cm)$) {
+    \textbf{Die vereinheitlichte Theorie} \\
+    \textbf{von Information, Raum und Gravitation}
+  };
+  
+  % Untertitel
+  \node[align=center, text=iwtcolor!70, font=\sffamily\Large] 
+    at ($(current page.center)+(0,2.5cm)$) {
+    IWT \& WDBT+
+  };
+  
+  % Beschreibung
+  \node[align=center, text=white!60, font=\sffamily\normalsize] 
+    at ($(current page.center)+(0,1.2cm)$) {
+    Informations-Weber-Theorie (IWT) -- Fundamentale diskrete Urtheorie \\[2pt]
+    Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+) -- Emergente Physik
+  };
+  
+  % Kernformeln (rechts unten)
+  \node[align=left, anchor=south east, text=wdbtcolor!70, font=\small] 
+    at ($(current page.south east)+(-1.5cm,1.5cm)$) {
+    $\displaystyle \vec{F}_{\text{WG}} = -\frac{GMm}{r^2}\left(1-\frac{\dot{r}^2}{c^2}+\beta\frac{r\ddot{r}}{c^2}\right)$
+  };
+  
+  \node[align=left, anchor=north east, text=iwtcolor!70, font=\small] 
+    at ($(current page.south east)+(-1.5cm,3.8cm)$) {
+    $\displaystyle Q = -\frac{\hbar^2}{2m}\frac{\nabla^2\sqrt{\rho}}{\sqrt{\rho}}$
+  };
+  
+  \node[align=left, anchor=north east, text=white!50, font=\small] 
+    at ($(current page.south east)+(-1.5cm,6cm)$) {
+    $\displaystyle D = \frac{\ln(20\phi)}{\ln(2+\phi)} \approx 2.704$
+  };
+  
+  % Autor
+  \node[align=center, text=white, font=\sffamily\large] 
+    at ($(current page.south)+(0,1.5cm)$) {
+    \textbf{Michael Czybor}
+  };
+  
+  % Datum
+  \node[align=right, text=white!50, font=\sffamily\small] 
+    at ($(current page.south east)+(-1.5cm,0.5cm)$) {
+    \today
+  };
+  
+  % Teil I (links oben)
+  \node[align=left, text=iwtcolor!60, font=\sffamily\bfseries\Large] 
+    at ($(current page.north west)+(2cm,-1.5cm)$) {
+    Teil I: IWT
+  };
+  
+  % Teil II (rechts oben)
+  \node[align=right, text=wdbtcolor!60, font=\sffamily\bfseries\Large] 
+    at ($(current page.north east)+(-2cm,-1.5cm)$) {
+    Teil II: WDBT+
+  };
+  
+\end{tikzpicture}
+
 \maketitle
 
 \tableofcontents
 
+% ===== Teil I: IWT =====
 \part{Informations-Weber-Theorie (IWT)}
 
 \input{kapitel_01_einleitung}
@@ -26,6 +119,7 @@
 \input{kapitel_06_fraktale_dimension_D}
 \input{kapitel_07_naturkonstanten}
 
+% ===== Teil II: WDBT+ =====
 \part{Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+)}
 
 \input{kapitel_08_dstt_weber_kraefte}
@@ -38,11 +132,13 @@
 \input{kapitel_15_testbare_vorhersagen}
 \input{kapitel_16_zusammenfassung}
 
+% ===== Anhänge =====
 \appendix
 \input{anhang_a_mathematik}
 \input{anhang_b_numerik}
 \input{anhang_c_vergleich}
 
+% ===== Literatur (optional, auskommentiert) =====
 %\bibliographystyle{plain}
 %\bibliography{literatur}
 
