@@ -84,17 +84,18 @@
 \contentsline {chapter}{\numberline {7}Emergenz der Naturkonstanten}{37}{}%
 \contentsline {section}{\numberline {7.1}Zwei Ebenen physikalischer Konstanten}{37}{}%
 \contentsline {section}{\numberline {7.2}Fundamentale IWT-Parameter}{37}{}%
-\contentsline {section}{\numberline {7.3}Emergente WDBT+-Konstanten}{37}{}%
+\contentsline {section}{\numberline {7.3}Emergente WDBT+-Konstanten}{38}{}%
 \contentsline {section}{\numberline {7.4}Zusammenhang zwischen IWT-Parametern und WDBT+-Konstanten}{38}{}%
 \contentsline {subsection}{\numberline {7.4.1}Lichtgeschwindigkeit}{38}{}%
 \contentsline {subsection}{\numberline {7.4.2}Plancksches Wirkungsquantum}{38}{}%
 \contentsline {subsection}{\numberline {7.4.3}Gravitationskonstante}{38}{}%
 \contentsline {subsection}{\numberline {7.4.4}Feinstrukturkonstante}{38}{}%
 \contentsline {subsection}{\numberline {7.4.5}Boltzmann-Konstante}{38}{}%
-\contentsline {subsection}{\numberline {7.4.6}Neutrinomasse}{38}{}%
+\contentsline {subsection}{\numberline {7.4.6}Neutrinomasse}{39}{}%
 \contentsline {section}{\numberline {7.5}Umkehrung: IWT-Parameter aus gemessenen Konstanten}{39}{}%
-\contentsline {section}{\numberline {7.6}Zusammenfassung}{39}{}%
-\contentsline {section}{\numberline {7.7}Ausblick}{39}{}%
+\contentsline {section}{\numberline {7.6}Äquivalenz der beiden Beschreibungen}{39}{}%
+\contentsline {section}{\numberline {7.7}Zusammenfassung}{39}{}%
+\contentsline {section}{\numberline {7.8}Ausblick}{40}{}%
 \contentsline {part}{II\hspace {1em}Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+)}{41}{}%
 \contentsline {chapter}{\numberline {8}Dynamische Schwere-Trägheits-Theorie (DSTT) und Weber-Kräfte}{43}{}%
 \contentsline {section}{\numberline {8.1}Einleitung}{43}{}%
