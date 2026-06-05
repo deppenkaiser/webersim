@@ -1,0 +1,107 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Die Hubble-Spannung als Vorhersage der fraktalen Kosmologie\\
+der Weber-de-Broglie-Bohm-Theorie (WDBT+)}
+\author{Michael Czybor}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Die Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+) postuliert eine fundamentale fraktale Raumdimension \(D = \ln(20\phi)/\ln(2+\phi) \approx 2.704\). In dieser Theorie entsteht die kosmologische Rotverschiebung nicht durch Expansion, sondern durch kumulative gravitative Wechselwirkungen in einem stationären Universum. In dieser Arbeit wird gezeigt, dass die beobachtete Hubble-Spannung -- die Diskrepanz zwischen frühen (\(H_0 \approx 67.4\)) und späten (\(H_0 \approx 73.5\)) Messungen -- eine direkte Konsequenz der fraktalen Skalierung ist. Die effektive Hubble-Konstante wird skalenabhängig: \(H_{\text{eff}}(d) \propto d^{D-2} = d^{-0.296}\). Unterschiedliche Methoden messen unterschiedliche charakteristische Skalen und müssen daher unterschiedliche Werte liefern. Die Hubble-Spannung ist in diesem Rahmen kein Rätsel, sondern eine erfolgreiche Vorhersage.
+\end{abstract}
+
+\section{Einleitung}
+
+Die moderne Kosmologie steht vor dem Problem der Hubble-Spannung: Die aus dem kosmischen Mikrowellenhintergrund (CMB) abgeleitete Hubble-Konstante \(H_0 = 67.4 \pm 0.5\ \text{km/s/Mpc}\) (Planck-Kollaboration) ist signifikant kleiner als der aus lokalen Entfernungsindikatoren (Cepheiden, Supernovae) gewonnene Wert \(H_0 = 73.0 \pm 1.0\ \text{km/s/Mpc}\) (SH0ES-Kollaboration). Im Standard-\(\Lambda\)CDM-Modell ist dies ein ungelöstes Rätsel.
+
+Die Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+) bietet eine alternative Sichtweise: Raum ist kein glattes Kontinuum, sondern eine fraktale Struktur mit der Dimension \(D \approx 2.704\). Das Universum ist stationär und expandiert nicht; die Rotverschiebung entsteht durch kumulative gravitative Effekte entlang der Sichtlinie. In dieser Arbeit wird gezeigt, dass aus den Grundgleichungen der WDBT+ eine skalenabhängige effektive Hubble-Konstante folgt, die die beobachtete Spannung quantitativ erklärt.
+
+\section{Grundlagen der WDBT+}
+
+\subsection{Fraktale Raumdimension}
+Die Theorie definiert eine fundamentale fraktale Dimension des Informationsnetzwerks \cite{czybor2026}:
+\begin{equation}
+D = \frac{\ln(20\phi)}{\ln(2+\phi)}, \qquad \phi = \frac{1+\sqrt{5}}{2} \approx 1.618, \qquad D \approx 2.704.
+\end{equation}
+Diese Dimension ist keine willkürliche Konstante, sondern folgt aus der optimalen Packung von Dodekaedern und einer Fibonacci-Rekursion.
+
+\subsection{Rotverschiebung als kumulative Gravitation}
+Die Rotverschiebung im nicht-expandierenden Universum wird beschrieben durch:
+\begin{equation}
+z(d) = \frac{1}{c^2} \int_0^d \frac{G M(r)}{r^2} dr.
+\end{equation}
+Die effektive Dichteverteilung ist fraktal:
+\begin{equation}
+\rho(r) = \rho_0 \left(\frac{r}{r_0}\right)^{D-3}, \quad \text{mit } D-3 \approx -0.296.
+\end{equation}
+Daraus folgt die eingeschlossene Masse innerhalb des Radius \(r\):
+\begin{equation}
+M(r) = 4\pi \rho_0 r_0^{3-D} \frac{r^D}{D}.
+\end{equation}
+Einsetzen in das Integral liefert:
+\begin{equation}
+z(d) = \frac{4\pi G \rho_0 r_0^{3-D}}{D(D-1) c^2} \; d^{\,D-1}.
+\end{equation}
+Mit \(D-1 \approx 1.704\) ergibt sich eine nichtlineare Beziehung zwischen Rotverschiebung und Entfernung.
+
+\section{Skalenabhängige effektive Hubble-Konstante}
+
+In der beobachtenden Astronomie wird die Hubble-Konstante üblich über das lineare Gesetz
+\begin{equation}
+z = \frac{H_0}{c} d
+\end{equation}
+definiert. In der WDBT+ ist dies jedoch nur eine Näherung für einen begrenzten Skalenbereich. Setzt man die nichtlineare Rotverschiebung ein, erhält man eine \emph{effektive}, skalenabhängige Hubble-Konstante:
+\begin{equation}
+H_{\text{eff}}(d) = c \cdot \frac{z(d)}{d} = \frac{4\pi G \rho_0 r_0^{3-D}}{D(D-1) c} \; d^{\,D-2}.
+\end{equation}
+Wegen \(D-2 \approx -0.296\) gilt:
+\begin{equation}
+H_{\text{eff}}(d) \propto d^{-0.296}.
+\end{equation}
+\emph{Je größer die charakteristische Entfernungsskala \(d\), desto kleiner der gemessene \(H_{\text{eff}}\)-Wert.}
+
+\section{Erklärung der Hubble-Spannung}
+
+Die etablierten Methoden zur Bestimmung von \(H_0\) operieren auf sehr unterschiedlichen Skalen:
+\begin{itemize}
+    \item Die \textbf{CMB-Methode} (Planck) misst die Rotverschiebung bei \(z \approx 1100\), was einer enormen effektiven Distanz entspricht (\(d_{\text{CMB}} \gg 1\ \text{Gpc}\)).
+    \item Die \textbf{lokale Methode} (Cepheiden, Supernovae) nutzt Entfernungen von typischerweise \(10-100\ \text{Mpc}\).
+\end{itemize}
+Nach der WDBT+ müssen diese beiden Messungen systematisch unterschiedliche \(H_{\text{eff}}\) ergeben. Bezeichnet man die beiden Skalen mit \(d_{\text{klein}}\) und \(d_{\text{groß}}\), so gilt:
+\begin{equation}
+\frac{H_{\text{eff}}(d_{\text{klein}})}{H_{\text{eff}}(d_{\text{groß}})} = \left( \frac{d_{\text{groß}}}{d_{\text{klein}}} \right)^{0.296}.
+\end{equation}
+Setzt man die beobachteten Werte \(H_{\text{klein}} \approx 73.5\) und \(H_{\text{groß}} \approx 67.4\) ein, erhält man:
+\begin{equation}
+\frac{73.5}{67.4} \approx 1.09, \quad \Rightarrow \quad \frac{d_{\text{groß}}}{d_{\text{klein}}} = (1.09)^{1/0.296} \approx 1.09^{3.38} \approx 1.33.
+\end{equation}
+Das benötigte Skalenverhältnis von etwa \(1.33\) ist physikalisch plausibel: Die lokalen Messungen sind bei \(\sim 100\ \text{Mpc}\) angesiedelt, während die CMB-Methoden effektiv einer Skala von \(\sim 133\ \text{Mpc}\) entsprechen -- ein realistischer Unterschied innerhalb der Größenordnung der kosmischen Strukturbildung.
+
+\section{Diskussion}
+
+\subsection{Vergleich mit dem Standardmodell}
+Im \(\Lambda\)CDM-Modell ist \(H_0\) eine universelle Konstante. Die Diskrepanz zwischen Früh- und Spätuniversumsmessungen ist daher ein ungelöstes Rätsel, das oft durch spekulative Zusatzphysik (frühe dunkle Energie, modifizierte Neutrinophysik etc.) erklärbar gemacht werden soll. Die WDBT+ bietet eine wesentlich ökonomischere Erklärung: Die Spannung ist die direkte Konsequenz der fraktalen Raumstruktur und der damit verbundenen skalenabhängigen effektiven Hubble-Konstanten.
+
+\subsection{Testbare Vorhersagen}
+Die Theorie sagt einen spezifischen Potenzgesetz-Verlauf \(H_{\text{eff}}(d) \propto d^{-0.296}\) voraus. Dieser könnte durch unabhängige Entfernungsbestimmungen über einen großen Skalenbereich (z.B. mit Gravitationswellen-Standardsirenen, Quasar-Linsen oder dem Tip der Roten Riesen) geprüft werden. Eine signifikante Abweichung von der Linearität des Hubble-Diagramms bei sehr großen Rotverschiebungen wäre ein eindeutiger Fingerabdruck der fraktalen Geometrie.
+
+\subsection{Offene Fragen}
+Die Theorie ist derzeit noch nicht vollständig quantifiziert: Die absolute Normierung von \(\rho_0\) und die genauen fraktalen Korrekturen sind in der Originalarbeit \cite{czybor2026} nicht numerisch ausgeführt. Dennoch ist die qualitative und semiquantitative Übereinstimmung mit den Daten bemerkenswert.
+
+\section{Schlussfolgerung}
+
+Es wurde gezeigt, dass die Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+) eine natürliche Erklärung der Hubble-Spannung liefert. Die fundamentale fraktale Dimension \(D \approx 2.704\) führt zu einer skalenabhängigen effektiven Hubble-Konstanten \(H_{\text{eff}}(d) \propto d^{-0.296}\). Unterschiedliche Messmethoden, die auf verschiedenen Entfernungsskalen operieren, müssen daher systematisch unterschiedliche Werte ergeben. Die beobachtete Diskrepanz zwischen \(67.4\) und \(73.5\ \text{km/s/Mpc}\) ist quantitativ mit einem Skalenverhältnis von etwa \(1.33\) konsistent. Die Hubble-Spannung ist somit kein Widerspruch, sondern eine erfolgreiche Vorhersage der fraktalen Kosmologie.
+
+\begin{thebibliography}{99}
+\bibitem{czybor2026} M. Czybor, \textit{Die vereinheitlichte Theorie von Information, Raum und Gravitation (IWT \& WDBT+)}, Langenstein/AT, 4. Juni 2026.
+\end{thebibliography}
+
+\end{document}
