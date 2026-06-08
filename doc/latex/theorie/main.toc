@@ -437,35 +437,31 @@
 \contentsline {subsection}{\numberline {H.2.2}Vereinfachung: Bahnebene}{127}{}%
 \contentsline {section}{\numberline {H.3}Drehimpuls in der Weber-Gravitation}{127}{}%
 \contentsline {subsection}{\numberline {H.3.1}Exakte Drehimpulsbilanz}{127}{}%
-\contentsline {subsection}{\numberline {H.3.2}Näherung für kleine Exzentrizitäten}{128}{}%
+\contentsline {subsection}{\numberline {H.3.2}Drehimpuls in erster Ordnung}{128}{}%
 \contentsline {section}{\numberline {H.4}Bewegungsgleichung in der Radialrichtung}{128}{}%
 \contentsline {subsection}{\numberline {H.4.1}Radiale Beschleunigung}{128}{}%
-\contentsline {subsection}{\numberline {H.4.2}Radiale Bewegungsgleichung}{128}{}%
-\contentsline {section}{\numberline {H.5}Bahngleichung in der Binet-Form}{129}{}%
+\contentsline {subsection}{\numberline {H.4.2}Radiale Bewegungsgleichung}{129}{}%
+\contentsline {section}{\numberline {H.5}Bahngleichung in der Binet-Form mit variablem Drehimpuls}{129}{}%
 \contentsline {subsection}{\numberline {H.5.1}Substitution \( u = 1/r \)}{129}{}%
 \contentsline {subsection}{\numberline {H.5.2}Einsetzen in (H.3)}{129}{}%
 \contentsline {subsection}{\numberline {H.5.3}Term \( r\ddot {r} \) in \( u \)-Variablen}{129}{}%
 \contentsline {subsection}{\numberline {H.5.4}Bahngleichung}{129}{}%
-\contentsline {section}{\numberline {H.6}Störungsrechnung}{129}{}%
-\contentsline {subsection}{\numberline {H.6.1}Entwicklung in \( 1/c^2 \)}{129}{}%
-\contentsline {subsection}{\numberline {H.6.2}Nullte Ordnung (\( \varepsilon = 0 \))}{130}{}%
-\contentsline {subsection}{\numberline {H.6.3}Erste Ordnung}{130}{}%
-\contentsline {subsection}{\numberline {H.6.4}Berechnung von \( u_0' \) und \( u_0'' \)}{130}{}%
-\contentsline {subsection}{\numberline {H.6.5}Berechnung des Störterms}{130}{}%
-\contentsline {subsection}{\numberline {H.6.6}Störgleichung}{130}{}%
-\contentsline {section}{\numberline {H.7}Lösung der Störgleichung}{131}{}%
-\contentsline {subsection}{\numberline {H.7.1}Zerlegung des Störterms}{131}{}%
-\contentsline {subsection}{\numberline {H.7.2}Partikuläre Lösungen}{131}{}%
-\contentsline {subsection}{\numberline {H.7.3}Der entscheidende resonante Term}{131}{}%
-\contentsline {subsection}{\numberline {H.7.4}Gesamtlösung in erster Ordnung}{131}{}%
+\contentsline {section}{\numberline {H.6}Post-Newtonsche Entwicklung}{130}{}%
+\contentsline {subsection}{\numberline {H.6.1}Entwicklung in \( 1/c^2 \)}{130}{}%
+\contentsline {subsection}{\numberline {H.6.2}Die drei Beiträge zum \( 3u^2 \)-Term}{130}{}%
+\contentsline {section}{\numberline {H.7}Lösung der Bahngleichung}{130}{}%
+\contentsline {subsection}{\numberline {H.7.1}Störungsansatz}{130}{}%
+\contentsline {subsection}{\numberline {H.7.2}Erste Ordnung}{130}{}%
+\contentsline {subsection}{\numberline {H.7.3}Entwicklung des Störterms}{131}{}%
+\contentsline {subsection}{\numberline {H.7.4}Partikuläre Lösungen}{131}{}%
+\contentsline {subsection}{\numberline {H.7.5}Gesamtlösung in erster Ordnung}{131}{}%
 \contentsline {section}{\numberline {H.8}Periheldrehung}{131}{}%
-\contentsline {subsection}{\numberline {H.8.1}Approximation für kleine Exzentrizität und kleine Korrekturen}{131}{}%
-\contentsline {subsection}{\numberline {H.8.2}Additionstheorem}{132}{}%
-\contentsline {subsection}{\numberline {H.8.3}Korrekturfaktor \( \kappa \)}{132}{}%
+\contentsline {subsection}{\numberline {H.8.1}Resonanter Term}{131}{}%
+\contentsline {subsection}{\numberline {H.8.2}Additionstheorem}{131}{}%
+\contentsline {subsection}{\numberline {H.8.3}Korrekturfaktor \( \kappa \)}{131}{}%
 \contentsline {subsection}{\numberline {H.8.4}Perihel nach einem Umlauf}{132}{}%
 \contentsline {subsection}{\numberline {H.8.5}Periheldrehung pro Umlauf}{132}{}%
-\contentsline {section}{\numberline {H.9}Der entscheidende Schritt: Korrektur durch die \( \dot {r}^2 \)-Terme in \( h \)}{132}{}%
-\contentsline {subsection}{\numberline {H.9.1}Resultat der vollständigen Rechnung}{132}{}%
-\contentsline {subsection}{\numberline {H.9.2}Zahlenwert für Merkur}{133}{}%
-\contentsline {section}{\numberline {H.10}Zusammenfassung}{133}{}%
-\contentsline {section}{\numberline {H.11}Ausblick}{133}{}%
+\contentsline {section}{\numberline {H.9}Resultat der vollständigen Rechnung}{132}{}%
+\contentsline {section}{\numberline {H.10}Zahlenwert für Merkur}{132}{}%
+\contentsline {section}{\numberline {H.11}Zusammenfassung}{132}{}%
+\contentsline {section}{\numberline {H.12}Ausblick}{133}{}%
