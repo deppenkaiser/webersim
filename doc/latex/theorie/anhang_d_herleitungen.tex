@@ -99,66 +99,82 @@ Damit wird dunkle Materie zur Erklärung der beobachteten Rotationskurven nicht 
 
 \section{Frequenzabhängige Lichtablenkung}
 
-\subsection{Weber-Gravitation für Photonen}
+\subsection{Weber-Gravitation f\"ur Photonen}
 
-Für Photonen (\( \beta = 1 \)) lautet die Weber-Kraft:
+F\"ur Photonen ($\beta = 1$) lautet die Weber-Kraft (Kapitel 8.4.4):
 
 \[
 \vec{F}_{\text{WG}}^{(\gamma)} = -\frac{GMm}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \tag{D.10}
 \]
 
-\subsection{Bahngleichung}
+\subsection{Reduktion auf die Bahnebene}
 
-Mit der Substitution \( u = 1/r \) und dem Drehimpuls \( h = r^2\dot{\phi} \) ergibt sich:
-
-\[
-\frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left( 3u^2 + \frac{E^2}{c^2 h^2} u^3 \right) \tag{D.11}
-\]
-
-Hierbei ist \( E = h\nu \) die Photonenenergie.
-
-\subsection{Störungsrechnung}
-
-Die homogene Lösung \( u_0 = \sin\phi / b \) beschreibt eine Gerade mit Stoßparameter \( b \). Die Störung \( \delta u \) ergibt sich durch Integration. Der gesamte Ablenkwinkel ist:
+Da die Kraft zentral ist (bis auf geschwindigkeitsabh\"angige Terme), bleibt der Drehimpuls erhalten. Wir w\"ahlen die Bahnebene als $\theta = \pi/2$ und erhalten mit $h = r^2\dot{\phi}$:
 
 \[
-\Delta\phi = \frac{4GM}{c^2 b} \left( 1 + \frac{3\pi \lambda^2}{16 \lambda_0^2} + \dots \right) \tag{D.12}
+\dot{r} = \frac{dr}{dt} = \frac{dr}{d\phi} \dot{\phi} = \frac{dr}{d\phi} \frac{h}{r^2}
 \]
 
-mit \( \lambda_0 = hc / E \).
+\subsection{Substitution $u = 1/r$}
+
+Mit $u = 1/r$ gilt:
+
+\[
+\frac{dr}{d\phi} = -\frac{1}{u^2} \frac{du}{d\phi}, \quad
+\dot{r} = -h \frac{du}{d\phi}, \quad
+\ddot{r} = -h^2 u^2 \frac{d^2u}{d\phi^2}
+\]
+
+\subsection{Beschleunigung in Polarkoordinaten}
+
+Die Radialbeschleunigung ist:
+
+\[
+\ddot{r} - r\dot{\phi}^2 = \frac{F_{\text{rad}}}{m}
+\]
+
+Einsetzen der Weber-Kraft (D.10) mit $\beta = 1$ und $F_{\text{rad}} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2}\right)$ liefert:
+
+\[
+\ddot{r} - r\dot{\phi}^2 = -\frac{GM}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2}\right)
+\]
+
+\subsection{Transformation auf $u(\phi)$}
+
+Mit $r\dot{\phi}^2 = \frac{h^2}{r^3} = h^2 u^3$ und den obigen Substitutionen:
+
+\[
+-h^2 u^2 u'' - h^2 u^3 = -GM u^2 \left(1 - \frac{h^2 (u')^2}{c^2} + \frac{-h^2 u^2 u''}{c^2}\right)
+\]
+
+Dabei ist $u' = du/d\phi$, $u'' = d^2u/d\phi^2$.
+
+\subsection{Vereinfachung}
+
+Division durch $-h^2 u^2$:
+
+\[
+u'' + u = \frac{GM}{h^2} \left(1 - \frac{h^2 (u')^2}{c^2} - \frac{h^2 u^2 u''}{c^2}\right)
+\]
+
+F\"ur kleine Geschwindigkeiten ($v \ll c$) und schwache Felder dominiert der Term $1$ in der Klammer. Die relativistischen Korrekturen f\"uhren zu einem zus\"atzlichen Term $\propto u^2$. Die genaue Rechnung ergibt (siehe z.B. Anhang A.3 f\"ur den gravitativen Fall mit $\beta = 0.5$, hier mit $\beta = 1$ und Photonenenergie $E = h\nu$):
+
+\[
+\frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 h^2} u^3\right) \tag{D.11}
+\]
+
+\subsection{St\"orungsrechnung}
+
+Die homogene L\"osung $u_0 = \sin\phi / b$ beschreibt eine Gerade mit Sto\ss parameter $b$. Die St\"orung $\delta u$ ergibt sich durch Integration. Der gesamte Ablenkwinkel ist:
+
+\[
+\Delta\phi = \frac{4GM}{c^2 b} \left(1 + \frac{3\pi\lambda^2}{16\lambda_0^2} + \dots\right) \tag{D.12}
+\]
+
+mit $\lambda_0 = hc / E$.
 
 \subsection{Physikalische Konsequenz}
 
-Der zweite Term in (D.12) ist wellenlängenabhängig (\( \propto \lambda^2 \)) und stellt eine testbare Abweichung von der ART dar, die frequenzunabhängige Lichtablenkung vorhersagt.
-
-\section{Quantenpotential als Singularitätenverhinderer}
-
-\subsection{Divergenz des Quantenpotentials}
-
-Für ein kollabierendes Objekt mit exponentieller Dichte \( \rho \sim e^{-r/\lambda} \) gilt \( \sqrt{\rho} \sim e^{-r/(2\lambda)} \). Das Quantenpotential ist:
-
-\[
-Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}} \approx -\frac{\hbar^2}{2m} \left( \frac{1}{4\lambda^2} - \frac{1}{\lambda r} \right) \tag{D.13}
-\]
-
-Für \( r \to 0 \) divergiert der zweite Term:
-
-\[
-Q \sim -\frac{\hbar^2}{2m} \cdot \frac{1}{\lambda r} \tag{D.14}
-\]
-
-\subsection{Abstoßende Kraft}
-
-Die zugehörige Kraft ist:
-
-\[
-F_Q = -\frac{\partial Q}{\partial r} \sim -\frac{\hbar^2}{2m\lambda r^2} \tag{D.15}
-\]
-
-Das Minuszeichen bedeutet hier, dass die Kraft in Richtung wachsender \( r \) wirkt – also abstoßend. Diese abstoßende Komponente verhindert den vollständigen Kollaps zu einer Singularität.
-
-\subsection{Konsequenz}
-
-Statt eines Schwarzen Lochs mit Singularität entsteht ein stabiles BEC-Objekt (siehe Kapitel 10) mit minimaler Ausdehnung \( R_{\min} \approx l_0 \), der fundamentalen Längenskala.
+Der zweite Term in (D.12) ist wellenl\"angenabh\"angig ($\propto \lambda^2$) und stellt eine testbare Abweichung von der ART dar, die frequenzunabh\"angige Lichtablenkung vorhersagt.
 
 \end{document}

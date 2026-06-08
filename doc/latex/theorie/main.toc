@@ -361,11 +361,11 @@
 \contentsline {subsection}{\numberline {D.3.3}Rotationskurve}{108}{}%
 \contentsline {subsection}{\numberline {D.3.4}Asymptotisches Verhalten}{108}{}%
 \contentsline {section}{\numberline {D.4}Frequenzabhängige Lichtablenkung}{109}{}%
-\contentsline {subsection}{\numberline {D.4.1}Weber-Gravitation für Photonen}{109}{}%
-\contentsline {subsection}{\numberline {D.4.2}Bahngleichung}{109}{}%
-\contentsline {subsection}{\numberline {D.4.3}Störungsrechnung}{109}{}%
-\contentsline {subsection}{\numberline {D.4.4}Physikalische Konsequenz}{109}{}%
-\contentsline {section}{\numberline {D.5}Quantenpotential als Singularitätenverhinderer}{109}{}%
-\contentsline {subsection}{\numberline {D.5.1}Divergenz des Quantenpotentials}{109}{}%
-\contentsline {subsection}{\numberline {D.5.2}Abstoßende Kraft}{109}{}%
-\contentsline {subsection}{\numberline {D.5.3}Konsequenz}{110}{}%
+\contentsline {subsection}{\numberline {D.4.1}Weber-Gravitation f\"ur Photonen}{109}{}%
+\contentsline {subsection}{\numberline {D.4.2}Reduktion auf die Bahnebene}{109}{}%
+\contentsline {subsection}{\numberline {D.4.3}Substitution $u = 1/r$}{109}{}%
+\contentsline {subsection}{\numberline {D.4.4}Beschleunigung in Polarkoordinaten}{109}{}%
+\contentsline {subsection}{\numberline {D.4.5}Transformation auf $u(\phi )$}{109}{}%
+\contentsline {subsection}{\numberline {D.4.6}Vereinfachung}{109}{}%
+\contentsline {subsection}{\numberline {D.4.7}St\"orungsrechnung}{110}{}%
+\contentsline {subsection}{\numberline {D.4.8}Physikalische Konsequenz}{110}{}%
