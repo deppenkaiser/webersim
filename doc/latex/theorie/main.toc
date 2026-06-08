@@ -376,92 +376,113 @@
 \contentsline {section}{\numberline {E.1}Einleitung}{115}{}%
 \contentsline {section}{\numberline {E.2}Fraktale Ableitung (Hausdorff-Derivative)}{115}{}%
 \contentsline {subsection}{\numberline {E.2.1}Definition}{115}{}%
+\contentsline {subsubsection}{Begründung}{115}{}%
 \contentsline {subsection}{\numberline {E.2.2}Rechenregeln}{115}{}%
+\contentsline {subsubsection}{Konstante}{116}{}%
+\contentsline {subsubsection}{Potenzfunktion}{116}{}%
+\contentsline {subsubsection}{Linearität}{116}{}%
+\contentsline {subsubsection}{Produktregel (nicht-lokal)}{116}{}%
+\contentsline {subsubsection}{Kettenregel (nicht-lokal)}{116}{}%
 \contentsline {subsection}{\numberline {E.2.3}Fraktaler Gradient und Laplace-Operator}{116}{}%
-\contentsline {section}{\numberline {E.3}Fraktionale Ableitung (Caputo) als Alternative}{116}{}%
-\contentsline {subsection}{\numberline {E.3.1}Definition}{116}{}%
+\contentsline {subsubsection}{Gradient}{116}{}%
+\contentsline {subsubsection}{Divergenz}{116}{}%
+\contentsline {subsubsection}{Laplace-Operator}{117}{}%
+\contentsline {subsubsection}{Radialsymmetrische Funktionen}{117}{}%
+\contentsline {subsection}{\numberline {E.2.4}Numerische Implementierung}{117}{}%
+\contentsline {section}{\numberline {E.3}Fraktionale Ableitung (Caputo) als Alternative}{117}{}%
+\contentsline {subsection}{\numberline {E.3.1}Definition}{117}{}%
 \contentsline {subsection}{\numberline {E.3.2}Verknüpfung mit der fraktalen Dimension}{117}{}%
-\contentsline {subsection}{\numberline {E.3.3}Transformation zwischen beiden Zugängen}{117}{}%
-\contentsline {subsection}{\numberline {E.3.4}Vorteile der Caputo-Formulierung}{117}{}%
-\contentsline {section}{\numberline {E.4}Fraktale Maxwell-Gleichungen in konsistenter Formulierung}{117}{}%
-\contentsline {subsection}{\numberline {E.4.1}Wellengleichung im fraktalen Raum}{117}{}%
-\contentsline {section}{\numberline {E.5}Konsequenzen für die WDBT+}{118}{}%
-\contentsline {section}{\numberline {E.6}Ausblick: Offene mathematische Probleme}{118}{}%
-\contentsline {chapter}{\numberline {F}Kontinuumslimes: Von der diskreten IWT zur kontinuierlichen WDBT+}{119}{}%
-\contentsline {section}{\numberline {F.1}Einleitung}{119}{}%
-\contentsline {section}{\numberline {F.2}Mathematische Rahmenbedingungen}{119}{}%
-\contentsline {subsection}{\numberline {F.2.1}Annahmen an das diskrete Netzwerk}{119}{}%
-\contentsline {subsection}{\numberline {F.2.2}Definition des kontinuierlichen Grenzfeldes}{119}{}%
-\contentsline {subsection}{\numberline {F.2.3}Konvergenzbegriff}{120}{}%
-\contentsline {section}{\numberline {F.3}Konvergenz des diskreten Funktionals}{120}{}%
-\contentsline {subsection}{\numberline {F.3.1}Diskretes Funktional in kontinuierlicher Notation}{120}{}%
-\contentsline {subsection}{\numberline {F.3.2}Entwicklung der diskreten Operatoren}{120}{}%
-\contentsline {subsection}{\numberline {F.3.3}Konvergenz des Funktionals}{120}{}%
-\contentsline {section}{\numberline {F.4}Konvergenz der Euler-Lagrange-Gleichungen}{121}{}%
-\contentsline {subsection}{\numberline {F.4.1}Diskrete Euler-Lagrange-Gleichung}{121}{}%
-\contentsline {subsection}{\numberline {F.4.2}Kontinuierlicher Grenzwert}{121}{}%
-\contentsline {subsection}{\numberline {F.4.3}Konvergenzgeschwindigkeit}{121}{}%
-\contentsline {section}{\numberline {F.5}Emergenz der Metrik}{121}{}%
-\contentsline {subsection}{\numberline {F.5.1}Diskrete Metrik als Laplace-Approximation}{121}{}%
-\contentsline {subsection}{\numberline {F.5.2}Eigenschaften der emergenten Metrik}{121}{}%
-\contentsline {subsection}{\numberline {F.5.3}Grenzfall \( D \to 3 \) und ART}{121}{}%
-\contentsline {section}{\numberline {F.6}Beispiel: Diskrete Wellengleichung}{122}{}%
-\contentsline {subsection}{\numberline {F.6.1}Diskrete Form}{122}{}%
-\contentsline {subsection}{\numberline {F.6.2}Kontinuierlicher Limes}{122}{}%
-\contentsline {section}{\numberline {F.7}Offene Fragen und Grenzen}{122}{}%
-\contentsline {section}{\numberline {F.8}Zusammenfassung}{122}{}%
-\contentsline {chapter}{\numberline {G}Identitätsbeziehung zwischen DSTT und Weber-Kräften}{123}{}%
-\contentsline {section}{\numberline {G.1}Einleitung}{123}{}%
-\contentsline {section}{\numberline {G.2}Definitionen}{123}{}%
-\contentsline {subsection}{\numberline {G.2.1}DSTT-Zustandsvariable}{123}{}%
-\contentsline {subsection}{\numberline {G.2.2}Weber-Gravitation für Massen}{123}{}%
-\contentsline {subsection}{\numberline {G.2.3}Radiale Komponente}{123}{}%
-\contentsline {subsection}{\numberline {G.2.4}Tangentiale Komponente}{124}{}%
-\contentsline {section}{\numberline {G.3}Energiebilanz der Weber-Gravitation}{124}{}%
-\contentsline {subsection}{\numberline {G.3.1}Leistung der Weber-Kraft}{124}{}%
-\contentsline {subsection}{\numberline {G.3.2}Vereinfachung mit \( v^2 = \dot {r}^2 + r^2\dot {\phi }^2 \)}{124}{}%
-\contentsline {subsection}{\numberline {G.3.3}Zeitliche Änderung der kinetischen Energie}{124}{}%
-\contentsline {subsection}{\numberline {G.3.4}Änderung von \( \beta _{\text {DSTT}} \)}{125}{}%
-\contentsline {section}{\numberline {G.4}Die Identitätsbeziehung als zeitlicher Mittelwert}{125}{}%
-\contentsline {subsection}{\numberline {G.4.1}Problem der momentanen Identität}{125}{}%
-\contentsline {subsection}{\numberline {G.4.2}Korrigierte Beziehung}{125}{}%
-\contentsline {subsection}{\numberline {G.4.3}Beweisskizze}{125}{}%
-\contentsline {section}{\numberline {G.5}Spezialfall: Elektrodynamik (\( \beta _{\text {WED}} = 2 \))}{126}{}%
-\contentsline {section}{\numberline {G.6}Zusammenfassung der korrigierten Beziehungen}{126}{}%
-\contentsline {section}{\numberline {G.7}Konsequenzen für die Haupttext-Behauptungen}{126}{}%
-\contentsline {section}{\numberline {G.8}Ausblick: Vollständige Mittelung über elliptische Bahnen}{126}{}%
-\contentsline {chapter}{\numberline {H}Vollständige Herleitung der Periheldrehung in der Weber-Gravitation}{127}{}%
-\contentsline {section}{\numberline {H.1}Einleitung}{127}{}%
-\contentsline {section}{\numberline {H.2}Grundgleichungen der Weber-Gravitation}{127}{}%
-\contentsline {subsection}{\numberline {H.2.1}Weber-Kraft für massive Körper}{127}{}%
-\contentsline {subsection}{\numberline {H.2.2}Vereinfachung: Bahnebene}{127}{}%
-\contentsline {section}{\numberline {H.3}Drehimpuls in der Weber-Gravitation}{127}{}%
-\contentsline {subsection}{\numberline {H.3.1}Exakte Drehimpulsbilanz}{127}{}%
-\contentsline {subsection}{\numberline {H.3.2}Drehimpuls in erster Ordnung}{128}{}%
-\contentsline {section}{\numberline {H.4}Bewegungsgleichung in der Radialrichtung}{128}{}%
-\contentsline {subsection}{\numberline {H.4.1}Radiale Beschleunigung}{128}{}%
-\contentsline {subsection}{\numberline {H.4.2}Radiale Bewegungsgleichung}{129}{}%
-\contentsline {section}{\numberline {H.5}Bahngleichung in der Binet-Form mit variablem Drehimpuls}{129}{}%
-\contentsline {subsection}{\numberline {H.5.1}Substitution \( u = 1/r \)}{129}{}%
-\contentsline {subsection}{\numberline {H.5.2}Einsetzen in (H.3)}{129}{}%
-\contentsline {subsection}{\numberline {H.5.3}Term \( r\ddot {r} \) in \( u \)-Variablen}{129}{}%
-\contentsline {subsection}{\numberline {H.5.4}Bahngleichung}{129}{}%
-\contentsline {section}{\numberline {H.6}Post-Newtonsche Entwicklung}{130}{}%
-\contentsline {subsection}{\numberline {H.6.1}Entwicklung in \( 1/c^2 \)}{130}{}%
-\contentsline {subsection}{\numberline {H.6.2}Die drei Beiträge zum \( 3u^2 \)-Term}{130}{}%
-\contentsline {section}{\numberline {H.7}Lösung der Bahngleichung}{130}{}%
-\contentsline {subsection}{\numberline {H.7.1}Störungsansatz}{130}{}%
-\contentsline {subsection}{\numberline {H.7.2}Erste Ordnung}{130}{}%
-\contentsline {subsection}{\numberline {H.7.3}Entwicklung des Störterms}{131}{}%
-\contentsline {subsection}{\numberline {H.7.4}Partikuläre Lösungen}{131}{}%
-\contentsline {subsection}{\numberline {H.7.5}Gesamtlösung in erster Ordnung}{131}{}%
-\contentsline {section}{\numberline {H.8}Periheldrehung}{131}{}%
-\contentsline {subsection}{\numberline {H.8.1}Resonanter Term}{131}{}%
-\contentsline {subsection}{\numberline {H.8.2}Additionstheorem}{131}{}%
-\contentsline {subsection}{\numberline {H.8.3}Korrekturfaktor \( \kappa \)}{131}{}%
-\contentsline {subsection}{\numberline {H.8.4}Perihel nach einem Umlauf}{132}{}%
-\contentsline {subsection}{\numberline {H.8.5}Periheldrehung pro Umlauf}{132}{}%
-\contentsline {section}{\numberline {H.9}Resultat der vollständigen Rechnung}{132}{}%
-\contentsline {section}{\numberline {H.10}Zahlenwert für Merkur}{132}{}%
-\contentsline {section}{\numberline {H.11}Zusammenfassung}{132}{}%
-\contentsline {section}{\numberline {H.12}Ausblick}{133}{}%
+\contentsline {subsubsection}{Begründung}{117}{}%
+\contentsline {subsection}{\numberline {E.3.3}Transformation zwischen beiden Zugängen}{118}{}%
+\contentsline {subsection}{\numberline {E.3.4}Vorteile der Caputo-Formulierung}{118}{}%
+\contentsline {subsection}{\numberline {E.3.5}Rechenregeln für die Caputo-Ableitung}{118}{}%
+\contentsline {subsubsection}{Potenzfunktion}{118}{}%
+\contentsline {subsubsection}{Konstante}{118}{}%
+\contentsline {subsubsection}{Linearität}{118}{}%
+\contentsline {subsubsection}{Kettenregel}{118}{}%
+\contentsline {section}{\numberline {E.4}Fraktale Maxwell-Gleichungen in konsistenter Formulierung}{119}{}%
+\contentsline {subsection}{\numberline {E.4.1}Maxwell-Gleichungen mit fraktaler Ableitung}{119}{}%
+\contentsline {subsection}{\numberline {E.4.2}Wellengleichung im fraktalen Raum}{119}{}%
+\contentsline {subsection}{\numberline {E.4.3}Lösung durch Exponentialansatz}{119}{}%
+\contentsline {subsection}{\numberline {E.4.4}Dispersionsrelation}{119}{}%
+\contentsline {section}{\numberline {E.5}Konsequenzen für die WDBT+}{120}{}%
+\contentsline {section}{\numberline {E.6}Zusammenfassung der wichtigsten Ergebnisse}{120}{}%
+\contentsline {section}{\numberline {E.7}Ausblick: Offene mathematische Probleme}{120}{}%
+\contentsline {chapter}{\numberline {F}Kontinuumslimes: Von der diskreten IWT zur kontinuierlichen WDBT+}{121}{}%
+\contentsline {section}{\numberline {F.1}Einleitung}{121}{}%
+\contentsline {section}{\numberline {F.2}Mathematische Rahmenbedingungen}{121}{}%
+\contentsline {subsection}{\numberline {F.2.1}Annahmen an das diskrete Netzwerk}{121}{}%
+\contentsline {subsection}{\numberline {F.2.2}Definition des kontinuierlichen Grenzfeldes}{121}{}%
+\contentsline {subsection}{\numberline {F.2.3}Konvergenzbegriff}{122}{}%
+\contentsline {section}{\numberline {F.3}Konvergenz des diskreten Funktionals}{122}{}%
+\contentsline {subsection}{\numberline {F.3.1}Diskretes Funktional in kontinuierlicher Notation}{122}{}%
+\contentsline {subsection}{\numberline {F.3.2}Entwicklung der diskreten Operatoren}{122}{}%
+\contentsline {subsection}{\numberline {F.3.3}Konvergenz des Funktionals}{122}{}%
+\contentsline {section}{\numberline {F.4}Konvergenz der Euler-Lagrange-Gleichungen}{123}{}%
+\contentsline {subsection}{\numberline {F.4.1}Diskrete Euler-Lagrange-Gleichung}{123}{}%
+\contentsline {subsection}{\numberline {F.4.2}Kontinuierlicher Grenzwert}{123}{}%
+\contentsline {subsection}{\numberline {F.4.3}Konvergenzgeschwindigkeit}{123}{}%
+\contentsline {section}{\numberline {F.5}Emergenz der Metrik}{123}{}%
+\contentsline {subsection}{\numberline {F.5.1}Diskrete Metrik als Laplace-Approximation}{123}{}%
+\contentsline {subsection}{\numberline {F.5.2}Eigenschaften der emergenten Metrik}{123}{}%
+\contentsline {subsection}{\numberline {F.5.3}Grenzfall \( D \to 3 \) und ART}{123}{}%
+\contentsline {section}{\numberline {F.6}Beispiel: Diskrete Wellengleichung}{124}{}%
+\contentsline {subsection}{\numberline {F.6.1}Diskrete Form}{124}{}%
+\contentsline {subsection}{\numberline {F.6.2}Kontinuierlicher Limes}{124}{}%
+\contentsline {section}{\numberline {F.7}Offene Fragen und Grenzen}{124}{}%
+\contentsline {section}{\numberline {F.8}Zusammenfassung}{124}{}%
+\contentsline {chapter}{\numberline {G}Identitätsbeziehung zwischen DSTT und Weber-Kräften}{125}{}%
+\contentsline {section}{\numberline {G.1}Einleitung}{125}{}%
+\contentsline {section}{\numberline {G.2}Definitionen}{125}{}%
+\contentsline {subsection}{\numberline {G.2.1}DSTT-Zustandsvariable}{125}{}%
+\contentsline {subsection}{\numberline {G.2.2}Weber-Gravitation für Massen}{125}{}%
+\contentsline {subsection}{\numberline {G.2.3}Radiale Komponente}{125}{}%
+\contentsline {subsection}{\numberline {G.2.4}Tangentiale Komponente}{126}{}%
+\contentsline {section}{\numberline {G.3}Energiebilanz der Weber-Gravitation}{126}{}%
+\contentsline {subsection}{\numberline {G.3.1}Leistung der Weber-Kraft}{126}{}%
+\contentsline {subsection}{\numberline {G.3.2}Vereinfachung mit \( v^2 = \dot {r}^2 + r^2\dot {\phi }^2 \)}{126}{}%
+\contentsline {subsection}{\numberline {G.3.3}Zeitliche Änderung der kinetischen Energie}{126}{}%
+\contentsline {subsection}{\numberline {G.3.4}Änderung von \( \beta _{\text {DSTT}} \)}{127}{}%
+\contentsline {section}{\numberline {G.4}Die Identitätsbeziehung als zeitlicher Mittelwert}{127}{}%
+\contentsline {subsection}{\numberline {G.4.1}Problem der momentanen Identität}{127}{}%
+\contentsline {subsection}{\numberline {G.4.2}Korrigierte Beziehung}{127}{}%
+\contentsline {subsection}{\numberline {G.4.3}Beweisskizze}{127}{}%
+\contentsline {section}{\numberline {G.5}Spezialfall: Elektrodynamik (\( \beta _{\text {WED}} = 2 \))}{128}{}%
+\contentsline {section}{\numberline {G.6}Zusammenfassung der korrigierten Beziehungen}{128}{}%
+\contentsline {section}{\numberline {G.7}Konsequenzen für die Haupttext-Behauptungen}{128}{}%
+\contentsline {section}{\numberline {G.8}Ausblick: Vollständige Mittelung über elliptische Bahnen}{128}{}%
+\contentsline {chapter}{\numberline {H}Vollständige Herleitung der Periheldrehung in der Weber-Gravitation}{129}{}%
+\contentsline {section}{\numberline {H.1}Einleitung}{129}{}%
+\contentsline {section}{\numberline {H.2}Grundgleichungen der Weber-Gravitation}{129}{}%
+\contentsline {subsection}{\numberline {H.2.1}Weber-Kraft für massive Körper}{129}{}%
+\contentsline {subsection}{\numberline {H.2.2}Vereinfachung: Bahnebene}{129}{}%
+\contentsline {section}{\numberline {H.3}Drehimpuls in der Weber-Gravitation}{129}{}%
+\contentsline {subsection}{\numberline {H.3.1}Exakte Drehimpulsbilanz}{129}{}%
+\contentsline {subsection}{\numberline {H.3.2}Drehimpuls in erster Ordnung}{130}{}%
+\contentsline {section}{\numberline {H.4}Bewegungsgleichung in der Radialrichtung}{130}{}%
+\contentsline {subsection}{\numberline {H.4.1}Radiale Beschleunigung}{130}{}%
+\contentsline {subsection}{\numberline {H.4.2}Radiale Bewegungsgleichung}{131}{}%
+\contentsline {section}{\numberline {H.5}Bahngleichung in der Binet-Form mit variablem Drehimpuls}{131}{}%
+\contentsline {subsection}{\numberline {H.5.1}Substitution \( u = 1/r \)}{131}{}%
+\contentsline {subsection}{\numberline {H.5.2}Einsetzen in (H.3)}{131}{}%
+\contentsline {subsection}{\numberline {H.5.3}Term \( r\ddot {r} \) in \( u \)-Variablen}{131}{}%
+\contentsline {subsection}{\numberline {H.5.4}Bahngleichung}{131}{}%
+\contentsline {section}{\numberline {H.6}Post-Newtonsche Entwicklung}{132}{}%
+\contentsline {subsection}{\numberline {H.6.1}Entwicklung in \( 1/c^2 \)}{132}{}%
+\contentsline {subsection}{\numberline {H.6.2}Die drei Beiträge zum \( 3u^2 \)-Term}{132}{}%
+\contentsline {section}{\numberline {H.7}Lösung der Bahngleichung}{132}{}%
+\contentsline {subsection}{\numberline {H.7.1}Störungsansatz}{132}{}%
+\contentsline {subsection}{\numberline {H.7.2}Erste Ordnung}{132}{}%
+\contentsline {subsection}{\numberline {H.7.3}Entwicklung des Störterms}{133}{}%
+\contentsline {subsection}{\numberline {H.7.4}Partikuläre Lösungen}{133}{}%
+\contentsline {subsection}{\numberline {H.7.5}Gesamtlösung in erster Ordnung}{133}{}%
+\contentsline {section}{\numberline {H.8}Periheldrehung}{133}{}%
+\contentsline {subsection}{\numberline {H.8.1}Resonanter Term}{133}{}%
+\contentsline {subsection}{\numberline {H.8.2}Additionstheorem}{133}{}%
+\contentsline {subsection}{\numberline {H.8.3}Korrekturfaktor \( \kappa \)}{133}{}%
+\contentsline {subsection}{\numberline {H.8.4}Perihel nach einem Umlauf}{134}{}%
+\contentsline {subsection}{\numberline {H.8.5}Periheldrehung pro Umlauf}{134}{}%
+\contentsline {section}{\numberline {H.9}Resultat der vollständigen Rechnung}{134}{}%
+\contentsline {section}{\numberline {H.10}Zahlenwert für Merkur}{134}{}%
+\contentsline {section}{\numberline {H.11}Zusammenfassung}{134}{}%
+\contentsline {section}{\numberline {H.12}Ausblick}{135}{}%

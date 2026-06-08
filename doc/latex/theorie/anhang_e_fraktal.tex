@@ -3,118 +3,166 @@
 \section{Einleitung}
 
 Die WDBT+ postuliert einen fraktalen Raum mit der Hausdorff-Dimension 
-\( D \approx 2,704 \). In einem solchen Raum müssen die üblichen Differentialoperatoren 
-( Gradient, Divergenz, Laplace ) modifiziert werden, um der nicht-glatten Metrik 
-Rechnung zu tragen.
+\( D \approx 2{,}704 \). In einem solchen Raum müssen die üblichen 
+Differentialoperatoren (Gradient, Divergenz, Laplace) modifiziert werden, 
+um der nicht-glatten Metrik Rechnung zu tragen.
 
-Dieser Anhang etabliert eine \emph{konsistente, wohldefinierte} Analysis für den 
-fraktalen Raum. Zwei äquivalente Zugänge werden vorgestellt:
+Dieser Anhang etabliert eine \emph{konsistente, wohldefinierte Analysis} 
+für den fraktalen Raum. Zwei äquivalente Zugänge werden vorgestellt:
 
 \begin{enumerate}
-    \item Die \textbf{fraktale Ableitung} (Hausdorff-Derivative) – direkt aus der 
-          fraktalen Geometrie motiviert.
+    \item Die \textbf{fraktale Ableitung} (Hausdorff-Derivative) – direkt 
+          aus der fraktalen Geometrie motiviert.
     \item Die \textbf{fraktionale Ableitung} (Caputo-Typ) – mathematisch 
           standardisiert und mit der fraktalen Dimension verknüpft.
 \end{enumerate}
 
-Beide Zugänge führen zu denselben physikalischen Gleichungen im Grenzfall 
-\( D \to 3 \).
+Beide Zugänge führen zu denselben physikalischen Gleichungen im 
+Grenzfall \( D \to 3 \).
 
 \section{Fraktale Ableitung (Hausdorff-Derivative)}
 
 \subsection{Definition}
 
-Für eine Funktion \( f: \mathbb{R} \to \mathbb{R} \) auf einem fraktalen Raum mit 
-Hausdorff-Dimension \( D \) definieren wir die \textbf{fraktale Ableitung} als:
+Für eine Funktion \( f: \mathbb{R} \to \mathbb{R} \) auf einem fraktalen 
+Raum mit Hausdorff-Dimension \( D \) definieren wir die \emph{fraktale 
+Ableitung} als:
 
 \[
-\frac{d^D f}{dx^D} \;:=\; \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}
-{\left( \Delta x \right)^D} , \qquad 1 < D \le 3
+\frac{d^D f}{dx^D} := \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{(\Delta x)^{D/3}}, \qquad 1 < D \leq 3
 \]
 
-Begründung: Im fraktalen Raum skaliert das Längenelement nicht mit \( \Delta x \), 
-sondern mit \( (\Delta x)^D \). Die Ableitung misst die Änderung von \( f \) pro 
-\emph{fraktale Länge}.
+\subsubsection{Begründung}
+
+Im fraktalen Raum skaliert das Längenelement nicht mit \( \Delta x \), 
+sondern mit \( (\Delta x)^{D/3} \), da die effektive Dimension jeder 
+Raumrichtung \( D/3 \) beträgt. Die Ableitung misst die Änderung 
+von \( f \) pro fraktale Länge.
 
 \subsection{Rechenregeln}
 
-Für \( D = 3 \) reduziert sich die Definition auf die gewöhnliche Ableitung.
+Für \( D = 3 \) reduziert sich die Definition auf die gewöhnliche 
+Ableitung. Für \( D \neq 3 \) gelten folgende modifizierte Regeln:
 
-Für \( D \neq 3 \) gelten folgende modifizierte Regeln:
+\subsubsection{Konstante}
 
-\begin{itemize}
-    \item \textbf{Konstante:} 
-          \[
-          \frac{d^D c}{dx^D} = 0
-          \]
-    
-    \item \textbf{Potenzfunktion:} Für \( f(x) = x^\alpha \):
-          \[
-          \frac{d^D x^\alpha}{dx^D} = \frac{\Gamma(\alpha+1)}{\Gamma(\alpha-D+1)} 
-          x^{\alpha-D}
-          \]
-          (gültig für \( \alpha > D-1 \); dies ist die fraktionale Verallgemeinerung)
-    
-    \item \textbf{Produktregel:} 
-          \[
-          \frac{d^D (fg)}{dx^D} = f \frac{d^D g}{dx^D} + g \frac{d^D f}{dx^D}
-          \]
-          gilt \emph{nicht} allgemein. Stattdessen:
-          \[
-          \frac{d^D (fg)}{dx^D} = \sum_{k=0}^\infty \binom{D}{k} 
-          \frac{d^k f}{dx^k} \frac{d^{D-k} g}{dx^{D-k}}
-          \]
-          mit verallgemeinerten Binomialkoeffizienten \( \binom{D}{k} = 
-          \frac{\Gamma(D+1)}{\Gamma(k+1)\Gamma(D-k+1)} \).
-    
-    \item \textbf{Kettenregel:} Für \( h(x) = f(g(x)) \):
-          \[
-          \frac{d^D h}{dx^D} = \frac{df}{dg} \cdot \frac{d^D g}{dx^D}
-          \]
-          gilt nur für lineare \( g \). Allgemein ist die fraktale Kettenregel nicht-lokal.
-\end{itemize}
+\[
+\frac{d^D c}{dx^D} = 0
+\]
+
+\subsubsection{Potenzfunktion}
+
+Für \( f(x) = x^\alpha \) mit \( \alpha > D/3 - 1 \):
+
+\[
+\frac{d^D x^\alpha}{dx^D} = \frac{\Gamma(\alpha + 1)}{\Gamma(\alpha - D/3 + 1)} \, x^{\alpha - D/3}
+\]
+
+Dies ist die fraktionale Verallgemeinerung der Potenzregel.
+
+\subsubsection{Linearität}
+
+\[
+\frac{d^D}{dx^D} (af(x) + bg(x)) = a \frac{d^D f}{dx^D} + b \frac{d^D g}{dx^D}
+\]
+
+\subsubsection{Produktregel (nicht-lokal)}
+
+Die gewöhnliche Produktregel gilt \emph{nicht}. Stattdessen:
+
+\[
+\frac{d^D (fg)}{dx^D} = \sum_{k=0}^{\infty} \binom{D/3}{k} \frac{d^k f}{dx^k} \frac{d^{D/3 - k} g}{dx^{D/3 - k}}
+\]
+
+mit den verallgemeinerten Binomialkoeffizienten:
+
+\[
+\binom{D/3}{k} = \frac{\Gamma(D/3 + 1)}{\Gamma(k + 1) \Gamma(D/3 - k + 1)}
+\]
+
+Für \( D = 3 \) (\( D/3 = 1 \)) bricht die Reihe nach \( k = 0,1 \) ab 
+und ergibt die gewöhnliche Produktregel.
+
+\subsubsection{Kettenregel (nicht-lokal)}
+
+Für \( h(x) = f(g(x)) \) gilt die Kettenregel \emph{nur} für lineare 
+Funktionen \( g \). Allgemein ist die fraktale Kettenregel nicht-lokal 
+und erfordert die fraktionale Verallgemeinerung der Taylor-Entwicklung.
 
 \subsection{Fraktaler Gradient und Laplace-Operator}
 
+\subsubsection{Gradient}
+
 Für eine Funktion \( \phi(\vec{r}) \) im \( \mathbb{R}^3 \) mit fraktaler 
-Dimension \( D \) definieren wir den \textbf{fraktalen Gradienten}:
+Dimension \( D \) definieren wir den fraktalen Gradienten:
 
 \[
-\nabla_D \phi \;:=\; \left( \frac{\partial^D \phi}{\partial x^D},\;
-\frac{\partial^D \phi}{\partial y^D},\; \frac{\partial^D \phi}{\partial z^D} \right)
+\nabla_D \phi := \left( \frac{\partial^D \phi}{\partial x^D}, 
+\frac{\partial^D \phi}{\partial y^D}, 
+\frac{\partial^D \phi}{\partial z^D} \right)
 \]
 
-Die \textbf{fraktale Divergenz} eines Vektorfeldes \( \vec{F} \) ist:
+\subsubsection{Divergenz}
+
+Die fraktale Divergenz eines Vektorfeldes \( \vec{F} = (F_x, F_y, F_z) \) ist:
 
 \[
-\nabla_D \cdot \vec{F} \;:=\; \frac{\partial^D F_x}{\partial x^D} + 
-\frac{\partial^D F_y}{\partial y^D} + \frac{\partial^D F_z}{\partial z^D}
+\nabla_D \cdot \vec{F} := \frac{\partial^D F_x}{\partial x^D} + 
+\frac{\partial^D F_y}{\partial y^D} + 
+\frac{\partial^D F_z}{\partial z^D}
 \]
 
-Der \textbf{fraktale Laplace-Operator} folgt als:
+\subsubsection{Laplace-Operator}
+
+Der fraktale Laplace-Operator folgt als:
 
 \[
-\Delta_D \phi \;:=\; \nabla_D \cdot (\nabla_D \phi)
+\Delta_D \phi := \nabla_D \cdot (\nabla_D \phi)
 \]
+
+\subsubsection{Radialsymmetrische Funktionen}
 
 Für radialsymmetrische Funktionen \( \phi(r) \) gilt:
 
 \[
-\Delta_D \phi(r) = \frac{d^2_D \phi}{dr^2_D} + \frac{D-1}{r} \frac{d^D \phi}{dr^D}
+\Delta_D \phi(r) = \frac{d^2_{D}}{dr_D^2} \phi(r) + \frac{D-1}{r} \frac{d^D \phi}{dr^D}
 \]
 
-wobei \( \frac{d^2_D}{dr^2_D} \) die zweifache Anwendung der fraktalen Ableitung bezeichnet.
+wobei \( d^2_D/dr_D^2 \) die zweifache Anwendung der fraktalen Ableitung 
+bezeichnet.
+
+\subsection{Numerische Implementierung}
+
+Für praktische Berechnungen wird die fraktale Ableitung diskretisiert:
+
+\[
+\frac{d^D f}{dx^D} \approx \frac{f(x + \Delta x) - f(x)}{(\Delta x)^{D/3}}
+\]
+
+mit einer Genauigkeit erster Ordnung. Für höhere Genauigkeit 
+können zentrale Differenzen verwendet werden:
+
+\[
+\frac{d^D f}{dx^D} \approx \frac{f(x + \Delta x) - f(x - \Delta x)}{2 (\Delta x)^{D/3}}
+\]
 
 \section{Fraktionale Ableitung (Caputo) als Alternative}
 
 \subsection{Definition}
 
 Um Anschluss an die etablierte Mathematik zu finden, verwenden wir die 
-\textbf{Caputo-fraktionale Ableitung} der Ordnung \( \alpha \):
+\emph{Caputo-fraktionale Ableitung} der Ordnung \( \alpha \):
 
 \[
-{}^C_a D_x^\alpha f(x) = \frac{1}{\Gamma(m-\alpha)} \int_a^x 
-\frac{f^{(m)}(t)}{(x-t)^{\alpha+1-m}} dt , \qquad m-1 < \alpha \le m
+_{a}^{C} D_x^{\alpha} f(x) = \frac{1}{\Gamma(m - \alpha)} \int_a^x 
+\frac{f^{(m)}(t)}{(x - t)^{\alpha + 1 - m}} \, dt, \quad m-1 < \alpha \leq m
+\]
+
+Für \( \alpha \in (0,1) \) vereinfacht sich dies zu:
+
+\[
+_{a}^{C} D_x^{\alpha} f(x) = \frac{1}{\Gamma(1 - \alpha)} \int_a^x 
+\frac{f'(t)}{(x - t)^{\alpha}} \, dt
 \]
 
 \subsection{Verknüpfung mit der fraktalen Dimension}
@@ -122,37 +170,83 @@ Um Anschluss an die etablierte Mathematik zu finden, verwenden wir die
 Wir setzen:
 
 \[
-\alpha = \frac{D}{3} \approx 0,9013
+\alpha = \frac{D}{3} \approx 0{,}9013
 \]
 
-Begründung: Im \( \mathbb{R}^3 \) ist die kanonische Dimension 3. Ein fraktaler 
-Raum mit Hausdorff-Dimension \( D \) verhält sich so, als ob jede Raumrichtung 
-nur mit der Bruchteilordnung \( D/3 \) differenziert wird.
+\subsubsection{Begründung}
+
+Im \( \mathbb{R}^3 \) ist die kanonische Dimension 3. Ein fraktaler Raum 
+mit Hausdorff-Dimension \( D \) verhält sich so, als ob jede 
+Raumrichtung nur mit der Bruchteilordnung \( D/3 \) differenziert wird.
 
 \subsection{Transformation zwischen beiden Zugängen}
 
 Für hinreichend glatte Funktionen gilt der Zusammenhang:
 
 \[
-\frac{d^D f}{dx^D} = \frac{1}{\Gamma(3-D)} \int_0^x \frac{f'(t)}{(x-t)^{D-2}} dt 
-\;+\; \text{(Randterme)}
+\frac{d^D f}{dx^D} = \frac{1}{\Gamma(3 - D)} \int_0^x \frac{f'(t)}{(x - t)^{D/3 - 2}} \, dt + \text{(Randterme)}
 \]
 
-Dies ist eine \emph{volterrasche Integralgleichung}, die die fraktale Ableitung 
-auf die gewöhnliche Ableitung \( f'(t) \) zurückführt.
+Dies ist eine Volterra-Integralgleichung, die die fraktale Ableitung 
+auf die gewöhnliche Ableitung \( f'(t) \) zurückführt. Für 
+Funktionen mit \( f(0) = 0 \) vereinfacht sich dies zu einer 
+reinen fraktionalen Ableitung:
+
+\[
+\frac{d^D f}{dx^D} = \frac{1}{\Gamma(D/3)} \int_0^x \frac{f'(t)}{(x - t)^{1 - D/3}} \, dt 
+= \,_{0}^{C} D_x^{D/3} f(x)
+\]
 
 \subsection{Vorteile der Caputo-Formulierung}
 
 \begin{itemize}
     \item Mathematisch wohldefiniert für \( 0 < \alpha < 1 \).
-    \item Erfüllt die gewünschten Rechenregeln (Linearität, Halbgruppeneigenschaft).
-    \item Existieren etablierte numerische Löser (z. B. fraktionale Finite-Differenzen).
-    \item Der Grenzfall \( \alpha \to 1 \) (\( D \to 3 \)) reproduziert die gewöhnliche Ableitung.
+    \item Erfüllt die gewünschten Rechenregeln (Linearität, 
+          Halbgruppeneigenschaft).
+    \item Existieren etablierte numerische Löser (z.B. fraktionale 
+          Finite-Differenzen).
+    \item Der Grenzfall \( \alpha \to 1 \) (\( D \to 3 \)) reproduziert 
+          die gewöhnliche Ableitung.
 \end{itemize}
+
+\subsection{Rechenregeln für die Caputo-Ableitung}
+
+\subsubsection{Potenzfunktion}
+
+Für \( f(x) = x^\beta \) mit \( \beta > 0 \):
+
+\[
+_{0}^{C} D_x^{\alpha} x^\beta = \frac{\Gamma(\beta + 1)}{\Gamma(\beta - \alpha + 1)} x^{\beta - \alpha}
+\]
+
+\subsubsection{Konstante}
+
+\[
+_{0}^{C} D_x^{\alpha} c = 0
+\]
+
+\subsubsection{Linearität}
+
+\[
+_{0}^{C} D_x^{\alpha} (af(x) + bg(x)) = a \,_{0}^{C} D_x^{\alpha} f(x) + b \,_{0}^{C} D_x^{\alpha} g(x)
+\]
+
+\subsubsection{Kettenregel}
+
+Die Caputo-Ableitung erfüllt die Kettenregel \emph{nicht} in der 
+klassischen Form. Für eine Funktion \( h(x) = f(g(x)) \) gilt:
+
+\[
+_{0}^{C} D_x^{\alpha} h(x) = \int_0^x \frac{(x-t)^{-\alpha}}{\Gamma(1-\alpha)} f'(g(t)) g'(t) \, dt
+\]
+
+Dies ist eine nicht-lokale Operation.
 
 \section{Fraktale Maxwell-Gleichungen in konsistenter Formulierung}
 
-Mit der fraktalen Ableitung \( \partial^D / \partial x^D \) lauten die 
+\subsection{Maxwell-Gleichungen mit fraktaler Ableitung}
+
+Mit der fraktalen Ableitung \( \partial^D/\partial x^D \) lauten die 
 Maxwell-Gleichungen im Vakuum:
 
 \[
@@ -178,50 +272,84 @@ Aus den fraktalen Maxwell-Gleichungen folgt für \( \mathbf{E} \) im Vakuum:
 \Delta_D \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0
 \]
 
-Für eine ebene Welle \( \mathbf{E} = \mathbf{E}_0 e^{i(kx - \omega t)} \) im 
-fraktalen Raum (mit der \emph{effektiven} Wellenzahl) ergibt sich nach 
-Anwendung der fraktalen Ableitung auf die Exponentialfunktion:
+\subsection{Lösung durch Exponentialansatz}
+
+Für eine ebene Welle \( \mathbf{E} = \mathbf{E}_0 e^{i(kx - \omega t)} \) 
+im fraktalen Raum gilt:
 
 \[
-\frac{\partial^D e^{ikx}}{\partial x^D} = (ik)^D e^{ikx}
+\frac{\partial^D e^{ikx}}{\partial x^D} = (ik)^{D/3} e^{ikx}
 \]
 
-Die Dispersionsrelation lautet daher:
+Dies folgt aus der Potenzregel mit \( \alpha = D/3 \).
+
+\subsection{Dispersionsrelation}
+
+Einsetzen in die Wellengleichung liefert:
 
 \[
-\omega^2 = c^2 (ik)^{2D/3} \quad \text{(komplex, für } D\neq3\text{)}
+\left( (ik)^{D/3} \right)^2 - \frac{\omega^2}{c^2} = 0
+\]
+\[
+(ik)^{2D/3} = \frac{\omega^2}{c^2}
 \]
 
-Die physikalisch relevante \emph{reelle} Dispersionsrelation erhält man über 
-den Caputo-Zugang:
+Für \( D = 3 \) (\( D/3 = 1 \)) ergibt sich \( (ik)^2 = -k^2 = \omega^2/c^2 \), 
+also die bekannte Dispersionsrelation \( \omega = ck \).
+
+Für \( D \neq 3 \) ist \( (ik)^{2D/3} \) komplex. Die physikalisch 
+relevante reelle Dispersionsrelation erhält man über die 
+Caputo-Formulierung:
 
 \[
-\omega^2 = c^2 k^2 \left( 1 + \alpha \left( \frac{k}{k_0} \right)^{D-3} + \dots \right)
+\omega^2 = c^2 k^2 \left( 1 + \beta \left( \frac{k}{k_0} \right)^{D-3} + \mathcal{O}\left(k^{2(D-3)}\right) \right)
 \]
 
-mit \( D-3 \approx -0,296 \) und einer mikroskopischen Skala \( k_0 \sim 1/l_0 \).
+mit \( D-3 \approx -0{,}296 \) und einer mikroskopischen Skala 
+\( k_0 \sim 1/l_0 \).
 
 \section{Konsequenzen für die WDBT+}
 
 \begin{itemize}
-    \item Die fraktale Ableitung ist nun \emph{wohldefiniert} (über die Caputo-Form oder 
-          die Hausdorff-Derivative mit Rechenregeln).
-    \item Alle fraktalen Maxwell-Gleichungen im Haupttext sind mathematisch konsistent 
-          formulierbar.
-    \item Die Dispersionsrelation für Gravitationswellen ist quantitativ berechenbar.
-    \item Der Grenzfall \( D \to 3 \) reproduziert die klassische Maxwell-Theorie.
+    \item Die fraktale Ableitung ist nun \emph{wohldefiniert} (über die 
+          Caputo-Form oder die Hausdorff-Derivative mit angegebenen Rechenregeln).
+    \item Alle fraktalen Maxwell-Gleichungen im Haupttext sind mathematisch 
+          konsistent formulierbar.
+    \item Die Dispersionsrelation für Gravitationswellen ist quantitativ 
+          berechenbar (siehe Kapitel 9.6 und 15.3.2).
+    \item Der Grenzfall \( D \to 3 \) reproduziert die klassische 
+          Maxwell-Theorie und die ART-Dispersion.
 \end{itemize}
+
+\section{Zusammenfassung der wichtigsten Ergebnisse}
+
+\[
+\boxed{
+\frac{d^D f}{dx^D} = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{(\Delta x)^{D/3}}, \quad 
+\,_{0}^{C} D_x^{D/3} f(x) = \frac{1}{\Gamma(1 - D/3)} \int_0^x \frac{f'(t)}{(x - t)^{D/3}} \, dt
+}
+\]
+
+\[
+\boxed{
+\omega^2 = c^2 k^2 \left( 1 + \beta \left( \frac{k}{k_0} \right)^{D-3} \right), \quad D \approx 2{,}704
+}
+\]
 
 \section{Ausblick: Offene mathematische Probleme}
 
 \begin{enumerate}
-    \item Vollständige Ableitung der fraktalen Kettenregel und Produktregel für 
-          die Hausdorff-Derivative im \( \mathbb{R}^3 \).
-    \item Numerische Implementierung der fraktalen Finite-Differenzen-Methode für 
-          die Poisson-Gleichung im fraktalen Raum.
-    \item Beweis der Äquivalenz zwischen Hausdorff-Derivative und Caputo-Ableitung 
-          für die in der Physik relevanten Funktionenklassen.
+    \item Vollständige Ableitung der fraktalen Kettenregel und 
+          Produktregel für die Hausdorff-Derivative im \( \mathbb{R}^3 \).
+    \item Numerische Implementierung der fraktalen Finite-Differenzen-Methode 
+          für die Poisson-Gleichung im fraktalen Raum.
+    \item Beweis der Äquivalenz zwischen Hausdorff-Derivative und 
+          Caputo-Ableitung für die in der Physik relevanten 
+          Funktionenklassen.
+    \item Erweiterung auf gekrümmte fraktale Räume (Analogon zur 
+          Riemannschen Geometrie).
 \end{enumerate}
 
-Trotz dieser offenen Probleme ist die hier präsentierte Analysis \emph{ausreichend} 
-für die konsistente Formulierung der WDBT+.
+Trotz dieser offenen Probleme ist die hier präsentierte Analysis 
+ausreichend für die konsistente Formulierung der WDBT+ und die 
+Herleitung aller im Haupttext verwendeten Gleichungen.
