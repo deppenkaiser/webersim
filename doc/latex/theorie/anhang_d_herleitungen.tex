@@ -1,0 +1,164 @@
+\chapter{Ausgewählte Herleitungen aus der ursprünglichen WDBT}
+
+\section{Einleitung}
+
+Dieser Anhang enthält die vollständigen Herleitungen zentraler Gleichungen der WDBT+, die in der vorliegenden Zusammenfassung aus Platzgründen nur als Ergebnisse zitiert werden. Sie sind für das Verständnis der Theorie nicht zwingend erforderlich, aber für den Leser gedacht, der den formalen Weg von den Grundgleichungen zu den beobachtbaren Vorhersagen nachvollziehen möchte.
+
+Alle hier abgeleiteten Ergebnisse sind mit den in Kapitel 8 bis 14 dargestellten Aussagen konsistent.
+
+\section{Rotverschiebung im stationären Universum}
+
+\subsection{Grundgleichung}
+
+Die kumulative gravitative Rotverschiebung im nicht-expandierenden Universum wird beschrieben durch:
+
+\[
+z(d) = \frac{1}{c^2} \int_0^d \frac{GM(r)}{r^2} \, dr \tag{D.1}
+\]
+
+Hierbei ist \( d \) die Entfernung der Lichtquelle, \( M(r) \) die innerhalb des Radius \( r \) eingeschlossene Masse.
+
+\subsection{Fraktale Dichteverteilung}
+
+Aus der fraktalen Raumdimension \( D \approx 2,704 \) folgt die Dichteverteilung:
+
+\[
+\rho(r) = \rho_0 \left( \frac{r}{r_0} \right)^{D-3} \tag{D.2}
+\]
+
+Dabei sind \( \rho_0 \) und \( r_0 \) Normierungsgrößen.
+
+\subsection{Eingeschlossene Masse}
+
+Die innerhalb des Radius \( r \) enthaltene Masse ist:
+
+\[
+M(r) = \int_0^r \rho(r') \cdot 4\pi r'^2 \, dr' = 4\pi\rho_0 r_0^{3-D} \frac{r^D}{D} \tag{D.3}
+\]
+
+\subsection{Integration}
+
+Einsetzen von (D.3) in (D.1):
+
+\[
+z(d) = \frac{4\pi G\rho_0 r_0^{3-D}}{c^2 D} \int_0^d r^{D-3} \, dr = \frac{4\pi G\rho_0 r_0^{3-D}}{D(D-1)c^2} \, d^{\,D-1} \tag{D.4}
+\]
+
+\subsection{Effektive Hubble-Konstante}
+
+Das lineare Hubble-Gesetz \( z = H_{\text{eff}} d / c \) ist nur eine Näherung. Die effektive Hubble-Konstante wird skalenabhängig:
+
+\[
+H_{\text{eff}}(d) = c \cdot \frac{z(d)}{d} = \frac{4\pi G\rho_0 r_0^{3-D}}{D(D-1)c} \, d^{\,D-2} \tag{D.5}
+\]
+
+Wegen \( D-2 \approx -0,296 \) folgt \( H_{\text{eff}}(d) \propto d^{-0,296} \). Dies erklärt die beobachtete Hubble-Spannung (siehe separate Arbeit des Autors).
+
+\section{Galaxienrotationskurven ohne dunkle Materie}
+
+\subsection{Bewegungsgleichung}
+
+Die radiale Kraftbilanz für einen Stern der Masse \( m \) im Gravitationsfeld einer Galaxie lautet in der Weber-Gravitation mit Quantenpotential:
+
+\[
+m\frac{v^2}{r} = \frac{GM(r)m}{r^2}\left(1 + \frac{v^2}{2c^2}\right) - \frac{\partial Q}{\partial r} \tag{D.6}
+\]
+
+Hierbei ist \( M(r) \) die eingeschlossene Masse und \( Q \) das de Broglie-Bohm-Quantenpotential.
+
+\subsection{Quantenpotential für exponentielle Dichte}
+
+Für eine exponentielle Dichteverteilung \( \rho(r) = \rho_0 e^{-r/r_0} \) setzen wir \( \sqrt{\rho} \propto e^{-r/(2r_0)} \). Das Quantenpotential ergibt sich zu:
+
+\[
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}} \approx -\frac{\hbar^2}{2m} \left( \frac{1}{4r_0^2} - \frac{1}{r r_0} \right) \tag{D.7}
+\]
+
+Für \( r \gg r_0 \) dominiert der erste Term, und die Kraft wird:
+
+\[
+F_Q = -\frac{\partial Q}{\partial r} \approx -\frac{\hbar^2}{2m r_0^3} \tag{D.8}
+\]
+
+\subsection{Rotationskurve}
+
+Einsetzen von (D.8) in (D.6) und Auflösen nach \( v^2 \) ergibt:
+
+\[
+v^2(r) = \frac{GM(r)}{r} \left(1 + \frac{GM(r)}{2c^2 r}\right) + \frac{\hbar^2 r}{2m^2 r_0^3} \tag{D.9}
+\]
+
+\subsection{Asymptotisches Verhalten}
+
+\begin{itemize}
+    \item Im inneren Bereich (\( r \ll r_0 \)) dominiert der erste Term: \( v \propto 1/\sqrt{r} \) (Kepler-Verhalten).
+    \item Im äußeren Bereich (\( r \gg r_0 \)) wird der erste Term klein, der zweite Term (Quantenpotential) liefert \( v \propto \sqrt{r} \), was zu flachen Rotationskurven führt.
+\end{itemize}
+
+Damit wird dunkle Materie zur Erklärung der beobachteten Rotationskurven nicht benötigt.
+
+\section{Frequenzabhängige Lichtablenkung}
+
+\subsection{Weber-Gravitation für Photonen}
+
+Für Photonen (\( \beta = 1 \)) lautet die Weber-Kraft:
+
+\[
+\vec{F}_{\text{WG}}^{(\gamma)} = -\frac{GMm}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \tag{D.10}
+\]
+
+\subsection{Bahngleichung}
+
+Mit der Substitution \( u = 1/r \) und dem Drehimpuls \( h = r^2\dot{\phi} \) ergibt sich:
+
+\[
+\frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left( 3u^2 + \frac{E^2}{c^2 h^2} u^3 \right) \tag{D.11}
+\]
+
+Hierbei ist \( E = h\nu \) die Photonenenergie.
+
+\subsection{Störungsrechnung}
+
+Die homogene Lösung \( u_0 = \sin\phi / b \) beschreibt eine Gerade mit Stoßparameter \( b \). Die Störung \( \delta u \) ergibt sich durch Integration. Der gesamte Ablenkwinkel ist:
+
+\[
+\Delta\phi = \frac{4GM}{c^2 b} \left( 1 + \frac{3\pi \lambda^2}{16 \lambda_0^2} + \dots \right) \tag{D.12}
+\]
+
+mit \( \lambda_0 = hc / E \).
+
+\subsection{Physikalische Konsequenz}
+
+Der zweite Term in (D.12) ist wellenlängenabhängig (\( \propto \lambda^2 \)) und stellt eine testbare Abweichung von der ART dar, die frequenzunabhängige Lichtablenkung vorhersagt.
+
+\section{Quantenpotential als Singularitätenverhinderer}
+
+\subsection{Divergenz des Quantenpotentials}
+
+Für ein kollabierendes Objekt mit exponentieller Dichte \( \rho \sim e^{-r/\lambda} \) gilt \( \sqrt{\rho} \sim e^{-r/(2\lambda)} \). Das Quantenpotential ist:
+
+\[
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}} \approx -\frac{\hbar^2}{2m} \left( \frac{1}{4\lambda^2} - \frac{1}{\lambda r} \right) \tag{D.13}
+\]
+
+Für \( r \to 0 \) divergiert der zweite Term:
+
+\[
+Q \sim -\frac{\hbar^2}{2m} \cdot \frac{1}{\lambda r} \tag{D.14}
+\]
+
+\subsection{Abstoßende Kraft}
+
+Die zugehörige Kraft ist:
+
+\[
+F_Q = -\frac{\partial Q}{\partial r} \sim -\frac{\hbar^2}{2m\lambda r^2} \tag{D.15}
+\]
+
+Das Minuszeichen bedeutet hier, dass die Kraft in Richtung wachsender \( r \) wirkt – also abstoßend. Diese abstoßende Komponente verhindert den vollständigen Kollaps zu einer Singularität.
+
+\subsection{Konsequenz}
+
+Statt eines Schwarzen Lochs mit Singularität entsteht ein stabiles BEC-Objekt (siehe Kapitel 10) mit minimaler Ausdehnung \( R_{\min} \approx l_0 \), der fundamentalen Längenskala.
+
+\end{document}

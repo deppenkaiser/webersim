@@ -347,3 +347,25 @@
 \contentsline {subsection}{\numberline {C.8.3}Konvergente Theorien: ART+ vs. WDBT}{105}{}%
 \contentsline {subsection}{\numberline {C.8.4}Der experimentelle Entscheid}{105}{}%
 \contentsline {section}{\numberline {C.9}Zusammenfassung der Vergleiche}{106}{}%
+\contentsline {chapter}{\numberline {D}Ausgewählte Herleitungen aus der ursprünglichen WDBT}{107}{}%
+\contentsline {section}{\numberline {D.1}Einleitung}{107}{}%
+\contentsline {section}{\numberline {D.2}Rotverschiebung im stationären Universum}{107}{}%
+\contentsline {subsection}{\numberline {D.2.1}Grundgleichung}{107}{}%
+\contentsline {subsection}{\numberline {D.2.2}Fraktale Dichteverteilung}{107}{}%
+\contentsline {subsection}{\numberline {D.2.3}Eingeschlossene Masse}{107}{}%
+\contentsline {subsection}{\numberline {D.2.4}Integration}{108}{}%
+\contentsline {subsection}{\numberline {D.2.5}Effektive Hubble-Konstante}{108}{}%
+\contentsline {section}{\numberline {D.3}Galaxienrotationskurven ohne dunkle Materie}{108}{}%
+\contentsline {subsection}{\numberline {D.3.1}Bewegungsgleichung}{108}{}%
+\contentsline {subsection}{\numberline {D.3.2}Quantenpotential für exponentielle Dichte}{108}{}%
+\contentsline {subsection}{\numberline {D.3.3}Rotationskurve}{108}{}%
+\contentsline {subsection}{\numberline {D.3.4}Asymptotisches Verhalten}{108}{}%
+\contentsline {section}{\numberline {D.4}Frequenzabhängige Lichtablenkung}{109}{}%
+\contentsline {subsection}{\numberline {D.4.1}Weber-Gravitation für Photonen}{109}{}%
+\contentsline {subsection}{\numberline {D.4.2}Bahngleichung}{109}{}%
+\contentsline {subsection}{\numberline {D.4.3}Störungsrechnung}{109}{}%
+\contentsline {subsection}{\numberline {D.4.4}Physikalische Konsequenz}{109}{}%
+\contentsline {section}{\numberline {D.5}Quantenpotential als Singularitätenverhinderer}{109}{}%
+\contentsline {subsection}{\numberline {D.5.1}Divergenz des Quantenpotentials}{109}{}%
+\contentsline {subsection}{\numberline {D.5.2}Abstoßende Kraft}{109}{}%
+\contentsline {subsection}{\numberline {D.5.3}Konsequenz}{110}{}%
