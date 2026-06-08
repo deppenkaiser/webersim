@@ -79,9 +79,8 @@
 \contentsline {subsection}{\numberline {6.4.2}Skalierungsfaktor}{36}{}%
 \contentsline {subsection}{\numberline {6.4.3}Fraktale Dimension}{36}{}%
 \contentsline {section}{\numberline {6.5}Numerischer Wert}{36}{}%
-\contentsline {section}{\numberline {6.6}Korrektur früherer Veröffentlichungen}{37}{}%
-\contentsline {section}{\numberline {6.7}Physikalische Bedeutung}{37}{}%
-\contentsline {section}{\numberline {6.8}Zusammenfassung}{37}{}%
+\contentsline {section}{\numberline {6.6}Physikalische Bedeutung}{37}{}%
+\contentsline {section}{\numberline {6.7}Zusammenfassung}{37}{}%
 \contentsline {chapter}{\numberline {7}Emergenz der Naturkonstanten}{39}{}%
 \contentsline {section}{\numberline {7.1}Zwei Ebenen physikalischer Konstanten}{39}{}%
 \contentsline {section}{\numberline {7.2}Fundamentale IWT-Parameter}{39}{}%
