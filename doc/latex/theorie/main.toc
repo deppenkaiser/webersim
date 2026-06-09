@@ -18,11 +18,10 @@
 \contentsline {section}{\numberline {2.6}Axiom 5: Dynamische Gleichung der Informationsmetrik}{26}{}%
 \contentsline {section}{\numberline {2.7}Axiom 6: Energie als emergenter Informationsfluss}{27}{}%
 \contentsline {section}{\numberline {2.8}Axiom 7: Naturkonstanten als emergente Skalierungsparameter}{27}{}%
-\contentsline {section}{\numberline {2.9}Axiom 8: Fraktale Informationsdimension}{27}{}%
-\contentsline {section}{\numberline {2.10}Axiom 9: Emergenz von Raum, Zeit und Dynamik}{27}{}%
-\contentsline {section}{\numberline {2.11}Axiom 10: Universelle Gültigkeit}{28}{}%
-\contentsline {subsection}{\numberline {2.11.1}Vergleich mit den Axiomen der Standardphysik}{28}{}%
-\contentsline {section}{\numberline {2.12}Zusammenfassung}{28}{}%
+\contentsline {section}{\numberline {2.9}Axiom 8: Emergenz von Raum, Zeit und Dynamik}{27}{}%
+\contentsline {section}{\numberline {2.10}Axiom 9: Universelle Gültigkeit}{27}{}%
+\contentsline {subsection}{\numberline {2.10.1}Vergleich mit den Axiomen der Standardphysik}{28}{}%
+\contentsline {section}{\numberline {2.11}Zusammenfassung}{28}{}%
 \contentsline {chapter}{\numberline {3}Diskrete Informationsdynamik}{29}{}%
 \contentsline {section}{\numberline {3.1}Der diskrete Informationszustand}{29}{}%
 \contentsline {section}{\numberline {3.2}Diskrete Informationserhaltung}{29}{}%
