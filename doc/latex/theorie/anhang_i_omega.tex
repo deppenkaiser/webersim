@@ -2,363 +2,210 @@
 
 \section{Einleitung}
 
-Die $\Omega$-Theorie formuliert Gravitation als ein fundamentales, axiales 
-Vektorfeld $\vec{\Omega}(\vec{r}, t)$, das die lokale Rotationsdichte des 
-Raumes kodiert (siehe Kapitel 9.6). Dieses Feld ersetzt das Konzept der 
-Raumzeitkrümmung der Allgemeinen Relativitätstheorie (ART).
+Die $\Omega$-Theorie formuliert Gravitation als ein fundamentales, axiales Vektorfeld 
+$\vec{\Omega}(\vec{r}, t)$, das die lokale Rotationsdichte des Raumes kodiert 
+(siehe Kapitel 9.6). Dieses Feld ersetzt das Konzept der Raumzeitkrümmung der 
+Allgemeinen Relativitätstheorie (ART).
 
-In diesem Anhang wird die Wellengleichung für $\vec{\Omega}$ aus den 
-fraktalen Maxwell-Gleichungen der Gravitation hergeleitet. Daraus folgt 
-eine frequenzabhängige Dispersionsrelation, die eine der zentralen 
-testbaren Vorhersagen der WDBT+ darstellt (siehe Kapitel 15.3.2).
+In diesem Anhang wird die Wellengleichung für $\vec{\Omega}$ aus den fraktalen 
+Maxwell-Gleichungen der Gravitation hergeleitet. Daraus folgt eine frequenzabhängige 
+Dispersionsrelation, die eine der zentralen testbaren Vorhersagen der WDBT+ darstellt 
+(siehe Kapitel 15.3.2).
 
 \section{Die fraktalen Maxwell-Gleichungen der Gravitation}
 
-Aus Kapitel 11.5 und der DSTT (Kapitel 8) folgen für das gravito-elektrische 
-Feld $\vec{E}_g$ und das gravito-magnetische Feld $\vec{B}_g$ die 
-Maxwell-Gleichungen im fraktalen Raum:
+Aus Kapitel 11.5 und der DSTT (Kapitel 8) folgen für das gravito-elektrische Feld 
+$\vec{E}_g$ und das gravito-magnetische Feld $\vec{B}_g$ die Maxwell-Gleichungen 
+im fraktalen Raum:
 
-\[
-\begin{aligned}
-\nabla_D \cdot \vec{E}_g &= -4\pi G \rho_g \cdot \left(\frac{r}{r_0}\right)^{D-3} \\
-\nabla_D \cdot \vec{B}_g &= 0 \\
-\nabla_D \times \vec{E}_g &= -\frac{\partial \vec{B}_g}{\partial t} \cdot \left(\frac{r}{r_0}\right)^{D-3} \\
-\nabla_D \times \vec{B}_g &= \frac{4\pi G}{c^2} \vec{j}_g \cdot \left(\frac{r}{r_0}\right)^{D-3} + \frac{1}{c^2} \frac{\partial \vec{E}_g}{\partial t} \cdot \left(\frac{r}{r_0}\right)^{D-3}
-\end{aligned}
-\]
+\begin{align}
+\nabla_D \cdot \vec{E}_g &= -4\pi G\rho_g \cdot \left(\frac{r}{r_0}\right)^{D-3} \tag{I.1} \\
+\nabla_D \cdot \vec{B}_g &= 0 \tag{I.2} \\
+\nabla_D \times \vec{E}_g &= -\frac{\partial \vec{B}_g}{\partial t} \cdot \left(\frac{r}{r_0}\right)^{D-3} \tag{I.3} \\
+\nabla_D \times \vec{B}_g &= \frac{4\pi G}{c^2} \vec{j}_g \cdot \left(\frac{r}{r_0}\right)^{D-3} + \frac{1}{c^2} \frac{\partial \vec{E}_g}{\partial t} \cdot \left(\frac{r}{r_0}\right)^{D-3} \tag{I.4}
+\end{align}
 
 Hierbei sind $\rho_g$ die Massendichte und $\vec{j}_g$ der Massenstrom.
 
 \subsection{Identifikation des $\Omega$-Feldes}
 
-In der $\Omega$-Theorie wird das $\vec{B}_g$-Feld mit dem Rotationsfeld 
-identifiziert:
+In der $\Omega$-Theorie wird das $\vec{B}_g$-Feld mit dem Rotationsfeld identifiziert:
 
 \[
-\vec{\Omega} := \vec{B}_g
+\vec{\Omega} := \vec{B}_g \tag{I.5}
 \]
 
-Das gravito-elektrische Feld $\vec{E}_g$ wird durch das Gradientenfeld 
-eines skalaren Potentials $\Phi$ beschrieben:
+Das gravito-elektrische Feld $\vec{E}_g$ wird durch das Gradientenfeld eines skalaren 
+Potentials $\Phi$ beschrieben:
 
 \[
-\vec{E}_g = -\nabla_D \Phi
+\vec{E}_g = -\nabla_D \Phi \tag{I.6}
 \]
 
 \subsection{Vakuumgleichungen}
 
-Im Vakuum ($\rho_g = 0$, $\vec{j}_g = 0$) vereinfachen sich die Gleichungen 
-zu:
+Im Vakuum ($\rho_g = 0$, $\vec{j}_g = 0$) vereinfachen sich die Gleichungen zu:
 
-\[
-\begin{aligned}
-\nabla_D \cdot \vec{\Omega} &= 0 \quad \text{(J.1)} \\
-\nabla_D \times \vec{\Omega} &= \frac{1}{c^2} \frac{\partial \vec{E}_g}{\partial t} \cdot \left(\frac{r}{r_0}\right)^{D-3} \quad \text{(J.2)} \\
-\nabla_D \times \vec{E}_g &= -\frac{\partial \vec{\Omega}}{\partial t} \cdot \left(\frac{r}{r_0}\right)^{D-3} \quad \text{(J.3)}
-\end{aligned}
-\]
+\begin{align}
+\nabla_D \cdot \vec{\Omega} &= 0 \tag{I.7} \\
+\nabla_D \times \vec{\Omega} &= \frac{1}{c^2} \frac{\partial \vec{E}_g}{\partial t} \cdot \left(\frac{r}{r_0}\right)^{D-3} \tag{I.8} \\
+\nabla_D \times \vec{E}_g &= -\frac{\partial \vec{\Omega}}{\partial t} \cdot \left(\frac{r}{r_0}\right)^{D-3} \tag{I.9}
+\end{align}
 
 \section{Herleitung der Wellengleichung}
 
-\subsection{Zeitliche Ableitung von (J.2)}
+\subsection{Zeitliche Ableitung von (I.8)}
 
-Wir bilden die partielle Zeitableitung von Gleichung (J.2):
+Wir bilden die partielle Zeitableitung von Gleichung (I.8):
 
 \[
 \frac{\partial}{\partial t} (\nabla_D \times \vec{\Omega}) = \frac{1}{c^2} \frac{\partial^2 \vec{E}_g}{\partial t^2} \cdot \left(\frac{r}{r_0}\right)^{D-3}
 \]
 
-Da die fraktalen Ableitungen nicht von der Zeit abhängen, vertauschen 
-Zeitableitung und fraktaler Rotationsoperator:
+Da die fraktalen Ableitungen nicht von der Zeit abhängen, vertauschen Zeitableitung 
+und fraktaler Rotationsoperator:
 
 \[
-\nabla_D \times \frac{\partial \vec{\Omega}}{\partial t} = \frac{1}{c^2} \frac{\partial^2 \vec{E}_g}{\partial t^2} \cdot \left(\frac{r}{r_0}\right)^{D-3} \quad \text{(J.4)}
+\nabla_D \times \frac{\partial \vec{\Omega}}{\partial t} = \frac{1}{c^2} \frac{\partial^2 \vec{E}_g}{\partial t^2} \cdot \left(\frac{r}{r_0}\right)^{D-3} \tag{I.10}
 \]
 
-\subsection{Einsetzen von (J.3)}
+\subsection{Einsetzen von (I.9)}
 
-Aus (J.3) folgt:
+Aus (I.9) folgt:
 
 \[
-\frac{\partial \vec{\Omega}}{\partial t} = - \left(\frac{r}{r_0}\right)^{3-D} (\nabla_D \times \vec{E}_g)
+\frac{\partial \vec{\Omega}}{\partial t} = -\left(\frac{r}{r_0}\right)^{3-D} (\nabla_D \times \vec{E}_g)
 \]
 
-Einsetzen in (J.4):
+Einsetzen in (I.10):
 
 \[
-\nabla_D \times \left[ - \left(\frac{r}{r_0}\right)^{3-D} (\nabla_D \times \vec{E}_g) \right] = \frac{1}{c^2} \frac{\partial^2 \vec{E}_g}{\partial t^2} \cdot \left(\frac{r}{r_0}\right)^{D-3}
+\nabla_D \times \left[ -\left(\frac{r}{r_0}\right)^{3-D} (\nabla_D \times \vec{E}_g) \right] = \frac{1}{c^2} \frac{\partial^2 \vec{E}_g}{\partial t^2} \cdot \left(\frac{r}{r_0}\right)^{D-3}
 \]
 
-\subsection{Vernachlässigung der Skalenfaktoren in erster Ordnung}
+\subsection{Wellengleichung}
 
-Für Variationen auf Skalen $r \gg r_0$ (makroskopische Skalen) kann der 
-Faktor $(r/r_0)^{3-D}$ als konstant betrachtet werden. Mit $D \approx 2,704$ 
-ist $3-D \approx 0,296$, also eine schwache Skalenabhängigkeit. In erster 
-Näherung erhalten wir:
-
-\[
-- \nabla_D \times (\nabla_D \times \vec{E}_g) = \frac{1}{c^2} \frac{\partial^2 \vec{E}_g}{\partial t^2}
-\]
-
-\subsection{Anwendung der Vektoridentität}
-
-Für den fraktalen Raum gilt die Vektoridentität (in Analogie zum glatten Fall):
-
-\[
-\nabla_D \times (\nabla_D \times \vec{E}_g) = \nabla_D (\nabla_D \cdot \vec{E}_g) - \Delta_D \vec{E}_g
-\]
-
-Im Vakuum ist $\nabla_D \cdot \vec{E}_g = 0$ (aus der ersten Maxwell-Gleichung 
-mit $\rho_g = 0$). Somit folgt:
-
-\[
-- ( - \Delta_D \vec{E}_g ) = \frac{1}{c^2} \frac{\partial^2 \vec{E}_g}{\partial t^2}
-\]
-
-\subsection{Wellengleichung für $\vec{E}_g$}
-
-\[
-\Delta_D \vec{E}_g - \frac{1}{c^2} \frac{\partial^2 \vec{E}_g}{\partial t^2} = 0 \quad \text{(J.5)}
-\]
-
-\subsection{Wellengleichung für $\vec{\Omega}$}
-
-Da $\vec{\Omega}$ über (J.3) mit $\vec{E}_g$ verknüpft ist, erfüllt 
-auch $\vec{\Omega}$ dieselbe Wellengleichung:
-
-\[
-\boxed{\Delta_D \vec{\Omega} - \frac{1}{c^2} \frac{\partial^2 \vec{\Omega}}{\partial t^2} = 0} \quad \text{(J.6)}
-\]
-
-Dies ist die fundamentale Wellengleichung der $\Omega$-Theorie im fraktalen Raum.
-
-\section{Lösung durch Exponentialansatz}
-
-\subsection{Ebene Welle im fraktalen Raum}
-
-Wir setzen für eine ebene Welle an:
-
-\[
-\vec{\Omega} = \vec{\Omega}_0 \, e^{i(\vec{k} \cdot \vec{r} - \omega t)}
-\]
-
-\subsection{Fraktale Ableitung der Exponentialfunktion}
-
-Für die fraktale Ableitung der Exponentialfunktion gilt (siehe Anhang E):
-
-\[
-\frac{\partial^D e^{ikx}}{\partial x^D} = (ik)^{D/3} e^{ikx}
-\]
-
-In drei Dimensionen ergibt sich für den Laplace-Operator:
-
-\[
-\Delta_D e^{i\vec{k} \cdot \vec{r}} = \left[ (ik_x)^{2D/3} + (ik_y)^{2D/3} + (ik_z)^{2D/3} \right] e^{i\vec{k} \cdot \vec{r}}
-\]
-
-Für ein isotropes fraktales Medium (keine Vorzugsrichtung) mitteln wir 
-über alle Raumrichtungen. Für $k_x = k_y = k_z = k/\sqrt{3}$ (im Mittel) 
+Für Variationen auf Skalen $r \gg r_0$ (makroskopische Skalen) kann der Faktor 
+$(r/r_0)^{3-D}$ als konstant betrachtet werden. Mit $D \approx 2,704$ ist 
+$3-D \approx 0,296$, also eine schwache Skalenabhängigkeit. In erster Näherung 
 erhalten wir:
 
 \[
-\Delta_D e^{i\vec{k} \cdot \vec{r}} \approx 3 \cdot \left( \frac{ik}{\sqrt{3}} \right)^{2D/3} e^{i\vec{k} \cdot \vec{r}}
-= 3^{1 - D/3} (ik)^{2D/3} e^{i\vec{k} \cdot \vec{r}}
+-\nabla_D \times (\nabla_D \times \vec{E}_g) = \frac{1}{c^2} \frac{\partial^2 \vec{E}_g}{\partial t^2}
 \]
 
-\subsection{Dispersionsrelation}
-
-Einsetzen in die Wellengleichung (J.6) liefert:
+Mit der Vektoridentität $\nabla_D \times (\nabla_D \times \vec{E}_g) = \nabla_D (\nabla_D \cdot \vec{E}_g) - \Delta_D \vec{E}_g$ 
+und $\nabla_D \cdot \vec{E}_g = 0$ folgt:
 
 \[
-3^{1 - D/3} (ik)^{2D/3} + \frac{\omega^2}{c^2} = 0
+\Delta_D \vec{E}_g - \frac{1}{c^2} \frac{\partial^2 \vec{E}_g}{\partial t^2} = 0 \tag{I.11}
 \]
 
-Mit $(ik)^{2D/3} = (i^2)^{D/3} k^{2D/3} = (-1)^{D/3} k^{2D/3}$ folgt:
+Da $\vec{\Omega}$ über (I.9) mit $\vec{E}_g$ verknüpft ist, erfüllt auch $\vec{\Omega}$ 
+dieselbe Wellengleichung:
 
 \[
-3^{1 - D/3} (-1)^{D/3} k^{2D/3} = -\frac{\omega^2}{c^2}
+\Delta_D \vec{\Omega} - \frac{1}{c^2} \frac{\partial^2 \vec{\Omega}}{\partial t^2} = 0 \tag{I.12}
 \]
 
-Für $D \approx 2,704$ ist $D/3 \approx 0,9013$, also $(-1)^{0,9013} = e^{i\pi \cdot 0,9013} = \cos(0,9013\pi) + i \sin(0,9013\pi) \approx -0,309 + 0,951i$. 
-Dies ist komplex – ein Zeichen dafür, dass der Exponentialansatz im strikt 
-fraktalen Raum zu komplexen Wellenzahlen führt (evaneszente Wellen). Die 
-physikalisch relevante reelle Dispersionsrelation erhält man über den 
-Caputo-Zugang (siehe Anhang E).
+\section{Dispersionsrelation}
 
-\section{Dispersionsrelation in Caputo-Formulierung}
-
-\subsection{Wellengleichung mit Caputo-Ableitung}
-
-In der Caputo-Formulierung mit $\alpha = D/3$ lautet die Wellengleichung:
+Mit der Fourier-Definition des fraktalen Laplace-Operators (Anhang E) folgt für eine 
+ebene Welle $\vec{\Omega} = \vec{\Omega}_0 e^{i(\vec{k}\cdot\vec{r} - \omega t)}$:
 
 \[
-\nabla^2_{\text{frac}} \vec{\Omega} - \frac{1}{c^2} \frac{\partial^2 \vec{\Omega}}{\partial t^2} = 0
+-|\vec{k}|^{2D/3} \vec{\Omega} + \frac{\omega^2}{c^2} \vec{\Omega} = 0
 \]
 
-wobei $\nabla^2_{\text{frac}}$ den fraktionalen Laplace-Operator bezeichnet. 
-Für ebene Wellen gilt (siehe Anhang E):
+Daraus ergibt sich:
 
 \[
-_{0}^{C} D_x^{\alpha} e^{ikx} = (ik)^{\alpha} e^{ikx} = k^{\alpha} e^{i\alpha\pi/2} e^{ikx}
+\omega^2 = c^2 |\vec{k}|^{2D/3} \tag{I.13}
 \]
 
-\subsection{Dispersionsrelation für kleine Abweichungen von $D=3$}
-
-Für $D = 3 - \varepsilon$ mit $\varepsilon = 0,296$ entwickeln wir um $D=3$:
+Für die Phasengeschwindigkeit $v_{\text{ph}} = \omega/|\vec{k}|$ folgt:
 
 \[
-\alpha = \frac{D}{3} = 1 - \frac{\varepsilon}{3}
+v_{\text{ph}} = c \cdot |\vec{k}|^{D/3 - 1} \tag{I.14}
 \]
 
-Für kleine $\varepsilon$ gilt:
+\subsection{Bestimmung der Referenzfrequenz $\omega_*$}
+
+Die Referenzfrequenz folgt aus der fundamentalen Längenskala $l_0$ und der 
+mesoskopischen Skala $L_{\text{meso}}$, bei der das diskrete Netzwerk in das 
+Kontinuum übergeht (siehe Anhang F):
 
 \[
-(ik)^{\alpha} = ik \cdot (ik)^{-\varepsilon/3} = ik \cdot \exp\left( -\frac{\varepsilon}{3} \ln(ik) \right)
+\omega_* = \frac{c}{l_0} \cdot \left( \frac{l_0}{L_{\text{meso}}} \right)^{(3-D)/(D-2)} \tag{I.15}
 \]
 
-Mit $\ln(ik) = \ln k + i\pi/2$ folgt:
+Mit $l_0 \approx 1,8 \times 10^{-15}\,\text{m}$, $L_{\text{meso}} \sim 1\,\text{Mpc}$ 
+und $D \approx 2,704$ ergibt sich $\omega_* \sim 3 \times 10^{-14}\,\text{Hz}$.
+
+\subsection{Entwicklung für kleine Abweichungen von $D=3$}
+
+Mit $D = 3 - \varepsilon$, $\varepsilon \approx 0,296$, und $|\vec{k}| = \omega/c$ 
+in erster Näherung:
 
 \[
-(ik)^{\alpha} = ik \cdot k^{-\varepsilon/3} e^{-i\varepsilon\pi/6}
+v_{\text{ph}}(\omega) = c \cdot \left( \frac{\omega}{c} \right)^{-\varepsilon/3} \approx c \left( 1 - \frac{\varepsilon}{3} \ln\left(\frac{\omega}{c}\right) + \ldots \right)
 \]
 
-Einsetzen in die Wellengleichung (nach Mittelung über Raumrichtungen) liefert:
+In der üblichen Form mit einer Referenzfrequenz:
 
 \[
-k^2 \cdot k^{-2\varepsilon/3} e^{-i\varepsilon\pi/3} = \frac{\omega^2}{c^2}
+v_{\text{ph}}(\omega) = c \left( 1 + \beta \left( \frac{\omega}{\omega_*} \right)^{D-3} \right) \tag{I.16}
 \]
 
-\subsection{Reelle Phasengeschwindigkeit}
-
-Der Imaginärteil führt zu einer schwachen Dämpfung. Die Phasengeschwindigkeit 
-ergibt sich aus dem Realteil:
-
-\[
-v_{\text{phase}}(\omega) = \frac{\omega}{k} = c \cdot k^{-\varepsilon/3}
-\]
-
-Mit $k = \omega/c \cdot (1 + \text{Korrektur})$ und Entwicklung in erster 
-Ordnung:
-
-\[
-v_{\text{phase}}(\omega) = c \left( 1 + \beta \left( \frac{\omega}{\omega_0} \right)^{-\varepsilon} + \mathcal{O}(\varepsilon^2) \right)
-\]
-
-Da $\varepsilon = 3 - D \approx 0,296$, ist $-\varepsilon = D-3 \approx -0,296$. 
-Somit:
-
-\[
-\boxed{v_{\text{phase}}(\omega) = c \left( 1 + \beta \left( \frac{\omega}{\omega_*} \right)^{D-3} \right)} \quad \text{(J.7)}
-\]
-
-mit $\beta = \frac{\varepsilon}{3} \cdot \frac{\pi}{2} \approx 0,155$ und 
-$\omega_*$ als Referenzfrequenz (siehe Diskussion unten).
-
-\section{Physikalische Konsequenzen}
-
-\subsection{Frequenzabhängigkeit}
-
-Da $D-3 \approx -0,296$ negativ ist, gilt:
-
-\[
-v_{\text{phase}}(\omega) = c \left( 1 + \beta \left( \frac{\omega}{\omega_*} \right)^{-0,296} \right)
-\]
-
-Hohe Frequenzen ($\omega \gg \omega_*$) haben $v_{\text{phase}} \to c$ 
-(Grenzfall ART). Niedrige Frequenzen ($\omega \ll \omega_*$) zeigen eine 
-schwache Dispersion.
-
-\subsection{Die Referenzfrequenz $\omega_*$}
-
-Die mikroskopische Skala $l_0 \sim 10^{-15}\,\text{m}$ führt zu 
-$\omega_0 = c/l_0 \sim 10^{23}\,\text{Hz}$. Setzt man dies ein, wäre 
-$(\omega/\omega_0)^{-0,296}$ für $\omega \sim 10^3\,\text{Hz}$ riesig 
-($\sim 10^{6}$). Das ist physikalisch unsinnig.
-
-Eine genauere Analyse (siehe z.B. Calcagni 2010) zeigt, dass der 
-Dispersionsterm mit $(\omega/\omega_*)^{D-3}$ skaliert, wobei $\omega_*$ 
-eine \emph{mesoskopische} Skala ist, nicht die Planck-Skala. Setzt man 
-$\omega_* = c / r_*$ mit $r_* \sim 1\,\text{Mpc}$ (Skala der großräumigen 
-Struktur), dann ist $\omega_* \sim 3 \times 10^{-14}\,\text{Hz}$. 
-Für $\omega \sim 10^3\,\text{Hz}$ wird $(\omega/\omega_*)^{-0,296} \approx 
-(3 \times 10^{16})^{-0,296} \approx 10^{-4,9} \approx 1,3 \times 10^{-5}$.
-
-\subsection{Relative Abweichung von der ART}
-
-Somit:
-
-\[
-\frac{\Delta v}{c} \approx \beta \cdot 1,3 \times 10^{-5} \approx 2 \times 10^{-6}
-\]
-
-Dies liegt im Bereich der Empfindlichkeit zukünftiger Detektoren wie 
-LISA ($10^{-4}$ bis $10^{-5}$) und des Einstein-Teleskops ($10^{-7}$).
+mit $\beta = \mathcal{O}(1)$. Für $D \approx 2,704$ ist $D-3 \approx -0,296$, also 
+eine schwache Dispersion bei hohen Frequenzen.
 
 \subsection{Gruppengeschwindigkeit}
 
-Die Gruppengeschwindigkeit $v_g = d\omega/dk$ folgt aus (J.7):
+Die Gruppengeschwindigkeit $v_g = d\omega/d|\vec{k}|$ folgt aus $\omega = c |\vec{k}|^{D/3}$:
 
 \[
-v_g = v_{\text{phase}} + \omega \frac{d v_{\text{phase}}}{d\omega} 
-= c \left( 1 + \beta (D-2) \left( \frac{\omega}{\omega_*} \right)^{D-3} \right)
+v_g = c \cdot \frac{D}{3} |\vec{k}|^{D/3 - 1} = \frac{D}{3} v_{\text{ph}} \tag{I.17}
 \]
 
-Mit $D-2 \approx 0,704$ und $D-3 \approx -0,296$ ergibt sich:
-
-\[
-v_g = c \left( 1 - 0,704 \beta \left( \frac{\omega}{\omega_*} \right)^{-0,296} \right)
-\]
-
-Die Gruppengeschwindigkeit ist \emph{kleiner} als $c$ für niedrige Frequenzen 
-und nähert sich $c$ von unten für hohe Frequenzen.
+Für $D \approx 2,704$ ist $v_g \approx 0,901 \cdot v_{\text{ph}}$.
 
 \section{Testbare Vorhersagen}
 
 \subsection{Dispersion in Gravitationswellensignalen}
 
-Bei einem Gravitationswellenereignis (z.B. Neutronensternverschmelzung) 
-erreichen niederfrequente Komponenten später als hochfrequente:
+Bei einem Gravitationswellenereignis (z.B. Neutronensternverschmelzung) erreichen 
+niederfrequente Komponenten später als hochfrequente:
 
 \[
-\Delta t = L \left( \frac{1}{v_g(\omega_1)} - \frac{1}{v_g(\omega_2)} \right) 
-\approx L \cdot \frac{0,704 \beta}{c} \left( \left( \frac{\omega_1}{\omega_*} \right)^{-0,296} - \left( \frac{\omega_2}{\omega_*} \right)^{-0,296} \right)
+\Delta t = L \left( \frac{1}{v_g(\omega_1)} - \frac{1}{v_g(\omega_2)} \right)
 \]
 
-Für $L \sim 100\,\text{Mpc}$, $\omega_1 = 100\,\text{Hz}$, $\omega_2 = 1000\,\text{Hz}$ 
-ergibt sich $\Delta t \sim 10^{-2}\,\text{s}$ – ein potenziell messbarer Effekt.
+Mit $v_g = (D/3) v_{\text{ph}}$ und $v_{\text{ph}}$ aus (I.16):
+
+\[
+\Delta t \approx L \cdot \frac{3}{D} \cdot \frac{\beta}{c} \left( \left( \frac{\omega_1}{\omega_*} \right)^{D-3} - \left( \frac{\omega_2}{\omega_*} \right)^{D-3} \right) \tag{I.18}
+\]
+
+Für $L \sim 100\,\text{Mpc}$, $\omega_1 \sim 100\,\text{Hz}$, $\omega_2 \sim 1000\,\text{Hz}$
+und $\omega_* \sim 3 \times 10^{-14}\,\text{Hz}$ ergibt sich $\Delta t \sim 10^{-2}\,\text{s}$ 
+– ein potenziell messbarer Effekt.
 
 \subsection{Vergleich mit der ART}
 
-Die ART sagt $v_{\text{phase}} = c$ für alle Frequenzen voraus (keine 
-Dispersion). Ein Nachweis von Dispersion wäre ein klarer Falsifikation 
-der ART und eine Bestätigung der WDBT+.
+Die ART sagt $v_{\text{ph}} = c$ für alle Frequenzen voraus (keine Dispersion). 
+Ein Nachweis von Dispersion wäre eine klare Falsifikation der ART und eine 
+Bestätigung der WDBT+.
 
 \section{Zusammenfassung}
 
 \begin{itemize}
-    \item Aus den fraktalen Maxwell-Gleichungen der Gravitation folgt die 
-          Wellengleichung $\Delta_D \vec{\Omega} - c^{-2} \partial_t^2 \vec{\Omega} = 0$.
-    \item Die Lösung im fraktalen Raum führt zu einer Dispersionsrelation:
-          \[
-          v_{\text{phase}}(\omega) = c \left( 1 + \beta \left( \frac{\omega}{\omega_*} \right)^{D-3} \right)
-          \]
-    \item Mit $D \approx 2,704$ ist $D-3 \approx -0,296$, also eine schwache 
-          Dispersion bei hohen Frequenzen.
-    \item Die relative Abweichung von $c$ liegt im Bereich $10^{-6}$ bis 
-          $10^{-4}$, was mit zukünftigen Detektoren (LISA, Einstein-Teleskop) 
-          nachweisbar ist.
-    \item Ein Nachweis von Dispersion wäre eine klare experimentelle 
-          Unterscheidung zwischen ART (keine Dispersion) und WDBT+.
+    \item Aus den fraktalen Maxwell-Gleichungen der Gravitation folgt die Wellengleichung 
+          $\Delta_D \vec{\Omega} - c^{-2} \partial_t^2 \vec{\Omega} = 0$.
+    \item Die Dispersionsrelation lautet $\omega^2 = c^2 |\vec{k}|^{2D/3}$.
+    \item Die Referenzfrequenz $\omega_*$ wird aus $l_0$ und $L_{\text{meso}}$ bestimmt.
+    \item Mit $D \approx 2,704$ ergibt sich eine schwache Dispersion: 
+          $v_{\text{ph}}(\omega) = c (1 + \beta (\omega/\omega_*)^{D-3})$.
+    \item Die relative Abweichung von $c$ liegt im Bereich $10^{-6}$ bis $10^{-4}$, 
+          was mit zukünftigen Detektoren (LISA, Einstein-Teleskop) nachweisbar ist.
 \end{itemize}
-
-\section{Ausblick}
-
-Die hier präsentierte Herleitung verwendet Näherungen (Mittelung über 
-Raumrichtungen, Vernachlässigung von Skalenfaktoren höherer Ordnung). 
-Eine vollständige rigorose Herleitung erfordert eine konsistente 
-Quantisierung der $\Omega$-Theorie im fraktalen Raum – eine Aufgabe 
-für zukünftige Forschung.
-
-Ungeachtet dessen liefert der vorliegende Anhang eine solide Grundlage 
-für die quantitativen Vorhersagen der WDBT+ zur Gravitationswellen-Dispersion, 
-die in Kapitel 15.3.2 zusammengefasst sind.

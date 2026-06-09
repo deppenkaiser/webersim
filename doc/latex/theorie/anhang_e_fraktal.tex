@@ -2,264 +2,167 @@
 
 \section{Einleitung}
 
-Die WDBT+ postuliert einen fraktalen Raum mit der Hausdorff-Dimension
-\( D \approx 2{,}704 \). In einem solchen Raum müssen die üblichen
-Differentialoperatoren modifiziert werden.
+Die WDBT+ postuliert einen fraktalen Raum mit der Hausdorff-Dimension 
+\( D \approx 2,704 \). In einem solchen Raum müssen die üblichen Differentialoperatoren 
+modifiziert werden.
 
-Dieser Anhang etabliert eine \emph{mathematisch konsistente} Analysis
-für den fraktalen Raum. Zentrale Idee: Die fraktale Dimension \(D\)
-manifestiert sich in der \textbf{Ordnung} der Ableitung, nicht in einem
-skalierten Differentialquotienten.
+Dieser Anhang etabliert eine mathematisch konsistente Analysis für den fraktalen Raum.
+Die zentrale Idee: Die fraktale Dimension \( D \) manifestiert sich in der Ordnung 
+der Ableitung, nicht in einem skalierten Differentialquotienten.
 
-\section{Fraktionale Ableitung (Weyl) als Grundlage}
+\section{Fraktaler Laplace-Operator über Fourier-Transformation}
 
-\subsection{Definition der Weyl-Fraktionableitung}
+\subsection{Definition}
 
-Für eine Funktion \( f: \mathbb{R} \to \mathbb{R} \) und eine Ordnung
-\( \alpha \in (0,1) \) definieren wir die \emph{Weyl-fraktionale
-Ableitung}:
-
-\[
-_{-\infty} D_x^{\alpha} f(x) := \frac{1}{\Gamma(1-\alpha)} \frac{d}{dx} \int_{-\infty}^{x} \frac{f(t)}{(x-t)^{\alpha}} \, dt
-\]
-
-Für \(\alpha = 1\) gilt der Grenzfall:
-\[
-\lim_{\alpha \to 1^-} \,_{-\infty} D_x^{\alpha} f(x) = f'(x)
-\]
-
-\subsection{Eigenschaft für ebene Wellen}
-
-Für die Exponentialfunktion \( e^{ikx} \) gilt die fundamentale Eigenfunktionseigenschaft:
+Für eine hinreichend glatte Funktion \( f: \mathbb{R}^3 \to \mathbb{R} \) mit kompaktem 
+Träger definieren wir den fraktalen Laplace-Operator \( \Delta_D \) durch seine Wirkung 
+im Fourier-Raum:
 
 \[
-_{-\infty} D_x^{\alpha} e^{ikx} = (ik)^{\alpha} e^{ikx}
+\widehat{\Delta_D f}(\vec{k}) = -|\vec{k}|^{2D/3} \hat{f}(\vec{k})
 \]
 
-Dies ist der entscheidende Vorteil der Weyl-Ableitung gegenüber der Caputo-Ableitung:
-Ebene Wellen sind Eigenfunktionen des fraktalen Differentialoperators.
+Dabei ist \( \hat{f}(\vec{k}) = \int_{\mathbb{R}^3} f(\vec{x}) e^{-i\vec{k}\cdot\vec{x}} \, d^3x \)
+die Fourier-Transformierte. Für \( D = 3 \) ergibt sich der gewöhnliche Laplace-Operator,
+da \( |\vec{k}|^{2} \) die Fourier-Transformierte von \( -\Delta \) ist.
 
-\subsection{Verknüpfung mit der fraktalen Dimension}
+\subsection{Eigenschaften}
 
-Wir setzen:
-\[
-\alpha := \frac{D}{3}
-\]
+\begin{itemize}
+    \item \textbf{Linearität:} \( \Delta_D(af + bg) = a\Delta_D f + b\Delta_D g \)
+    \item \textbf{Eigenfunktionen:} \( \Delta_D e^{i\vec{k}\cdot\vec{r}} = -|\vec{k}|^{2D/3} e^{i\vec{k}\cdot\vec{r}} \)
+    \item \textbf{Skalierung:} \( \Delta_D f(\lambda\vec{r}) = \lambda^{2D/3} (\Delta_D f)(\lambda\vec{r}) \)
+    \item \textbf{Symmetrie:} \( \int f \Delta_D g \, d^Dr = \int g \Delta_D f \, d^Dr \)
+\end{itemize}
 
-Begründung: Im \(\mathbb{R}^3\) ist die kanonische Dimension 3. Ein
-fraktaler Raum mit Hausdorff-Dimension \(D\) verhält sich so, als ob
-jede Raumrichtung nur mit der Bruchteilordnung \(D/3\) differenziert
-wird. Für \(D = 3\) gilt \(\alpha = 1\), und wir erhalten die
-gewöhnliche Ableitung.
+\subsection{Darstellung im Ortsraum (Weyl-Fraktionableitung)}
 
-\subsection{Fraktale partielle Ableitungen}
-
-Für eine Funktion \(\phi: \mathbb{R}^3 \to \mathbb{R}\) definieren wir
-die fraktale partielle Ableitung als:
+Die Darstellung von \( \Delta_D \) im Ortsraum erfolgt über die Weyl-Fraktionableitung.
+Für eine Funktion \( f: \mathbb{R} \to \mathbb{R} \) und \( \alpha \in (0,1) \):
 
 \[
-\frac{\partial^D \phi}{\partial x^D}(x,y,z) := \,_{-\infty} D_x^{\alpha} \phi(x,y,z)
+_{-\infty}D_x^{\alpha} f(x) = \frac{1}{\Gamma(1-\alpha)} \frac{d}{dx} \int_{-\infty}^x \frac{f(t)}{(x-t)^{\alpha}} dt
 \]
-(analog für \(y\) und \(z\)).
 
-\section{Rechenregeln}
+Für \( \alpha = 2D/3 \) gilt dann:
 
-\subsection{Linearität}
 \[
-\frac{\partial^D}{\partial x^D} (a f + b g) = a \frac{\partial^D f}{\partial x^D} + b \frac{\partial^D g}{\partial x^D}
+\Delta_D f(x,y,z) = \frac{\partial^{2D/3} f}{\partial x^{2D/3}} + \frac{\partial^{2D/3} f}{\partial y^{2D/3}} + \frac{\partial^{2D/3} f}{\partial z^{2D/3}}
 \]
 
-\subsection{Potenzfunktion}
-Für \(f(x) = x^\beta\) mit \(\beta > 0\):
-\[
-\frac{\partial^D x^\beta}{\partial x^D} = \frac{\Gamma(\beta+1)}{\Gamma(\beta-\alpha+1)} x^{\beta-\alpha}, \quad \alpha = D/3
-\]
-
-\subsection{Konstante}
-\[
-\frac{\partial^D c}{\partial x^D} = 0
-\]
-
-\subsection{Exponentialfunktion (wichtig für Wellen)}
-Für die Weyl-Fraktionableitung gilt:
-\[
-\frac{\partial^D e^{ikx}}{\partial x^D} = (ik)^\alpha e^{ikx} = k^\alpha e^{i\alpha\pi/2} e^{ikx}
-\]
-
-\subsection{Produktregel (nicht-lokal)}
-Die gewöhnliche Produktregel gilt nicht. Stattdessen:
-\[
-\frac{\partial^D (fg)}{\partial x^D} = \sum_{n=0}^{\infty} \binom{\alpha}{n} \frac{\partial^n f}{\partial x^n} \frac{\partial^{\alpha-n} g}{\partial x^{\alpha-n}}
-\]
 mit
+
 \[
-\binom{\alpha}{n} = \frac{\Gamma(\alpha+1)}{\Gamma(n+1)\,\Gamma(\alpha-n+1)}
+\frac{\partial^{\alpha} f}{\partial x^{\alpha}}(x) = {}_{-\infty}D_x^{\alpha} f(x)
 \]
 
-\subsection{Kettenregel (nicht-lokal)}
-Für \(h(x) = f(g(x))\):
-\[
-\frac{\partial^D h}{\partial x^D}(x) = \int_{-\infty}^{x} \frac{(x-t)^{-\alpha}}{\Gamma(1-\alpha)} f'(g(t)) g'(t) \, dt
-\]
+\subsection{Fraktale Differentialoperatoren}
 
-\section{Fraktale Differentialoperatoren}
-
-\subsection{Fraktaler Gradient}
-\[
-\nabla_D \phi := \left( \frac{\partial^D \phi}{\partial x^D},
-\frac{\partial^D \phi}{\partial y^D},
-\frac{\partial^D \phi}{\partial z^D} \right)
-\]
-
-\subsection{Fraktale Divergenz}
-\[
-\nabla_D \cdot \vec{F} := \frac{\partial^D F_x}{\partial x^D} +
-\frac{\partial^D F_y}{\partial y^D} +
-\frac{\partial^D F_z}{\partial z^D}
-\]
-
-\subsection{Fraktaler Laplace-Operator}
-\[
-\Delta_D \phi := \nabla_D \cdot (\nabla_D \phi) =
-\frac{\partial^{2D/3} \phi}{\partial x^{2D/3}} +
-\frac{\partial^{2D/3} \phi}{\partial y^{2D/3}} +
-\frac{\partial^{2D/3} \phi}{\partial z^{2D/3}}
-\]
-
-\emph{Hinweis:} Die Ordnung ist \(2D/3\), nicht \(D\). Dies folgt aus
-der zweifachen Anwendung der fraktalen Ableitung.
+\begin{itemize}
+    \item \textbf{Fraktaler Gradient:}
+    \[
+    \nabla_D f = \left( \frac{\partial^{D/3} f}{\partial x^{D/3}}, 
+                      \frac{\partial^{D/3} f}{\partial y^{D/3}}, 
+                      \frac{\partial^{D/3} f}{\partial z^{D/3}} \right)
+    \]
+    
+    \item \textbf{Fraktale Divergenz:}
+    \[
+    \nabla_D \cdot \vec{F} = \frac{\partial^{D/3} F_x}{\partial x^{D/3}} + 
+                            \frac{\partial^{D/3} F_y}{\partial y^{D/3}} + 
+                            \frac{\partial^{D/3} F_z}{\partial z^{D/3}}
+    \]
+    
+    \item \textbf{Fraktaler Laplace-Operator (konsistente Definition):}
+    \[
+    \Delta_D f = \nabla_D \cdot (\nabla_D f) = \frac{\partial^{2D/3} f}{\partial x^{2D/3}} + 
+                                              \frac{\partial^{2D/3} f}{\partial y^{2D/3}} + 
+                                              \frac{\partial^{2D/3} f}{\partial z^{2D/3}}
+    \]
+\end{itemize}
 
 \section{Fraktale Maxwell-Gleichungen}
 
 \subsection{Vakuumgleichungen}
-Mit den obigen Definitionen lauten die Maxwell-Gleichungen im Vakuum:
+
+Mit den obigen Definitionen lauten die Maxwell-Gleichungen im fraktalen Vakuum:
+
+\begin{align}
+\nabla_D \cdot \mathbf{E} &= 0 \tag{E.1} \\
+\nabla_D \cdot \mathbf{B} &= 0 \tag{E.2} \\
+\nabla_D \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \tag{E.3} \\
+\nabla_D \times \mathbf{B} &= \frac{1}{c^2} \frac{\partial \mathbf{E}}{\partial t} \tag{E.4}
+\end{align}
+
+\subsection{Wellengleichung und Dispersionsrelation}
+
+Durch Kombination von (E.3) und (E.4) folgt die fraktale Wellengleichung:
 
 \[
-\begin{aligned}
-\nabla_D \cdot \mathbf{E} &= 0 \\
-\nabla_D \cdot \mathbf{B} &= 0 \\
-\nabla_D \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \\
-\nabla_D \times \mathbf{B} &= \frac{1}{c^2} \frac{\partial \mathbf{E}}{\partial t}
-\end{aligned}
+\Delta_D \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0 \tag{E.5}
 \]
 
-\subsection{Wellengleichung}
-Durch Kombination folgt:
-\[
-\Delta_D \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0
-\]
-
-\subsection{Ebene Wellen im fraktalen Raum}
-Für eine ebene Welle \(\mathbf{E} = \mathbf{E}_0 e^{i(kx - \omega t)}\) gilt mit der Weyl-Ableitung:
+Für eine ebene Welle \( \mathbf{E} = \mathbf{E}_0 e^{i(\vec{k}\cdot\vec{r} - \omega t)} \) 
+liefert die Fourier-Definition:
 
 \[
-\frac{\partial^{2D/3} e^{ikx}}{\partial x^{2D/3}} = (ik)^{2D/3} e^{ikx}
+-|\vec{k}|^{2D/3} \mathbf{E} + \frac{\omega^2}{c^2} \mathbf{E} = 0
 \]
 
-Einsetzen in die Wellengleichung liefert:
+Daraus folgt die Dispersionsrelation:
 
 \[
-(ik)^{2D/3} + \frac{\omega^2}{c^2} = 0
-\]
-\[
-(ik)^{2D/3} = -\frac{\omega^2}{c^2}
+\omega^2 = c^2 |\vec{k}|^{2D/3} \tag{E.6}
 \]
 
-\subsection{Dispersionsrelation}
-Mit \((ik)^{2D/3} = (i^{2D/3})(k^{2D/3}) = e^{i\pi D/3} k^{2D/3}\) folgt:
+Für \( D = 3 \) ergibt sich \( \omega^2 = c^2 |\vec{k}|^2 \), die klassische Dispersionsrelation.
 
-\[
-e^{i\pi D/3} k^{2D/3} = -\frac{\omega^2}{c^2}
-\]
+\subsection{Entwicklung um \( D = 3 \)}
 
-Der Imaginärteil führt zu einer schwachen Dämpfung. Für die
-Phasengeschwindigkeit \(v_{\text{ph}} = \omega/k\) erhalten wir nach
-Trennung von Real- und Imaginärteil:
+Setze \( D = 3 - \varepsilon \) mit \( \varepsilon \approx 0,296 \). Dann ist 
+\( 2D/3 = 2 - 2\varepsilon/3 \). Für kleine \( \varepsilon \):
 
 \[
-v_{\text{ph}}(k) = c \cdot k^{(D/3 - 1)} \cdot C_D
+|\vec{k}|^{2D/3} = |\vec{k}|^2 \cdot |\vec{k}|^{-2\varepsilon/3}
 \]
 
-Für \(D = 3\) (\(D/3 = 1\)) ergibt sich \(v_{\text{ph}} = c\).
+Mit \( \omega = c |\vec{k}|^{D/3} \) und \( |\vec{k}| = \omega/c \cdot (1 + \ldots) \) folgt
+für die Phasengeschwindigkeit:
 
-\subsection{Entwicklung um \(D = 3\)}
-Setze \(D = 3 - \varepsilon\) mit \(\varepsilon \approx 0{,}296\).
-Dann ist \(D/3 - 1 = -\varepsilon/3\). Entwicklung ergibt:
+\[
+v_{\text{ph}}(\omega) = \frac{\omega}{|\vec{k}|} = c \cdot \left( \frac{\omega}{c} \right)^{\varepsilon/3}
+\]
+
+Entwicklung ergibt:
 
 \[
 v_{\text{ph}}(\omega) = c \left( 1 + \beta \left( \frac{\omega}{\omega_0} \right)^{-\varepsilon/3} + \mathcal{O}(\varepsilon^2) \right)
 \]
 
-Mit \(\varepsilon = 3 - D\) folgt:
+Mit \( \varepsilon = 3 - D \) folgt:
 
 \[
-\boxed{
-v_{\text{ph}}(\omega) = c \left( 1 + \beta \left( \frac{\omega}{\omega_0} \right)^{D-3} \right)
-}
+v_{\text{ph}}(\omega) = c \left( 1 + \beta \left( \frac{\omega}{\omega_0} \right)^{D-3} \right) \tag{E.7}
 \]
-wobei \(\beta\) eine Konstante ist und \(\omega_0\) eine Referenzfrequenz.
-
-\section{Konsequenzen für die WDBT+}
-
-\begin{itemize}
-    \item Die Weyl-Fraktionableitung ist \textbf{wohldefiniert} und speziell für Probleme auf ganz \(\mathbb{R}\) geeignet.
-    \item Ebene Wellen sind Eigenfunktionen – die Dispersionsrelation folgt direkt.
-    \item Der Grenzfall \(D \to 3\) reproduziert die klassische Physik.
-    \item Für \(D \approx 2{,}704\) ist \(D-3 \approx -0{,}296\) -- eine
-          \textbf{schwache Dispersion}.
-    \item Die Maxwell-Gleichungen bleiben eichinvariant, da die
-          fraktalen Ableitungen linear sind.
-\end{itemize}
 
 \section{Numerische Implementierung}
 
-Für die praktische Berechnung der Weyl-Fraktionableitung auf einem endlichen Intervall
-\([-L, L]\) mit \(L\) hinreichend groß kann die Caputo-Approximation als Näherung
-verwendet werden, da der Fehler durch die Wahl der unteren Grenze exponentiell klein wird:
+Für praktische Berechnungen kann die diskrete Näherung der fraktalen Ableitung 
+über die Grünwald-Letnikov-Formel erfolgen:
 
 \[
-_{-\infty} D_x^{\alpha} f(x) \approx \,_{0}^{C} D_x^{\alpha} f(x) + \mathcal{O}(e^{-L})
-\]
-
-Die diskrete Näherung der Caputo-Ableitung lautet:
-
-\[
-_{0}^{C} D_x^{\alpha} f(x) \approx \frac{1}{\Gamma(2-\alpha)} \sum_{j=0}^{n-1} \frac{f(x_{j+1}) - f(x_j)}{x_{j+1} - x_j} \cdot \frac{(x - x_j)^{1-\alpha} - (x - x_{j+1})^{1-\alpha}}{\Delta x}
+\frac{\partial^{\alpha} f}{\partial x^{\alpha}}(x) \approx \frac{1}{h^{\alpha}} \sum_{j=0}^{N} (-1)^j \binom{\alpha}{j} f(x - jh) \tag{E.8}
 \]
 
 Für Details zur fraktionalen Finite-Differenzen-Methode siehe z.B. Podlubny (1999).
 
 \section{Zusammenfassung}
 
-\[
-\boxed{
-\frac{\partial^D f}{\partial x^D} := \,_{-\infty} D_x^{D/3} f(x), \qquad
-_{-\infty} D_x^{\alpha} f(x) = \frac{1}{\Gamma(1-\alpha)} \frac{d}{dx} \int_{-\infty}^{x} \frac{f(t)}{(x-t)^{\alpha}} \, dt
-}
-\]
-
-\[
-\boxed{
-_{-\infty} D_x^{\alpha} e^{ikx} = (ik)^{\alpha} e^{ikx}
-}
-\]
-
-\[
-\boxed{
-v_{\text{ph}}(\omega) = c \left( 1 + \beta \left( \frac{\omega}{\omega_0} \right)^{D-3} \right), \qquad
-D \approx 2{,}704
-}
-\]
-
-\section{Ausblick: Offene mathematische Probleme}
-
-\begin{enumerate}
-    \item Vollständige Klärung der eichinvarianten Formulierung der
-          fraktalen Maxwell-Gleichungen.
-    \item Numerische Implementierung der fraktalen Poisson-Gleichung
-          für realistische Galaxienmodelle mit der Weyl-Ableitung.
-    \item Erweiterung auf gekrümmte fraktale Räume.
-\end{enumerate}
-
-Die hier präsentierte Analysis ist \textbf{mathematisch konsistent}
-und ausreichend für die Formulierung der WDBT+.
+\begin{itemize}
+    \item Der fraktale Laplace-Operator wird rigoros über die Fourier-Transformation 
+          definiert: \( \widehat{\Delta_D f}(\vec{k}) = -|\vec{k}|^{2D/3} \hat{f}(\vec{k}) \)
+    \item Die Weyl-Fraktionableitung ist eine konsistente Ortsraum-Darstellung
+    \item Die Dispersionsrelation folgt direkt: \( \omega^2 = c^2 |\vec{k}|^{2D/3} \)
+    \item Für \( D \approx 2,704 \) ergibt sich eine schwache Dispersion
+    \item Der Grenzfall \( D \to 3 \) reproduziert die klassische Physik
+\end{itemize}
