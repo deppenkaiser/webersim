@@ -38,13 +38,7 @@ Die Materieentstehungsrate im fraktalen Raum ist:
 \frac{dM_{\text{cre}}}{d\ln r} \propto r^{3-D} = r^{0,296}
 \]
 
-Die DSTT-Driftgeschwindigkeit ist:
-
-\[
-v_{\text{drift}}(r) = B \sqrt{\frac{GM_{\text{Kern}}}{r^3}}
-\]
-
-Aus der Kontinuitätsgleichung folgt die radiale Dichteverteilung:
+Im stationären Zustand führt dies über die Kontinuitätsgleichung zu einer radialen Dichteverteilung:
 
 \[
 \rho_{\text{Gal}}(r) \propto r^{-(3-D)} = r^{-0,296}
@@ -68,37 +62,47 @@ Für \( D \approx 2,704 \) ergibt sich \( v(r) \propto r^{0,648} \) – dies ist
 
 \section{Kontinuierliche Materieentstehung}
 
-Das Quantenpotential erzeugt neue Materie im Vakuum:
+Das Quantenpotential erzeugt neue Materie im Vakuum. Aus der fraktalen Raumstruktur mit Dimension \( D \) folgt für die Materieentstehungsrate (siehe Anhang J):
 
 \[
-\dot{\rho}_{\text{cre}}(r) \propto Q(r) \propto \frac{1}{r^2}
+\dot{\rho}_{\text{cre}}(r) \propto r^{D-3} = r^{-0,296}
 \]
 
-Die Materieentstehung ist also im Zentrum am stärksten und fällt mit \( 1/r^2 \) ab.
+Die Materieentstehung ist also im Zentrum am stärksten und fällt mit einer gebrochenen Potenz ab, die direkt aus der fraktalen Dimension \( D \) folgt. Die vollständige Energiebilanz inklusive der negativen Vakuumenergiedichte findet sich in Anhang J.
 
 \subsection{Drift und Einfang}
 
-Die DSTT-Drift treibt die neu entstehende Materie nach außen. Die Einfangwahrscheinlichkeit durch den Zentralkörper ist:
+Die DSTT-Drift treibt die neu entstehende Materie nach außen. Die radiale Driftgeschwindigkeit wird in Anhang G hergeleitet:
 
 \[
-\alpha_{\text{in}} = \left( \frac{r_c}{r_{\text{max}}} \right)^{3-D} \approx 0,001
+v_{\text{drift}}(r) = r\dot{\phi} \sqrt{1-\beta}
 \]
 
-Mit \( r_c \sim 200 \, \text{m} \) (Einfangradius) und \( r_{\text{max}} \sim 5 \times 10^{11} \, \text{m} \) (maximale Entfernung) ergibt sich \( \alpha_{\text{in}} \approx 0,001 \).
+Für Kreisbahnen als Näherung (\(\beta \approx 1\)) folgt die Skalierung \( v_{\text{drift}} \propto r^{-1/2} \).
+
+Die Einfangwahrscheinlichkeit durch den Zentralkörper ist (Herleitung in Anhang G):
+
+\[
+\alpha_{\text{in}} = \left( \frac{r_c}{r_{\text{max}}} \right)^{3-D}
+\]
+
+Mit \( r_c \sim 200 \, \text{m} \) (Oberfläche des BEC-Objekts) und \( r_{\text{max}} \sim 5 \times 10^{11} \, \text{m} \) (äußerer Rand der Entstehungszone) ergibt sich \( \alpha_{\text{in}} \approx 0,001 \).
 
 \section{Galaxienwachstum}
 
-Aus der Drift-Gleichung \( dr/dt = v_{\text{drift}}(r) \) folgt:
+Während der Raum selbst nicht expandiert (das Universum ist stationär), wachsen gebundene Strukturen wie Galaxien durch kontinuierliche Materieentstehung und die DSTT-Drift. Aus der Drift-Gleichung \( dr/dt = v_{\text{drift}}(r) \) mit \( v_{\text{drift}} \propto r^{-1/2} \) folgt durch Integration:
 
 \[
-r(t) \propto t^{2/5}
+r(t) \propto t^{2/3}
 \]
 
-Die Materieentstehungsrate skaliert mit \( r^{3-D} \propto t^{0,118} \). Daraus folgt für die kumulierte Masse der Galaxie:
+Die Materieentstehungsrate skaliert mit \( r^{3-D} \propto t^{2(3-D)/3} = t^{0,197} \). Daraus folgt für die kumulierte Masse der Galaxie:
 
 \[
-M_{\text{Gal}}(t) \propto t^{1,118}
+M_{\text{Gal}}(t) \propto t^{1,197}
 \]
+
+Der Exponent liegt nahe an 1, was ein nahezu lineares Wachstum der Galaxienmasse mit der Zeit bedeutet.
 
 \subsection{Massenverhältnis Galaxie zu Kern}
 

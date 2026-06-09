@@ -14,18 +14,35 @@ Dieser Anhang zeigt, dass diese Beziehung **nicht momentan** gilt.
 Die korrekte Identität ist eine Beziehung zwischen den zeitlich gemittelten 
 Leistungen und der Drift von \(\beta_{\text{DSTT}}\).
 
+Darüber hinaus wird die **radiale Driftgeschwindigkeit** aus den DSTT-Axiomen 
+hergeleitet, die **effektive Trägheitsmasse** \(m_T = m + \alpha M\) eingeführt 
+und die **Einfangwahrscheinlichkeit** \(\alpha_{\text{in}}\) definiert.
+
 \section{Definitionen}
 
 \subsection{DSTT-Zustandsvariable}
 
 Nach Kapitel 8.2.3 ist der Zustandsparameter der DSTT definiert als das 
-Verhältnis von tangentialer zu gesamter kinetischer Energie:
+Verhältnis von tangentialer zu gesamter kinetischer Energie. Mit der 
+effektiven Trägheitsmasse \(m_T = m + \alpha M\) (siehe Axiom 2a in Kapitel 8.2) 
+gilt:
 
 \[
-\beta_{\text{DSTT}}(t) = \frac{E_{\text{tan}}(t)}{E_{\text{kin}}(t)} = 
-\frac{\frac{1}{2} m r^2 \dot{\phi}^2}{\frac{1}{2} m \dot{r}^2 + \frac{1}{2} m r^2 \dot{\phi}^2}
+E_Z = \frac{1}{2} m_T \dot{r}^2, \qquad 
+E_B = \frac{1}{2} m_T r^2 \dot{\phi}^2
 \tag{G.1}
 \]
+
+Die Gesamtenergie ist \(E = E_Z + E_B\). Der Umlenkungszustand ist:
+
+\[
+\beta_{\text{DSTT}}(t) = \frac{E_B}{E} = 
+\frac{r^2 \dot{\phi}^2}{\dot{r}^2 + r^2 \dot{\phi}^2}
+\tag{G.2}
+\]
+
+Die effektive Masse kürzt sich hier heraus, was die Definition von \(\beta\) 
+unabhängig von \(\alpha\) macht.
 
 \subsection{Weber-Gravitation für Massen}
 
@@ -35,7 +52,7 @@ Die Weber-Kraft für massive Körper (Kapitel 8.4.3 mit \(\beta_{\text{WG}} = 0,
 \vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left\{ 
 \left[1 - \frac{\dot{r}^2}{c^2} + \frac{1}{2} \frac{r\ddot{r}}{c^2} \right] \hat{r} + 
 \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
-\tag{G.2}
+\tag{G.3}
 \]
 
 \subsection{Radiale und tangentiale Komponenten}
@@ -44,14 +61,14 @@ Die radiale Kraftkomponente ist:
 
 \[
 F_{\text{rad}} = -\frac{GMm}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{1}{2} \frac{r\ddot{r}}{c^2} \right]
-\tag{G.3}
+\tag{G.4}
 \]
 
 Die tangentiale Kraft (Vektor) ist:
 
 \[
 \vec{F}_{\text{tan}} = -\frac{GMm}{r^2} \cdot \frac{2\dot{r}^2}{c^2} \vec{v}
-\tag{G.4}
+\tag{G.5}
 \]
 
 Der Betrag der tangentialen Kraft ist:
@@ -59,7 +76,7 @@ Der Betrag der tangentialen Kraft ist:
 \[
 |\vec{F}_{\text{tan}}| = \frac{2GMm}{r^2} \cdot \frac{\dot{r}^2}{c^2} \cdot v, \quad 
 v = \sqrt{\dot{r}^2 + r^2\dot{\phi}^2}
-\tag{G.5}
+\tag{G.6}
 \]
 
 \section{Warum die momentane Identität scheitert}
@@ -69,7 +86,7 @@ ist \(|\vec{F}_{\text{tan}}| = 0\), aber \(\beta_{\text{DSTT}} = 1\). Also:
 
 \[
 \frac{|\vec{F}_{\text{tan}}|}{|\vec{F}_{\text{rad}}| + |\vec{F}_{\text{tan}}|} = 0 \neq 1 = \beta_{\text{DSTT}}
-\tag{G.6}
+\tag{G.7}
 \]
 
 Die momentane Identität ist daher **falsch**.
@@ -82,48 +99,48 @@ Die momentane Leistung der tangentialen Kraft ist:
 
 \[
 P_{\text{tan}} = \vec{F}_{\text{tan}} \cdot \vec{v} = \frac{2GMm}{r^2} \cdot \frac{\dot{r}^2}{c^2} \cdot v^2
-\tag{G.7}
+\tag{G.8}
 \]
 
 \subsection{Zeitliche Änderung der tangentialen Energie}
 
-Die tangentiale kinetische Energie ist \(E_{\text{tan}} = \frac{1}{2} m r^2 \dot{\phi}^2\). 
+Die tangentiale kinetische Energie ist \(E_B = \frac{1}{2} m_T r^2 \dot{\phi}^2\). 
 Ihre zeitliche Ableitung ist:
 
 \[
-\frac{dE_{\text{tan}}}{dt} = m r \dot{\phi} ( \dot{r} \dot{\phi} + r \ddot{\phi} ) = 
+\frac{dE_B}{dt} = m_T r \dot{\phi} ( \dot{r} \dot{\phi} + r \ddot{\phi} ) = 
 \vec{F}_{\text{tan}} \cdot \vec{v} + \text{(Beitrag der radialen Kraft)}
-\tag{G.8}
+\tag{G.9}
 \]
 
 Nach Mittelung über eine Umlaufperiode \(T\) verschwinden die oszillatorischen 
 Anteile, und es bleibt:
 
 \[
-\left\langle \frac{dE_{\text{tan}}}{dt} \right\rangle_T = \langle P_{\text{tan}} \rangle_T
-\tag{G.9}
+\left\langle \frac{dE_B}{dt} \right\rangle_T = \langle P_{\text{tan}} \rangle_T
+\tag{G.10}
 \]
 
 \subsection{Beziehung zu \(\dot{\beta}_{\text{DSTT}}\)}
 
-Mit \(E_{\text{tan}} = \beta_{\text{DSTT}} E_{\text{kin}}\) folgt:
+Mit \(E_B = \beta E\) folgt:
 
 \[
-\frac{dE_{\text{tan}}}{dt} = \dot{\beta}_{\text{DSTT}} E_{\text{kin}} + \beta_{\text{DSTT}} \dot{E}_{\text{kin}}
-\tag{G.10}
-\]
-
-Im zeitlichen Mittel über eine Periode ist \(\langle \dot{E}_{\text{kin}} \rangle_T = 0\), 
-da die kinetische Energie nach jedem Umlauf zum Ausgangswert zurückkehrt 
-(keine säkulare Änderung auf dieser Zeitskala). Somit:
-
-\[
-\langle \dot{\beta}_{\text{DSTT}} \rangle_T = \frac{\langle P_{\text{tan}} \rangle_T}{\langle E_{\text{kin}} \rangle_T}
+\frac{dE_B}{dt} = \dot{\beta} E + \beta \dot{E}
 \tag{G.11}
 \]
 
-Dies ist die korrekte Identität: Die Drift von \(\beta_{\text{DSTT}}\) ist 
-direkt mit der mittleren Leistung der tangentialen Weber-Kraft verknüpft.
+Im zeitlichen Mittel über eine Periode ist \(\langle \dot{E} \rangle_T = 0\), 
+da die Gesamtenergie nach jedem Umlauf zum Ausgangswert zurückkehrt 
+(keine säkulare Änderung auf dieser Zeitskala). Somit:
+
+\[
+\langle \dot{\beta} \rangle_T = \frac{\langle P_{\text{tan}} \rangle_T}{\langle E \rangle_T}
+\tag{G.12}
+\]
+
+Dies ist die korrekte Identität: Die Drift von \(\beta\) ist direkt mit der 
+mittleren Leistung der tangentialen Weber-Kraft verknüpft.
 
 \subsection{Numerische Abschätzung}
 
@@ -134,15 +151,116 @@ Für eine Kepler-Ellipse mit Exzentrizität \(e\) gilt:
 \langle v^2 \rangle_T = \frac{GM}{a}
 \]
 
-Damit folgt aus (G.11):
+Damit folgt aus (G.12):
 
 \[
-\langle \dot{\beta}_{\text{DSTT}} \rangle_T \sim \frac{GM}{c^2 a} \cdot e^2 \cdot \omega
-\tag{G.12}
+\langle \dot{\beta} \rangle_T \sim \frac{GM}{c^2 a} \cdot e^2 \cdot \omega
+\tag{G.13}
 \]
 
 mit \(\omega = \sqrt{GM/a^3}\). Dies ist konsistent mit der Kopplungsgleichung 
 aus Kapitel 8.6.
+
+\section{Die radiale Driftgeschwindigkeit}
+
+\subsection{Herleitung aus den DSTT-Axiomen}
+
+Aus den Bewegungsgleichungen der DSTT (Axiome 2–4) folgt mit 
+\(E_Z = (1-\beta)E\):
+
+\[
+\dot{r} = \sqrt{\frac{2(1-\beta)E}{m_T}}
+\tag{G.14}
+\]
+
+Mit \(E = \frac{1}{2} m_T (\dot{r}^2 + r^2\dot{\phi}^2)\) ergibt sich eine 
+alternative Form:
+
+\[
+\dot{r} = \pm r\dot{\phi} \sqrt{1-\beta}
+\tag{G.15}
+\]
+
+Das Vorzeichen hängt von den Anfangsbedingungen ab. Da \(\beta(t)\) monoton 
+wächst (Axiom 6) und nie den Wert 1 erreicht, gilt langfristig \(\dot{r} > 0\).
+
+\subsection{Definition der Driftgeschwindigkeit}
+
+Die radiale Driftgeschwindigkeit ist daher:
+
+\[
+v_{\text{drift}}(r) = r\dot{\phi} \sqrt{1-\beta}
+\tag{G.16}
+\]
+
+Für Kreisbahnen als Näherung (\(\beta \approx 1\)) kann \(\sqrt{1-\beta}\) als 
+kleine Konstante betrachtet werden. Mit \(\dot{\phi} \propto r^{-3/2}\) folgt:
+
+\[
+v_{\text{drift}}(r) \propto r^{-1/2}
+\tag{G.17}
+\]
+
+Diese Skalierung wird in Kapitel 14 verwendet.
+
+\section{Die Einfangwahrscheinlichkeit \(\alpha_{\text{in}}\)}
+
+\subsection{Definition}
+
+Die Einfangwahrscheinlichkeit \(\alpha_{\text{in}}\) ist der Anteil der neu 
+entstehenden Materie, der vom Zentralkörper absorbiert wird, bevor er die 
+Entstehungszone verlässt.
+
+\subsection{Herleitung aus der Kontinuitätsgleichung}
+
+Im stationären Zustand wird die Materieentstehungsrate \(\dot{\rho}_{\text{cre}}(r)\) 
+durch die radiale Drift nach außen abtransportiert. Die radiale Massenstromdichte ist:
+
+\[
+j(r) = \rho(r) \cdot v_{\text{drift}}(r)
+\]
+
+Die Kontinuitätsgleichung mit Quelle lautet:
+
+\[
+\frac{1}{r^2} \frac{d}{dr} \left( r^2 j(r) \right) = \dot{\rho}_{\text{cre}}(r)
+\]
+
+Mit \(v_{\text{drift}} \propto r^{-1/2}\) und \(\dot{\rho}_{\text{cre}} \propto r^{D-3}\) 
+(fraktale Skalierung, siehe Anhang J) folgt nach Integration für die 
+Dichteverteilung:
+
+\[
+\rho(r) \propto r^{-(3-D)}
+\tag{G.18}
+\]
+
+Der Bruchteil der Materie, der bis zum Radius \(r_c\) (Einfangradius) absorbiert 
+wird, ist das Verhältnis der Driftzeit von \(r_c\) zu \(r_{\text{max}}\) 
+(maximale Entfernung der Entstehungszone). Aus der Skalierung \(v_{\text{drift}} \propto r^{-1/2}\) 
+folgt:
+
+\[
+\alpha_{\text{in}} = \left( \frac{r_c}{r_{\text{max}}} \right)^{3-D}
+\tag{G.19}
+\]
+
+Der Exponent \(3-D\) ergibt sich aus der fraktalen Skalierung der Materieentstehung 
+(siehe Anhang J). Für typische Galaxienzentren mit \(D \approx 2,704\) ist 
+\(\alpha_{\text{in}} \ll 1\), sodass der Großteil der neu entstehenden Materie 
+nach außen driftet.
+
+\subsection{Numerisches Beispiel}
+
+Mit \(r_c \sim 200 \, \text{m}\) (Oberfläche des BEC-Objekts) und 
+\(r_{\text{max}} \sim 5 \times 10^{11} \, \text{m}\) (äußerer Rand der 
+Entstehungszone) sowie \(3-D \approx 0,296\) ergibt sich:
+
+\[
+\alpha_{\text{in}} = \left( \frac{200}{5 \times 10^{11}} \right)^{0,296}
+= (4 \times 10^{-10})^{0,296} \approx 0,001
+\tag{G.20}
+\]
 
 \section{Spezialfall: Elektrodynamik (\(\beta_{\text{WED}} = 2\))}
 
@@ -151,11 +269,11 @@ der tangentiale Term vollständig:
 
 \[
 \vec{F}_{\text{tan}}^{\text{(WED)}} = 0 \quad \Rightarrow \quad P_{\text{tan}} = 0
-\tag{G.13}
+\tag{G.21}
 \]
 
-Damit ist \(\langle \dot{\beta}_{\text{DSTT}} \rangle_T = 0\) – die 
-Elektrodynamik ändert die Energieaufteilung nicht. Sie ist reversibel.
+Damit ist \(\langle \dot{\beta} \rangle_T = 0\) – die Elektrodynamik ändert 
+die Energieaufteilung nicht. Sie ist reversibel.
 
 \section{Zusammenfassung der korrigierten Beziehungen}
 
@@ -167,7 +285,7 @@ Elektrodynamik ändert die Energieaufteilung nicht. Sie ist reversibel.
 \(\beta_{\text{Kraft}}\) & \(0,5\) & \(2\) \\
 \(\vec{F}_{\text{tan}}\) & \(\propto \dot{r}^2 \vec{v} / c^2\) & \(0\) \\
 \(P_{\text{tan}}\) & \(> 0\) (außer \(\dot{r}=0\)) & \(0\) \\
-\(\langle \dot{\beta}_{\text{DSTT}} \rangle_T\) & \(> 0\) (irreversibel) & \(= 0\) (reversibel) \\
+\(\langle \dot{\beta} \rangle_T\) & \(> 0\) (irreversibel) & \(= 0\) (reversibel) \\
 \hline
 \end{tabular}
 \end{center}
@@ -176,18 +294,24 @@ Elektrodynamik ändert die Energieaufteilung nicht. Sie ist reversibel.
 
 \begin{enumerate}
     \item Die in Kapitel 8.5 behauptete momentane Identität 
-          \(\frac{|\vec{F}_{\text{tan}}|}{|\vec{F}_{\text{rad}}| + |\vec{F}_{\text{tan}}|} \equiv \beta_{\text{DSTT}}(t)\) 
+          \(\frac{|\vec{F}_{\text{tan}}|}{|\vec{F}_{\text{rad}}| + |\vec{F}_{\text{tan}}|} \equiv \beta(t)\) 
           ist **falsch** (Gegenbeispiel: Kreisbahn).
-    \item Die korrekte Beziehung ist (G.11): \(\langle \dot{\beta}_{\text{DSTT}} \rangle_T = \langle P_{\text{tan}} \rangle_T / \langle E_{\text{kin}} \rangle_T\).
+    \item Die korrekte Beziehung ist (G.12): \(\langle \dot{\beta} \rangle_T = \langle P_{\text{tan}} \rangle_T / \langle E \rangle_T\).
+    \item Die radiale Driftgeschwindigkeit ist \(v_{\text{drift}} = r\dot{\phi}\sqrt{1-\beta}\) mit Skalierung \(v_{\text{drift}} \propto r^{-1/2}\).
+    \item Die Einfangwahrscheinlichkeit ist \(\alpha_{\text{in}} = (r_c / r_{\text{max}})^{3-D}\).
     \item Der qualitative Schluss (\(\beta_{\text{WG}} = 0,5 \Rightarrow \dot{\beta} > 0\)) bleibt korrekt.
     \item Die Elektrodynamik ist reversibel (\(\dot{\beta} = 0\)).
+    \item Die effektive Trägheitsmasse \(m_T = m + \alpha M\) ist in allen Energie- und Bewegungsgleichungen zu verwenden (siehe Kapitel 8.2, Axiom 2a).
 \end{enumerate}
 
 \section{Ausblick}
 
 Die hier präsentierte korrigierte Identität ist konsistent mit der 
-Energiebilanz und der Kopplungsgleichung aus Kapitel 8.6. Eine mögliche 
-zukünftige Verfeinerung wäre die Herleitung einer exakten differentiellen 
-Beziehung zwischen \(\vec{F}_{\text{tan}}\) und \(\dot{\beta}_{\text{DSTT}}\) 
+Energiebilanz und der Kopplungsgleichung aus Kapitel 8.6. Die Herleitung 
+der Driftgeschwindigkeit, der Einfangwahrscheinlichkeit und der effektiven 
+Masse schließt die bisherigen Lücken in Kapitel 14 und Kapitel 8. 
+
+Eine mögliche zukünftige Verfeinerung wäre die Herleitung einer exakten 
+differentiellen Beziehung zwischen \(\vec{F}_{\text{tan}}\) und \(\dot{\beta}\) 
 ohne Mittelung, die jedoch aufgrund der oszillatorischen Natur der Kräfte 
 nicht trivial ist.
