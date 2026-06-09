@@ -1,17 +1,20 @@
 \chapter{Ausgewählte Herleitungen aus der ursprünglichen WDBT}
-\label{chp:herleitungen_der_wdbt}
+\label{app:herleitungen}
 
 \section{Einleitung}
+\label{app:herleitungen_einleitung}
 
 Dieser Anhang enthält die vollständigen Herleitungen zentraler Gleichungen der WDBT+, die in der vorliegenden Zusammenfassung aus Platzgründen nur als Ergebnisse zitiert werden. Sie sind für das Verständnis der Theorie nicht zwingend erforderlich, aber für den Leser gedacht, der den formalen Weg von den Grundgleichungen zu den beobachtbaren Vorhersagen nachvollziehen möchte.
 
-Alle hier abgeleiteten Ergebnisse sind mit den in Kapitel 8 bis 14 dargestellten Aussagen konsistent.
+Alle hier abgeleiteten Ergebnisse sind mit den in Kapitel~\ref{ch:dstt_weber} bis \ref{ch:kosmologie} dargestellten Aussagen konsistent.
 
 \section{Rotverschiebung im stationären Universum}
+\label{app:herleitungen_rotverschiebung}
 
 \subsection{Grundgleichung}
+\label{app:herleitungen_rot_grund}
 
-Die kumulative gravitative Rotverschiebung im nicht-expandierenden Universum wird beschrieben durch:
+Die kumulative gravitative Rotverschiebung im nicht-expandierenden Universum wird beschrieben durch (siehe Kapitel~\ref{ch:kosmologie}):
 
 \[
 z(d) = \frac{1}{c^2} \int_0^d \frac{GM(r)}{r^2} \, dr \tag{D.1}
@@ -20,16 +23,18 @@ z(d) = \frac{1}{c^2} \int_0^d \frac{GM(r)}{r^2} \, dr \tag{D.1}
 Hierbei ist \( d \) die Entfernung der Lichtquelle, \( M(r) \) die innerhalb des Radius \( r \) eingeschlossene Masse.
 
 \subsection{Fraktale Dichteverteilung}
+\label{app:herleitungen_rot_dichte}
 
-Aus der fraktalen Raumdimension \( D \approx 2,704 \) (siehe Kapitel 6) folgt die Dichteverteilung:
+Aus der fraktalen Raumdimension \( D \approx 2,704 \) (siehe Kapitel~\ref{ch:fraktale_dimension}) folgt die Dichteverteilung:
 
 \[
 \rho(r) = \rho_0 \left( \frac{r}{l_0} \right)^{D-3} \tag{D.2}
 \]
 
-Dabei ist \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \) die fundamentale Längenskala (siehe Kapitel 10.2) und \( \rho_0 \) eine Normierungskonstante. Aus der stationären Kosmologie (Anhang J) folgt \( \rho_0 \sim 10^{-26} \, \text{kg/m}^3 \).
+Dabei ist \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \) die fundamentale Längenskala (siehe Kapitel~\ref{ch:bec_objekte}) und \( \rho_0 \) eine Normierungskonstante. Aus der stationären Kosmologie (Anhang~\ref{app:energiebilanz}) folgt \( \rho_0 \sim 10^{-26} \, \text{kg/m}^3 \).
 
 \subsection{Eingeschlossene Masse}
+\label{app:herleitungen_rot_masse}
 
 Die innerhalb des Radius \( r \) enthaltene Masse ist:
 
@@ -38,6 +43,7 @@ M(r) = \int_0^r \rho(r') \cdot 4\pi r'^2 dr' = 4\pi \rho_0 l_0^{3-D} \frac{r^D}{
 \]
 
 \subsection{Integration}
+\label{app:herleitungen_rot_integration}
 
 Einsetzen von (D.3) in (D.1):
 
@@ -46,8 +52,9 @@ z(d) = \frac{4\pi G \rho_0 l_0^{3-D}}{c^2 D} \int_0^d r^{D-3} dr = \frac{4\pi G 
 \]
 
 \subsection{Effektive Hubble-Konstante}
+\label{app:herleitungen_rot_hubble}
 
-Das lineare Hubble-Gesetz \( z = H_{\text{eff}} d / c \) ist nur eine Näherung. Die effektive Hubble-Konstante wird skalenabhängig:
+Das lineare Hubble-Gesetz \( z = H_{\text{eff}} d / c \) ist nur eine Näherung. Die effektive Hubble-Konstante wird skalenabhängig (siehe Kapitel~\ref{ch:kosmologie}):
 
 \[
 H_{\text{eff}}(d) = c \cdot \frac{z(d)}{d} = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-1)c} \, d^{\,D-2} \tag{D.5}
@@ -56,10 +63,12 @@ H_{\text{eff}}(d) = c \cdot \frac{z(d)}{d} = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-
 Mit \( D \approx 2,704 \) ist \( D-2 = 0,704 \), also \( H_{\text{eff}}(d) \propto d^{0,704} \). Die absolute Normierung von \( H_{\text{eff}} \) wird durch \( \rho_0 \) bestimmt. Mit der beobachteten mittleren Dichte \( \rho_0 \sim 10^{-26} \, \text{kg/m}^3 \) ergibt sich \( H_0 \sim 70 \, \text{km/s/Mpc} \), konsistent mit Messungen.
 
 \section{Galaxienrotationskurven ohne dunkle Materie}
+\label{app:herleitungen_rotation}
 
 \subsection{Bewegungsgleichung}
+\label{app:herleitungen_rot_bewegung}
 
-Die radiale Kraftbilanz für einen Stern der Masse \( m \) im Gravitationsfeld einer Galaxie lautet in der Weber-Gravitation mit Quantenpotential:
+Die radiale Kraftbilanz für einen Stern der Masse \( m \) im Gravitationsfeld einer Galaxie lautet in der Weber-Gravitation mit Quantenpotential (siehe Kapitel~\ref{ch:dstt_weber} und \ref{ch:neutrino}):
 
 \[
 m\frac{v^2}{r} = \frac{GM(r)m}{r^2}\left(1 + \frac{v^2}{2c^2}\right) - \frac{\partial Q}{\partial r} \tag{D.6}
@@ -68,6 +77,7 @@ m\frac{v^2}{r} = \frac{GM(r)m}{r^2}\left(1 + \frac{v^2}{2c^2}\right) - \frac{\pa
 Hierbei ist \( M(r) \) die eingeschlossene Masse und \( Q \) das de Broglie-Bohm-Quantenpotential.
 
 \subsection{Quantenpotential für exponentielle Dichte}
+\label{app:herleitungen_rot_q}
 
 Für eine exponentielle Dichteverteilung \( \rho(r) = \rho_0 e^{-r/r_0} \) setzen wir \( \sqrt{\rho} \propto e^{-r/(2r_0)} \). Das Quantenpotential ergibt sich zu:
 
@@ -82,6 +92,7 @@ F_Q = -\frac{\partial Q}{\partial r} \approx -\frac{\hbar^2}{2m r_0^3} \tag{D.8}
 \]
 
 \subsection{Rotationskurve}
+\label{app:herleitungen_rot_kurve}
 
 Einsetzen von (D.8) in (D.6) und Auflösen nach \( v^2 \) ergibt:
 
@@ -90,25 +101,29 @@ v^2(r) = \frac{GM(r)}{r} \left(1 + \frac{GM(r)}{2c^2 r}\right) + \frac{\hbar^2 r
 \]
 
 \subsection{Asymptotisches Verhalten}
+\label{app:herleitungen_rot_asymptote}
 
 \begin{itemize}
     \item Im inneren Bereich (\( r \ll r_0 \)) dominiert der erste Term: \( v \propto 1/\sqrt{r} \) (Kepler-Verhalten).
     \item Im äußeren Bereich (\( r \gg r_0 \)) wird der erste Term klein, der zweite Term (Quantenpotential) liefert \( v \propto \sqrt{r} \), was zu flachen Rotationskurven führt.
 \end{itemize}
 
-Damit wird dunkle Materie zur Erklärung der beobachteten Rotationskurven nicht benötigt.
+Damit wird dunkle Materie zur Erklärung der beobachteten Rotationskurven nicht benötigt (siehe auch Kapitel~\ref{ch:kosmologie}).
 
 \section{Frequenzabhängige Lichtablenkung}
+\label{app:herleitungen_lichtablenkung}
 
 \subsection{Weber-Gravitation für Photonen}
+\label{app:herleitungen_licht_weber}
 
-Für Photonen (\(\beta = 1\)) lautet die Weber-Kraft (Kapitel 8.4.4):
+Für Photonen (\(\beta = 1\)) lautet die Weber-Kraft (siehe Kapitel~\ref{ch:dstt_weber}):
 
 \[
 \vec{F}_{\text{WG}}^{(\gamma)} = -\frac{GMm}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \tag{D.10}
 \]
 
 \subsection{Reduktion auf die Bahnebene}
+\label{app:herleitungen_licht_bahn}
 
 Da die Kraft zentral ist (bis auf geschwindigkeitsabhängige Terme), bleibt der Drehimpuls erhalten. Wir wählen die Bahnebene als \(\theta = \pi/2\) und erhalten mit \(h = r^2\dot{\phi}\):
 
@@ -117,6 +132,7 @@ Da die Kraft zentral ist (bis auf geschwindigkeitsabhängige Terme), bleibt der 
 \]
 
 \subsection{Substitution \(u = 1/r\)}
+\label{app:herleitungen_licht_subst}
 
 Mit \(u = 1/r\) gilt:
 
@@ -127,6 +143,7 @@ Mit \(u = 1/r\) gilt:
 \]
 
 \subsection{Beschleunigung in Polarkoordinaten}
+\label{app:herleitungen_licht_beschl}
 
 Die Radialbeschleunigung ist:
 
@@ -141,6 +158,7 @@ Einsetzen der Weber-Kraft (D.10) mit \(\beta = 1\) und \(F_{\text{rad}} = -\frac
 \]
 
 \subsection{Transformation auf \(u(\phi)\)}
+\label{app:herleitungen_licht_trans}
 
 Mit \(r\dot{\phi}^2 = \frac{h^2}{r^3} = h^2 u^3\) und den obigen Substitutionen:
 
@@ -151,6 +169,7 @@ Mit \(r\dot{\phi}^2 = \frac{h^2}{r^3} = h^2 u^3\) und den obigen Substitutionen:
 Dabei ist \(u' = du/d\phi\), \(u'' = d^2u/d\phi^2\).
 
 \subsection{Vereinfachung}
+\label{app:herleitungen_licht_vereinf}
 
 Division durch \(-h^2 u^2\):
 
@@ -158,13 +177,14 @@ Division durch \(-h^2 u^2\):
 u'' + u = \frac{GM}{h^2} \left(1 - \frac{h^2 (u')^2}{c^2} - \frac{h^2 u^2 u''}{c^2}\right)
 \]
 
-Für kleine Geschwindigkeiten (\(v \ll c\)) und schwache Felder dominiert der Term \(1\) in der Klammer. Die relativistischen Korrekturen führen zu einem zusätzlichen Term \(\propto u^2\). Die genaue Rechnung ergibt (siehe z.B. Anhang A.3 für den gravitativen Fall mit \(\beta = 0.5\), hier mit \(\beta = 1\) und Photonenenergie \(E = h\nu\)):
+Für kleine Geschwindigkeiten (\(v \ll c\)) und schwache Felder dominiert der Term \(1\) in der Klammer. Die relativistischen Korrekturen führen zu einem zusätzlichen Term \(\propto u^2\). Die genaue Rechnung ergibt (siehe z.B. Anhang~\ref{app:grundlagen} für den gravitativen Fall mit \(\beta = 0.5\), hier mit \(\beta = 1\) und Photonenenergie \(E = h\nu\)):
 
 \[
-\frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 h^2} u^3\right) \tag{D.11}
+\frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 \hbar^2} u^3\right) \tag{D.11}
 \]
 
 \subsection{Störungsrechnung}
+\label{app:herleitungen_licht_stoerung}
 
 Die homogene Lösung \(u_0 = \sin\phi / b\) beschreibt eine Gerade mit Stoßparameter \(b\). Die Störung \(\delta u\) ergibt sich durch Integration. Der gesamte Ablenkwinkel ist:
 
@@ -175,5 +195,6 @@ Die homogene Lösung \(u_0 = \sin\phi / b\) beschreibt eine Gerade mit Stoßpara
 mit \(\lambda_0 = hc / E\).
 
 \subsection{Physikalische Konsequenz}
+\label{app:herleitungen_licht_konsequenz}
 
-Der zweite Term in (D.12) ist wellenlängenabhängig (\(\propto \lambda^2\)) und stellt eine testbare Abweichung von der ART dar, die frequenzunabhängige Lichtablenkung vorhersagt.
+Der zweite Term in (D.12) ist wellenlängenabhängig (\(\propto \lambda^2\)) und stellt eine testbare Abweichung von der ART dar, die frequenzunabhängige Lichtablenkung vorhersagt (siehe Kapitel~\ref{ch:vorhersagen}).

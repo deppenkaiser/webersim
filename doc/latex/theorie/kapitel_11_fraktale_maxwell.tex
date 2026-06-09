@@ -1,8 +1,10 @@
 \chapter{Maxwell-Gravitation mit fraktalen Quellen}
+\label{ch:maxwell_fraktale_quellen}
 
 \section{Einleitung}
+\label{sec:mw_einleitung}
 
-Die WDBT+ postuliert einen fraktalen Raum mit der Dimension \( D \approx 2,704 \). Die Maxwell-Gravitation (Kapitel 9) ist eine emergente, kontinuumsnahe Feldtheorie. In diesem Kapitel wird gezeigt, wie die fraktale Struktur des Raumes in die Maxwell-Gravitation einfließt – nicht durch fraktale Differentialoperatoren, sondern durch fraktale Quellterme.
+Die WDBT+ postuliert einen fraktalen Raum mit der Dimension \( D \approx 2,704 \) (siehe Kapitel~\ref{ch:fraktale_dimension}). Die Maxwell-Gravitation (Kapitel~\ref{ch:maxwell_gravitation}) ist eine emergente, kontinuumsnahe Feldtheorie. In diesem Kapitel wird gezeigt, wie die fraktale Struktur des Raumes in die Maxwell-Gravitation einfließt – nicht durch fraktale Differentialoperatoren, sondern durch fraktale Quellterme.
 
 Die zentrale Aussage ist:
 
@@ -13,8 +15,9 @@ Die zentrale Aussage ist:
 Die Maxwell-Gleichungen im glatten Raum (\( D = 3 \)) sind der Spezialfall einer homogenen Quellverteilung. Für \( D \neq 3 \) sind die Quellen fraktal skaliert.
 
 \section{Die Maxwell-Gravitation (glatte Formulierung)}
+\label{sec:mw_glatt}
 
-Aus Kapitel 9 sind die Maxwell-Gleichungen der Gravitation im glatten Raum bekannt:
+Aus Kapitel~\ref{ch:maxwell_gravitation} sind die Maxwell-Gleichungen der Gravitation im glatten Raum bekannt:
 
 \[
 \begin{aligned}
@@ -28,6 +31,7 @@ Aus Kapitel 9 sind die Maxwell-Gleichungen der Gravitation im glatten Raum bekan
 Diese Gleichungen sind \emph{glatt} – sie enthalten nur gewöhnliche Ableitungen. Die Felder \( \vec{E}_g \) und \( \vec{B}_g \) sind kontinuierlich und differenzierbar.
 
 \section{Fraktale Quellterme}
+\label{sec:mw_quellen}
 
 Die fraktale Struktur des Raumes manifestiert sich in den Quelltermen. Für eine radialsymmetrische Massenverteilung gilt:
 
@@ -35,7 +39,7 @@ Die fraktale Struktur des Raumes manifestiert sich in den Quelltermen. Für eine
 \rho_{\text{eff}}(r) = \rho_0 \left( \frac{r}{l_0} \right)^{D-3}
 \]
 
-Dabei ist \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \) die fundamentale Längenskala. Für \( D \approx 2,704 \) ist \( D-3 \approx -0,296 \), also
+Dabei ist \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \) die fundamentale Längenskala (siehe Kapitel~\ref{ch:bec_objekte}). Für \( D \approx 2,704 \) ist \( D-3 \approx -0,296 \), also
 
 \[
 \rho_{\text{eff}}(r) \propto r^{-0,296}.
@@ -48,6 +52,7 @@ M(r) = \int_0^r \rho_{\text{eff}}(r') \cdot 4\pi r'^2 \, dr' = 4\pi \rho_0 l_0^{
 \]
 
 \subsection{Allgemeiner Fall}
+\label{sec:mw_allgemein}
 
 Für nicht-radialsymmetrische Verteilungen lautet der Zusammenhang zwischen Massendichte und fraktaler Struktur:
 
@@ -58,8 +63,9 @@ Für nicht-radialsymmetrische Verteilungen lautet der Zusammenhang zwischen Mass
 wobei \( f(\theta, \phi) \) die Winkelabhängigkeit beschreibt. Die Feldgleichungen bleiben glatt – nur die Quellen sind fraktal skaliert.
 
 \section{Dispersionsrelation aus der spektralen Dimension}
+\label{sec:mw_dispersion}
 
-Die Dispersionsrelation für Gravitationswellen folgt nicht aus fraktalen Differentialoperatoren, sondern aus der spektralen Dimension \( d_s \) des zugrundeliegenden diskreten Netzwerks (siehe Anhang N).
+Die Dispersionsrelation für Gravitationswellen folgt nicht aus fraktalen Differentialoperatoren, sondern aus der spektralen Dimension \( d_s \) des zugrundeliegenden diskreten Netzwerks (siehe Anhang~\ref{app:spektrale_dimension}).
 
 Das Ergebnis ist:
 
@@ -73,11 +79,13 @@ Mit \( D \approx 2,704 \) ist \( D/3 \approx 0,901 \), also eine schwache Abweic
 v_{\text{phase}}(\omega) = \frac{\omega}{k} \propto \omega^{1 - D/3} \approx \omega^{-0,099}.
 \]
 
-Für die Herleitung dieser Dispersionsrelation sei auf Anhang N verwiesen. Dort wird gezeigt, dass sie allein aus der spektralen Dimension \( d_s = 2D/3 \) folgt, die wiederum aus der dualen Dodekaeder-Ikosaeder-Struktur des diskreten Netzwerks gewonnen wird.
+Für die Herleitung dieser Dispersionsrelation sei auf Anhang~\ref{app:spektrale_dimension} verwiesen. Dort wird gezeigt, dass sie allein aus der spektralen Dimension \( d_s = 2D/3 \) folgt, die wiederum aus der dualen Dodekaeder-Ikosaeder-Struktur des diskreten Netzwerks gewonnen wird.
 
 \section{Konsequenzen für die Physik}
+\label{sec:mw_konsequenzen}
 
 \subsection{Keine Renormierung nötig}
+\label{sec:mw_renormierung}
 
 Die fraktale Struktur des Raumes wirkt als natürlicher Cutoff. Integrale, die in der Quantenfeldtheorie divergieren, werden durch die gebrochene Dimension regularisiert:
 
@@ -88,6 +96,7 @@ Die fraktale Struktur des Raumes wirkt als natürlicher Cutoff. Integrale, die i
 Eine Renormierung ist nicht erforderlich.
 
 \subsection{Skalierungsgesetze in Plasmen}
+\label{sec:mw_plasmen}
 
 Aus der fraktalen Quellverteilung folgen spezifische Skalierungsgesetze:
 
@@ -95,20 +104,22 @@ Aus der fraktalen Quellverteilung folgen spezifische Skalierungsgesetze:
 j(r) \propto r^{D-3} \approx r^{-0,296}
 \]
 
-Dies ist eine testbare Vorhersage für astrophysikalische Plasmen (siehe Kapitel 15).
+Dies ist eine testbare Vorhersage für astrophysikalische Plasmen (siehe Kapitel~\ref{ch:vorhersagen}).
 
 \subsection{Einheit von Elektrodynamik und Gravitation}
+\label{sec:mw_einheit}
 
 Die Maxwell-Gleichungen für Elektrodynamik und Gravitation haben dieselbe mathematische Struktur – sowohl in der glatten Formulierung als auch in der fraktalen Skalierung der Quellen. Die Unterschiede liegen allein in den Kopplungskonstanten und der Interpretation der Felder.
 
 \section{Zusammenfassung}
+\label{sec:mw_zusammenfassung}
 
 Die Maxwell-Gravitation im fraktalen Raum wird wie folgt beschrieben:
 
 \begin{itemize}
     \item \textbf{Feldgleichungen:} Glatt (gewöhnliche Ableitungen)
     \item \textbf{Quellen:} Fraktal skaliert (\( \rho_{\text{eff}} \propto r^{D-3} \))
-    \item \textbf{Dispersionsrelation:} \( \omega \propto k^{D/3} \) (aus spektraler Dimension, siehe Anhang N)
+    \item \textbf{Dispersionsrelation:} \( \omega \propto k^{D/3} \) (aus spektraler Dimension, siehe Anhang~\ref{app:spektrale_dimension})
 \end{itemize}
 
 Die Maxwell-Gleichungen im glatten Raum (\( D = 3 \)) sind der Spezialfall einer homogenen Quellverteilung. Die hier vorgestellte Formulierung ist mathematisch konsistent und vermeidet die Probleme fraktaler Differentialoperatoren.
@@ -116,7 +127,7 @@ Die Maxwell-Gleichungen im glatten Raum (\( D = 3 \)) sind der Spezialfall einer
 \subsection*{Verweise}
 
 \begin{itemize}
-    \item Zur Herleitung der spektralen Dimension siehe Anhang N.
-    \item Zu den testbaren Vorhersagen siehe Kapitel 15.
-    \item Zur glatten Maxwell-Gravitation siehe Kapitel 9.
+    \item Zur Herleitung der spektralen Dimension siehe Anhang~\ref{app:spektrale_dimension}.
+    \item Zu den testbaren Vorhersagen siehe Kapitel~\ref{ch:vorhersagen}.
+    \item Zur glatten Maxwell-Gravitation siehe Kapitel~\ref{ch:maxwell_gravitation}.
 \end{itemize}

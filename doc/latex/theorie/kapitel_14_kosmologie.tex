@@ -1,14 +1,18 @@
 \chapter{Stationäre Kosmologie}
+\label{ch:kosmologie}
 
 \section{Einleitung}
+\label{sec:kosmo_einleitung}
 
 Die WDBT+ führt zu einem stationären, nicht-expandierenden Universum. Die beobachtete Rotverschiebung ist keine Folge der Expansion des Raumes, sondern eine kumulative gravitative Wirkung auf Photonen während ihrer Reise durch das \( \Omega \)-Feld. Die DSTT-Drift (\( \dot{\beta} > 0 \)) bewirkt eine langsame Ausdehnung von Strukturen, die durch kontinuierliche Materieentstehung aus dem Quantenpotential kompensiert wird.
 
 Dieses Kapitel beschreibt die Grundzüge dieser Kosmologie: Rotverschiebung, Galaxienrotation, Materieentstehung, Galaxienwachstum und die Interpretation des Sonnenwinds.
 
 \section{Grundlagen der Rotverschiebung in der WDBT}
+\label{sec:kosmo_rotverschiebung}
 
 \subsection{Allgemeine Form}
+\label{sec:kosmo_rot_allgemein}
 
 Die allgemeine, aus den Weber-Kräften folgende Rotverschiebung für ein Lichtsignal, das eine radialsymmetrische Massenverteilung \( M(r) \) durchläuft, lautet:
 
@@ -19,12 +23,14 @@ z = \frac{1}{c^2} \int_0^d \frac{G M(r)}{r^2} \, dr \qquad \text{(allgemeine For
 Diese Gleichung gilt für jede Massenverteilung und enthält keine fraktale Dimension \( D \). Sie ist die Grundlage der Rotverschiebung in der WDBT.
 
 \subsection{Rotverschiebung ohne Expansion}
+\label{sec:kosmo_rot_ohne_expansion}
 
-In der WDBT+ ist die Rotverschiebung keine Doppler-Verschiebung durch Expansion, sondern eine kumulative gravitative Wirkung auf Photonen während ihrer Reise durch das \( \Omega \)-Feld. Die allgemeine Form (siehe oben) beschreibt genau diesen Effekt.
+In der WDBT+ ist die Rotverschiebung keine Doppler-Verschiebung durch Expansion, sondern eine kumulative gravitative Wirkung auf Photonen während ihrer Reise durch das \( \Omega \)-Feld (siehe Kapitel~\ref{ch:maxwell_gravitation}). Die allgemeine Form (siehe oben) beschreibt genau diesen Effekt.
 
 \subsection{Fraktale Dichteverteilung als Spezialfall}
+\label{sec:kosmo_rot_fraktal}
 
-Nimmt man speziell die fraktale Dichteverteilung der WDBT+ an (siehe Kapitel 6),
+Nimmt man speziell die fraktale Dichteverteilung der WDBT+ an (siehe Kapitel~\ref{ch:fraktale_dimension}),
 
 \[
 \rho(r) = \rho_0 \left( \frac{r}{l_0} \right)^{D-3},
@@ -52,6 +58,7 @@ z(d) = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-1) c^2} \, d^{\,D-1}.
 Dies ist ein Spezialfall der allgemeinen WDBT-Rotverschiebung für den Fall einer fraktalen Dichteverteilung. Für \( D \to 3 \) geht die fraktale Verteilung in eine konstante Dichte über.
 
 \subsection{Die effektive Hubble-Konstante}
+\label{sec:effektive_hubble}
 
 In der WDBT+ gibt es keine universelle Hubble-Konstante im Sinne der expandierenden Kosmologie, da das Universum stationär ist. Stattdessen definiert man eine \textbf{skalenabhängige effektive Hubble-Konstante}:
 
@@ -59,13 +66,13 @@ In der WDBT+ gibt es keine universelle Hubble-Konstante im Sinne der expandieren
 H_{\text{eff}}(d) = c \cdot \frac{z(d)}{d}
 \]
 
-Aus der allgemeinen Rotverschiebungsformel (Abschnitt 14.2.1) folgt für beliebige Massenverteilungen \( M(r) \):
+Aus der allgemeinen Rotverschiebungsformel (Abschnitt~\ref{sec:kosmo_rot_allgemein}) folgt für beliebige Massenverteilungen \( M(r) \):
 
 \[
 H_{\text{eff}}(d) = \frac{1}{d} \int_0^d \frac{GM(r)}{r^2} \, dr
 \]
 
-Für den Spezialfall der fraktalen Dichteverteilung (Abschnitt 14.2.3) ergibt sich:
+Für den Spezialfall der fraktalen Dichteverteilung (Abschnitt~\ref{sec:kosmo_rot_fraktal}) ergibt sich:
 
 \[
 H_{\text{eff}}(d) = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-1)c} \cdot d^{\,D-2}
@@ -90,12 +97,14 @@ Die CMB-Messungen entsprechen einer deutlich größeren effektiven Skala als lok
 Da \( \beta \) für Photonen von der Energie abhängt, zeigen verschiedene Frequenzen leicht unterschiedliche Rotverschiebungen. Dieser Effekt ist klein, aber mit Pulsar-Laufzeiten oder hochpräzisen Spektren messbar.
 
 \section{Galaxienrotation ohne Dunkle Materie}
+\label{sec:kosmo_galaxienrotation}
 
-Flache Rotationskurven werden in der WDBT+ durch das \( \Omega \)-Feld und die anisotrope Trägheit der DSTT erklärt. Die radiale Dichteverteilung einer Galaxie ergibt sich aus der kontinuierlichen Materieentstehung und der DSTT-Drift.
+Flache Rotationskurven werden in der WDBT+ durch das \( \Omega \)-Feld und die anisotrope Trägheit der DSTT erklärt (siehe Kapitel~\ref{ch:dstt_weber} und \ref{ch:maxwell_gravitation}). Die radiale Dichteverteilung einer Galaxie ergibt sich aus der kontinuierlichen Materieentstehung und der DSTT-Drift.
 
 \subsection{Dichteverteilung}
+\label{sec:kosmo_dichte}
 
-Die Materieentstehungsrate im fraktalen Raum ist (siehe Anhang J):
+Die Materieentstehungsrate im fraktalen Raum ist (siehe Anhang~\ref{app:energiebilanz}):
 
 \[
 \dot{\rho}_{\text{cre}}(r) \propto r^{D-3} = r^{-0,296}
@@ -108,6 +117,7 @@ Im stationären Zustand führt dies über die Kontinuitätsgleichung zu einer ra
 \]
 
 \subsection{Rotationskurve}
+\label{sec:kosmo_rotation}
 
 Die kumulierte Masse innerhalb des Radius \( r \) ist:
 
@@ -124,18 +134,20 @@ v(r) = \sqrt{\frac{GM(r)}{r}} \propto r^{0,648}
 Für \( D \approx 2,704 \) ergibt sich \( v(r) \propto r^{0,648} \) – dies ist eine fast flache Rotationskurve, konsistent mit Beobachtungen.
 
 \section{Kontinuierliche Materieentstehung}
+\label{sec:kosmo_materieentstehung}
 
-Die Materieentstehung wird durch die negative Vakuumenergiedichte des fraktalen Raumes vermittelt. Aus Anhang J folgt:
+Die Materieentstehung wird durch die negative Vakuumenergiedichte des fraktalen Raumes vermittelt. Aus Anhang~\ref{app:energiebilanz} folgt:
 
 \[
 \dot{\rho}_{\text{cre}}(r) = \kappa \cdot \frac{\hbar c}{l_0^4 c^2} \left( \frac{l_0}{r} \right)^{3-D} \propto r^{D-3}
 \]
 
-Die Materieentstehung ist also im Zentrum am stärksten und fällt mit einer gebrochenen Potenz ab, die direkt aus der fraktalen Dimension \( D \) folgt. Die vollständige Energiebilanz inklusive der negativen Vakuumenergiedichte findet sich in Anhang J.
+Die Materieentstehung ist also im Zentrum am stärksten und fällt mit einer gebrochenen Potenz ab, die direkt aus der fraktalen Dimension \( D \) folgt. Die vollständige Energiebilanz inklusive der negativen Vakuumenergiedichte findet sich in Anhang~\ref{app:energiebilanz}.
 
 \subsection{Drift und Einfang}
+\label{sec:kosmo_drift_einfang}
 
-Die DSTT-Drift treibt die neu entstehende Materie nach außen. Die radiale Driftgeschwindigkeit wird in Anhang G hergeleitet:
+Die DSTT-Drift treibt die neu entstehende Materie nach außen. Die radiale Driftgeschwindigkeit wird in Anhang~\ref{app:identitaet} hergeleitet:
 
 \[
 v_{\text{drift}}(r) = r\dot{\phi} \sqrt{1-\beta}
@@ -143,15 +155,16 @@ v_{\text{drift}}(r) = r\dot{\phi} \sqrt{1-\beta}
 
 Für Kreisbahnen als Näherung (\(\beta \approx 1\)) folgt die Skalierung \( v_{\text{drift}} \propto r^{-1/2} \).
 
-Die Einfangwahrscheinlichkeit durch den Zentralkörper ist (Herleitung in Anhang G):
+Die Einfangwahrscheinlichkeit durch den Zentralkörper ist (Herleitung in Anhang~\ref{app:identitaet}):
 
 \[
 \alpha_{\text{in}} = \left( \frac{r_c}{r_{\text{max}}} \right)^{3-D}
 \]
 
-Mit \( r_c \sim 200 \, \text{m} \) (Oberfläche des BEC-Objekts) und \( r_{\text{max}} \sim 5 \times 10^{11} \, \text{m} \) (äußerer Rand der Entstehungszone) ergibt sich \( \alpha_{\text{in}} \approx 0,001 \).
+Mit \( r_c \sim 200 \, \text{m} \) (Oberfläche des BEC-Objekts, siehe Kapitel~\ref{ch:bec_objekte}) und \( r_{\text{max}} \sim 5 \times 10^{11} \, \text{m} \) (äußerer Rand der Entstehungszone) ergibt sich \( \alpha_{\text{in}} \approx 0,001 \).
 
 \section{Galaxienwachstum}
+\label{sec:kosmo_galaxienwachstum}
 
 Während der Raum selbst nicht expandiert (das Universum ist stationär), wachsen gebundene Strukturen wie Galaxien durch kontinuierliche Materieentstehung und die DSTT-Drift. Aus der Drift-Gleichung \( dr/dt = v_{\text{drift}}(r) \) mit \( v_{\text{drift}} \propto r^{-1/2} \) folgt durch Integration:
 
@@ -168,8 +181,9 @@ M_{\text{Gal}}(t) \propto t^{1,197}
 Der Exponent liegt nahe an 1, was ein nahezu lineares Wachstum der Galaxienmasse mit der Zeit bedeutet.
 
 \subsection{Massenverhältnis Galaxie zu Kern}
+\label{sec:kosmo_massenverhaeltnis}
 
-Das Massenverhältnis von Galaxie zu zentralem BEC-Kern ist:
+Das Massenverhältnis von Galaxie zu zentralem BEC-Kern (siehe Kapitel~\ref{ch:bec_objekte}) ist:
 
 \[
 \frac{M_{\text{Gal}}}{M_{\text{Kern}}} = \frac{1 - \alpha_{\text{in}}}{\alpha_{\text{in}}} \approx 1000
@@ -178,6 +192,7 @@ Das Massenverhältnis von Galaxie zu zentralem BEC-Kern ist:
 Mit \( M_{\text{Kern}} = M_{\text{BEC}} \approx 3 \times 10^6 M_\odot \) ergibt sich \( M_{\text{Gal}} \approx 3 \times 10^9 M_\odot \) – typisch für große Galaxien.
 
 \subsection{Die Sonne als Mikrokosmos}
+\label{sec:kosmo_sonne}
 
 Das Modell der BEC-Objekte und der DSTT-Drift ist skalierbar. 
 Überträgt man es auf die Masse der Sonne (\( M = M_{\odot} \)), 
@@ -195,6 +210,7 @@ Compton-Wellenlänge des Protons) und \( \alpha_{\text{in}} \) die
 Einfangwahrscheinlichkeit neu entstehender Materie durch die Sonne.
 
 \subsubsection{Interpretation des Sonnenwinds}
+\label{sec:kosmo_sonnenwind}
 
 Im Standardmodell wird der Sonnenwind als Materieausstoß aus der 
 Sonnenkorona interpretiert. Die WDBT+ bietet eine alternative 
@@ -211,12 +227,13 @@ Erklärung:
 
 Eine wichtige Konsequenz: Die Sonne verliert durch diesen Prozess 
 keine signifikante Masse, da der Sonnenwind nicht aus der Sonne 
-selbst stammt, sondern aus neu entstehender Materie. 
+selbst stammt, sondern aus neu entstehender Materie (siehe auch Kapitel~\ref{ch:vorhersagen}). 
 Präzise Messungen der Sonnenmasse über längere Zeiträume 
 sollten daher keinen Masseverlust zeigen – eine testbare 
 Vorhersage der Theorie.
 
 \subsubsection{Skalierbarkeit des Modells}
+\label{sec:kosmo_skalierbarkeit}
 
 Die fraktale Raumdimension \( D \approx 2,704 \) bestimmt die 
 Exponenten aller Skalierungsgesetze. Für die Sonne (\( M = M_{\odot} \)) 
@@ -227,8 +244,9 @@ Dichteverteilung im solaren BEC-Objekt – eine Aufgabe für
 zukünftige Forschung.
 
 \section{Beobachtbare Signaturen: Der EHT-Schatten}
+\label{sec:kosmo_eht}
 
-Ein BEC-Objekt mit \( M = M_{\text{BEC}} \) hat \( R = l_0 \approx 10^{-15} \, \text{m} \) – viel zu klein, um direkt abgebildet zu werden. Was das Event Horizon Telescope (EHT) zeigt, ist der Einflussbereich: die Region, in der Licht stark abgelenkt wird.
+Ein BEC-Objekt mit \( M = M_{\text{BEC}} \) hat \( R = l_0 \approx 10^{-15} \, \text{m} \) – viel zu klein, um direkt abgebildet zu werden. Was das Event Horizon Telescope (EHT) zeigt, ist der Einflussbereich: die Region, in der Licht stark abgelenkt wird (siehe Kapitel~\ref{ch:vorhersagen}).
 
 Der Photonenorbit liegt bei:
 
@@ -251,6 +269,7 @@ Der Schatten ist also makroskopisch. Testbare Unterschiede zur ART:
 \end{itemize}
 
 \section{Vergleich mit dem Standardmodell}
+\label{sec:kosmo_vergleich}
 
 Die folgende Tabelle fasst die Unterschiede zwischen der Standardkosmologie und der WDBT+ zusammen:
 
@@ -278,6 +297,7 @@ Dunkle Energie & Benötigt & Nicht benötigt \\
 \end{table}
 
 \section{Zusammenfassung}
+\label{sec:kosmo_zusammenfassung}
 
 Die WDBT+ führt zu einem stationären, nicht-expandierenden Universum:
 

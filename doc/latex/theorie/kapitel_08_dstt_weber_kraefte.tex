@@ -1,24 +1,30 @@
 \chapter{Dynamische Schwere-Trägheits-Theorie (DSTT) und Weber-Kräfte}
+\label{ch:dstt_weber}
 
 \section{Einleitung}
+\label{sec:dstt_einleitung}
 
 Die Dynamische Schwere-Trägheits-Theorie (DSTT) ist eine eigenständige Theorie der Bewegung unter dem Einfluss einer Zentralkraft. Sie entstand unabhängig von den Weber-Kräften und würde bereits mit der Newtonschen Gravitation funktionieren. Die zentrale Idee ist die Trennung von Ursache (Schwere) und Wirkung (Trägheit) sowie die Aufteilung der Trägheitsantwort in eine radiale und eine tangentiale Komponente.
 
-Die späteren Weber-Kräfte (Weber-Elektrodynamik und Weber-Gravitation) zeigen dieselbe strukturelle Aufteilung. Die Identitätsbeziehung zwischen der DSTT und den Weber-Kräften ist der Schlüssel zur Emergenz der Maxwell-Gravitation.
+Die späteren Weber-Kräfte (Weber-Elektrodynamik und Weber-Gravitation) zeigen dieselbe strukturelle Aufteilung. Die Identitätsbeziehung zwischen der DSTT und den Weber-Kräften ist der Schlüssel zur Emergenz der Maxwell-Gravitation (siehe Kapitel~\ref{ch:maxwell_gravitation}).
 
 \section{Axiome der DSTT}
+\label{sec:dstt_axiome}
 
 Die DSTT basiert auf den folgenden Axiomen:
 
 \subsection{Axiom 1: Trennung von Ursache und Wirkung}
+\label{sec:dstt_axiom1}
 
 Schwere (Ursache) und Trägheit (Wirkung) sind fundamental verschieden. Die Schwere wirkt radial zwischen zwei Körpern. Es gibt keine zusätzlichen Felder, keine Raumzeitkrümmung – nur diese eine radiale Wechselwirkung.
 
 \subsection{Axiom 2: Anisotrope Trägheit}
+\label{sec:dstt_axiom2}
 
 Die Trägheit zerfällt in zwei Komponenten: eine radiale und eine tangentiale Antwort. Die Schwerewirkung teilt sich auf in einen radialen Anteil \( (1-\beta)F_G \) und einen tangentialen Anteil \( \beta F_G \).
 
 \subsection{Axiom 3: Dynamische Aufteilung}
+\label{sec:dstt_axiom3}
 
 Ein Zustandsparameter \( \beta(t) \in [0,1] \) bestimmt das Verhältnis. Er ist definiert als das Verhältnis von tangentialer zu Gesamtenergie:
 
@@ -27,6 +33,7 @@ Ein Zustandsparameter \( \beta(t) \in [0,1] \) bestimmt das Verhältnis. Er ist 
 \]
 
 \subsection{Axiom 4: Monotonie}
+\label{sec:dstt_axiom4}
 
 Die tangentiale Komponente nimmt ständig zu:
 
@@ -37,6 +44,7 @@ Die tangentiale Komponente nimmt ständig zu:
 Diese Monotonie ist eine direkte Konsequenz der Energieflüsse in der Weber-Gravitation.
 
 \section{Bahnformen und Spiralbahnen}
+\label{sec:dstt_bahnen}
 
 Aus den Axiomen der DSTT folgt durch Eliminierung der Zeit:
 
@@ -53,8 +61,10 @@ r(\phi) = Ke^{\phi/B}
 Kreisbahnen und Ellipsen – die Grundbausteine der newtonschen Mechanik und der Allgemeinen Relativitätstheorie (ART) – existieren nicht exakt. Sie sind Näherungen für kurze Zeiträume, in denen die Drift vernachlässigbar erscheint.
 
 \section{Die Weber-Kräfte}
+\label{sec:weber_kraefte}
 
 \subsection{Allgemeine Form}
+\label{sec:weber_allgemein}
 
 Die Weber-Kraft beschreibt eine direkte, geschwindigkeits- und beschleunigungsabhängige Wechselwirkung zwischen zwei Teilchen. Ihre allgemeine Form lautet:
 
@@ -65,6 +75,7 @@ Die Weber-Kraft beschreibt eine direkte, geschwindigkeits- und beschleunigungsab
 Der Parameter \( \beta_{\text{Kraft}} \) unterscheidet die verschiedenen Wechselwirkungen.
 
 \subsection{Weber-Elektrodynamik (WED)}
+\label{sec:weber_wed}
 
 Für die Elektrodynamik gilt \( \beta_{\text{WED}} = 2 \):
 
@@ -75,6 +86,7 @@ Für die Elektrodynamik gilt \( \beta_{\text{WED}} = 2 \):
 Die Kraft erfüllt actio = reactio und erhält den Impuls.
 
 \subsection{Weber-Gravitation (WG) für Massen}
+\label{sec:weber_wg_massen}
 
 Für massive Körper (Planeten, Sterne) gilt \( \beta_{\text{WG}} = 0,5 \):
 
@@ -83,6 +95,7 @@ Für massive Körper (Planeten, Sterne) gilt \( \beta_{\text{WG}} = 0,5 \):
 \]
 
 \subsection{Weber-Gravitation (WG) für Photonen}
+\label{sec:weber_wg_photonen}
 
 Für Photonen (masselose Teilchen) lautet die Kraft mit \( \beta = 1 \):
 
@@ -90,13 +103,15 @@ Für Photonen (masselose Teilchen) lautet die Kraft mit \( \beta = 1 \):
 \vec{F}_{\text{WG}}^{(\gamma)} = -\frac{GMm}{r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + 1 \cdot \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
 \]
 
-Hier greift das Quantenpotential \( Q \) ein. Es kompensiert den \( \beta = 1 \)-Wert so, dass effektiv \( \beta = 0,5 \) übrig bleibt. Dies ist die Wirkungsweise des Quantenpotentials, das in späteren Kapiteln ausführlich behandelt wird.
+Hier greift das Quantenpotential \( Q \) ein (siehe Kapitel~\ref{ch:neutrino}). Es kompensiert den \( \beta = 1 \)-Wert so, dass effektiv \( \beta = 0,5 \) übrig bleibt. Dies ist die Wirkungsweise des Quantenpotentials.
 
 \subsection{Bahngleichung und Periheldrehung in der Weber-Gravitation}
+\label{sec:weber_bahngleichung}
 
 Die Bewegungsgleichung der Weber-Gravitation für ein Zweikörpersystem (Zentralmasse \( M \), Testmasse \( m \)) führt auf eine Bahngleichung, die als Funktion des Winkels \( \phi \) geschrieben werden kann. Dies ist eine Innovation der vorliegenden Arbeit: Die Parametrisierung der Bahn als \( r(\phi) \) anstelle von \( r(t) \) erlaubt eine direkte Kopplung an astronomische Ephemeriden und vereinfacht die numerische Integration erheblich.
 
 \subsubsection{Bahngleichung 1. Ordnung}
+\label{sec:weber_bahn_1ordnung}
 
 In erster Ordnung der Störungsrechnung (Entwicklung in \( 1/c^2 \)) ergibt sich:
 
@@ -118,6 +133,7 @@ Dabei sind:
 \end{itemize}
 
 \subsubsection{Periheldrehung pro Umlauf}
+\label{sec:weber_periheldrehung}
 
 Die Periheldrehung pro Umlauf beträgt:
 
@@ -137,9 +153,10 @@ Für Merkur (\( a = 5,79 \times 10^{10} \, \text{m}, e = 0,2056 \)) liefert dies
 \Delta\phi \approx 42,98'' \, \text{pro Jahrhundert}
 \]
 
-in exzellenter Übereinstimmung mit der Beobachtung und der Allgemeinen Relativitätstheorie.
+in exzellenter Übereinstimmung mit der Beobachtung und der Allgemeinen Relativitätstheorie (siehe auch Anhang~\ref{app:periheldrehung}).
 
 \subsubsection{Winkelgeschwindigkeit}
+\label{sec:weber_winkelgeschw}
 
 Die Winkelgeschwindigkeit \( \omega = d\phi/dt \) folgt aus dem spezifischen Drehimpuls \( h = \sqrt{GMa(1-e^2)} \):
 
@@ -148,6 +165,7 @@ Die Winkelgeschwindigkeit \( \omega = d\phi/dt \) folgt aus dem spezifischen Dre
 \]
 
 \subsubsection{Numerische Integration und Ephemeriden}
+\label{sec:weber_numerik}
 
 Die Darstellung der Bahn als \( r(\phi) \) und \( \omega(\phi) \) ist besonders vorteilhaft für die numerische Integration. Anstelle einer zeitbasierten Integration (mit variabler Schrittweite, die bei hohen Exzentrizitäten Probleme bereitet) kann über den Winkel \( \phi \) integriert werden. Die Zeit wird sekundär berechnet:
 
@@ -174,14 +192,16 @@ Für die Integration der Bewegungsgleichung wird das folgende Differentialgleich
 mit den Kraftkomponenten \( F_r, F_\phi \) aus der Weber-Gravitation. Dieses System wird mit einem Runge-Kutta-Verfahren (oder einem adaptiven Integrator) numerisch gelöst. Die Ergebnisse stimmen mit den hochpräzisen Ephemeridendaten (z. B. DE440 des Jet Propulsion Laboratory) innerhalb der Messgenauigkeit überein.
 
 \subsubsection{Anpassung an Ephemeriden}
+\label{sec:weber_ephemeriden}
 
 Die winkelbasierte Darstellung erlaubt eine einfache Kalibrierung der Bahnparameter an beobachtete Ephemeriden. Gegeben eine beobachtete Winkelposition \( \phi(t) \) zu einer Zeit \( t \), kann der zugehörige Bahnradius \( r(\phi) \) direkt berechnet werden. Umgekehrt kann aus einer gemessenen Radialgeschwindigkeit oder Entfernung der Winkel rekonstruiert werden. Dies macht die Theorie besonders geeignet für die hochpräzise Astrometrie (z. B. Gaia-Mission) und für die Analyse von Pulsar-Timing-Daten.
 
-Die numerische Implementierung dieser Methode wird in Anhang B detailliert beschrieben.
+Die numerische Implementierung dieser Methode wird in Anhang~\ref{app:numerik} detailliert beschrieben.
 
 \section{Identitätsbeziehung zwischen DSTT und Weber-Kräften}
+\label{sec:identitaetsbeziehung}
 
-Die DSTT-Zustandsvariable \( \beta_{\text{DSTT}} \) und die Terme der Weber-Kraft sind über eine Identitätsbeziehung verknüpft:
+Die DSTT-Zustandsvariable \( \beta_{\text{DSTT}} \) und die Terme der Weber-Kraft sind über eine Identitätsbeziehung verknüpft (siehe auch Anhang~\ref{app:identitaet}):
 
 \[
 \frac{|\vec{F}_{\text{WG}}^{\text{tan}}|}{|\vec{F}_{\text{WG}}^{\text{rad}}| + |\vec{F}_{\text{WG}}^{\text{tan}}|} \equiv \beta_{\text{DSTT}}(t)
@@ -197,6 +217,7 @@ mit
 \]
 
 \section{Die Kopplungsgleichung}
+\label{sec:kopplungsgleichung}
 
 Aus den Bewegungsgleichungen der WG und der Definition von \( \beta_{\text{DSTT}} \) folgt nach längerer Rechnung die zentrale Kopplungsgleichung:
 
@@ -215,6 +236,7 @@ Dies ist das zentrale Ergebnis! Es zeigt:
 Mit \( \beta_{\text{WG}} = 0,5 \) für Massen folgt zwingend \( \dot{\beta}_{\text{DSTT}} > 0 \). Die WG enthält also implizit die Monotonie der DSTT!
 
 \section{Exzentrizitätsänderung}
+\label{sec:exzentrizitaet}
 
 Aus der Definition von \( \beta_{\text{DSTT}} \) und den Bahngleichungen folgt ein Zusammenhang mit der Exzentrizität \( e \). Für eine Kepler-Ellipse gilt im Mittel:
 
@@ -245,6 +267,7 @@ Für den Mond (\( a = 3,84 \times 10^8 \) m, \( e = 0,0549 \), \( M = M_{\text{E
 Dieser Wert ist mit heutigen Messmethoden nicht nachweisbar. Die DSTT ist daher mit allen Beobachtungen verträglich.
 
 \section{Perfekte Kreisbahnen sind unmöglich}
+\label{sec:kreisbahnen}
 
 Aus \( \dot{\beta}_{\text{DSTT}} > 0 \) folgt eine weitere fundamentale Konsequenz: Perfekte Kreisbahnen (\( \beta = 1, e = 0 \)) werden nie erreicht.
 
@@ -258,6 +281,7 @@ Begründung:
 Dies bedeutet: Alle Bahnen im Universum sind prinzipiell offene Spiralen – es gibt keine geschlossenen Ellipsen. Die Abweichung ist winzig, aber prinzipiell vorhanden.
 
 \section{Gravitationsentropie und intrinsischer Zeitpfeil}
+\label{sec:gravitationsentropie}
 
 Die Monotonie \( \dot{\beta} > 0 \) führt zu einem weiteren grundlegenden Konzept: Die Gravitation selbst produziert Entropie.
 
@@ -282,6 +306,7 @@ Für diese Entropie gilt:
 Die Gravitation gehorcht also einem zweiten Hauptsatz – sie ist ein irreversibler Prozess. Dies liefert einen intrinsischen kosmologischen Zeitpfeil, der unabhängig von der Materie existiert.
 
 \section{Übertragung auf die Elektrodynamik}
+\label{sec:dstt_elektrodynamik}
 
 Die Weber-Elektrodynamik (WED) hat eine analoge Struktur mit \( \beta_{\text{WED}} = 2 \). Die analoge Herleitung ergibt:
 
@@ -303,10 +328,12 @@ Dies erklärt den fundamentalen Unterschied zwischen Gravitation und Elektrodyna
 \end{itemize}
 
 \section{Die Erweiterte Weber-Theorie}
+\label{sec:erweiterte_weber}
 
 Zusammenfassend lässt sich die Erweiterte Weber-Theorie wie folgt formulieren:
 
 \subsection{Postulat 1: Allgemeine Weber-Kraft}
+\label{sec:postulat1}
 
 Jede fundamentale Wechselwirkung wird beschrieben durch:
 
@@ -315,6 +342,7 @@ Jede fundamentale Wechselwirkung wird beschrieben durch:
 \]
 
 \subsection{Postulat 2: Energieaufteilung}
+\label{sec:postulat2}
 
 Die momentane Aufteilung der Energie in radiale und tangentiale Komponenten wird beschrieben durch:
 
@@ -323,14 +351,16 @@ Die momentane Aufteilung der Energie in radiale und tangentiale Komponenten wird
 \]
 
 \subsection{Postulat 3: Kopplungsbedingung}
+\label{sec:postulat3}
 
-Die beiden \( \beta \) sind durch die Identitätsbeziehung verknüpft:
+Die beiden \( \beta \) sind durch die Identitätsbeziehung verknüpft (siehe Anhang~\ref{app:identitaet}):
 
 \[
 \frac{\frac{2(\dot{r} \cdot \vec{v})^2}{c^2}}{1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{Kraft}} \frac{r \ddot{r}}{c^2} + \frac{2(\dot{r} \cdot \vec{v})^2}{c^2}} = \beta_{\text{DSTT}}(t)
 \]
 
 \subsection{Postulat 4: Dynamik der Energieaufteilung}
+\label{sec:postulat4}
 
 Die zeitliche Entwicklung von \( \beta_{\text{DSTT}}(t) \) folgt aus der Dynamik:
 
@@ -341,6 +371,7 @@ Die zeitliche Entwicklung von \( \beta_{\text{DSTT}}(t) \) folgt aus der Dynamik
 mit der spezifischen Form für die jeweilige Wechselwirkung.
 
 \section{Zusammenfassung}
+\label{sec:dstt_zusammenfassung}
 
 Die Erweiterte Weber-Theorie vereinheitlicht die Beschreibung aller fundamentalen Wechselwirkungen auf der Basis geschwindigkeits- und beschleunigungsabhängiger Kräfte und ihrer energetischen Konsequenzen:
 
@@ -352,4 +383,4 @@ Die Erweiterte Weber-Theorie vereinheitlicht die Beschreibung aller fundamentale
     \item Die Gravitation ist irreversibel (Zeitpfeil, Entropie), die Elektrodynamik ist reversibel.
 \end{itemize}
 
-Im nächsten Kapitel wird gezeigt, wie aus dieser Struktur die Maxwell-Gleichungen der Gravitation emergieren und schließlich die \( \Omega \)-Theorie als Alternative zur Raumkrümmung der ART entsteht.
+Im nächsten Kapitel~\ref{ch:maxwell_gravitation} wird gezeigt, wie aus dieser Struktur die Maxwell-Gleichungen der Gravitation emergieren und schließlich die \( \Omega \)-Theorie als Alternative zur Raumkrümmung der ART entsteht.

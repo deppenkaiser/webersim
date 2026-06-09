@@ -1,7 +1,8 @@
 \chapter{Vergleich mit etablierten Theorien}
-\label{chp:vergleich_theorien}
+\label{app:vergleich}
 
 \section{Einleitung}
+\label{app:vergleich_einleitung}
 
 Die IWT und die WDBT+ erheben den Anspruch, fundamentale Ur-Theorien zu sein, aus denen die bekannten physikalischen Theorien als Grenzfälle emergieren. Dieses Kapitel vergleicht die emergenten Strukturen der Informationsdynamik mit den etablierten physikalischen Theorien und zeigt, wie diese als Näherungen einer tieferen Informationsordnung erscheinen.
 
@@ -12,11 +13,11 @@ Der Vergleich erfolgt entlang f\"unf fundamentaler Fragen:
 \hline
 \textbf{Frage} & \textbf{Etablierte Theorien} & \textbf{IWT (Ur-Theorie)} \\
 \hline
-Physikalischer Zustand? & Teilchen, Felder, Wellenfunktionen & Diskrete Information \( I_k^{(n)} \) \\
+Physikalischer Zustand? & Teilchen, Felder, Wellenfunktionen & Diskrete Information \( I_k^{(n)} \) (siehe Kapitel~\ref{ch:diskrete_dynamik}) \\
 \hline
-Dynamik? & Kräfte, Feldgleichungen, Schr\"odinger-Gleichung & Rekursive Update-Regeln \\
+Dynamik? & Kräfte, Feldgleichungen, Schr\"odinger-Gleichung & Rekursive Update-Regeln (siehe Kapitel~\ref{ch:lagrange}) \\
 \hline
-Raum und Zeit? & Fundamentales Kontinuum & Emergente Metrik \( g_{kl}^{(n)} \) \\
+Raum und Zeit? & Fundamentales Kontinuum & Emergente Metrik \( g_{kl}^{(n)} \) (siehe Kapitel~\ref{ch:emergenz}) \\
 \hline
 Kausalität? & Lokal mit Lichtkegel & Zwei-Ebenen: lokal + systemisch \\
 \hline
@@ -25,8 +26,10 @@ Fundamentale Gr\"o{\ss}en? & Energie, Ladung, Masse & Information \( I_k^{(n)} \
 \end{tabularx}
 
 \section{Vergleich mit der klassischen Mechanik}
+\label{app:vergleich_klassisch}
 
 \subsection{Fundamentale Konzepte}
+\label{app:vergleich_klassisch_konzepte}
 
 Die klassische Mechanik basiert auf:
 
@@ -39,16 +42,18 @@ Die klassische Mechanik basiert auf:
 \end{itemize}
 
 \subsection{Emergenz aus der IWT}
+\label{app:vergleich_klassisch_emergenz}
 
 In der IWT entsteht die klassische Mechanik als Grenzfall:
 
 \begin{enumerate}
     \item Schwache Informationsgradienten: \( |\Delta I_k^{(n)}| \ll I_k^{(n)} \)
     \item Dominante lokale Dynamik: \( F_k^{\text{lokal}} \gg F_k^{\text{global}} \)
-    \item Kontinuumsnäherung: \( T \to 0, N \to \infty \)
+    \item Kontinuumsnäherung: \( T \to 0, N \to \infty \) (siehe Anhang~\ref{app:kontinuumslimes})
 \end{enumerate}
 
 \subsection{Emergente Gleichungen}
+\label{app:vergleich_klassisch_gleichungen}
 
 Unter diesen Bedingungen ergibt sich aus dem diskreten Euler-Lagrange-Formalismus:
 
@@ -59,30 +64,34 @@ m_i \frac{\Delta^2 \vec{r}_i^{(n)}}{T^2} = \sum_{j \neq i} \vec{F}_{ij}^{(n)}
 was im Grenzfall \( T \to 0 \) zur Newtonschen Gleichung \( m_i \ddot{\vec{r}}_i = \sum_j \vec{F}_{ij} \) wird.
 
 \subsection{Fundamentaler vs. emergenter Status}
+\label{app:vergleich_klassisch_status}
 
 \noindent
 \begin{tabular}{|l|l|}
 \hline
 In klassischer Mechanik (fundamental) & In IWT (emergent) \\
 \hline
-Masse \( m \) ist primitiv & \( m_{\text{eff},k} = \alpha \sum_l (I_k - I_l)^2 \) \\
+Masse \( m \) ist primitiv & \( m_{\text{eff},k} = \alpha \sum_l (I_k - I_l)^2 \) (siehe Kapitel~\ref{ch:diskrete_dynamik}) \\
 Kraft \( \vec{F} \) ist primitiv & \( \vec{F}_{kl} \propto \Delta I_{kl} \) \\
 Zeit \( t \) ist absolut & \( t \approx nT \) (Update-Index) \\
-Raum \( \mathbb{R}^3 \) ist gegeben & \( g_{kl} \) emergiert aus \( K_{kl} \) \\
+Raum \( \mathbb{R}^3 \) ist gegeben & \( g_{kl} \) emergiert aus \( K_{kl} \) (siehe Kapitel~\ref{ch:emergenz}) \\
 \hline
 \end{tabular}
 
 \section{Vergleich mit der Elektrodynamik}
+\label{app:vergleich_elektrodynamik}
 
 \subsection{Drei Formen der Elektrodynamik}
+\label{app:vergleich_elektro_formen}
 
 \begin{enumerate}
     \item Maxwell-Theorie (MT): Felder \( \vec{E}, \vec{B} \) als ontologische Objekte
     \item Lorentz-Kraft: Phänomenologische Formel \( \vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) \)
-    \item Weber-Elektrodynamik (WED): Direkte Wechselwirkung ohne Felder
+    \item Weber-Elektrodynamik (WED): Direkte Wechselwirkung ohne Felder (siehe Kapitel~\ref{ch:dstt_weber})
 \end{enumerate}
 
 \subsection{Maxwell-Theorie als effektive Feldbeschreibung}
+\label{app:vergleich_elektro_maxwell}
 
 In der IWT erscheinen die Maxwell-Felder als effektive Kontinuumsnäherungen:
 
@@ -96,6 +105,7 @@ In der IWT erscheinen die Maxwell-Felder als effektive Kontinuumsnäherungen:
 Die Maxwell-Gleichungen emergieren als Kontinuitätsbedingungen für die Informationsflüsse.
 
 \subsection{Lorentz-Kraft als phänomenologische Näherung}
+\label{app:vergleich_elektro_lorentz}
 
 Die Lorentz-Kraft ist eine Näherung der Weber-Kraft für:
 
@@ -106,6 +116,7 @@ Die Lorentz-Kraft ist eine Näherung der Weber-Kraft für:
 \end{itemize}
 
 \subsection{Weber-Kraft als lokaler Grenzfall der IWT}
+\label{app:vergleich_elektro_weber}
 
 Die Weber-Kraft ist der lokale Grenzfall der IWT-Dynamik:
 
@@ -113,11 +124,13 @@ Die Weber-Kraft ist der lokale Grenzfall der IWT-Dynamik:
 F_{\text{lokal}} = F_{\text{WED}}
 \]
 
-Sie entsteht aus dem lokalen Anteil \( \mathcal{F}_k^{\text{lokal}} \) des diskreten Informationsfunktionals.
+Sie entsteht aus dem lokalen Anteil \( \mathcal{F}_k^{\text{lokal}} \) des diskreten Informationsfunktionals (siehe Kapitel~\ref{ch:lagrange}).
 
 \section{Vergleich mit der Quantenmechanik}
+\label{app:vergleich_quantenmechanik}
 
 \subsection{Fundamentale Konzepte}
+\label{app:vergleich_quanten_konzepte}
 
 Die Quantenmechanik (QM) basiert auf:
 
@@ -130,16 +143,18 @@ Die Quantenmechanik (QM) basiert auf:
 \end{itemize}
 
 \subsection{Emergenz aus der IWT}
+\label{app:vergleich_quanten_emergenz}
 
 In der IWT entstehen diese Phänomene aus:
 
 \begin{enumerate}
     \item Globale Informationsorganisation: Dominanz von \( \mathcal{F}_k^{\text{global}} \)
     \item Phasenkohärenz: Wohldefinierte \( \phi^{(n)} \)
-    \item Systemische Kausalität: Instantanes Bohm-Potential
+    \item Systemische Kausalität: Instantanes Bohm-Potential (siehe Kapitel~\ref{ch:neutrino})
 \end{enumerate}
 
 \subsection{Emergente Schrödinger-Gleichung}
+\label{app:vergleich_quanten_schroedinger}
 
 Aus der diskreten Euler-Lagrange-Gleichung für \( \mathcal{F}_k^{\text{global}} \) ergibt sich:
 
@@ -154,8 +169,10 @@ i\hbar \partial_t \psi = -\frac{\hbar^2}{2m} \nabla^2 \psi + V \psi
 \]
 
 \section{Vergleich mit der Relativitätstheorie}
+\label{app:vergleich_relativitaet}
 
 \subsection{Spezielle Relativitätstheorie (SRT)}
+\label{app:vergleich_srt}
 
 Die SRT basiert auf:
 
@@ -174,6 +191,7 @@ In der IWT emergiert die SRT aus:
 \end{itemize}
 
 \subsection{Allgemeine Relativitätstheorie (ART)}
+\label{app:vergleich_art}
 
 Die ART basiert auf:
 
@@ -186,12 +204,13 @@ Die ART basiert auf:
 In der IWT emergiert die ART aus:
 
 \begin{itemize}
-    \item Dynamischer diskreter Metrik: \( g_{kl}^{(n+1)} = f(g_{kl}^{(n)}, I_k^{(n)}) \)
+    \item Dynamischer diskreter Metrik: \( g_{kl}^{(n+1)} = f(g_{kl}^{(n)}, I_k^{(n)}) \) (siehe Kapitel~\ref{ch:emergenz})
     \item Gro{\ss}en Informationsnetzen: \( N \to \infty \)
-    \item Kontinuumsnäherung der Netzgeometrie
+    \item Kontinuumsnäherung der Netzgeometrie (siehe Anhang~\ref{app:kontinuumslimes})
 \end{itemize}
 
 \subsection{Emergente Einstein-Gleichungen}
+\label{app:vergleich_einstein}
 
 Aus der Update-Regel f\"ur die diskrete Metrik ergibt sich im Kontinuumslimes:
 
@@ -202,6 +221,7 @@ Aus der Update-Regel f\"ur die diskrete Metrik ergibt sich im Kontinuumslimes:
 F\"ur schwache Felder und geeignete Parametrisierung kann dies in die Form der Einstein-Gleichungen gebracht werden.
 
 \section{Grenzfälle und \"Ubergänge}
+\label{app:vergleich_grenzfaelle}
 
 Die IWT reproduziert die etablierten Theorien in folgenden Grenzfällen:
 
@@ -220,8 +240,10 @@ ART & Gro{\ss}es Netz, Kontinuum & \( N \gg 1 \), feine Diskretisierung \\
 \end{tabular}
 
 \section{Vergleich mit der Quantenelektrodynamik (QED)}
+\label{app:vergleich_qed}
 
 \subsection{Korrespondenz zwischen QED und WDBT}
+\label{app:vergleich_qed_korrespondenz}
 
 \noindent
 \begin{tabular}{|l|l|}
@@ -230,15 +252,17 @@ QED-Konzept & WDBT-Equivalent \\
 \hline
 Photonen & Ladungssolitonen \\
 Virtuelle Photonen & Instanton-ähnliche Weber-Konfigurationen \\
-\( g-2 \) des Elektrons & Weber-Kraft-Korrekturen \\
+\( g-2 \) des Elektrons & Weber-Kraft-Korrekturen (siehe Kapitel~\ref{ch:dstt_weber}) \\
 \hline
 \end{tabular}
 
 \subsection{Regularisierung durch das Quantenpotential}
+\label{app:vergleich_qed_regularisierung}
 
-In der WDBT sind Divergenzen von vornherein vermieden. Der Grund ist das Quantenpotential \( Q \). Da es von der Dichte \( \rho \) abhängt und diese f\"ur ein Teilchen nie punktf\"ormig wird (die F\"uhrungswelle hat immer eine endliche Ausdehnung), sind alle Wechselwirkungen regularisiert.
+In der WDBT sind Divergenzen von vornherein vermieden. Der Grund ist das Quantenpotential \( Q \) (siehe Kapitel~\ref{ch:neutrino}). Da es von der Dichte \( \rho \) abhängt und diese f\"ur ein Teilchen nie punktf\"ormig wird (die F\"uhrungswelle hat immer eine endliche Ausdehnung), sind alle Wechselwirkungen regularisiert.
 
 \subsection{Lamb-Shift}
+\label{app:vergleich_qed_lamb}
 
 Die Berechnung der Lamb-Verschiebung folgt in der WDBT einem modifizierten Pfad:
 
@@ -246,15 +270,18 @@ Die Berechnung der Lamb-Verschiebung folgt in der WDBT einem modifizierten Pfad:
 \Delta E_{\text{Lamb}}^{\text{WDBT}} = \Delta E_{\text{QED}} + \frac{e^2\hbar}{4\pi\epsilon_0 m_e^2 c^3} \langle r \rangle
 \]
 
-Dieser Term ist klein, aber prinzipiell messbar und stellt eine verfalsifizierbare Abweichung von der QED dar.
+Dieser Term ist klein, aber prinzipiell messbar und stellt eine verfalsifizierbare Abweichung von der QED dar (siehe Kapitel~\ref{ch:vorhersagen}).
 
 \section{Vergleich mit der Allgemeinen Relativitätstheorie (ART)}
+\label{app:vergleich_art_details}
 
 \subsection{Die unvollständige ART}
+\label{app:vergleich_art_unvollstaendig}
 
 Die Standard-ART f\"uhrt unter generischen Bedingungen zu Singularitäten (Schwarze L\"ocher, Urknall). Dies ist kein physikalisches, sondern ein theoretisches Versagen. Die ART ist an ihren Grenzen unvollständig.
 
 \subsection{ART+ als Vervollständigung durch die DBT}
+\label{app:vergleich_art_plus}
 
 Die naheliegendste Erweiterung zur Vermeidung von Singularitäten ist die Einf\"uhrung des Bohm'schen Quantenpotentials \( Q \). Die vervollständigte Einstein-Gleichung lautet:
 
@@ -271,6 +298,7 @@ Konsequenzen:
 \end{itemize}
 
 \subsection{Konvergente Theorien: ART+ vs. WDBT}
+\label{app:vergleich_art_vs_wdbt}
 
 \noindent
 \begin{tabular}{|l|l|l|}
@@ -278,24 +306,26 @@ Konsequenzen:
 Eigenschaft & ART+ (vervollständigt) & WDBT (fundamental) \\
 \hline
 Singularitäten & Keine (Big Bounce) & Keine (Big Bounce) \\
-Nicht-Lokalität & Ja (durch \( Q_{\mu\nu} \)) & Ja (fundamental durch WG) \\
+Nicht-Lokalität & Ja (durch \( Q_{\mu\nu} \)) & Ja (fundamental durch WG, siehe Kapitel~\ref{ch:dstt_weber}) \\
 Determinismus & Ja (durch \( Q \)) & Ja (fundamental) \\
 Urknall & Nein & Nein \\
-Lichtablenkung & Frequenzunabhängig & Frequenzabhängig (\( \Delta\phi(f) \)) \\
+Lichtablenkung & Frequenzunabhängig & Frequenzabhängig (\( \Delta\phi(f) \), siehe Kapitel~\ref{ch:vorhersagen}) \\
 Grundlage & Geometrische Beschreibung & Dynamische Wechselwirkung \\
 \hline
 \end{tabular}
 
 \subsection{Der experimentelle Entscheid}
+\label{app:vergleich_art_entscheid}
 
 Trotz der konzeptionellen Konvergenz bleibt ein entscheidender, experimentell \"uberpr\"ufbarer Unterschied:
 
 \begin{itemize}
     \item \textbf{ART+:} Basiert auf geometrischer Beschreibung. Die Lichtablenkung erfolgt rein geometrisch und ist daher frequenzunabhängig.
-    \item \textbf{WDBT:} Basiert auf dynamischer Wechselwirkung (Weber-Kraft). Die Lichtablenkung ist eine echte Kraftwirkung und daher frequenzabhängig (\( \Delta\phi(f) \)).
+    \item \textbf{WDBT:} Basiert auf dynamischer Wechselwirkung (Weber-Kraft). Die Lichtablenkung ist eine echte Kraftwirkung und daher frequenzabhängig (\( \Delta\phi(f) \), siehe Kapitel~\ref{ch:vorhersagen}).
 \end{itemize}
 
 \section{Zusammenfassung der Vergleiche}
+\label{app:vergleich_zusammenfassung}
 
 Die IWT ist eine Ur-Theorie, aus der alle etablierten Theorien als Grenzfälle hervorgehen:
 
@@ -305,7 +335,7 @@ Die IWT ist eine Ur-Theorie, aus der alle etablierten Theorien als Grenzfälle h
     \item \textbf{Quantenmechanik:} Entsteht bei starker globaler Informationsorganisation und Phasenkohärenz.
     \item \textbf{Relativitätstheorie:} Emergiert aus der Geometrie gro{\ss}er Informationsnetze und der Symmetrie des Informationsflusses.
     \item \textbf{Quantenelektrodynamik:} Emergiert als effektive Theorie im Kontinuumslimes, mit nat\"urlicher Regularisierung durch das Quantenpotential.
-    \item \textbf{Allgemeine Relativitätstheorie:} Ist der Grenzfall \( D \to 3 \) der \( \Omega \)-Theorie, die Gravitation als Rotation beschreibt.
+    \item \textbf{Allgemeine Relativitätstheorie:} Ist der Grenzfall \( D \to 3 \) der \( \Omega \)-Theorie (siehe Kapitel~\ref{ch:maxwell_gravitation}), die Gravitation als Rotation beschreibt.
 \end{itemize}
 
-Die Theorie macht testbare Vorhersagen wie frequenzabhängige Lichtablenkung, Dispersion von Gravitationswellen und fraktale Skalengesetze in der Kosmologie, die eine Unterscheidung von den etablierten Theorien erm\"oglichen.
+Die Theorie macht testbare Vorhersagen wie frequenzabhängige Lichtablenkung, Dispersion von Gravitationswellen und fraktale Skalengesetze in der Kosmologie (siehe Kapitel~\ref{ch:vorhersagen}), die eine Unterscheidung von den etablierten Theorien erm\"oglichen.

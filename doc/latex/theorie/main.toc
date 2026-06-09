@@ -144,15 +144,15 @@
 \contentsline {section}{\numberline {9.6}Die \( \Omega \)-Theorie der Gravitation}{61}{}%
 \contentsline {subsection}{\numberline {9.6.1}Axiome der \( \Omega \)-Theorie}{61}{}%
 \contentsline {subsubsection}{Axiom 1: Nicht-Lokalität und Instantaneität}{61}{}%
-\contentsline {subsubsection}{Axiom 2: Das Rotationsfeld}{61}{}%
+\contentsline {subsubsection}{Axiom 2: Das Rotationsfeld}{62}{}%
 \contentsline {subsubsection}{Axiom 3: Aufspaltung von Ursache und Wirkung}{62}{}%
 \contentsline {subsubsection}{Axiom 4: DSTT-Kompatibilität}{62}{}%
 \contentsline {subsection}{\numberline {9.6.2}Die Feldgleichungen der \( \Omega \)-Theorie}{62}{}%
 \contentsline {subsection}{\numberline {9.6.3}Omega-Wellen: Gravitationswellen in der \( \Omega \)-Theorie}{62}{}%
-\contentsline {subsection}{\numberline {9.6.4}Testbare Vorhersagen}{62}{}%
+\contentsline {subsection}{\numberline {9.6.4}Testbare Vorhersagen}{63}{}%
 \contentsline {section}{\numberline {9.7}Zusammenfassung der Zusammenhänge}{63}{}%
 \contentsline {section}{\numberline {9.8}Krümmung der ART wird zur Rotation in der \( \Omega \)-Theorie}{63}{}%
-\contentsline {section}{\numberline {9.9}Fazit}{63}{}%
+\contentsline {section}{\numberline {9.9}Fazit}{64}{}%
 \contentsline {chapter}{\numberline {10}Bose-Einstein-Kondensat (BEC)-Objekte}{65}{}%
 \contentsline {section}{\numberline {10.1}Einleitung}{65}{}%
 \contentsline {section}{\numberline {10.2}Die fundamentale Längenskala \( l_0 \)}{65}{}%
@@ -329,7 +329,7 @@
 \contentsline {subsection}{\numberline {C.3.1}Drei Formen der Elektrodynamik}{110}{}%
 \contentsline {subsection}{\numberline {C.3.2}Maxwell-Theorie als effektive Feldbeschreibung}{110}{}%
 \contentsline {subsection}{\numberline {C.3.3}Lorentz-Kraft als phänomenologische Näherung}{110}{}%
-\contentsline {subsection}{\numberline {C.3.4}Weber-Kraft als lokaler Grenzfall der IWT}{110}{}%
+\contentsline {subsection}{\numberline {C.3.4}Weber-Kraft als lokaler Grenzfall der IWT}{111}{}%
 \contentsline {section}{\numberline {C.4}Vergleich mit der Quantenmechanik}{111}{}%
 \contentsline {subsection}{\numberline {C.4.1}Fundamentale Konzepte}{111}{}%
 \contentsline {subsection}{\numberline {C.4.2}Emergenz aus der IWT}{111}{}%
@@ -341,13 +341,13 @@
 \contentsline {section}{\numberline {C.6}Grenzfälle und \"Ubergänge}{112}{}%
 \contentsline {section}{\numberline {C.7}Vergleich mit der Quantenelektrodynamik (QED)}{112}{}%
 \contentsline {subsection}{\numberline {C.7.1}Korrespondenz zwischen QED und WDBT}{112}{}%
-\contentsline {subsection}{\numberline {C.7.2}Regularisierung durch das Quantenpotential}{112}{}%
+\contentsline {subsection}{\numberline {C.7.2}Regularisierung durch das Quantenpotential}{113}{}%
 \contentsline {subsection}{\numberline {C.7.3}Lamb-Shift}{113}{}%
 \contentsline {section}{\numberline {C.8}Vergleich mit der Allgemeinen Relativitätstheorie (ART)}{113}{}%
 \contentsline {subsection}{\numberline {C.8.1}Die unvollständige ART}{113}{}%
 \contentsline {subsection}{\numberline {C.8.2}ART+ als Vervollständigung durch die DBT}{113}{}%
 \contentsline {subsection}{\numberline {C.8.3}Konvergente Theorien: ART+ vs. WDBT}{113}{}%
-\contentsline {subsection}{\numberline {C.8.4}Der experimentelle Entscheid}{113}{}%
+\contentsline {subsection}{\numberline {C.8.4}Der experimentelle Entscheid}{114}{}%
 \contentsline {section}{\numberline {C.9}Zusammenfassung der Vergleiche}{114}{}%
 \contentsline {chapter}{\numberline {D}Ausgewählte Herleitungen aus der ursprünglichen WDBT}{115}{}%
 \contentsline {section}{\numberline {D.1}Einleitung}{115}{}%
@@ -380,7 +380,7 @@
 \contentsline {section}{\numberline {E.6}Numerischer Wert}{120}{}%
 \contentsline {section}{\numberline {E.7}Dispersionsrelation}{121}{}%
 \contentsline {section}{\numberline {E.8}Vergleich mit der etablierten Physik}{121}{}%
-\contentsline {subsection}{\numberline {E.8.1}Zusammenfassung}{121}{}%
+\contentsline {section}{\numberline {E.9}Zusammenfassung}{121}{}%
 \contentsline {chapter}{\numberline {F}Kontinuumslimes: Von der diskreten IWT zur kontinuierlichen WDBT+}{123}{}%
 \contentsline {section}{\numberline {F.1}Einleitung}{123}{}%
 \contentsline {section}{\numberline {F.2}Mathematische Rahmenbedingungen}{123}{}%
@@ -516,12 +516,12 @@
 \contentsline {subsection}{\numberline {J.5.2}Massenunterschiede}{153}{}%
 \contentsline {section}{\numberline {J.6}Neutrino-Oszillationen aus fraktaler Dispersion}{153}{}%
 \contentsline {subsection}{\numberline {J.6.1}Dispersionsrelation für das Q-Feld}{153}{}%
-\contentsline {subsection}{\numberline {J.6.2}Phasengeschwindigkeit der Masseneigenzustände}{153}{}%
+\contentsline {subsection}{\numberline {J.6.2}Phasengeschwindigkeit der Masseneigenzustände}{154}{}%
 \contentsline {subsection}{\numberline {J.6.3}Bestimmung der mesoskopischen Skala}{154}{}%
 \contentsline {subsection}{\numberline {J.6.4}Testbare Vorhersage}{154}{}%
 \contentsline {section}{\numberline {J.7}Neutrinos als Dunkle Materie}{154}{}%
 \contentsline {subsection}{\numberline {J.7.1}Kosmologische Neutrinodichte}{154}{}%
-\contentsline {subsection}{\numberline {J.7.2}Dunkle Materie ist Neutrino-Gesamtheit}{154}{}%
+\contentsline {subsection}{\numberline {J.7.2}Dunkle Materie ist Neutrino-Gesamtheit}{155}{}%
 \contentsline {section}{\numberline {J.8}Zusammenfassung}{155}{}%
 \contentsline {chapter}{\numberline {K}BEC-Objekte – Die kompaktesten Strukturen im Universum}{157}{}%
 \contentsline {section}{\numberline {K.1}Einleitung}{157}{}%

@@ -1,9 +1,10 @@
 \chapter{Identitätsbeziehung zwischen DSTT und Weber-Kräften}
-\label{chp:identitätsbeziehungen}
+\label{app:identitaet}
 
 \section{Einleitung}
+\label{app:identitaet_einleitung}
 
-In Kapitel 8 wird die Behauptung aufgestellt, dass die Zustandsvariable der 
+In Kapitel~\ref{ch:dstt_weber} wird die Behauptung aufgestellt, dass die Zustandsvariable der 
 Dynamischen Schwere-Trägheits-Theorie (DSTT) und die Terme der 
 Weber-Gravitation (WG) über eine Identitätsbeziehung verknüpft sind:
 
@@ -20,12 +21,14 @@ hergeleitet, die \textbf{effektive Trägheitsmasse} \(m_T = m + \alpha M\) einge
 und die \textbf{Einfangwahrscheinlichkeit} \(\alpha_{\text{in}}\) definiert.
 
 \section{Definitionen}
+\label{app:identitaet_definitionen}
 
 \subsection{DSTT-Zustandsvariable}
+\label{app:identitaet_beta}
 
-Nach Kapitel 8.2.3 ist der Zustandsparameter der DSTT definiert als das 
+Nach Kapitel~\ref{ch:dstt_weber} (Abschnitt 8.2.3) ist der Zustandsparameter der DSTT definiert als das 
 Verhältnis von tangentialer zu gesamter kinetischer Energie. Mit der 
-effektiven Trägheitsmasse \(m_T = m + \alpha M\) (siehe Axiom 2a in Kapitel 8.2) 
+effektiven Trägheitsmasse \(m_T = m + \alpha M\) (siehe Axiom 2a in Kapitel~\ref{ch:dstt_weber}) 
 gilt:
 
 \[
@@ -46,8 +49,9 @@ Die effektive Masse kürzt sich hier heraus, was die Definition von \(\beta\)
 unabhängig von \(\alpha\) macht.
 
 \subsection{Weber-Gravitation für Massen}
+\label{app:identitaet_weber}
 
-Die Weber-Kraft für massive Körper (Kapitel 8.4.3 mit \(\beta_{\text{WG}} = 0,5\)):
+Die Weber-Kraft für massive Körper (Kapitel~\ref{ch:dstt_weber}, Abschnitt 8.4.3 mit \(\beta_{\text{WG}} = 0,5\)):
 
 \[
 \vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left\{ 
@@ -57,6 +61,7 @@ Die Weber-Kraft für massive Körper (Kapitel 8.4.3 mit \(\beta_{\text{WG}} = 0,
 \]
 
 \subsection{Radiale und tangentiale Komponenten}
+\label{app:identitaet_komponenten}
 
 Die radiale Kraftkomponente ist:
 
@@ -81,6 +86,7 @@ v = \sqrt{\dot{r}^2 + r^2\dot{\phi}^2}
 \]
 
 \section{Warum die momentane Identität scheitert}
+\label{app:identitaet_scheitern}
 
 Ein einfaches Gegenbeispiel genügt: Für eine reine Kreisbahn (\(\dot{r} = 0\)) 
 ist \(|\vec{F}_{\text{tan}}| = 0\), aber \(\beta_{\text{DSTT}} = 1\). Also:
@@ -93,8 +99,10 @@ ist \(|\vec{F}_{\text{tan}}| = 0\), aber \(\beta_{\text{DSTT}} = 1\). Also:
 Die momentane Identität ist daher \textbf{falsch}.
 
 \section{Die korrekte Identität über Energiebilanz}
+\label{app:identitaet_korrekt}
 
 \subsection{Leistung der tangentialen Kraft}
+\label{app:identitaet_leistung}
 
 Die momentane Leistung der tangentialen Kraft ist:
 
@@ -104,6 +112,7 @@ P_{\text{tan}} = \vec{F}_{\text{tan}} \cdot \vec{v} = \frac{2GMm}{r^2} \cdot \fr
 \]
 
 \subsection{Zeitliche Änderung der tangentialen Energie}
+\label{app:identitaet_energie_aenderung}
 
 Die tangentiale kinetische Energie ist \(E_B = \frac{1}{2} m_T r^2 \dot{\phi}^2\). 
 Ihre zeitliche Ableitung ist:
@@ -123,6 +132,7 @@ Anteile, und es bleibt:
 \]
 
 \subsection{Beziehung zu \(\dot{\beta}_{\text{DSTT}}\)}
+\label{app:identitaet_beta_dot}
 
 Mit \(E_B = \beta E\) folgt:
 
@@ -144,6 +154,7 @@ Dies ist die korrekte Identität: Die Drift von \(\beta\) ist direkt mit der
 mittleren Leistung der tangentialen Weber-Kraft verknüpft.
 
 \subsection{Numerische Abschätzung}
+\label{app:identitaet_numerisch}
 
 Für eine Kepler-Ellipse mit Exzentrizität \(e\) gilt:
 
@@ -160,13 +171,15 @@ Damit folgt aus (G.12):
 \]
 
 mit \(\omega = \sqrt{GM/a^3}\). Dies ist konsistent mit der Kopplungsgleichung 
-aus Kapitel 8.6.
+aus Kapitel~\ref{ch:dstt_weber} (Abschnitt 8.6).
 
 \section{Die radiale Driftgeschwindigkeit}
+\label{app:identitaet_drift}
 
 \subsection{Herleitung aus den DSTT-Axiomen}
+\label{app:identitaet_drift_herleitung}
 
-Aus den Bewegungsgleichungen der DSTT (Axiome 2–4) folgt mit 
+Aus den Bewegungsgleichungen der DSTT (Axiome 2–4 in Kapitel~\ref{ch:dstt_weber}) folgt mit 
 \(E_Z = (1-\beta)E\):
 
 \[
@@ -186,6 +199,7 @@ Das Vorzeichen hängt von den Anfangsbedingungen ab. Da \(\beta(t)\) monoton
 wächst (Axiom 6) und nie den Wert 1 erreicht, gilt langfristig \(\dot{r} > 0\).
 
 \subsection{Definition der Driftgeschwindigkeit}
+\label{app:identitaet_drift_def}
 
 Die radiale Driftgeschwindigkeit ist daher:
 
@@ -202,17 +216,20 @@ v_{\text{drift}}(r) \propto r^{-1/2}
 \tag{G.17}
 \]
 
-Diese Skalierung wird in Kapitel 14 verwendet.
+Diese Skalierung wird in Kapitel~\ref{ch:kosmologie} verwendet.
 
 \section{Die Einfangwahrscheinlichkeit \(\alpha_{\text{in}}\)}
+\label{app:identitaet_einfang}
 
 \subsection{Definition}
+\label{app:identitaet_einfang_def}
 
 Die Einfangwahrscheinlichkeit \(\alpha_{\text{in}}\) ist der Anteil der neu 
 entstehenden Materie, der vom Zentralkörper absorbiert wird, bevor er die 
-Entstehungszone verlässt.
+Entstehungszone verlässt (siehe Kapitel~\ref{ch:kosmologie}).
 
 \subsection{Herleitung aus der Kontinuitätsgleichung}
+\label{app:identitaet_einfang_herleitung}
 
 Im stationären Zustand wird die Materieentstehungsrate \(\dot{\rho}_{\text{cre}}(r)\) 
 durch die radiale Drift nach außen abtransportiert. Die radiale Massenstromdichte ist:
@@ -228,7 +245,7 @@ Die Kontinuitätsgleichung mit Quelle lautet:
 \]
 
 Mit \(v_{\text{drift}} \propto r^{-1/2}\) und \(\dot{\rho}_{\text{cre}} \propto r^{D-3}\) 
-(fraktale Skalierung, siehe Anhang J) folgt nach Integration für die 
+(fraktale Skalierung, siehe Anhang~\ref{app:energiebilanz}) folgt nach Integration für die 
 Dichteverteilung:
 
 \[
@@ -247,13 +264,14 @@ folgt:
 \]
 
 Der Exponent \(3-D\) ergibt sich aus der fraktalen Skalierung der Materieentstehung 
-(siehe Anhang J). Für typische Galaxienzentren mit \(D \approx 2,704\) ist 
+(siehe Anhang~\ref{app:energiebilanz}). Für typische Galaxienzentren mit \(D \approx 2,704\) ist 
 \(\alpha_{\text{in}} \ll 1\), sodass der Großteil der neu entstehenden Materie 
 nach außen driftet.
 
 \subsection{Numerisches Beispiel}
+\label{app:identitaet_einfang_numerisch}
 
-Mit \(r_c \sim 200 \, \text{m}\) (Oberfläche des BEC-Objekts) und 
+Mit \(r_c \sim 200 \, \text{m}\) (Oberfläche des BEC-Objekts, siehe Kapitel~\ref{ch:bec_objekte}) und 
 \(r_{\text{max}} \sim 5 \times 10^{11} \, \text{m}\) (äußerer Rand der 
 Entstehungszone) sowie \(3-D \approx 0,296\) ergibt sich:
 
@@ -264,8 +282,9 @@ Entstehungszone) sowie \(3-D \approx 0,296\) ergibt sich:
 \]
 
 \section{Spezialfall: Elektrodynamik (\(\beta_{\text{WED}} = 2\))}
+\label{app:identitaet_elektrodynamik}
 
-Für die Weber-Elektrodynamik mit \(\beta_{\text{WED}} = 2\) verschwindet 
+Für die Weber-Elektrodynamik mit \(\beta_{\text{WED}} = 2\) (siehe Kapitel~\ref{ch:dstt_weber}) verschwindet 
 der tangentiale Term vollständig:
 
 \[
@@ -277,6 +296,7 @@ Damit ist \(\langle \dot{\beta} \rangle_T = 0\) – die Elektrodynamik ändert
 die Energieaufteilung nicht. Sie ist reversibel.
 
 \section{Zusammenfassung der korrigierten Beziehungen}
+\label{app:identitaet_zusammenfassung}
 
 \begin{center}
 \begin{tabular}{lcc}
@@ -292,9 +312,10 @@ die Energieaufteilung nicht. Sie ist reversibel.
 \end{center}
 
 \section{Konsequenzen für die Haupttext-Behauptungen}
+\label{app:identitaet_konsequenzen}
 
 \begin{enumerate}
-    \item Die in Kapitel 8.5 behauptete momentane Identität 
+    \item Die in Kapitel~\ref{ch:dstt_weber} (Abschnitt 8.5) behauptete momentane Identität 
           \(\frac{|\vec{F}_{\text{tan}}|}{|\vec{F}_{\text{rad}}| + |\vec{F}_{\text{tan}}|} \equiv \beta(t)\) 
           ist \textbf{falsch} (Gegenbeispiel: Kreisbahn).
     \item Die korrekte Beziehung ist (G.12): \(\langle \dot{\beta} \rangle_T = \langle P_{\text{tan}} \rangle_T / \langle E \rangle_T\).
@@ -302,15 +323,16 @@ die Energieaufteilung nicht. Sie ist reversibel.
     \item Die Einfangwahrscheinlichkeit ist \(\alpha_{\text{in}} = (r_c / r_{\text{max}})^{3-D}\).
     \item Der qualitative Schluss (\(\beta_{\text{WG}} = 0,5 \Rightarrow \dot{\beta} > 0\)) bleibt korrekt.
     \item Die Elektrodynamik ist reversibel (\(\dot{\beta} = 0\)).
-    \item Die effektive Trägheitsmasse \(m_T = m + \alpha M\) ist in allen Energie- und Bewegungsgleichungen zu verwenden (siehe Kapitel 8.2, Axiom 2a).
+    \item Die effektive Trägheitsmasse \(m_T = m + \alpha M\) ist in allen Energie- und Bewegungsgleichungen zu verwenden (siehe Kapitel~\ref{ch:dstt_weber}, Abschnitt 8.2, Axiom 2a).
 \end{enumerate}
 
 \section{Ausblick}
+\label{app:identitaet_ausblick}
 
 Die hier präsentierte korrigierte Identität ist konsistent mit der 
-Energiebilanz und der Kopplungsgleichung aus Kapitel 8.6. Die Herleitung 
+Energiebilanz und der Kopplungsgleichung aus Kapitel~\ref{ch:dstt_weber} (Abschnitt 8.6). Die Herleitung 
 der Driftgeschwindigkeit, der Einfangwahrscheinlichkeit und der effektiven 
-Masse schließt die bisherigen Lücken in Kapitel 14 und Kapitel 8. 
+Masse schließt die bisherigen Lücken in Kapitel~\ref{ch:kosmologie} und Kapitel~\ref{ch:dstt_weber}. 
 
 Eine mögliche zukünftige Verfeinerung wäre die Herleitung einer exakten 
 differentiellen Beziehung zwischen \(\vec{F}_{\text{tan}}\) und \(\dot{\beta}\) 

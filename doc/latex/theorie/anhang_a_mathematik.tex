@@ -1,7 +1,8 @@
 \chapter{Mathematische Grundlagen}
-\label{chp:mathematische_grundlagen}
+\label{app:grundlagen}
 
 \section{Einleitung}
+\label{app:grundlagen_einleitung}
 
 Dieser Anhang stellt die mathematischen Werkzeuge bereit, auf denen die diskrete Formulierung der IWT basiert. Im Gegensatz zu den kontinuierlichen Approximationen im Haupttext werden hier ausschließlich die fundamentalen diskreten Strukturen entwickelt.
 
@@ -16,8 +17,10 @@ Der Fokus liegt auf:
 \end{enumerate}
 
 \section{Diskrete Variationsrechnung}
+\label{app:grundlagen_varrechnung}
 
 \subsection{Diskretes Funktional}
+\label{app:grundlagen_funktional}
 
 Ein diskretes Informationssystem wird beschrieben durch Knoten \( k = 1, \dots, N \) mit Informationswerten \( I_k^{(n)} \) zum Zeitschrift \( n \). Das fundamentale diskrete Funktional lautet:
 
@@ -35,6 +38,7 @@ mit:
 \end{itemize}
 
 \subsection{Variation diskreter Funktionale}
+\label{app:grundlagen_variation}
 
 Eine Variation des diskreten Feldes sei:
 
@@ -51,6 +55,7 @@ Die Variation des Funktionals ist:
 \]
 
 \subsection{Diskrete Euler-Lagrange-Gleichungen}
+\label{app:grundlagen_euler_lagrange}
 
 Durch Ableitung und Umordnung erhält man:
 
@@ -68,6 +73,7 @@ mit den diskreten Operatoren:
 \]
 
 \subsection{Beispiel: Diskrete Wellengleichung}
+\label{app:grundlagen_wellengleichung}
 
 Für \( \mathcal{F}_d = \alpha (\Delta_t I_k^{(n)})^2 + \beta (\Delta_s I_k^{(n)})^2 \):
 
@@ -76,8 +82,10 @@ Für \( \mathcal{F}_d = \alpha (\Delta_t I_k^{(n)})^2 + \beta (\Delta_s I_k^{(n)
 \]
 
 \section{Diskrete Noether-Theoreme}
+\label{app:grundlagen_noether}
 
 \subsection{Symmetrien in diskreten Systemen}
+\label{app:grundlagen_symmetrien}
 
 Eine diskrete Transformation:
 
@@ -92,6 +100,7 @@ ist eine Symmetrie, wenn:
 \]
 
 \subsection{Erhaltungsgrößen}
+\label{app:grundlagen_erhaltung}
 
 Aus jeder solchen Symmetrie folgt eine diskrete Erhaltungsgröße:
 
@@ -106,6 +115,7 @@ Q^{(n)} = \sum_k \left[ \xi_k^{(n)} \frac{\partial \mathcal{F}_d}{\partial (\Del
 \]
 
 \subsection{Wichtige Symmetrien und Erhaltungssätze}
+\label{app:grundlagen_symmetrien_tabelle}
 
 \[
 \begin{array}{|l|l|l|}
@@ -121,8 +131,10 @@ Q^{(n)} = \sum_k \left[ \xi_k^{(n)} \frac{\partial \mathcal{F}_d}{\partial (\Del
 \]
 
 \section{Diskrete Informationsmetrik}
+\label{app:grundlagen_metrik}
 
 \subsection{Definition aus dem Funktional}
+\label{app:grundlagen_metrik_def}
 
 Die diskrete Informationsmetrik zwischen Knoten \( k \) und \( l \) ist definiert als:
 
@@ -131,6 +143,7 @@ g_{kl}^{(n)} = \frac{\partial^2 \mathcal{F}_d}{\partial (\Delta_s I_k^{(n)}) \pa
 \]
 
 \subsection{Alternative Definition über Kopplungsmatrix}
+\label{app:grundlagen_metrik_kopplung}
 
 Für viele Anwendungen ist die direkte Definition über die Kopplungsmatrix \( K_{kl}^{(n)} \) nützlicher:
 
@@ -139,6 +152,7 @@ g_{kl}^{(n)} = \frac{K_{kl}^{(n)}}{\sqrt{K_{kk}^{(n)} K_{ll}^{(n)}}}
 \]
 
 \subsection{Eigenschaften}
+\label{app:grundlagen_metrik_eigenschaften}
 
 \begin{itemize}
     \item Symmetrie: \( g_{kl}^{(n)} = g_{lk}^{(n)} \)
@@ -148,8 +162,10 @@ g_{kl}^{(n)} = \frac{K_{kl}^{(n)}}{\sqrt{K_{kk}^{(n)} K_{ll}^{(n)}}}
 \end{itemize}
 
 \section{Fraktale Analysis diskreter Netzwerke}
+\label{app:grundlagen_fraktal}
 
 \subsection{Fraktale Dimension eines diskreten Netzwerks}
+\label{app:grundlagen_fraktale_dim}
 
 Gegeben sei ein diskretes Netzwerk mit Adjazenzmatrix \( A_{kl} \). Die fraktale Dimension \( D \) wird bestimmt durch das Skalierungsverhalten der Koordinationszahl:
 
@@ -160,6 +176,7 @@ N(R) \propto R^D \quad \text{für } R \to \infty
 wobei \( N(R) \) die Anzahl der Knoten innerhalb einer Distanz \( R \) von einem Referenzknoten ist.
 
 \subsection{Praktische Berechnung}
+\label{app:grundlagen_fraktale_berechnung}
 
 \begin{enumerate}
     \item Wähle einen Referenzknoten \( k_0 \)
@@ -169,8 +186,9 @@ wobei \( N(R) \) die Anzahl der Knoten innerhalb einer Distanz \( R \) von einem
 \end{enumerate}
 
 \subsection{Beispiel: Fraktales Netz}
+\label{app:grundlagen_fraktales_netz}
 
-Für das in der IWT verwendete fraktale Netzwerk gilt:
+Für das in der IWT verwendete fraktale Netzwerk gilt (siehe Kapitel~\ref{ch:fraktale_dimension}):
 
 \[
 D = \frac{\ln(20\phi)}{\ln(2 + \phi)} \approx 2,704
@@ -179,8 +197,10 @@ D = \frac{\ln(20\phi)}{\ln(2 + \phi)} \approx 2,704
 Dieses Netzwerk zeigt selbstähnliche Struktur auf allen Skalen.
 
 \section{Diskrete Differenzengleichungen höherer Ordnung}
+\label{app:grundlagen_differenzengleichungen}
 
 \subsection{Rekursive Update-Regeln}
+\label{app:grundlagen_update}
 
 Viele Gleichungen der IWT haben die Form:
 
@@ -189,6 +209,7 @@ I_k^{(n+1)} = F\left( I_k^{(n)}, I_k^{(n-1)}, \{I_l^{(n)}\} \right)
 \]
 
 \subsection{Stabilitätsanalyse}
+\label{app:grundlagen_stabilitaet}
 
 Für eine lineare Rekursion:
 
@@ -205,16 +226,19 @@ erhält man die charakteristische Gleichung:
 Stabilitätsbedingung: \( |\lambda| \leq 1 \) für alle Lösungen.
 
 \subsection{Numerische Stabilität der diskreten Weber-Kraft}
+\label{app:grundlagen_weber_stabil}
 
-Die diskrete Weber-Kraft ist stabil für:
+Die diskrete Weber-Kraft (siehe Kapitel~\ref{ch:dstt_weber}) ist stabil für:
 
 \[
 T < T_{\text{max}} = \frac{r_{\text{min}}}{c}
 \]
 
 \section{Diskrete Fourier-Analyse}
+\label{app:grundlagen_fourier}
 
 \subsection{Diskrete Fourier-Transformation}
+\label{app:grundlagen_fourier_trans}
 
 Für ein diskretes Feld \( I_k \) auf \( N \) regelmäßig angeordneten Knoten:
 
@@ -223,6 +247,7 @@ Für ein diskretes Feld \( I_k \) auf \( N \) regelmäßig angeordneten Knoten:
 \]
 
 \subsection{Dispersionsrelationen}
+\label{app:grundlagen_dispersion}
 
 Aus diskreten Differenzengleichungen erhält man charakteristische Dispersionsrelationen:
 
@@ -231,8 +256,10 @@ Aus diskreten Differenzengleichungen erhält man charakteristische Dispersionsre
 \]
 
 \section{Matrixdarstellungen diskreter Operatoren}
+\label{app:grundlagen_matrix}
 
 \subsection{Laplace-Matrix}
+\label{app:grundlagen_laplace}
 
 Der diskrete Laplace-Operator wird durch die Laplace-Matrix \( L \) dargestellt:
 
@@ -250,10 +277,12 @@ L_{kl} = \begin{cases}
 \]
 
 \subsection{Eigenwertanalyse}
+\label{app:grundlagen_eigenwerte}
 
 Die Eigenwerte \( \lambda_i \) und Eigenvektoren \( v_i \) von \( L \) charakterisieren die kollektiven Moden des Netzwerks.
 
 \section{Zusammenfassung der mathematischen Struktur}
+\label{app:grundlagen_zusammenfassung}
 
 Die diskrete IWT basiert auf folgenden mathematischen Grundlagen:
 
@@ -274,10 +303,11 @@ Die diskrete IWT basiert auf folgenden mathematischen Grundlagen:
 \]
 
 \section{Hinweise zur praktischen Anwendung}
+\label{app:grundlagen_praxis}
 
 \begin{enumerate}
-    \item Alle kontinuierlichen Gleichungen im Haupttext sind Grenzfälle dieser diskreten Strukturen.
-    \item Numerische Simulationen implementieren direkt diese diskreten Gleichungen.
+    \item Alle kontinuierlichen Gleichungen im Haupttext sind Grenzfälle dieser diskreten Strukturen (siehe auch Anhang~\ref{app:kontinuumslimes}).
+    \item Numerische Simulationen implementieren direkt diese diskreten Gleichungen (siehe Anhang~\ref{app:numerik}).
     \item Die mathematische Konsistenz wird durch die diskrete Formulierung gewährleistet.
     \item Fraktale Eigenschaften ergeben sich natürlich aus der Netzwerkstruktur.
 \end{enumerate}

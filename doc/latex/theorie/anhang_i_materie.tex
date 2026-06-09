@@ -1,9 +1,10 @@
 \chapter{Energiebilanz der Materieentstehung in der WDBT+}
-\label{chp:materie}
+\label{app:energiebilanz}
 
 \section{Einleitung}
+\label{app:energiebilanz_einleitung}
 
-In der stationären Kosmologie der WDBT+ (siehe Kapitel 14) entsteht Materie kontinuierlich 
+In der stationären Kosmologie der WDBT+ (siehe Kapitel~\ref{ch:kosmologie}) entsteht Materie kontinuierlich 
 aus dem fraktalen Vakuum. Der physikalische Mechanismus ist das de Broglie-Bohm-Quantenpotential
 \( Q \), das in Regionen starker fraktaler Krümmung (Zentren von Galaxien, aktive Galaxienkerne) 
 die Paarbildung aus dem Vakuum ermöglicht.
@@ -13,10 +14,12 @@ die Energieerhaltung global gewahrt bleibt, indem die positive Energie der neu e
 Materie durch eine negative Energiedichte des fraktalen Vakuums kompensiert wird.
 
 \section{Das Quantenpotential als Quelle}
+\label{app:energiebilanz_quantenpotential}
 
 \subsection{Definition des Quantenpotentials}
+\label{app:energiebilanz_q_def}
 
-In der De-Broglie-Bohm-Theorie lautet das Quantenpotential (siehe Kapitel 4):
+In der De-Broglie-Bohm-Theorie lautet das Quantenpotential (siehe Kapitel~\ref{ch:neutrino}):
 
 \[
 Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}
@@ -27,6 +30,7 @@ In der WDBT+ wird \( Q \) als physikalisches Feld interpretiert, das Energie aus
 fraktalen Vakuum beziehen kann.
 
 \subsection{Leistung des Quantenpotentials}
+\label{app:energiebilanz_q_leistung}
 
 Die Leistung, die das Quantenpotential an einem Volumenelement \( dV \) verrichtet, ist:
 
@@ -38,8 +42,10 @@ Für stationäre Verhältnisse (zeitlich gemittelt) ist \( \partial Q/\partial t
 aber die räumliche Struktur von \( Q \) kann Materie erzeugen, wenn \( \nabla Q \neq 0 \).
 
 \section{Kontinuitätsgleichung mit Quellterm}
+\label{app:energiebilanz_kontinuitaet}
 
 \subsection{Standard-Kontinuitätsgleichung}
+\label{app:energiebilanz_standard}
 
 In der klassischen Physik gilt die Kontinuitätsgleichung für die Massendichte \( \rho_m \):
 
@@ -50,23 +56,25 @@ In der klassischen Physik gilt die Kontinuitätsgleichung für die Massendichte 
 Diese besagt, dass Masse weder erzeugt noch vernichtet wird.
 
 \subsection{Kontinuitätsgleichung mit Quelle}
+\label{app:energiebilanz_quelle}
 
 In der WDBT+ wird diese Gleichung erweitert um einen Quellterm \( \sigma \), der die 
 Materieentstehung aus dem Quantenpotential beschreibt:
 
 \[
-\frac{\partial \rho_m}{\partial t} + \nabla \cdot (\rho_m \vec{v}) = \sigma(\vec{r}, t) \tag{J.1}
+\frac{\partial \rho_m}{\partial t} + \nabla \cdot (\rho_m \vec{v}) = \sigma(\vec{r}, t) \tag{I.1}
 \]
 
 Der Quellterm \( \sigma \) hat die Dimension Masse/(Volumen · Zeit).
 
 \subsection{Bestimmung des Quellterms aus \( Q \)}
+\label{app:energiebilanz_quellterm}
 
 Aus Dimensionsgründen und unter der Annahme, dass die Materieentstehung durch die 
 Krümmung von \( \sqrt{\rho} \) bestimmt wird, setzen wir an:
 
 \[
-\sigma = \gamma \cdot \frac{|\nabla Q|^2}{\hbar c} \tag{J.2}
+\sigma = \gamma \cdot \frac{|\nabla Q|^2}{\hbar c} \tag{I.2}
 \]
 
 mit einem dimensionslosen Parameter \( \gamma \), der aus der fraktalen Raumstruktur folgt. 
@@ -74,8 +82,10 @@ Die Wahl \( |\nabla Q|^2 \) garantiert, dass die Quelle positiv definit ist
 (Materie wird nur erzeugt, nicht vernichtet).
 
 \section{Herleitung der negativen Vakuumenergiedichte}
+\label{app:energiebilanz_vakuum}
 
 \subsection{Casimir-Effekt im fraktalen Raum}
+\label{app:energiebilanz_casimir}
 
 In der Quantenfeldtheorie führt die Nullpunktsenergie des Vakuums zu einer messbaren 
 negativen Energiedichte zwischen zwei leitenden Platten (Casimir-Effekt). 
@@ -89,18 +99,19 @@ Im fraktalen Raum mit Dimension \( D \) wird diese Energie modifiziert
 (Calcagni 2010, 'Quantum Field Theory on Fractal Spacetimes'):
 
 \[
-\varepsilon_{\text{vac}}(r) = -\frac{\hbar c}{l_0^4} \cdot \left( \frac{l_0}{r} \right)^{4-D} \cdot \zeta_D \tag{J.3}
+\varepsilon_{\text{vac}}(r) = -\frac{\hbar c}{l_0^4} \cdot \left( \frac{l_0}{r} \right)^{4-D} \cdot \zeta_D \tag{I.3}
 \]
 
 mit einer geometrischen Konstante \( \zeta_D \), die aus der fraktalen Zustandsdichte folgt. 
 Für \( D \approx 2,704 \) ist \( \zeta_D \approx 0,01 \).
 
 \subsection{Aus der fraktalen Zustandsdichte}
+\label{app:energiebilanz_zustandsdichte}
 
-Die Zustandsdichte im fraktalen Raum ist (siehe Anhang E):
+Die Zustandsdichte im fraktalen Raum ist (siehe Anhang~\ref{app:spektrale_dimension}):
 
 \[
-\rho_{\text{states}}(\omega) = \frac{D}{2\pi^2} \frac{\omega^{D-1}}{c^D} \Gamma(D/2) \tag{J.4}
+\rho_{\text{states}}(\omega) = \frac{D}{2\pi^2} \frac{\omega^{D-1}}{c^D} \Gamma(D/2) \tag{I.4}
 \]
 
 Die Nullpunktsenergie ist dann:
@@ -117,15 +128,16 @@ Das Integral konvergiert und ergibt:
 \int_0^{\omega_{\text{max}}} \omega^D d\omega = \frac{\omega_{\text{max}}^{D+1}}{D+1}
 \]
 
-Mit \( \omega_{\text{max}} \sim c/l_0 \) (kurzwelliger Cutoff bei der fundamentalen Länge \( l_0 \)) 
-folgt:
+Mit \( \omega_{\text{max}} \sim c/l_0 \) (kurzwelliger Cutoff bei der fundamentalen Länge \( l_0 \), 
+siehe Kapitel~\ref{ch:bec_objekte}) folgt:
 
 \[
 \varepsilon_{\text{vac}} = \frac{D \hbar}{4\pi^2 c^D (D+1)} \Gamma(D/2) \cdot 
-\left( \frac{c}{l_0} \right)^{D+1} \tag{J.5}
+\left( \frac{c}{l_0} \right)^{D+1} \tag{I.5}
 \]
 
 \subsection{Vorzeichen und räumliche Abhängigkeit}
+\label{app:energiebilanz_vorzeichen}
 
 Die reine Nullpunktsenergie ist positiv, aber der Casimir-Effekt entsteht durch die 
 \emph{Differenz} zwischen freiem Raum und dem Raum mit Randbedingungen. 
@@ -134,7 +146,7 @@ Vakuumenergiedichte:
 
 \[
 \varepsilon_{\text{vac}}^{\text{frei}}(r) = +\frac{\hbar c}{l_0^4} \cdot 
-\left( \frac{l_0}{r} \right)^{4-D} \cdot \zeta_D' \tag{J.6}
+\left( \frac{l_0}{r} \right)^{4-D} \cdot \zeta_D' \tag{I.6}
 \]
 
 mit \( \zeta_D' > 0 \). Im stationären Zustand der WDBT+ wird jedoch ein Teil dieser Energie 
@@ -143,13 +155,14 @@ negativ wird:
 
 \[
 \varepsilon_{\text{vac}}^{\text{eff}}(r) = \varepsilon_{\text{vac}}^{\text{frei}}(r) - 
-\frac{\sigma(r) c^2}{\dot{\rho}_{\text{cre}}} \tag{J.7}
+\frac{\sigma(r) c^2}{\dot{\rho}_{\text{cre}}} \tag{I.7}
 \]
 
-Im Gleichgewicht (Abschnitt J.5) kompensieren sich die Beiträge genau, und die mittlere 
-Vakuumenergiedichte ist negativ mit der in (J.3) angegebenen Größenordnung.
+Im Gleichgewicht (Abschnitt~\ref{app:energiebilanz_gleichgewicht}) kompensieren sich die Beiträge genau, und die mittlere 
+Vakuumenergiedichte ist negativ mit der in (I.3) angegebenen Größenordnung.
 
 \subsection{Numerische Abschätzung}
+\label{app:energiebilanz_numerisch}
 
 Mit \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \), \( c = 3 \times 10^8 \, \text{m/s} \), 
 \( \hbar = 1,05 \times 10^{-34} \, \text{J·s} \):
@@ -165,13 +178,15 @@ Energiedichte, aber nur auf subnuklearen Skalen relevant. Auf makroskopischen Sk
 (\( r \gg l_0 \)) ist die Energiedichte stark unterdrückt.
 
 \section{Energiebilanz}
+\label{app:energiebilanz_bilanz}
 
 \subsection{Energiedichte des fraktalen Vakuums}
+\label{app:energiebilanz_vac_dichte}
 
-Die negative Vakuumenergiedichte (hergeleitet in Abschnitt J.4) lautet:
+Die negative Vakuumenergiedichte (hergeleitet in Abschnitt~\ref{app:energiebilanz_vakuum}) lautet:
 
 \[
-\varepsilon_{\text{vac}} = -\frac{\hbar c}{l_0^4} \cdot \left( \frac{l_0}{r} \right)^{3-D} \tag{J.8}
+\varepsilon_{\text{vac}} = -\frac{\hbar c}{l_0^4} \cdot \left( \frac{l_0}{r} \right)^{3-D} \tag{I.8}
 \]
 
 mit \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \) (fundamentale Längenskala) 
@@ -179,6 +194,7 @@ und \( D \approx 2,704 \). Für makroskopische Skalen (\( r \gg l_0 \)) ist dies
 Energiedichte extrem klein – aber nicht null.
 
 \subsection{Energieerhaltung}
+\label{app:energiebilanz_erhaltung}
 
 Die Gesamtenergie setzt sich zusammen aus:
 
@@ -197,10 +213,11 @@ positive Materieenergie umgewandelt wird:
 Die Leistung des Quantenpotentials ist genau dieser Energiefluss:
 
 \[
-P_Q = \int_V \sigma(\vec{r}, t) c^2 \, dV = -\int_V \frac{\partial \varepsilon_{\text{vac}}}{\partial t} \, dV \tag{J.9}
+P_Q = \int_V \sigma(\vec{r}, t) c^2 \, dV = -\int_V \frac{\partial \varepsilon_{\text{vac}}}{\partial t} \, dV \tag{I.9}
 \]
 
 \subsection{Stationärer Zustand}
+\label{app:energiebilanz_gleichgewicht}
 
 Im stationären Zustand ist \( \partial \varepsilon_{\text{vac}} / \partial t = 0 \) im Mittel, 
 aber lokal kann Energie umverteilt werden. Die Materieentstehung ist dann ein 
@@ -208,8 +225,10 @@ Nullsummenspiel: Die Energie des neu entstehenden Teilchens wird durch eine
 entsprechende Abnahme der Vakuumenergie in seiner unmittelbaren Umgebung kompensiert.
 
 \section{Die kritische Dichte für Materieentstehung}
+\label{app:energiebilanz_kritisch}
 
 \subsection{Bedingung für Paarbildung}
+\label{app:energiebilanz_paar}
 
 Paarbildung aus dem Vakuum (Elektron-Positron, Proton-Antiproton) erfordert eine 
 minimale Energie \( E_{\text{min}} = 2mc^2 \). Diese Energie muss lokal aus dem 
@@ -227,17 +246,19 @@ wobei \( \lambda_C \) die Compton-Wellenlänge ist. Für Elektronen ist
 \( r \lesssim 1,0 \times 10^{-16} \, \text{m} \).
 
 \subsection{Fraktale Verstärkung}
+\label{app:energiebilanz_verstaerkung}
 
 Die fraktale Raumstruktur mit \( D < 3 \) verstärkt das Quantenpotential bei kleinen 
-Skalen (siehe Anhang E). Die effektive Stärke von \( Q \) skaliert mit \( r^{-D/3} \), 
+Skalen (siehe Anhang~\ref{app:spektrale_dimension}). Die effektive Stärke von \( Q \) skaliert mit \( r^{-D/3} \), 
 was die Paarbildung erleichtert.
 
 \subsection{Resultierende Quellstärke}
+\label{app:energiebilanz_quellstaerke}
 
 Die Materieentstehungsrate pro Volumen ist:
 
 \[
-\sigma(r) = \sigma_0 \cdot \left( \frac{r}{r_0} \right)^{D-3} \tag{J.10}
+\sigma(r) = \sigma_0 \cdot \left( \frac{r}{r_0} \right)^{D-3} \tag{I.10}
 \]
 
 mit \( \sigma_0 \sim \rho_0 c / l_0 \) und \( D-3 \approx -0,296 \). Für makroskopische 
@@ -245,14 +266,16 @@ Skalen ist die Erzeugungsrate klein, aber nicht null – sie summiert sich über
 Volumina auf.
 
 \section{Kopplung an die DSTT-Drift}
+\label{app:energiebilanz_drift}
 
 \subsection{Auswärtstreibung neu entstehender Materie}
+\label{app:energiebilanz_auswaerts}
 
-Die DSTT-Drift (siehe Kapitel 8.6) treibt neu entstehende Materie radial nach außen:
+Die DSTT-Drift (siehe Kapitel~\ref{ch:dstt_weber}, Abschnitt 8.6) treibt neu entstehende Materie radial nach außen:
 
 \[
 v_{\text{drift}}(r) = \sqrt{\frac{GM_{\text{Kern}}}{r}} \cdot 
-\frac{2\dot{r}}{r} \cdot \frac{GM}{c^2 r} \tag{J.11}
+\frac{2\dot{r}}{r} \cdot \frac{GM}{c^2 r} \tag{I.11}
 \]
 
 Die Materie wird also am Ort ihrer Entstehung nicht eingefangen, sondern verlässt das 
@@ -260,6 +283,7 @@ Zentrum. Nur ein kleiner Bruchteil \( \alpha_{\text{in}} \sim
 (r_c / r_{\text{max}})^{3-D} \approx 0,001 \) wird vom Zentralkern absorbiert.
 
 \subsection{Kontinuität im stationären Zustand}
+\label{app:energiebilanz_kontinuitaet_drift}
 
 Im stationären Zustand gilt:
 
@@ -272,30 +296,34 @@ ansammelt. Das Galaxienwachstum ist ein dynamisches Gleichgewicht zwischen
 Entstehung im Zentrum und Auswärtsdrift.
 
 \section{Testbare Vorhersage}
+\label{app:energiebilanz_vorhersage}
 
 \subsection{Dichteprofil von Galaxienhalos}
+\label{app:energiebilanz_halo}
 
-Aus (J.10) und der Driftgeschwindigkeit (J.11) folgt das radiale Dichteprofil der 
-dunklen Materie (die in der WDBT+ aus Neutrinos besteht, siehe Kapitel 12):
+Aus (I.10) und der Driftgeschwindigkeit (I.11) folgt das radiale Dichteprofil der 
+dunklen Materie (die in der WDBT+ aus Neutrinos besteht, siehe Kapitel~\ref{ch:neutrino}):
 
 \[
-\rho_{\text{halo}}(r) \propto r^{D-3} = r^{-0,296} \tag{J.12}
+\rho_{\text{halo}}(r) \propto r^{D-3} = r^{-0,296} \tag{I.12}
 \]
 
 Dies ist deutlich flacher als das NFW-Profil der ART (\( \rho \propto r^{-1} \) im inneren 
-Bereich, \( \propto r^{-3} \) im äußeren). Die Vorhersage (J.12) ist mit Beobachtungen 
+Bereich, \( \propto r^{-3} \) im äußeren). Die Vorhersage (I.12) ist mit Beobachtungen 
 von extrem flachen Halos kompatibel und kann mit zukünftigen Durchmusterungen 
-(EUCLID, Rubin-LSST) getestet werden.
+(EUCLID, Rubin-LSST) getestet werden (siehe Kapitel~\ref{ch:vorhersagen}).
 
 \subsection{Quantitativer Vergleich}
+\label{app:energiebilanz_quantitativ}
 
 Für eine typische Galaxie mit \( M_{\text{Gal}} \approx 10^{11} M_{\odot} \) und einem 
-Halo-Radius von \( 100 \, \text{kpc} \) ergibt (J.12) eine Dichte von 
+Halo-Radius von \( 100 \, \text{kpc} \) ergibt (I.12) eine Dichte von 
 \( \rho \sim 10^{-24} \, \text{g/cm}^3 \) bei \( 10 \, \text{kpc} \) und 
 \( \rho \sim 10^{-25} \, \text{g/cm}^3 \) bei \( 50 \, \text{kpc} \) – ein langsamerer 
 Abfall als im NFW-Modell.
 
 \section{Zusammenfassung}
+\label{app:energiebilanz_zusammenfassung}
 
 \begin{itemize}
     \item Die Materieentstehung in der WDBT+ wird durch das Quantenpotential \( Q \) 
@@ -316,11 +344,12 @@ Abfall als im NFW-Modell.
 \end{itemize}
 
 \section{Ausblick}
+\label{app:energiebilanz_ausblick}
 
 Die hier präsentierte Energiebilanz ist konsistent und die negative Vakuumenergiedichte 
 wurde aus ersten Prinzipien (fraktaler Casimir-Effekt) hergeleitet. 
 
-Offene Fragen betreffen die genaue Bestimmung des Parameters \( \gamma \) in (J.2), 
+Offene Fragen betreffen die genaue Bestimmung des Parameters \( \gamma \) in (I.2), 
 die eine vollständige Quantisierung der WDBT+ erfordert. Dennoch liefert der 
 vorliegende Anhang die konzeptionelle Grundlage für die Materieentstehung in der 
 stationären Kosmologie der WDBT+.
