@@ -241,7 +241,6 @@
 \contentsline {subsection}{\numberline {15.2.3}Doppelkern-Systeme}{91}{}%
 \contentsline {subsection}{\numberline {15.2.4}Hubble-Gesetz}{92}{}%
 \contentsline {subsection}{\numberline {15.2.5}Übersicht der testbaren Vorhersagen}{92}{}%
-\contentsline {subsection}{\numberline {15.2.6}Übersicht der testbaren Vorhersagen}{92}{}%
 \contentsline {section}{\numberline {15.3}Gravitationsphysik}{92}{}%
 \contentsline {subsection}{\numberline {15.3.1}Frequenzabhängige Lichtablenkung}{92}{}%
 \contentsline {subsection}{\numberline {15.3.2}Gravitationswellen-Dispersion}{92}{}%
