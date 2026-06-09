@@ -54,7 +54,7 @@ Die folgende Tabelle fasst die wichtigsten Vorhersagen zusammen:
 \textbf{Vorhersage} & \textbf{Abweichung von ART} & \textbf{Experiment} \\
 \hline
 Lichtablenkung & \(\Delta\phi = \Delta\phi_{\text{ART}}(1 + \alpha\lambda^2)\) & EHT, VLBI, LISA \\
-Gravitationswellen-Dispersion & \(v_{\text{phase}} = c \left(1 + \beta \left(\frac{f}{f_0}\right)^{-0,296}\right)\) & LISA, Einstein-Teleskop \\
+Gravitationswellen-Dispersion & \(v_{\text{phase}} = c \left(1 + \beta \left(\frac{f}{f_0}\right)^{D-3}\right)\) & LISA, Einstein-Teleskop \\
 Neutrinomasse & \(m_\nu \approx 0,1\,\text{eV}/c^2\) & KATRIN, JUNO, DUNE \\
 \textbf{Hubble-Skalenabhängigkeit} & \(\mathbf{H_{\text{eff}}(d) = H_0 (d/d_0)^{0,704}}\) & Supernovae, Quasare, GW \\
 Maximale kompakte Masse & \(M_{\text{BEC}} \approx 3 \times 10^6 M_\odot\) & Galaxienzentren, EHT \\
@@ -82,13 +82,19 @@ Dabei ist \( \alpha \) eine dimensionslose Konstante, die aus der fraktalen Raum
 \subsection{Gravitationswellen-Dispersion}
 \label{sec:vorh_gw_dispersion}
 
-Die fraktale Raumstruktur führt zu einer frequenzabhängigen Ausbreitungsgeschwindigkeit von Gravitationswellen (siehe Anhang~\ref{app:spektrale_dimension}):
+Die fraktale Raumstruktur führt zu einer frequenzabhängigen Ausbreitungsgeschwindigkeit von Gravitationswellen (siehe Anhang~\ref{app:spektrale_dimension}). Aus der spektralen Dimension \( d_s = 2D/3 \) folgt die Dispersionsrelation \( \omega \propto k^{D/3} \), und daraus ergibt sich für die Phasengeschwindigkeit:
 
 \[
-v_{\text{phase}}(\omega) = c \left(1 + \beta \left(\frac{\omega}{\omega_0}\right)^{D-3} + \dots\right)
+v_{\text{phase}}(\omega) = \frac{\omega}{k} \propto \omega^{1 - D/3}
 \]
 
-Dabei ist \( \beta \) eine dimensionslose Konstante, die aus der fraktalen Raumdimension \( D \) folgt. Mit \( D \approx 2,704 \) ist \( D-3 \approx -0,296 \), also eine schwache Dispersion bei hohen Frequenzen. Dies ist mit zukünftigen Detektoren wie LISA oder dem Einstein-Teleskop testbar.
+Mit \( D \approx 2,704 \) ist \( 1 - D/3 \approx -0,099 \), also eine schwache Dispersion bei hohen Frequenzen. In der üblichen Form mit einer Referenzfrequenz:
+
+\[
+v_{\text{phase}}(\omega) = c \left(1 + \beta \left(\frac{\omega}{\omega_0}\right)^{1 - D/3} + \dots\right)
+\]
+
+Dies ist mit zukünftigen Detektoren wie LISA oder dem Einstein-Teleskop testbar.
 
 \subsection{Shapiro-Laufzeitverzögerung}
 \label{sec:vorh_shapiro}
@@ -132,7 +138,7 @@ voraus, direkt aus der fundamentalen Länge \( l_0 \). Dies ist mit Experimenten
 Die fraktale Dispersionsrelation führt zu einer charakteristischen Skalierung der Oszillationslänge:
 
 \[
-L_{\text{osc}} \propto E^{0,775}
+L_{\text{osc}} \propto E^{1/(4-D)} = E^{0,775}
 \]
 
 Dies weicht von den Vorhersagen des Standardmodells ab und ist mit Neutrino-Oszillationsexperimenten (JUNO, DUNE, Hyper-Kamiokande) testbar (siehe auch Anhang~\ref{app:neutrino_q}).
@@ -216,7 +222,7 @@ Die folgende Tabelle fasst die wichtigsten testbaren Vorhersagen zusammen:
 \text{CMB-Korrelationen} & C(\theta) \propto \theta^{-0,296} & \text{Planck, LiteBIRD} \\
 \text{Neutrinomasse} & m_\nu \approx 0,1 \, \text{eV}/c^2 & \text{KATRIN, Doppelbeta-Zerfall} \\
 \text{Sonnenmasse} & \text{Kein Masseverlust durch Wind} & \text{Präzise Sonnenbeobachtung} \\
-\text{Gravitationswellen-Dispersion} & v_{\text{phase}}(\omega) = c(1 + \alpha \omega^{-0,296}) & \text{LISA, Einstein-Teleskop} \\
+\text{Gravitationswellen-Dispersion} & v_{\text{phase}}(\omega) = c(1 + \alpha \omega^{-0,099}) & \text{LISA, Einstein-Teleskop} \\
 \text{Skalierung im Plasma} & j(r) \propto r^{-0,296} & \text{Laborplasmen, Sonnenwind} \\
 \text{Lichtablenkung} & \Delta\phi \propto \lambda^2 & \text{Multiband-Beobachtungen} \\
 \text{Shapiro-Laufzeit} & \text{Frequenzabhängig} & \text{Pulsar-Timing} \\
