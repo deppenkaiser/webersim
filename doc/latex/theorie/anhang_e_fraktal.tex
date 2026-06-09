@@ -11,23 +11,33 @@ für den fraktalen Raum. Zentrale Idee: Die fraktale Dimension \(D\)
 manifestiert sich in der \textbf{Ordnung} der Ableitung, nicht in einem
 skalierten Differentialquotienten.
 
-\section{Fraktionale Ableitung (Caputo) als Grundlage}
+\section{Fraktionale Ableitung (Weyl) als Grundlage}
 
-\subsection{Definition der Caputo-Ableitung}
+\subsection{Definition der Weyl-Fraktionableitung}
 
 Für eine Funktion \( f: \mathbb{R} \to \mathbb{R} \) und eine Ordnung
-\( \alpha \in (0,1) \) definieren wir die \emph{Caputo-fraktionale
+\( \alpha \in (0,1) \) definieren wir die \emph{Weyl-fraktionale
 Ableitung}:
 
 \[
-_{0}^{C} D_x^{\alpha} f(x) := \frac{1}{\Gamma(1-\alpha)} \int_{0}^{x}
-\frac{f'(t)}{(x-t)^{\alpha}} \, dt
+_{-\infty} D_x^{\alpha} f(x) := \frac{1}{\Gamma(1-\alpha)} \frac{d}{dx} \int_{-\infty}^{x} \frac{f(t)}{(x-t)^{\alpha}} \, dt
 \]
 
 Für \(\alpha = 1\) gilt der Grenzfall:
 \[
-\lim_{\alpha \to 1^-} \,_{0}^{C} D_x^{\alpha} f(x) = f'(x)
+\lim_{\alpha \to 1^-} \,_{-\infty} D_x^{\alpha} f(x) = f'(x)
 \]
+
+\subsection{Eigenschaft für ebene Wellen}
+
+Für die Exponentialfunktion \( e^{ikx} \) gilt die fundamentale Eigenfunktionseigenschaft:
+
+\[
+_{-\infty} D_x^{\alpha} e^{ikx} = (ik)^{\alpha} e^{ikx}
+\]
+
+Dies ist der entscheidende Vorteil der Weyl-Ableitung gegenüber der Caputo-Ableitung:
+Ebene Wellen sind Eigenfunktionen des fraktalen Differentialoperators.
 
 \subsection{Verknüpfung mit der fraktalen Dimension}
 
@@ -48,7 +58,7 @@ Für eine Funktion \(\phi: \mathbb{R}^3 \to \mathbb{R}\) definieren wir
 die fraktale partielle Ableitung als:
 
 \[
-\frac{\partial^D \phi}{\partial x^D}(x,y,z) := \,_{0}^{C} D_x^{\alpha} \phi(x,y,z)
+\frac{\partial^D \phi}{\partial x^D}(x,y,z) := \,_{-\infty} D_x^{\alpha} \phi(x,y,z)
 \]
 (analog für \(y\) und \(z\)).
 
@@ -71,12 +81,10 @@ Für \(f(x) = x^\beta\) mit \(\beta > 0\):
 \]
 
 \subsection{Exponentialfunktion (wichtig für Wellen)}
+Für die Weyl-Fraktionableitung gilt:
 \[
 \frac{\partial^D e^{ikx}}{\partial x^D} = (ik)^\alpha e^{ikx} = k^\alpha e^{i\alpha\pi/2} e^{ikx}
 \]
-
-Dies folgt aus der Potenzregel mit der Reihenentwicklung der
-Exponentialfunktion.
 
 \subsection{Produktregel (nicht-lokal)}
 Die gewöhnliche Produktregel gilt nicht. Stattdessen:
@@ -91,7 +99,7 @@ mit
 \subsection{Kettenregel (nicht-lokal)}
 Für \(h(x) = f(g(x))\):
 \[
-\frac{\partial^D h}{\partial x^D}(x) = \int_0^x \frac{(x-t)^{-\alpha}}{\Gamma(1-\alpha)} f'(g(t)) g'(t) \, dt
+\frac{\partial^D h}{\partial x^D}(x) = \int_{-\infty}^{x} \frac{(x-t)^{-\alpha}}{\Gamma(1-\alpha)} f'(g(t)) g'(t) \, dt
 \]
 
 \section{Fraktale Differentialoperatoren}
@@ -142,7 +150,7 @@ Durch Kombination folgt:
 \]
 
 \subsection{Ebene Wellen im fraktalen Raum}
-Für eine ebene Welle \(\mathbf{E} = \mathbf{E}_0 e^{i(kx - \omega t)}\) gilt:
+Für eine ebene Welle \(\mathbf{E} = \mathbf{E}_0 e^{i(kx - \omega t)}\) gilt mit der Weyl-Ableitung:
 
 \[
 \frac{\partial^{2D/3} e^{ikx}}{\partial x^{2D/3}} = (ik)^{2D/3} e^{ikx}
@@ -194,7 +202,8 @@ wobei \(\beta\) eine Konstante ist und \(\omega_0\) eine Referenzfrequenz.
 \section{Konsequenzen für die WDBT+}
 
 \begin{itemize}
-    \item Die fraktale Ableitung ist \textbf{wohldefiniert} (Caputo).
+    \item Die Weyl-Fraktionableitung ist \textbf{wohldefiniert} und speziell für Probleme auf ganz \(\mathbb{R}\) geeignet.
+    \item Ebene Wellen sind Eigenfunktionen – die Dispersionsrelation folgt direkt.
     \item Der Grenzfall \(D \to 3\) reproduziert die klassische Physik.
     \item Für \(D \approx 2{,}704\) ist \(D-3 \approx -0{,}296\) -- eine
           \textbf{schwache Dispersion}.
@@ -204,20 +213,34 @@ wobei \(\beta\) eine Konstante ist und \(\omega_0\) eine Referenzfrequenz.
 
 \section{Numerische Implementierung}
 
-Für die praktische Berechnung wird die Caputo-Ableitung diskretisiert:
+Für die praktische Berechnung der Weyl-Fraktionableitung auf einem endlichen Intervall
+\([-L, L]\) mit \(L\) hinreichend groß kann die Caputo-Approximation als Näherung
+verwendet werden, da der Fehler durch die Wahl der unteren Grenze exponentiell klein wird:
+
+\[
+_{-\infty} D_x^{\alpha} f(x) \approx \,_{0}^{C} D_x^{\alpha} f(x) + \mathcal{O}(e^{-L})
+\]
+
+Die diskrete Näherung der Caputo-Ableitung lautet:
 
 \[
 _{0}^{C} D_x^{\alpha} f(x) \approx \frac{1}{\Gamma(2-\alpha)} \sum_{j=0}^{n-1} \frac{f(x_{j+1}) - f(x_j)}{x_{j+1} - x_j} \cdot \frac{(x - x_j)^{1-\alpha} - (x - x_{j+1})^{1-\alpha}}{\Delta x}
 \]
 
-Dies ist ein Standardverfahren (fraktionale Finite-Differenzen-Methode).
+Für Details zur fraktionalen Finite-Differenzen-Methode siehe z.B. Podlubny (1999).
 
 \section{Zusammenfassung}
 
 \[
 \boxed{
-\frac{\partial^D f}{\partial x^D} := \,_{0}^{C} D_x^{D/3} f(x), \qquad
-\,_{0}^{C} D_x^{\alpha} f(x) = \frac{1}{\Gamma(1-\alpha)} \int_0^x \frac{f'(t)}{(x-t)^{\alpha}} \, dt
+\frac{\partial^D f}{\partial x^D} := \,_{-\infty} D_x^{D/3} f(x), \qquad
+_{-\infty} D_x^{\alpha} f(x) = \frac{1}{\Gamma(1-\alpha)} \frac{d}{dx} \int_{-\infty}^{x} \frac{f(t)}{(x-t)^{\alpha}} \, dt
+}
+\]
+
+\[
+\boxed{
+_{-\infty} D_x^{\alpha} e^{ikx} = (ik)^{\alpha} e^{ikx}
 }
 \]
 
@@ -234,7 +257,7 @@ D \approx 2{,}704
     \item Vollständige Klärung der eichinvarianten Formulierung der
           fraktalen Maxwell-Gleichungen.
     \item Numerische Implementierung der fraktalen Poisson-Gleichung
-          für realistische Galaxienmodelle.
+          für realistische Galaxienmodelle mit der Weyl-Ableitung.
     \item Erweiterung auf gekrümmte fraktale Räume.
 \end{enumerate}
 
