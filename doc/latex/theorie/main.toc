@@ -613,3 +613,13 @@
 \contentsline {subsection}{\numberline {M.7.1}Temperatur im stationären Zustand}{173}{}%
 \contentsline {subsection}{\numberline {M.7.2}Zeitpfeil und kosmologische Entropie}{173}{}%
 \contentsline {section}{\numberline {M.8}Zusammenfassung}{174}{}%
+\contentsline {chapter}{\numberline {N}Spektrale Dimension des Dodekaeder-Ikosaeder-Netzwerks}{175}{}%
+\contentsline {section}{\numberline {N.1}Einleitung}{175}{}%
+\contentsline {section}{\numberline {N.2}Das duale Netzwerk}{175}{}%
+\contentsline {section}{\numberline {N.3}Die Skalierungsfaktoren}{175}{}%
+\contentsline {section}{\numberline {N.4}Hausdorff-Dimension}{176}{}%
+\contentsline {section}{\numberline {N.5}Spektrale Dimension und ihre Herleitung}{176}{}%
+\contentsline {section}{\numberline {N.6}Numerischer Wert}{176}{}%
+\contentsline {section}{\numberline {N.7}Dispersionsrelation}{177}{}%
+\contentsline {section}{\numberline {N.8}Vergleich mit der etablierten Physik}{177}{}%
+\contentsline {subsection}{\numberline {N.8.1}Zusammenfassung}{177}{}%

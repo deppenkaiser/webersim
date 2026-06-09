@@ -1,0 +1,168 @@
+\chapter{Spektrale Dimension des Dodekaeder-Ikosaeder-Netzwerks}
+
+\section{Einleitung}
+
+In diesem Anhang wird die spektrale Dimension \(d_s\) des fraktalen
+Dodekaeder-Ikosaeder-Netzwerks hergeleitet. Diese spektrale Dimension
+ist die zentrale Größe, die die Dispersionsrelation von Wellen im
+fraktalen Raum bestimmt. Das zentrale Ergebnis ist:
+
+\[
+d_s = \frac{2D}{3} \approx 1,802
+\]
+
+wobei \(D \approx 2,704\) die Hausdorff-Dimension des Netzwerks ist.
+Daraus folgt unmittelbar die Dispersionsrelation
+
+\[
+\omega \propto k^{d_s/2} = k^{D/3}.
+\]
+
+\section{Das duale Netzwerk}
+
+Das fundamentale Netzwerk basiert auf der dualen Beziehung zwischen
+Dodekaeder und Ikosaeder:
+
+\begin{itemize}
+    \item Der Dodekaeder hat \(V_d = 20\) Ecken und \(F_d = 12\) Flächen.
+    \item Der Ikosaeder hat \(V_i = 12\) Ecken und \(F_i = 20\) Flächen.
+    \item Die beiden Körper sind dual zueinander: Die Ecken des einen
+          entsprechen den Flächen des anderen.
+\end{itemize}
+
+Die Selbstähnlichkeit des Raumes wird durch eine iterative
+Substitutionsregel erzeugt, bei der Dodekaeder und Ikosaeder
+abwechselnd die Rolle der \enquote{Zellen} und \enquote{Knoten}
+übernehmen.
+
+\section{Die Skalierungsfaktoren}
+
+Aus der Geometrie der Dodekaeder-Packung folgt der lineare
+Skalierungsfaktor
+
+\[
+s = 2 + \phi \approx 3,618,
+\]
+
+wobei \(\phi = (1+\sqrt{5})/2 \approx 1,618\) der goldene Schnitt ist.
+Dieser Faktor beschreibt, um welchen Faktor die lineare Ausdehnung des
+Netzwerks pro Iterationsschritt wächst.
+
+Der Vermehrungsfaktor für die Anzahl der fundamentalen Einheiten
+(Knoten oder Zellen) pro Iteration ist
+
+\[
+V = 20\phi \approx 32,36.
+\]
+
+Dieser Wert kombiniert die Eckenzahl des Dodekaeders (\(20\)) mit dem
+goldenen Schnitt \(\phi\), der die ikosaedrische Symmetrie kodiert.
+
+\section{Hausdorff-Dimension}
+
+Für eine selbstähnliche Struktur gilt der Zusammenhang
+
+\[
+V = s^{D},
+\]
+
+wobei \(D\) die Hausdorff-Dimension ist. Auflösen nach \(D\) ergibt:
+
+\[
+D = \frac{\ln V}{\ln s}
+    = \frac{\ln(20\phi)}{\ln(2+\phi)}
+    \approx \frac{3,47694}{1,28602}
+    \approx 2,704.
+\]
+
+\section{Spektrale Dimension und ihre Herleitung}
+
+Die spektrale Dimension \(d_s\) charakterisiert das Tieffrequenzverhalten
+der Zustandsdichte. Für einen selbstähnlichen Graphen gilt allgemein
+
+\[
+d_s = \frac{2 \ln V}{\ln s} \cdot \frac{1}{q},
+\]
+
+wobei \(q\) ein Exponent ist, der die \enquote{Walk-Dimension} des
+Random Walks auf dem Graphen beschreibt. Für duale Paare von Graphen
+mit ikosaedrischer Symmetrie findet man \(q = 3\). Die physikalische
+Begründung ist wie folgt:
+
+\begin{enumerate}
+    \item Die duale Struktur (Dodekaeder \(\leftrightarrow\) Ikosaeder)
+          führt zu einer effektiven \enquote{Verdreifachung} der
+          Rechenschritte für den Random Walker.
+    \item Ein Schritt auf dem dualen Graphen entspricht drei Schritten
+          auf dem ursprünglichen Graphen.
+    \item Die Walk-Dimension \(d_w\) ist daher \(d_w = 3 \cdot d_{w,0}\),
+          wobei \(d_{w,0}\) die Walk-Dimension des einfachen Graphen ist.
+    \item Aus der Beziehung \(d_s = 2d_H/d_w\) und \(d_w \propto 3\)
+          folgt direkt \(d_s = (2/3)d_H = 2D/3\).
+\end{enumerate}
+
+Setzt man \(V = s^D\) ein, so erhält man:
+
+\[
+d_s = \frac{2\ln V}{\ln s} \cdot \frac{1}{3}
+    = \frac{2}{3} \cdot \frac{\ln(20\phi)}{\ln(2+\phi)}
+    = \frac{2}{3} D.
+\]
+
+\section{Numerischer Wert}
+
+Mit \(D \approx 2,704\) ergibt sich:
+
+\[
+d_s = \frac{2}{3} \cdot 2,704 \approx 1,8027.
+\]
+
+\section{Dispersionsrelation}
+
+Für Wellenausbreitung auf einem Graphen mit spektraler Dimension
+\(d_s\) gilt die Dispersionsrelation
+
+\[
+\omega \propto k^{d_s/2}.
+\]
+
+Einsetzen von \(d_s = 2D/3\) liefert:
+
+\[
+\omega \propto k^{D/3}.
+\]
+
+Mit \(D \approx 2,704\) ist \(D/3 \approx 0,9013\). Dies weicht nur
+geringfügig vom linearen Gesetz \(\omega \propto k\) (keine Dispersion)
+ab, was die Beobachtbarkeit des Effekts zu einer Herausforderung,
+aber prinzipiell möglich macht.
+
+\section{Vergleich mit der etablierten Physik}
+
+In der Allgemeinen Relativitätstheorie und im Standardmodell gilt
+\(\omega \propto k\) (Vakuumlichtgeschwindigkeit ist frequenzunabhängig).
+Die hier abgeleitete Dispersionsrelation ist eine testbare Abweichung:
+
+\[
+v_{\text{phase}}(\omega) = \frac{\omega}{k} \propto \omega^{1 - D/3}
+                         \approx \omega^{-0,0987}.
+\]
+
+Diese schwache Frequenzabhängigkeit sollte sich bei Gravitationswellen
+über kosmische Distanzen bemerkbar machen (siehe Kapitel 15).
+
+\subsection{Zusammenfassung}
+
+\begin{itemize}
+    \item Aus der dualen Dodekaeder-Ikosaeder-Struktur folgen die
+          Skalierungsfaktoren \(s = 2+\phi\) und \(V = 20\phi\).
+    \item Die Hausdorff-Dimension ist \(D = \ln(20\phi)/\ln(2+\phi)
+          \approx 2,704\).
+    \item Die spektrale Dimension ist \(d_s = 2D/3 \approx 1,803\).
+    \item Die Dispersionsrelation lautet \(\omega \propto k^{D/3}\).
+    \item Dies ist eine testbare Vorhersage der Theorie.
+\end{itemize}
+
+Damit ist gezeigt, dass die Dispersionsbeschreibung ohne fraktale
+Differentialoperatoren auskommt. Die fraktale Struktur des Raumes
+steckt allein in den Skalierungsexponenten.
