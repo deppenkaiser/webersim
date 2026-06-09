@@ -220,17 +220,18 @@
 \contentsline {subsection}{\numberline {14.2.1}Allgemeine Form}{85}{}%
 \contentsline {subsection}{\numberline {14.2.2}Rotverschiebung ohne Expansion}{85}{}%
 \contentsline {subsection}{\numberline {14.2.3}Fraktale Dichteverteilung als Spezialfall}{85}{}%
-\contentsline {section}{\numberline {14.3}Galaxienrotation ohne Dunkle Materie}{86}{}%
-\contentsline {subsection}{\numberline {14.3.1}Dichteverteilung}{86}{}%
-\contentsline {subsection}{\numberline {14.3.2}Rotationskurve}{86}{}%
+\contentsline {subsection}{\numberline {14.2.4}Die effektive Hubble-Konstante}{86}{}%
+\contentsline {section}{\numberline {14.3}Galaxienrotation ohne Dunkle Materie}{87}{}%
+\contentsline {subsection}{\numberline {14.3.1}Dichteverteilung}{87}{}%
+\contentsline {subsection}{\numberline {14.3.2}Rotationskurve}{87}{}%
 \contentsline {section}{\numberline {14.4}Kontinuierliche Materieentstehung}{87}{}%
 \contentsline {subsection}{\numberline {14.4.1}Drift und Einfang}{87}{}%
-\contentsline {section}{\numberline {14.5}Galaxienwachstum}{87}{}%
-\contentsline {subsection}{\numberline {14.5.1}Massenverhältnis Galaxie zu Kern}{87}{}%
+\contentsline {section}{\numberline {14.5}Galaxienwachstum}{88}{}%
+\contentsline {subsection}{\numberline {14.5.1}Massenverhältnis Galaxie zu Kern}{88}{}%
 \contentsline {section}{\numberline {14.6}Die Sonne als Mikrokosmos}{88}{}%
 \contentsline {subsection}{\numberline {14.6.1}Interpretation des Sonnenwinds}{88}{}%
 \contentsline {section}{\numberline {14.7}Beobachtbare Signaturen: Der EHT-Schatten}{88}{}%
-\contentsline {section}{\numberline {14.8}Vergleich mit dem Standardmodell}{88}{}%
+\contentsline {section}{\numberline {14.8}Vergleich mit dem Standardmodell}{89}{}%
 \contentsline {section}{\numberline {14.9}Zusammenfassung}{89}{}%
 \contentsline {chapter}{\numberline {15}Testbare Vorhersagen}{91}{}%
 \contentsline {section}{\numberline {15.1}Einleitung}{91}{}%
@@ -240,6 +241,7 @@
 \contentsline {subsection}{\numberline {15.2.3}Doppelkern-Systeme}{91}{}%
 \contentsline {subsection}{\numberline {15.2.4}Hubble-Gesetz}{92}{}%
 \contentsline {subsection}{\numberline {15.2.5}Übersicht der testbaren Vorhersagen}{92}{}%
+\contentsline {subsection}{\numberline {15.2.6}Übersicht der testbaren Vorhersagen}{92}{}%
 \contentsline {section}{\numberline {15.3}Gravitationsphysik}{92}{}%
 \contentsline {subsection}{\numberline {15.3.1}Frequenzabhängige Lichtablenkung}{92}{}%
 \contentsline {subsection}{\numberline {15.3.2}Gravitationswellen-Dispersion}{92}{}%

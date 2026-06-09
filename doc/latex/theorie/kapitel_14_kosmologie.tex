@@ -49,15 +49,43 @@ Das Integral ergibt \( \int_0^d r^{D-2} dr = d^{D-1} / (D-1) \), und man erhält
 z(d) = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-1) c^2} \, d^{\,D-1}.
 \]
 
-Dies ist die in der Literatur häufig zitierte Form. Sie ist ein Spezialfall der allgemeinen WDBT-Rotverschiebung für den Fall einer fraktalen Dichteverteilung. Für \( D \to 3 \) geht die fraktale Verteilung in eine konstante Dichte über.
+Dies ist ein Spezialfall der allgemeinen WDBT-Rotverschiebung für den Fall einer fraktalen Dichteverteilung. Für \( D \to 3 \) geht die fraktale Verteilung in eine konstante Dichte über.
 
-Die effektive Hubble-Konstante wird skalenabhängig:
+\subsection{Die effektive Hubble-Konstante}
+
+In der WDBT+ gibt es keine universelle Hubble-Konstante im Sinne der expandierenden Kosmologie, da das Universum stationär ist. Stattdessen definiert man eine \textbf{skalenabhängige effektive Hubble-Konstante}:
 
 \[
-H_{\text{eff}}(d) = c \cdot \frac{z(d)}{d} \propto d^{D-2}
+H_{\text{eff}}(d) = c \cdot \frac{z(d)}{d}
 \]
 
-Mit \( D \approx 2,704 \) folgt \( H_{\text{eff}}(d) \propto d^{0,704} \). Die vollständige Herleitung findet sich in Anhang D.
+Aus der allgemeinen Rotverschiebungsformel (Abschnitt 14.2.1) folgt für beliebige Massenverteilungen \( M(r) \):
+
+\[
+H_{\text{eff}}(d) = \frac{1}{d} \int_0^d \frac{GM(r)}{r^2} \, dr
+\]
+
+Für den Spezialfall der fraktalen Dichteverteilung (Abschnitt 14.2.3) ergibt sich:
+
+\[
+H_{\text{eff}}(d) = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-1)c} \cdot d^{\,D-2}
+\]
+
+Mit \( D \approx 2,704 \) ist \( D-2 = 0,704 \), also:
+
+\[
+H_{\text{eff}}(d) \propto d^{0,704}
+\]
+
+Die Hubble-Spannung – die Diskrepanz zwischen frühen (CMB) und späten (lokalen) Messungen von \( H_0 \) in der ART – ist in der WDBT+ kein Rätsel, sondern eine Konsequenz dieser Skalenabhängigkeit. Unterschiedliche Messmethoden operieren auf unterschiedlichen effektiven Skalen \( d \) und müssen daher systematisch unterschiedliche Werte für \( H_{\text{eff}} \) liefern.
+
+Bezeichnet man mit \( H_0 \) den Wert der effektiven Hubble-Konstanten bei einer Referenzskala \( d_0 \) (z. B. bei lokalen Entfernungsmessungen), so gilt:
+
+\[
+H_{\text{eff}}(d) = H_0 \left( \frac{d}{d_0} \right)^{0,704}
+\]
+
+Die CMB-Messungen entsprechen einer deutlich größeren effektiven Skala als lokale Messungen. Da \( H_{\text{eff}}(d) \) mit \( d \) wächst, ist der aus dem CMB abgeleitete Wert \textit{größer} als der lokale Wert – was qualitativ mit den Beobachtungen übereinstimmt. Eine quantitative Vorhersage erfordert die genaue Kenntnis der Dichteverteilung \( \rho_0 \) und der effektiven Skalen der jeweiligen Messungen.
 
 Da \( \beta \) für Photonen von der Energie abhängt, zeigen verschiedene Frequenzen leicht unterschiedliche Rotverschiebungen. Dieser Effekt ist klein, aber mit Pulsar-Laufzeiten oder hochpräzisen Spektren messbar.
 
@@ -219,6 +247,7 @@ Die WDBT+ führt zu einem stationären, nicht-expandierenden Universum:
 
 \begin{itemize}
     \item Die Rotverschiebung ist keine Folge der Expansion, sondern kumulative Gravitation. Die allgemeine Form \( z = \frac{1}{c^2} \int \frac{GM(r)}{r^2} dr \) ist die Grundlage; die fraktale Dichteverteilung ist ein Spezialfall.
+    \item Die effektive Hubble-Konstante \( H_{\text{eff}}(d) \) ist skalenabhängig: \( H_{\text{eff}}(d) \propto d^{0,704} \). Die Hubble-Spannung ist eine Konsequenz dieser Skalenabhängigkeit, kein Rätsel.
     \item Flache Rotationskurven werden ohne Dunkle Materie durch das \( \Omega \)-Feld und die anisotrope Trägheit der DSTT erklärt.
     \item Das Quantenpotential erzeugt kontinuierlich neue Materie, die durch DSTT-Drift nach außen getrieben wird.
     \item Galaxien wachsen von innen nach außen; das Massenverhältnis Galaxie/Kern folgt aus der fraktalen Raumdimension \( D \).
