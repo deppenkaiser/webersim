@@ -1,177 +1,122 @@
-\chapter{Fraktale Maxwell-Gleichungen}
+\chapter{Maxwell-Gravitation mit fraktalen Quellen}
 
 \section{Einleitung}
 
-Die WDBT+ postuliert einen fraktalen Raum mit der Dimension \( D \). Wenn der Raum fraktal ist, dann müssen auch alle Feldtheorien, die in diesem Raum formuliert werden, diese fraktale Struktur widerspiegeln. Die Maxwell-Gleichungen im glatten Raum (\(D = 3\)) sind dann nur eine Näherung – der Grenzfall \( D \to 3 \). Die wahren Maxwell-Gleichungen sind fraktal.
+Die WDBT+ postuliert einen fraktalen Raum mit der Dimension \( D \approx 2,704 \). Die Maxwell-Gravitation (Kapitel 9) ist eine emergente, kontinuumsnahe Feldtheorie. In diesem Kapitel wird gezeigt, wie die fraktale Struktur des Raumes in die Maxwell-Gravitation einfließt – nicht durch fraktale Differentialoperatoren, sondern durch fraktale Quellterme.
 
-In diesem Kapitel werden die fraktalen Maxwell-Gleichungen für die Elektrodynamik und für die Gravitation hergeleitet. Sie haben dieselbe mathematische Struktur – dies ist die Einheit von Elektrodynamik und Gravitation im fraktalen Raum.
+Die zentrale Aussage ist:
 
-\subsection{Fraktale Ableitung}
+\begin{center}
+    \emph{Die Feldgleichungen sind glatt. Die fraktale Struktur steckt in den Quellen.}
+\end{center}
 
-Die präzise, mathematisch konsistente Definition der fraktalen Ableitung findet sich in Anhang E. Dort wird gezeigt, dass für einen fraktalen Raum mit Hausdorff-Dimension \( D \) die fraktale partielle Ableitung als \emph{Caputo-Fraktionalableitung} der Ordnung \( \alpha = D/3 \) verstanden werden kann:
+Die Maxwell-Gleichungen im glatten Raum (\( D = 3 \)) sind der Spezialfall einer homogenen Quellverteilung. Für \( D \neq 3 \) sind die Quellen fraktal skaliert.
 
-\[
-\frac{\partial^D f}{\partial x^D}(x) := \,_{0}^{C} D_x^{D/3} f(x) = \frac{1}{\Gamma(1-D/3)} \int_0^x \frac{f'(t)}{(x-t)^{D/3}} \, dt.
-\]
+\section{Die Maxwell-Gravitation (glatte Formulierung)}
 
-Für die heuristischen Herleitungen in diesem Kapitel genügt die Kenntnis der in Anhang E angegebenen Rechenregeln. Insbesondere gilt für eine ebene Welle:
-
-\[
-\frac{\partial^D e^{ikx}}{\partial x^D} = (ik)^{D/3} e^{ikx}.
-\]
-
-Der Grenzfall \( D \to 3 \) reproduziert die gewöhnliche Ableitung.
-
-\section{Der fraktale Nabla-Operator \( \nabla_D \)}
-
-Im fraktalen Raum mit Dimension \( D \) müssen Differentialoperatoren die Skalierungseigenschaften des Raumes berücksichtigen. Mit der in Anhang E definierten fraktalen Ableitung definieren wir den fraktalen Gradienten:
-
-\[
-\nabla_D f := \left( \frac{\partial^D f}{\partial x^D}, \frac{\partial^D f}{\partial y^D}, \frac{\partial^D f}{\partial z^D} \right).
-\]
-
-Der fraktale Laplace-Operator ist entsprechend:
-
-\[
-\nabla_D^2 f = \nabla_D \cdot (\nabla_D f) = \frac{\partial^{2D/3} f}{\partial x^{2D/3}} + \frac{\partial^{2D/3} f}{\partial y^{2D/3}} + \frac{\partial^{2D/3} f}{\partial z^{2D/3}}.
-\]
-
-\section{Die fraktalen Maxwell-Gleichungen der Elektrodynamik}
-
-Mit diesem Operator lauten die Maxwell-Gleichungen im fraktalen Raum:
-
-\subsection{Gaußsches Gesetz (elektrisch)}
-
-\[
-\nabla_D \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} \cdot \left( \frac{r}{r_0} \right)^{D-3}
-\]
-
-Der Skalierungsfaktor \( (r/r_0)^{D-3} \) besagt, dass die effektive Quellstärke im fraktalen Raum vom Abstand abhängt. Für \( D = 3 \) verschwindet dieser Faktor, und wir erhalten das bekannte Gesetz.
-
-\subsection{Gaußsches Gesetz (magnetisch)}
-
-\[
-\nabla_D \cdot \mathbf{B} = 0
-\]
-
-Die Quellenfreiheit des magnetischen Feldes bleibt erhalten – sie ist eine topologische Eigenschaft.
-
-\subsection{Faradaysches Induktionsgesetz}
-
-\[
-\nabla_D \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} \cdot \left( \frac{r}{r_0} \right)^{D-3}
-\]
-
-\subsection{Ampèresches Gesetz (mit Maxwell-Ergänzung)}
-
-\[
-\nabla_D \times \mathbf{B} = \mu_0 \mathbf{j} \cdot \left( \frac{r}{r_0} \right)^{D-3} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t} \cdot \left( \frac{r}{r_0} \right)^{D-3}
-\]
-
-\section{Alternative Formulierung mit fraktaler Metrik}
-
-Eleganter und allgemeiner ist die Formulierung mit einer fraktalen Metrik \( g_{ij}^{(D)} \). Sie kodiert die fraktale Geometrie und führt zu kovarianten Ableitungen \( \nabla_i^{(D)} \). Die Maxwell-Gleichungen lauten dann:
+Aus Kapitel 9 sind die Maxwell-Gleichungen der Gravitation im glatten Raum bekannt:
 
 \[
 \begin{aligned}
-\nabla_i^{(D)} E^i &= \frac{\rho}{\epsilon_0} \sqrt{g^{(D)}} \\
-\nabla_i^{(D)} B^i &= 0 \\
-\epsilon^{ijk} \nabla_j^{(D)} E_k &= -\frac{\partial B^i}{\partial t} \sqrt{g^{(D)}} \\
-\epsilon^{ijk} \nabla_j^{(D)} B_k &= \mu_0 j^i \sqrt{g^{(D)}} + \mu_0 \epsilon_0 \frac{\partial E^i}{\partial t} \sqrt{g^{(D)}}
+\nabla \cdot \vec{E}_g &= -4\pi G \rho_{\text{eff}} \\
+\nabla \cdot \vec{B}_g &= 0 \\
+\nabla \times \vec{E}_g &= -\frac{\partial \vec{B}_g}{\partial t} \\
+\nabla \times \vec{B}_g &= \frac{4\pi G}{c^2} \vec{j}_g + \frac{1}{c^2} \frac{\partial \vec{E}_g}{\partial t}
 \end{aligned}
 \]
 
-wobei \( \sqrt{g^{(D)}} \) die Determinante der fraktalen Metrik ist – ein Maß für die fraktale Volumenänderung.
+Diese Gleichungen sind \emph{glatt} – sie enthalten nur gewöhnliche Ableitungen. Die Felder \( \vec{E}_g \) und \( \vec{B}_g \) sind kontinuierlich und differenzierbar.
 
-\section{Die fraktalen Maxwell-Gleichungen der Gravitation}
+\section{Fraktale Quellterme}
 
-Für die Gravitation existiert eine analoge Struktur. Aus der DSTT folgen zwei Felder:
-
-\begin{itemize}
-    \item Das gravito-elektrische Feld \( \vec{E}_g \) (entspricht der radialen Schwerewirkung)
-    \item Das gravito-magnetische Feld \( \vec{B}_g \) (entspricht der tangentialen Trägheitsantwort)
-\end{itemize}
-
-Im fraktalen Raum lauten ihre Gleichungen:
+Die fraktale Struktur des Raumes manifestiert sich in den Quelltermen. Für eine radialsymmetrische Massenverteilung gilt:
 
 \[
-\begin{aligned}
-\nabla_D \cdot \vec{E}_g &= -4\pi G \rho_{\text{eff}} \cdot \left( \frac{r}{r_0} \right)^{D-3} \\
-\nabla_D \cdot \vec{B}_g &= 0 \\
-\nabla_D \times \vec{E}_g &= -\frac{\partial \vec{B}_g}{\partial t} \cdot \left( \frac{r}{r_0} \right)^{D-3} \\
-\nabla_D \times \vec{B}_g &= \mu_g \vec{j}_g \cdot \left( \frac{r}{r_0} \right)^{D-3} + \mu_g \epsilon_g \frac{\partial \vec{E}_g}{\partial t} \cdot \left( \frac{r}{r_0} \right)^{D-3}
-\end{aligned}
+\rho_{\text{eff}}(r) = \rho_0 \left( \frac{r}{l_0} \right)^{D-3}
 \]
 
-Dabei sind \( \rho_{\text{eff}} \) die effektive Massendichte, \( \vec{j}_g \) der Massenstrom, und \( \epsilon_g, \mu_g \) die entsprechenden Konstanten mit \( \epsilon_g \mu_g = 1/c^2 \).
-
-\section{Die Wellengleichung im fraktalen Raum}
-
-Aus den fraktalen Maxwell-Gleichungen folgt eine modifizierte Wellengleichung. Für das elektrische Feld im Vakuum:
+Dabei ist \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \) die fundamentale Längenskala. Für \( D \approx 2,704 \) ist \( D-3 \approx -0,296 \), also
 
 \[
-\nabla_D^2 \mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0
+\rho_{\text{eff}}(r) \propto r^{-0,296}.
 \]
 
-Die Eigenfunktionen sind keine ebenen Wellen \( e^{i(kx - \omega t)} \), sondern fraktale Wellenfunktionen. Im Zentralfeld lautet die Lösung:
+Die eingeschlossene Masse innerhalb des Radius \( r \) ist dann:
 
 \[
-\mathbf{E}(r, \phi, t) = \mathbf{E}_0 \cdot r^{D-2} \cdot e^{i(k\phi - \omega t)}
+M(r) = \int_0^r \rho_{\text{eff}}(r') \cdot 4\pi r'^2 \, dr' = 4\pi \rho_0 l_0^{3-D} \frac{r^D}{D}.
 \]
 
-Das sind Spiralwellen – genau wie die Bahnformen der DSTT. Die Amplitude skaliert mit \( r^{D-2} \approx r^{0,704} \) (für \( D \approx 2,704 \)), und die Phase ist proportional zum Winkel \( \phi \).
+\subsection{Allgemeiner Fall}
 
-Für die Gravitation ergibt sich analog:
+Für nicht-radialsymmetrische Verteilungen lautet der Zusammenhang zwischen Massendichte und fraktaler Struktur:
 
 \[
-\vec{E}_g(r, \phi, t) = \vec{E}_{g0} \cdot r^{D-2} \cdot e^{i(k\phi - \omega t)}
+\rho_{\text{eff}}(\vec{r}) = \rho_0 \left( \frac{|\vec{r}|}{l_0} \right)^{D-3} \cdot f(\theta, \phi)
 \]
 
-\section{Dispersionsrelation}
+wobei \( f(\theta, \phi) \) die Winkelabhängigkeit beschreibt. Die Feldgleichungen bleiben glatt – nur die Quellen sind fraktal skaliert.
 
-Für ebene Wellen (Näherung für große Entfernungen) ergibt sich mit der in Anhang E hergeleiteten Dispersionsrelation:
+\section{Dispersionsrelation aus der spektralen Dimension}
+
+Die Dispersionsrelation für Gravitationswellen folgt nicht aus fraktalen Differentialoperatoren, sondern aus der spektralen Dimension \( d_s \) des zugrundeliegenden diskreten Netzwerks (siehe Anhang N).
+
+Das Ergebnis ist:
 
 \[
-\omega^2 = c^2 k^2 \left( 1 + \alpha \left( \frac{k}{k_0} \right)^{D-3} + \dots \right)
+\omega^2 = c^2 k^2 \cdot \left( \frac{k}{k_0} \right)^{2(D/3 - 1)} \quad \text{bzw.} \quad \omega \propto k^{D/3}.
 \]
 
-Mit \( D \approx 2,704 \) ist \( D-3 \approx -0,296 \), also:
+Mit \( D \approx 2,704 \) ist \( D/3 \approx 0,901 \), also eine schwache Abweichung vom linearen Gesetz \( \omega \propto k \). Die Phasengeschwindigkeit wird frequenzabhängig:
 
 \[
-\omega^2 = c^2 k^2 \left( 1 + \alpha \left( \frac{k}{k_0} \right)^{-0,296} + \dots \right)
+v_{\text{phase}}(\omega) = \frac{\omega}{k} \propto \omega^{1 - D/3} \approx \omega^{-0,099}.
 \]
 
-Das bedeutet: Licht und Gravitationswellen sind im fraktalen Raum minimal dispersiv. Verschiedene Frequenzen breiten sich mit leicht unterschiedlicher Geschwindigkeit aus – ein Effekt, der bei extrem hohen Frequenzen oder über kosmische Distanzen messbar sein könnte.
+Für die Herleitung dieser Dispersionsrelation sei auf Anhang N verwiesen. Dort wird gezeigt, dass sie allein aus der spektralen Dimension \( d_s = 2D/3 \) folgt, die wiederum aus der dualen Dodekaeder-Ikosaeder-Struktur des diskreten Netzwerks gewonnen wird.
 
-\section{Konsequenzen}
+\section{Konsequenzen für die Physik}
 
-\subsection{Keine Unendlichkeiten – keine Renormierung nötig}
+\subsection{Keine Renormierung nötig}
 
-In der fraktalen Elektrodynamik sind viele Integrale, die in der QED divergieren, automatisch endlich. Der Grund: Die fraktale Dimension \( D < 3 \) wirkt als natürlicher Cutoff. Die Renormierung wird überflüssig.
+Die fraktale Struktur des Raumes wirkt als natürlicher Cutoff. Integrale, die in der Quantenfeldtheorie divergieren, werden durch die gebrochene Dimension regularisiert:
+
+\[
+\int_0^{\Lambda} k^{D-1} \, dk \quad \text{konvergiert für } D < 3.
+\]
+
+Eine Renormierung ist nicht erforderlich.
 
 \subsection{Skalierungsgesetze in Plasmen}
 
-In Laborplasmen und astrophysikalischen Plasmen sagt die Theorie spezifische Skalierungsgesetze voraus:
+Aus der fraktalen Quellverteilung folgen spezifische Skalierungsgesetze:
 
 \[
 j(r) \propto r^{D-3} \approx r^{-0,296}
 \]
 
+Dies ist eine testbare Vorhersage für astrophysikalische Plasmen (siehe Kapitel 15).
+
 \subsection{Einheit von Elektrodynamik und Gravitation}
 
-Die fraktalen Maxwell-Gleichungen für Elektrodynamik und Gravitation haben dieselbe mathematische Struktur. Sie unterscheiden sich nur in den Konstanten und der Interpretation der Felder. Dies ist die langgesuchte Einheit der Physik – nicht durch komplizierte Symmetriegruppen, sondern durch den gemeinsamen fraktalen Raum.
+Die Maxwell-Gleichungen für Elektrodynamik und Gravitation haben dieselbe mathematische Struktur – sowohl in der glatten Formulierung als auch in der fraktalen Skalierung der Quellen. Die Unterschiede liegen allein in den Kopplungskonstanten und der Interpretation der Felder.
 
 \section{Zusammenfassung}
 
-Die fraktalen Maxwell-Gleichungen sind die natürliche Konsequenz aus der WDBT+ und ihrem fraktalen Raummodell mit \( D \approx 2,704 \). Sie:
+Die Maxwell-Gravitation im fraktalen Raum wird wie folgt beschrieben:
 
 \begin{itemize}
-    \item Erklären die Feinstrukturkonstante
-    \item Beseitigen Unendlichkeiten (keine Renormierung nötig)
-    \item Liefern die beobachteten Skalierungsgesetze in Plasmen
-    \item Vereinheitlichen Elektrodynamik und Gravitation
-    \item Stehen in direkter Verbindung zur DSTT (Spiralbahnen)
-    \item Machen testbare Vorhersagen (Dispersion von Gravitationswellen)
+    \item \textbf{Feldgleichungen:} Glatt (gewöhnliche Ableitungen)
+    \item \textbf{Quellen:} Fraktal skaliert (\( \rho_{\text{eff}} \propto r^{D-3} \))
+    \item \textbf{Dispersionsrelation:} \( \omega \propto k^{D/3} \) (aus spektraler Dimension, siehe Anhang N)
 \end{itemize}
 
-Die Maxwell-Gleichungen im glatten Raum sind nur der Grenzfall \( D \to 3 \) einer tieferen, fraktalen Elektrodynamik.
+Die Maxwell-Gleichungen im glatten Raum (\( D = 3 \)) sind der Spezialfall einer homogenen Quellverteilung. Die hier vorgestellte Formulierung ist mathematisch konsistent und vermeidet die Probleme fraktaler Differentialoperatoren.
+
+\subsection*{Verweise}
+
+\begin{itemize}
+    \item Zur Herleitung der spektralen Dimension siehe Anhang N.
+    \item Zu den testbaren Vorhersagen siehe Kapitel 15.
+    \item Zur glatten Maxwell-Gravitation siehe Kapitel 9.
+\end{itemize}
