@@ -6,23 +6,58 @@ Die WDBT+ führt zu einem stationären, nicht-expandierenden Universum. Die beob
 
 Dieses Kapitel beschreibt die Grundzüge dieser Kosmologie: Rotverschiebung, Galaxienrotation, Materieentstehung, Galaxienwachstum und die Interpretation des Sonnenwinds.
 
-\section{Rotverschiebung ohne Expansion}
+\section{Grundlagen der Rotverschiebung in der WDBT}
 
-In der WDBT+ ist die Rotverschiebung keine Doppler-Verschiebung durch Expansion, sondern eine kumulative gravitative Wirkung auf Photonen während ihrer Reise durch das \( \Omega \)-Feld.
+\subsection{Allgemeine Form}
 
-Aus der fraktalen Dichteverteilung \( \rho(r) \propto r^{D-3} \) (siehe Kapitel 6) folgt für die Rotverschiebung \( z \) in Abhängigkeit von der Entfernung \( d \):
+Die allgemeine, aus den Weber-Kräften folgende Rotverschiebung für ein Lichtsignal, das eine radialsymmetrische Massenverteilung \( M(r) \) durchläuft, lautet:
 
 \[
-z(d) = \frac{4\pi G\rho_0 l_0^{3-D}}{D(D-1)c^2} \, d^{\,D-1}
+z = \frac{1}{c^2} \int_0^d \frac{G M(r)}{r^2} \, dr \qquad \text{(allgemeine Form)}
 \]
 
-Die vollständige Herleitung findet sich in Anhang D. Die effektive Hubble-Konstante wird skalenabhängig:
+Diese Gleichung gilt für jede Massenverteilung und enthält keine fraktale Dimension \( D \). Sie ist die Grundlage der Rotverschiebung in der WDBT.
+
+\subsection{Rotverschiebung ohne Expansion}
+
+In der WDBT+ ist die Rotverschiebung keine Doppler-Verschiebung durch Expansion, sondern eine kumulative gravitative Wirkung auf Photonen während ihrer Reise durch das \( \Omega \)-Feld. Die allgemeine Form (siehe oben) beschreibt genau diesen Effekt.
+
+\subsection{Fraktale Dichteverteilung als Spezialfall}
+
+Nimmt man speziell die fraktale Dichteverteilung der WDBT+ an (siehe Kapitel 6),
+
+\[
+\rho(r) = \rho_0 \left( \frac{r}{l_0} \right)^{D-3},
+\]
+
+so ergibt sich für die eingeschlossene Masse:
+
+\[
+M(r) = \int_0^r \rho(r') \cdot 4\pi r'^2 \, dr' = 4\pi \rho_0 l_0^{3-D} \frac{r^D}{D}.
+\]
+
+Einsetzen in die allgemeine Form liefert:
+
+\[
+z(d) = \frac{1}{c^2} \int_0^d \frac{G}{r^2} \cdot 4\pi \rho_0 l_0^{3-D} \frac{r^D}{D} \, dr
+     = \frac{4\pi G \rho_0 l_0^{3-D}}{D c^2} \int_0^d r^{D-2} \, dr.
+\]
+
+Das Integral ergibt \( \int_0^d r^{D-2} dr = d^{D-1} / (D-1) \), und man erhält:
+
+\[
+z(d) = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-1) c^2} \, d^{\,D-1}.
+\]
+
+Dies ist die in der Literatur häufig zitierte Form. Sie ist ein Spezialfall der allgemeinen WDBT-Rotverschiebung für den Fall einer fraktalen Dichteverteilung. Für \( D \to 3 \) geht die fraktale Verteilung in eine konstante Dichte über.
+
+Die effektive Hubble-Konstante wird skalenabhängig:
 
 \[
 H_{\text{eff}}(d) = c \cdot \frac{z(d)}{d} \propto d^{D-2}
 \]
 
-Mit \( D \approx 2,704 \) folgt \( H_{\text{eff}}(d) \propto d^{-0,296} \). Unterschiedliche Messmethoden, die auf verschiedenen Entfernungsskalen operieren, müssen daher systematisch unterschiedliche \( H_0 \)-Werte ergeben -- dies erklärt die beobachtete Hubble-Spannung (siehe separate Arbeit des Autors).
+Mit \( D \approx 2,704 \) folgt \( H_{\text{eff}}(d) \propto d^{0,704} \). Die vollständige Herleitung findet sich in Anhang D.
 
 Da \( \beta \) für Photonen von der Energie abhängt, zeigen verschiedene Frequenzen leicht unterschiedliche Rotverschiebungen. Dieser Effekt ist klein, aber mit Pulsar-Laufzeiten oder hochpräzisen Spektren messbar.
 
@@ -183,7 +218,7 @@ Die folgende Tabelle fasst die Unterschiede zwischen der Standardkosmologie und 
 Die WDBT+ führt zu einem stationären, nicht-expandierenden Universum:
 
 \begin{itemize}
-    \item Die Rotverschiebung ist keine Folge der Expansion, sondern kumulative Gravitation.
+    \item Die Rotverschiebung ist keine Folge der Expansion, sondern kumulative Gravitation. Die allgemeine Form \( z = \frac{1}{c^2} \int \frac{GM(r)}{r^2} dr \) ist die Grundlage; die fraktale Dichteverteilung ist ein Spezialfall.
     \item Flache Rotationskurven werden ohne Dunkle Materie durch das \( \Omega \)-Feld und die anisotrope Trägheit der DSTT erklärt.
     \item Das Quantenpotential erzeugt kontinuierlich neue Materie, die durch DSTT-Drift nach außen getrieben wird.
     \item Galaxien wachsen von innen nach außen; das Massenverhältnis Galaxie/Kern folgt aus der fraktalen Raumdimension \( D \).
