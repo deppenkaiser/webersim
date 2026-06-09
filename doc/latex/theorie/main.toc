@@ -314,7 +314,7 @@
 \contentsline {subsection}{\numberline {B.4.1}Raumemergenz}{107}{}%
 \contentsline {subsection}{\numberline {B.4.2}Zeitemergenz}{107}{}%
 \contentsline {section}{\numberline {B.5}Validierung und Konsistenzchecks}{107}{}%
-\contentsline {subsection}{\numberline {B.5.1}Erhaltungsgr\"o{\ss }en}{107}{}%
+\contentsline {subsection}{\numberline {B.5.1}Erhaltungsgrö{\ss }en}{107}{}%
 \contentsline {subsection}{\numberline {B.5.2}Grenzfalltests}{108}{}%
 \contentsline {section}{\numberline {B.6}Anwendungsbeispiele}{108}{}%
 \contentsline {subsection}{\numberline {B.6.1}Doppelspaltexperiment}{108}{}%
@@ -324,7 +324,7 @@
 \contentsline {subsection}{\numberline {B.7.1}Performance-Optimierungen}{108}{}%
 \contentsline {subsection}{\numberline {B.7.2}Visualisierung}{109}{}%
 \contentsline {section}{\numberline {B.8}Zusammenfassung}{109}{}%
-\contentsline {subsection}{\numberline {B.8.1}Zuk\"unftige Entwicklung}{109}{}%
+\contentsline {subsection}{\numberline {B.8.1}Zukünftige Entwicklung}{109}{}%
 \contentsline {chapter}{\numberline {C}Vergleich mit etablierten Theorien}{111}{}%
 \contentsline {section}{\numberline {C.1}Einleitung}{111}{}%
 \contentsline {section}{\numberline {C.2}Vergleich mit der klassischen Mechanik}{111}{}%
@@ -335,24 +335,24 @@
 \contentsline {section}{\numberline {C.3}Vergleich mit der Elektrodynamik}{112}{}%
 \contentsline {subsection}{\numberline {C.3.1}Drei Formen der Elektrodynamik}{112}{}%
 \contentsline {subsection}{\numberline {C.3.2}Maxwell-Theorie als effektive Feldbeschreibung}{112}{}%
-\contentsline {subsection}{\numberline {C.3.3}Lorentz-Kraft als ph\"anomenologische N\"aherung}{112}{}%
+\contentsline {subsection}{\numberline {C.3.3}Lorentz-Kraft als phänomenologische Näherung}{112}{}%
 \contentsline {subsection}{\numberline {C.3.4}Weber-Kraft als lokaler Grenzfall der IWT}{112}{}%
 \contentsline {section}{\numberline {C.4}Vergleich mit der Quantenmechanik}{113}{}%
 \contentsline {subsection}{\numberline {C.4.1}Fundamentale Konzepte}{113}{}%
 \contentsline {subsection}{\numberline {C.4.2}Emergenz aus der IWT}{113}{}%
-\contentsline {subsection}{\numberline {C.4.3}Emergente Schr\"odinger-Gleichung}{113}{}%
-\contentsline {section}{\numberline {C.5}Vergleich mit der Relativit\"atstheorie}{113}{}%
-\contentsline {subsection}{\numberline {C.5.1}Spezielle Relativit\"atstheorie (SRT)}{113}{}%
-\contentsline {subsection}{\numberline {C.5.2}Allgemeine Relativit\"atstheorie (ART)}{114}{}%
+\contentsline {subsection}{\numberline {C.4.3}Emergente Schrödinger-Gleichung}{113}{}%
+\contentsline {section}{\numberline {C.5}Vergleich mit der Relativitätstheorie}{113}{}%
+\contentsline {subsection}{\numberline {C.5.1}Spezielle Relativitätstheorie (SRT)}{113}{}%
+\contentsline {subsection}{\numberline {C.5.2}Allgemeine Relativitätstheorie (ART)}{114}{}%
 \contentsline {subsection}{\numberline {C.5.3}Emergente Einstein-Gleichungen}{114}{}%
-\contentsline {section}{\numberline {C.6}Grenzf\"alle und \"Uberg\"ange}{114}{}%
+\contentsline {section}{\numberline {C.6}Grenzfälle und \"Ubergänge}{114}{}%
 \contentsline {section}{\numberline {C.7}Vergleich mit der Quantenelektrodynamik (QED)}{114}{}%
 \contentsline {subsection}{\numberline {C.7.1}Korrespondenz zwischen QED und WDBT}{114}{}%
 \contentsline {subsection}{\numberline {C.7.2}Regularisierung durch das Quantenpotential}{114}{}%
 \contentsline {subsection}{\numberline {C.7.3}Lamb-Shift}{115}{}%
-\contentsline {section}{\numberline {C.8}Vergleich mit der Allgemeinen Relativit\"atstheorie (ART)}{115}{}%
-\contentsline {subsection}{\numberline {C.8.1}Die unvollst\"andige ART}{115}{}%
-\contentsline {subsection}{\numberline {C.8.2}ART+ als Vervollst\"andigung durch die DBT}{115}{}%
+\contentsline {section}{\numberline {C.8}Vergleich mit der Allgemeinen Relativitätstheorie (ART)}{115}{}%
+\contentsline {subsection}{\numberline {C.8.1}Die unvollständige ART}{115}{}%
+\contentsline {subsection}{\numberline {C.8.2}ART+ als Vervollständigung durch die DBT}{115}{}%
 \contentsline {subsection}{\numberline {C.8.3}Konvergente Theorien: ART+ vs. WDBT}{115}{}%
 \contentsline {subsection}{\numberline {C.8.4}Der experimentelle Entscheid}{115}{}%
 \contentsline {section}{\numberline {C.9}Zusammenfassung der Vergleiche}{116}{}%

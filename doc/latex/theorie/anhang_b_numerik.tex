@@ -5,7 +5,7 @@
 Die diskrete Formulierung der IWT und der WDBT+ ist algorithmisch direkt implementierbar. Die numerischen Methoden dienen drei Hauptzwecken:
 
 \begin{enumerate}
-    \item \textbf{Validierung:} \"Uberpr\"ufung der internen Konsistenz der Theorie
+    \item \textbf{Validierung:} überprüfung der internen Konsistenz der Theorie
     \item \textbf{Emergenznachweis:} Demonstration, wie kontinuierliche Physik aus diskreter Dynamik entsteht
     \item \textbf{Vorhersagegenerierung:} Berechnung testbarer experimenteller Konsequenzen
 \end{enumerate}
@@ -25,7 +25,7 @@ Die Simulation arbeitet mit einem diskreten Netzwerk \( \mathcal{N} \), bestehen
 \begin{itemize}
     \item \( N \): Anzahl der Informationsknoten (typisch \( 10^3 \) bis \( 10^6 \))
     \item \( I_k^{(n)} \): Informationswert am Knoten \( k \) zum Zeitschritt \( n \)
-    \item \( K_{kl}^{(n)} \): Kopplungsst\"arke zwischen Knoten \( k \) und \( l \)
+    \item \( K_{kl}^{(n)} \): Kopplungsstärke zwischen Knoten \( k \) und \( l \)
     \item \( g_{kl}^{(n)} \): Emergente Metrik zwischen \( k \) und \( l \)
 \end{itemize}
 
@@ -41,7 +41,7 @@ Simulationstyp & Initialisierung \( I_k^{(0)} \) & Kopplungsmatrix \( K_{kl}^{(0
 Leeres Vakuum & Gleichverteilung \( I_k^{(0)} = I_0 \) & Fraktales Muster mit \( D \approx 2,704 \) \\
 Teilchensystem & Lokalisierte Peaks an Teilchenpositionen & Nachbarschaftskopplung \\
 Kosmologie & Gro{\ss}e Skalenfluktuationen & Skaleninvariantes fraktales Netz \\
-Quantensystem & Koh\"arente Phasenverteilung & Globale Langreichweitkopplung \\
+Quantensystem & Kohärente Phasenverteilung & Globale Langreichweitkopplung \\
 \hline
 \end{tabular}
 
@@ -79,7 +79,7 @@ Die lokale Dynamik wird durch die diskrete Weber-Kraft implementiert:
 
 mit \( \Delta r_{ij}^{(n)} = r_{ij}^{(n)} - r_{ij}^{(n-1)} \) und \( \Delta^2 r_{ij}^{(n)} = r_{ij}^{(n+1)} - 2r_{ij}^{(n)} + r_{ij}^{(n-1)} \).
 
-Berechnungsschritte f\"ur zwei Ladungen:
+Berechnungsschritte für zwei Ladungen:
 
 \begin{enumerate}
     \item Relative Position: \( \vec{r}^{(n)} = \vec{r}_1^{(n)} - \vec{r}_2^{(n)} \)
@@ -92,7 +92,7 @@ Berechnungsschritte f\"ur zwei Ladungen:
 
 \subsection{Diskretes Bohm-Potential}
 
-Die globale Dynamik berechnet das Bohm-Potential \"uber:
+Die globale Dynamik berechnet das Bohm-Potential über:
 
 \[
 Q_k^{(n)} = -\frac{\hbar^2}{2m} \frac{\Delta_d^2 \sqrt{I_k^{(n)}}}{\sqrt{I_k^{(n)}}}
@@ -140,9 +140,9 @@ Algorithmus 2: Raumrekonstruktion
 
 \section{Validierung und Konsistenzchecks}
 
-\subsection{Erhaltungsgr\"o{\ss}en}
+\subsection{Erhaltungsgrö{\ss}en}
 
-Die Simulation \"uberpr\"uft kontinuierlich:
+Die Simulation überprüft kontinuierlich:
 
 \noindent
 \textbf{Informationserhaltung:}
@@ -173,10 +173,10 @@ E^{(n)} = \sum_k \left[ \frac{1}{2} \alpha \left( \frac{I_k^{(n)} - I_k^{(n-1)}}
 \hline
 Parameterbereich & Erwartete Emergenz & Simulationsergebnis \\
 \hline
-\( \lambda \ll \alpha, T \to 0 \) & Newtonsche Mechanik & Best\"atigt (Abweichung \( < 10^{-6} \)) \\
-\( \lambda \gg \alpha, \Delta\phi \) koh\"arent & Schr\"odinger-Gleichung & Best\"atigt (\"Ubereinstimmung \( > 99\% \)) \\
-Gro{\ss}es \( N \), fraktales Netz & ART-Geometrie & Teilweise best\"atigt \\
-Starke Kopplung, kleine Skalen & Frequenzabh\"angige Effekte & Klare Signale \\
+\( \lambda \ll \alpha, T \to 0 \) & Newtonsche Mechanik & Bestätigt (Abweichung \( < 10^{-6} \)) \\
+\( \lambda \gg \alpha, \Delta\phi \) kohärent & Schrödinger-Gleichung & Bestätigt (Übereinstimmung \( > 99\% \)) \\
+Gro{\ss}es \( N \), fraktales Netz & ART-Geometrie & Teilweise bestätigt \\
+Starke Kopplung, kleine Skalen & Frequenzabhängige Effekte & Klare Signale \\
 \hline
 \end{tabular}
 
@@ -187,7 +187,7 @@ Starke Kopplung, kleine Skalen & Frequenzabh\"angige Effekte & Klare Signale \\
 \begin{itemize}
     \item \textbf{Ziel:} Reproduktion von Interferenz ohne Wellenfunktion
     \item \textbf{Setup:} 1000 Knoten, periodische Randbedingungen
-    \item \textbf{Ergebnis:} Interferenzmuster mit erwarteter Periodizit\"at
+    \item \textbf{Ergebnis:} Interferenzmuster mit erwarteter Periodizität
     \item \textbf{Besonderheit:} Fraktale Feinstruktur mit \( D \approx 2,704 \)
 \end{itemize}
 
@@ -196,7 +196,7 @@ Starke Kopplung, kleine Skalen & Frequenzabh\"angige Effekte & Klare Signale \\
 \begin{itemize}
     \item \textbf{Ziel:} Emergenz des Newtonschen Potentials
     \item \textbf{Setup:} Zentraler Massenknoten mit \( I_{\text{central}} \gg I_{\text{Umgebung}} \)
-    \item \textbf{Ergebnis:} \( \Phi(r) \propto 1/r \) f\"ur \( r > \lambda_0 \)
+    \item \textbf{Ergebnis:} \( \Phi(r) \propto 1/r \) für \( r > \lambda_0 \)
     \item \textbf{Abweichung:} Fraktale Korrektur \( \Phi(r) \propto r^{-(3-D)} \) bei kleinen Skalen
 \end{itemize}
 
@@ -214,19 +214,19 @@ Starke Kopplung, kleine Skalen & Frequenzabh\"angige Effekte & Klare Signale \\
 \subsection{Performance-Optimierungen}
 
 \begin{itemize}
-    \item \textbf{Parallelisierung:} Nutzung von GPU-Clustern f\"ur gro{\ss}e \( N \)
-    \item \textbf{Approximation:} Baumalgorithmen (Barnes-Hut) f\"ur weitreichende Kopplungen
-    \item \textbf{Adaptive Zeitschritte:} Variable \( T \) bei schnellen \"Anderungen
-    \item \textbf{Speicheroptimierung:} Sparse-Matrix-Darstellung f\"ur \( K_{kl} \)
+    \item \textbf{Parallelisierung:} Nutzung von GPU-Clustern für gro{\ss}e \( N \)
+    \item \textbf{Approximation:} Baumalgorithmen (Barnes-Hut) für weitreichende Kopplungen
+    \item \textbf{Adaptive Zeitschritte:} Variable \( T \) bei schnellen änderungen
+    \item \textbf{Speicheroptimierung:} Sparse-Matrix-Darstellung für \( K_{kl} \)
 \end{itemize}
 
 \subsection{Visualisierung}
 
 \begin{itemize}
     \item 3D-Darstellung: Einbettung der emergenten Raumgeometrie
-    \item Farbkodierung: \( I_k \) (Intensit\"at), \( Q_k \) (Phase), \( g_{kl} \) (Abstand)
+    \item Farbkodierung: \( I_k \) (Intensität), \( Q_k \) (Phase), \( g_{kl} \) (Abstand)
     \item Animation: Zeitliche Entwicklung der Informationsverteilung
-    \item Korrelationen: Visualisierung von nichtlokalen Zusammenh\"angen
+    \item Korrelationen: Visualisierung von nichtlokalen Zusammenhängen
 \end{itemize}
 
 \section{Zusammenfassung}
@@ -234,16 +234,16 @@ Starke Kopplung, kleine Skalen & Frequenzabh\"angige Effekte & Klare Signale \\
 Die numerische Simulation der IWT zeigt:
 
 \begin{itemize}
-    \item Die Theorie ist algorithmisch vollst\"andig umsetzbar.
+    \item Die Theorie ist algorithmisch vollständig umsetzbar.
     \item Alle fundamentalen Gleichungen sind numerisch stabil.
     \item Die Emergenz etablierter Physik ist reproduzierbar.
-    \item Die fraktale Dimension \( D \approx 2,704 \) erscheint als nat\"urliche Konsequenz.
+    \item Die fraktale Dimension \( D \approx 2,704 \) erscheint als natürliche Konsequenz.
 \end{itemize}
 
-\subsection{Zuk\"unftige Entwicklung}
+\subsection{Zukünftige Entwicklung}
 
 \begin{itemize}
     \item Hochleistungssimulationen: Skalierung auf \( N > 10^9 \) Knoten
     \item Quantitativer Vergleich: Direkter Abgleich mit experimentellen Daten
-    \item Phasen\"uber\"g\"ange: Systematische Untersuchung der Regime-\"Uberg\"ange
+    \item Phasenübergänge: Systematische Untersuchung der Regime-übergänge
 \end{itemize}
