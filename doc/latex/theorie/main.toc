@@ -217,16 +217,16 @@
 \contentsline {section}{\numberline {14.1}Einleitung}{85}{}%
 \contentsline {section}{\numberline {14.2}Rotverschiebung ohne Expansion}{85}{}%
 \contentsline {section}{\numberline {14.3}Galaxienrotation ohne Dunkle Materie}{85}{}%
-\contentsline {subsection}{\numberline {14.3.1}Dichteverteilung}{85}{}%
+\contentsline {subsection}{\numberline {14.3.1}Dichteverteilung}{86}{}%
 \contentsline {subsection}{\numberline {14.3.2}Rotationskurve}{86}{}%
 \contentsline {section}{\numberline {14.4}Kontinuierliche Materieentstehung}{86}{}%
 \contentsline {subsection}{\numberline {14.4.1}Drift und Einfang}{86}{}%
-\contentsline {section}{\numberline {14.5}Galaxienwachstum}{86}{}%
-\contentsline {subsection}{\numberline {14.5.1}Massenverhältnis Galaxie zu Kern}{86}{}%
+\contentsline {section}{\numberline {14.5}Galaxienwachstum}{87}{}%
+\contentsline {subsection}{\numberline {14.5.1}Massenverhältnis Galaxie zu Kern}{87}{}%
 \contentsline {section}{\numberline {14.6}Die Sonne als Mikrokosmos}{87}{}%
 \contentsline {subsection}{\numberline {14.6.1}Interpretation des Sonnenwinds}{87}{}%
 \contentsline {section}{\numberline {14.7}Beobachtbare Signaturen: Der EHT-Schatten}{87}{}%
-\contentsline {section}{\numberline {14.8}Vergleich mit dem Standardmodell}{87}{}%
+\contentsline {section}{\numberline {14.8}Vergleich mit dem Standardmodell}{88}{}%
 \contentsline {section}{\numberline {14.9}Zusammenfassung}{88}{}%
 \contentsline {chapter}{\numberline {15}Testbare Vorhersagen}{89}{}%
 \contentsline {section}{\numberline {15.1}Einleitung}{89}{}%
