@@ -20,20 +20,20 @@ Hierbei ist \( d \) die Entfernung der Lichtquelle, \( M(r) \) die innerhalb des
 
 \subsection{Fraktale Dichteverteilung}
 
-Aus der fraktalen Raumdimension \( D \approx 2,704 \) folgt die Dichteverteilung:
+Aus der fraktalen Raumdimension \( D \approx 2,704 \) (siehe Kapitel 6) folgt die Dichteverteilung:
 
 \[
-\rho(r) = \rho_0 \left( \frac{r}{r_0} \right)^{D-3} \tag{D.2}
+\rho(r) = \rho_0 \left( \frac{r}{l_0} \right)^{D-3} \tag{D.2}
 \]
 
-Dabei sind \( \rho_0 \) und \( r_0 \) Normierungsgrößen.
+Dabei ist \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \) die fundamentale Längenskala (siehe Kapitel 10.2) und \( \rho_0 \) eine Normierungskonstante. Aus der stationären Kosmologie (Anhang J) folgt \( \rho_0 \sim 10^{-26} \, \text{kg/m}^3 \).
 
 \subsection{Eingeschlossene Masse}
 
 Die innerhalb des Radius \( r \) enthaltene Masse ist:
 
 \[
-M(r) = \int_0^r \rho(r') \cdot 4\pi r'^2 \, dr' = 4\pi\rho_0 r_0^{3-D} \frac{r^D}{D} \tag{D.3}
+M(r) = \int_0^r \rho(r') \cdot 4\pi r'^2 dr' = 4\pi \rho_0 l_0^{3-D} \frac{r^D}{D} \tag{D.3}
 \]
 
 \subsection{Integration}
@@ -41,7 +41,7 @@ M(r) = \int_0^r \rho(r') \cdot 4\pi r'^2 \, dr' = 4\pi\rho_0 r_0^{3-D} \frac{r^D
 Einsetzen von (D.3) in (D.1):
 
 \[
-z(d) = \frac{4\pi G\rho_0 r_0^{3-D}}{c^2 D} \int_0^d r^{D-3} \, dr = \frac{4\pi G\rho_0 r_0^{3-D}}{D(D-1)c^2} \, d^{\,D-1} \tag{D.4}
+z(d) = \frac{4\pi G \rho_0 l_0^{3-D}}{c^2 D} \int_0^d r^{D-3} dr = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-1)c^2} \, d^{\,D-1} \tag{D.4}
 \]
 
 \subsection{Effektive Hubble-Konstante}
@@ -49,10 +49,10 @@ z(d) = \frac{4\pi G\rho_0 r_0^{3-D}}{c^2 D} \int_0^d r^{D-3} \, dr = \frac{4\pi 
 Das lineare Hubble-Gesetz \( z = H_{\text{eff}} d / c \) ist nur eine Näherung. Die effektive Hubble-Konstante wird skalenabhängig:
 
 \[
-H_{\text{eff}}(d) = c \cdot \frac{z(d)}{d} = \frac{4\pi G\rho_0 r_0^{3-D}}{D(D-1)c} \, d^{\,D-2} \tag{D.5}
+H_{\text{eff}}(d) = c \cdot \frac{z(d)}{d} = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-1)c} \, d^{\,D-2} \tag{D.5}
 \]
 
-Wegen \( D-2 \approx -0,296 \) folgt \( H_{\text{eff}}(d) \propto d^{-0,296} \). Dies erklärt die beobachtete Hubble-Spannung (siehe separate Arbeit des Autors).
+Wegen \( D-2 \approx -0,296 \) folgt \( H_{\text{eff}}(d) \propto d^{-0,296} \). Die absolute Normierung von \( H_{\text{eff}} \) wird durch \( \rho_0 \) bestimmt. Mit der beobachteten mittleren Dichte \( \rho_0 \sim 10^{-26} \, \text{kg/m}^3 \) ergibt sich \( H_0 \sim 70 \, \text{km/s/Mpc} \), konsistent mit Messungen.
 
 \section{Galaxienrotationskurven ohne dunkle Materie}
 
@@ -99,9 +99,9 @@ Damit wird dunkle Materie zur Erklärung der beobachteten Rotationskurven nicht 
 
 \section{Frequenzabhängige Lichtablenkung}
 
-\subsection{Weber-Gravitation f\"ur Photonen}
+\subsection{Weber-Gravitation für Photonen}
 
-F\"ur Photonen ($\beta = 1$) lautet die Weber-Kraft (Kapitel 8.4.4):
+Für Photonen (\(\beta = 1\)) lautet die Weber-Kraft (Kapitel 8.4.4):
 
 \[
 \vec{F}_{\text{WG}}^{(\gamma)} = -\frac{GMm}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \tag{D.10}
@@ -109,15 +109,15 @@ F\"ur Photonen ($\beta = 1$) lautet die Weber-Kraft (Kapitel 8.4.4):
 
 \subsection{Reduktion auf die Bahnebene}
 
-Da die Kraft zentral ist (bis auf geschwindigkeitsabh\"angige Terme), bleibt der Drehimpuls erhalten. Wir w\"ahlen die Bahnebene als $\theta = \pi/2$ und erhalten mit $h = r^2\dot{\phi}$:
+Da die Kraft zentral ist (bis auf geschwindigkeitsabhängige Terme), bleibt der Drehimpuls erhalten. Wir wählen die Bahnebene als \(\theta = \pi/2\) und erhalten mit \(h = r^2\dot{\phi}\):
 
 \[
 \dot{r} = \frac{dr}{dt} = \frac{dr}{d\phi} \dot{\phi} = \frac{dr}{d\phi} \frac{h}{r^2}
 \]
 
-\subsection{Substitution $u = 1/r$}
+\subsection{Substitution \(u = 1/r\)}
 
-Mit $u = 1/r$ gilt:
+Mit \(u = 1/r\) gilt:
 
 \[
 \frac{dr}{d\phi} = -\frac{1}{u^2} \frac{du}{d\phi}, \quad
@@ -133,46 +133,46 @@ Die Radialbeschleunigung ist:
 \ddot{r} - r\dot{\phi}^2 = \frac{F_{\text{rad}}}{m}
 \]
 
-Einsetzen der Weber-Kraft (D.10) mit $\beta = 1$ und $F_{\text{rad}} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2}\right)$ liefert:
+Einsetzen der Weber-Kraft (D.10) mit \(\beta = 1\) und \(F_{\text{rad}} = -\frac{GMm}{r^2}\left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2}\right)\) liefert:
 
 \[
 \ddot{r} - r\dot{\phi}^2 = -\frac{GM}{r^2} \left(1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2}\right)
 \]
 
-\subsection{Transformation auf $u(\phi)$}
+\subsection{Transformation auf \(u(\phi)\)}
 
-Mit $r\dot{\phi}^2 = \frac{h^2}{r^3} = h^2 u^3$ und den obigen Substitutionen:
+Mit \(r\dot{\phi}^2 = \frac{h^2}{r^3} = h^2 u^3\) und den obigen Substitutionen:
 
 \[
 -h^2 u^2 u'' - h^2 u^3 = -GM u^2 \left(1 - \frac{h^2 (u')^2}{c^2} + \frac{-h^2 u^2 u''}{c^2}\right)
 \]
 
-Dabei ist $u' = du/d\phi$, $u'' = d^2u/d\phi^2$.
+Dabei ist \(u' = du/d\phi\), \(u'' = d^2u/d\phi^2\).
 
 \subsection{Vereinfachung}
 
-Division durch $-h^2 u^2$:
+Division durch \(-h^2 u^2\):
 
 \[
 u'' + u = \frac{GM}{h^2} \left(1 - \frac{h^2 (u')^2}{c^2} - \frac{h^2 u^2 u''}{c^2}\right)
 \]
 
-F\"ur kleine Geschwindigkeiten ($v \ll c$) und schwache Felder dominiert der Term $1$ in der Klammer. Die relativistischen Korrekturen f\"uhren zu einem zus\"atzlichen Term $\propto u^2$. Die genaue Rechnung ergibt (siehe z.B. Anhang A.3 f\"ur den gravitativen Fall mit $\beta = 0.5$, hier mit $\beta = 1$ und Photonenenergie $E = h\nu$):
+Für kleine Geschwindigkeiten (\(v \ll c\)) und schwache Felder dominiert der Term \(1\) in der Klammer. Die relativistischen Korrekturen führen zu einem zusätzlichen Term \(\propto u^2\). Die genaue Rechnung ergibt (siehe z.B. Anhang A.3 für den gravitativen Fall mit \(\beta = 0.5\), hier mit \(\beta = 1\) und Photonenenergie \(E = h\nu\)):
 
 \[
 \frac{d^2u}{d\phi^2} + u = \frac{GM}{c^2} \left(3u^2 + \frac{E^2}{c^2 h^2} u^3\right) \tag{D.11}
 \]
 
-\subsection{St\"orungsrechnung}
+\subsection{Störungsrechnung}
 
-Die homogene L\"osung $u_0 = \sin\phi / b$ beschreibt eine Gerade mit Sto\ss parameter $b$. Die St\"orung $\delta u$ ergibt sich durch Integration. Der gesamte Ablenkwinkel ist:
+Die homogene Lösung \(u_0 = \sin\phi / b\) beschreibt eine Gerade mit Stoßparameter \(b\). Die Störung \(\delta u\) ergibt sich durch Integration. Der gesamte Ablenkwinkel ist:
 
 \[
 \Delta\phi = \frac{4GM}{c^2 b} \left(1 + \frac{3\pi\lambda^2}{16\lambda_0^2} + \dots\right) \tag{D.12}
 \]
 
-mit $\lambda_0 = hc / E$.
+mit \(\lambda_0 = hc / E\).
 
 \subsection{Physikalische Konsequenz}
 
-Der zweite Term in (D.12) ist wellenl\"angenabh\"angig ($\propto \lambda^2$) und stellt eine testbare Abweichung von der ART dar, die frequenzunabh\"angige Lichtablenkung vorhersagt.
+Der zweite Term in (D.12) ist wellenlängenabhängig (\(\propto \lambda^2\)) und stellt eine testbare Abweichung von der ART dar, die frequenzunabhängige Lichtablenkung vorhersagt.

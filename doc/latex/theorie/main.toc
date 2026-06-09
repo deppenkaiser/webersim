@@ -72,7 +72,7 @@
 \contentsline {section}{\numberline {5.6}Dynamik der diskreten Informationsmetrik}{41}{}%
 \contentsline {subsection}{\numberline {5.6.1}Kontinuierlicher Grenzfall}{42}{}%
 \contentsline {section}{\numberline {5.7}Zusammenfassung}{42}{}%
-\contentsline {chapter}{\numberline {6}Fraktale Informationsdimension \( D \)}{43}{}%
+\contentsline {chapter}{\numberline {6}Fraktale Informationsdimension D}{43}{}%
 \contentsline {section}{\numberline {6.1}Einleitung}{43}{}%
 \contentsline {section}{\numberline {6.2}Geometrischer Ursprung: Dodekaeder und goldener Schnitt}{43}{}%
 \contentsline {section}{\numberline {6.3}Fibonacci-Rekursion als Wachstumsgesetz}{43}{}%
@@ -82,7 +82,8 @@
 \contentsline {subsection}{\numberline {6.4.3}Fraktale Dimension}{44}{}%
 \contentsline {section}{\numberline {6.5}Numerischer Wert}{44}{}%
 \contentsline {section}{\numberline {6.6}Physikalische Bedeutung}{45}{}%
-\contentsline {section}{\numberline {6.7}Zusammenfassung}{45}{}%
+\contentsline {section}{\numberline {6.7}Zum Status der fraktalen Dimension}{45}{}%
+\contentsline {section}{\numberline {6.8}Zusammenfassung}{45}{}%
 \contentsline {chapter}{\numberline {7}Emergenz der Naturkonstanten}{47}{}%
 \contentsline {section}{\numberline {7.1}Zwei Ebenen physikalischer Konstanten}{47}{}%
 \contentsline {section}{\numberline {7.2}Fundamentale IWT-Parameter}{47}{}%
@@ -362,15 +363,15 @@
 \contentsline {subsection}{\numberline {D.3.1}Bewegungsgleichung}{116}{}%
 \contentsline {subsection}{\numberline {D.3.2}Quantenpotential für exponentielle Dichte}{116}{}%
 \contentsline {subsection}{\numberline {D.3.3}Rotationskurve}{116}{}%
-\contentsline {subsection}{\numberline {D.3.4}Asymptotisches Verhalten}{116}{}%
+\contentsline {subsection}{\numberline {D.3.4}Asymptotisches Verhalten}{117}{}%
 \contentsline {section}{\numberline {D.4}Frequenzabhängige Lichtablenkung}{117}{}%
-\contentsline {subsection}{\numberline {D.4.1}Weber-Gravitation f\"ur Photonen}{117}{}%
+\contentsline {subsection}{\numberline {D.4.1}Weber-Gravitation für Photonen}{117}{}%
 \contentsline {subsection}{\numberline {D.4.2}Reduktion auf die Bahnebene}{117}{}%
-\contentsline {subsection}{\numberline {D.4.3}Substitution $u = 1/r$}{117}{}%
+\contentsline {subsection}{\numberline {D.4.3}Substitution \(u = 1/r\)}{117}{}%
 \contentsline {subsection}{\numberline {D.4.4}Beschleunigung in Polarkoordinaten}{117}{}%
-\contentsline {subsection}{\numberline {D.4.5}Transformation auf $u(\phi )$}{117}{}%
-\contentsline {subsection}{\numberline {D.4.6}Vereinfachung}{117}{}%
-\contentsline {subsection}{\numberline {D.4.7}St\"orungsrechnung}{118}{}%
+\contentsline {subsection}{\numberline {D.4.5}Transformation auf \(u(\phi )\)}{117}{}%
+\contentsline {subsection}{\numberline {D.4.6}Vereinfachung}{118}{}%
+\contentsline {subsection}{\numberline {D.4.7}Störungsrechnung}{118}{}%
 \contentsline {subsection}{\numberline {D.4.8}Physikalische Konsequenz}{118}{}%
 \contentsline {chapter}{\numberline {E}Fraktale und fraktionale Analysis in der WDBT+}{119}{}%
 \contentsline {section}{\numberline {E.1}Einleitung}{119}{}%
