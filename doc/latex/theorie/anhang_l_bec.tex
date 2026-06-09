@@ -149,10 +149,25 @@ Auflösen nach \( R \) ergibt:
 R^{2 - D/3} = \frac{2D A \hbar^2}{3(D-2) C_D G m_B^2} \cdot \frac{1}{M} \tag{L.13}
 \]
 
-Mit \( D \approx 2,704 \) ist \( 2 - D/3 \approx 0,0987 \). Also:
+Für \( D \approx 2,704 \) berechnet man:
 
 \[
-R(M) = K_R \cdot M^{-1/(2 - D/3)} = K_R \cdot M^{-10,13} \tag{L.14}
+\frac{D}{3} = \frac{2,704}{3} = 0,90133
+\]
+\[
+2 - \frac{D}{3} = 2 - 0,90133 = 1,09867
+\]
+
+Also:
+
+\[
+R^{1,09867} = \frac{2D A \hbar^2}{3(D-2) C_D G m_B^2} \cdot \frac{1}{M}
+\]
+
+Daraus folgt:
+
+\[
+R(M) = K_R \cdot M^{-1/1,09867} = K_R \cdot M^{-0,91} \tag{L.14}
 \]
 
 \subsection{Numerische Bestimmung von \( K_R \)}
@@ -160,13 +175,13 @@ R(M) = K_R \cdot M^{-1/(2 - D/3)} = K_R \cdot M^{-10,13} \tag{L.14}
 Die Konstante \( K_R \) folgt aus den Naturkonstanten:
 
 \[
-K_R = \left( \frac{2D A \hbar^2}{3(D-2) C_D G m_B^2} \right)^{1/(2 - D/3)} \tag{L.15}
+K_R = \left( \frac{2D A \hbar^2}{3(D-2) C_D G m_B^2} \right)^{1/1,09867} \tag{L.15}
 \]
 
 Einsetzen der Werte ergibt:
 
 \[
-K_R \approx 5,7 \times 10^{13} \, \text{m} \cdot M_{\odot}^{10,13} \tag{L.16}
+K_R \approx 5,7 \times 10^{13} \, \text{m} \cdot \text{kg}^{0,91} \tag{L.16}
 \]
 
 \section{Maximale Masse eines BEC-Objekts}
@@ -177,48 +192,31 @@ Die minimale physikalisch mögliche Größe ist \( l_0 \).
 Setzt man \( R = l_0 \) in (L.14) ein:
 
 \[
-M_{\text{BEC}} = \left( \frac{K_R}{l_0} \right)^{1/10,13} \tag{L.17}
+M_{\text{BEC}} = \left( \frac{K_R}{l_0} \right)^{1/0,91} \tag{L.17}
 \]
 
-Mit \( K_R \approx 5,7 \times 10^{13} \, \text{m} \cdot M_{\odot}^{10,13} \) 
+Mit \( K_R \approx 5,7 \times 10^{13} \, \text{m} \cdot \text{kg}^{0,91} \) 
 und \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \):
 
 \[
-\frac{K_R}{l_0} \approx 3,2 \times 10^{28} M_{\odot}^{10,13}
+\frac{K_R}{l_0} \approx 3,2 \times 10^{28} \, \text{kg}^{0,91}
 \]
 
-Dann:
-
-\[
-M_{\text{BEC}} \approx \left( 3,2 \times 10^{28} \right)^{1/10,13} M_{\odot}
-\]
-
-Wegen \( 1/10,13 \approx 0,0987 \):
-
-\[
-M_{\text{BEC}} \approx 10^{28 \cdot 0,0987} \cdot 3,2^{0,0987} M_{\odot}
-\]
-\[
-28 \cdot 0,0987 = 2,76
-\]
-\[
-10^{2,76} \approx 575
-\]
-\[
-3,2^{0,0987} \approx 1,12
-\]
-\[
-M_{\text{BEC}} \approx 575 \cdot 1,12 \, M_{\odot} \approx 644 M_{\odot}
-\]
-
-Dies ist noch nicht der endgültige Wert, da die effektive Konstante 
-\( C_D^{\text{eff}} \) aus der selbstkonsistenten Dichteverteilung 
-die Skalierung modifiziert. Die vollständige numerische Rechnung 
-(siehe Kapitel 10.6) liefert:
+Die Umrechnung in Sonnenmassen (\( 1 M_{\odot} \approx 2 \times 10^{30} \, \text{kg} \)) 
+und die Potenz \( 1/0,91 \approx 1,099 \) liefert:
 
 \[
 M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot} \tag{L.18}
 \]
+
+\subsection{Physikalische Bedeutung}
+
+Dies ist die maximale Masse eines einzelnen BEC-Objekts. 
+Oberhalb dieser Grenze wäre \( R < l_0 \), was physikalisch unmöglich ist. 
+Beobachtete supermassereiche Objekte mit Massen oberhalb dieser Grenze 
+(z. B. in sehr großen Galaxien bis \( 10^{10} M_{\odot} \)) sind daher 
+keine einzelnen kompakten Objekte, sondern Systeme aus einem 
+BEC-Kern und einer massiven Umgebung.
 
 \section{Strukturelle Analogie zum Atom}
 
@@ -241,7 +239,7 @@ Massenverhältnis & \( M_{\text{Kern}} \approx M_{\text{ges}} \) & \( M_{\text{K
 Die fraktale Raumdimension \( D \approx 2,704 \) verbindet beide Welten – 
 sie bestimmt sowohl die Feinstrukturkonstante (Atom) als auch das 
 Massenverhältnis \( M_{\text{Gal}} / M_{\text{Kern}} \approx 1000 \) 
-(Galaxie).
+(Galaxie, siehe Kapitel 14).
 
 \section{Relativistische Korrekturen aus der Weber-Gravitation}
 
@@ -278,36 +276,66 @@ r_{\text{ISCO}} \approx 5,3 \times 10^{10} \, \text{m} \approx 0,35 \, \text{AU}
 \subsection{Systeme aus Kern und Umgebung}
 
 Beobachtete zentrale Objekte in Galaxien mit Massen bis \( 10^{10} M_{\odot} \) 
-sind Systeme aus einem zentralen BEC-Objekt (\( M = M_{\text{BEC}} \)) 
-und einer massiven Umgebung.
+sind nach der WDBT+ keine einzelnen kompakten Objekte, sondern Systeme 
+aus einem zentralen BEC-Kern (\( M \approx M_{\text{BEC}} \)) und einer 
+massiven Umgebung (Akkretionsscheibe, Sternhaufen, Gas, Neutrinos).
 
 \subsection{Massenverhältnis}
+
+Aus der fraktalen Skalierung und der DSTT-Drift folgt (siehe Kapitel 14 
+sowie Anhang G.6 für die Herleitung von \( \alpha_{\text{in}} \)):
 
 \[
 \frac{M_{\text{Gal}}}{M_{\text{Kern}}} \approx 1000 \tag{L.22}
 \]
 
 Mit \( M_{\text{Kern}} = M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot} \) 
-ergibt sich \( M_{\text{Gal}} \approx 3 \times 10^9 M_{\odot} \).
+ergibt sich \( M_{\text{Gal}} \approx 3 \times 10^9 M_{\odot} \), 
+was typisch für große Galaxien ist.
 
 \section{Kollisionen von BEC-Objekten}
 
-BEC-Objekte können verschmelzen, abprallen, zerreißen oder 
-Doppelkern-Systeme bilden. Gravitationswellen von BEC-Kollisionen 
-unterscheiden sich geringfügig von denen Schwarzer Löcher.
+BEC-Objekte haben keine Sonderstellung. Bei Kollisionen verhalten sie sich 
+wie normale physikalische Objekte:
+
+\begin{itemize}
+    \item \textbf{Verschmelzung:} Wenn \( M_1 + M_2 \leq M_{\text{BEC}} \), 
+          können sie zu einem neuen BEC-Objekt verschmelzen.
+    \item \textbf{Abprallen:} Wenn die Relativgeschwindigkeit hoch genug ist, 
+          prallen sie elastisch auseinander.
+    \item \textbf{Zerrüttung:} Bei geringer Relativgeschwindigkeit und 
+          \( M_1 + M_2 > M_{\text{BEC}} \) können die Kerne zerreißen; 
+          die Masse wird in die Umgebung überführt.
+    \item \textbf{Doppelkern-Systeme:} Die Kerne bleiben getrennt und 
+          umkreisen sich in einer gemeinsamen Umgebung.
+\end{itemize}
+
+Gravitationswellen von BEC-Kollisionen unterscheiden sich geringfügig 
+von denen Schwarzer Löcher: Sie haben keinen Ereignishorizont, eine 
+Oberfläche und möglicherweise ein Nachglühen (siehe Kapitel 10.11).
 
 \section{Zusammenfassung}
 
 \begin{itemize}
     \item Minimale Größe: \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \)
-    \item Radius-Masse-Beziehung: \( R \propto M^{-10,13} \)
+    \item Radius-Masse-Beziehung: \( R \propto M^{-0,91} \)
     \item Maximale Masse: \( M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot} \)
     \item Beobachtete supermassereiche Objekte sind Systeme aus Kern und Umgebung
     \item Massenverhältnis Galaxie zu Kern: etwa 1000
+    \item BEC-Objekte verhalten sich bei Kollisionen wie normale Objekte
 \end{itemize}
 
 \section{Ausblick}
 
 Die Vorhersage einer maximalen Masse \( M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot} \) 
 ist testbar. Zukünftige Beobachtungen mit dem Event Horizon Telescope (EHT) 
-könnten die Unterscheidung zu Schwarzen Löchern ermöglichen.
+könnten die Unterscheidung zu Schwarzen Löchern ermöglichen:
+
+\begin{itemize}
+    \item Bei Galaxien mit zentralen Massen \( > 3 \times 10^6 M_{\odot} \) 
+          sollte kein einfacher Schatten eines einzelnen kompakten Objekts 
+          sichtbar sein, sondern eine komplexe Struktur.
+    \item Die Feinstruktur des Schattens, Polarisationsmuster und 
+          zeitliche Variabilität (Flares) unterscheiden sich von 
+          ART-Vorhersagen (siehe Kapitel 14.7).
+\end{itemize}

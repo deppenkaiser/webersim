@@ -227,11 +227,12 @@
 \contentsline {subsection}{\numberline {14.4.1}Drift und Einfang}{87}{}%
 \contentsline {section}{\numberline {14.5}Galaxienwachstum}{88}{}%
 \contentsline {subsection}{\numberline {14.5.1}Massenverhältnis Galaxie zu Kern}{88}{}%
-\contentsline {section}{\numberline {14.6}Die Sonne als Mikrokosmos}{88}{}%
-\contentsline {subsection}{\numberline {14.6.1}Interpretation des Sonnenwinds}{88}{}%
-\contentsline {section}{\numberline {14.7}Beobachtbare Signaturen: Der EHT-Schatten}{88}{}%
-\contentsline {section}{\numberline {14.8}Vergleich mit dem Standardmodell}{89}{}%
-\contentsline {section}{\numberline {14.9}Zusammenfassung}{89}{}%
+\contentsline {subsection}{\numberline {14.5.2}Die Sonne als Mikrokosmos}{88}{}%
+\contentsline {subsubsection}{Interpretation des Sonnenwinds}{88}{}%
+\contentsline {subsubsection}{Skalierbarkeit des Modells}{89}{}%
+\contentsline {section}{\numberline {14.6}Beobachtbare Signaturen: Der EHT-Schatten}{89}{}%
+\contentsline {section}{\numberline {14.7}Vergleich mit dem Standardmodell}{89}{}%
+\contentsline {section}{\numberline {14.8}Zusammenfassung}{89}{}%
 \contentsline {chapter}{\numberline {15}Testbare Vorhersagen}{91}{}%
 \contentsline {section}{\numberline {15.1}Einleitung}{91}{}%
 \contentsline {section}{\numberline {15.2}Kosmologie und Galaxien}{91}{}%
@@ -252,9 +253,10 @@
 \contentsline {subsection}{\numberline {15.4.3}Drei Neutrino-Generationen}{93}{}%
 \contentsline {subsection}{\numberline {15.4.4}Modifizierter Lamb-Shift}{93}{}%
 \contentsline {section}{\numberline {15.5}Plasmaphysik}{93}{}%
-\contentsline {subsection}{\numberline {15.5.1}Fraktale Skalierung im Sonnenwind}{93}{}%
-\contentsline {subsection}{\numberline {15.5.2}Sonnenmasse}{94}{}%
-\contentsline {subsection}{\numberline {15.5.3}Stromdichten in Plasmen}{94}{}%
+\contentsline {subsection}{\numberline {15.5.1}Konstanz der Sonnenmasse}{93}{}%
+\contentsline {subsection}{\numberline {15.5.2}Fraktale Skalierung im Sonnenwind}{94}{}%
+\contentsline {subsection}{\numberline {15.5.3}Gravitationswellen-Nachglühen}{94}{}%
+\contentsline {subsection}{\numberline {15.5.4}Stromdichten in Plasmen}{94}{}%
 \contentsline {section}{\numberline {15.6}Zusammenfassung der wichtigsten Vorhersagen}{94}{}%
 \contentsline {section}{\numberline {15.7}Fazit}{94}{}%
 \contentsline {chapter}{\numberline {16}Zusammenfassung}{95}{}%
@@ -567,21 +569,22 @@
 \contentsline {subsection}{\numberline {L.5.2}Quantenpotential-Energie}{165}{}%
 \contentsline {subsection}{\numberline {L.5.3}Minimierung der Gesamtenergie}{165}{}%
 \contentsline {subsection}{\numberline {L.5.4}Radius als Funktion der Masse}{165}{}%
-\contentsline {subsection}{\numberline {L.5.5}Numerische Bestimmung von \( K_R \)}{165}{}%
+\contentsline {subsection}{\numberline {L.5.5}Numerische Bestimmung von \( K_R \)}{166}{}%
 \contentsline {section}{\numberline {L.6}Maximale Masse eines BEC-Objekts}{166}{}%
 \contentsline {subsection}{\numberline {L.6.1}Untere Grenze: \( R_{\min } = l_0 \)}{166}{}%
+\contentsline {subsection}{\numberline {L.6.2}Physikalische Bedeutung}{166}{}%
 \contentsline {section}{\numberline {L.7}Strukturelle Analogie zum Atom}{166}{}%
 \contentsline {subsection}{\numberline {L.7.1}Atomare Skalierung}{166}{}%
 \contentsline {subsection}{\numberline {L.7.2}Fraktale Verbindung}{166}{}%
-\contentsline {section}{\numberline {L.8}Relativistische Korrekturen aus der Weber-Gravitation}{166}{}%
-\contentsline {subsection}{\numberline {L.8.1}Modifizierte Kreisbahngeschwindigkeit}{166}{}%
+\contentsline {section}{\numberline {L.8}Relativistische Korrekturen aus der Weber-Gravitation}{167}{}%
+\contentsline {subsection}{\numberline {L.8.1}Modifizierte Kreisbahngeschwindigkeit}{167}{}%
 \contentsline {subsection}{\numberline {L.8.2}ISCO-Bedingung}{167}{}%
 \contentsline {section}{\numberline {L.9}Beobachtete supermassereiche Objekte}{167}{}%
 \contentsline {subsection}{\numberline {L.9.1}Systeme aus Kern und Umgebung}{167}{}%
 \contentsline {subsection}{\numberline {L.9.2}Massenverhältnis}{167}{}%
 \contentsline {section}{\numberline {L.10}Kollisionen von BEC-Objekten}{167}{}%
-\contentsline {section}{\numberline {L.11}Zusammenfassung}{167}{}%
-\contentsline {section}{\numberline {L.12}Ausblick}{167}{}%
+\contentsline {section}{\numberline {L.11}Zusammenfassung}{168}{}%
+\contentsline {section}{\numberline {L.12}Ausblick}{168}{}%
 \contentsline {chapter}{\numberline {M}Fraktale Entropie – Der verhinderte Wärmetod}{169}{}%
 \contentsline {section}{\numberline {M.1}Einleitung}{169}{}%
 \contentsline {section}{\numberline {M.2}Axiome der Theorie}{169}{}%

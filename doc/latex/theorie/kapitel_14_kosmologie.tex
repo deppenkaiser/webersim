@@ -177,24 +177,54 @@ Das Massenverhältnis von Galaxie zu zentralem BEC-Kern ist:
 
 Mit \( M_{\text{Kern}} = M_{\text{BEC}} \approx 3 \times 10^6 M_\odot \) ergibt sich \( M_{\text{Gal}} \approx 3 \times 10^9 M_\odot \) – typisch für große Galaxien.
 
-\section{Die Sonne als Mikrokosmos}
+\subsection{Die Sonne als Mikrokosmos}
 
-Das Modell ist skalierbar. Für die Sonne (\( M = M_\odot \)) ergeben sich:
+Das Modell der BEC-Objekte und der DSTT-Drift ist skalierbar. 
+Überträgt man es auf die Masse der Sonne (\( M = M_{\odot} \)), 
+so ergeben sich folgende charakteristische Skalen:
 
-\[
-r_{\text{max}} \sim 1,5 \times 10^{13} \, \text{m}, \quad r_c \sim 1,4 \times 10^{-11} \, \text{m}, \quad \alpha_{\text{in}} \approx 1,2 \times 10^{-7}
-\]
+\begin{align}
+r_{\text{max}} &\sim 1,5 \times 10^{13} \, \text{m} \tag{14.20} \\
+r_c &\sim 1,4 \times 10^{-11} \, \text{m} \tag{14.21} \\
+\alpha_{\text{in}} &\approx 1,2 \times 10^{-7} \tag{14.22}
+\end{align}
 
-\subsection{Interpretation des Sonnenwinds}
+Dabei ist \( r_{\text{max}} \) der äußere Rand der Entstehungszone, 
+\( r_c \) der Einfangradius (in der Größenordnung der 
+Compton-Wellenlänge des Protons) und \( \alpha_{\text{in}} \) die 
+Einfangwahrscheinlichkeit neu entstehender Materie durch die Sonne.
 
-Im Standardmodell wird der Sonnenwind als Materieausstoß aus der Sonnenkorona gesehen. In der WDBT+ hingegen:
+\subsubsection{Interpretation des Sonnenwinds}
 
-\begin{itemize}
-    \item Materie entsteht in der Nähe der Sonne (bei \( r \sim 10^{-11} \, \text{m} \))
-    \item Die DSTT-Drift treibt sie nach außen
-    \item Nur ein winziger Bruchteil (\( \sim 10^{-7} \)) wird von der Sonne eingefangen
-    \item Die Sonne verliert daher keine signifikante Masse
-\end{itemize}
+Im Standardmodell wird der Sonnenwind als Materieausstoß aus der 
+Sonnenkorona interpretiert. Die WDBT+ bietet eine alternative 
+Erklärung:
+
+\begin{enumerate}
+    \item Neue Materie entsteht im Quantenpotential des solaren 
+          BEC-Objekts in der Nähe des Zentrums (\( r \sim 10^{-11} \, \text{m} \)).
+    \item Die DSTT-Drift treibt diese Materie radial nach außen.
+    \item Nur ein winziger Bruchteil (\( \alpha_{\text{in}} \approx 10^{-7} \)) 
+          wird von der Sonne eingefangen.
+    \item Der Großteil der Materie verlässt die Sonne als Sonnenwind.
+\end{enumerate}
+
+Eine wichtige Konsequenz: Die Sonne verliert durch diesen Prozess 
+keine signifikante Masse, da der Sonnenwind nicht aus der Sonne 
+selbst stammt, sondern aus neu entstehender Materie. 
+Präzise Messungen der Sonnenmasse über längere Zeiträume 
+sollten daher keinen Masseverlust zeigen – eine testbare 
+Vorhersage der Theorie.
+
+\subsubsection{Skalierbarkeit des Modells}
+
+Die fraktale Raumdimension \( D \approx 2,704 \) bestimmt die 
+Exponenten aller Skalierungsgesetze. Für die Sonne (\( M = M_{\odot} \)) 
+liefert das Modell konsistente Größenordnungen, die mit 
+Beobachtungen des Sonnenwinds verträglich sind. Eine detaillierte 
+quantitative Vorhersage erfordert die Kenntnis der genauen 
+Dichteverteilung im solaren BEC-Objekt – eine Aufgabe für 
+zukünftige Forschung.
 
 \section{Beobachtbare Signaturen: Der EHT-Schatten}
 
@@ -224,22 +254,28 @@ Der Schatten ist also makroskopisch. Testbare Unterschiede zur ART:
 
 Die folgende Tabelle fasst die Unterschiede zwischen der Standardkosmologie und der WDBT+ zusammen:
 
-\[
-\begin{array}{|l|l|l|}
+\begin{table}[htbp]
+\centering
+\caption{Gegenüberstellung der Standardkosmologie (\(\Lambda\)CDM) und der WDBT+.}
+\begin{tabular}{lp{4.5cm}p{4.5cm}}
 \hline
-\text{Phänomen} & \text{Standardmodell} & \text{WDBT+} \\
+Phänomen & Standardmodell (\(\Lambda\)CDM) & WDBT+ \\
 \hline
-\text{Zentrale Objekte} & \text{Senken (verschlingen Materie)} & \text{Quellen (erzeugen Materie)} \\
-\text{Materiefluss} & \text{Einwärts (Akkretion)} & \text{Auswärts (Drift)} \\
-\text{Galaxien} & \text{Kollaps + Dunkle Materie} & \text{Wachstum von innen nach außen} \\
-\text{Universum} & \text{Expandierend, Urknall} & \text{Stationär, ewig} \\
-\text{Schwarze Löcher} & \text{Singularität + Horizont} & \text{BEC-Objekt, kein Horizont} \\
-\text{Maximale Masse (Kern)} & \text{Keine natürliche Grenze} & M_{\text{BEC}} \approx 3 \times 10^6 M_\odot \\
-\text{Dunkle Materie} & \text{Benötigt} & \text{Nicht benötigt} \\
-\text{Dunkle Energie} & \text{Benötigt} & \text{Nicht benötigt} \\
+Zentrale Objekte & Senken (verschlingen Materie) & Quellen (erzeugen Materie) \\
+Materiefluss & Einwärts (Akkretion) & Auswärts (Drift) \\
+Galaxien & Kollaps + Dunkle Materie & Wachstum von innen nach außen \\
+Universum & Expandierend, Urknall & Stationär, ewig \\
+Schwarze Löcher & Singularität + Horizont & BEC-Objekt, kein Horizont \\
+Maximale Masse (Kern) & Keine natürliche Grenze & \( M_{\text{BEC}} \approx 3 \times 10^6 M_{\odot} \) \\
+Super-massereich & Einzelnes Schwarzes Loch & BEC-Kern + Umgebung \\
+Kollisionen & Immer Verschmelzung & Wie normale Objekte \\
+Sonnenwind & Ausstoß aus der Korona & Neu entstehende Materie \\
+Dunkle Materie & Benötigt & Nicht benötigt \\
+Dunkle Energie & Benötigt & Nicht benötigt \\
 \hline
-\end{array}
-\]
+\end{tabular}
+\label{tab:vergleich}
+\end{table}
 
 \section{Zusammenfassung}
 
