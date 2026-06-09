@@ -168,7 +168,7 @@
 \contentsline {section}{\numberline {10.12}Zusammenfassung}{70}{}%
 \contentsline {chapter}{\numberline {11}Fraktale Maxwell-Gleichungen}{71}{}%
 \contentsline {section}{\numberline {11.1}Einleitung}{71}{}%
-\contentsline {subsection}{\numberline {11.1.1}Arbeitsdefinition der fraktalen Ableitung}{71}{}%
+\contentsline {subsection}{\numberline {11.1.1}Fraktale Ableitung}{71}{}%
 \contentsline {section}{\numberline {11.2}Der fraktale Nabla-Operator \( \nabla _D \)}{71}{}%
 \contentsline {section}{\numberline {11.3}Die fraktalen Maxwell-Gleichungen der Elektrodynamik}{72}{}%
 \contentsline {subsection}{\numberline {11.3.1}Gaußsches Gesetz (elektrisch)}{72}{}%
@@ -176,7 +176,7 @@
 \contentsline {subsection}{\numberline {11.3.3}Faradaysches Induktionsgesetz}{72}{}%
 \contentsline {subsection}{\numberline {11.3.4}Ampèresches Gesetz (mit Maxwell-Ergänzung)}{72}{}%
 \contentsline {section}{\numberline {11.4}Alternative Formulierung mit fraktaler Metrik}{72}{}%
-\contentsline {section}{\numberline {11.5}Die fraktalen Maxwell-Gleichungen der Gravitation}{73}{}%
+\contentsline {section}{\numberline {11.5}Die fraktalen Maxwell-Gleichungen der Gravitation}{72}{}%
 \contentsline {section}{\numberline {11.6}Die Wellengleichung im fraktalen Raum}{73}{}%
 \contentsline {section}{\numberline {11.7}Dispersionsrelation}{73}{}%
 \contentsline {section}{\numberline {11.8}Konsequenzen}{74}{}%

@@ -2,45 +2,38 @@
 
 \section{Einleitung}
 
-Die WDBT+ postuliert einen fraktalen Raum mit der Dimension \( D \). Wenn der Raum fraktal ist, dann müssen auch alle Feldtheorien, die in diesem Raum formuliert werden, diese fraktale Struktur widerspiegeln. Die Maxwell-Gleichungen im glatten Raum (D = 3) sind dann nur eine Näherung – der Grenzfall D → 3. Die wahren Maxwell-Gleichungen sind fraktal.
+Die WDBT+ postuliert einen fraktalen Raum mit der Dimension \( D \). Wenn der Raum fraktal ist, dann müssen auch alle Feldtheorien, die in diesem Raum formuliert werden, diese fraktale Struktur widerspiegeln. Die Maxwell-Gleichungen im glatten Raum (\(D = 3\)) sind dann nur eine Näherung – der Grenzfall \( D \to 3 \). Die wahren Maxwell-Gleichungen sind fraktal.
 
 In diesem Kapitel werden die fraktalen Maxwell-Gleichungen für die Elektrodynamik und für die Gravitation hergeleitet. Sie haben dieselbe mathematische Struktur – dies ist die Einheit von Elektrodynamik und Gravitation im fraktalen Raum.
 
-\subsection{Arbeitsdefinition der fraktalen Ableitung}
-Für die Zwecke dieser Arbeit verstehen wir unter der fraktalen Ableitung einer 
-Funktion \(f\) den folgenden Grenzwert:
+\subsection{Fraktale Ableitung}
+
+Die präzise, mathematisch konsistente Definition der fraktalen Ableitung findet sich in Anhang E. Dort wird gezeigt, dass für einen fraktalen Raum mit Hausdorff-Dimension \( D \) die fraktale partielle Ableitung als \emph{Caputo-Fraktionalableitung} der Ordnung \( \alpha = D/3 \) verstanden werden kann:
 
 \[
-\frac{\partial^D f}{\partial x^D} := \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - f(x)}{(\Delta x)^{D/3}}, \qquad D \approx 2,704.
+\frac{\partial^D f}{\partial x^D}(x) := \,_{0}^{C} D_x^{D/3} f(x) = \frac{1}{\Gamma(1-D/3)} \int_0^x \frac{f'(t)}{(x-t)^{D/3}} \, dt.
 \]
 
-Diese Definition ist ein \textbf{heuristisches Werkzeug}. Sie ist nicht mit den 
-standardisierten fraktionalen Ableitungen (Riemann-Liouville, Caputo) identisch, 
-sondern ein eigenständiger, anschaulicher Zugang. Eine vollständige mathematische 
-Fundierung der hier verwendeten fraktalen Analysis ist Gegenstand zukünftiger Forschung 
-– analog zur historischen Entwicklung der Riemann-Liouville-Fraktionableitung, die 
-ebenfalls zunächst als Arbeitsdefinition eingeführt wurde.
+Für die heuristischen Herleitungen in diesem Kapitel genügt die Kenntnis der in Anhang E angegebenen Rechenregeln. Insbesondere gilt für eine ebene Welle:
+
+\[
+\frac{\partial^D e^{ikx}}{\partial x^D} = (ik)^{D/3} e^{ikx}.
+\]
+
+Der Grenzfall \( D \to 3 \) reproduziert die gewöhnliche Ableitung.
 
 \section{Der fraktale Nabla-Operator \( \nabla_D \)}
 
-Im fraktalen Raum mit Dimension \( D \) müssen Differentialoperatoren die Skalierungseigenschaften des Raumes berücksichtigen. Der fraktale Nabla-Operator \( \nabla_D \) wirkt auf eine Funktion \( f \) wie folgt:
+Im fraktalen Raum mit Dimension \( D \) müssen Differentialoperatoren die Skalierungseigenschaften des Raumes berücksichtigen. Mit der in Anhang E definierten fraktalen Ableitung definieren wir den fraktalen Gradienten:
 
 \[
-\nabla_D f = \lim_{\epsilon \to 0} \frac{f(x + \epsilon\hat{n}) - f(x)}{\epsilon^{D/3}}
+\nabla_D f := \left( \frac{\partial^D f}{\partial x^D}, \frac{\partial^D f}{\partial y^D}, \frac{\partial^D f}{\partial z^D} \right).
 \]
-
-In Komponentenschreibweise mit einer fraktalen Ableitung:
-
-\[
-\frac{\partial^D f}{\partial x^D} = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{(\Delta x)^{D/3}}
-\]
-
-Diese Definition stellt sicher, dass die Einheiten konsistent bleiben und die fraktale Dimension \( D \) in die Differentiation eingeht. Für \( D = 3 \) reduziert sie sich auf die gewöhnliche Ableitung.
 
 Der fraktale Laplace-Operator ist entsprechend:
 
 \[
-\nabla_D^2 f = \nabla_D \cdot (\nabla_D f)
+\nabla_D^2 f = \nabla_D \cdot (\nabla_D f) = \frac{\partial^{2D/3} f}{\partial x^{2D/3}} + \frac{\partial^{2D/3} f}{\partial y^{2D/3}} + \frac{\partial^{2D/3} f}{\partial z^{2D/3}}.
 \]
 
 \section{Die fraktalen Maxwell-Gleichungen der Elektrodynamik}
@@ -136,7 +129,7 @@ Für die Gravitation ergibt sich analog:
 
 \section{Dispersionsrelation}
 
-Für ebene Wellen (Näherung für große Entfernungen) ergibt sich eine Dispersionsrelation:
+Für ebene Wellen (Näherung für große Entfernungen) ergibt sich mit der in Anhang E hergeleiteten Dispersionsrelation:
 
 \[
 \omega^2 = c^2 k^2 \left( 1 + \alpha \left( \frac{k}{k_0} \right)^{D-3} + \dots \right)
