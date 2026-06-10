@@ -8,6 +8,81 @@ Die Weber-Gravitation (WG) enthält in ihrem geschwindigkeitsabhängigen Term ei
 
 Die \( \Omega \)-Theorie ist die natürliche Feldtheorie, die aus dieser Maxwell-Gravitation emergiert. Sie basiert auf der Idee, dass \textbf{Rotation elementar ist, nicht Krümmung} – eine Alternative zur Raumzeitkrümmung der Allgemeinen Relativitätstheorie (ART).
 
+\section{Grundlegende Axiome einer Wellenbeschreibung der Gravitation}
+\label{sec:wellen_axiome}
+
+Jeder physikalischen Wellenbeschreibung liegen fünf Axiome zugrunde, die auch der WDBT+ implizit zugrunde liegen:
+
+\begin{enumerate}
+    \item \textbf{Welle:} Jede Welle besteht aus einem Träger (Medium oder Feld) und einer Information. Die Information kann den Wert Null annehmen (reine Trägerwelle).
+    \item \textbf{Information:} Information ist eine Störung der Welle – jede zeitliche oder räumliche Abweichung von der reinen, ungestörten Wellenform.
+    \item \textbf{Kraft:} Kraft ist der negative Gradient der Energie über den Ort: \(\vec{F} = -\nabla E_{\text{pot}}\).
+    \item \textbf{Informationsübertragung:} Informationsübertragung erfordert eine Störung, die sich mit endlicher, durch das Medium bestimmter Geschwindigkeit ausbreitet.
+    \item \textbf{Form des Trägers:} Die periodische Funktion, die den Träger beschreibt, kann jede beliebige Gestalt annehmen; die Natur realisiert die energetisch optimale Form.
+\end{enumerate}
+
+\section{Die stehende Welle als Ursache der instantanen Kraft}
+\label{sec:stehende_welle}
+
+Zwei Massen \(M_1\) und \(M_2\) im Abstand \(d\) reflektieren die Wellen des Gravitationsfeldes. Zwischen ihnen entsteht durch Überlagerung von Hin- und Rückwelle eine stehende Welle:
+
+\[
+\Phi(z, t) = \Phi_1 \cos(kz - \omega t) + \Phi_2 \cos(kz + \omega t)
+\]
+
+Für gleiche Amplituden \(\Phi_1 = \Phi_2 = \Phi_0\) folgt:
+
+\[
+\Phi(z, t) = 2\Phi_0 \cos(kz) \cos(\omega t)
+\]
+
+Dies ist eine reine Trägerwelle ohne Informationsgehalt. Die Kraft auf eine Probemasse \(m\) ergibt sich aus dem Gradienten:
+
+\[
+F_z(z, t) = -m \frac{\partial \Phi}{\partial z} = 2m \Phi_0 k \sin(kz) \cos(\omega t)
+\]
+
+Die Kraft existiert \emph{instantan} an jedem Ort – die stehende Welle muss nicht erst „ankommen“. Im langwelligen Grenzfall (\(\lambda \gg d\), also \(k \to 0\)) geht diese Beschreibung in das Newton-Potential über:
+
+\[
+\Phi_{\text{eff}}(r) = -\frac{GM}{r}, \qquad \vec{F} = -\frac{GMm}{r^2} \hat{r}
+\]
+
+\section{Gravitationswellen als Störungen der stehenden Welle}
+\label{sec:gravitationswellen_stoerung}
+
+Wenn sich die Massen relativ zueinander bewegen (z. B. bei einer Verschmelzung), ändert sich die stehende Welle. Diese Änderung ist eine Störung des vorher stationären Zustands:
+
+\[
+\delta \Phi(\vec{r}, t) = \Phi(\vec{r}, t) - \Phi_{\text{stat}}(\vec{r})
+\]
+
+Diese Störung breitet sich als laufende Welle mit der endlichen Geschwindigkeit \(c\) aus:
+
+\[
+\square \delta \Phi = 0, \qquad \square = \frac{1}{c^2} \frac{\partial^2}{\partial t^2} - \nabla^2
+\]
+
+Damit sind die beobachteten Gravitationswellen (z. B. GW170817) vollständig erklärbar – ohne dass die \emph{Kraft selbst} retardiert sein müsste.
+
+\section{Der fundamentale Unterschied zur ART}
+\label{sec:unterschied_art}
+
+Die ART behauptet, dass sich die \emph{Kraft selbst} mit Lichtgeschwindigkeit ausbreitet. Dies ist aus Sicht der WDBT+ ein Kategorienfehler:
+
+\begin{itemize}
+    \item Die \textbf{Kraft} ist der Gradient einer stehenden Welle und wirkt instantan.
+    \item Nur die \textbf{Störung} dieser Welle (also die Information „die Quelle bewegt sich“) breitet sich mit \(c\) aus.
+\end{itemize}
+
+Die beobachteten Gravitationswellen beweisen daher nicht die ART, sondern lediglich die endliche Ausbreitungsgeschwindigkeit von \emph{Veränderungen}. Die ART baut zudem einen kompensierenden Vektorpotential-Term ein, um die unphysikalische Konsequenz einer rein retardierten Gravitation (die das Sonnensystem destabilisieren würde) zu verhindern – ein mathematischer Trick, den die WDBT+ nicht benötigt.
+
+\subsection{Konsequenzen für die Dynamik des Sonnensystems}
+
+Würde sich die Gravitation \emph{ohne} diesen Kompensationsterm mit \(c\) ausbreiten, so würde die Erde nicht der aktuellen Position der Sonne folgen, sondern ihrer Position vor etwa 8 Minuten. Die resultierende tangentiale Kraftkomponente wäre zwar klein (\(\sim 3 \times 10^{-8}\) der Radialkraft), aber sie würde über astronomische Zeiträume zu einer messbaren Drift führen. Das Sonnensystem wäre nicht stabil.
+
+Da das Sonnensystem stabil ist, folgt daraus zwingend: Die Gravitation muss \emph{effektiv instantan} wirken. Die WDBT+ liefert mit der stehenden Welle die physikalisch konsistente Erklärung dafür, ohne die ART-Retardierungs-Tricks.
+
 \section{Die Wirbelstruktur der Weber-Gravitation}
 \label{sec:wirbel_wg}
 
@@ -155,7 +230,7 @@ Die \( \Omega \)-Theorie ist die natürliche Feldtheorie, die aus der Maxwell-Gr
 \subsubsection{Axiom 1: Nicht-Lokalität und Instantaneität}
 \label{sec:omega_axiom1}
 
-Die Gravitationswirkung ist nicht-lokal und instantan. Es gibt keine Ausbreitung mit endlicher Geschwindigkeit; die Wechselwirkung ist simultan. Dies ist direkte Konsequenz der feldlosen Weber-Wechselwirkung der WDBT+.
+Die Gravitationswirkung ist nicht-lokal und instantan. Es gibt keine Ausbreitung mit endlicher Geschwindigkeit; die Wechselwirkung ist simultan. Dies ist direkte Konsequenz der feldlosen Weber-Wechselwirkung der WDBT+ (siehe Abschnitte~\ref{sec:stehende_welle} und~\ref{sec:unterschied_art}).
 
 \subsubsection{Axiom 2: Das Rotationsfeld}
 \label{sec:omega_axiom2}
@@ -227,6 +302,19 @@ Die Theorie macht spezifische, von der ART abweichende Vorhersagen (siehe auch K
     \item \textbf{Abweichungen bei hohen Frequenzen:} Oberhalb einer kritischen Frequenz weichen die Signale systematisch von ART-Vorhersagen ab.
 \end{enumerate}
 
+\section{Krümmung der ART wird zur Rotation in der \( \Omega \)-Theorie}
+\label{sec:kruemmung_zu_rotation}
+
+Die ART beschreibt Gravitation als Krümmung der Raumzeit. Die \( \Omega \)-Theorie beschreibt Gravitation als Rotationsfeld \( \vec{\Omega} \). Der Übergang wird durch die DSTT und die Weber-Kräfte vermittelt:
+
+\begin{itemize}
+    \item Die \textbf{Krümmung} der ART entspricht in der \( \Omega \)-Theorie der \textbf{Wirbelstärke} des Rotationsfeldes.
+    \item Die \textbf{Geodätengleichung} der ART wird durch die Bewegungsgleichung \( \vec{F} = m(-\nabla \Phi + 2\vec{v} \times \vec{\Omega} - \partial\vec{A}/\partial t) \) ersetzt.
+    \item Die \textbf{Raumzeit-Metrik} der ART ist emergent – sie entsteht aus der fraktalen Informationsstruktur der IWT (Teil I, siehe Kapitel~\ref{ch:emergenz} und Anhang~\ref{app:kontinuumslimes}).
+\end{itemize}
+
+Damit ist die \( \Omega \)-Theorie eine vollwertige Alternative zur ART: Sie vermeidet Singularitäten, kommt ohne dunkle Materie und dunkle Energie aus, und sie bewahrt die Nicht-Lokalität und Irreversibilität der fundamentalen WDBT+.
+
 \section{Zusammenfassung der Zusammenhänge}
 \label{sec:mg_zusammenhaenge}
 
@@ -248,29 +336,19 @@ Die folgende Tabelle fasst die verschiedenen Ebenen und ihre Verbindungen zusamm
 \end{array}
 \]
 
-\section{Krümmung der ART wird zur Rotation in der \( \Omega \)-Theorie}
-\label{sec:kruemmung_zu_rotation}
-
-Die ART beschreibt Gravitation als Krümmung der Raumzeit. Die \( \Omega \)-Theorie beschreibt Gravitation als Rotationsfeld \( \vec{\Omega} \). Der Übergang wird durch die DSTT und die Weber-Kräfte vermittelt:
-
-\begin{itemize}
-    \item Die \textbf{Krümmung} der ART entspricht in der \( \Omega \)-Theorie der \textbf{Wirbelstärke} des Rotationsfeldes.
-    \item Die \textbf{Geodätengleichung} der ART wird durch die Bewegungsgleichung \( \vec{F} = m(-\nabla \Phi + 2\vec{v} \times \vec{\Omega} - \partial\vec{A}/\partial t) \) ersetzt.
-    \item Die \textbf{Raumzeit-Metrik} der ART ist emergent – sie entsteht aus der fraktalen Informationsstruktur der IWT (Teil I, siehe Kapitel~\ref{ch:emergenz} und Anhang~\ref{app:kontinuumslimes}).
-\end{itemize}
-
-Damit ist die \( \Omega \)-Theorie eine vollwertige Alternative zur ART: Sie vermeidet Singularitäten, kommt ohne dunkle Materie und dunkle Energie aus, und sie bewahrt die Nicht-Lokalität und Irreversibilität der fundamentalen WDBT+.
-
 \section{Fazit}
 \label{sec:mg_fazit}
 
 Die Weber-Gravitation ist mehr als eine bloße Kraftformel. Sie enthält in ihrer Struktur bereits die Keimzelle einer vollständigen Feldtheorie der Gravitation:
 
 \begin{itemize}
-    \item Der geschwindigkeitsabhängige Term erzeugt eine Wirbeldichte, die bei geeigneter Interpretation direkt zum gravito-magnetischen Feld der Maxwell-Gravitation führt.
+    \item Die Gravitation wird als stehende Welle zwischen Massen beschrieben. Die Kraft ist der Gradient dieser Welle und wirkt instantan. Veränderungen (Gravitationswellen) breiten sich mit \( c \) aus.
+    \item Newtons Gravitationsgesetz emergiert als statischer Grenzfall. Die Periheldrehung des Merkur ist bereits in instantanen Theorien (Weber, Tisserand) enthalten – kein Privileg der ART.
+    \item Der geschwindigkeitsabhängige Term der WG erzeugt eine Wirbeldichte, die bei geeigneter Interpretation direkt zum gravito-magnetischen Feld der Maxwell-Gravitation führt.
     \item Die DSTT erweist sich als der natürliche Vermittler zwischen diesen Beschreibungsebenen: Sie liefert die energetische Interpretation der Wirbel und verbindet die differentielle Kraftbeschreibung mit der integralen Feldbeschreibung.
-    \item Die \( \Omega \)-Theorie formuliert Gravitation als Rotationsfeld \( \vec{\Omega} \), nicht als Raumzeitkrümmung.
-    \item Die Krümmung der ART wird zur Wirbelstärke des \( \vec{\Omega} \)-Feldes.
+    \item Die \( \Omega \)-Theorie formuliert Gravitation als Rotationsfeld \( \vec{\Omega} \), nicht als Raumzeitkrümmung. Die Krümmung der ART wird zur Wirbelstärke des \( \vec{\Omega} \)-Feldes.
 \end{itemize}
 
 WG, DSTT und MG sind keine unabhängigen Theorien, sondern verschiedene Aspekte ein und derselben physikalischen Realität – einer Realität, in der Gravitation nicht durch gekrümmte Raumzeit, sondern durch direkte Teilchenwechselwirkungen mit inhärenter Wirbelstruktur vermittelt wird.
+
+Die ART ist eine hinreichende, aber keine notwendige Beschreibung. Ihre scheinbaren Erfolge beruhen auf einer Verwechslung von Kraft und Informationsübertragung. Die WDBT+ ist damit nicht nur konsistent mit allen bekannten Beobachtungen (Periheldrehung, Lichtablenkung, Gravitationswellen, Stabilität des Sonnensystems), sondern auch physikalisch anschaulicher und frei von den metaphysischen Annahmen einer gekrümmten Raumzeit.
