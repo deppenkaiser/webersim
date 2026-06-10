@@ -6,9 +6,13 @@
 \contentsline {section}{\numberline {1.2}Zwei Ebenen einer neuen Theorie}{21}{}%
 \contentsline {section}{\numberline {1.3}Die drei Säulen der WDBT+}{21}{}%
 \contentsline {section}{\numberline {1.4}Ziel dieser Arbeit}{22}{}%
-\contentsline {section}{\numberline {1.5}Anmerkung zu den Naturkonstanten}{22}{}%
-\contentsline {section}{\numberline {1.6}Überblick über die Arbeit}{22}{}%
-\contentsline {subsection}{\numberline {1.6.1}Warum ein neuer Ansatz notwendig ist}{22}{}%
+\contentsline {section}{\numberline {1.5}Zur Methode: Was diese Arbeit nicht ist – und was legitime Kritik ist}{22}{}%
+\contentsline {subsection}{\numberline {1.5.1}Legitime Einwände}{22}{}%
+\contentsline {subsection}{\numberline {1.5.2}Nicht-legitime Einwände}{22}{}%
+\contentsline {subsection}{\numberline {1.5.3}Die Beweislast liegt richtig herum}{23}{}%
+\contentsline {section}{\numberline {1.6}Anmerkung zu den Naturkonstanten}{23}{}%
+\contentsline {section}{\numberline {1.7}Überblick über die Arbeit}{23}{}%
+\contentsline {subsection}{\numberline {1.7.1}Warum ein neuer Ansatz notwendig ist}{23}{}%
 \contentsline {chapter}{\numberline {2}Axiome der Informations-Weber-Theorie (IWT)}{25}{}%
 \contentsline {section}{\numberline {2.1}Einleitung}{25}{}%
 \contentsline {section}{\numberline {2.2}Axiom 1: Diskretes universelles Informationsfeld}{25}{}%
