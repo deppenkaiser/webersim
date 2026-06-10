@@ -6,7 +6,7 @@
 
 Die Dynamische Schwere-Trägheits-Theorie (DSTT) ist eine eigenständige Theorie der Bewegung unter dem Einfluss einer Zentralkraft. Sie entstand unabhängig von den Weber-Kräften und würde bereits mit der Newtonschen Gravitation funktionieren. Die zentrale Idee ist die Trennung von Ursache (Schwere) und Wirkung (Trägheit) sowie die Aufteilung der Trägheitsantwort in eine radiale und eine tangentiale Komponente.
 
-Die späteren Weber-Kräfte (Weber-Elektrodynamik und Weber-Gravitation) zeigen dieselbe strukturelle Aufteilung. Die Identitätsbeziehung zwischen der DSTT und den Weber-Kräften ist der Schlüssel zur Emergenz der Maxwell-Gravitation (siehe Kapitel~\ref{ch:maxwell_gravitation}).
+Die späteren Weber-Kräfte (Weber-Elektrodynamik und Weber-Gravitation) zeigen dieselbe strukturelle Aufteilung. Die Beziehung zwischen der DSTT und den Weber-Kräften ist der Schlüssel zur Emergenz der Maxwell-Gravitation (siehe Kapitel~\ref{ch:maxwell_gravitation}).
 
 \section{Axiome der DSTT}
 \label{sec:dstt_axiome}
@@ -198,23 +198,88 @@ Die winkelbasierte Darstellung erlaubt eine einfache Kalibrierung der Bahnparame
 
 Die numerische Implementierung dieser Methode wird in Anhang~\ref{app:numerik} detailliert beschrieben.
 
-\section{Identitätsbeziehung zwischen DSTT und Weber-Kräften}
+\section{Beziehung zwischen DSTT und Weber-Kräften}
 \label{sec:identitaetsbeziehung}
 
-Die DSTT-Zustandsvariable \( \beta_{\text{DSTT}} \) und die Terme der Weber-Kraft sind über eine Identitätsbeziehung verknüpft (siehe auch Anhang~\ref{app:identitaet}):
+Die DSTT-Zustandsvariable \( \beta_{\text{DSTT}}(t) \) und die Weber-Gravitation sind nicht momentan identisch.  
+Ein einfaches Gegenbeispiel ist die reine Kreisbahn (\( \dot{r} = 0 \)):  
+Dort ist die tangentiale Weber-Kraft \( \vec{F}_{\text{tan}} = 0 \), aber \( \beta_{\text{DSTT}} = 1 \).  
+Eine momentane Gleichung der Form  
 
 \[
 \frac{|\vec{F}_{\text{WG}}^{\text{tan}}|}{|\vec{F}_{\text{WG}}^{\text{rad}}| + |\vec{F}_{\text{WG}}^{\text{tan}}|} \equiv \beta_{\text{DSTT}}(t)
 \]
 
-mit
+ist daher \emph{falsch}. Die im Folgenden dargestellte korrekte Beziehung folgt aus der Energiebilanz über eine Umlaufperiode (siehe auch Anhang~\ref{app:identitaet}).
+
+\subsection{Energiebilanz der tangentialen Kraft}
+
+Die tangentiale Komponente der Weber-Gravitation für Massen (\( \beta_{\text{WG}} = 0{,}5 \)) lautet:
 
 \[
-\begin{aligned}
-\vec{F}_{\text{WG}}^{\text{rad}} &= -\frac{GMm}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}} \frac{r\ddot{r}}{c^2} \right] \hat{r} \\
-\vec{F}_{\text{WG}}^{\text{tan}} &= -\frac{GMm}{r^2} \cdot \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v}
-\end{aligned}
+\vec{F}_{\text{WG}}^{\text{tan}} = -\frac{GMm}{r^2} \cdot \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v}
 \]
+
+Ihre momentane Leistung ist:
+
+\[
+P_{\text{tan}}(t) = \vec{F}_{\text{WG}}^{\text{tan}} \cdot \vec{v} = -\frac{2GMm}{r^2} \frac{\dot{r}^2}{c^2} v^2
+\]
+
+Die tangentiale kinetische Energie beträgt \( E_B = \beta_{\text{DSTT}} \cdot E \) mit der Gesamtenergie \( E = E_Z + E_B \). Ihre zeitliche Ableitung ist:
+
+\[
+\frac{dE_B}{dt} = P_{\text{tan}}(t) + \delta P_{\text{rad}}
+\]
+
+wobei \( \delta P_{\text{rad}} \) die Leistungsbeiträge der radialen Kraft zur Änderung von \( E_B \) enthält (etwa durch Kopplung über die Bewegungsgleichung).
+
+\subsection{Mittelung über eine Umlaufperiode}
+
+Mittelt man über eine vollständige Umlaufperiode \( T \), verschwinden die oszillatorischen Anteile:
+
+\[
+\langle \delta P_{\text{rad}} \rangle_T = 0, \qquad \langle \dot{E} \rangle_T = 0
+\]
+
+Damit folgt:
+
+\[
+\langle \dot{E}_B \rangle_T = \langle P_{\text{tan}} \rangle_T
+\]
+
+Mit \( E_B = \beta \cdot E \) und \( \langle \dot{E} \rangle_T = 0 \) ergibt sich:
+
+\[
+\langle \dot{\beta}_{\text{DSTT}} \rangle_T = \frac{\langle P_{\text{tan}} \rangle_T}{\langle E \rangle_T}
+\]
+
+\subsection{Korrigierte Identitätsbeziehung}
+
+Dies ist die korrekte Beziehung zwischen DSTT und Weber-Kräften:
+
+\[
+\boxed{\langle \dot{\beta}_{\text{DSTT}} \rangle_T = \frac{\langle P_{\text{tan}} \rangle_T}{\langle E \rangle_T}}
+\]
+
+Für die Weber-Gravitation mit \( \beta_{\text{WG}} = 0{,}5 \) ist \( \langle P_{\text{tan}} \rangle_T > 0 \) (außer für den Grenzfall exakter Kreisbahnen, die nie erreicht werden). Daraus folgt:
+
+\[
+\langle \dot{\beta}_{\text{DSTT}} \rangle_T > 0
+\]
+
+Die DSTT-Monotonie (\( \dot{\beta} > 0 \)) ist also \emph{nicht momentan, aber im zeitlichen Mittel} eine zwingende Konsequenz der Weber-Gravitation. Für die langfristige Bahnentwicklung (Drift der Exzentrizität, Auswärtsdrift, Entropieproduktion) ist diese gemittelte Aussage ausreichend.
+
+\subsection{Numerische Abschätzung}
+
+Für eine Kepler-Ellipse mit Exzentrizität \( e \) gilt näherungsweise:
+
+\[
+\langle \dot{\beta} \rangle_T \sim \frac{GM}{c^2 a} \cdot e^2 \cdot \omega, \qquad
+\omega = \sqrt{\frac{GM}{a^3}}
+\]
+
+Dies ist konsistent mit der Kopplungsgleichung aus Abschnitt~\ref{sec:kopplungsgleichung} und mit den in Abschnitt~\ref{sec:exzentrizitaet} angegebenen Größenordnungen (z. B. \( \dot{e} \approx -2{,}7 \times 10^{-11} \) pro Jahr für den Mond).
 
 \section{Die Kopplungsgleichung}
 \label{sec:kopplungsgleichung}
@@ -353,10 +418,10 @@ Die momentane Aufteilung der Energie in radiale und tangentiale Komponenten wird
 \subsection{Postulat 3: Kopplungsbedingung}
 \label{sec:postulat3}
 
-Die beiden \( \beta \) sind durch die Identitätsbeziehung verknüpft (siehe Anhang~\ref{app:identitaet}):
+Die Beziehung zwischen \( \beta_{\text{Kraft}} \) und \( \beta_{\text{DSTT}} \) ist durch die gemittelte Leistungsbilanz gegeben (siehe Abschnitt~\ref{sec:identitaetsbeziehung}):
 
 \[
-\frac{\frac{2(\dot{r} \cdot \vec{v})^2}{c^2}}{1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{Kraft}} \frac{r \ddot{r}}{c^2} + \frac{2(\dot{r} \cdot \vec{v})^2}{c^2}} = \beta_{\text{DSTT}}(t)
+\langle \dot{\beta}_{\text{DSTT}} \rangle_T = \frac{\langle P_{\text{tan}} \rangle_T}{\langle E \rangle_T}
 \]
 
 \subsection{Postulat 4: Dynamik der Energieaufteilung}
@@ -378,7 +443,7 @@ Die Erweiterte Weber-Theorie vereinheitlicht die Beschreibung aller fundamentale
 \begin{itemize}
     \item Die DSTT ist eine eigenständige Theorie der Trägheitsaufteilung (\( \dot{\beta} > 0 \), Drift, Zeitpfeil, Entropieproduktion).
     \item Die Weber-Kräfte (WED, WG) zeigen dieselbe strukturelle Aufteilung in radiale und tangentiale Komponenten.
-    \item Die Identitätsbeziehung verknüpft \( \beta_{\text{DSTT}} \) mit den Termen der Weber-Kraft.
+    \item Die korrekte Beziehung zwischen DSTT und Weber-Kräften ist eine gemittelte Leistungsbilanz: \( \langle \dot{\beta}_{\text{DSTT}} \rangle_T = \langle P_{\text{tan}} \rangle_T / \langle E \rangle_T \).
     \item Die Kopplungsgleichung zeigt: \( \beta_{\text{WG}} = 0,5 \) erzwingt \( \dot{\beta}_{\text{DSTT}} > 0 \); \( \beta_{\text{WED}} = 2 \) erzwingt \( \dot{\beta}_{\text{DSTT}} = 0 \).
     \item Die Gravitation ist irreversibel (Zeitpfeil, Entropie), die Elektrodynamik ist reversibel.
 \end{itemize}
