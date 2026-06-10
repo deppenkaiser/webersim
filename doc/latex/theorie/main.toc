@@ -122,22 +122,18 @@
 \contentsline {subsubsection}{Winkelgeschwindigkeit}{56}{}%
 \contentsline {subsubsection}{Numerische Integration und Ephemeriden}{56}{}%
 \contentsline {subsubsection}{Anpassung an Ephemeriden}{56}{}%
-\contentsline {section}{\numberline {8.5}Beziehung zwischen DSTT und Weber-Kräften}{56}{}%
-\contentsline {subsection}{\numberline {8.5.1}Energiebilanz der tangentialen Kraft}{57}{}%
-\contentsline {subsection}{\numberline {8.5.2}Mittelung über eine Umlaufperiode}{57}{}%
-\contentsline {subsection}{\numberline {8.5.3}Korrigierte Identitätsbeziehung}{57}{}%
-\contentsline {subsection}{\numberline {8.5.4}Numerische Abschätzung}{57}{}%
-\contentsline {section}{\numberline {8.6}Die Kopplungsgleichung}{58}{}%
-\contentsline {section}{\numberline {8.7}Exzentrizitätsänderung}{58}{}%
+\contentsline {section}{\numberline {8.5}Identitätsbeziehung zwischen DSTT und Weber-Kräften}{56}{}%
+\contentsline {section}{\numberline {8.6}Die Kopplungsgleichung}{57}{}%
+\contentsline {section}{\numberline {8.7}Exzentrizitätsänderung}{57}{}%
 \contentsline {section}{\numberline {8.8}Perfekte Kreisbahnen sind unmöglich}{58}{}%
-\contentsline {section}{\numberline {8.9}Gravitationsentropie und intrinsischer Zeitpfeil}{59}{}%
-\contentsline {section}{\numberline {8.10}Übertragung auf die Elektrodynamik}{59}{}%
+\contentsline {section}{\numberline {8.9}Gravitationsentropie und intrinsischer Zeitpfeil}{58}{}%
+\contentsline {section}{\numberline {8.10}Übertragung auf die Elektrodynamik}{58}{}%
 \contentsline {section}{\numberline {8.11}Die Erweiterte Weber-Theorie}{59}{}%
 \contentsline {subsection}{\numberline {8.11.1}Postulat 1: Allgemeine Weber-Kraft}{59}{}%
-\contentsline {subsection}{\numberline {8.11.2}Postulat 2: Energieaufteilung}{60}{}%
-\contentsline {subsection}{\numberline {8.11.3}Postulat 3: Kopplungsbedingung}{60}{}%
-\contentsline {subsection}{\numberline {8.11.4}Postulat 4: Dynamik der Energieaufteilung}{60}{}%
-\contentsline {section}{\numberline {8.12}Zusammenfassung}{60}{}%
+\contentsline {subsection}{\numberline {8.11.2}Postulat 2: Energieaufteilung}{59}{}%
+\contentsline {subsection}{\numberline {8.11.3}Postulat 3: Kopplungsbedingung}{59}{}%
+\contentsline {subsection}{\numberline {8.11.4}Postulat 4: Dynamik der Energieaufteilung}{59}{}%
+\contentsline {section}{\numberline {8.12}Zusammenfassung}{59}{}%
 \contentsline {chapter}{\numberline {9}Wirbelstruktur, Maxwell-Gravitation und \( \Omega \)-Theorie}{61}{}%
 \contentsline {section}{\numberline {9.1}Einleitung}{61}{}%
 \contentsline {section}{\numberline {9.2}Grundlegende Axiome einer Wellenbeschreibung der Gravitation}{61}{}%
