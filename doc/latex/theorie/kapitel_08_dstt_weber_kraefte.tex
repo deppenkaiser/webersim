@@ -8,6 +8,32 @@ Die Dynamische Schwere-Trägheits-Theorie (DSTT) ist eine eigenständige Theorie
 
 Die späteren Weber-Kräfte (Weber-Elektrodynamik und Weber-Gravitation) zeigen dieselbe strukturelle Aufteilung. Die Identitätsbeziehung zwischen der DSTT und den Weber-Kräften ist der Schlüssel zur Emergenz der Maxwell-Gravitation (siehe Kapitel~\ref{ch:maxwell_gravitation}).
 
+\subsection{Vorbemerkung: Die vollständige Kraft der WDBT}
+\label{sec:wdbt_kraft}
+
+Die reine Weber-Gravitation (WG) ist für sich genommen unvollständig. Sie produziert in zweiter Ordnung der Störungsrechnung einen störenden Term, der zu nicht-geschlossenen Bahnen führen würde. Die vollständige Theorie ist die \textbf{Weber-De-Broglie-Bohm-Theorie (WDBT)}. In ihr wird die Kraft um das Quantenpotential \(Q\) der De-Broglie-Bohm-Theorie erweitert.
+
+\paragraph{Definition der vollständigen WDBT-Kraft:}
+
+\[
+\boxed{\vec{F}_{\text{WDBT}} = \vec{F}_{\text{WG}} + \vec{F}_Q}
+\]
+
+Dabei ist:
+
+\[
+\vec{F}_Q = -\vec{\nabla}Q, \qquad 
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}
+\]
+
+Das Quantenpotential wirkt \textbf{repulsiv} und ist \textbf{kugelsymmetrisch} (für den Grundzustand). Daher gilt:
+
+\[
+F_{Q,\text{tan}} = 0, \qquad F_{Q,\text{rad}} = -\frac{\partial Q}{\partial r}
+\]
+
+Die radiale Komponente des Quantenpotentials kompensiert die störenden Terme der reinen WG und stellt die globale Konsistenz der Theorie sicher (siehe Anhang~\ref{app:identitaet} für den vollständigen Beweis).
+
 \section{Axiome der DSTT}
 \label{sec:dstt_axiome}
 
@@ -91,7 +117,7 @@ Die Kraft erfüllt actio = reactio und erhält den Impuls.
 Für massive Körper (Planeten, Sterne) gilt \( \beta_{\text{WG}} = 0,5 \):
 
 \[
-\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + 0,5 \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
+\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{1}{2} \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
 \]
 
 \subsection{Weber-Gravitation (WG) für Photonen}
@@ -100,17 +126,17 @@ Für massive Körper (Planeten, Sterne) gilt \( \beta_{\text{WG}} = 0,5 \):
 Für Photonen (masselose Teilchen) lautet die Kraft mit \( \beta = 1 \):
 
 \[
-\vec{F}_{\text{WG}}^{(\gamma)} = -\frac{GMm}{r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + 1 \cdot \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
+\vec{F}_{\text{WG}}^{(\gamma)} = -\frac{GMm}{r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
 \]
 
 Hier greift das Quantenpotential \( Q \) ein (siehe Kapitel~\ref{ch:neutrino}). Es kompensiert den \( \beta = 1 \)-Wert so, dass effektiv \( \beta = 0,5 \) übrig bleibt. Dies ist die Wirkungsweise des Quantenpotentials.
 
-\subsection{Bahngleichung und Periheldrehung in der Weber-Gravitation}
+\section{Bahngleichung und Periheldrehung in der Weber-Gravitation}
 \label{sec:weber_bahngleichung}
 
 Die Bewegungsgleichung der Weber-Gravitation für ein Zweikörpersystem (Zentralmasse \( M \), Testmasse \( m \)) führt auf eine Bahngleichung, die als Funktion des Winkels \( \phi \) geschrieben werden kann. Dies ist eine Innovation der vorliegenden Arbeit: Die Parametrisierung der Bahn als \( r(\phi) \) anstelle von \( r(t) \) erlaubt eine direkte Kopplung an astronomische Ephemeriden und vereinfacht die numerische Integration erheblich.
 
-\subsubsection{Bahngleichung 1. Ordnung}
+\subsection{Bahngleichung 1. Ordnung}
 \label{sec:weber_bahn_1ordnung}
 
 In erster Ordnung der Störungsrechnung (Entwicklung in \( 1/c^2 \)) ergibt sich:
@@ -132,7 +158,7 @@ Dabei sind:
     \item \( \phi \) – wahre Anomalie (Winkelposition).
 \end{itemize}
 
-\subsubsection{Periheldrehung pro Umlauf}
+\subsection{Periheldrehung pro Umlauf}
 \label{sec:weber_periheldrehung}
 
 Die Periheldrehung pro Umlauf beträgt:
@@ -155,7 +181,7 @@ Für Merkur (\( a = 5,79 \times 10^{10} \, \text{m}, e = 0,2056 \)) liefert dies
 
 in exzellenter Übereinstimmung mit der Beobachtung und der Allgemeinen Relativitätstheorie (siehe auch Anhang~\ref{app:periheldrehung}).
 
-\subsubsection{Winkelgeschwindigkeit}
+\subsection{Winkelgeschwindigkeit}
 \label{sec:weber_winkelgeschw}
 
 Die Winkelgeschwindigkeit \( \omega = d\phi/dt \) folgt aus dem spezifischen Drehimpuls \( h = \sqrt{GMa(1-e^2)} \):
@@ -164,7 +190,7 @@ Die Winkelgeschwindigkeit \( \omega = d\phi/dt \) folgt aus dem spezifischen Dre
 \omega(\phi) = \frac{h}{r(\phi)^2} = \frac{h (1 + e \cos(\kappa\phi))^2}{a^2 (1-e^2)^2}
 \]
 
-\subsubsection{Numerische Integration und Ephemeriden}
+\subsection{Numerische Integration und Ephemeriden}
 \label{sec:weber_numerik}
 
 Die Darstellung der Bahn als \( r(\phi) \) und \( \omega(\phi) \) ist besonders vorteilhaft für die numerische Integration. Anstelle einer zeitbasierten Integration (mit variabler Schrittweite, die bei hohen Exzentrizitäten Probleme bereitet) kann über den Winkel \( \phi \) integriert werden. Die Zeit wird sekundär berechnet:
@@ -189,9 +215,9 @@ Für die Integration der Bewegungsgleichung wird das folgende Differentialgleich
 \frac{dt}{d\phi} = \frac{1}{\omega}
 \]
 
-mit den Kraftkomponenten \( F_r, F_\phi \) aus der Weber-Gravitation. Dieses System wird mit einem Runge-Kutta-Verfahren (oder einem adaptiven Integrator) numerisch gelöst. Die Ergebnisse stimmen mit den hochpräzisen Ephemeridendaten (z. B. DE440 des Jet Propulsion Laboratory) innerhalb der Messgenauigkeit überein.
+mit den Kraftkomponenten \( F_r, F_\phi \) aus der WDBT-Kraft \( \vec{F}_{\text{WDBT}} \). Dieses System wird mit einem Runge-Kutta-Verfahren (oder einem adaptiven Integrator) numerisch gelöst. Die Ergebnisse stimmen mit den hochpräzisen Ephemeridendaten (z. B. DE440 des Jet Propulsion Laboratory) innerhalb der Messgenauigkeit überein.
 
-\subsubsection{Anpassung an Ephemeriden}
+\subsection{Anpassung an Ephemeriden}
 \label{sec:weber_ephemeriden}
 
 Die winkelbasierte Darstellung erlaubt eine einfache Kalibrierung der Bahnparameter an beobachtete Ephemeriden. Gegeben eine beobachtete Winkelposition \( \phi(t) \) zu einer Zeit \( t \), kann der zugehörige Bahnradius \( r(\phi) \) direkt berechnet werden. Umgekehrt kann aus einer gemessenen Radialgeschwindigkeit oder Entfernung der Winkel rekonstruiert werden. Dies macht die Theorie besonders geeignet für die hochpräzise Astrometrie (z. B. Gaia-Mission) und für die Analyse von Pulsar-Timing-Daten.
@@ -201,35 +227,57 @@ Die numerische Implementierung dieser Methode wird in Anhang~\ref{app:numerik} d
 \section{Identitätsbeziehung zwischen DSTT und Weber-Kräften}
 \label{sec:identitaetsbeziehung}
 
-Die DSTT-Zustandsvariable \( \beta_{\text{DSTT}} \) und die Terme der Weber-Kraft sind über eine Identitätsbeziehung verknüpft (siehe auch Anhang~\ref{app:identitaet}):
+\subsection{Die Identitätsbeziehung der WDBT}
+
+Die DSTT-Zustandsvariable \( \beta_{\text{DSTT}} \) und die Terme der \textbf{vollständigen WDBT-Kraft} sind über eine Identitätsbeziehung verknüpft (siehe auch Anhang~\ref{app:identitaet}):
 
 \[
-\frac{|\vec{F}_{\text{WG}}^{\text{tan}}|}{|\vec{F}_{\text{WG}}^{\text{rad}}| + |\vec{F}_{\text{WG}}^{\text{tan}}|} \equiv \beta_{\text{DSTT}}(t)
+\boxed{\frac{|\vec{F}_{\text{WDBT}}^{\text{tan}}|}{|\vec{F}_{\text{WDBT}}^{\text{rad}}| + |\vec{F}_{\text{WDBT}}^{\text{tan}}|} \equiv \beta_{\text{DSTT}}(t)}
 \]
 
 mit
 
 \[
 \begin{aligned}
-\vec{F}_{\text{WG}}^{\text{rad}} &= -\frac{GMm}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{WG}} \frac{r\ddot{r}}{c^2} \right] \hat{r} \\
+\vec{F}_{\text{WDBT}}^{\text{rad}} &= \vec{F}_{\text{WG}}^{\text{rad}} + \vec{F}_{Q,\text{rad}}, \\[2mm]
+\vec{F}_{\text{WDBT}}^{\text{tan}} &= \vec{F}_{\text{WG}}^{\text{tan}} \quad (\text{da } \vec{F}_{Q,\text{tan}} = 0)
+\end{aligned}
+\]
+
+Die reinen Weber-Terme lauten:
+
+\[
+\begin{aligned}
+\vec{F}_{\text{WG}}^{\text{rad}} &= -\frac{GMm}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{1}{2} \frac{r\ddot{r}}{c^2} \right] \hat{r}, \\[2mm]
 \vec{F}_{\text{WG}}^{\text{tan}} &= -\frac{GMm}{r^2} \cdot \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v}
 \end{aligned}
 \]
 
-\noindent
-\textbf{Gültigkeitsbereich:} Sei \( \mathcal{D} \) die Menge aller Phasenraumpunkte, für die die Radialgeschwindigkeit \( \dot{r} \neq 0 \) ist.
+\subsection{Gültigkeitsbereich}
+
+Sei \( \mathcal{D} \) die Menge aller Phasenraumpunkte, für die die Radialgeschwindigkeit \( \dot{r} \neq 0 \) ist.
 
 Aus Axiom 4 (\( \dot{\beta} > 0 \)) folgt, dass alle physikalisch realisierten Bahnen für alle Zeiten in \( \mathcal{D} \) liegen.
 
 Für alle Punkte in \( \mathcal{D} \) gilt dann die Identitätsbeziehung. Punkte mit \( \dot{r} = 0 \) (wie das Perihel einer Ellipse) werden in der Theorie nie erreicht und sind daher von der Gültigkeit ausgeschlossen.
 
+\subsection{Warum die reine WG nicht ausreicht}
+
+In der reinen Weber-Gravitation (ohne Quantenpotential) würde die Identitätsbeziehung nur näherungsweise gelten:
+
+\[
+\frac{|\vec{F}_{\text{WG}}^{\text{tan}}|}{|\vec{F}_{\text{WG}}^{\text{rad}}| + |\vec{F}_{\text{WG}}^{\text{tan}}|} = \beta_{\text{DSTT}}(t) + \mathcal{O}(c^{-4})
+\]
+
+Der Grund ist ein störender Term \( \alpha\phi^2 \) in der Bahngleichung zweiter Ordnung. Dieser Term wird jedoch durch das Quantenpotential \( Q \) \textbf{exakt} kompensiert (siehe Anhang~\ref{app:identitaet}). Daher gilt die exakte Identität für die vollständige WDBT.
+
 \section{Die Kopplungsgleichung}
 \label{sec:kopplungsgleichung}
 
-Aus den Bewegungsgleichungen der WG und der Definition von \( \beta_{\text{DSTT}} \) folgt nach längerer Rechnung die zentrale Kopplungsgleichung:
+Aus den Bewegungsgleichungen der WDBT und der Definition von \( \beta_{\text{DSTT}} \) folgt nach längerer Rechnung die zentrale Kopplungsgleichung:
 
 \[
-\dot{\beta}_{\text{DSTT}} = \frac{2\dot{r}}{r} \cdot \frac{GM}{c^2 r} \cdot \frac{1 - \beta_{\text{WG}}}{(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2})^2} + \mathcal{O}\left(\frac{1}{c^4}\right)
+\dot{\beta}_{\text{DSTT}} = \frac{2\dot{r}}{r} \cdot \frac{GM}{c^2 r} \cdot \frac{1 - \beta_{\text{WG}}}{\left(1 + \frac{\dot{r}^2}{r^2\dot{\phi}^2}\right)^2} + \mathcal{O}\left(\frac{1}{c^4}\right)
 \]
 
 Dies ist das zentrale Ergebnis! Es zeigt:
@@ -240,7 +288,7 @@ Dies ist das zentrale Ergebnis! Es zeigt:
     \item Für \( \beta_{\text{WG}} > 1 \) wäre \( \dot{\beta}_{\text{DSTT}} < 0 \)
 \end{itemize}
 
-Mit \( \beta_{\text{WG}} = 0,5 \) für Massen folgt zwingend \( \dot{\beta}_{\text{DSTT}} > 0 \). Die WG enthält also implizit die Monotonie der DSTT!
+Mit \( \beta_{\text{WG}} = 0,5 \) für Massen folgt zwingend \( \dot{\beta}_{\text{DSTT}} > 0 \). Die WDBT enthält also implizit die Monotonie der DSTT!
 
 \section{Exzentrizitätsänderung}
 \label{sec:exzentrizitaet}
@@ -384,8 +432,8 @@ Die Erweiterte Weber-Theorie vereinheitlicht die Beschreibung aller fundamentale
 
 \begin{itemize}
     \item Die DSTT ist eine eigenständige Theorie der Trägheitsaufteilung (\( \dot{\beta} > 0 \), Drift, Zeitpfeil, Entropieproduktion).
-    \item Die Weber-Kräfte (WED, WG) zeigen dieselbe strukturelle Aufteilung in radiale und tangentiale Komponenten.
-    \item Die Identitätsbeziehung verknüpft \( \beta_{\text{DSTT}} \) mit den Termen der Weber-Kraft.
+    \item Die vollständige WDBT-Kraft ist \( \vec{F}_{\text{WDBT}} = \vec{F}_{\text{WG}} + \vec{F}_Q \), wobei \( \vec{F}_Q \) das Quantenpotential ist.
+    \item Die Identitätsbeziehung \( \frac{|\vec{F}_{\text{WDBT}}^{\text{tan}}|}{|\vec{F}_{\text{WDBT}}^{\text{rad}}| + |\vec{F}_{\text{WDBT}}^{\text{tan}}|} \equiv \beta_{\text{DSTT}} \) gilt exakt.
     \item Die Kopplungsgleichung zeigt: \( \beta_{\text{WG}} = 0,5 \) erzwingt \( \dot{\beta}_{\text{DSTT}} > 0 \); \( \beta_{\text{WED}} = 2 \) erzwingt \( \dot{\beta}_{\text{DSTT}} = 0 \).
     \item Die Gravitation ist irreversibel (Zeitpfeil, Entropie), die Elektrodynamik ist reversibel.
 \end{itemize}
