@@ -1,9 +1,14 @@
+% ============================================================================
+% ANHANG G: Identitätsbeziehung zwischen DSTT und Weber-Kräften
+% ============================================================================
+
 \chapter{Identitätsbeziehung zwischen DSTT und Weber-Kräften}
-\label{app:identitaet}
+\label{app:identitaetsbeziehung}
 
 \section{Einleitung}
+\label{app:identitaet_einleitung}
 
-In Kapitel~\ref{ch:dstt_weber} (Abschnitt 8.5) wird die Identitätsbeziehung 
+In Kapitel~\ref{ch:dstt_weber_kraefte} wird die Identitätsbeziehung 
 zwischen der DSTT-Zustandsvariablen \(\beta_{\text{DSTT}}(t)\) und den Termen 
 der Weber-Gravitation (WG) behauptet:
 
@@ -12,14 +17,16 @@ der Weber-Gravitation (WG) behauptet:
 \tag{G.1}
 \]
 
-Dieser Anhang beweist, dass diese Beziehung \textbf{exakt} gilt -- jedoch nicht in der 
+Dieser Anhang beweist, dass diese Beziehung \textbf{exakt} gilt – jedoch nicht in der 
 reinen Weber-Gravitation allein, sondern in der vollständigen 
 Weber-De-Broglie-Bohm-Theorie (WDBT), in der das Quantenpotential \(Q\) 
 die Terme höherer Ordnung exakt kompensiert.
 
 \section{Das Problem der reinen Weber-Gravitation}
+\label{app:identitaet_problem_wg}
 
 \subsection{Bahngleichung der reinen WG in zweiter Ordnung}
+\label{sub:identitaet_bahngleichung}
 
 Die reine Weber-Gravitation mit \(\beta_{\text{WG}} = 0,5\) führt auf die 
 Bahngleichung (Herleitung in Anhang~\ref{app:periheldrehung}):
@@ -42,6 +49,7 @@ Dabei ist:
 \]
 
 \subsection{Der problematische Term \(\alpha\phi^2\)}
+\label{sub:identitaet_problematischer_term}
 
 Der Term \(\alpha\phi^2\) in (G.2) führt zu einer \textbf{nicht-geschlossenen Bahn} 
 („Rosettenbahn“). Dies ist physikalisch inakzeptabel, da beobachtete 
@@ -51,10 +59,12 @@ Planetenbahnen geschlossen sind (bis auf die Periheldrehung, die durch
 Die reine WG ist daher \textbf{unvollständig}.
 
 \section{Die Kompensation durch das Quantenpotential der DBT}
+\label{app:identitaet_kompensation}
 
 \subsection{Das Quantenpotential in der De-Broglie-Bohm-Theorie}
+\label{sub:identitaet_quantenpotential}
 
-In der DBT lautet das Quantenpotential (Kapitel 4.1.1, Gleichung 4.3):
+In der DBT lautet das Quantenpotential (siehe Kapitel~\ref{ch:neutrino}):
 
 \[
 Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 R}{R}, \quad R = \sqrt{\rho}
@@ -70,6 +80,7 @@ Q = -\frac{\hbar^2}{2m} \left( \frac{1}{\lambda^2} - \frac{2}{r\lambda} \right)
 \]
 
 \subsection{Entwicklung des Quantenpotentials in Winkelkoordinaten}
+\label{sub:identitaet_entwicklung}
 
 Für gebundene Bahnen (\(r \gg \lambda\)) dominiert der erste Term, und das 
 Quantenpotential wird näherungsweise konstant. Die entscheidende Erkenntnis 
@@ -84,9 +95,9 @@ Q_{\text{comp}}(\phi) = -\frac{3G^2M^2 e}{8c^4 a^2(1-e^2)^2} \cdot \phi^2 + \mat
 \]
 
 \subsection{Die exakte Kompensation}
+\label{sub:identitaet_exakte_kompensation}
 
-Die Bewegungsgleichung der vollständigen WDBT lautet (Kapitel 4.2.1, 
-Gleichung 4.6):
+Die Bewegungsgleichung der vollständigen WDBT lautet (siehe Kapitel~\ref{ch:dstt_weber_kraefte}):
 
 \[
 m \frac{d^2\vec{r}}{dt^2} = -\frac{GMm}{r^2} \left( 1 - \frac{\dot{r}^2}{c^2} + \frac{1}{2}\frac{r\ddot{r}}{c^2} \right) \hat{r} - \vec{\nabla} Q
@@ -112,8 +123,10 @@ r(\phi) = \frac{a(1 - e^2)}{1 + e \cos(\kappa\phi)}
 Dies ist die \textbf{geschlossene} Bahn mit der korrekten Periheldrehung.
 
 \section{Beweis der Identitätsbeziehung}
+\label{app:identitaet_beweis}
 
 \subsection{Die vollständige Kraft der WDBT}
+\label{sub:identitaet_vollstaendige_kraft}
 
 Die effektive Kraft in der WDBT ist:
 
@@ -136,6 +149,7 @@ F_{\text{tan}} = F_{\text{WG,tan}} + F_{Q,\text{tan}}
 \]
 
 \subsection{Die entscheidende Eigenschaft von \(F_Q\)}
+\label{sub:identitaet_fq_eigenschaft}
 
 Das Quantenpotential wirkt \textbf{repulsiv} und ist \textbf{kugelsymmetrisch} 
 (für den Grundzustand). Daher gilt:
@@ -160,6 +174,7 @@ Der Betrag ist:
 \]
 
 \subsection{Die radiale Komponente mit Kompensation}
+\label{sub:identitaet_radiale_kompensation}
 
 Der radiale Anteil der WG enthält Terme, die ohne Kompensation die 
 Identität stören würden. Die radiale Komponente des Quantenpotentials 
@@ -179,6 +194,7 @@ Die exakte Rechnung zeigt:
 \]
 
 \subsection{Warum das Gegenbeispiel der Kreisbahn nicht greift}
+\label{sub:identitaet_kreisbahn}
 
 Für eine reine Kreisbahn (\(\dot{r} = 0\)) wäre:
 
@@ -192,13 +208,14 @@ Gegenbeispiel zu sein. \textbf{Aber:}
 
 Aus Axiom 4 der DSTT (\(\dot{\beta} > 0\)) folgt, dass reine Kreisbahnen 
 \textbf{physikalisch unmöglich} sind. Die DSTT-Drift (\(\dot{\beta} > 0\)) 
-erzwingt eine radiale Bewegung (\(\dot{r} \neq 0\)) -- wenn auch extrem 
+erzwingt eine radiale Bewegung (\(\dot{r} \neq 0\)) – wenn auch extrem 
 langsam. Das Quantenpotential verstärkt diesen Effekt und stellt sicher, 
 dass \(\dot{r} = 0\) niemals exakt erreicht wird. Daher ist die 
 Bedingung \(\dot{r} \neq 0\) für alle physikalisch realisierten Bahnen 
 erfüllt.
 
 \section{Zusammenfassung der Ergebnisse}
+\label{app:identitaet_zusammenfassung}
 
 \begin{enumerate}
     \item Die reine Weber-Gravitation (ohne DBT) ist unvollständig: Sie 
@@ -226,12 +243,13 @@ erfüllt.
 \end{enumerate}
 
 \section{Ausblick}
+\label{app:identitaet_ausblick}
 
 Die hier dargestellte Kompensation ist kein Zufall, sondern ein 
 fundamentales Prinzip der WDBT: Die nicht-lokale, instantane Wirkung 
 des Quantenpotentials \(Q\) stellt die globale Konsistenz der Theorie 
-sicher. Die scheinbaren Widersprüche der reinen WG -- der 
-\(\alpha\phi^2\)-Term in der Bahngleichung -- werden durch \(Q\) exakt 
+sicher. Die scheinbaren Widersprüche der reinen WG – der 
+\(\alpha\phi^2\)-Term in der Bahngleichung – werden durch \(Q\) exakt 
 aufgehoben.
 
 Dies ist ein starkes Indiz dafür, dass die WDBT eine konsistente, 

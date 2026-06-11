@@ -1,5 +1,9 @@
+% ============================================================================
+% KAPITEL 4: Diskrete Informations-Lagrange-Funktional
+% ============================================================================
+
 \chapter{Diskretes Informations-Lagrange-Funktional}
-\label{ch:lagrange}
+\label{ch:lagrange_funktional}
 
 \section{Einleitung}
 \label{sec:lagrange_einleitung}
@@ -32,7 +36,7 @@ Die diskrete IWT geht von folgenden Prinzipien aus:
 Daraus folgt, dass die Dynamik durch ein diskretes Funktional beschrieben werden muss, das sowohl lokale als auch globale Informationsstrukturen berücksichtigt.
 
 \section{Das diskrete Informations-Lagrange-Funktional}
-\label{sec:lagrange_funktional}
+\label{sec:lagrange_funktional_def}
 
 Das diskrete Informations-Lagrange-Funktional lautet allgemein:
 
@@ -52,7 +56,7 @@ Hierbei ist:
 \end{itemize}
 
 \subsection{Diskrete räumliche Gradienten}
-\label{sec:diskrete_gradienten}
+\label{sub:diskrete_gradienten}
 
 Der diskrete Gradient am Knoten \( k \) ist definiert als:
 
@@ -68,7 +72,7 @@ mit:
 \end{itemize}
 
 \subsection{Diskrete zeitliche Änderung}
-\label{sec:diskrete_zeit_aenderung}
+\label{sub:diskrete_zeit_aenderung}
 
 Die diskrete zeitliche Ableitung ist:
 
@@ -79,7 +83,7 @@ Die diskrete zeitliche Ableitung ist:
 mit fundamentalem Zeitschrift \( T \).
 
 \section{Diskrete Variation und Euler-Lagrange-Gleichungen}
-\label{sec:euler_lagrange}
+\label{sec:euler_lagrange_diskret}
 
 Die Dynamik folgt aus dem diskreten Variationsprinzip:
 
@@ -101,7 +105,7 @@ Hierbei sind:
 \end{itemize}
 
 \section{Diskreter Informationsfluss als natürliche Konsequenz}
-\label{sec:informationsfluss}
+\label{sec:informationsfluss_konsequenz}
 
 Aus der diskreten Euler-Lagrange-Gleichung folgt unmittelbar der diskrete Informationsfluss:
 
@@ -120,7 +124,7 @@ Damit wird die diskrete Kontinuitätsgleichung
 zu einer direkten Konsequenz des diskreten Variationsprinzips.
 
 \section{Zerlegung in lokale und globale diskrete Beiträge}
-\label{sec:lokal_global}
+\label{sec:lokal_global_zerlegung}
 
 Die Struktur von \( \mathcal{F}_k \) erlaubt eine natürliche Zerlegung:
 
@@ -129,7 +133,7 @@ Die Struktur von \( \mathcal{F}_k \) erlaubt eine natürliche Zerlegung:
 \]
 
 \subsection{Lokaler diskreter Anteil}
-\label{sec:lokal_anteil}
+\label{sub:lokaler_anteil}
 
 Der lokale Anteil beschreibt lokale Informationsflüsse:
 
@@ -158,7 +162,7 @@ Die Variation des lokalen Anteils ergibt:
 \]
 
 \subsection{Globaler diskreter Anteil}
-\label{sec:global_anteil}
+\label{sub:globaler_anteil}
 
 Der globale Anteil beschreibt systemische Informationsorganisation:
 
@@ -179,7 +183,7 @@ Q_k^{(n)} = -\frac{\hbar^2}{2m} \frac{\Delta^2 \sqrt{I_k^{(n)}}}{\sqrt{I_k^{(n)}
 \]
 
 \section{Diskrete Weber-Kraft und Bohm-Potential als Grenzfälle}
-\label{sec:grenzfaelle}
+\label{sec:grenzfaelle_weber_bohm}
 
 Die diskrete IWT reproduziert zwei fundamentale Strukturen:
 
@@ -191,12 +195,12 @@ Die diskrete IWT reproduziert zwei fundamentale Strukturen:
 Beide entstehen aus demselben diskreten Funktional – sie sind keine unabhängigen Modelle, sondern zwei Projektionen derselben diskreten Informationsstruktur.
 
 \section{Symmetrien und Erhaltungsgrößen im diskreten Netz}
-\label{sec:symmetrien}
+\label{sec:symmetrien_erhaltung}
 
 Nach dem diskreten Noether-Theorem ergeben sich:
 
 \subsection{Translationsinvarianz}
-\label{sec:translationsinvarianz}
+\label{sub:translationsinvarianz}
 
 Wenn \( \mathcal{F}_k \) nur von Differenzen \( I_k^{(n)} - I_l^{(n)} \) abhängt, dann ist der diskrete Gesamtimpuls erhalten:
 
@@ -205,7 +209,7 @@ P^{(n)} = \sum_k \frac{\partial \mathcal{F}_k}{\partial (\delta_t I_k^{(n)})} = 
 \]
 
 \subsection{Zeitinvarianz}
-\label{sec:zeitinvarianz}
+\label{sub:zeitinvarianz}
 
 Wenn \( \mathcal{F}_k \) nicht explizit von \( n \) abhängt, dann ist die diskrete Energie erhalten:
 
@@ -214,7 +218,7 @@ E^{(n)} = \sum_k \left[ \delta_t I_k^{(n)} \frac{\partial \mathcal{F}_k}{\partia
 \]
 
 \subsection{Rotationsinvarianz}
-\label{sec:rotationsinvarianz}
+\label{sub:rotationsinvarianz}
 
 Wenn das Netz rotationssymmetrisch ist, dann ist der diskrete Drehimpuls erhalten.
 
@@ -243,7 +247,7 @@ Die konkreten Update-Schritte sind:
 \end{enumerate}
 
 \section{Grenzfall zur kontinuierlichen Form}
-\label{sec:kontinuierlicher_grenzfall}
+\label{sec:kontinuierlicher_grenzfall_lagrange}
 
 Für \( T \to 0 \) und \( N \to \infty \) mit \( \Delta V_k \to 0 \) ergibt sich der kontinuierliche Grenzfall:
 

@@ -1,3 +1,7 @@
+% ============================================================================
+% ANHANG B: Numerische Simulationen
+% ============================================================================
+
 \chapter{Numerische Simulationen}
 \label{app:numerik}
 
@@ -7,18 +11,18 @@
 Die diskrete Formulierung der IWT und der WDBT+ ist algorithmisch direkt implementierbar. Die numerischen Methoden dienen drei Hauptzwecken:
 
 \begin{enumerate}
-    \item \textbf{Validierung:} überprüfung der internen Konsistenz der Theorie
+    \item \textbf{Validierung:} Überprüfung der internen Konsistenz der Theorie
     \item \textbf{Emergenznachweis:} Demonstration, wie kontinuierliche Physik aus diskreter Dynamik entsteht (siehe Anhang~\ref{app:kontinuumslimes})
-    \item \textbf{Vorhersagegenerierung:} Berechnung testbarer experimenteller Konsequenzen (siehe Kapitel~\ref{ch:vorhersagen})
+    \item \textbf{Vorhersagegenerierung:} Berechnung testbarer experimenteller Konsequenzen (siehe Kapitel~\ref{ch:testbare_vorhersagen})
 \end{enumerate}
 
-Alle Simulationen basieren auf den in Teil I entwickelten fundamental diskreten Gleichungen (siehe Kapitel~\ref{ch:diskrete_dynamik} und \ref{ch:lagrange}).
+Alle Simulationen basieren auf den in Teil I entwickelten fundamental diskreten Gleichungen (siehe Kapitel~\ref{ch:diskrete_informationsdynamik} und \ref{ch:lagrange_funktional}).
 
 \section{Das diskrete Simulationsnetzwerk}
 \label{app:numerik_netzwerk}
 
 \subsection{Grundstruktur}
-\label{app:numerik_grundstruktur}
+\label{sub:numerik_grundstruktur}
 
 Die Simulation arbeitet mit einem diskreten Netzwerk \( \mathcal{N} \), bestehend aus:
 
@@ -34,14 +38,13 @@ Die Simulation arbeitet mit einem diskreten Netzwerk \( \mathcal{N} \), bestehen
 \end{itemize}
 
 \subsection{Initialisierungsprotokolle}
-\label{app:numerik_initialisierung}
+\label{sub:numerik_initialisierung}
 
 Je nach Simulationsziel werden unterschiedliche Initialisierungen verwendet:
 
-\noindent
 \begin{tabular}{|l|l|l|}
 \hline
-Simulationstyp & Initialisierung \( I_k^{(0)} \) & Kopplungsmatrix \( K_{kl}^{(0)} \) \\
+\textbf{Simulationstyp} & \textbf{Initialisierung \( I_k^{(0)} \)} & \textbf{Kopplungsmatrix \( K_{kl}^{(0)} \)} \\
 \hline
 Leeres Vakuum & Gleichverteilung \( I_k^{(0)} = I_0 \) & Fraktales Muster mit \( D \approx 2,704 \) (siehe Kapitel~\ref{ch:fraktale_dimension}) \\
 Teilchensystem & Lokalisierte Peaks an Teilchenpositionen & Nachbarschaftskopplung \\
@@ -54,7 +57,7 @@ Quantensystem & Kohärente Phasenverteilung & Globale Langreichweitkopplung \\
 \label{app:numerik_implementierung}
 
 \subsection{Hauptalgorithmus}
-\label{app:numerik_algorithmus}
+\label{sub:numerik_algorithmus}
 
 Der Kern der Simulation ist die rekursive Update-Schleife:
 
@@ -77,9 +80,9 @@ Ausgabe: Zeitreihen aller relevanten Groessen
 \end{verbatim}
 
 \subsection{Diskrete Weber-Dynamik}
-\label{app:numerik_weber}
+\label{sub:numerik_weber}
 
-Die lokale Dynamik wird durch die diskrete Weber-Kraft implementiert (siehe Kapitel~\ref{ch:dstt_weber}):
+Die lokale Dynamik wird durch die diskrete Weber-Kraft implementiert (siehe Kapitel~\ref{ch:dstt_weber_kraefte}):
 
 \[
 \vec{F}_{ij}^{(n)} = \frac{q_i q_j}{4\pi \varepsilon_0 (r_{ij}^{(n)})^2} \left[ 1 - \frac{1}{c^2} \left( \frac{\Delta r_{ij}^{(n)}}{T} \right)^2 + \frac{2r_{ij}^{(n)}}{c^2} \cdot \frac{\Delta^2 r_{ij}^{(n)}}{T^2} \right] \hat{r}_{ij}^{(n)}
@@ -99,7 +102,7 @@ Berechnungsschritte für zwei Ladungen:
 \end{enumerate}
 
 \subsection{Diskretes Bohm-Potential}
-\label{app:numerik_bohm}
+\label{sub:numerik_bohm}
 
 Die globale Dynamik berechnet das Bohm-Potential über (siehe Kapitel~\ref{ch:neutrino}):
 
@@ -119,9 +122,9 @@ wobei \( \mathcal{N}(k) \) die Nachbarknoten von \( k \) bezeichnet und \( w_{kl
 \label{app:numerik_rekonstruktion}
 
 \subsection{Raumemergenz}
-\label{app:numerik_raum}
+\label{sub:numerik_raum}
 
-Die physikalische Raumstruktur wird aus der Metrik rekonstruiert (siehe Kapitel~\ref{ch:emergenz}):
+Die physikalische Raumstruktur wird aus der Metrik rekonstruiert (siehe Kapitel~\ref{ch:emergenz_raum_zeit}):
 
 \begin{verbatim}
 Algorithmus 2: Raumrekonstruktion
@@ -141,7 +144,7 @@ Algorithmus 2: Raumrekonstruktion
 \end{verbatim}
 
 \subsection{Zeitemergenz}
-\label{app:numerik_zeit}
+\label{sub:numerik_zeit}
 
 \begin{itemize}
     \item Fundamentale Zeit: Update-Index \( n \in \mathbb{N}_0 \)
@@ -154,12 +157,12 @@ Algorithmus 2: Raumrekonstruktion
 \label{app:numerik_validierung}
 
 \subsection{Erhaltungsgrö{\ss}en}
-\label{app:numerik_erhaltung}
+\label{sub:numerik_erhaltung}
 
 Die Simulation überprüft kontinuierlich:
 
 \noindent
-\textbf{Informationserhaltung:} (siehe Kapitel~\ref{ch:axiome})
+\textbf{Informationserhaltung:} (siehe Kapitel~\ref{ch:axiome_iwt})
 
 \[
 \left| \sum_{k=1}^{N} I_k^{(n+1)} - \sum_{k=1}^{N} I_k^{(n)} \right| < \epsilon_I
@@ -181,12 +184,11 @@ E^{(n)} = \sum_k \left[ \frac{1}{2} \alpha \left( \frac{I_k^{(n)} - I_k^{(n-1)}}
 \]
 
 \subsection{Grenzfalltests}
-\label{app:numerik_grenzfaelle}
+\label{sub:numerik_grenzfaelle}
 
-\noindent
 \begin{tabular}{|l|l|l|}
 \hline
-Parameterbereich & Erwartete Emergenz & Simulationsergebnis \\
+\textbf{Parameterbereich} & \textbf{Erwartete Emergenz} & \textbf{Simulationsergebnis} \\
 \hline
 \( \lambda \ll \alpha, T \to 0 \) & Newtonsche Mechanik & Bestätigt (Abweichung \( < 10^{-6} \)) \\
 \( \lambda \gg \alpha, \Delta\phi \) kohärent & Schrödinger-Gleichung & Bestätigt (Übereinstimmung \( > 99\% \)) \\
@@ -199,7 +201,7 @@ Starke Kopplung, kleine Skalen & Frequenzabhängige Effekte & Klare Signale \\
 \label{app:numerik_beispiele}
 
 \subsection{Doppelspaltexperiment}
-\label{app:numerik_doppelspalt}
+\label{sub:numerik_doppelspalt}
 
 \begin{itemize}
     \item \textbf{Ziel:} Reproduktion von Interferenz ohne Wellenfunktion
@@ -209,7 +211,7 @@ Starke Kopplung, kleine Skalen & Frequenzabhängige Effekte & Klare Signale \\
 \end{itemize}
 
 \subsection{Gravitationspotential}
-\label{app:numerik_gravitation}
+\label{sub:numerik_gravitation}
 
 \begin{itemize}
     \item \textbf{Ziel:} Emergenz des Newtonschen Potentials
@@ -219,30 +221,30 @@ Starke Kopplung, kleine Skalen & Frequenzabhängige Effekte & Klare Signale \\
 \end{itemize}
 
 \subsection{Kosmologische Simulation}
-\label{app:numerik_kosmologie}
+\label{sub:numerik_kosmologie}
 
 \begin{itemize}
     \item \textbf{Ziel:} Hintergrundstrahlungstemperatur aus thermischem Gleichgewicht
     \item \textbf{Setup:} Gro{\ss}kaliges fraktales Netz mit \( D = 2,704 \)
     \item \textbf{Ergebnis:} \( T_{\text{CMB}} \approx 2,7 \, \text{K} \) ohne Urknall
-    \item \textbf{Vorhersage:} Spezifische nicht-gau{\ss}sche Fluktuationen (siehe Kapitel~\ref{ch:vorhersagen})
+    \item \textbf{Vorhersage:} Spezifische nicht-gau{\ss}sche Fluktuationen (siehe Kapitel~\ref{ch:testbare_vorhersagen})
 \end{itemize}
 
 \section{Technische Implementierung}
 \label{app:numerik_technik}
 
 \subsection{Performance-Optimierungen}
-\label{app:numerik_performance}
+\label{sub:numerik_performance}
 
 \begin{itemize}
     \item \textbf{Parallelisierung:} Nutzung von GPU-Clustern für gro{\ss}e \( N \)
     \item \textbf{Approximation:} Baumalgorithmen (Barnes-Hut) für weitreichende Kopplungen
-    \item \textbf{Adaptive Zeitschritte:} Variable \( T \) bei schnellen änderungen
+    \item \textbf{Adaptive Zeitschritte:} Variable \( T \) bei schnellen Änderungen
     \item \textbf{Speicheroptimierung:} Sparse-Matrix-Darstellung für \( K_{kl} \)
 \end{itemize}
 
 \subsection{Visualisierung}
-\label{app:numerik_visualisierung}
+\label{sub:numerik_visualisierung}
 
 \begin{itemize}
     \item 3D-Darstellung: Einbettung der emergenten Raumgeometrie
@@ -264,10 +266,10 @@ Die numerische Simulation der IWT zeigt:
 \end{itemize}
 
 \subsection{Zukünftige Entwicklung}
-\label{app:numerik_ausblick}
+\label{sub:numerik_ausblick}
 
 \begin{itemize}
     \item Hochleistungssimulationen: Skalierung auf \( N > 10^9 \) Knoten
     \item Quantitativer Vergleich: Direkter Abgleich mit experimentellen Daten
-    \item Phasenübergänge: Systematische Untersuchung der Regime-übergänge
+    \item Phasenübergänge: Systematische Untersuchung der Regime-Übergänge
 \end{itemize}

@@ -1,3 +1,7 @@
+% ============================================================================
+% ANHANG H: Vollständige Herleitung der Periheldrehung in der Weber-Gravitation
+% ============================================================================
+
 \chapter{Vollständige Herleitung der Periheldrehung in der Weber-Gravitation}
 \label{app:periheldrehung}
 
@@ -10,16 +14,16 @@ frühesten und wichtigsten Bestätigungen der Theorie.
 
 Die Weber-Gravitation (WG) mit \( \beta_{\text{WG}} = 0,5 \) macht dieselbe 
 Vorhersage. Dieser Anhang liefert die \emph{explizite, vollständige und korrekte} 
-Herleitung aus den Grundgleichungen der WG (siehe Kapitel~\ref{ch:dstt_weber}).
+Herleitung aus den Grundgleichungen der WG (siehe Kapitel~\ref{ch:dstt_weber_kraefte}).
 
 \section{Grundgleichungen der Weber-Gravitation}
 \label{app:periheldrehung_grundlagen}
 
 \subsection{Weber-Kraft für massive Körper}
-\label{app:periheldrehung_weber_kraft}
+\label{sub:periheldrehung_weber_kraft}
 
 Für zwei Massen \( M \) (Zentralmasse) und \( m \) (Testmasse) lautet die 
-Weber-Kraft (Kapitel~\ref{ch:dstt_weber}, Abschnitt 8.4.3):
+Weber-Kraft (Kapitel~\ref{ch:dstt_weber_kraefte}):
 
 \[
 \vec{F}_{\text{WG}} = -\frac{GMm}{r^2} 
@@ -32,7 +36,7 @@ Weber-Kraft (Kapitel~\ref{ch:dstt_weber}, Abschnitt 8.4.3):
 Dabei ist \( \hat{v} = \vec{v}/v \) der Einheitsvektor in Bewegungsrichtung.
 
 \subsection{Vereinfachung: Bahnebene}
-\label{app:periheldrehung_bahnebene}
+\label{sub:periheldrehung_bahnebene}
 
 Wir wählen die Bahnebene als \( \theta = \pi/2 \). Dann gilt:
 
@@ -44,7 +48,7 @@ Wir wählen die Bahnebene als \( \theta = \pi/2 \). Dann gilt:
 \label{app:periheldrehung_drehimpuls}
 
 \subsection{Exakte Drehimpulsbilanz}
-\label{app:periheldrehung_drehimpuls_exakt}
+\label{sub:periheldrehung_drehimpuls_exakt}
 
 Die tangentiale Kraftkomponente (in \( \hat{\phi} \)-Richtung) ist:
 
@@ -71,7 +75,7 @@ Die linke Seite ist \( \frac{m}{r} \frac{d}{dt}(r^2\dot{\phi}) \). Also:
 \]
 
 \subsection{Drehimpuls in erster Ordnung}
-\label{app:periheldrehung_drehimpuls_ordnung}
+\label{sub:periheldrehung_drehimpuls_ordnung}
 
 Wir setzen an:
 
@@ -100,7 +104,7 @@ Ordnung relevant, da sie mit den radialen Termen interferieren.
 \label{app:periheldrehung_radial}
 
 \subsection{Radiale Beschleunigung}
-\label{app:periheldrehung_beschleunigung}
+\label{sub:periheldrehung_beschleunigung}
 
 Die radiale Komponente der Beschleunigung ist:
 
@@ -136,7 +140,7 @@ F_r = -\frac{GMm}{r^2} \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{1}{2} \frac{r\dd
 \]
 
 \subsection{Radiale Bewegungsgleichung}
-\label{app:periheldrehung_radial_gleichung}
+\label{sub:periheldrehung_radial_gleichung}
 
 Aus \( m a_r = F_r \) folgt:
 
@@ -149,7 +153,7 @@ Aus \( m a_r = F_r \) folgt:
 \label{app:periheldrehung_binet}
 
 \subsection{Substitution \( u = 1/r \)}
-\label{app:periheldrehung_substitution}
+\label{sub:periheldrehung_substitution}
 
 Wir führen die Standard-Substitution durch:
 
@@ -170,7 +174,7 @@ Wir können also weiterhin die Standard-Transformation verwenden:
 \]
 
 \subsection{Einsetzen in (H.3)}
-\label{app:periheldrehung_einsetzen}
+\label{sub:periheldrehung_einsetzen}
 
 Mit \( r\dot{\phi}^2 = h^2 u^3 \) wird (H.3) zu:
 
@@ -179,7 +183,7 @@ Mit \( r\dot{\phi}^2 = h^2 u^3 \) wird (H.3) zu:
 \]
 
 \subsection{Term \( r\ddot{r} \) in \( u \)-Variablen}
-\label{app:periheldrehung_rr}
+\label{sub:periheldrehung_rr}
 
 Es gilt:
 
@@ -195,7 +199,7 @@ Damit wird die Klammer:
 \]
 
 \subsection{Bahngleichung}
-\label{app:periheldrehung_bahngleichung}
+\label{sub:periheldrehung_bahngleichung}
 
 Division durch \( -h^2 u^2 \) ergibt:
 
@@ -209,7 +213,7 @@ Dies ist die exakte Bahngleichung der WG in Binet-Form.
 \label{app:periheldrehung_postnewton}
 
 \subsection{Entwicklung in \( 1/c^2 \)}
-\label{app:periheldrehung_entwicklung}
+\label{sub:periheldrehung_entwicklung}
 
 Wir schreiben \( h = h_0 + \delta h \) mit \( \delta h = \mathcal{O}(c^{-2}) \). 
 Für die linke Seite von (H.4) gilt:
@@ -219,9 +223,8 @@ Für die linke Seite von (H.4) gilt:
 \]
 
 Die Korrektur \( \delta h \) ist jedoch selbst durch die Bewegungsgleichung 
-bestimmt. Die vollständige Post-Newtonsche Entwicklung (siehe z.B. 
-Will \& Nordtvedt 1972) für eine Kraft vom Weber-Typ liefert nach 
-Mittelung über schnelle Oszillationen:
+bestimmt. Die vollständige Post-Newtonsche Entwicklung (siehe \cite{WillNordtvedt1972}) 
+für eine Kraft vom Weber-Typ liefert nach Mittelung über schnelle Oszillationen:
 
 \[
 \frac{d^2u}{d\phi^2} + u = \frac{GM}{h_0^2} + \frac{3GM}{c^2} u^2 + \mathcal{O}(c^{-4}) \tag{H.5}
@@ -231,7 +234,7 @@ Dies ist exakt die Binet-Form der Schwarzschild-Geodäte in der
 Allgemeinen Relativitätstheorie.
 
 \subsection{Die drei Beiträge zum \( 3u^2 \)-Term}
-\label{app:periheldrehung_drei_beitraege}
+\label{sub:periheldrehung_drei_beitraege}
 
 Der Faktor 3 im \( u^2 \)-Term entsteht aus drei physikalischen Effekten:
 
@@ -252,7 +255,7 @@ Summe: \( 1 + 1 + 1 = 3 \).
 \label{app:periheldrehung_loesung}
 
 \subsection{Störungsansatz}
-\label{app:periheldrehung_stoerung}
+\label{sub:periheldrehung_stoerung}
 
 Wir schreiben (H.5) als:
 
@@ -269,7 +272,7 @@ u_0(\phi) = \frac{GM}{h_0^2} (1 + e \cos \phi) = \frac{1}{p} (1 + e \cos \phi)
 mit \( p = a(1-e^2) = h_0^2/(GM) \).
 
 \subsection{Erste Ordnung}
-\label{app:periheldrehung_erste_ordnung}
+\label{sub:periheldrehung_erste_ordnung}
 
 Ansatz: \( u(\phi) = u_0(\phi) + \varepsilon u_1(\phi) \). 
 Einsetzen in (H.5) und Entwicklung:
@@ -279,7 +282,7 @@ u_1'' + u_1 = 3GM u_0^2 = \frac{3GM}{p^2} (1 + e \cos \phi)^2
 \]
 
 \subsection{Entwicklung des Störterms}
-\label{app:periheldrehung_stoerterm}
+\label{sub:periheldrehung_stoerterm}
 
 \[
 (1 + e \cos \phi)^2 = 1 + 2e \cos \phi + e^2 \cos^2 \phi
@@ -295,7 +298,7 @@ u_1'' + u_1 = \frac{3GM}{p^2} \left(1 + \frac{e^2}{2}\right)
 \]
 
 \subsection{Partikuläre Lösungen}
-\label{app:periheldrehung_partikulaer}
+\label{sub:periheldrehung_partikulaer}
 
 \begin{itemize}
     \item Konstanter Term: \( u_{1,\text{const}} = \frac{3GM}{p^2} \left(1 + \frac{e^2}{2}\right) \)
@@ -306,7 +309,7 @@ u_1'' + u_1 = \frac{3GM}{p^2} \left(1 + \frac{e^2}{2}\right)
 \end{itemize}
 
 \subsection{Gesamtlösung in erster Ordnung}
-\label{app:periheldrehung_gesamtloesung}
+\label{sub:periheldrehung_gesamtloesung}
 
 \[
 u(\phi) = \frac{1}{p} (1 + e \cos \phi) 
@@ -319,7 +322,7 @@ u(\phi) = \frac{1}{p} (1 + e \cos \phi)
 \label{app:periheldrehung_perihel}
 
 \subsection{Resonanter Term}
-\label{app:periheldrehung_resonanz}
+\label{sub:periheldrehung_resonanz}
 
 Für die Perihelposition ist vor allem der resonante Term 
 \( \propto \phi \sin \phi \) wichtig. Mit \( GM/p = h_0^2/p^2 = 1 \) 
@@ -330,7 +333,7 @@ u(\phi) \approx \frac{1}{p} \left[ 1 + e \cos \phi + \frac{3e}{c^2 p} \phi \sin 
 \]
 
 \subsection{Additionstheorem}
-\label{app:periheldrehung_addition}
+\label{sub:periheldrehung_addition}
 
 Es gilt die Identität:
 
@@ -347,7 +350,7 @@ u(\phi) \approx \frac{1}{p} \left[ 1 + e \cos\left( \phi - \frac{3}{c^2 p} \phi 
 \]
 
 \subsection{Korrekturfaktor \( \kappa \)}
-\label{app:periheldrehung_kappa}
+\label{sub:periheldrehung_kappa}
 
 Setze:
 
@@ -362,7 +365,7 @@ Mit \( p = a(1-e^2) \) folgt:
 \]
 
 \subsection{Perihel nach einem Umlauf}
-\label{app:periheldrehung_perihel_umlauf}
+\label{sub:periheldrehung_perihel_umlauf}
 
 Das Perihel tritt auf, wenn der Kosinus maximal wird, also bei 
 \( \kappa \phi = 2\pi \):
@@ -372,7 +375,7 @@ Das Perihel tritt auf, wenn der Kosinus maximal wird, also bei
 \]
 
 \subsection{Periheldrehung pro Umlauf}
-\label{app:periheldrehung_formel}
+\label{sub:periheldrehung_formel}
 
 \[
 \Delta\phi = \phi - 2\pi = \frac{6\pi GM}{c^2 a(1-e^2)}
@@ -425,7 +428,7 @@ Mit \( a = 5,79 \times 10^{10} \, \text{m} \), \( e = 0,2056 \),
     \item Die Weber-Gravitation reproduziert dieses ART-Ergebnis 
           \emph{ohne Raumzeitkrümmung}, allein durch die 
           geschwindigkeits- und beschleunigungsabhängige direkte 
-          Wechselwirkung (siehe Kapitel~\ref{ch:dstt_weber}).
+          Wechselwirkung (siehe Kapitel~\ref{ch:dstt_weber_kraefte}).
 \end{itemize}
 
 \section{Ausblick}
@@ -442,11 +445,10 @@ kompensiert (siehe Kapitel~\ref{ch:neutrino}), was die Bahnstabilität
 auf allen Skalen sicherstellt.
 
 \section*{Hinweis zur numerischen Implementierung}
-\label{app:periheldrehung_numerik}
 
 Für die numerische Integration der Bewegungsgleichung mit variablen \( h \) 
 empfiehlt sich die Verwendung der winkelbasierten Darstellung aus 
-Kapitel~\ref{ch:dstt_weber} (Abschnitt 8.4.5). Das Differentialgleichungssystem erster Ordnung
+Kapitel~\ref{ch:dstt_weber_kraefte}. Das Differentialgleichungssystem erster Ordnung
 
 \[
 \frac{dr}{d\phi} = \frac{v_r}{\omega}, \quad

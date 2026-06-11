@@ -1,5 +1,9 @@
+% ============================================================================
+% KAPITEL 5: Emergenz von Raum, Zeit und Metrik
+% ============================================================================
+
 \chapter{Emergenz von Raum, Zeit und Metrik}
-\label{ch:emergenz}
+\label{ch:emergenz_raum_zeit}
 
 \section{Einleitung}
 \label{sec:emergenz_einleitung}
@@ -35,7 +39,7 @@ Die analoge Perspektive (WDBT) ist als Grenzfall in der digitalen Perspektive (I
 Die diskrete Informationsmetrik entsteht aus der Sensitivität des diskreten Informations-Lagrange-Funktionals gegenüber räumlichen Änderungen der Informationsverteilung.
 
 \subsection{Diskrete Metrik aus Funktionalableitungen}
-\label{sec:metrik_funktional}
+\label{sub:metrik_funktional}
 
 Formal ergibt sich die diskrete Metrik aus:
 
@@ -46,7 +50,7 @@ g_{kl}^{(n)} = \frac{\partial^2 \mathcal{F}_k}{\partial (\Delta_{kl} I^{(n)})^2}
 mit dem diskreten Gradienten \( \Delta_{kl} I^{(n)} = I_l^{(n)} - I_k^{(n)} \).
 
 \subsection{Direkte Berechnung aus Kopplungsmatrix}
-\label{sec:metrik_kopplung}
+\label{sub:metrik_kopplung}
 
 Alternativ kann die Metrik direkt aus der Kopplungsmatrix \( K_{kl}^{(n)} \) berechnet werden:
 
@@ -55,7 +59,7 @@ g_{kl}^{(n)} = \frac{K_{kl}^{(n)}}{\sqrt{K_{kk}^{(n)} K_{ll}^{(n)}}}.
 \]
 
 \subsection{Interpretation der diskreten Metrik}
-\label{sec:metrik_interpretation}
+\label{sub:metrik_interpretation}
 
 \begin{itemize}
     \item Große Werte \( g_{kl}^{(n)} \approx 1 \): Starke Kopplung, kleine dynamische Änderungen haben große Wirkung (\enquote{steife} Geometrie),
@@ -71,7 +75,7 @@ Die diskrete Metrik misst also die Steifigkeit der diskreten Informationsgeometr
 Der physikalische Raum entsteht als effektive Geometrie des diskreten Informationsnetzes.
 
 \subsection{Diskretes Linienelement}
-\label{sec:linienelement}
+\label{sub:linienelement}
 
 Das diskrete Linienelement zwischen Knoten \( k \) und \( l \) ist:
 
@@ -82,7 +86,7 @@ ds_{kl}^{(n)} = \sqrt{g_{kl}^{(n)}} \cdot d_{kl},
 mit fundamentaler Distanz \( d_{kl} \) (z. B. Gitterkonstante).
 
 \subsection{Effektive kontinuierliche Metrik}
-\label{sec:kontinuierliche_metrik}
+\label{sub:kontinuierliche_metrik}
 
 Bei Mittelung über viele Knoten ergibt sich die effektive kontinuierliche Metrik:
 
@@ -91,7 +95,7 @@ g_{ij}(x, t) = \lim_{\text{feine Diskretisierung}} \langle g_{kl}^{(n)} \rangle.
 \]
 
 \subsection{Diskrete Netzwerkstruktur}
-\label{sec:netzwerkstruktur}
+\label{sub:netzwerkstruktur}
 
 In der digitalen Perspektive (IWT) besteht der fundamentale Zustand aus:
 
@@ -113,12 +117,12 @@ Zeit entsteht aus der Ordnung der Aktualisierungsschritte des diskreten Informat
 \]
 
 \subsection{Diskrete Zeit als Schrittindex}
-\label{sec:diskrete_zeit}
+\label{sub:diskrete_zeit_schrittindex}
 
 Die fundamentale Zeit ist der diskrete Schrittindex \( n \in \mathbb{N}_0 \).
 
 \subsection{Kontinuierliche Zeit als emergente Näherung}
-\label{sec:kontinuierliche_zeit}
+\label{sub:kontinuierliche_zeit}
 
 Die physikalische Zeit \( t \) ist eine kontinuierliche Näherung:
 
@@ -129,7 +133,7 @@ t \approx n \cdot T,
 mit fundamentalem Zeitschrift \( T \).
 
 \subsection{Zwei diskrete Zeitstrukturen}
-\label{sec:zwei_zeiten}
+\label{sub:zwei_zeitstrukturen}
 
 Die Theorie unterscheidet:
 
@@ -165,7 +169,7 @@ Interpretation der Terme:
 \end{itemize}
 
 \subsection{Kontinuierlicher Grenzfall}
-\label{sec:metrik_grenzfall}
+\label{sub:metrik_kontinuierlicher_grenzfall}
 
 Für \( T \to 0 \) und feine Diskretisierung ergibt sich:
 

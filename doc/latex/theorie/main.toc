@@ -353,7 +353,7 @@
 \contentsline {subsection}{\numberline {C.5.1}Spezielle Relativitätstheorie (SRT)}{119}{}%
 \contentsline {subsection}{\numberline {C.5.2}Allgemeine Relativitätstheorie (ART)}{120}{}%
 \contentsline {subsection}{\numberline {C.5.3}Emergente Einstein-Gleichungen}{120}{}%
-\contentsline {section}{\numberline {C.6}Grenzfälle und \"Ubergänge}{120}{}%
+\contentsline {section}{\numberline {C.6}Grenzfälle und Übergänge}{120}{}%
 \contentsline {section}{\numberline {C.7}Vergleich mit der Quantenelektrodynamik (QED)}{120}{}%
 \contentsline {subsection}{\numberline {C.7.1}Korrespondenz zwischen QED und WDBT}{120}{}%
 \contentsline {subsection}{\numberline {C.7.2}Regularisierung durch das Quantenpotential}{121}{}%

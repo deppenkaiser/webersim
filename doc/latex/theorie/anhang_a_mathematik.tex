@@ -1,8 +1,12 @@
+% ============================================================================
+% ANHANG A: Mathematische Grundlagen
+% ============================================================================
+
 \chapter{Mathematische Grundlagen}
-\label{app:grundlagen}
+\label{app:mathematik}
 
 \section{Einleitung}
-\label{app:grundlagen_einleitung}
+\label{app:mathematik_einleitung}
 
 Dieser Anhang stellt die mathematischen Werkzeuge bereit, auf denen die diskrete Formulierung der IWT basiert. Im Gegensatz zu den kontinuierlichen Approximationen im Haupttext werden hier ausschließlich die fundamentalen diskreten Strukturen entwickelt.
 
@@ -17,10 +21,10 @@ Der Fokus liegt auf:
 \end{enumerate}
 
 \section{Diskrete Variationsrechnung}
-\label{app:grundlagen_varrechnung}
+\label{app:mathematik_varrechnung}
 
 \subsection{Diskretes Funktional}
-\label{app:grundlagen_funktional}
+\label{sub:mathematik_funktional}
 
 Ein diskretes Informationssystem wird beschrieben durch Knoten \( k = 1, \dots, N \) mit Informationswerten \( I_k^{(n)} \) zum Zeitschrift \( n \). Das fundamentale diskrete Funktional lautet:
 
@@ -38,7 +42,7 @@ mit:
 \end{itemize}
 
 \subsection{Variation diskreter Funktionale}
-\label{app:grundlagen_variation}
+\label{sub:mathematik_variation}
 
 Eine Variation des diskreten Feldes sei:
 
@@ -55,7 +59,7 @@ Die Variation des Funktionals ist:
 \]
 
 \subsection{Diskrete Euler-Lagrange-Gleichungen}
-\label{app:grundlagen_euler_lagrange}
+\label{sub:mathematik_euler_lagrange}
 
 Durch Ableitung und Umordnung erhält man:
 
@@ -73,7 +77,7 @@ mit den diskreten Operatoren:
 \]
 
 \subsection{Beispiel: Diskrete Wellengleichung}
-\label{app:grundlagen_wellengleichung}
+\label{sub:mathematik_wellengleichung}
 
 Für \( \mathcal{F}_d = \alpha (\Delta_t I_k^{(n)})^2 + \beta (\Delta_s I_k^{(n)})^2 \):
 
@@ -82,10 +86,10 @@ Für \( \mathcal{F}_d = \alpha (\Delta_t I_k^{(n)})^2 + \beta (\Delta_s I_k^{(n)
 \]
 
 \section{Diskrete Noether-Theoreme}
-\label{app:grundlagen_noether}
+\label{app:mathematik_noether}
 
 \subsection{Symmetrien in diskreten Systemen}
-\label{app:grundlagen_symmetrien}
+\label{sub:mathematik_symmetrien}
 
 Eine diskrete Transformation:
 
@@ -100,7 +104,7 @@ ist eine Symmetrie, wenn:
 \]
 
 \subsection{Erhaltungsgrößen}
-\label{app:grundlagen_erhaltung}
+\label{sub:mathematik_erhaltung}
 
 Aus jeder solchen Symmetrie folgt eine diskrete Erhaltungsgröße:
 
@@ -115,26 +119,24 @@ Q^{(n)} = \sum_k \left[ \xi_k^{(n)} \frac{\partial \mathcal{F}_d}{\partial (\Del
 \]
 
 \subsection{Wichtige Symmetrien und Erhaltungssätze}
-\label{app:grundlagen_symmetrien_tabelle}
+\label{sub:mathematik_symmetrien_tabelle}
 
-\[
-\begin{array}{|l|l|l|}
+\begin{tabular}{|l|l|l|}
 \hline
-\text{Symmetrie} & \text{Transformation} & \text{Erhaltene Größe} \\
+\textbf{Symmetrie} & \textbf{Transformation} & \textbf{Erhaltene Größe} \\
 \hline
-\text{Zeittranslation} & I_k^{(n)} \to I_k^{(n+1)} & \text{Diskrete Energie } E^{(n)} \\
-\text{Raumtranslation} & I_k^{(n)} \to I_{k+\delta}^{(n)} & \text{Diskreter Impuls } \vec{P}^{(n)} \\
-\text{Rotation} & I_k^{(n)} \to I_{R(k)}^{(n)} & \text{Diskreter Drehimpuls } \vec{L}^{(n)} \\
-\text{Informations-Shift} & I_k^{(n)} \to I_k^{(n)} + c & \text{Gesamtinformation } \sum_k I_k^{(n)} \\
+Zeittranslation & \(I_k^{(n)} \to I_k^{(n+1)}\) & Diskrete Energie \(E^{(n)}\) \\
+Raumtranslation & \(I_k^{(n)} \to I_{k+\delta}^{(n)}\) & Diskreter Impuls \(\vec{P}^{(n)}\) \\
+Rotation & \(I_k^{(n)} \to I_{R(k)}^{(n)}\) & Diskreter Drehimpuls \(\vec{L}^{(n)}\) \\
+Informations-Shift & \(I_k^{(n)} \to I_k^{(n)} + c\) & Gesamtinformation \(\sum_k I_k^{(n)}\) \\
 \hline
-\end{array}
-\]
+\end{tabular}
 
 \section{Diskrete Informationsmetrik}
-\label{app:grundlagen_metrik}
+\label{app:mathematik_metrik}
 
 \subsection{Definition aus dem Funktional}
-\label{app:grundlagen_metrik_def}
+\label{sub:mathematik_metrik_def}
 
 Die diskrete Informationsmetrik zwischen Knoten \( k \) und \( l \) ist definiert als:
 
@@ -143,7 +145,7 @@ g_{kl}^{(n)} = \frac{\partial^2 \mathcal{F}_d}{\partial (\Delta_s I_k^{(n)}) \pa
 \]
 
 \subsection{Alternative Definition über Kopplungsmatrix}
-\label{app:grundlagen_metrik_kopplung}
+\label{sub:mathematik_metrik_kopplung}
 
 Für viele Anwendungen ist die direkte Definition über die Kopplungsmatrix \( K_{kl}^{(n)} \) nützlicher:
 
@@ -152,7 +154,7 @@ g_{kl}^{(n)} = \frac{K_{kl}^{(n)}}{\sqrt{K_{kk}^{(n)} K_{ll}^{(n)}}}
 \]
 
 \subsection{Eigenschaften}
-\label{app:grundlagen_metrik_eigenschaften}
+\label{sub:mathematik_metrik_eigenschaften}
 
 \begin{itemize}
     \item Symmetrie: \( g_{kl}^{(n)} = g_{lk}^{(n)} \)
@@ -162,10 +164,10 @@ g_{kl}^{(n)} = \frac{K_{kl}^{(n)}}{\sqrt{K_{kk}^{(n)} K_{ll}^{(n)}}}
 \end{itemize}
 
 \section{Fraktale Analysis diskreter Netzwerke}
-\label{app:grundlagen_fraktal}
+\label{app:mathematik_fraktal}
 
 \subsection{Fraktale Dimension eines diskreten Netzwerks}
-\label{app:grundlagen_fraktale_dim}
+\label{sub:mathematik_fraktale_dim}
 
 Gegeben sei ein diskretes Netzwerk mit Adjazenzmatrix \( A_{kl} \). Die fraktale Dimension \( D \) wird bestimmt durch das Skalierungsverhalten der Koordinationszahl:
 
@@ -176,7 +178,7 @@ N(R) \propto R^D \quad \text{für } R \to \infty
 wobei \( N(R) \) die Anzahl der Knoten innerhalb einer Distanz \( R \) von einem Referenzknoten ist.
 
 \subsection{Praktische Berechnung}
-\label{app:grundlagen_fraktale_berechnung}
+\label{sub:mathematik_fraktale_berechnung}
 
 \begin{enumerate}
     \item Wähle einen Referenzknoten \( k_0 \)
@@ -186,7 +188,7 @@ wobei \( N(R) \) die Anzahl der Knoten innerhalb einer Distanz \( R \) von einem
 \end{enumerate}
 
 \subsection{Beispiel: Fraktales Netz}
-\label{app:grundlagen_fraktales_netz}
+\label{sub:mathematik_fraktales_netz}
 
 Für das in der IWT verwendete fraktale Netzwerk gilt (siehe Kapitel~\ref{ch:fraktale_dimension}):
 
@@ -197,10 +199,10 @@ D = \frac{\ln(20\phi)}{\ln(2 + \phi)} \approx 2,704
 Dieses Netzwerk zeigt selbstähnliche Struktur auf allen Skalen.
 
 \section{Diskrete Differenzengleichungen höherer Ordnung}
-\label{app:grundlagen_differenzengleichungen}
+\label{app:mathematik_differenzengleichungen}
 
 \subsection{Rekursive Update-Regeln}
-\label{app:grundlagen_update}
+\label{sub:mathematik_update}
 
 Viele Gleichungen der IWT haben die Form:
 
@@ -209,7 +211,7 @@ I_k^{(n+1)} = F\left( I_k^{(n)}, I_k^{(n-1)}, \{I_l^{(n)}\} \right)
 \]
 
 \subsection{Stabilitätsanalyse}
-\label{app:grundlagen_stabilitaet}
+\label{sub:mathematik_stabilitaet}
 
 Für eine lineare Rekursion:
 
@@ -226,19 +228,19 @@ erhält man die charakteristische Gleichung:
 Stabilitätsbedingung: \( |\lambda| \leq 1 \) für alle Lösungen.
 
 \subsection{Numerische Stabilität der diskreten Weber-Kraft}
-\label{app:grundlagen_weber_stabil}
+\label{sub:mathematik_weber_stabil}
 
-Die diskrete Weber-Kraft (siehe Kapitel~\ref{ch:dstt_weber}) ist stabil für:
+Die diskrete Weber-Kraft (siehe Kapitel~\ref{ch:dstt_weber_kraefte}) ist stabil für:
 
 \[
 T < T_{\text{max}} = \frac{r_{\text{min}}}{c}
 \]
 
 \section{Diskrete Fourier-Analyse}
-\label{app:grundlagen_fourier}
+\label{app:mathematik_fourier}
 
 \subsection{Diskrete Fourier-Transformation}
-\label{app:grundlagen_fourier_trans}
+\label{sub:mathematik_fourier_trans}
 
 Für ein diskretes Feld \( I_k \) auf \( N \) regelmäßig angeordneten Knoten:
 
@@ -247,7 +249,7 @@ Für ein diskretes Feld \( I_k \) auf \( N \) regelmäßig angeordneten Knoten:
 \]
 
 \subsection{Dispersionsrelationen}
-\label{app:grundlagen_dispersion}
+\label{sub:mathematik_dispersion}
 
 Aus diskreten Differenzengleichungen erhält man charakteristische Dispersionsrelationen:
 
@@ -256,10 +258,10 @@ Aus diskreten Differenzengleichungen erhält man charakteristische Dispersionsre
 \]
 
 \section{Matrixdarstellungen diskreter Operatoren}
-\label{app:grundlagen_matrix}
+\label{app:mathematik_matrix}
 
 \subsection{Laplace-Matrix}
-\label{app:grundlagen_laplace}
+\label{sub:mathematik_laplace}
 
 Der diskrete Laplace-Operator wird durch die Laplace-Matrix \( L \) dargestellt:
 
@@ -277,33 +279,31 @@ L_{kl} = \begin{cases}
 \]
 
 \subsection{Eigenwertanalyse}
-\label{app:grundlagen_eigenwerte}
+\label{sub:mathematik_eigenwerte}
 
 Die Eigenwerte \( \lambda_i \) und Eigenvektoren \( v_i \) von \( L \) charakterisieren die kollektiven Moden des Netzwerks.
 
 \section{Zusammenfassung der mathematischen Struktur}
-\label{app:grundlagen_zusammenfassung}
+\label{app:mathematik_zusammenfassung}
 
 Die diskrete IWT basiert auf folgenden mathematischen Grundlagen:
 
-\[
-\begin{array}{|l|l|}
+\begin{tabular}{|l|l|}
 \hline
-\text{Konzept} & \text{Mathematische Beschreibung} \\
+\textbf{Konzept} & \textbf{Mathematische Beschreibung} \\
 \hline
-\text{Zustandsraum} & \text{Diskrete Felder } I_k^{(n)} \text{ auf Netzwerkknoten} \\
-\text{Dynamik} & \text{Diskretes Funktional } S_d[I_k^{(n)}] \text{ mit Variationsprinzip} \\
-\text{Bewegungsgleichungen} & \text{Diskrete Euler-Lagrange-Gleichungen} \\
-\text{Symmetrien} & \text{Diskrete Noether-Theoreme mit Erhaltungssätzen} \\
-\text{Geometrie} & \text{Diskrete Metrik } g_{kl}^{(n)} \text{ aus Kopplungsstruktur} \\
-\text{Skalierung} & \text{Fraktale Dimension } D \text{ charakterisiert Netzwerk} \\
-\text{Stabilität} & \text{Eigenwertanalyse rekursiver Update-Regeln} \\
+Zustandsraum & Diskrete Felder \( I_k^{(n)} \) auf Netzwerkknoten \\
+Dynamik & Diskretes Funktional \( S_d[I_k^{(n)}] \) mit Variationsprinzip \\
+Bewegungsgleichungen & Diskrete Euler-Lagrange-Gleichungen \\
+Symmetrien & Diskrete Noether-Theoreme mit Erhaltungssätzen \\
+Geometrie & Diskrete Metrik \( g_{kl}^{(n)} \) aus Kopplungsstruktur \\
+Skalierung & Fraktale Dimension \( D \) charakterisiert Netzwerk \\
+Stabilität & Eigenwertanalyse rekursiver Update-Regeln \\
 \hline
-\end{array}
-\]
+\end{tabular}
 
 \section{Hinweise zur praktischen Anwendung}
-\label{app:grundlagen_praxis}
+\label{app:mathematik_praxis}
 
 \begin{enumerate}
     \item Alle kontinuierlichen Gleichungen im Haupttext sind Grenzfälle dieser diskreten Strukturen (siehe auch Anhang~\ref{app:kontinuumslimes}).

@@ -1,3 +1,7 @@
+% ============================================================================
+% ANHANG F: Kontinuumslimes: Von der diskreten IWT zur kontinuierlichen WDBT+
+% ============================================================================
+
 \chapter{Kontinuumslimes: Von der diskreten IWT zur kontinuierlichen WDBT+}
 \label{app:kontinuumslimes}
 
@@ -29,7 +33,7 @@ Drei zentrale Resultate werden dargestellt:
 \label{app:kontinuumslimes_rahmen}
 
 \subsection{Annahmen an das diskrete Netzwerk}
-\label{app:kontinuumslimes_annahmen}
+\label{sub:kontinuumslimes_annahmen}
 
 Wir betrachten eine Folge von diskreten Netzwerken \( \Lambda_N \) mit:
 
@@ -45,7 +49,7 @@ Wir betrachten eine Folge von diskreten Netzwerken \( \Lambda_N \) mit:
 \end{itemize}
 
 \subsection{Das Problem des perfekten Dodekaeder-Netzwerks}
-\label{app:kontinuumslimes_dodekaeder}
+\label{sub:kontinuumslimes_dodekaeder_problem}
 
 Ein reguläres Dodekaeder-Netzwerk, das den gesamten \( \mathbb{R}^3 \) lückenlos und
 skaleninvariant mit Skalierungsfaktor \( s = 2+\phi \) ausfüllt, existiert \emph{nicht}
@@ -64,7 +68,7 @@ Daher formulieren wir den Kontinuumslimes wie folgt:
 \end{itemize}
 
 \subsection{Definition des kontinuierlichen Grenzfeldes}
-\label{app:kontinuumslimes_grenzfeld}
+\label{sub:kontinuumslimes_grenzfeld}
 
 Das diskrete Informationsfeld \( I_k^{(n)} \) wird in ein kontinuierliches Feld überführt durch:
 
@@ -77,7 +81,7 @@ Dabei ist \( \delta_\Delta \) eine Regularisierung der Delta-Distribution (z. B.
 der Breite \( \Delta x \)).
 
 \subsection{Konvergenzbegriff}
-\label{app:kontinuumslimes_konvergenz}
+\label{sub:kontinuumslimes_konvergenz}
 
 Wir verwenden zwei Konvergenzarten:
 
@@ -101,12 +105,12 @@ Wir verwenden zwei Konvergenzarten:
 \end{enumerate}
 
 \section{Konvergenz des diskreten Funktionals}
-\label{app:kontinuumslimes_funktional}
+\label{app:kontinuumslimes_funktional_konvergenz}
 
 \subsection{Diskretes Funktional in kontinuierlicher Notation}
-\label{app:kontinuumslimes_funktional_diskret}
+\label{sub:kontinuumslimes_funktional_diskret}
 
-Das diskrete Funktional aus Anhang~\ref{app:grundlagen},
+Das diskrete Funktional aus Anhang~\ref{app:mathematik},
 
 \[
 S_d[I_k^{(n)}] = \sum_{n=0}^{M-1} \sum_{k=1}^N \mathcal{F}_d(I_k^{(n)}, \Delta_t I_k^{(n)},
@@ -124,7 +128,7 @@ wobei \( \mathcal{F}_d^{\text{eff}} \) aus der Entwicklung von \( \mathcal{F}_d 
 Diskretisierungsparameter folgt.
 
 \subsection{Entwicklung der diskreten Operatoren}
-\label{app:kontinuumslimes_operatoren}
+\label{sub:kontinuumslimes_operatoren_entwicklung}
 
 Für hinreichend glatte Felder \( \rho(\vec{x}, t) \) gilt:
 
@@ -145,7 +149,7 @@ Für hinreichend glatte Felder \( \rho(\vec{x}, t) \) gilt:
 \end{itemize}
 
 \subsection{Konvergenz des Funktionals}
-\label{app:kontinuumslimes_funktional_konv}
+\label{sub:kontinuumslimes_funktional_grenzwert}
 
 Einsetzen dieser Entwicklungen in \( S_d \) ergibt:
 
@@ -162,12 +166,12 @@ wobei \( \mathcal{F}_c \) das kontinuierliche Lagrange-Funktional ist:
 \]
 
 \section{Konvergenz der Euler-Lagrange-Gleichungen}
-\label{app:kontinuumslimes_euler}
+\label{app:kontinuumslimes_euler_lagrange}
 
 \subsection{Diskrete Euler-Lagrange-Gleichung}
-\label{app:kontinuumslimes_euler_diskret}
+\label{sub:kontinuumslimes_euler_diskret}
 
-Aus Anhang~\ref{app:grundlagen}:
+Aus Anhang~\ref{app:mathematik}:
 
 \[
 \frac{\partial \mathcal{F}_d}{\partial I_k^{(n)}} - \Delta_t^+ \left(
@@ -176,7 +180,7 @@ Aus Anhang~\ref{app:grundlagen}:
 \]
 
 \subsection{Kontinuierlicher Grenzwert}
-\label{app:kontinuumslimes_euler_kont}
+\label{sub:kontinuumslimes_euler_kont}
 
 Für \( N \to \infty \), \( T \to 0 \) geht diese Gleichung über in:
 
@@ -190,7 +194,7 @@ Dies ist die kontinuierliche Euler-Lagrange-Gleichung der WDBT+ mit \emph{gewöh
 Ableitungen.
 
 \subsection{Konvergenzgeschwindigkeit}
-\label{app:kontinuumslimes_geschwindigkeit}
+\label{sub:kontinuumslimes_geschwindigkeit}
 
 Für genügend glatte Lösungen gilt:
 
@@ -201,12 +205,12 @@ Für genügend glatte Lösungen gilt:
 mit einer Konstanten \( C \), die von der \( C^4 \)-Norm von \( \rho \) abhängt.
 
 \section{Emergenz der Metrik}
-\label{app:kontinuumslimes_metrik}
+\label{app:kontinuumslimes_metrik_emergenz}
 
 \subsection{Diskrete Metrik als Approximation der euklidischen Metrik}
-\label{app:kontinuumslimes_metrik_diskret}
+\label{sub:kontinuumslimes_metrik_diskret}
 
-Die diskrete Metrik ist definiert als (Anhang~\ref{app:grundlagen}):
+Die diskrete Metrik ist definiert als (Anhang~\ref{app:mathematik}):
 
 \[
 g_{kl}^{(n)} = \frac{\partial^2 \mathcal{F}_d}{\partial (\Delta_s I_k^{(n)}) \partial (\Delta_s I_l^{(n)})}
@@ -219,7 +223,7 @@ g_{\mu\nu}(x, t) = \lim_{\text{feine Diskretisierung}} \langle g_{kl}^{(n)} \ran
 \]
 
 \subsection{Eigenschaften der emergenten Metrik}
-\label{app:kontinuumslimes_metrik_eigenschaften}
+\label{sub:kontinuumslimes_metrik_eigenschaften}
 
 \begin{itemize}
     \item Symmetrie: \( g_{\mu\nu} = g_{\nu\mu} \)
@@ -232,16 +236,16 @@ g_{\mu\nu}(x, t) = \lim_{\text{feine Diskretisierung}} \langle g_{kl}^{(n)} \ran
 \end{itemize}
 
 \subsection{Grenzfall \( D \to 3 \)}
-\label{app:kontinuumslimes_grenzfall}
+\label{sub:kontinuumslimes_grenzfall_d}
 
 Für \( D \to 3 \) geht die fraktale Skalierung der Quellen in die konstante Dichte über.
 Die euklidische Metrik bleibt erhalten.
 
 \section{Kontinuumslimes des fraktalen Dodekaeder-Netzwerks}
-\label{app:kontinuumslimes_dodekaeder_netz}
+\label{app:kontinuumslimes_dodekaeder_netzwerk}
 
 \subsection{Definition des diskreten Netzwerks}
-\label{app:kontinuumslimes_netz_def}
+\label{sub:kontinuumslimes_netz_def}
 
 Sei \( \Lambda_N \) ein diskretes Netzwerk, das durch \( N \) Iterationen einer
 Dodekaeder-Packung mit Skalierungsfaktor \( s = 2 + \phi \approx 3,618 \)
@@ -254,7 +258,7 @@ N_N = N_0 \cdot s^{ND/3}
 Der mittlere Knotenabstand skaliert mit \( \Delta x \sim s^{-N/3} \).
 
 \subsection{Problem der Einbettung}
-\label{app:kontinuumslimes_einbettung}
+\label{sub:kontinuumslimes_einbettung}
 
 Ein perfektes Dodekaeder-Netzwerk existiert nicht im \( \mathbb{R}^3 \). Daher betrachten wir
 \emph{näherungsweise} Einbettungen: Für jedes endliche \( N \) existiert eine Einbettung
@@ -262,7 +266,7 @@ Ein perfektes Dodekaeder-Netzwerk existiert nicht im \( \mathbb{R}^3 \). Daher b
 Der Fehler dieser Approximation geht gegen null für \( N \to \infty \).
 
 \subsection{Konvergenz der diskreten Operatoren}
-\label{app:kontinuumslimes_operatoren_konv}
+\label{sub:kontinuumslimes_operatoren_konvergenz}
 
 Für \( N \to \infty \) gilt für hinreichend glatte Funktionen \( f \):
 
@@ -278,7 +282,7 @@ Begründung:
 \end{enumerate}
 
 \subsection{Die Rolle der fraktalen Dimension im Limes}
-\label{app:kontinuumslimes_fraktale_rolle}
+\label{sub:kontinuumslimes_fraktale_rolle}
 
 Die fraktale Dimension \( D \) manifestiert sich im Kontinuumslimes \textbf{nicht} in der
 metrischen Struktur oder in den Differentialoperatoren. Sie steckt ausschließlich in:
@@ -299,7 +303,7 @@ Dies ist die Hausdorff-Dimension des diskreten Netzwerks. Im Kontinuumslimes
 geht diese Information in die \emph{Zustandsdichte} ein, nicht in die Metrik.
 
 \subsection{Existenz des Kontinuumslimes}
-\label{app:kontinuumslimes_existenz}
+\label{sub:kontinuumslimes_existenz}
 
 Für das fraktale Dodekaeder-Netzwerk existiert der Kontinuumslimes, weil:
 
@@ -315,7 +319,7 @@ Für das fraktale Dodekaeder-Netzwerk existiert der Kontinuumslimes, weil:
 \label{app:kontinuumslimes_wellengleichung}
 
 \subsection{Diskrete Form}
-\label{app:kontinuumslimes_welle_diskret}
+\label{sub:kontinuumslimes_welle_diskret}
 
 Für \( \mathcal{F}_d = \alpha(\Delta_t I)^2 + \beta(\Delta_s I)^2 \):
 
@@ -325,7 +329,7 @@ Für \( \mathcal{F}_d = \alpha(\Delta_t I)^2 + \beta(\Delta_s I)^2 \):
 \]
 
 \subsection{Kontinuierlicher Limes}
-\label{app:kontinuumslimes_welle_kont}
+\label{sub:kontinuumslimes_welle_kont}
 
 Mit \( T \to 0 \), \( \beta/\alpha = c^2 \) und der Approximation
 \( \sum_l w_{kl}(I_l - I_k) \approx (\Delta x)^2 \nabla^2 I \) ergibt sich:
