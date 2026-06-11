@@ -478,36 +478,32 @@
 \contentsline {section}{\numberline {H.10}Zahlenwert für Merkur}{148}{}%
 \contentsline {section}{\numberline {H.11}Zusammenfassung}{148}{}%
 \contentsline {section}{\numberline {H.12}Ausblick}{149}{}%
-\contentsline {chapter}{\numberline {I}Energiebilanz der Materieentstehung in der WDBT+}{151}{}%
+\contentsline {chapter}{\numberline {I}Energiebilanz der Materieentstehung im stationären Universum}{151}{}%
 \contentsline {section}{\numberline {I.1}Einleitung}{151}{}%
-\contentsline {section}{\numberline {I.2}Das Quantenpotential als Quelle}{151}{}%
-\contentsline {subsection}{\numberline {I.2.1}Definition des Quantenpotentials}{151}{}%
-\contentsline {subsection}{\numberline {I.2.2}Leistung des Quantenpotentials}{151}{}%
-\contentsline {section}{\numberline {I.3}Kontinuitätsgleichung mit Quellterm}{151}{}%
-\contentsline {subsection}{\numberline {I.3.1}Standard-Kontinuitätsgleichung}{151}{}%
-\contentsline {subsection}{\numberline {I.3.2}Kontinuitätsgleichung mit Quelle}{152}{}%
-\contentsline {subsection}{\numberline {I.3.3}Bestimmung des Quellterms aus \( Q \)}{152}{}%
-\contentsline {section}{\numberline {I.4}Herleitung der negativen Vakuumenergiedichte}{152}{}%
-\contentsline {subsection}{\numberline {I.4.1}Casimir-Effekt im fraktalen Raum}{152}{}%
-\contentsline {subsection}{\numberline {I.4.2}Aus der fraktalen Zustandsdichte}{152}{}%
-\contentsline {subsection}{\numberline {I.4.3}Vorzeichen und räumliche Abhängigkeit}{153}{}%
-\contentsline {subsection}{\numberline {I.4.4}Numerische Abschätzung}{153}{}%
-\contentsline {section}{\numberline {I.5}Energiebilanz}{153}{}%
-\contentsline {subsection}{\numberline {I.5.1}Energiedichte des fraktalen Vakuums}{153}{}%
-\contentsline {subsection}{\numberline {I.5.2}Energieerhaltung}{154}{}%
-\contentsline {subsection}{\numberline {I.5.3}Stationärer Zustand}{154}{}%
-\contentsline {section}{\numberline {I.6}Die kritische Dichte für Materieentstehung}{154}{}%
-\contentsline {subsection}{\numberline {I.6.1}Bedingung für Paarbildung}{154}{}%
-\contentsline {subsection}{\numberline {I.6.2}Fraktale Verstärkung}{154}{}%
-\contentsline {subsection}{\numberline {I.6.3}Resultierende Quellstärke}{154}{}%
-\contentsline {section}{\numberline {I.7}Kopplung an die DSTT-Drift}{155}{}%
-\contentsline {subsection}{\numberline {I.7.1}Auswärtstreibung neu entstehender Materie}{155}{}%
-\contentsline {subsection}{\numberline {I.7.2}Kontinuität im stationären Zustand}{155}{}%
-\contentsline {section}{\numberline {I.8}Testbare Vorhersage}{155}{}%
-\contentsline {subsection}{\numberline {I.8.1}Dichteprofil von Galaxienhalos}{155}{}%
-\contentsline {subsection}{\numberline {I.8.2}Quantitativer Vergleich}{155}{}%
-\contentsline {section}{\numberline {I.9}Zusammenfassung}{155}{}%
-\contentsline {section}{\numberline {I.10}Ausblick}{156}{}%
+\contentsline {section}{\numberline {I.2}Die negative Vakuumenergiedichte aus der fraktalen Zustandsdichte}{151}{}%
+\contentsline {subsection}{\numberline {I.2.1}Zustandsdichte im fraktalen Raum}{151}{}%
+\contentsline {subsection}{\numberline {I.2.2}Die Nullpunktsenergie des fraktalen Vakuums}{151}{}%
+\contentsline {subsection}{\numberline {I.2.3}Die effektive negative Energiedichte}{152}{}%
+\contentsline {section}{\numberline {I.3}Materieentstehung durch das Quantenpotential}{152}{}%
+\contentsline {subsection}{\numberline {I.3.1}Das Quantenpotential als räumliche Fluktuation}{152}{}%
+\contentsline {subsection}{\numberline {I.3.2}Die Entstehungsrate neuer Materie}{152}{}%
+\contentsline {section}{\numberline {I.4}Der geschlossene Energiekreislauf}{153}{}%
+\contentsline {subsection}{\numberline {I.4.1}Energieabgabe von Photonen durch Rotverschiebung}{153}{}%
+\contentsline {subsection}{\numberline {I.4.2}Energieaufnahme durch Materieentstehung}{153}{}%
+\contentsline {subsection}{\numberline {I.4.3}Instantane globale Energieverteilung}{153}{}%
+\contentsline {subsection}{\numberline {I.4.4}Die vollständige Energiebilanz}{153}{}%
+\contentsline {section}{\numberline {I.5}Zusammenfassung der Grundgleichungen}{154}{}%
+\contentsline {subsection}{\numberline {I.5.1}Vakuumenergiedichte}{154}{}%
+\contentsline {subsection}{\numberline {I.5.2}Kontinuitätsgleichung mit Quellterm}{154}{}%
+\contentsline {subsection}{\numberline {I.5.3}Quellterm}{154}{}%
+\contentsline {subsection}{\numberline {I.5.4}Energieerhaltung}{154}{}%
+\contentsline {section}{\numberline {I.6}Kopplung an die DSTT-Drift}{154}{}%
+\contentsline {subsection}{\numberline {I.6.1}Auswärtstreibung neu entstehender Materie}{154}{}%
+\contentsline {subsection}{\numberline {I.6.2}Kontinuität im stationären Zustand}{154}{}%
+\contentsline {section}{\numberline {I.7}Testbare Vorhersage}{155}{}%
+\contentsline {subsection}{\numberline {I.7.1}Dichteprofil von Galaxienhalos}{155}{}%
+\contentsline {section}{\numberline {I.8}Zusammenfassung}{155}{}%
+\contentsline {section}{\numberline {I.9}Ausblick}{155}{}%
 \contentsline {chapter}{\numberline {J}Das Neutrino als Q-Teilchen – Masse, Oszillationen und Dunkle Materie}{157}{}%
 \contentsline {section}{\numberline {J.1}Einleitung}{157}{}%
 \contentsline {section}{\numberline {J.2}Definition: Das Neutrino als Q-Teilchen}{157}{}%

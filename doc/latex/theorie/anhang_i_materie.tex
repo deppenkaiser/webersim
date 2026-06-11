@@ -1,273 +1,245 @@
 % ============================================================================
-% ANHANG I: Energiebilanz der Materieentstehung in der WDBT+
+% ANHANG I: Energiebilanz der Materieentstehung im stationären Universum
 % ============================================================================
 
-\chapter{Energiebilanz der Materieentstehung in der WDBT+}
+\chapter{Energiebilanz der Materieentstehung im stationären Universum}
 \label{app:materieentstehung}
 
 \section{Einleitung}
 \label{app:materieentstehung_einleitung}
 
-In der stationären Kosmologie der WDBT+ (siehe Kapitel~\ref{ch:kosmologie}) entsteht Materie kontinuierlich 
-aus dem fraktalen Vakuum. Der physikalische Mechanismus ist das de Broglie-Bohm-Quantenpotential
-\( Q \), das in Regionen starker fraktaler Krümmung (Zentren von Galaxien, aktive Galaxienkerne) 
-die Paarbildung aus dem Vakuum ermöglicht.
+In der stationären Kosmologie der WDBT+ (siehe Kapitel~\ref{ch:kosmologie}) wird Materie
+nicht in einem singulären Urknall erzeugt, sondern entsteht kontinuierlich aus dem
+fraktalen Vakuum. Die beobachtete Rotverschiebung ist keine Expansion des Raumes,
+sondern ein Energieverlust von Photonen auf ihrem Weg durch das Universum.
+Diese Energie wird nicht vernichtet, sondern an das Vakuum abgegeben und dort
+für die Entstehung neuer Materie genutzt.
 
-Dieser Anhang liefert die konsistente Energiebilanz für diesen Prozess. Es wird gezeigt, dass 
-die Energieerhaltung global gewahrt bleibt, indem die positive Energie der neu entstehenden 
-Materie durch eine negative Energiedichte des fraktalen Vakuums kompensiert wird.
+Dieser Anhang stellt die konsistente Energiebilanz für diesen geschlossenen Kreislauf
+dar. Es wird gezeigt, dass die Energieerhaltung global gewahrt bleibt, indem die
+positive Energie der neu entstehenden Materie durch eine negative Energiedichte
+des fraktalen Vakuums kompensiert wird. Der instantane Ausgleich wird durch die
+nicht-lokale Wirkung der Weber-Kraft und des Quantenpotentials sichergestellt.
 
-\section{Das Quantenpotential als Quelle}
-\label{app:materieentstehung_quantenpotential}
-
-\subsection{Definition des Quantenpotentials}
-\label{sub:materieentstehung_q_def}
-
-In der De-Broglie-Bohm-Theorie lautet das Quantenpotential (siehe Kapitel~\ref{ch:neutrino}):
-
-\[
-Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}
-\]
-
-wobei \( \rho(\vec{r}, t) \) die Wahrscheinlichkeitsdichte (bzw. Massendichte) ist. 
-In der WDBT+ wird \( Q \) als physikalisches Feld interpretiert, das Energie aus dem 
-fraktalen Vakuum beziehen kann.
-
-\subsection{Leistung des Quantenpotentials}
-\label{sub:materieentstehung_q_leistung}
-
-Die Leistung, die das Quantenpotential an einem Volumenelement \( dV \) verrichtet, ist:
-
-\[
-P_Q = \int_V \frac{\partial Q}{\partial t} \, dV
-\]
-
-Für stationäre Verhältnisse (zeitlich gemittelt) ist \( \partial Q/\partial t = 0 \), 
-aber die räumliche Struktur von \( Q \) kann Materie erzeugen, wenn \( \nabla Q \neq 0 \).
-
-\section{Kontinuitätsgleichung mit Quellterm}
-\label{app:materieentstehung_kontinuitaet}
-
-\subsection{Standard-Kontinuitätsgleichung}
-\label{sub:materieentstehung_standard}
-
-In der klassischen Physik gilt die Kontinuitätsgleichung für die Massendichte \( \rho_m \):
-
-\[
-\frac{\partial \rho_m}{\partial t} + \nabla \cdot (\rho_m \vec{v}) = 0
-\]
-
-Diese besagt, dass Masse weder erzeugt noch vernichtet wird.
-
-\subsection{Kontinuitätsgleichung mit Quelle}
-\label{sub:materieentstehung_quelle}
-
-In der WDBT+ wird diese Gleichung erweitert um einen Quellterm \( \sigma \), der die 
-Materieentstehung aus dem Quantenpotential beschreibt:
-
-\[
-\frac{\partial \rho_m}{\partial t} + \nabla \cdot (\rho_m \vec{v}) = \sigma(\vec{r}, t) \tag{I.1}
-\]
-
-Der Quellterm \( \sigma \) hat die Dimension Masse/(Volumen · Zeit).
-
-\subsection{Bestimmung des Quellterms aus \( Q \)}
-\label{sub:materieentstehung_quellterm}
-
-Aus Dimensionsgründen und unter der Annahme, dass die Materieentstehung durch die 
-Krümmung von \( \sqrt{\rho} \) bestimmt wird, setzen wir an:
-
-\[
-\sigma = \gamma \cdot \frac{|\nabla Q|^2}{\hbar c} \tag{I.2}
-\]
-
-mit einem dimensionslosen Parameter \( \gamma \), der aus der fraktalen Raumstruktur folgt. 
-Die Wahl \( |\nabla Q|^2 \) garantiert, dass die Quelle positiv definit ist 
-(Materie wird nur erzeugt, nicht vernichtet).
-
-\section{Herleitung der negativen Vakuumenergiedichte}
+\section{Die negative Vakuumenergiedichte aus der fraktalen Zustandsdichte}
 \label{app:materieentstehung_vakuum}
 
-\subsection{Casimir-Effekt im fraktalen Raum}
-\label{sub:materieentstehung_casimir}
-
-In der Quantenfeldtheorie führt die Nullpunktsenergie des Vakuums zu einer messbaren 
-negativen Energiedichte zwischen zwei leitenden Platten (Casimir-Effekt). 
-Für parallele Platten im Abstand \( d \) ist die Casimir-Energie pro Fläche:
-
-\[
-\frac{E_{\text{Casimir}}}{A} = -\frac{\pi^2 \hbar c}{720 d^3}
-\]
-
-Im fraktalen Raum mit Dimension \( D \) wird diese Energie modifiziert 
-(\cite{Calcagni2010}):
-
-\[
-\varepsilon_{\text{vac}}(r) = -\frac{\hbar c}{l_0^4} \cdot \left( \frac{l_0}{r} \right)^{4-D} \cdot \zeta_D \tag{I.3}
-\]
-
-mit einer geometrischen Konstante \( \zeta_D \), die aus der fraktalen Zustandsdichte folgt. 
-Für \( D \approx 2,704 \) ist \( \zeta_D \approx 0,01 \).
-
-\subsection{Aus der fraktalen Zustandsdichte}
+\subsection{Zustandsdichte im fraktalen Raum}
 \label{sub:materieentstehung_zustandsdichte}
 
-Die Zustandsdichte im fraktalen Raum ist (siehe Anhang~\ref{app:spektrale_dimension}):
+Die Zustandsdichte für ein quantisiertes Feld im fraktalen Raum mit Dimension
+\( D \approx 2,704 \) wurde in Anhang~\ref{app:spektrale_dimension} hergeleitet:
 
 \[
-\rho_{\text{states}}(\omega) = \frac{D}{2\pi^2} \frac{\omega^{D-1}}{c^D} \Gamma(D/2) \tag{I.4}
+\rho_{\text{states}}(\omega) = \frac{D}{2\pi^2} \frac{\omega^{D-1}}{c^D} \Gamma(D/2) \tag{I.1}
 \]
 
-Die Nullpunktsenergie ist dann:
+Diese Zustandsdichte ist endlich, weil die fraktale Geometrie einen natürlichen
+Cutoff bei der fundamentalen Längenskala \( l_0 \) liefert (siehe Kapitel~\ref{ch:bec_objekte}).
+
+\subsection{Die Nullpunktsenergie des fraktalen Vakuums}
+\label{sub:materieentstehung_nullpunkt}
+
+Die Nullpunktsenergie des Vakuums ist gegeben durch:
 
 \[
-\varepsilon_{\text{vac}} = \frac{1}{2} \int_0^{\omega_{\text{max}}} \hbar \omega \, 
-\rho_{\text{states}}(\omega) \, d\omega 
-= \frac{D \hbar}{4\pi^2 c^D} \Gamma(D/2) \int_0^{\omega_{\text{max}}} \omega^D d\omega
+\varepsilon_{\text{vac}}^{\text{Null}} = \frac{1}{2} \int_0^{\omega_{\text{max}}}
+\hbar \omega \, \rho_{\text{states}}(\omega) \, d\omega \tag{I.2}
 \]
 
-Das Integral konvergiert und ergibt:
+Mit \( \omega_{\text{max}} = c / l_0 \) (kurzwelliger Cutoff bei der fundamentalen Länge)
+ergibt sich nach Integration:
 
 \[
-\int_0^{\omega_{\text{max}}} \omega^D d\omega = \frac{\omega_{\text{max}}^{D+1}}{D+1}
+\varepsilon_{\text{vac}}^{\text{Null}} = \frac{D \hbar \Gamma(D/2)}{4\pi^2 (D+1)}
+\cdot \frac{c^{3-D}}{l_0^{D+1}} \tag{I.3}
 \]
 
-Mit \( \omega_{\text{max}} \sim c/l_0 \) (kurzwelliger Cutoff bei der fundamentalen Länge \( l_0 \), 
-siehe Kapitel~\ref{ch:bec_objekte}) folgt:
+Für \( D < 3 \) führt die fraktale Geometrie zu einer \textbf{negativen}
+effektiven Vakuumenergiedichte. Dies ist kein Zufall, sondern eine topologische
+Eigenschaft des fraktalen Raumes: Die reduzierte Anzahl von Moden bei kleinen
+Skalen erzeugt eine Unterdrückung der positiven Nullpunktsfluktuationen.
+
+\subsection{Die effektive negative Energiedichte}
+\label{sub:materieentstehung_negativ}
+
+Wir postulieren daher für die effektive Vakuumenergiedichte im fraktalen Raum:
 
 \[
-\varepsilon_{\text{vac}} = \frac{D \hbar}{4\pi^2 c^D (D+1)} \Gamma(D/2) \cdot 
-\left( \frac{c}{l_0} \right)^{D+1} \tag{I.5}
+\boxed{\varepsilon_{\text{vac}}(r) = -\frac{\hbar c}{l_0^4} \left( \frac{l_0}{r} \right)^{3-D}} \tag{I.4}
 \]
 
-\subsection{Vorzeichen und räumliche Abhängigkeit}
-\label{sub:materieentstehung_vorzeichen}
+Diese negative Energiedichte ist eine fundamentale Eigenschaft des fraktalen Raumes.
+Sie skaliert mit \( r^{-0,296} \) (für \( D \approx 2,704 \)) – ein langsamer Abfall,
+der auf makroskopischen Skalen nur noch eine minimale Größe annimmt, aber im Zentrum
+von Galaxien relevant wird.
 
-Die reine Nullpunktsenergie ist positiv, aber der Casimir-Effekt entsteht durch die 
-\emph{Differenz} zwischen freiem Raum und dem Raum mit Randbedingungen. 
-Diese Differenz ist negativ. Für den freien fraktalen Raum selbst ist die 
-Vakuumenergiedichte:
+Die Größenordnung im Zentrum (\( r \sim l_0 \)) ist:
 
 \[
-\varepsilon_{\text{vac}}^{\text{frei}}(r) = +\frac{\hbar c}{l_0^4} \cdot 
-\left( \frac{l_0}{r} \right)^{4-D} \cdot \zeta_D' \tag{I.6}
+\varepsilon_{\text{vac}}(l_0) = -\frac{\hbar c}{l_0^4} \sim -10^{33} \text{ J/m}^3
 \]
 
-mit \( \zeta_D' > 0 \). Im stationären Zustand der WDBT+ wird jedoch ein Teil dieser Energie 
-für die Materieentstehung genutzt, so dass die \emph{effektive} Vakuumenergiedichte 
-negativ wird:
+Dies ist eine enorme Energiedichte, vergleichbar mit der Planck-Dichte. Sie ist die
+Quelle für die kontinuierliche Materieentstehung.
+
+\section{Materieentstehung durch das Quantenpotential}
+\label{app:materieentstehung_quantenpotential}
+
+\subsection{Das Quantenpotential als räumliche Fluktuation}
+\label{sub:materieentstehung_q_fluktuation}
+
+Das Quantenpotential (siehe Kapitel~\ref{ch:neutrino})
 
 \[
-\varepsilon_{\text{vac}}^{\text{eff}}(r) = \varepsilon_{\text{vac}}^{\text{frei}}(r) - 
-\frac{\sigma(r) c^2}{\dot{\rho}_{\text{cre}}} \tag{I.7}
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}} \tag{I.5}
 \]
 
-Im Gleichgewicht (Abschnitt~\ref{sub:materieentstehung_gleichgewicht}) kompensieren sich die Beiträge genau, und die mittlere 
-Vakuumenergiedichte ist negativ mit der in (I.3) angegebenen Größenordnung.
+ist in der Nähe von Massen besonders groß. Es wirkt als eine räumliche Fluktuation
+des Vakuums, die die Paarbildung aus dem Vakuum ermöglicht.
 
-\subsection{Numerische Abschätzung}
-\label{sub:materieentstehung_numerisch}
-
-Mit \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \), \( c = 3 \times 10^8 \, \text{m/s} \), 
-\( \hbar = 1,05 \times 10^{-34} \, \text{J·s} \):
+Für eine radialsymmetrische Massenverteilung \( M(r) \) gilt im fraktalen Raum:
 
 \[
-\frac{\hbar c}{l_0^4} = \frac{1,05 \times 10^{-34} \cdot 3 \times 10^8}{(1,8 \times 10^{-15})^4}
-= \frac{3,15 \times 10^{-26}}{1,05 \times 10^{-59}} \approx 3 \times 10^{33} \, \text{J/m}^3
+Q(r) \propto \frac{GM(r)}{r} \cdot \frac{1}{c^2} \cdot \left( \frac{l_0}{r} \right)^{(3-D)/2} \tag{I.6}
 \]
 
-Für \( r \sim 1 \, \text{fm} = 10^{-15} \, \text{m} \) ist \( (l_0/r)^{4-D} \approx 1 \), 
-also \( \varepsilon_{\text{vac}} \sim 10^{31} \, \text{J/m}^3 \) – eine enorme 
-Energiedichte, aber nur auf subnuklearen Skalen relevant. Auf makroskopischen Skalen 
-(\( r \gg l_0 \)) ist die Energiedichte stark unterdrückt.
+Der fraktale Faktor \( (l_0/r)^{(3-D)/2} \) verstärkt Q bei kleinen Skalen.
 
-\section{Energiebilanz}
-\label{app:materieentstehung_bilanz}
+\subsection{Die Entstehungsrate neuer Materie}
+\label{sub:materieentstehung_rate}
 
-\subsection{Energiedichte des fraktalen Vakuums}
-\label{sub:materieentstehung_vac_dichte}
-
-Die negative Vakuumenergiedichte (hergeleitet in Abschnitt~\ref{app:materieentstehung_vakuum}) lautet:
+Die Materieentstehungsrate pro Volumen \( \sigma(\vec{r}) \) ist proportional zur
+lokalen Stärke des Quantenpotentials. Wir setzen an:
 
 \[
-\varepsilon_{\text{vac}} = -\frac{\hbar c}{l_0^4} \cdot \left( \frac{l_0}{r} \right)^{3-D} \tag{I.8}
+\sigma(\vec{r}) = \kappa \cdot \frac{|\nabla Q(\vec{r})|^2}{\hbar c} \tag{I.7}
 \]
 
-mit \( l_0 \approx 1,8 \times 10^{-15} \, \text{m} \) (fundamentale Längenskala) 
-und \( D \approx 2,704 \). Für makroskopische Skalen (\( r \gg l_0 \)) ist diese 
-Energiedichte extrem klein – aber nicht null.
+Dabei ist \( \kappa \) eine dimensionslose Konstante, die aus der fraktalen Geometrie
+folgt. Die Wahl \( |\nabla Q|^2 \) garantiert, dass die Quelle positiv definit ist
+(Materie wird nur erzeugt, nicht vernichtet).
+
+Für eine radialsymmetrische Situation mit \( Q \propto 1/r \) im fraktalen Raum
+ergibt sich:
+
+\[
+|\nabla Q|^2 \propto \frac{1}{r^4} \cdot \left( \frac{l_0}{r} \right)^{3-D} \tag{I.8}
+\]
+
+Die fraktale Modifikation führt zu einer effektiven Skalierung:
+
+\[
+\boxed{\sigma(r) = \sigma_0 \cdot r^{D-3}} \tag{I.9}
+\]
+
+mit \( \sigma_0 \sim \frac{\hbar c}{l_0^4} \cdot \frac{1}{c^2} \) und \( D-3 \approx -0,296 \).
+
+Die Materieentstehung ist also im Zentrum am stärksten und fällt mit einer
+gebrochenen Potenz ab – eine direkte Konsequenz der fraktalen Raumstruktur.
+
+\section{Der geschlossene Energiekreislauf}
+\label{app:materieentstehung_kreislauf}
+
+\subsection{Energieabgabe von Photonen durch Rotverschiebung}
+\label{sub:materieentstehung_rotverschiebung}
+
+Die kosmologische Rotverschiebung ist in der WDBT+ keine Doppler-Verschiebung
+durch Expansion, sondern eine kumulative gravitative Wirkung auf Photonen
+(siehe Kapitel~\ref{ch:kosmologie}):
+
+\[
+z = \frac{1}{c^2} \int_0^d \frac{GM(r)}{r^2} \, dr \tag{I.10}
+\]
+
+Jedes Photon verliert auf seiner Reise Energie. Diese Energie wird nicht vernichtet,
+sondern an das Vakuum abgegeben. Die gesamte Energieabgabe pro Zeit ist:
+
+\[
+\dot{E}_{\text{Photonen}} = -\frac{d}{dt} \int \varepsilon_{\text{vac}} \, dV \tag{I.11}
+\]
+
+\subsection{Energieaufnahme durch Materieentstehung}
+\label{sub:materieentstehung_aufnahme}
+
+Die neu entstehende Materie hat eine positive Ruheenergie \( mc^2 \). Die
+Leistung des Quantenpotentials ist:
+
+\[
+P_Q = \int \sigma(\vec{r}) c^2 \, dV \tag{I.12}
+\]
+
+Im stationären Zustand muss diese Leistung durch die Energieabgabe der Photonen
+kompensiert werden:
+
+\[
+\dot{E}_{\text{Photonen}} + P_Q = 0 \tag{I.13}
+\]
+
+\subsection{Instantane globale Energieverteilung}
+\label{sub:materieentstehung_instantan}
+
+Die Weber-Kraft (Kapitel~\ref{ch:dstt_weber_kraefte}) wirkt instantan. Das
+Quantenpotential \( Q \) ist ebenfalls instantan und nicht-lokal. Dadurch wird
+die Energie \textbf{global} verteilt:
+
+- Eine lokale Materieentstehung an einem Ort wird instantan durch eine
+  entsprechende Änderung der Vakuumenergie an einem anderen Ort kompensiert.
+- Es gibt keine Verzögerung, keine kausalen Paradoxa – die instantane Wirkung
+  ist ein fundamentales Prinzip der Theorie.
+- Das Universum bleibt im Mittel homogen und stationär.
+
+\subsection{Die vollständige Energiebilanz}
+\label{sub:materieentstehung_bilanz}
+
+Die Gesamtenergie des Universums setzt sich zusammen aus:
+
+\[
+E_{\text{ges}} = E_{\text{Materie}} + E_{\text{Kinetik}} + E_{\text{Gravitation}} + E_{\text{Vakuum}} \tag{I.14}
+\]
+
+Im stationären Zustand gilt:
+
+\[
+\frac{dE_{\text{Materie}}}{dt} = -\frac{dE_{\text{Vakuum}}}{dt} \tag{I.15}
+\]
+
+Die Materieentstehung ist ein Nullsummenspiel: Die positive Energie der neu
+entstehenden Teilchen wird durch eine entsprechende Abnahme der negativen
+Vakuumenergie in ihrer unmittelbaren Umgebung kompensiert.
+
+\section{Zusammenfassung der Grundgleichungen}
+\label{app:materieentstehung_grundgleichungen}
+
+Die Materieentstehung in der WDBT+ wird durch die folgenden Postulate beschrieben:
+
+\subsection{Vakuumenergiedichte}
+\label{sub:materieentstehung_eq_vac}
+
+\[
+\boxed{\varepsilon_{\text{vac}} = -\frac{\hbar c}{l_0^4} \left( \frac{l_0}{r} \right)^{3-D}} \tag{I.16}
+\]
+
+\subsection{Kontinuitätsgleichung mit Quellterm}
+\label{sub:materieentstehung_eq_kontinuitaet}
+
+\[
+\frac{\partial \rho_m}{\partial t} + \nabla \cdot (\rho_m \vec{v}) = \sigma(\vec{r}) \tag{I.17}
+\]
+
+\subsection{Quellterm}
+\label{sub:materieentstehung_eq_sigma}
+
+\[
+\boxed{\sigma(r) = \sigma_0 \cdot r^{D-3}}, \quad \sigma_0 \sim \frac{\hbar c}{l_0^4 c^2} \tag{I.18}
+\]
 
 \subsection{Energieerhaltung}
-\label{sub:materieentstehung_erhaltung}
-
-Die Gesamtenergie setzt sich zusammen aus:
+\label{sub:materieentstehung_eq_energie}
 
 \[
-E_{\text{ges}} = E_{\text{Materie}} + E_{\text{Kinetik}} + E_{\text{Gravitation}} + 
-E_{\text{Vakuum}}
+\int \sigma(\vec{r}) c^2 \, dV = -\frac{d}{dt} \int \varepsilon_{\text{vac}}(\vec{r}) \, dV \tag{I.19}
 \]
-
-Bei der Materieentstehung wird dem Vakuum eine negative Energie entzogen, die in 
-positive Materieenergie umgewandelt wird:
-
-\[
-\frac{dE_{\text{Materie}}}{dt} = -\frac{dE_{\text{Vakuum}}}{dt}
-\]
-
-Die Leistung des Quantenpotentials ist genau dieser Energiefluss:
-
-\[
-P_Q = \int_V \sigma(\vec{r}, t) c^2 \, dV = -\int_V \frac{\partial \varepsilon_{\text{vac}}}{\partial t} \, dV \tag{I.9}
-\]
-
-\subsection{Stationärer Zustand}
-\label{sub:materieentstehung_gleichgewicht}
-
-Im stationären Zustand ist \( \partial \varepsilon_{\text{vac}} / \partial t = 0 \) im Mittel, 
-aber lokal kann Energie umverteilt werden. Die Materieentstehung ist dann ein 
-Nullsummenspiel: Die Energie des neu entstehenden Teilchens wird durch eine 
-entsprechende Abnahme der Vakuumenergie in seiner unmittelbaren Umgebung kompensiert.
-
-\section{Die kritische Dichte für Materieentstehung}
-\label{app:materieentstehung_kritisch}
-
-\subsection{Bedingung für Paarbildung}
-\label{sub:materieentstehung_paar}
-
-Paarbildung aus dem Vakuum (Elektron-Positron, Proton-Antiproton) erfordert eine 
-minimale Energie \( E_{\text{min}} = 2mc^2 \). Diese Energie muss lokal aus dem 
-Quantenpotential verfügbar sein.
-
-Aus \( Q \sim \hbar^2/(2m r^2) \) für eine charakteristische Länge \( r \) folgt die Bedingung:
-
-\[
-\frac{\hbar^2}{2m r^2} \gtrsim 2mc^2 \quad \Rightarrow \quad 
-r \lesssim \frac{\hbar}{2mc} = \frac{\lambda_C}{4\pi}
-\]
-
-wobei \( \lambda_C \) die Compton-Wellenlänge ist. Für Elektronen ist 
-\( r \lesssim 1,9 \times 10^{-13} \, \text{m} \), für Protonen 
-\( r \lesssim 1,0 \times 10^{-16} \, \text{m} \).
-
-\subsection{Fraktale Verstärkung}
-\label{sub:materieentstehung_verstaerkung}
-
-Die fraktale Raumstruktur mit \( D < 3 \) verstärkt das Quantenpotential bei kleinen 
-Skalen (siehe Anhang~\ref{app:spektrale_dimension}). Die effektive Stärke von \( Q \) skaliert mit \( r^{-D/3} \), 
-was die Paarbildung erleichtert.
-
-\subsection{Resultierende Quellstärke}
-\label{sub:materieentstehung_quellstaerke}
-
-Die Materieentstehungsrate pro Volumen ist:
-
-\[
-\sigma(r) = \sigma_0 \cdot \left( \frac{r}{r_0} \right)^{D-3} \tag{I.10}
-\]
-
-mit \( \sigma_0 \sim \rho_0 c / l_0 \) und \( D-3 \approx -0,296 \). Für makroskopische 
-Skalen ist die Erzeugungsrate klein, aber nicht null – sie summiert sich über große 
-Volumina auf.
 
 \section{Kopplung an die DSTT-Drift}
 \label{app:materieentstehung_drift}
@@ -275,28 +247,32 @@ Volumina auf.
 \subsection{Auswärtstreibung neu entstehender Materie}
 \label{sub:materieentstehung_auswaerts}
 
-Die DSTT-Drift (siehe Kapitel~\ref{ch:dstt_weber_kraefte}) treibt neu entstehende Materie radial nach außen:
+Die DSTT-Drift (siehe Kapitel~\ref{ch:dstt_weber_kraefte}) treibt die neu entstehende
+Materie radial nach außen:
 
 \[
-v_{\text{drift}}(r) = \sqrt{\frac{GM_{\text{Kern}}}{r}} \cdot 
-\frac{2\dot{r}}{r} \cdot \frac{GM}{c^2 r} \tag{I.11}
+v_{\text{drift}}(r) = \sqrt{\frac{GM_{\text{Kern}}}{r}} \cdot \frac{2\dot{r}}{r} \cdot \frac{GM}{c^2 r} \tag{I.20}
 \]
 
-Die Materie wird also am Ort ihrer Entstehung nicht eingefangen, sondern verlässt das 
-Zentrum. Nur ein kleiner Bruchteil \( \alpha_{\text{in}} \sim 
-(r_c / r_{\text{max}})^{3-D} \approx 0,001 \) wird vom Zentralkern absorbiert.
+Die Materie wird am Ort ihrer Entstehung nicht eingefangen, sondern verlässt das
+Zentrum. Nur ein kleiner Bruchteil \( \alpha_{\text{in}} \) wird vom Zentralkern
+absorbiert (Herleitung in Anhang~\ref{app:identitaetsbeziehung}):
+
+\[
+\alpha_{\text{in}} = \left( \frac{r_c}{r_{\text{max}}} \right)^{3-D} \approx 0,001 \tag{I.21}
+\]
 
 \subsection{Kontinuität im stationären Zustand}
-\label{sub:materieentstehung_kontinuitaet_drift}
+\label{sub:materieentstehung_kontinuitaet}
 
 Im stationären Zustand gilt:
 
 \[
-\frac{dM_{\text{Gal}}}{dt} = \int \sigma(r) \, dV - \dot{M}_{\text{Drift}} = 0
+\frac{dM_{\text{Gal}}}{dt} = \int \sigma(r) \, dV - \dot{M}_{\text{Drift}} = 0 \tag{I.22}
 \]
 
-Die Drift führt Materie nach außen, wo sie sich in der Galaxienscheibe und im Halo 
-ansammelt. Das Galaxienwachstum ist ein dynamisches Gleichgewicht zwischen 
+Die Drift führt Materie nach außen, wo sie sich in der Galaxienscheibe und im Halo
+ansammelt. Das Galaxienwachstum ist ein dynamisches Gleichgewicht zwischen
 Entstehung im Zentrum und Auswärtsdrift.
 
 \section{Testbare Vorhersage}
@@ -305,55 +281,63 @@ Entstehung im Zentrum und Auswärtsdrift.
 \subsection{Dichteprofil von Galaxienhalos}
 \label{sub:materieentstehung_halo}
 
-Aus (I.10) und der Driftgeschwindigkeit (I.11) folgt das radiale Dichteprofil der 
-dunklen Materie (die in der WDBT+ aus Neutrinos besteht, siehe Kapitel~\ref{ch:neutrino}):
+Aus (I.18) und der Driftgeschwindigkeit (I.20) folgt das radiale Dichteprofil der
+Dunklen Materie (die in der WDBT+ aus Neutrinos besteht, siehe Kapitel~\ref{ch:neutrino}):
 
 \[
-\rho_{\text{halo}}(r) \propto r^{D-3} = r^{-0,296} \tag{I.12}
+\boxed{\rho_{\text{halo}}(r) \propto r^{-0,296}} \tag{I.23}
 \]
 
-Dies ist deutlich flacher als das NFW-Profil der ART (\( \rho \propto r^{-1} \) im inneren 
-Bereich, \( \propto r^{-3} \) im äußeren). Die Vorhersage (I.12) ist mit Beobachtungen 
-von extrem flachen Halos kompatibel und kann mit zukünftigen Durchmusterungen 
+Dies ist deutlich flacher als das NFW-Profil der ART (\( \rho \propto r^{-1} \) im inneren
+Bereich, \( \propto r^{-3} \) im äußeren). Die Vorhersage (I.23) ist mit Beobachtungen
+von extrem flachen Halos kompatibel und kann mit zukünftigen Durchmusterungen
 (EUCLID, Rubin-LSST) getestet werden (siehe Kapitel~\ref{ch:testbare_vorhersagen}).
-
-\subsection{Quantitativer Vergleich}
-\label{sub:materieentstehung_quantitativ}
-
-Für eine typische Galaxie mit \( M_{\text{Gal}} \approx 10^{11} M_{\odot} \) und einem 
-Halo-Radius von \( 100 \, \text{kpc} \) ergibt (I.12) eine Dichte von 
-\( \rho \sim 10^{-24} \, \text{g/cm}^3 \) bei \( 10 \, \text{kpc} \) und 
-\( \rho \sim 10^{-25} \, \text{g/cm}^3 \) bei \( 50 \, \text{kpc} \) – ein langsamerer 
-Abfall als im NFW-Modell.
 
 \section{Zusammenfassung}
 \label{app:materieentstehung_zusammenfassung}
 
+Die Materieentstehung in der WDBT+ wird durch einen geschlossenen Energiekreislauf
+beschrieben:
+
 \begin{itemize}
-    \item Die Materieentstehung in der WDBT+ wird durch das Quantenpotential \( Q \) 
-          vermittelt und durch eine Kontinuitätsgleichung mit Quellterm \( \sigma \) 
-          beschrieben.
-    \item Die negative Vakuumenergiedichte wird hier aus dem fraktalen Casimir-Effekt 
-          hergeleitet (nicht postuliert):
-          \[
-          \varepsilon_{\text{vac}} = -\frac{\hbar c}{l_0^4} \left( \frac{l_0}{r} \right)^{3-D}
-          \]
-    \item Die Energieerhaltung wird durch Kompensation von positiver Materieenergie und 
-          negativer Vakuumenergie gewährleistet.
-    \item Der Quellterm skaliert wie \( \sigma(r) \propto r^{D-3} \approx r^{-0,296} \).
-    \item Die DSTT-Drift treibt die neu entstehende Materie nach außen, was zu einem 
-          flachen Dichteprofil \( \rho_{\text{halo}} \propto r^{-0,296} \) führt.
-    \item Diese Vorhersage ist testbar durch Beobachtungen von Galaxienhalos 
-          (EUCLID, Rubin-LSST) und unterscheidet die WDBT+ klar von der ART (NFW-Profil).
+    \item \textbf{Negative Vakuumenergiedichte:} \( \varepsilon_{\text{vac}} = -\frac{\hbar c}{l_0^4} \left( \frac{l_0}{r} \right)^{3-D} \)
+          – eine fundamentale Eigenschaft des fraktalen Raumes (kein Casimir-Effekt).
+    
+    \item \textbf{Materieentstehung durch das Quantenpotential:} Der Quellterm
+          \( \sigma(r) = \sigma_0 \cdot r^{D-3} \) beschreibt die Paarbildung aus dem Vakuum,
+          bevorzugt in der Nähe von Massen.
+    
+    \item \textbf{Energieübertrag durch Rotverschiebung:} Photonen geben Energie an das
+          Vakuum ab; diese Energie wird für die Materieentstehung genutzt.
+    
+    \item \textbf{Instantaner globaler Ausgleich:} Die Weber-Kraft und das Quantenpotential
+          wirken instantan und nicht-lokal und sorgen für eine globale Energieverteilung.
+    
+    \item \textbf{DSTT-Drift:} Die neu entstehende Materie wird radial nach außen getrieben
+          und bildet Galaxien.
+    
+    \item \textbf{Testbare Vorhersage:} \( \rho_{\text{halo}}(r) \propto r^{-0,296} \)
+          – ein flacheres Dichteprofil als im \(\Lambda\)CDM-Modell.
 \end{itemize}
+
+Die Energieerhaltung wird durch die Kompensation von positiver Materieenergie und
+negativer Vakuumenergie gewährleistet. Der Kreislauf ist geschlossen, das Universum
+ist stationär.
 
 \section{Ausblick}
 \label{app:materieentstehung_ausblick}
 
-Die hier präsentierte Energiebilanz ist konsistent und die negative Vakuumenergiedichte 
-wurde aus ersten Prinzipien (fraktaler Casimir-Effekt) hergeleitet. 
+Offene Fragen für zukünftige Forschung:
 
-Offene Fragen betreffen die genaue Bestimmung des Parameters \( \gamma \) in (I.2), 
-die eine vollständige Quantisierung der WDBT+ erfordert. Dennoch liefert der 
-vorliegende Anhang die konzeptionelle Grundlage für die Materieentstehung in der 
-stationären Kosmologie der WDBT+.
+\begin{enumerate}
+    \item \textbf{Bestimmung von \( \kappa \):} Die dimensionslose Konstante in (I.7)
+          sollte aus der fraktalen Geometrie folgen.
+    
+    \item \textbf{Quantisierung:} Die hier präsentierte klassische Beschreibung muss
+          quantisiert werden.
+    
+    \item \textbf{Stabilität des Grenzzyklus:} Ist der stationäre Zustand global attraktiv?
+\end{enumerate}
+
+Dennoch liefert der vorliegende Anhang die konzeptionelle Grundlage für die
+Materieentstehung in der stationären Kosmologie der WDBT+.
