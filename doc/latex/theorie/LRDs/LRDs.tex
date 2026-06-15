@@ -1,0 +1,137 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Interpretation der ``Little Red Dots'' (LRDs) im JWST\\
+nach der Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+)}
+\author{Auswertung im Rahmen der WDBT+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Die im JWST beobachteten kompakten roten Objekte bei hohen Rotverschiebungen ($z \approx 7$ bis $z \approx 12$), bekannt als ``Little Red Dots'' (LRDs), werden im Rahmen der stationären Kosmologie der WDBT+ interpretiert. Im Gegensatz zum $\Lambda$CDM-Modell wird die Rotverschiebung nicht als Expansion des Raumes, sondern als kumulative gravitative Rotverschiebung entlang der Sichtlinie verstanden. Nach Kalibration mit der gravitativ gelinsten Supernova SN Refsdal ($z=1,49$) ergibt sich für LRDs bei $z=10$ eine Entfernung von etwa $44\,\text{Mrd.}$ Lichtjahren. Die aus den beobachteten Winkeldurchmessern folgenden physikalischen Größen liegen im Bereich normaler Galaxien ($\approx 10$--$30\,\text{kpc}$). Damit sind LRDs in der WDBT+ keine exotischen Frühphasen-Galaxien, sondern normale, weit entfernte Galaxien.
+\end{abstract}
+
+\section{Einleitung}
+
+Die Entdeckung kompakter, roter Galaxien bei hohen Rotverschiebungen ($z\gtrsim 7$) durch das \textbf{James Webb Space Telescope} (JWST) hat die Diskussion über die Natur dieser Objekte neu entfacht. In der Standardkosmologie ($\Lambda$CDM) werden sie als junge, massearme oder extrem kompakte Galaxien in einem expandierenden Universum interpretiert.
+
+Die hier vorgestellte Analyse basiert auf der \textbf{Weber-de-Broglie-Bohm-Theorie mit fraktalem Raum (WDBT+)}. Diese Theorie ist eine emergente, kontinuumsnahe Physik aus der Informations-Weber-Theorie (IWT) und kommt ohne Urknall, Dunkle Materie und Dunkle Energie aus. Die Rotverschiebung wird nicht durch Expansion, sondern durch kumulative gravitative Energieverluste von Photonen auf ihrem Weg durch das Universum erklärt.
+
+\section{Grundlagen der Rotverschiebung in der WDBT+}
+
+In der WDBT+ gilt für die Rotverschiebung $z$ eines Objekts im Abstand $d$ (vgl. Kap.~14.2.1, Anhang D.2.4):
+
+\begin{equation}
+z(d) = \frac{1}{c^2} \int_0^d \frac{G M(r)}{r^2} \, dr
+\label{eq:z_general}
+\end{equation}
+
+Dabei ist $M(r)$ die innerhalb des Radius $r$ kugelsymmetrisch eingeschlossene Masse. Für eine fraktale Dichteverteilung mit Dimension $D \approx 2{,}704$ (vgl. Kap.~6)
+
+\begin{equation}
+\rho(r) = \rho_0 \left( \frac{r}{l_0} \right)^{D-3}
+\end{equation}
+
+folgt:
+
+\begin{equation}
+z(d) = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-1)c^2} \cdot d^{\,D-1}
+\label{eq:z_fraktal}
+\end{equation}
+
+Hierbei ist $l_0 \approx 1{,}8 \times 10^{-15}\,\text{m}$ die fundamentale Längenskala (Kap.~10). Die Größe $\rho_0$ ist die \textbf{universelle, zeitlich konstante mittlere Dichte} des stationären Universums in der WDBT+.
+
+\section{Kalibration mit SN Refsdal}
+
+Als absoluter Entfernungsanker dient die Supernova \textbf{SN Refsdal} ($z=1,49$) im Galaxienhaufen MACS J1149.5+2223. Aus den Zeitverzögerungen zwischen den durch Gravitationslinsen erzeugten Mehrfachbildern wurde eine Entfernung von 
+
+\begin{equation}
+d_{\text{SN}} = 1{,}36 \times 10^{26}\,\text{m} \approx 14{,}4\,\text{Gly}
+\end{equation}
+
+bestimmt – weitgehend unabhängig vom kosmologischen Modell.
+
+Aus Gl.~(\ref{eq:z_fraktal}) ergibt sich damit:
+
+\begin{equation}
+\rho_0 = \frac{z \cdot D(D-1)c^2}{4\pi G l_0^{3-D} \cdot d^{\,D-1}} \approx 5 \times 10^{-14}\,\text{kg/m}^3
+\end{equation}
+
+Dies ist die \textbf{universelle, konstante mittlere Dichte} des stationären Universums in der WDBT+.
+
+\section{Entfernung von LRDs bei $z=10$}
+
+Mit der so kalibrierten Konstante $\rho_0$ folgt aus dem Skalenverhalten von Gl.~(\ref{eq:z_fraktal}):
+
+\begin{equation}
+\frac{d(z)}{d(z_{\text{ref}})} = \left( \frac{z}{z_{\text{ref}}} \right)^{1/(D-1)}
+\end{equation}
+
+Für $z=10$ und $z_{\text{ref}}=1,49$ ergibt sich mit $D-1=1,704$:
+
+\begin{equation}
+d(z=10) = 1{,}36 \times 10^{26} \times \left( \frac{10}{1{,}49} \right)^{1/1,704} \approx 4{,}16 \times 10^{26}\,\text{m}
+\end{equation}
+
+In gebräuchlichen Einheiten:
+
+\begin{equation}
+\boxed{d \approx 44 \times 10^9\,\text{Lichtjahre} = 44\,\text{Gly}}
+\end{equation}
+
+\section{Physikalische Größe der LRDs}
+
+Die beobachteten Winkeldurchmesser $\theta$ der LRDs im JWST liegen typischerweise im Bereich von $0{,}1''$ bis $0{,}5''$ (kaum aufgelöst bis leicht ausgedehnt). Aus der Beziehung
+
+\begin{equation}
+L = \theta \cdot d \quad (\theta \text{ im Bogenmaß})
+\end{equation}
+
+folgt:
+
+\begin{itemize}
+\item Für $\theta = 0{,}1''$: $L \approx 6{,}5\,\text{kpc}$
+\item Für $\theta = 0{,}5''$: $L \approx 33\,\text{kpc}$
+\end{itemize}
+
+Die Milchstraße hat einen Durchmesser von etwa $30\,\text{kpc}$. Damit liegen die in der WDBT+ berechneten physikalischen Größen von LRDs \textbf{im Bereich normaler Galaxien}.
+
+\section{Interpretation}
+
+Aus Sicht der WDBT+ ergibt sich folgendes Bild:
+
+\begin{enumerate}
+\item \textbf{LRDs sind keine exotischen Frühphasen-Galaxien.} Sie sind in ihrer physikalischen Ausdehnung mit heutigen Galaxien vergleichbar.
+\item \textbf{Die hohe Rotverschiebung $z\approx10$ ist nicht auf Expansion, sondern auf kumulative Gravitation zurückzuführen.} Die Photonen verlieren auf dem langen Weg durch das fraktale Universum Energie.
+\item \textbf{Die große Entfernung ($44\,\text{Gly}$) ist real.} Die scheinbare Kompaktheit der LRDs am Himmel ergibt sich allein aus ihrer Distanz, nicht aus intrinsischer Kleinheit.
+\item \textbf{Die Theorie macht eine testbare Voraussage:} Würde man die physikalische Größe eines LRDs unabhängig bestimmen (z.~B. aus der Dynamik oder aus Gravitationslinsen), so muss der aus dem Winkeldurchmesser und der WDBT+-Entfernung berechnete Wert mit dieser unabhängigen Messung übereinstimmen.
+\end{enumerate}
+
+\section{Diskussion und Ausblick}
+
+Die hier vorgestellte Interpretation ist eine direkte Konsequenz der stationären Kosmologie der WDBT+. Ein entscheidender Vorteil gegenüber dem $\Lambda$CDM-Modell ist, dass keine Dunkle Materie und keine Dunkle Energie benötigt werden. Die fraktale Raumdimension $D\approx2,704$ (abgeleitet aus der Dodekaeder-Geometrie und dem Goldenen Schnitt) liefert die Skalierungsgesetze.
+
+Weitere testbare Vorhersagen der WDBT+ sind (vgl. Kap.~15):
+\begin{itemize}
+\item Frequenzabhängigkeit der Lichtablenkung ($\Delta\phi \propto \lambda^2$)
+\item Dispersion von Gravitationswellen ($v_{\text{phase}}(\omega) \propto \omega^{-0,099}$)
+\item Fraktale Skalengesetze in der Materieverteilung ($\rho(r) \propto r^{-0,296}$)
+\end{itemize}
+
+Sollten zukünftige Beobachtungen (z.~B. durch extrem große Teleskope oder Gravitationslinsenstudien) die hier abgeleiteten Entfernungen und Größen bestätigen, wäre dies eine starke Stütze für die WDBT+.
+
+\section{Fazit}
+
+In der WDBT+ sind die im JWST beobachteten \textit{Little Red Dots} bei $z=10$ etwa $44$ Milliarden Lichtjahre entfernt und besitzen physikalische Größen von $10$--$30$ Kiloparsec – also völlig normale Galaxien. Die hohe Rotverschiebung ist kein Zeichen eines jungen, expandierenden Universums, sondern eine Folge der kumulativen gravitativen Rotverschiebung im fraktalen, stationären Kosmos.
+
+\begin{quote}
+\emph{Die Rotverschiebung ist keine Geschwindigkeit, sondern ein Wegmaß – und dieser Weg ist länger, als das Standardmodell lehrt.}
+\end{quote}
+
+\end{document}
