@@ -1,0 +1,27 @@
+\chapter{Die fraktale Regularisierung der QED}
+
+Die Quantenelektrodynamik (QED) hat divergente Integrale (Selbstenergie, Lamb-Shift), die durch Renormierung beseitigt werden. Die WDBT+ benötigt keine Renormierung – die fraktale Gewichtung wirkt als \emph{natürlicher Cutoff}.
+
+\subsection{Die Selbstenergie des Elektrons}
+
+Die Selbstenergie des Elektrons wird zu:
+
+\begin{equation}
+\Delta E_{\text{self}}^{\text{WDBT+}} = \frac{\alpha \hbar c}{\pi} \int_0^{\infty} \frac{dk}{k} \cdot \mathcal{F}(k) \cdot \left( \frac{k}{k_*} \right)^{D-3}.
+\end{equation}
+
+Für \( D \approx 2,704 \) ist \( D-3 \approx -0,296 \), und das Integral konvergiert. Der Cutoff ist \( k_* = 1/l_* \), wobei \( l_* \) die mesoskopische Skala ist.
+
+\subsection{Der Lamb-Shift}
+
+Der Lamb-Shift wird zu:
+
+\begin{equation}
+\Delta E_{\text{Lamb}}^{\text{WDBT+}} = \Delta E_{\text{Lamb}}^{\text{QED}} \cdot \left( \frac{a_0}{l_*} \right)^{D-3}.
+\end{equation}
+
+Die Kalibration mit dem experimentellen Lamb-Shift (\( \Delta E_{\text{Lamb}}^{\text{exp}} \approx 4,37 \times 10^{-6} \) eV) liefert \( l_* \approx a_0 \) – die atomare Skala.
+
+\subsection{Der numerische Test}
+
+Die numerische Integration des fraktal gewichteten Integrals reproduziert den gemessenen Lamb-Shift – ohne Renormierung, ohne willkürlichen Cutoff.

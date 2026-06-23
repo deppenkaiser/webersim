@@ -1,0 +1,35 @@
+\chapter{Die numerischen Beweise (drei Schritte)}
+
+Die Hypothese der fraktalen Energieverteilung wird durch drei numerische Beweise gestützt.
+
+\subsection{Beweis 1: Dodekaeder-Orbitale}
+
+Die Wahrscheinlichkeitsdichte \( |\psi_D|^2 \) wird auf einer Kugeloberfläche berechnet.
+
+\textbf{Erwartetes Ergebnis:} Die Maxima liegen bei den 20 Ecken des Dodekaeders, die Minima bei den 12 Flächenzentren.
+
+\textbf{Durchführung:} Numerische Berechnung der fraktal gewichteten Kugelflächenfunktionen für \( D \approx 2,704 \).
+
+\subsection{Beweis 2: Fraktale Regularisierung der QED}
+
+Die Selbstenergie des Elektrons wird numerisch integriert:
+
+\begin{equation}
+\Delta E_{\text{self}}^{\text{WDBT+}} = \frac{\alpha \hbar c}{\pi} \int_0^{\infty} \frac{dk}{k} \cdot \mathcal{F}(k) \cdot \left( \frac{k}{k_*} \right)^{D-3}.
+\end{equation}
+
+\textbf{Erwartetes Ergebnis:} Das Integral konvergiert für \( D \approx 2,704 \). Die Kalibration mit dem Lamb-Shift liefert \( l_* \approx a_0 \).
+
+\textbf{Durchführung:} Numerische Integration mit Python (SciPy) für verschiedene Werte von \( D \) und \( l_* \).
+
+\subsection{Beweis 3: Konsistenz der Kalibrierungen}
+
+Die Vakuumenergiedichte wird berechnet:
+
+\begin{equation}
+\rho_{\text{vac}} = \rho_0 \cdot \left( \frac{l_0}{l_*} \right)^{3-D}.
+\end{equation}
+
+\textbf{Erwartetes Ergebnis:} \( \rho_{\text{vac}} \approx 10^{-9} \, \text{J/m}^3 \), in Übereinstimmung mit der beobachteten Vakuumenergiedichte.
+
+\textbf{Durchführung:} Einsetzen der Werte aus den beiden Kalibrierungen.

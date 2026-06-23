@@ -1,0 +1,36 @@
+\contentsline {chapter}{\numberline {1}Grundlagen: Die fraktale Dimension und die zwei Ebenen der Theorie}{5}{}%
+\contentsline {chapter}{\numberline {2}Der Raum als fraktale Energieverteilung}{7}{}%
+\contentsline {subsection}{\numberline {2.0.1}Drei Energiedichten, eine Skalierung}{7}{}%
+\contentsline {subsection}{\numberline {2.0.2}Die negative Vakuumenergiedichte}{7}{}%
+\contentsline {chapter}{\numberline {3}Dynamik: Kreislauf und Grenzzyklus}{9}{}%
+\contentsline {subsection}{\numberline {3.0.1}Der geschlossene Energiekreislauf}{9}{}%
+\contentsline {subsection}{\numberline {3.0.2}Der Grenzzyklus}{9}{}%
+\contentsline {chapter}{\numberline {4}Rückkopplung durch Photonen und Rotverschiebung}{11}{}%
+\contentsline {subsection}{\numberline {4.0.1}Polyrhythmisches System}{11}{}%
+\contentsline {subsection}{\numberline {4.0.2}Die Rolle des Quantenpotentials Q}{11}{}%
+\contentsline {chapter}{\numberline {5}Weber-Kräfte und das Quantenpotential Q}{13}{}%
+\contentsline {subsection}{\numberline {5.0.1}Das Quantenpotential Q als instantane Welle}{13}{}%
+\contentsline {subsection}{\numberline {5.0.2}Q als Regler des Kreislaufs}{13}{}%
+\contentsline {chapter}{\numberline {6}Die fraktale Gewichtung der Quantenmechanik}{15}{}%
+\contentsline {subsection}{\numberline {6.0.1}Knotenstruktur und Dodekaeder-Symmetrie}{15}{}%
+\contentsline {subsection}{\numberline {6.0.2}Der numerische Test}{15}{}%
+\contentsline {chapter}{\numberline {7}Die fraktale Regularisierung der QED}{17}{}%
+\contentsline {subsection}{\numberline {7.0.1}Die Selbstenergie des Elektrons}{17}{}%
+\contentsline {subsection}{\numberline {7.0.2}Der Lamb-Shift}{17}{}%
+\contentsline {subsection}{\numberline {7.0.3}Der numerische Test}{17}{}%
+\contentsline {chapter}{\numberline {8}Die zwei Kalibrierungen}{19}{}%
+\contentsline {subsection}{\numberline {8.0.1}Kosmologische Kalibration}{19}{}%
+\contentsline {subsection}{\numberline {8.0.2}Atomare Kalibration}{19}{}%
+\contentsline {subsection}{\numberline {8.0.3}Konsistenz}{19}{}%
+\contentsline {chapter}{\numberline {9}Die numerischen Beweise (drei Schritte)}{21}{}%
+\contentsline {subsection}{\numberline {9.0.1}Beweis 1: Dodekaeder-Orbitale}{21}{}%
+\contentsline {subsection}{\numberline {9.0.2}Beweis 2: Fraktale Regularisierung der QED}{21}{}%
+\contentsline {subsection}{\numberline {9.0.3}Beweis 3: Konsistenz der Kalibrierungen}{21}{}%
+\contentsline {chapter}{\numberline {10}Konsequenzen: Einheit der Physik}{23}{}%
+\contentsline {subsection}{\numberline {10.0.1}Die Hierarchie der Theorien}{23}{}%
+\contentsline {subsection}{\numberline {10.0.2}Falsifizierbarkeit}{23}{}%
+\contentsline {subsection}{\numberline {10.0.3}Die Einheit der Physik}{23}{}%
+\contentsline {chapter}{\numberline {A}Numerische Implementierung}{25}{}%
+\contentsline {section}{\numberline {A.1}Beweis 1: Dodekaeder-Orbitale}{25}{}%
+\contentsline {section}{\numberline {A.2}Beweis 2: Fraktale Regularisierung der QED}{26}{}%
+\contentsline {section}{\numberline {A.3}Beweis 3: Konsistenz der Kalibrierungen}{26}{}%

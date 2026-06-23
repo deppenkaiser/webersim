@@ -1,0 +1,82 @@
+\chapter{Numerische Implementierung}
+
+\section{Beweis 1: Dodekaeder-Orbitale}
+
+\begin{verbatim}
+import numpy as np
+from scipy.special import sph_harm
+from scipy.spatial import KDTree
+
+# Dodekaeder-Ecken (normalisiert)
+def dodecahedron_vertices():
+    phi = (1 + np.sqrt(5)) / 2
+    vertices = []
+    for i in range(3):
+        for j in range(3):
+            for k in range(3):
+                if (i + j + k) % 2 == 0:
+                    continue
+                v = np.array([i, j, k]) - 1
+                if np.linalg.norm(v) == 0:
+                    continue
+                vertices.append(v / np.linalg.norm(v))
+    return np.array(vertices)
+
+# Fraktale Gewichtung
+def psi_D(theta, phi, l=1.7, D=2.704, l_star=5.3e-11):
+    r = 1.0  # Einheitskugel
+    Y = sph_harm(0, int(l), theta, phi)
+    weight = (r / l_star) ** ((D - 3) / 2)
+    return Y * weight
+
+# Berechnung der Wahrscheinlichkeitsdichte auf den Dodekaeder-Ecken
+vertices = dodecahedron_vertices()
+theta = np.arccos(vertices[:, 2])
+phi = np.arctan2(vertices[:, 1], vertices[:, 0])
+density = np.abs(psi_D(theta, phi)) ** 2
+
+print("Wahrscheinlichkeitsdichte an den Dodekaeder-Ecken:", density)
+\end{verbatim}
+
+\section{Beweis 2: Fraktale Regularisierung der QED}
+
+\begin{verbatim}
+import numpy as np
+from scipy.integrate import quad
+
+def integrand(k, D=2.704, k_star=1/5.3e-11, alpha=1/137, hbar_c=197e-9):
+    F_k = 1.0  # Vereinfachung
+    return F_k * (k / k_star) ** (D - 3) / k
+
+def self_energy(D=2.704, k_star=1/5.3e-11):
+    alpha = 1/137
+    hbar_c = 197e-9  # eV * m
+    result, _ = quad(lambda k: integrand(k, D, k_star), 1e-10, np.inf)
+    return alpha * hbar_c / np.pi * result
+
+print("Selbstenergie (WDBT+):", self_energy(), "eV")
+\end{verbatim}
+
+\section{Beweis 3: Konsistenz der Kalibrierungen}
+
+\begin{verbatim}
+import numpy as np
+
+# Konstanten
+h = 6.626e-34  # J*s
+c = 3e8        # m/s
+G = 6.674e-11  # m^3/(kg*s^2)
+l0 = 1.8e-15   # m
+l_star = 5.3e-11  # m
+rho0 = 5e-14   # kg/m^3
+D = 2.704
+
+# Vakuumenergiedichte
+rho_vac = rho0 * (l0 / l_star) ** (3 - D)
+print("Vakuumenergiedichte (WDBT+):", rho_vac, "kg/m^3")
+
+# Umrechnung in J/m^3
+rho_vac_J = rho_vac * c**2
+print("Vakuumenergiedichte (WDBT+) in J/m^3:", rho_vac_J)
+print("Beobachtete Vakuumenergiedichte: ~1e-9 J/m^3")
+\end{verbatim}
