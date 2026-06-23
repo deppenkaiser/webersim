@@ -3,7 +3,7 @@
 Die Weber-Kraft ist instantan und geschwindigkeitsabhängig. Ihre allgemeine Form lautet:
 
 \begin{equation}
-\vec{F} = \frac{Q_1 Q_2}{4\pi \epsilon_0 r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{Kraft}} \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}
+\vec{F} = \frac{Q_1 Q_2}{4\pi \epsilon_0 r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \beta_{\text{Kraft}} \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}. \tag{5.1}
 \end{equation}
 
 Es gibt drei Ausprägungen:
@@ -14,17 +14,82 @@ Es gibt drei Ausprägungen:
     \item \textbf{WG für Photonen}: \( \beta = 1 \) (kompensiert durch Q)
 \end{itemize}
 
-\subsection{Das Quantenpotential Q als instantane Welle}
+\section{Die Weber-Kräfte im Detail}
+
+\subsection{Die Weber-Elektrodynamik (WED)}
+
+Für die Elektrodynamik gilt \( \beta_{\text{WED}} = 2 \):
+
+\begin{equation}
+\vec{F}_{\text{WED}} = \frac{q_1 q_2}{4\pi \epsilon_0 r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + 2\frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}. \tag{5.2}
+\end{equation}
+
+Die WED erfüllt \emph{actio = reactio} und erhält den Impuls. Sie ist reversibel.
+
+\subsection{Die Weber-Gravitation (WG) für Massen}
+
+Für massive Körper (Planeten, Sterne) gilt \( \beta_{\text{WG}} = 0,5 \):
+
+\begin{equation}
+\vec{F}_{\text{WG}} = -\frac{GMm}{r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{1}{2}\frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}. \tag{5.3}
+\end{equation}
+
+Die WG ist irreversibel – sie erzeugt die DSTT-Drift (\( \dot{\beta} > 0 \)).
+
+\subsection{Die Weber-Gravitation für Photonen}
+
+Für Photonen (masselose Teilchen) gilt \( \beta = 1 \):
+
+\begin{equation}
+\vec{F}_{\text{WG}}^{(\gamma)} = -\frac{GMm}{r^2} \left\{ \left[ 1 - \frac{\dot{r}^2}{c^2} + \frac{r\ddot{r}}{c^2} \right] \hat{r} + \frac{2(\dot{r} \cdot \vec{v})}{c^2} \vec{v} \right\}. \tag{5.4}
+\end{equation}
+
+Hier greift das Quantenpotential Q ein. Es kompensiert den \( \beta = 1 \)-Wert so, dass effektiv \( \beta = 0,5 \) übrig bleibt.
+
+\section{Die Instantaneität der Weber-Kräfte und von Q}
+
+Die Weber-Kräfte (WG und WED) sind \emph{instantan}. Sie wirken direkt zwischen den Teilchen – sie sind eine Fernwirkung im Newtonschen Sinne, aber mit geschwindigkeitsabhängiger Struktur (IIR-Rekursion). 
+
+Das Quantenpotential Q ist ebenfalls \emph{instantan}. Es wirkt nicht-lokal auf das gesamte System, ohne dass ein Signal mit \(c\) unterwegs sein muss.
+
+\subsection{Der Unterschied zwischen Weber-Kräften und Q}
+
+Der Unterschied liegt \emph{nicht} in der Instantaneität, sondern in der \emph{Reichweite} und \emph{Struktur}:
+
+\begin{itemize}
+    \item \textbf{WG/WED:} Lokale, direkte Zwei-Körper-Wechselwirkung. Sie wirken nur zwischen den beteiligten Teilchen.
+    \item \textbf{Q:} Globale, nicht-lokale Führungsgröße, die von der gesamten Dichteverteilung \( \rho \) abhängt.
+\end{itemize}
+
+Beide sind instantane Aspekte derselben Informationswelle der IWT.
+
+\section{Das Quantenpotential Q als instantane Welle}
 
 Das Quantenpotential in der de Broglie-Bohm-Theorie lautet:
 
 \begin{equation}
-Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}.
+Q = -\frac{\hbar^2}{2m} \frac{\nabla^2 \sqrt{\rho}}{\sqrt{\rho}}. \tag{5.5}
 \end{equation}
 
-Q ist \emph{nicht-lokal} und \emph{instantan}. Es ist die einzige Größe in der Theorie, die global und ohne Zeitverzögerung wirken kann.
+Q ist \emph{nicht-lokal} und \emph{instantan}. Es ist die globale Führungsgröße, die das gesamte System beeinflusst.
 
-\subsection{Q als Regler des Kreislaufs}
+\subsection{Die Wellennatur von Q}
+
+Q ist keine Materie, kein Teilchen, kein Feld im klassischen Sinne. Es ist eine \emph{Krümmung der Wahrscheinlichkeitsdichte} – ein Muster im Informationsraum. 
+
+Als instantane Welle hat Q folgende Eigenschaften:
+
+\begin{itemize}
+    \item Es ist \emph{überall gleichzeitig} – es braucht keine Zeit, um sich auszubreiten.
+    \item Es ist \emph{nicht-lokal} – es wirkt auf alle Teilchen gleichzeitig.
+    \item Es ist \emph{kein Signal} – es ist ein Muster im Informationsnetzwerk.
+\end{itemize}
+
+\subsection{Die Verbindung zur fraktalen Energieverteilung}
+
+Die fraktale Energieverteilung (Kapitel 2) ist der \emph{zeitliche Mittelwert} der Q-Welle. Die "Löcher" sind die Minima der Q-Welle, die "Berge" sind die Maxima.
+
+\section{Q als Regler des Kreislaufs}
 
 Q erfüllt drei Funktionen:
 
@@ -34,4 +99,30 @@ Q erfüllt drei Funktionen:
     \item \textbf{Rückkopplung:} Aufnahme der Rotverschiebungsenergie.
 \end{enumerate}
 
+\subsection{Die Identitätsbeziehung}
+
+Die vollständige WDBT-Kraft ist:
+
+\begin{equation}
+\vec{F}_{\text{WDBT}} = \vec{F}_{\text{WG}} + \vec{F}_Q, \qquad \vec{F}_Q = -\nabla Q. \tag{5.6}
+\end{equation}
+
+Es gilt die exakte Identitätsbeziehung:
+
+\begin{equation}
+\frac{|\vec{F}_{\text{WDBT}}^{\text{tan}}|}{|\vec{F}_{\text{WDBT}}^{\text{rad}}| + |\vec{F}_{\text{WDBT}}^{\text{tan}}|} \equiv \beta_{\text{DSTT}}(t). \tag{5.7}
+\end{equation}
+
 Die Weber-Kräfte und Q sind zwei Seiten derselben instantanen Welle – der Informationswelle der IWT.
+
+\section{Zusammenfassung}
+
+\begin{enumerate}
+    \item Die Weber-Kraft ist instantan und geschwindigkeitsabhängig.
+    \item Es gibt drei Ausprägungen: WED (\( \beta = 2 \)), WG für Massen (\( \beta = 0,5 \)), WG für Photonen (\( \beta = 1 \), kompensiert durch Q).
+    \item Q ist das Quantenpotential – eine instantane, nicht-lokale Welle.
+    \item WG/WED und Q sind \emph{beide} instantan – der Unterschied liegt in der Reichweite (lokal vs. global) und der Struktur.
+    \item Q ist der Regler des Kreislaufs: es erzeugt Materie, verteilt Energie und nimmt Rotverschiebungsenergie auf.
+    \item Die Weber-Kräfte und Q sind zwei Seiten derselben instantanen Welle – der Informationswelle der IWT.
+    \item Die Identitätsbeziehung (5.7) verbindet die Weber-Kräfte mit der DSTT-Drift.
+\end{enumerate}
