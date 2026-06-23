@@ -1,0 +1,107 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Grundlagen: Die fraktale Dimension und die zwei Ebenen der Theorie}{7}{}%
+\contentsline {chapter}{\numberline {2}Der Raum als fraktale Energieverteilung}{9}{}%
+\contentsline {section}{\numberline {2.1}Drei Energiedichten, eine Skalierung}{9}{}%
+\contentsline {section}{\numberline {2.2}Die negative Vakuumenergiedichte}{9}{}%
+\contentsline {subsection}{\numberline {2.2.1}Die spektrale Dimension}{10}{}%
+\contentsline {subsection}{\numberline {2.2.2}Die Nullpunktsenergie}{10}{}%
+\contentsline {subsection}{\numberline {2.2.3}Die effektive negative Energiedichte}{10}{}%
+\contentsline {subsection}{\numberline {2.2.4}Warum dies nicht die Dunkle Energie der ART ist}{11}{}%
+\contentsline {section}{\numberline {2.3}Die physikalische Bedeutung: Die ``Löcher''}{11}{}%
+\contentsline {section}{\numberline {2.4}Zusammenfassung}{11}{}%
+\contentsline {chapter}{\numberline {3}Dynamik: Kreislauf und Grenzzyklus}{13}{}%
+\contentsline {section}{\numberline {3.1}Der geschlossene Energiekreislauf}{13}{}%
+\contentsline {subsection}{\numberline {3.1.1}Die Flussraten}{13}{}%
+\contentsline {subsection}{\numberline {3.1.2}Der stationäre Zustand}{13}{}%
+\contentsline {section}{\numberline {3.2}Der Grenzzyklus}{14}{}%
+\contentsline {subsection}{\numberline {3.2.1}Warum kein Wärmetod eintritt}{14}{}%
+\contentsline {subsection}{\numberline {3.2.2}Die Rolle der DSTT-Drift}{14}{}%
+\contentsline {subsection}{\numberline {3.2.3}Der attraktive Grenzzyklus}{14}{}%
+\contentsline {subsection}{\numberline {3.2.4}Die fraktale Entropie als Stabilitätskriterium}{14}{}%
+\contentsline {section}{\numberline {3.3}Zusammenfassung}{15}{}%
+\contentsline {chapter}{\numberline {4}Rückkopplung durch Photonen und Rotverschiebung}{17}{}%
+\contentsline {section}{\numberline {4.1}Die Rotverschiebung als Energieabgabe}{17}{}%
+\contentsline {subsection}{\numberline {4.1.1}Der allgemeine Ausdruck}{17}{}%
+\contentsline {subsection}{\numberline {4.1.2}Die kumulative Natur}{17}{}%
+\contentsline {section}{\numberline {4.2}Polyrhythmisches System}{17}{}%
+\contentsline {subsection}{\numberline {4.2.1}Die statistische Überlagerung}{18}{}%
+\contentsline {section}{\numberline {4.3}Die Rolle des Quantenpotentials Q}{18}{}%
+\contentsline {subsection}{\numberline {4.3.1}Q als instantaner Regler}{18}{}%
+\contentsline {subsection}{\numberline {4.3.2}Die Verbindung zur Rotverschiebung}{18}{}%
+\contentsline {section}{\numberline {4.4}Zusammenfassung}{19}{}%
+\contentsline {chapter}{\numberline {5}Weber-Kräfte und das Quantenpotential Q}{21}{}%
+\contentsline {section}{\numberline {5.1}Die Weber-Kräfte im Detail}{21}{}%
+\contentsline {subsection}{\numberline {5.1.1}Die Weber-Elektrodynamik (WED)}{21}{}%
+\contentsline {subsection}{\numberline {5.1.2}Die Weber-Gravitation (WG) für Massen}{21}{}%
+\contentsline {subsection}{\numberline {5.1.3}Die Weber-Gravitation für Photonen}{22}{}%
+\contentsline {section}{\numberline {5.2}Die Instantaneität der Weber-Kräfte und von Q}{22}{}%
+\contentsline {subsection}{\numberline {5.2.1}Der Unterschied zwischen Weber-Kräften und Q}{22}{}%
+\contentsline {section}{\numberline {5.3}Das Quantenpotential Q als instantane Welle}{22}{}%
+\contentsline {subsection}{\numberline {5.3.1}Die Wellennatur von Q}{22}{}%
+\contentsline {subsection}{\numberline {5.3.2}Die Verbindung zur fraktalen Energieverteilung}{23}{}%
+\contentsline {section}{\numberline {5.4}Q als Regler des Kreislaufs}{23}{}%
+\contentsline {subsection}{\numberline {5.4.1}Die Identitätsbeziehung}{23}{}%
+\contentsline {section}{\numberline {5.5}Zusammenfassung}{23}{}%
+\contentsline {chapter}{\numberline {6}Die fraktale Gewichtung der Quantenmechanik}{25}{}%
+\contentsline {section}{\numberline {6.1}Knotenstruktur und Dodekaeder-Symmetrie}{25}{}%
+\contentsline {section}{\numberline {6.2}Der numerische Test: Konkrete Berechnung}{25}{}%
+\contentsline {subsection}{\numberline {6.2.1}Schritt 1: Definition der Dodekaeder-Ecken}{25}{}%
+\contentsline {subsection}{\numberline {6.2.2}Schritt 2: Berechnung der fraktal gewichteten Kugelflächenfunktionen}{26}{}%
+\contentsline {subsection}{\numberline {6.2.3}Schritt 3: Konkrete numerische Ergebnisse}{26}{}%
+\contentsline {subsection}{\numberline {6.2.4}Schritt 4: Korrelationsanalyse}{27}{}%
+\contentsline {section}{\numberline {6.3}Visualisierung ohne Grafikdatei}{27}{}%
+\contentsline {section}{\numberline {6.4}Vergleich mit \( D = 3 \)}{27}{}%
+\contentsline {section}{\numberline {6.5}Der numerische Code}{27}{}%
+\contentsline {section}{\numberline {6.6}Zusammenfassung}{27}{}%
+\contentsline {chapter}{\numberline {7}Die fraktale Regularisierung der QED}{29}{}%
+\contentsline {section}{\numberline {7.1}Die korrekte Regularisierung der Selbstenergie}{29}{}%
+\contentsline {section}{\numberline {7.2}Warum der Cutoff die Elektronen-Compton-Wellenlänge ist}{29}{}%
+\contentsline {subsection}{\numberline {7.2.1}Unterscheidung zwischen \( l_0 \) und \( l_e \)}{30}{}%
+\contentsline {section}{\numberline {7.3}Die Berechnung des Lamb-Shifts}{30}{}%
+\contentsline {subsection}{\numberline {7.3.1}Numerische Bestätigung}{30}{}%
+\contentsline {section}{\numberline {7.4}Das Ergebnis}{30}{}%
+\contentsline {subsection}{\numberline {7.4.1}Zusammenfassung der Skalen}{31}{}%
+\contentsline {section}{\numberline {7.5}Zusammenfassung}{31}{}%
+\contentsline {chapter}{\numberline {8}Die zwei Kalibrierungen}{33}{}%
+\contentsline {section}{\numberline {8.1}Kosmologische Kalibration}{33}{}%
+\contentsline {section}{\numberline {8.2}Die mesoskopische Skala aus der Vakuumenergiedichte}{33}{}%
+\contentsline {section}{\numberline {8.3}Die Hypothese der atomaren Skala}{34}{}%
+\contentsline {subsection}{\numberline {8.3.1}Das Ergebnis der Analyse}{34}{}%
+\contentsline {section}{\numberline {8.4}Die Konsistenz der Kalibrierungen}{34}{}%
+\contentsline {section}{\numberline {8.5}Zusammenfassung}{34}{}%
+\contentsline {chapter}{\numberline {9}Die numerischen Beweise (drei Schritte)}{35}{}%
+\contentsline {section}{\numberline {9.1}Beweis 1: Dodekaeder-Orbitale}{35}{}%
+\contentsline {subsection}{\numberline {9.1.1}Durchführung}{35}{}%
+\contentsline {subsection}{\numberline {9.1.2}Erwartetes Ergebnis}{35}{}%
+\contentsline {subsection}{\numberline {9.1.3}Konkrete numerische Ergebnisse}{35}{}%
+\contentsline {subsection}{\numberline {9.1.4}Code}{35}{}%
+\contentsline {section}{\numberline {9.2}Beweis 2: Fraktale Regularisierung der QED}{35}{}%
+\contentsline {subsection}{\numberline {9.2.1}Durchführung}{36}{}%
+\contentsline {subsection}{\numberline {9.2.2}Erwartetes Ergebnis}{36}{}%
+\contentsline {subsection}{\numberline {9.2.3}Konkrete numerische Ergebnisse}{36}{}%
+\contentsline {subsection}{\numberline {9.2.4}Code}{36}{}%
+\contentsline {section}{\numberline {9.3}Beweis 3: Konsistenz der Kalibrierungen}{36}{}%
+\contentsline {subsection}{\numberline {9.3.1}Durchführung}{36}{}%
+\contentsline {subsection}{\numberline {9.3.2}Erwartetes Ergebnis}{37}{}%
+\contentsline {subsection}{\numberline {9.3.3}Konkrete numerische Ergebnisse}{37}{}%
+\contentsline {subsection}{\numberline {9.3.4}Code}{37}{}%
+\contentsline {section}{\numberline {9.4}Zusammenfassung der numerischen Beweise}{37}{}%
+\contentsline {chapter}{\numberline {10}Konsequenzen: Einheit der Physik}{39}{}%
+\contentsline {section}{\numberline {10.1}Die Hierarchie der Theorien}{39}{}%
+\contentsline {section}{\numberline {10.2}Falsifizierbarkeit}{39}{}%
+\contentsline {subsection}{\numberline {10.2.1}Spektroskopie}{39}{}%
+\contentsline {subsection}{\numberline {10.2.2}Der Lamb-Shift}{40}{}%
+\contentsline {subsection}{\numberline {10.2.3}Kosmologie}{40}{}%
+\contentsline {section}{\numberline {10.3}Die Einheit der Physik}{40}{}%
+\contentsline {section}{\numberline {10.4}Zusammenfassung}{40}{}%
+\contentsline {chapter}{\numberline {A}Numerische Implementierung}{43}{}%
+\contentsline {section}{\numberline {A.1}Beweis 1: Dodekaeder-Orbitale}{43}{}%
+\contentsline {subsection}{\numberline {A.1.1}Code}{43}{}%
+\contentsline {subsection}{\numberline {A.1.2}Ausgabe}{44}{}%
+\contentsline {section}{\numberline {A.2}Beweis 2: Fraktale Regularisierung der QED}{44}{}%
+\contentsline {subsection}{\numberline {A.2.1}Code}{44}{}%
+\contentsline {subsection}{\numberline {A.2.2}Ausgabe}{45}{}%
+\contentsline {section}{\numberline {A.3}Beweis 3: Konsistenz der Kalibrierungen}{45}{}%
+\contentsline {subsection}{\numberline {A.3.1}Code}{45}{}%
+\contentsline {subsection}{\numberline {A.3.2}Ausgabe}{46}{}%
+\contentsline {section}{\numberline {A.4}Zusammenfassung der numerischen Ergebnisse}{46}{}%
