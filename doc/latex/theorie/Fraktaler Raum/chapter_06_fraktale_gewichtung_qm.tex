@@ -1,8 +1,10 @@
 \chapter{Die fraktale Gewichtung der Quantenmechanik}
 
-Die Quantenmechanik ist der Grenzfall \( D = 3 \) der WDBT+. In diesem Grenzfall gelten die gewöhnlichen, glatten Differentialgleichungen – inklusive des gewöhnlichen Laplace-Operators \( \Delta \).
+Die Quantenmechanik ist der Grenzfall \( D = 3 \) der WDBT+. In diesem Grenzfall gelten die gewöhnlichen, glatten Differentialgleichungen – inklusive des
+gewöhnlichen Laplace-Operators \( \Delta \).
 
-Die fraktale Struktur des Raumes (\( D \approx 2,704 \)) wird \emph{nicht durch einen neuen Operator} beschrieben, sondern durch eine \emph{fraktale Gewichtung der Wellenfunktionen}:
+Die fraktale Struktur des Raumes (\( D \approx 2,704 \)) wird \emph{nicht durch einen neuen Operator} beschrieben, sondern durch eine
+\emph{fraktale Gewichtung der Wellenfunktionen}:
 
 \begin{equation}
 \psi_D(r, \theta, \phi) = R_{n,l}(r) \, Y_l^m(\theta, \phi) \cdot \left( \frac{r}{l_*} \right)^{(D-3)/2}. \tag{6.1}
@@ -14,7 +16,8 @@ Dabei ist \( l_* \) die mesoskopische Skala, die den Übergang zwischen fraktale
 
 Für \( D = 3 \) verschwindet die Gewichtung – man erhält die gewöhnlichen Orbitale.
 
-Für \( D \approx 2,704 \) wird die Gewichtung zu \( r^{0,148} \). Diese schwache Modifikation führt zu einer charakteristischen Knotenstruktur, die den Ecken, Kanten und Flächen des Dodekaeders entspricht:
+Für \( D \approx 2,704 \) wird die Gewichtung zu \( r^{0,148} \). Diese schwache Modifikation führt zu einer charakteristischen Knotenstruktur, die den Ecken, Kanten
+und Flächen des Dodekaeders entspricht:
 
 \begin{itemize}
     \item Die \textbf{20 Ecken} sind die Maxima der Wahrscheinlichkeitsdichte.
@@ -53,7 +56,8 @@ Für die Einheitskugel ist \( r = 1 \).
 
 \subsection{Schritt 3: Konkrete numerische Ergebnisse}
 
-Die folgende Tabelle zeigt die Wahrscheinlichkeitsdichte \( |\psi_D|^2 \) an den 20 Ecken des Dodekaeders für \( l = 1,7 \) (der fraktale Drehimpuls) und \( D = 2,704 \):
+Die folgende Tabelle zeigt die Wahrscheinlichkeitsdichte \( |\psi_D|^2 \) an den 20 Ecken des Dodekaeders für \( l = 1,7 \) (der fraktale Drehimpuls) und
+\( D = 2,704 \):
 
 \begin{table}[h]
 \centering
@@ -98,21 +102,26 @@ Die Korrelation zwischen den Maxima der Wahrscheinlichkeitsdichte und den Dodeka
 
 Dabei sind \( x_i \) die Winkelpositionen der Maxima und \( y_i \) die Winkelpositionen der Dodekaeder-Ecken.
 
-\textbf{Ergebnis:} \( \rho \approx 0,92 \). Dies ist ein signifikanter Korrelationskoeffizient, der zeigt, dass die Maxima der Wahrscheinlichkeitsdichte mit den Dodekaeder-Ecken übereinstimmen.
+\textbf{Ergebnis:} \( \rho \approx 0,92 \). Dies ist ein signifikanter Korrelationskoeffizient, der zeigt, dass die Maxima der Wahrscheinlichkeitsdichte mit den
+Dodekaeder-Ecken übereinstimmen.
 
 \section{Visualisierung ohne Grafikdatei}
 
 Die folgende Beschreibung ersetzt eine Grafik:
 
-Auf der Einheitskugel sind die 20 Ecken des Dodekaeders als Punkte markiert. Die Wahrscheinlichkeitsdichte \( |\psi_D|^2 \) ist farbcodiert dargestellt (rot = hohe Dichte, blau = niedrige Dichte). Die roten Regionen fallen mit den 20 Ecken zusammen. Die blauen Regionen (Minima) liegen bei den 12 Flächenzentren. Die Knotenlinien verlaufen entlang der 30 Kanten.
+Auf der Einheitskugel sind die 20 Ecken des Dodekaeders als Punkte markiert. Die Wahrscheinlichkeitsdichte \( |\psi_D|^2 \) ist farbcodiert dargestellt
+(rot = hohe Dichte, blau = niedrige Dichte). Die roten Regionen fallen mit den 20 Ecken zusammen. Die blauen Regionen (Minima) liegen bei den 12 Flächenzentren. Die
+Knotenlinien verlaufen entlang der 30 Kanten.
 
 \textbf{Dies ist die erwartete Visualisierung:} Die Maxima der Dichte fallen mit den Ecken des Dodekaeders zusammen.
 
 \section{Vergleich mit \( D = 3 \)}
 
-Für \( D = 3 \) verschwindet die fraktale Gewichtung, und die Wahrscheinlichkeitsdichte ist rotationssymmetrisch. Die Maxima sind nicht lokalisiert – es gibt keine ausgezeichneten Punkte auf der Kugeloberfläche.
+Für \( D = 3 \) verschwindet die fraktale Gewichtung, und die Wahrscheinlichkeitsdichte ist rotationssymmetrisch. Die Maxima sind nicht lokalisiert – es gibt keine
+ausgezeichneten Punkte auf der Kugeloberfläche.
 
-Für \( D \approx 2,704 \) entsteht die Dodekaeder-Symmetrie. Die Wahrscheinlichkeitsdichte ist \emph{diskret} symmetrisch – sie hat Maxima an den 20 Ecken und Minima an den 12 Flächenzentren.
+Für \( D \approx 2,704 \) entsteht die Dodekaeder-Symmetrie. Die Wahrscheinlichkeitsdichte ist \emph{diskret} symmetrisch – sie hat Maxima an den 20 Ecken und Minima
+an den 12 Flächenzentren.
 
 \section{Der numerische Code}
 

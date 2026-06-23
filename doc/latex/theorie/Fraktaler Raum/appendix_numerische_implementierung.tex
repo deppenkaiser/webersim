@@ -1,10 +1,12 @@
 \chapter{Numerische Implementierung}
 
-Dieser Anhang enthält die vollständigen numerischen Implementierungen der drei Beweise aus Kapitel 9. Die Codes sind in Python mit den Bibliotheken NumPy und SciPy geschrieben.
+Dieser Anhang enthält die vollständigen numerischen Implementierungen der drei Beweise aus Kapitel 9. Die Codes sind in Python mit den Bibliotheken NumPy und SciPy
+geschrieben.
 
 \section{Beweis 1: Dodekaeder-Orbitale}
 
-Die fraktale Gewichtung der Kugelflächenfunktionen wird auf den 20 Ecken des Dodekaeders ausgewertet. Die Wahrscheinlichkeitsdichte \( |\psi_D|^2 \) wird berechnet und die Korrelation mit den Dodekaeder-Ecken bestimmt.
+Die fraktale Gewichtung der Kugelflächenfunktionen wird auf den 20 Ecken des Dodekaeders ausgewertet. Die Wahrscheinlichkeitsdichte \( |\psi_D|^2 \) wird berechnet
+und die Korrelation mit den Dodekaeder-Ecken bestimmt.
 
 \subsection{Code}
 
@@ -63,7 +65,8 @@ Max/Min: 1.25e-4 / 1.15e-4 = 1.087
 
 \section{Beweis 2: Fraktale Regularisierung der QED}
 
-Die fraktale Zustandsdichte regularisiert die QED-Integrale. Der nat\"urliche Cutoff ist die Elektronen-Compton-Wellenl\"ange \( l_e \approx 3,86 \times 10^{-13} \, \text{m} \).
+Die fraktale Zustandsdichte regularisiert die QED-Integrale. Der nat\"urliche Cutoff ist die Elektronen-Compton-Wellenlänge
+\( l_e \approx 3,86 \times 10^{-13} \, \text{m} \).
 
 \subsection{Code}
 
@@ -108,7 +111,8 @@ Lamb-Shift (WDBT+): 4.37e-6 eV
 
 \section{Beweis 3: Konsistenz der Kalibrierungen}
 
-Die kosmologische Kalibration (SN Refsdal) und die Vakuumenergiedichte werden auf Konsistenz gepr\"uft. Die mesoskopische Skala \( l_* \approx 10^{27} \, \text{m} \) folgt aus der \"Ubereinstimmung mit der beobachteten Vakuumenergiedichte.
+Die kosmologische Kalibration (SN Refsdal) und die Vakuumenergiedichte werden auf Konsistenz geprüft. Die mesoskopische Skala \( l_* \approx 10^{27} \, \text{m} \)
+folgt aus der Übereinstimmung mit der beobachteten Vakuumenergiedichte.
 
 \subsection{Code}
 
@@ -119,7 +123,7 @@ import numpy as np
 h = 6.626e-34   # J*s
 c = 3e8         # m/s
 G = 6.674e-11   # m^3/(kg*s^2)
-l0 = 1.8e-15    # m (Protonen-Compton-L\"ange)
+l0 = 1.8e-15    # m (Protonen-Compton-Länge)
 rho0 = 5e-14    # kg/m^3 (aus SN Refsdal)
 D = 2.704
 
@@ -153,7 +157,7 @@ Beobachtete Vakuumenergiedichte: 1.0e-9 J/m^3
 Die numerischen Implementierungen best\"atigen die drei zentralen Beweise:
 
 \begin{enumerate}
-    \item \textbf{Dodekaeder-Orbitale:} Die fraktale Gewichtung der Kugelfl\"achenfunktionen f\"uhrt zur Dodekaeder-Symmetrie in den Atomorbitalen (\( \rho \approx 0{,}92 \)).
-    \item \textbf{QED-Regularisierung:} Die fraktale Zustandsdichte reproduziert den Lamb-Shift -- ohne Renormierung, ohne willk\"urlichen Cutoff.
+    \item \textbf{Dodekaeder-Orbitale:} Die fraktale Gewichtung der Kugelflächenfunktionen führt zur Dodekaeder-Symmetrie in den Atomorbitalen (\( \rho \approx 0{,}92 \)).
+    \item \textbf{QED-Regularisierung:} Die fraktale Zustandsdichte reproduziert den Lamb-Shift -- ohne Renormierung, ohne willkürlichen Cutoff.
     \item \textbf{Konsistenz der Kalibrierungen:} Die kosmologische Kalibration und die Vakuumenergiedichte liefern \( l_* \approx 10^{27} \, \text{m} \).
 \end{enumerate}

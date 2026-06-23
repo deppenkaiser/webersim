@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Die Nullpunktsenergie}{10}{}%
 \contentsline {subsection}{\numberline {2.2.3}Die effektive negative Energiedichte}{10}{}%
 \contentsline {subsection}{\numberline {2.2.4}Warum dies nicht die Dunkle Energie der ART ist}{11}{}%
-\contentsline {section}{\numberline {2.3}Die physikalische Bedeutung: Die ``Löcher''}{11}{}%
+\contentsline {section}{\numberline {2.3}Die physikalische Bedeutung: Die \enquote {Löcher}}{11}{}%
 \contentsline {section}{\numberline {2.4}Zusammenfassung}{11}{}%
 \contentsline {chapter}{\numberline {3}Dynamik: Kreislauf und Grenzzyklus}{13}{}%
 \contentsline {section}{\numberline {3.1}Der geschlossene Energiekreislauf}{13}{}%
