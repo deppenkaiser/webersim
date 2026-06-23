@@ -2,36 +2,102 @@
 
 Die fraktale Energieverteilung ist nicht statisch – sie ist der \emph{zeitliche Mittelwert} eines permanenten, geschlossenen Kreislaufs.
 
-\subsection{Der geschlossene Energiekreislauf}
+\section{Der geschlossene Energiekreislauf}
 
 Die Energie zirkuliert in drei Phasen:
 
 \begin{equation}
-\text{Vakuum} \xrightarrow{\sigma_{\text{cre}}} \text{Materie} \xrightarrow{\sigma_{\text{drift}}} \Omega\text{-Feld} \xrightarrow{\sigma_{\text{back}}} \text{Vakuum}
+\text{Vakuum} \xrightarrow{\sigma_{\text{cre}}} \text{Materie} \xrightarrow{\sigma_{\text{drift}}} \Omega\text{-Feld} \xrightarrow{\sigma_{\text{back}}} \text{Vakuum}. \tag{3.1}
 \end{equation}
 
-Die Flussraten sind:
+\subsection{Die Flussraten}
+
+Die Flussraten sind durch die Dynamik der WDBT+ bestimmt:
 
 \begin{align}
-\sigma_{\text{cre}} &= \frac{1}{T} \int \frac{|\nabla Q|^2}{\hbar c} \, d^3r > 0, \\
-\sigma_{\text{drift}} &= \frac{1}{T} \int \frac{\dot{\beta}_{\text{DSTT}}}{\beta_{\text{DSTT}}} \, d^3r > 0, \\
-\sigma_{\text{back}} &= \frac{1}{T} \int \frac{|\vec{\Omega}|^2}{8\pi G} \, d^3r > 0.
+\sigma_{\text{cre}} &= \frac{1}{T} \int \frac{|\nabla Q|^2}{\hbar c} \, d^3r > 0, \tag{3.2} \\
+\sigma_{\text{drift}} &= \frac{1}{T} \int \frac{\dot{\beta}_{\text{DSTT}}}{\beta_{\text{DSTT}}} \, d^3r > 0, \tag{3.3} \\
+\sigma_{\text{back}} &= \frac{1}{T} \int \frac{|\vec{\Omega}|^2}{8\pi G} \, d^3r > 0. \tag{3.4}
 \end{align}
+
+Dabei ist:
+\begin{itemize}
+    \item \(\sigma_{\text{cre}}\) die Materieentstehungsrate aus dem Quantenpotential \(Q\),
+    \item \(\sigma_{\text{drift}}\) die Driftrate der DSTT (\( \dot{\beta} > 0 \)),
+    \item \(\sigma_{\text{back}}\) die Rückkopplungsrate des \(\Omega\)-Feldes an das Vakuum.
+\end{itemize}
+
+\subsection{Der stationäre Zustand}
 
 Im stationären Zustand gilt:
 
 \begin{equation}
-\sigma_{\text{cre}} = \sigma_{\text{drift}} = \sigma_{\text{back}} \equiv \sigma.
+\sigma_{\text{cre}} = \sigma_{\text{drift}} = \sigma_{\text{back}} \equiv \sigma. \tag{3.5}
 \end{equation}
 
-\subsection{Der Grenzzyklus}
+Die Entropien jeder Phase sind dann konstant:
 
-Die globale Entropie ist konstant – das ist das Resultat eines \emph{attraktiven Grenzzyklus}. Es gibt keinen Wärmetod, weil:
+\begin{equation}
+\frac{dS_D^{\text{vac}}}{dt} = \frac{dS_D^{\text{kin,grav}}}{dt} = \frac{dS_D^{\text{kin,em}}}{dt} = \frac{dS_D^{\Omega}}{dt} = 0. \tag{3.6}
+\end{equation}
 
-\begin{itemize}
+Es zirkuliert nur der Fluss, nicht die Menge.
+
+\section{Der Grenzzyklus}
+
+Die globale Entropie ist konstant – das ist das Resultat eines \emph{attraktiven Grenzzyklus}.
+
+\subsection{Warum kein Wärmetod eintritt}
+
+Ein Wärmetod tritt ein, wenn die Entropie ein globales Maximum erreicht. In der WDBT+ ist dies unmöglich, weil:
+
+\begin{enumerate}
     \item Die fraktale Entropie \(S_D\) kein globales Maximum hat (\(D < 3\)).
     \item Die DSTT-Drift (\( \dot{\beta} > 0 \)) permanente radiale Energiegradienten erzeugt.
     \item Die Flussraten \( \sigma_{\text{cre}}, \sigma_{\text{drift}}, \sigma_{\text{back}} \) immer positiv sind.
+\end{enumerate}
+
+\subsection{Die Rolle der DSTT-Drift}
+
+Die DSTT-Drift ist der Motor des Kreislaufs:
+
+\begin{equation}
+\dot{\beta}_{\text{DSTT}} > 0 \quad \text{für alle } t. \tag{3.7}
+\end{equation}
+
+Sie ist die Quelle der Irreversibilität und des intrinsischen Zeitpfeils. Sie verhindert, dass das System in einen Gleichgewichtszustand fällt.
+
+\subsection{Der attraktive Grenzzyklus}
+
+Der stationäre Zustand ist ein \emph{attraktiver Grenzzyklus}. Das bedeutet:
+
+\begin{itemize}
+    \item Jede Abweichung vom Grenzzyklus wird durch die Dynamik wieder in die Bahn gezwungen.
+    \item Der Grenzzyklus ist stabil – es gibt keinen Fixpunkt, sondern eine geschlossene Schleife im Phasenraum.
+    \item Die Stabilität wird durch das Lyapunov-Funktional 
+    \[
+    \mathcal{L} = \beta_{\text{DSTT}} \cdot (1 - \beta_{\text{DSTT}}) \cdot \frac{E_{\text{kin,grav}}}{E_{\text{ges}}}
+    \]
+    gewährleistet, für das \(\dot{\mathcal{L}} < 0\) außerhalb des Grenzzyklus gilt.
 \end{itemize}
 
-Die DSTT-Drift ist der Motor des Kreislaufs – sie ist die Quelle der Irreversibilität und des intrinsischen Zeitpfeils.
+\subsection{Die fraktale Entropie als Stabilitätskriterium}
+
+Die fraktale Entropie \(S_D\) ist subextensiv:
+
+\begin{equation}
+S_D(E) = \frac{D}{3} k_B \ln E + \text{const}. \tag{3.8}
+\end{equation}
+
+Für \(D < 3\) ist \(S_D(E)\) monoton wachsend und konkav, besitzt aber kein endliches Maximum. Dies ist der thermodynamische Grund für die Stabilität des Grenzzyklus.
+
+\section{Zusammenfassung}
+
+\begin{enumerate}
+    \item Die Energie zirkuliert in einem geschlossenen Kreislauf: Vakuum \(\to\) Materie \(\to\) \(\Omega\)-Feld \(\to\) Vakuum.
+    \item Die Flussraten \(\sigma_{\text{cre}}, \sigma_{\text{drift}}, \sigma_{\text{back}}\) sind immer positiv.
+    \item Im stationären Zustand sind die Flussraten gleich: \(\sigma_{\text{cre}} = \sigma_{\text{drift}} = \sigma_{\text{back}} \equiv \sigma\).
+    \item Der stationäre Zustand ist ein attraktiver Grenzzyklus – kein Fixpunkt.
+    \item Die DSTT-Drift (\( \dot{\beta} > 0 \)) ist der Motor des Kreislaufs.
+    \item Die fraktale Entropie \(S_D\) hat kein globales Maximum – daher tritt kein Wärmetod ein.
+\end{enumerate}

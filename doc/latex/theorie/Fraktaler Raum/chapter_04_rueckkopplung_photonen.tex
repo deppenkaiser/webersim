@@ -3,25 +3,86 @@
 Die Rotverschiebung ist in der WDBT+ kein Doppler-Effekt, sondern eine \emph{kumulative gravitative Energieabgabe}:
 
 \begin{equation}
-z(d) = \frac{1}{c^2} \int_0^d \frac{G M(r)}{r^2} dr.
+z(d) = \frac{1}{c^2} \int_0^d \frac{G M(r)}{r^2} dr. \tag{4.1}
 \end{equation}
 
 Die zurückfließende Energie ist die Energie der Rotverschiebung. Jedes Photon – egal ob von Supernova, Stern oder Planetenkern – gibt auf seinem Weg durch das Universum Energie an das Vakuum ab.
 
-\subsection{Polyrhythmisches System}
+\section{Die Rotverschiebung als Energieabgabe}
+
+\subsection{Der allgemeine Ausdruck}
+
+Die Rotverschiebung \(z(d)\) ist das Integral über die eingeschlossene Masse \(M(r)\) entlang der Sichtlinie. Für eine fraktale Dichteverteilung (siehe Kapitel 2) gilt:
+
+\begin{equation}
+z(d) = \frac{4\pi G \rho_0 l_0^{3-D}}{D(D-1)c^2} \cdot d^{D-1}. \tag{4.2}
+\end{equation}
+
+Die Energieabgabe eines Photons der Energie \(E\) ist:
+
+\begin{equation}
+\Delta E = E \cdot \frac{z}{1+z}. \tag{4.3}
+\end{equation}
+
+\subsection{Die kumulative Natur}
+
+Die Rotverschiebung ist \emph{kumulativ}: Sie summiert sich entlang des gesamten Weges des Photons. Dies ist der fundamentale Unterschied zur Doppler-Interpretation der ART, bei der die Rotverschiebung an der Quelle entsteht und dann konstant bleibt.
+
+\section{Polyrhythmisches System}
 
 Es gibt unzählige Taktgeber:
 
 \begin{itemize}
-    \item Supernovae (hochenergetische Photonen),
-    \item Sterne (optische Photonen),
-    \item Planetenkerne (Infrarot-Photonen).
+    \item Supernovae (hochenergetische Photonen, \(\gamma\)- bis Röntgenbereich),
+    \item Sterne (optische und UV-Photonen),
+    \item Planetenkerne (Infrarot-Photonen),
+    \item Akkretionsscheiben (Röntgen-Photonen),
+    \item Quasare (breites Spektrum).
 \end{itemize}
 
 Der Kosmos ist ein \emph{polyrhythmisches System} – ein Netzwerk von Oszillatoren, die alle zur Rückkopplung beitragen.
 
-\subsection{Die Rolle des Quantenpotentials Q}
+\subsection{Die statistische Überlagerung}
+
+Die gesamte Rückkopplungsenergie ist die Summe über alle Photonen:
+
+\begin{equation}
+E_{\text{back}} = \int_0^\infty E \cdot \frac{z(E)}{1+z(E)} \cdot \frac{dN}{dE} \, dE. \tag{4.4}
+\end{equation}
+
+Dabei ist \(dN/dE\) die spektrale Verteilung der Photonen. Diese Gleichung verbindet die Astrophysik (Spektren von Quellen) mit der fraktalen Kosmologie (Rotverschiebung).
+
+\section{Die Rolle des Quantenpotentials Q}
 
 Die Rückkopplung wird durch das Quantenpotential Q reguliert. Q ist instantan und nicht-lokal – es kann Energie von einem Ort zum anderen transferieren, ohne dass ein Signal mit \(c\) unterwegs sein muss.
 
-Die Energieabgabe der Photonen durch Rotverschiebung wird von Q aufgenommen und in neue Materie umgewandelt (\( \sigma_{\text{cre}} \)).
+\subsection{Q als instantaner Regler}
+
+Die Energieabgabe der Photonen durch Rotverschiebung wird von Q aufgenommen und in neue Materie umgewandelt:
+
+\begin{equation}
+\sigma_{\text{cre}} = \frac{1}{T} \int \frac{|\nabla Q|^2}{\hbar c} \, d^3r. \tag{4.5}
+\end{equation}
+
+Die Rückkopplung ist also \emph{instantane} – es gibt keine Verzögerung zwischen Energieabgabe und Materieentstehung.
+
+\subsection{Die Verbindung zur Rotverschiebung}
+
+Die Energie, die durch Rotverschiebung abgegeben wird, ist \emph{exakt} die Energie, die für die Materieentstehung benötigt wird:
+
+\begin{equation}
+\int \frac{dE}{dt} \cdot \frac{z}{1+z} \, dt = \int \sigma_{\text{cre}} \cdot c^2 \, dV \cdot dt. \tag{4.6}
+\end{equation}
+
+Dies ist die \emph{Energiebilanz des Kreislaufs}: Die Photonen geben Energie ab, Q nimmt sie auf und erzeugt neue Materie.
+
+\section{Zusammenfassung}
+
+\begin{enumerate}
+    \item Die Rotverschiebung ist eine kumulative gravitative Energieabgabe – kein Doppler-Effekt.
+    \item Die Rotverschiebung ist \emph{kumulativ}: Sie summiert sich entlang des gesamten Weges.
+    \item Jedes Photon – unabhängig von seiner Quelle – trägt zur Rückkopplung bei.
+    \item Der Kosmos ist ein polyrhythmisches System – es gibt unzählige Taktgeber.
+    \item Die Rückkopplung wird durch das Quantenpotential Q reguliert – instantan und nicht-lokal.
+    \item Die Energiebilanz ist geschlossen: \(\Delta E_{\text{Rotverschiebung}} = E_{\text{Materieentstehung}}\).
+\end{enumerate}
